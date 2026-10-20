@@ -18,3 +18,13 @@ footer::before {
   line-height: 1.5;
   margin-bottom: 0.75rem;
 }
+
+// 그래프 박스 아래 안내: 전체 그래프는 박스 오른쪽 위 아이콘(또는 Ctrl/Cmd+G)
+.graph::after {
+  content: "오른쪽 위 아이콘 또는 Ctrl/Cmd+G: 전체 그래프 · 노드를 누르면 해당 문서로 이동";
+  display: block;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--gray);
+  margin-top: 0.35rem;
+}

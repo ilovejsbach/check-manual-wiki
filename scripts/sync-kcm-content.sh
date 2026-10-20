@@ -48,6 +48,7 @@ HOME = ("\n\n---\n\n"
         "이 위키는 엄경식, 『한국 자본시장의 이해』, 한울엠플러스, 2023을 바탕으로 한 독자 이해를 위한 요약·정리이며 원문 전재가 아닙니다. "
         "원문의 저작권은 저자와 출판사에 있습니다. 본문의 \"원본 p.N\"은 원본 PDF의 쪽 번호입니다. "
         "현재 모든 문서는 초안(사람 검토 전)입니다.\n")
+TYPE_TAG = {'concept': '개념', 'institution': '기관', 'regulation': '법규', 'metric': '지표', 'chapter': '장', 'supplement': '보완', 'book': '책'}
 FM = re.compile(r'\A(---\n.*?\n---\n)', re.S)
 for p in dest.rglob('*.md'):
     t = p.read_text(encoding='utf-8')
@@ -58,6 +59,10 @@ for p in dest.rglob('*.md'):
     body = body.lstrip('\n')
     if p.relative_to(dest).as_posix() == 'index.md':
         body = body.rstrip('\n') + HOME
+    tm = re.search(r'^type:\s*"?(\w+)"?\s*$', head, re.M)
+    if tm and tm.group(1) in TYPE_TAG and not re.search(r'^tags:', head, re.M):
+        # 그래프에서 유형별로 모이도록 type 을 태그로 옮긴다 (태그 페이지는 유형별 목록이 된다)
+        head = head[:-4] + 'tags: ["' + TYPE_TAG[tm.group(1)] + '"]\n---\n'
     if head and not re.search(r'^description:', head, re.M):
         # 초안 콜아웃이 description·검색 미리보기를 차지하지 않도록 첫 일반 문단으로 description 을 만든다
         for line in body.splitlines():
@@ -73,6 +78,8 @@ for p in dest.rglob('*.md'):
             if s:
                 head = head[:-4] + 'description: "' + s + '"\n---\n'
                 break
+    # '09:00~15:30' 같은 범위 표기가 GFM 취소선(~...~)으로 렌더링되지 않도록 본문의 ~ 를 이스케이프한다
+    body = body.replace('~', '\\~')
     p.write_text(head + '\n' + DRAFT + body, encoding='utf-8')
 PY
 echo "남은 [src: 개수: $(grep -rc '\[src:' "$DEST" | awk -F: '{s+=$NF} END{print s+0}')"
