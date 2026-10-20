@@ -12,3 +12,8 @@ replit.nix
 .quartz/
 quartz/cli/tui/dist/
 .turbo/
+
+# kcm 위키: content/ 는 동기화 생성물
+content/*
+!content/.gitkeep
+__pycache__/

@@ -1,3 +1,20 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// 원본 쪽 번호 각주 ("원본 p.N")
+sup.src-ref {
+  font-size: 0.7em;
+  color: var(--gray);
+  white-space: nowrap;
+  margin-left: 0.15em;
+}
+
+// 사이트 전체 푸터: 저작권·출처 고지 (외부 리소스 없음)
+footer::before {
+  content: "© 엄경식, 『한국 자본시장의 이해』, 한울엠플러스, 2023 — 독자 이해를 위한 요약·정리이며 원문 전재가 아닙니다. 현재 초안(사람 검토 전).";
+  display: block;
+  font-size: 0.85em;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
