@@ -75,7 +75,12 @@ def validate() -> tuple[dict[str, object], list[str]]:
     for required in [CONTENT_DIR / "화면번호-색인.md", CONTENT_DIR / "업무-기능-색인.md"]:
         if not required.exists():
             errors.append(f"required human index missing: {required.name}")
-    for required in ["knowledge.jsonl", "manifest.json", "llms.txt"]:
+    for required in [
+        "knowledge.jsonl",
+        "manifest.json",
+        "llms.txt",
+        "check-manual-wiki-data.zip",
+    ]:
         if not (CONTENT_DIR / "api" / required).exists():
             errors.append(f"required API asset missing: {required}")
 

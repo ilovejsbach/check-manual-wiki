@@ -12,7 +12,7 @@ sup.src-ref {
 
 // 사이트 전체 푸터: 저작권·출처 고지 (외부 리소스 없음)
 footer::before {
-  content: "© 엄경식, 『한국 자본시장의 이해』, 한울엠플러스, 2023 — 독자 이해를 위한 요약·정리이며 원문 전재가 아닙니다. 현재 초안(사람 검토 전).";
+  content: "CHECK Expert+ 및 Excel Premium 공식 매뉴얼 기반 검색용 지식베이스 — 자동 추출 자료이므로 실제 업무 전 원본 페이지와 최신 화면을 함께 확인하세요.";
   display: block;
   font-size: 0.85em;
   line-height: 1.5;
@@ -27,4 +27,57 @@ footer::before {
   line-height: 1.4;
   color: var(--gray);
   margin-top: 0.35rem;
+}
+#print-page-button {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1000;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--lightgray);
+  border-radius: 0.5rem;
+  color: var(--darkgray);
+  background: var(--light);
+  box-shadow: 0 2px 10px rgb(0 0 0 / 12%);
+  cursor: pointer;
+  font: inherit;
+}
+
+#print-page-button:hover,
+#print-page-button:focus-visible {
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+@media print {
+  #print-page-button,
+  .left.sidebar,
+  .right.sidebar,
+  .page-header,
+  .page-footer,
+  .breadcrumb-container {
+    display: none !important;
+  }
+
+  body,
+  #quartz-root,
+  .page,
+  .center {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    color: black !important;
+  }
+
+  article {
+    overflow: visible !important;
+  }
+
+  a {
+    color: black !important;
+    text-decoration: underline;
+  }
 }

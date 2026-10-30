@@ -26,6 +26,7 @@ generated: true
 - [[check-expert/api/llms.txt|LLM 사용 안내]]
 - [[check-expert/api/manifest.json|지식베이스 manifest]]
 - [[check-expert/api/knowledge.jsonl|전체 JSONL 지식 레코드]]
+- [[check-expert/다운로드|저장·다운로드]]
 
 응답에는 `id`, `source`, `source_locator`를 함께 보존해 근거를 추적하세요.
 

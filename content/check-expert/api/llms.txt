@@ -12,6 +12,7 @@ Official CHECK Expert+ and Excel Premium manuals converted into a source-traceab
 
 - /check-expert/api/manifest.json
 - /check-expert/api/knowledge.jsonl
+- /check-expert/api/check-manual-wiki-data.zip
 
 Each JSONL record contains id, type, title, aliases, category, screen_code, source,
 source_locator, related_ids, markdown_path, and text. Cite id plus source_locator in answers.

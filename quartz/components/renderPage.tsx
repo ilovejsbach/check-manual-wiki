@@ -365,7 +365,16 @@ export function renderPage(
             ]}
           </Body>
         </div>
+        <button id="print-page-button" type="button" aria-label="현재 문서 인쇄 또는 PDF 저장">
+          인쇄 / PDF 저장
+        </button>
       </body>
+      <script
+        dangerouslySetInnerHTML={{
+          __html:
+            'document.getElementById("print-page-button")?.addEventListener("click",()=>window.print());',
+        }}
+      />
       {pageResources.js
         .filter((resource) => resource.loadTime === "afterDOMReady")
         .map((res) => JSResourceToScriptElement(res, true))}

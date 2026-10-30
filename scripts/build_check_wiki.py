@@ -429,6 +429,7 @@ def build_home(stats: dict[str, int], hashes: dict[str, str]) -> None:
 - [[check-expert/api/llms.txt|LLM 사용 안내]]
 - [[check-expert/api/manifest.json|지식베이스 manifest]]
 - [[check-expert/api/knowledge.jsonl|전체 JSONL 지식 레코드]]
+- [[check-expert/다운로드|저장·다운로드]]
 
 응답에는 `id`, `source`, `source_locator`를 함께 보존해 근거를 추적하세요.
 
@@ -543,6 +544,7 @@ Official CHECK Expert+ and Excel Premium manuals converted into a source-traceab
 
 - /check-expert/api/manifest.json
 - /check-expert/api/knowledge.jsonl
+- /check-expert/api/check-manual-wiki-data.zip
 
 Each JSONL record contains id, type, title, aliases, category, screen_code, source,
 source_locator, related_ids, markdown_path, and text. Cite id plus source_locator in answers.
@@ -575,6 +577,56 @@ For an exact screen query, prefer screen_code or aliases before full-text matchi
     return {"knowledge_records": len(records), "screen_records": len(screens)}
 
 
+def build_download_page() -> None:
+    download_page = frontmatter(
+        title="저장·다운로드",
+        description="CHECK Manual Wiki를 오프라인 또는 프로그램 연동용으로 저장합니다.",
+        tags=["CHECK Expert", "다운로드", "오프라인"],
+        source="CHECK Manual Wiki",
+        extra={"knowledge_id": "check:guide:downloads"},
+    )
+    download_page += """# 저장·다운로드
+
+## 전체 자료
+
+- [Markdown·JSONL 전체 ZIP](api/check-manual-wiki-data.zip)
+- [LLM/RAG용 JSONL](api/knowledge.jsonl)
+- [버전·원본 무결성 manifest](api/manifest.json)
+- [LLM 사용 안내](api/llms.txt)
+
+ZIP에는 사람용 Markdown, 기계 판독 JSONL, 스키마 문서가 들어 있습니다. 원본 PDF와 Excel은
+포함하지 않으며 각 레코드의 `source`와 `source_locator`로 근거를 추적할 수 있습니다.
+
+## 현재 문서 저장
+
+브라우저의 **인쇄 → PDF로 저장** 기능으로 현재 문서를 보존할 수 있습니다. 원문 데이터가
+필요하면 위 JSONL 또는 전체 ZIP을 사용하세요.
+"""
+    write_text(OUTPUT_DIR / "다운로드.md", download_page)
+
+
+def build_download_archive() -> None:
+    """Create a reproducible offline archive for people and downstream programs."""
+    api_dir = OUTPUT_DIR / "api"
+    archive_path = api_dir / "check-manual-wiki-data.zip"
+    files: list[tuple[Path, str]] = []
+    for path in sorted(OUTPUT_DIR.rglob("*.md")):
+        files.append((path, f"content/{path.relative_to(ROOT / 'content').as_posix()}"))
+    for path in sorted(KNOWLEDGE_DIR.glob("*")):
+        if path.is_file():
+            files.append((path, f"knowledge/check-expert/{path.name}"))
+    for path in [ROOT / "docs" / "check-expert-knowledge-schema.md", ROOT / "README-CHECK-WIKI.md"]:
+        if path.exists():
+            files.append((path, path.relative_to(ROOT).as_posix()))
+
+    with zipfile.ZipFile(archive_path, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
+        for path, archive_name in files:
+            info = zipfile.ZipInfo(archive_name, date_time=(1980, 1, 1, 0, 0, 0))
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.external_attr = 0o100644 << 16
+            archive.writestr(info, path.read_bytes())
+
+
 def build() -> dict[str, int]:
     if OUTPUT_DIR.exists():
         shutil.rmtree(OUTPUT_DIR)
@@ -605,7 +657,9 @@ def build() -> dict[str, int]:
     stats["excel_documents"] = excel_documents + code_documents
     stats["code_records"] = code_records
     build_home(stats, source_hashes())
+    build_download_page()
     stats.update(export_knowledge())
+    build_download_archive()
     return stats
 
 
