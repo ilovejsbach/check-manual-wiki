@@ -19,5 +19,10 @@ __pycache__/
 .ruff_cache/
 .venv/
 .uv-cache/
-sources/
+sources/*
+!sources/check-expert/
+sources/check-expert/*
+!sources/check-expert/CHECKPlus_Manual.pdf
+!sources/check-expert/excel-sources.zip
+!sources/check-expert/README.md
 .tools/

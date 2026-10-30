@@ -33,5 +33,7 @@ npx quartz build --concurrency 4
 uv run python -m http.server 8080 --bind 127.0.0.1 --directory public
 ```
 
-원본 PDF와 Excel 파일은 라이선스·용량·무결성 관리를 위해 저장소에 포함하지 않습니다.
-저장소에는 출처 페이지와 원본 SHA-256을 가진 생성 문서와 기계 판독 데이터가 포함됩니다.
+공식 PDF와 Excel 원본 묶음은 `sources/check-expert/`에 함께 버전 관리합니다. 저장소를
+클론하면 별도 다운로드 없이 `uv run python scripts/build_check_wiki.py --json`으로 전체
+지식베이스를 다시 생성할 수 있습니다. 파일 무결성 정보는 같은 폴더의 README와
+`manifest.json`에서 확인할 수 있습니다.
