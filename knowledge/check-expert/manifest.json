@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "record_count": 546,
+  "screen_count": 420,
+  "source_hashes": {
+    "CHECKPlus_Manual.pdf": "b3ca8de468ffb238d16bb49882a2e7d2f85585f87c28698587331c8022948631",
+    "excel-manual1_menu_template.xls.pia": "64529436ce861e37a2658d9bd0577d4f9f8c5230cd4a81dc1272a6f021293810",
+    "excel-manual2_function.xls.pia": "8138d73fee8ceab0fbe450fa8146c7dd8dcea996e69450dabf3ccf39716f3ca2",
+    "excel-manual3_askWizard.xls.pia": "34b5ae20df97bfa29b997f16622a3ff81500e193a91c27454f567996929e7966",
+    "excel-manual4_ezChart.xls.pia": "520d271aa1a08433e4eb95fb0c83e88caee6708eea5a903903b5114088375470",
+    "excel-sources.zip": "20185ff5f1a57e15de2f8b913a44af1f9f1dddb5ed4016ac9ff6f9c4dbdaecac",
+    "HangMokCodeTable_ExcelPremium_update01.xlsx.pia": "0da74fa58847c625d106286fe2c13df9d06e57806e44b85f500c5b666f857138",
+    "JongMokCodeTable_20140616_Uodate02.xlsx.pia": "4d623d44e9b4fb35a1ac8aef7016098e58ed44d9fbe5b30fc4369e1836b9044b"
+  }
+}

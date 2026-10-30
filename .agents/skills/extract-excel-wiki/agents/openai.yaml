@@ -1,0 +1,4 @@
+interface:
+  display_name: "Excel Wiki Extractor"
+  short_description: "Excel 매뉴얼과 대형 코드표를 검색용 위키로 변환"
+  default_prompt: "Use $extract-excel-wiki to convert Excel manuals and large code tables into searchable Markdown."

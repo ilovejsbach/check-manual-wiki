@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: 한국 자본시장의 이해 위키 (초안)
+  pageTitle: CHECK Expert LLM Wiki
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics: null
   locale: ko-KR
-  baseUrl: ilovejsbach.github.io/capital_market_wiki
+  baseUrl: ilovejsbach.github.io/check-manual-wiki
   ignorePatterns:
     - private
     - templates
@@ -47,8 +47,8 @@ plugins:
       defaultDateType: modified
       priority:
         - frontmatter
-        - git
         - filesystem
+        - git
     order: 10
   - source: "@quartz-community/syntax-highlighting"
     enabled: true

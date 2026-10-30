@@ -13,7 +13,11 @@ replit.nix
 quartz/cli/tui/dist/
 .turbo/
 
-# kcm 위키: content/ 는 동기화 생성물
-content/*
-!content/.gitkeep
+# CHECK 위키의 생성 Markdown과 API 데이터는 Pages 배포를 위해 버전 관리한다.
 __pycache__/
+.pytest_cache/
+.ruff_cache/
+.venv/
+.uv-cache/
+sources/
+.tools/

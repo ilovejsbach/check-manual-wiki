@@ -1,0 +1,18 @@
+# CHECK Expert LLM Wiki
+
+Official CHECK Expert+ and Excel Premium manuals converted into a source-traceable knowledge base.
+
+## Human indexes
+
+- /check-expert/화면번호-색인
+- /check-expert/업무-기능-색인
+- /check-expert/excel-premium/매뉴얼
+
+## Machine-readable resources
+
+- /check-expert/api/manifest.json
+- /check-expert/api/knowledge.jsonl
+
+Each JSONL record contains id, type, title, aliases, category, screen_code, source,
+source_locator, related_ids, markdown_path, and text. Cite id plus source_locator in answers.
+For an exact screen query, prefer screen_code or aliases before full-text matching.

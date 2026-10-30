@@ -1,0 +1,4 @@
+interface:
+  display_name: "Quartz LLM Wiki Builder"
+  short_description: "사람과 AI가 함께 쓰는 Quartz 지식베이스 생성·검증"
+  default_prompt: "Use $build-quartz-llm-wiki to build and validate a reproducible offline Quartz knowledge base."

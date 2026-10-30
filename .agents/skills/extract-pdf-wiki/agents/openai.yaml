@@ -1,0 +1,4 @@
+interface:
+  display_name: "PDF Wiki Extractor"
+  short_description: "PDF 매뉴얼을 출처 추적 가능한 위키 문서로 변환"
+  default_prompt: "Use $extract-pdf-wiki to convert a bookmarked PDF into source-traceable Markdown wiki pages."
