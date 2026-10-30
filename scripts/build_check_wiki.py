@@ -615,7 +615,7 @@ def build_download_archive() -> None:
     for path in sorted(KNOWLEDGE_DIR.glob("*")):
         if path.is_file():
             files.append((path, f"knowledge/check-expert/{path.name}"))
-    for path in [ROOT / "docs" / "check-expert-knowledge-schema.md", ROOT / "README-CHECK-WIKI.md"]:
+    for path in [ROOT / "docs" / "check-expert-knowledge-schema.md", ROOT / "README.md"]:
         if path.exists():
             files.append((path, path.relative_to(ROOT).as_posix()))
 
