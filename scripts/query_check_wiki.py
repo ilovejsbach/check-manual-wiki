@@ -40,6 +40,7 @@ def score_record(record: dict[str, Any], query: str) -> float:
                 str(record.get("case_topic") or ""),
                 *[str(item) for item in record.get("case_topics", [])],
                 *[str(item) for item in record.get("case_facets", [])],
+                *[str(item) for item in record.get("case_domains", [])],
             ]
         )
     )
@@ -112,6 +113,8 @@ def compact_result(record: dict[str, Any]) -> dict[str, Any]:
         "category": record.get("category"),
         "case_type": record.get("case_type"),
         "case_topics": record.get("case_topics", []),
+        "case_intent": record.get("case_intent"),
+        "case_domains": record.get("case_domains", []),
         "source": record.get("source"),
         "source_locator": record.get("source_locator"),
         "markdown_path": record.get("markdown_path"),

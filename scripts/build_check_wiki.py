@@ -84,6 +84,19 @@ def _derive_case_keys(records: list[dict[str, object]]) -> dict[str, dict[str, o
     return out
 
 
+def _add_case_classes(records: list[dict[str, object]]) -> None:
+    """사례에 문의 의도(case_intent)와 시장 영역(case_domains)을 붙인다. 규칙은 classify_cases 를 따른다."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import classify_cases
+
+    for record in records:
+        if record.get("type") != "support_case":
+            continue
+        result = classify_cases.classify(record)
+        record["case_intent"] = result["intent"]
+        record["case_domains"] = result["domains"]
+
+
 def _add_case_tr_links(records: list[dict[str, object]]) -> None:
     """Add key-only case links and candidate TR pages after normal page export."""
     by_id = {str(r["id"]): r for r in records}
@@ -1579,6 +1592,7 @@ def export_knowledge() -> dict[str, int]:
         record["related_ids"] = sorted(set(record["related_ids"] + detected_related_ids))
 
     _add_case_tr_links(records)
+    _add_case_classes(records)
 
     records_by_id = {str(record["id"]): record for record in records}
     # A manual's explicit related-screen list is directional in prose but useful in both
