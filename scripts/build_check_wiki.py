@@ -190,7 +190,7 @@ def yaml_string(value: str) -> str:
 
 def slug(value: str, fallback: str = "document") -> str:
     value = unicodedata.normalize("NFKC", value).strip()
-    value = re.sub(r"[<>:\"/\\|?*]", "-", value)
+    value = re.sub(r"[<>:\"/\\|?*#^]", "-", value)  # #, ^ 는 위키 링크에서 문서 내 위치 표시로 읽혀 주소가 잘린다
     value = re.sub(r"\s+", "-", value)
     value = re.sub(r"-+", "-", value).strip("-. ")
     return value[:120] or fallback

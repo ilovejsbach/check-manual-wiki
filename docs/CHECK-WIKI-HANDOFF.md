@@ -135,3 +135,12 @@ uv run python scripts/derive_case_links.py --knowledge knowledge/check-expert/kn
 - `scripts/classify_cases.py` → `ontology/case_classes.jsonl`: 사례 1,418건을 문의 의도(screen_finding·data_availability·data_error·env_setup·account_access·howto·empty·other)와 시장 영역(채권·주식·선물·옵션·외환·ETP·ELW·펀드·해외·경제지표)으로 규칙 분류한다. 근거는 제목과 '사용자가 겪은 상황' 절뿐이고 본문·원본 위치는 출력하지 않는다. 등급 auto_extracted, 검수 전.
 - 화면 찾기 의도 165건 중 화면/TR 엣지가 없는 사례는 18건이다. 이 18건은 정보요구(`check:need:*`) 승격 후보다.
 - 한계: 키워드 규칙이라 의도 `other` 457건, 영역 없음 635건이 남는다. 오분류는 검수 큐로 보완한다.
+
+## 온톨로지 탐색 페이지 (2026-11-02)
+
+- `content/check-expert/ontology-explorer/` (index.html, data.json)는 `scripts/build_ontology_explorer.py`가 만든다. 템플릿은 `scripts/templates/ontology_explorer.html`이다.
+- `build_check_wiki.py`는 `content/check-expert/` 안의 생성물이 아닌 파일을 지운다. 위키를 다시 만든 뒤에 탐색기 빌더를 실행해야 한다(순서: build_check_wiki → build_ontology_explorer → quartz build).
+- 사례는 본문·제목 없이 해시 8자, 의도, 영역, 위키 링크만 싣는다.
+- 로컬 확인: Quartz 사이트는 `/check-manual-wiki/` 접두어와 확장자 없는 주소를 가정한다. `python -m http.server`는 확장자 없는 주소를 못 찾아 404가 나므로 `.html` 보정과 접두어 처리를 하는 서버로 연다.
+- 사례 파일명에 `#`, `^`가 있으면 위키 링크에서 문서 내 위치 표시로 읽혀 주소가 잘린다. `slug()`가 이 문자를 `-`로 바꾼다.
+- 알려진 깨진 링크 약 260개는 본문 속 `[[DLB]]`, `[phone]` 같은 표기와 `운영-보강` 목차 링크로, 이번 변경 이전부터 있었다.
