@@ -31,8 +31,8 @@ screen_code: "6322"
 ### 화면 항목 2. FED DOT PLOT을 제공합니다.## 관련 화면
 - TR 6321 — WORLD/경제지표 > FED DOT PLOT
 
-## 원문 화면
+## 원문 근거
 
-![6322 - WORLD/경제지표 > FED WATCH(CME) 원문 PDF 815쪽](assets/manual-pages/page-0815.webp)
+[원문 PDF 815쪽 이미지 보기](assets/manual-pages/page-0815.webp)
 
-![6322 - WORLD/경제지표 > FED WATCH(CME) 원문 PDF 816쪽](assets/manual-pages/page-0816.webp)
+[원문 PDF 816쪽 이미지 보기](assets/manual-pages/page-0816.webp)

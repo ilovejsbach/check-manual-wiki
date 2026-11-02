@@ -95,7 +95,10 @@ function renderResults() {
 }
 
 function inlineMarkup(value) {
-  return escapeHtml(value).replace(/`([^`]+)`/g, "<code>$1</code>").replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+  return escapeHtml(value)
+    .replace(/`([^`]+)`/g, "<code>$1</code>")
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/\bTR\s+(\d{4})\b/g, '<button type="button" class="inline-related" data-screen-code="$1">TR $1</button>');
 }
 
 function documentBody(markdown, title) {
@@ -133,6 +136,8 @@ function renderMarkdown(markdown) {
   for (const line of lines) {
     if (/^\|.*\|$/.test(line)) { flushList(); tableLines.push(line); continue; }
     flushTable();
+    const link = line.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (link) { flushList(); html.push(`<p><a class="source-link" href="${escapeHtml(link[2])}" target="_blank" rel="noopener">${inlineMarkup(link[1])}</a></p>`); continue; }
     const image = line.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
     if (image) { flushList(); html.push(`<img class="source-image" src="${escapeHtml(image[2])}" alt="${escapeHtml(image[1])}" loading="lazy">`); continue; }
     if (/^<details class="source-page">$/.test(line)) { flushList(); html.push('<details class="source-page">'); continue; }
@@ -188,7 +193,15 @@ async function start() {
 $("#search").addEventListener("input", runSearch);
 $("#sort").addEventListener("change", runSearch);
 $("#results").addEventListener("click", (event) => { const button = event.target.closest("[data-id]"); if (button) openRecord(button.dataset.id); });
-$("#viewer").addEventListener("click", (event) => { const button = event.target.closest("[data-related]"); if (button) openRecord(button.dataset.related); });
+$("#viewer").addEventListener("click", (event) => {
+  const related = event.target.closest("[data-related]");
+  if (related) { openRecord(related.dataset.related); return; }
+  const screen = event.target.closest("[data-screen-code]");
+  if (screen) {
+    const record = state.records.find((item) => String(item.screen_code) === screen.dataset.screenCode);
+    if (record) openRecord(record.id);
+  }
+});
 document.querySelectorAll(".quick").forEach((button) => button.addEventListener("click", () => { state.filter = button.dataset.filter; document.querySelectorAll(".quick").forEach((item) => item.classList.toggle("active", item === button)); runSearch(); }));
 document.querySelectorAll(".example").forEach((button) => button.addEventListener("click", () => { $("#search").value = button.dataset.query; runSearch(); $("#search").focus(); }));
 document.addEventListener("keydown", (event) => { if (event.key === "/" && document.activeElement !== $("#search")) { event.preventDefault(); $("#search").focus(); } });

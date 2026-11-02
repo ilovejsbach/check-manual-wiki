@@ -40,6 +40,10 @@ def build(source: Path = SOURCE, output: Path = OUTPUT) -> dict[str, object]:
                 "review_status": by_id.get(str(related_id), {}).get("review_status"),
                 "relation_type": relationship_by_id.get(str(related_id), {}).get("type"),
                 "relation_label": relationship_by_id.get(str(related_id), {}).get("label"),
+                "relation_evidence": relationship_by_id.get(str(related_id), {}).get(
+                    "evidence_type"
+                ),
+                "relation_status": relationship_by_id.get(str(related_id), {}).get("review_status"),
             }
             for related_id in record.get("related_ids", [])
             if str(related_id) in by_id

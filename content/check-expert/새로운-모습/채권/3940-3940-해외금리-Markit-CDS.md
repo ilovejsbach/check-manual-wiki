@@ -56,8 +56,8 @@ Name을 더블클릭하면 하단의 추이와 차트에 시계열을 조회할 
 ## 관련 화면
 3941
 
-## 원문 화면
+## 원문 근거
 
-![3940 - 해외금리 > Markit CDS 원문 PDF 720쪽](assets/manual-pages/page-0720.webp)
+[원문 PDF 720쪽 이미지 보기](assets/manual-pages/page-0720.webp)
 
-![3940 - 해외금리 > Markit CDS 원문 PDF 721쪽](assets/manual-pages/page-0721.webp)
+[원문 PDF 721쪽 이미지 보기](assets/manual-pages/page-0721.webp)

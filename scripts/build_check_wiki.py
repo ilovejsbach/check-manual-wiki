@@ -33,8 +33,24 @@ UNMAPPED_ENRICHMENT_NAME = "manual-enrichment-unmapped.jsonl"
 MANUAL_ASSET_DIR = OUTPUT_DIR / "assets" / "manual-pages"
 MANUAL_ASSET_SCALE = 1.25
 SEMANTIC_STOPWORDS = {
-    "check", "expert", "공식", "매뉴얼", "기능", "사용", "설명", "화면", "조회",
-    "관련", "정보", "데이터", "메뉴", "방법", "기타", "새로운", "모습", "주요",
+    "check",
+    "expert",
+    "공식",
+    "매뉴얼",
+    "기능",
+    "사용",
+    "설명",
+    "화면",
+    "조회",
+    "관련",
+    "정보",
+    "데이터",
+    "메뉴",
+    "방법",
+    "기타",
+    "새로운",
+    "모습",
+    "주요",
 }
 CASE_TYPE_LABELS = {
     "faq": "질문과 답변",
@@ -219,7 +235,7 @@ def build_manual_page_index(page_count: int) -> None:
             end = min(page + 49, page_count)
             document += f"## {page}-{end}쪽\n\n"
         document += (
-            f"<details class=\"source-page\"><summary>원문 PDF {page}쪽 보기</summary>\n\n"
+            f'<details class="source-page"><summary>원문 PDF {page}쪽 보기</summary>\n\n'
             f"![CHECK Expert+ 원문 PDF {page}쪽](assets/manual-pages/page-{page:04d}.webp)\n\n"
             "</details>\n\n"
         )
@@ -244,7 +260,16 @@ def format_pdf_page_text(
 ) -> str:
     """Remove repeated page furniture and distinguish screen-item numbers from section numbers."""
     normalized_title = re.sub(r"\s*[-–—]\s*", "-", title).strip()
-    known_headings = {"화면개요", "화면 개요", "화면설명", "화면 설명", "참고사항", "참고 사항", "관련화면", "관련 화면"}
+    known_headings = {
+        "화면개요",
+        "화면 개요",
+        "화면설명",
+        "화면 설명",
+        "참고사항",
+        "참고 사항",
+        "관련화면",
+        "관련 화면",
+    }
     emitted_headings: set[str] = set()
     lines: list[str] = []
     for line in text.splitlines():
@@ -257,7 +282,12 @@ def format_pdf_page_text(
         if compact == category or re.fullmatch(rf"\d+\.\s*{re.escape(category)}", compact):
             continue
         if compact in known_headings or compact in rendered_headings:
-            canonical = compact.replace("화면개요", "화면 개요").replace("화면설명", "화면 설명").replace("참고사항", "참고 사항").replace("관련화면", "관련 화면")
+            canonical = (
+                compact.replace("화면개요", "화면 개요")
+                .replace("화면설명", "화면 설명")
+                .replace("참고사항", "참고 사항")
+                .replace("관련화면", "관련 화면")
+            )
             if canonical not in emitted_headings:
                 lines.append(f"## {canonical}")
                 emitted_headings.add(canonical)
@@ -324,7 +354,7 @@ def render_pdf_section(
         headings_by_page.setdefault(child.page, []).append(child.title)
 
     seen_headings: set[str] = set()
-    source_images: list[str] = []
+    source_links: list[str] = []
     for page in range(start_page, end_page):
         page_headings: set[str] = set()
         for heading in headings_by_page.get(page, []):
@@ -340,16 +370,13 @@ def render_pdf_section(
             rendered_headings=page_headings,
         )
         if text:
-            paragraphs = re.split(
-                r"\n(?=###\s|\d+[.)]\s|[가-힣A-Za-z][^\n]{0,45}$)", text
-            )
+            paragraphs = re.split(r"\n(?=###\s|\d+[.)]\s|[가-힣A-Za-z][^\n]{0,45}$)", text)
             body += "\n\n".join(part.strip() for part in paragraphs if part.strip())
-        source_images.append(
-            f"![{title} 원문 PDF {page + 1}쪽]"
-            f"(assets/manual-pages/page-{page + 1:04d}.webp)"
+        source_links.append(
+            f"[원문 PDF {page + 1}쪽 이미지 보기](assets/manual-pages/page-{page + 1:04d}.webp)"
         )
-    if source_images:
-        body += "\n\n## 원문 화면\n\n" + "\n\n".join(source_images) + "\n"
+    if source_links:
+        body += "\n\n## 원문 근거\n\n" + "\n\n".join(source_links) + "\n"
     return body
 
 
@@ -670,9 +697,7 @@ def build_support_case(
         if existing_match:
             existing = yaml.safe_load(existing_match.group(1)) or {}
             related_ids = list(
-                dict.fromkeys(
-                    [str(item) for item in existing.get("related_ids", [])] + related_ids
-                )
+                dict.fromkeys([str(item) for item in existing.get("related_ids", [])] + related_ids)
             )
             topics = list(
                 dict.fromkeys(
@@ -714,7 +739,9 @@ def build_support_case(
     document += f"{action}\n\n"
     document += "## 의미 분류\n\n"
     document += f"- 대표 유형: **{label}**\n"
-    document += f"- 함께 볼 유형: {', '.join(CASE_TYPE_LABELS.get(item, item) for item in facets)}\n"
+    document += (
+        f"- 함께 볼 유형: {', '.join(CASE_TYPE_LABELS.get(item, item) for item in facets)}\n"
+    )
     document += f"- 업무·주제: {topic_label}\n"
     document += f"- 공식 문서 연결: {'연결됨' if mapping_status == 'mapped' else '분류 대기'}\n"
     document += f"- 증거 위치: `{evidence_locator}`\n\n"
@@ -782,9 +809,7 @@ def build_manual_enrichment() -> int:
         )
         document += "## 수요 요약\n\n"
         document += f"- 관련 신호: {int(summary.get('signal_count', 0)):,}건\n"
-        document += (
-            f"- 중복 제거 그룹: {int(summary.get('duplicate_group_count', 0)):,}개\n"
-        )
+        document += f"- 중복 제거 그룹: {int(summary.get('duplicate_group_count', 0)):,}개\n"
         candidate_counts = summary.get("manual_candidate_counts", {})
         if candidate_counts:
             labels = {
@@ -801,9 +826,14 @@ def build_manual_enrichment() -> int:
             document += f"- 후보 유형: {rendered}\n"
         topics = summary.get("topic_counts", {})
         if topics:
-            document += "- 주요 주제: " + ", ".join(
-                f"{_single_line(topic)} ({count:,})" for topic, count in list(topics.items())[:8]
-            ) + "\n"
+            document += (
+                "- 주요 주제: "
+                + ", ".join(
+                    f"{_single_line(topic)} ({count:,})"
+                    for topic, count in list(topics.items())[:8]
+                )
+                + "\n"
+            )
 
         document += "\n## 문의·대응 사례\n\n"
         for index, example in enumerate(summary.get("examples", []), start=1):
@@ -876,7 +906,9 @@ def build_manual_enrichment() -> int:
         documents += 1
     index += "\n## 화면별 사례 묶음\n\n"
     if (SOURCE_DIR / UNMAPPED_ENRICHMENT_NAME).exists():
-        index += "- [[check-expert/문의-대응/분류-대기/index|공식 문서에 아직 연결되지 않은 사례]]\n\n"
+        index += (
+            "- [[check-expert/문의-대응/분류-대기/index|공식 문서에 아직 연결되지 않은 사례]]\n\n"
+        )
     index += "\n".join(links)
     write_text(OUTPUT_DIR / "문의-대응" / "index.md", index)
     return documents + 1
@@ -919,10 +951,14 @@ def build_unmapped_enrichment() -> int:
         document += "- 상태: `candidate` / `unmapped`\n"
         counts = summary.get("manual_candidate_counts", {})
         if counts:
-            document += "- 후보 유형: " + ", ".join(
-                f"{kind} {count:,}건"
-                for kind, count in sorted(counts.items(), key=lambda item: -item[1])
-            ) + "\n"
+            document += (
+                "- 후보 유형: "
+                + ", ".join(
+                    f"{kind} {count:,}건"
+                    for kind, count in sorted(counts.items(), key=lambda item: -item[1])
+                )
+                + "\n"
+            )
         document += "\n## 대표 사례\n\n"
         for index, example in enumerate(summary.get("examples", []), start=1):
             build_support_case(
@@ -1020,12 +1056,32 @@ def semantic_tokens(record: dict[str, object]) -> set[str]:
         " ".join(str(item) for item in record.get("case_topics", [])),
         " ".join(str(item) for item in record.get("case_facets", [])),
     ]
-    tokens = re.findall(r"[0-9A-Za-z가-힣]{2,}", unicodedata.normalize("NFKC", " ".join(values)).lower())
+    tokens = re.findall(
+        r"[0-9A-Za-z가-힣]{2,}", unicodedata.normalize("NFKC", " ".join(values)).lower()
+    )
     return {token for token in tokens if token not in SEMANTIC_STOPWORDS}
 
 
+def extract_related_screen_codes(body: str, own_code: str | None = None) -> list[str]:
+    codes = {
+        found
+        for found in re.findall(
+            r"(?im)(?:^\s*[-*]?\s*(?:TR\s*)?|화면\s*)(\d{4})\s*(?:[-–—:(]|번)",
+            body,
+        )
+        if found != own_code
+    }
+    return sorted(codes)
+
+
 def add_relationship(
-    record: dict[str, object], target_id: str, relation_type: str, label: str
+    record: dict[str, object],
+    target_id: str,
+    relation_type: str,
+    label: str,
+    *,
+    evidence_type: str = "generated",
+    review_status: str = "candidate",
 ) -> None:
     if target_id == record["id"]:
         return
@@ -1033,7 +1089,15 @@ def add_relationship(
     assert isinstance(relationships, list)
     if any(item.get("target_id") == target_id for item in relationships):
         return
-    relationships.append({"target_id": target_id, "type": relation_type, "label": label})
+    relationships.append(
+        {
+            "target_id": target_id,
+            "type": relation_type,
+            "label": label,
+            "evidence_type": evidence_type,
+            "review_status": review_status,
+        }
+    )
 
 
 def enrich_relationships(records: list[dict[str, object]]) -> None:
@@ -1046,13 +1110,24 @@ def enrich_relationships(records: list[dict[str, object]]) -> None:
                 relation_type, label = "case_context", "이 문의가 연결된 문서"
             elif str(target_id).startswith("check:support-case:"):
                 relation_type, label = "support_case", "관련 문의 대응 사례"
-            elif str(record["id"]).startswith("check:enrichment:") or str(
-                target_id
-            ).startswith("check:enrichment:"):
+            elif str(record["id"]).startswith("check:enrichment:") or str(target_id).startswith(
+                "check:enrichment:"
+            ):
                 relation_type, label = "case_collection", "문의 사례 묶음"
+            elif str(record.get("id", "")).startswith("check:screen:") and str(
+                target_id
+            ).startswith("check:screen:"):
+                relation_type, label = "related_screen", "관련 화면"
             else:
                 relation_type, label = "screen_reference", "본문에서 언급"
-            add_relationship(record, str(target_id), relation_type, label)
+            add_relationship(
+                record,
+                str(target_id),
+                relation_type,
+                label,
+                evidence_type="manual_or_curated_reference",
+                review_status="documented",
+            )
 
     manual_records = [
         record
@@ -1063,9 +1138,23 @@ def enrich_relationships(records: list[dict[str, object]]) -> None:
     manual_records.sort(key=lambda item: int(str(item["source_locator"]).split("-")[0]))
     for index, record in enumerate(manual_records):
         if index:
-            add_relationship(record, str(manual_records[index - 1]["id"]), "previous", "매뉴얼 이전 항목")
+            add_relationship(
+                record,
+                str(manual_records[index - 1]["id"]),
+                "previous",
+                "매뉴얼 이전 항목",
+                evidence_type="manual_sequence",
+                review_status="documented",
+            )
         if index + 1 < len(manual_records):
-            add_relationship(record, str(manual_records[index + 1]["id"]), "next", "매뉴얼 다음 항목")
+            add_relationship(
+                record,
+                str(manual_records[index + 1]["id"]),
+                "next",
+                "매뉴얼 다음 항목",
+                evidence_type="manual_sequence",
+                review_status="documented",
+            )
 
     token_map = {str(record["id"]): semantic_tokens(record) for record in records}
     document_frequency = Counter(token for tokens in token_map.values() for token in tokens)
@@ -1091,9 +1180,16 @@ def enrich_relationships(records: list[dict[str, object]]) -> None:
         for _, target_id in sorted(scores, reverse=True):
             if target_id in existing:
                 continue
-            add_relationship(record, target_id, "semantic", "같은 업무·용어")
+            add_relationship(
+                record,
+                target_id,
+                "semantic",
+                "같은 업무·용어 (검수 전)",
+                evidence_type="term_similarity",
+                review_status="candidate",
+            )
             added += 1
-            if added == 3:
+            if added == 6:
                 break
 
     for record in records:
@@ -1123,15 +1219,7 @@ def export_knowledge() -> dict[str, int]:
             metadata.get("knowledge_id")
             or f"check:doc:{path.relative_to(OUTPUT_DIR).with_suffix('').as_posix()}"
         )
-        related_codes = sorted(
-            {
-                found
-                for found in re.findall(
-                    r"(?im)(?:^\s*[-*]?\s*|화면\s*)(\d{4})\s*(?:[-–—:(]|번)", body
-                )
-                if found != code
-            }
-        )
+        related_codes = extract_related_screen_codes(body, code)
         metadata_related_ids = [str(item) for item in metadata.get("related_ids", [])]
         document_type = metadata.get("document_type")
         record = {
@@ -1176,6 +1264,16 @@ def export_knowledge() -> dict[str, int]:
         record["related_ids"] = sorted(set(record["related_ids"] + detected_related_ids))
 
     records_by_id = {str(record["id"]): record for record in records}
+    # A manual's explicit related-screen list is directional in prose but useful in both
+    # directions for navigation and graph search.
+    for record in records:
+        if record.get("type") != "screen":
+            continue
+        for target_id in list(record["related_ids"]):
+            target = records_by_id.get(str(target_id))
+            if target is not None and target.get("type") == "screen":
+                target["related_ids"] = sorted(set(target["related_ids"] + [record["id"]]))
+
     for record in records:
         if not str(record["id"]).startswith(("check:enrichment:", "check:support-case:")):
             continue
@@ -1191,9 +1289,7 @@ def export_knowledge() -> dict[str, int]:
             stream.write(json.dumps(record, ensure_ascii=False) + "\n")
 
     case_type_counts = Counter(
-        str(record.get("case_type"))
-        for record in records
-        if record.get("type") == "support_case"
+        str(record.get("case_type")) for record in records if record.get("type") == "support_case"
     )
     manifest = {
         "schema_version": "1.0",
@@ -1303,7 +1399,9 @@ def build_download_archive() -> None:
         if path.exists():
             files.append((path, path.relative_to(ROOT).as_posix()))
 
-    with zipfile.ZipFile(archive_path, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
+    with zipfile.ZipFile(
+        archive_path, "w", compression=zipfile.ZIP_DEFLATED, compresslevel=9
+    ) as archive:
         for path, archive_name in files:
             info = zipfile.ZipInfo(archive_name, date_time=(1980, 1, 1, 0, 0, 0))
             info.compress_type = zipfile.ZIP_DEFLATED

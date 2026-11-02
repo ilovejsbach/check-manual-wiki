@@ -64,8 +64,8 @@ screen_code: "3774"
 3913
 3926
 
-## 원문 화면
+## 원문 근거
 
-![3774 - 차트 > Yield Spread(추이) 원문 PDF 687쪽](assets/manual-pages/page-0687.webp)
+[원문 PDF 687쪽 이미지 보기](assets/manual-pages/page-0687.webp)
 
-![3774 - 차트 > Yield Spread(추이) 원문 PDF 688쪽](assets/manual-pages/page-0688.webp)
+[원문 PDF 688쪽 이미지 보기](assets/manual-pages/page-0688.webp)

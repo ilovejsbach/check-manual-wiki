@@ -33,6 +33,6 @@ screen_code: "4153"
 
 ### 화면 항목 2. 상하/좌우 스크롤을 이용하여 월물 이동을 하실 수 있습니다.
 
-## 원문 화면
+## 원문 근거
 
-![4153 - Basis-Spread 원문 PDF 213쪽](assets/manual-pages/page-0213.webp)
+[원문 PDF 213쪽 이미지 보기](assets/manual-pages/page-0213.webp)

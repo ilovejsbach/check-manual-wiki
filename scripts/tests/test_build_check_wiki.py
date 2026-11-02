@@ -8,6 +8,7 @@ import build_check_wiki
 from build_check_wiki import (
     clean_case_request,
     enrich_relationships,
+    extract_related_screen_codes,
     format_pdf_page_text,
     frontmatter,
     normalize_screen_title,
@@ -26,6 +27,11 @@ def test_screen_code_accepts_only_four_digit_token() -> None:
     assert screen_code("12345 데이터") is None
 
 
+def test_related_screen_codes_accept_tr_notation() -> None:
+    body = "## 관련 화면\n\n- TR 6350 — 아시아 지수종합\n- 6342 - 대륙별지수"
+    assert extract_related_screen_codes(body, "1002") == ["6342", "6350"]
+
+
 def test_screen_title_and_internal_numbering_have_distinct_hierarchy() -> None:
     assert normalize_screen_title("1002- 세계지수종합") == "1002 - 세계지수종합"
     rendered = format_pdf_page_text(
@@ -39,7 +45,7 @@ def test_screen_title_and_internal_numbering_have_distinct_hierarchy() -> None:
     assert "### 화면 항목 1. 대륙별 버튼 선택" in rendered
 
 
-def test_screen_page_uses_plain_markdown_for_source_image() -> None:
+def test_screen_page_links_source_image_without_repeating_it_inline() -> None:
     rendered = render_pdf_section(
         title="1002 - 세계지수종합",
         category="해외",
@@ -48,8 +54,9 @@ def test_screen_page_uses_plain_markdown_for_source_image() -> None:
         page_texts=["화면 개요\n세계 주요 지수를 제공합니다."],
         child_headings=[],
     )
-    assert "## 원문 화면" in rendered
-    assert "![1002 - 세계지수종합 원문 PDF 1쪽]" in rendered
+    assert "## 원문 근거" in rendered
+    assert "[원문 PDF 1쪽 이미지 보기]" in rendered
+    assert "![" not in rendered
     assert "<small>" not in rendered
     assert "<details" not in rendered
 
@@ -117,7 +124,9 @@ def test_manual_enrichment_builds_candidate_companion(tmp_path, monkeypatch) -> 
     assert "검수 전 후보" in text
     assert "sheet!row:1" in text
     cases = list((output / "문의-대응" / "procedure").glob("*.md"))
-    assert any('document_type: "support_case"' in item.read_text(encoding="utf-8") for item in cases)
+    assert any(
+        'document_type: "support_case"' in item.read_text(encoding="utf-8") for item in cases
+    )
 
 
 def test_unmapped_enrichment_preserves_topic_queue(tmp_path, monkeypatch) -> None:
@@ -147,7 +156,7 @@ def test_unmapped_enrichment_preserves_topic_queue(tmp_path, monkeypatch) -> Non
     assert build_check_wiki.build_unmapped_enrichment() == 3
     pages = list((output / "문의-대응" / "분류-대기").glob("*.md"))
     assert len(pages) == 2
-    assert any("mapping_status: \"unmapped\"" in page.read_text(encoding="utf-8") for page in pages)
+    assert any('mapping_status: "unmapped"' in page.read_text(encoding="utf-8") for page in pages)
 
 
 def test_typed_relationships_include_manual_sequence_and_semantic_links() -> None:

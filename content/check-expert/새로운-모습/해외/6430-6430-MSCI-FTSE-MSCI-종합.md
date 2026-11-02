@@ -69,8 +69,8 @@ MSCI에서는 USD 및 Local 통화 단위의 값을 제공하고, KRW는 CHECK �
 - TR 6432 — MSCI 지역/국가
 - TR 6433 — MSCI 섹터/업종
 
-## 원문 화면
+## 원문 근거
 
-![6430 - MSCI/FTSE>MSCI 종합 원문 PDF 799쪽](assets/manual-pages/page-0799.webp)
+[원문 PDF 799쪽 이미지 보기](assets/manual-pages/page-0799.webp)
 
-![6430 - MSCI/FTSE>MSCI 종합 원문 PDF 800쪽](assets/manual-pages/page-0800.webp)
+[원문 PDF 800쪽 이미지 보기](assets/manual-pages/page-0800.webp)

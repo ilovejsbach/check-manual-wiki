@@ -46,8 +46,8 @@ Winodws의 시작 아이콘과 유사하게 클릭시에는 다음과 같이 도
 
 ### 화면 항목 5. 즐겨찾기바 ~ 11 통합알리미의 기능은 메인프레임 클래식형의 설명을 참고하시기 바랍니다.
 
-## 원문 화면
+## 원문 근거
 
-![메인프레임 New형 원문 PDF 12쪽](assets/manual-pages/page-0012.webp)
+[원문 PDF 12쪽 이미지 보기](assets/manual-pages/page-0012.webp)
 
-![메인프레임 New형 원문 PDF 13쪽](assets/manual-pages/page-0013.webp)
+[원문 PDF 13쪽 이미지 보기](assets/manual-pages/page-0013.webp)

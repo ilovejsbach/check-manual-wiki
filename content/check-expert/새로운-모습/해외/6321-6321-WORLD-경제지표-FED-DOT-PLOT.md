@@ -36,8 +36,8 @@ PDF버튼을 클릭하면 FOMC 홈페이지에 회의 종료 후 게시된 PDF�
 
 ### 화면 항목 3. FED DOT PLOT이 조회됩니다.- TR 6322 — WORLD/경제지표 > FED WATCH(CME)
 
-## 원문 화면
+## 원문 근거
 
-![6321 - WORLD/경제지표 > FED DOT PLOT 원문 PDF 813쪽](assets/manual-pages/page-0813.webp)
+[원문 PDF 813쪽 이미지 보기](assets/manual-pages/page-0813.webp)
 
-![6321 - WORLD/경제지표 > FED DOT PLOT 원문 PDF 814쪽](assets/manual-pages/page-0814.webp)
+[원문 PDF 814쪽 이미지 보기](assets/manual-pages/page-0814.webp)

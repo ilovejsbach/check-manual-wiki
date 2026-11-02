@@ -47,8 +47,8 @@ screen_code: "3227"
 3228
 3884
 
-## 원문 화면
+## 원문 근거
 
-![3227 - 주요금리 > Matrix(KOFIA) 원문 PDF 606쪽](assets/manual-pages/page-0606.webp)
+[원문 PDF 606쪽 이미지 보기](assets/manual-pages/page-0606.webp)
 
-![3227 - 주요금리 > Matrix(KOFIA) 원문 PDF 607쪽](assets/manual-pages/page-0607.webp)
+[원문 PDF 607쪽 이미지 보기](assets/manual-pages/page-0607.webp)

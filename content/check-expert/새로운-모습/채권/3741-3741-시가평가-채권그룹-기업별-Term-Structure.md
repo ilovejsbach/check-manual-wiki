@@ -63,14 +63,14 @@ Ctrl + 클릭으로 10개까지 선택해서 복수 지표를 조회할 수 있�
 3773 차트 > Yield Spread
 3774 차트 > Yield Spread 추이
 
-## 원문 화면
+## 원문 근거
 
-![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 676쪽](assets/manual-pages/page-0676.webp)
+[원문 PDF 676쪽 이미지 보기](assets/manual-pages/page-0676.webp)
 
-![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 677쪽](assets/manual-pages/page-0677.webp)
+[원문 PDF 677쪽 이미지 보기](assets/manual-pages/page-0677.webp)
 
-![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 678쪽](assets/manual-pages/page-0678.webp)
+[원문 PDF 678쪽 이미지 보기](assets/manual-pages/page-0678.webp)
 
-![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 679쪽](assets/manual-pages/page-0679.webp)
+[원문 PDF 679쪽 이미지 보기](assets/manual-pages/page-0679.webp)
 
-![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 680쪽](assets/manual-pages/page-0680.webp)
+[원문 PDF 680쪽 이미지 보기](assets/manual-pages/page-0680.webp)

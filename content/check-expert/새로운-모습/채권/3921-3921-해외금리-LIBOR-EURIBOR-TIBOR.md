@@ -54,8 +54,8 @@ LIBOR 모든 통화의 2W, 4M, 5M, 7M, 8M, 9M, 10M, 11M 만기의 경우 2013.05
 ## 관련 화면
 3933
 
-## 원문 화면
+## 원문 근거
 
-![3921 - 해외금리 > LIBOR/EURIBOR/TIBOR 원문 PDF 714쪽](assets/manual-pages/page-0714.webp)
+[원문 PDF 714쪽 이미지 보기](assets/manual-pages/page-0714.webp)
 
-![3921 - 해외금리 > LIBOR/EURIBOR/TIBOR 원문 PDF 715쪽](assets/manual-pages/page-0715.webp)
+[원문 PDF 715쪽 이미지 보기](assets/manual-pages/page-0715.webp)
