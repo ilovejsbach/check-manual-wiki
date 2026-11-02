@@ -11,12 +11,10 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:4255"
 related_ids:
   - "check:screen:4255"
-  - "check:screen:3430"
 review_status: "candidate"
 signal_count: 1
 source_locator: "target:check:screen:4255"
 relationship_types:
-  "check:screen:3430": "mentions_title"
   "check:screen:4255": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 4255 - 종목사전공시
@@ -36,8 +34,8 @@ relationship_types:
 
 ### 후보 1
 
-- 고객 질문·증상: - 화면번호 : 3430 - 전화번호 : 010 4255 246 - 버전 : 신버전 - 문의내용 : 안녕하세요 다이와증권 박수연입니다. 금융채(은행채) AAA 등급 3년 4사 평균 금리를 매일 아침 조회하고 있습니다, 조회 시점에 하루 전 마감 기준 수익률 확인이 가능한걸로 알고있는데, 혹시 오늘 (3월 12일) 기준 수익률을 장 마감 이후 오후시간대 확인할 수 있는 방법이 있을지 해서 문의드립니다.
-- 당시 대응 기록: 통상 시가평가의 채권그룹정보 입수는 당일 17:40 ~ 18:00 사이에 이루어집니다. 시가평가 정보는 입수와 동시에 해당 화면에서 조회를 통해 정보 확인이 가능합니다. (조회 버튼 클릭, 새로 화면 열기) ※ [3976] 채권 실시간 등록정보 참조
+- 고객 질문·증상: 금융채 AAA 등급 3년 평균 금리를 매일 조회하는데, 장 마감 후 오후에 당일 기준 수익률을 볼 수 있는 방법을 문의했습니다.
+- 당시 대응 기록: 시가평가 채권그룹정보는 통상 당일 17:40부터 18:00 사이에 입수되며, 입수 즉시 해당 화면에서 조회 버튼 클릭이나 새로 화면 열기로 확인할 수 있습니다. 자세한 내용은 [3976] 채권 실시간 등록정보를 참조하도록 안내했습니다.
 - 후보 유형: procedure, faq
 - 증거 위치: `20260916!row:5308`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
@@ -52,5 +50,4 @@ relationship_types:
 
 ## 관련 화면
 
-- [[check-expert/새로운-모습/채권/3430-3430-시가평가-채권그룹-Matrix-종합|3430 - 시가평가 > 채권그룹 > Matrix 종합]] (mentions_title)
 - [[check-expert/새로운-모습/선물/4255-4255-종목사전공시|4255 - 종목사전공시]] (mentions_title)

@@ -11,20 +11,10 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:3067"
 related_ids:
   - "check:screen:3067"
-  - "check:screen:3045"
-  - "check:screen:3046"
-  - "check:screen:3047"
-  - "check:screen:3065"
-  - "check:screen:3066"
 review_status: "candidate"
 signal_count: 1
 source_locator: "target:check:screen:3067"
 relationship_types:
-  "check:screen:3045": "mentions_title"
-  "check:screen:3046": "mentions_title"
-  "check:screen:3047": "mentions_title"
-  "check:screen:3065": "mentions_title"
-  "check:screen:3066": "mentions_title"
   "check:screen:3067": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3067 - 단기자금 > CD/CP > CP 만기도래(예탁원)
@@ -44,8 +34,8 @@ relationship_types:
 
 ### 후보 1
 
-- 고객 질문·증상: - 화면번호 : 3062,3063,3064,3065,3066,3067,3069,3045,3046,3047,3048,3049,3077, - 전화번호 : 상담 창구 - 문의내용 : 긴급 내부작료 작성을 위한 화면 사용 트라이얼 요청.
-- 당시 대응 기록: 말씀하신 화면번호들은 전자단기사채, 기업어음 유상옵션 정보입니다. 25.11/24-11/28 트라이얼 권한 열어드렸으며, CHECK프로그램 재접속하시면 조회 가능합니다. 재접속한 후에도 해당 화면 조회가 안된다면 연락 부탁드립니다. (고객사 조소희 상담 창구)
+- 고객 질문·증상: 긴급하게 내부 자료를 작성해야 하므로 특정 화면들을 사용해 볼 수 있는 트라이얼 권한을 요청한 사례입니다.
+- 당시 대응 기록: 요청하신 화면들은 전자단기사채와 기업어음의 유상옵션 정보입니다. 특정 기간 동안 트라이얼 권한을 열어 두었으며 CHECK 프로그램에 재접속하면 조회됩니다. 재접속 후에도 조회되지 않으면 다시 연락하도록 안내했습니다.
 - 후보 유형: procedure, caution, faq
 - 증거 위치: `20260916!row:1120`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
@@ -60,9 +50,4 @@ relationship_types:
 
 ## 관련 화면
 
-- [[check-expert/새로운-모습/채권/3045-3045-단기자금-전단채-전자단기사채-발행정보|3045 - 단기자금 > 전단채 > 전자단기사채 발행정보]] (mentions_title)
-- [[check-expert/새로운-모습/채권/3046-3046-단기자금-전단채-전자단기사채-발행통계|3046 - 단기자금 > 전단채 > 전자단기사채 발행통계]] (mentions_title)
-- [[check-expert/새로운-모습/채권/3047-3047-단기자금-전단채-전자단기사채-만기도래|3047 - 단기자금 > 전단채 > 전자단기사채 만기도래]] (mentions_title)
-- [[check-expert/새로운-모습/채권/3065-3065-단기자금-CD-CP-발행정보(예탁원)|3065 - 단기자금 > CD/CP > 발행정보(예탁원)]] (mentions_title)
-- [[check-expert/새로운-모습/채권/3066-3066-단기자금-CD-CP-CP-발행통계(예탁원)|3066 - 단기자금 > CD/CP > CP 발행통계(예탁원)]] (mentions_title)
 - [[check-expert/새로운-모습/채권/3067-3067-단기자금-CD-CP-CP-만기도래(예탁원)|3067 - 단기자금 > CD/CP > CP 만기도래(예탁원)]] (mentions_title)

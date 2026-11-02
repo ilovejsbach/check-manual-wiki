@@ -11,14 +11,12 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:4616"
 related_ids:
   - "check:screen:4616"
-  - "check:screen:4034"
   - "check:screen:4171"
   - "check:screen:4571"
 review_status: "candidate"
 signal_count: 1
 source_locator: "target:check:screen:4616"
 relationship_types:
-  "check:screen:4034": "mentions_title"
   "check:screen:4171": "mentions_title"
   "check:screen:4571": "mentions_title"
   "check:screen:4616": "mentions_title"
@@ -40,8 +38,8 @@ relationship_types:
 
 ### 후보 1
 
-- 고객 질문·증상: - 화면번호 : 4616 - 전화번호 : 2010-4034 - 문의내용 : 안녕하세요 선물옵션 화면중에 주식처럼 시장에서 돌아간 협의대량매매를 볼 수 있는 화면이 있는지 알고 싶습니다.
-- 당시 대응 기록: 선물 4171 협의/EFP 선택(일별) 옵션 4571 협의대량 선택 부탁드립니다.
+- 고객 질문·증상: 선물옵션 화면 중 주식처럼 시장에서 체결된 협의대량매매를 볼 수 있는 화면이 있는지 문의했습니다.
+- 당시 대응 기록: 선물은 4171 화면에서 협의/EFP 선택(일별)을, 옵션은 4571 화면에서 협의대량 선택을 이용하면 됩니다.
 - 후보 유형: procedure, faq
 - 증거 위치: `20260916!row:6046`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
@@ -56,7 +54,6 @@ relationship_types:
 
 ## 관련 화면
 
-- [[check-expert/새로운-모습/옵션/4034-4034-상관계수|4034 - 상관계수]] (mentions_title)
 - [[check-expert/새로운-모습/선물/4171-4171-종목일별|4171 - 종목일별]] (mentions_title)
 - [[check-expert/새로운-모습/옵션/4571-4571-종목일별|4571 - 종목일별]] (mentions_title)
 - [[check-expert/새로운-모습/옵션/4616-4616-종합일별|4616 - 종합일별]] (mentions_title)

@@ -12,13 +12,11 @@ knowledge_id: "check:enrichment:screen:6431"
 related_ids:
   - "check:screen:6431"
   - "check:screen:6430"
-  - "check:screen:3774"
 review_status: "candidate"
 signal_count: 1
 source_locator: "target:check:screen:6431"
 relationship_types:
   "check:screen:6430": "mentions_tr"
-  "check:screen:3774": "mentions_title"
   "check:screen:6431": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 6431 - MSCI/FTSE>MSCI 비교
@@ -38,8 +36,8 @@ relationship_types:
 
 ### 후보 1
 
-- 고객 질문·증상: - 화면번호 : 6433 - 전화번호 : 3774-3710 - 버전 : 신버전 - 문의내용 : 해당 차트의 구분값 중 전주말, 전월말 등 기준의 의미 설명 및 MSCE 섹터별 mtd, qtd 등 확인할수 있는 화면이 있는지 문의 드립니다.
-- 당시 대응 기록: MSCI 지수의 경우 TR 6430 MSCI종합, 6431 MSCI 비교 화면에서 DM 및 EM 등을 구분하여 조회 가능하시며, 구분값의 경우 아래와 같은 패턴으로 설정되고 있음을 안내 드립니다. [기준일 : 2026/02/05] 전주말 : 2026/01/30 전월말 : 2026/01/30 전분기말 : 2026/12/31 전년말 : 2026/12/31 1개월 : 2026/01/05 1분기 : 2025/11/05 1년 : 2025/02/05 추가 문의사항 있으시면 언제든지 말씀 부탁 드립니다.
+- 고객 질문·증상: 차트 구분값 중 전주말, 전월말 등 기준의 의미와 MSCI 섹터별 MTD, QTD 등을 확인할 수 있는 화면이 있는지 문의했습니다.
+- 당시 대응 기록: MSCI 지수는 TR 6430 MSCI종합, 6431 MSCI 비교 화면에서 DM, EM 등을 구분해 조회할 수 있습니다. 구분값은 기준일로부터 전주말, 전월말, 전분기말, 전년말, 1개월, 1분기, 1년 전 시점 패턴으로 설정됩니다.
 - 후보 유형: procedure, faq
 - 증거 위치: `20260916!row:3631`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
@@ -55,5 +53,4 @@ relationship_types:
 ## 관련 화면
 
 - [[check-expert/새로운-모습/해외/6430-6430-MSCI-FTSE-MSCI-종합|6430 - MSCI/FTSE>MSCI 종합]] (mentions_tr)
-- [[check-expert/새로운-모습/채권/3774-3774-차트-Yield-Spread(추이)|3774 - 차트 > Yield Spread(추이)]] (mentions_title)
 - [[check-expert/새로운-모습/해외/6431-6431-MSCI-FTSE-MSCI-비교|6431 - MSCI/FTSE>MSCI 비교]] (mentions_title)

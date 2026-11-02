@@ -32,6 +32,7 @@ LEAK_RES = {
 SCREEN_RE = re.compile(r"(?<![\d.,/-])\d{4}(?![\d.,/-])")
 COPY_MIN = 40  # 메뉴 경로·API 경로·버튼 이름은 보존해야 하므로 30자 안팎의 겹침은 허용한다
 EMPTY_RESPONSE = "대응 내용이 기록되지 않았습니다."
+EMPTY_REQUEST = "문의 내용이 기록되지 않았습니다."
 WARN_ONLY = ("쉼표수치",)  # 시스템 제한값(예 10,000개)일 수 있어 실패가 아니라 경고로 둔다
 
 
@@ -73,7 +74,7 @@ def check(orig: dict, new: dict) -> list[str]:
         if longest_common(orig[key], new[key]) >= COPY_MIN:
             errs.append(f"복사 의심 {key}")
     lo, hi = {"request": (20, 220), "response": (20, 320)}["request"], {"request": (20, 220), "response": (20, 320)}["response"]
-    if not lo[0] <= len(new["request"]) <= lo[1]:
+    if new["request"] != EMPTY_REQUEST and not lo[0] <= len(new["request"]) <= lo[1]:
         errs.append(f"분량 request {len(new['request'])}")
     if new["response"] != EMPTY_RESPONSE and not hi[0] <= len(new["response"]) <= hi[1]:
         errs.append(f"분량 response {len(new['response'])}")

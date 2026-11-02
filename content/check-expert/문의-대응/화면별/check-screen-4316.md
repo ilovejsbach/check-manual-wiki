@@ -11,13 +11,11 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:4316"
 related_ids:
   - "check:screen:4316"
-  - "check:screen:4311"
   - "check:screen:4518"
 review_status: "candidate"
 signal_count: 2
 source_locator: "target:check:screen:4316"
 relationship_types:
-  "check:screen:4311": "mentions_title"
   "check:screen:4316": "mentions_title"
   "check:screen:4518": "mentions_title"
 ---
@@ -38,16 +36,16 @@ relationship_types:
 
 ### 후보 1
 
-- 고객 질문·증상: - 화면번호 : 4311 - 전화번호 : 상담 창구 - 문의내용 : DS증권 고객사 입니다. 개별주식선물의 베이시스의 과거추이를 확인하는 차트를 찾고 있습니다. 연락부탁드립니다.
-- 당시 대응 기록: 4316 화면에서 과거일자의 개별주식선물 베이시스 추이를 확인해 보실 수 있습니다. 다만 일중 데이터는 일정 기간에 대해서만 제공되고, DB 용량 제한 때문에 삭제되는 점 감안하시기 바랍니다.
+- 고객 질문·증상: 고객사 담당자가 개별주식선물 베이시스의 과거 추이를 확인할 차트를 찾는다며 문의했습니다.
+- 당시 대응 기록: 4316 화면에서 과거일자의 개별주식선물 베이시스 추이를 볼 수 있습니다. 다만 일중 데이터는 DB 용량 제한 때문에 일정 기간만 제공되고 이후 삭제됩니다.
 - 후보 유형: caution, faq
 - 증거 위치: `20260916!row:4518`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 2
 
-- 고객 질문·증상: - 화면번호 : 4316 - 전화번호 : 상담 창구 - 문의내용 : 개별주식선물 과거 베이시스 추이 조회를 문의 드렸는데 관련하여 추가문의를 혹시 유선상으로 드릴 수있을까요? 핸드폰으로 연락 주시면 감사하겠습니다.
-- 당시 대응 기록: 유선으로 안내해 드렸습니다.
+- 고객 질문·증상: 개별주식선물의 과거 베이시스 추이 조회에 대해 추가 문의가 있어 유선 연락을 요청했습니다.
+- 당시 대응 기록: 추가 문의 내용은 고객이 요청한 대로 전화를 통해 직접 설명해 드렸으며, 별도 화면이나 함수 안내는 기록되어 있지 않습니다.
 - 후보 유형: procedure, faq
 - 증거 위치: `20260916!row:4521`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
@@ -62,6 +60,5 @@ relationship_types:
 
 ## 관련 화면
 
-- [[check-expert/새로운-모습/선물/4311-4311-일중|4311 - 일중]] (mentions_title)
 - [[check-expert/새로운-모습/선물/4316-4316-일중차트|4316 - 일중차트]] (mentions_title)
 - [[check-expert/새로운-모습/옵션/4518-4518-순위시세표|4518 - 순위시세표]] (mentions_title)

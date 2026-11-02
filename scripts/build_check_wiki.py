@@ -92,7 +92,8 @@ def _add_case_classes(records: list[dict[str, object]]) -> None:
     for record in records:
         if record.get("type") != "support_case":
             continue
-        result = classify_cases.classify(record)
+        stored = _case_summaries().get(str(record["id"]))
+        result = {"intent": stored["intent"], "domains": stored["domains"]} if stored else classify_cases.classify(record)
         record["case_intent"] = result["intent"]
         record["case_domains"] = result["domains"]
 
@@ -780,6 +781,37 @@ def _single_line(value: object) -> str:
     return re.sub(r"\s+", " ", str(value or "")).strip()
 
 
+_CASE_SUMMARIES: dict[str, dict[str, object]] | None = None
+
+
+def _case_summaries() -> dict[str, dict[str, object]]:
+    """sources/check-expert/case-summaries.jsonl: 사례별 핵심 요구·응답 재구성본(+원문 기준 의도·영역)."""
+    global _CASE_SUMMARIES
+    if _CASE_SUMMARIES is None:
+        path = SOURCE_DIR / "case-summaries.jsonl"
+        rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line] if path.exists() else []
+        _CASE_SUMMARIES = {str(row["id"]): row for row in rows}
+    return _CASE_SUMMARIES
+
+
+def _case_summary(example: dict[str, object]) -> dict[str, object] | None:
+    candidate_id = _single_line(example.get("candidate_id"))
+    if not candidate_id:
+        return None
+    case_hash = hashlib.sha256(candidate_id.encode("utf-8")).hexdigest()[:16]
+    return _case_summaries().get(f"check:support-case:{case_hash}")
+
+
+def _case_text(example: dict[str, object], key: str) -> str:
+    """사례 본문 한 부분. 재구성본이 있으면 그것을, 없으면 인사말·토큰을 정리한 원문을 쓴다."""
+    summary = _case_summary(example)
+    if summary is not None:
+        return str(summary["request" if key == "request_text" else "response"])
+    if key == "request_text":
+        return _neutralize(clean_case_request(example.get("request_text")))
+    return _neutralize(_single_line(example.get("action_text")))
+
+
 def _neutralize(value: str) -> str:
     """사례 본문에서 인사말·맺음 문장을 지우고 마스킹 토큰([IDENTIFIER] 등)을 일반어로 바꾼다. 규칙은 sanitize_cases."""
     sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -825,8 +857,8 @@ def build_support_case(
     related_ids = list(dict.fromkeys(canonical_knowledge_id(item) for item in related_ids))
     case_type = primary_case_type(example)
     label = CASE_TYPE_LABELS[case_type]
-    request = _neutralize(clean_case_request(example.get("request_text"))) or "문의 내용 미기재"
-    action = _neutralize(_single_line(example.get("action_text"))) or "대응 내용 미기재"
+    request = _case_text(example, "request_text") or "문의 내용 미기재"
+    action = _case_text(example, "action_text") or "대응 내용 미기재"
     candidate_id = _single_line(example.get("candidate_id"))
     evidence_locator = _single_line(example.get("evidence_locator"))
     stable_seed = candidate_id or f"{evidence_locator}|{request}|{action}"
@@ -1016,11 +1048,11 @@ def build_manual_enrichment() -> int:
             case_type = primary_case_type(example)
             case_links[case_type].append(
                 f"- [[check-expert/{case_relative.with_suffix('').as_posix()}|"
-                f"{_neutralize(_single_line(example.get('request_text')))[:100]}]]"
+                f"{_case_text(example, 'request_text')[:100]}]]"
             )
             documents += 1
-            request = _neutralize(_single_line(example.get("request_text"))) or "문의 내용 미기재"
-            action = _neutralize(_single_line(example.get("action_text"))) or "대응 내용 미기재"
+            request = _case_text(example, "request_text") or "문의 내용 미기재"
+            action = _case_text(example, "action_text") or "대응 내용 미기재"
             document += f"### 후보 {index}\n\n"
             document += f"- 고객 질문·증상: {request}\n"
             document += f"- 당시 대응 기록: {action}\n"
@@ -1140,10 +1172,10 @@ def build_unmapped_enrichment() -> int:
             documents += 1
             document += f"### 후보 {index}\n\n"
             document += (
-                f"- 고객 질문·증상: {_neutralize(_single_line(example.get('request_text'))) or '미기재'}\n"
+                f"- 고객 질문·증상: {_case_text(example, 'request_text') or '미기재'}\n"
             )
             document += (
-                f"- 당시 대응 기록: {_neutralize(_single_line(example.get('action_text'))) or '미기재'}\n"
+                f"- 당시 대응 기록: {_case_text(example, 'action_text') or '미기재'}\n"
             )
             document += f"- 증거 위치: `{_single_line(example.get('evidence_locator'))}`\n"
             document += "- 검토 과제: 연결할 기존 문서 또는 신규 문서 필요 여부 결정\n\n"

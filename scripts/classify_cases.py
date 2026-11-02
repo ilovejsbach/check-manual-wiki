@@ -34,7 +34,7 @@ INTENT_RULES: list[tuple[str, re.Pattern]] = [
     ("data_availability", re.compile(r"제공|확인\s*(가능|할\s*수)|가능한가|가능할까|있나요|있을까요|입수|언제|추가\s*(요청|가능)|지원\s*(하|되)|항목|데이터")),
     ("howto", re.compile(r"방법|어떻게|사용법|설정|하려면|하는\s*법|절차|문의\s*드립니다|문의드립니다")),
 ]
-EMPTY = re.compile(r"문의\s*내용\s*미기재")
+EMPTY = re.compile(r"문의\s*내용\s*(?:미기재|이\s*기록되지\s*않았습니다)")
 DOMAIN_RULES: dict[str, re.Pattern] = {
     "채권": re.compile(r"채권|국채|회사채|CB\b|전환가액|전환사채|금리|발행정보|당발|신용등급|BIS|KTB|스프레드", re.I),
     "주식": re.compile(r"주식|종목|코스피|코스닥|KOSPI|KOSDAQ|NXT|넥스트레이드|상장|배당|증자|감자|시가총액|호가|체결|거래량"),
@@ -77,7 +77,7 @@ def compute(records: list[dict], as_of: str) -> list[dict]:
     for r in records:
         if r.get("type") != "support_case":
             continue
-        c = classify(r)
+        c = {"case_id": r["id"], "intent": r["case_intent"], "intent_rule": "stored", "domains": r["case_domains"]} if r.get("case_intent") else classify(r)
         c.update({"grade": "auto_extracted", "review_status": "candidate", "as_of": as_of})
         out.append(c)
     return sorted(out, key=lambda c: c["case_id"])
