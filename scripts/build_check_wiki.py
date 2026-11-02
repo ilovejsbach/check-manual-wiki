@@ -36,6 +36,14 @@ SEMANTIC_STOPWORDS = {
     "check", "expert", "공식", "매뉴얼", "기능", "사용", "설명", "화면", "조회",
     "관련", "정보", "데이터", "메뉴", "방법", "기타", "새로운", "모습", "주요",
 }
+CASE_TYPE_LABELS = {
+    "faq": "질문과 답변",
+    "procedure": "사용 절차",
+    "troubleshooting": "오류 해결",
+    "caution": "주의사항",
+    "tip": "활용 팁",
+}
+CASE_TYPE_PRIORITY = ("troubleshooting", "procedure", "caution", "tip", "faq")
 
 
 @dataclass
@@ -168,14 +176,23 @@ def clean_pdf_text(text: str, page_number: int) -> str:
 def render_manual_page_assets(pdf_path: Path) -> int:
     """Render every source page once so screenshots, diagrams and tables are never discarded."""
     MANUAL_ASSET_DIR.mkdir(parents=True, exist_ok=True)
+    source_digest = hashlib.sha256(pdf_path.read_bytes()).hexdigest()
+    digest_path = MANUAL_ASSET_DIR / ".source-sha256"
+    if digest_path.exists() and digest_path.read_text(encoding="ascii").strip() != source_digest:
+        for asset in MANUAL_ASSET_DIR.glob("page-*.webp"):
+            asset.unlink()
     rendered = 0
     with pymupdf.open(pdf_path) as document:
         matrix = pymupdf.Matrix(MANUAL_ASSET_SCALE, MANUAL_ASSET_SCALE)
         for index, page in enumerate(document):
             target = MANUAL_ASSET_DIR / f"page-{index + 1:04d}.webp"
+            if target.exists():
+                rendered += 1
+                continue
             pixmap = page.get_pixmap(matrix=matrix, alpha=False, annots=True)
             pixmap.pil_save(target, format="WEBP", quality=68, method=6)
             rendered += 1
+    digest_path.write_text(source_digest + "\n", encoding="ascii")
     return rendered
 
 
@@ -542,6 +559,120 @@ def _single_line(value: object) -> str:
     return re.sub(r"\s+", " ", str(value or "")).strip()
 
 
+def clean_case_request(value: object) -> str:
+    text = _single_line(value)
+    inquiry = re.search(r"(?:^|\s)-?\s*문의\s*내용\s*:\s*(.+)$", text, re.IGNORECASE)
+    if inquiry:
+        return inquiry.group(1).strip()
+    return text
+
+
+def primary_case_type(example: dict[str, object]) -> str:
+    facets = [str(item) for item in example.get("manual_candidates", [])]
+    request = clean_case_request(example.get("request_text"))
+    action = _single_line(example.get("action_text"))
+    combined = f"{request} {action}"
+    if "troubleshooting" in facets and re.search(
+        r"오류|에러|안\s*됨|않|실패|멈춤|비활성|재설치|권한|장애", combined
+    ):
+        return "troubleshooting"
+    if "procedure" in facets and re.search(
+        r"방법|어떻게|조회|설정|설치|등록|변경|입력|사용|안내", combined
+    ):
+        return "procedure"
+    for case_type in CASE_TYPE_PRIORITY:
+        if case_type in facets:
+            return case_type
+    return "faq"
+
+
+def build_support_case(
+    *,
+    example: dict[str, object],
+    topic: str,
+    related_ids: list[str],
+    mapping_status: str,
+) -> tuple[Path, str]:
+    case_type = primary_case_type(example)
+    label = CASE_TYPE_LABELS[case_type]
+    request = clean_case_request(example.get("request_text")) or "문의 내용 미기재"
+    action = _single_line(example.get("action_text")) or "대응 내용 미기재"
+    candidate_id = _single_line(example.get("candidate_id"))
+    evidence_locator = _single_line(example.get("evidence_locator"))
+    stable_seed = candidate_id or f"{evidence_locator}|{request}|{action}"
+    case_hash = hashlib.sha256(stable_seed.encode("utf-8")).hexdigest()[:16]
+    knowledge_id = f"check:support-case:{case_hash}"
+    title_text = request if len(request) <= 72 else request[:69].rstrip() + "…"
+    title = f"{label} — {title_text}"
+    relative = Path("문의-대응") / case_type / f"{case_hash}-{slug(title_text)}.md"
+    facets = [str(item) for item in example.get("manual_candidates", [])]
+    target_path = OUTPUT_DIR / relative
+    topics = [topic]
+    if target_path.exists():
+        existing_raw = target_path.read_text(encoding="utf-8")
+        existing_match = re.match(r"^---\n(.*?)\n---\n?", existing_raw, re.DOTALL)
+        if existing_match:
+            existing = yaml.safe_load(existing_match.group(1)) or {}
+            related_ids = list(
+                dict.fromkeys(
+                    [str(item) for item in existing.get("related_ids", [])] + related_ids
+                )
+            )
+            topics = list(
+                dict.fromkeys(
+                    [str(item) for item in existing.get("case_topics", [])]
+                    + [str(existing.get("case_topic") or ""), topic]
+                )
+            )
+            topics = [item for item in topics if item]
+            if existing.get("mapping_status") == "mapped":
+                mapping_status = "mapped"
+    topic_label = ", ".join(topics)
+    document = frontmatter(
+        title=title,
+        description=f"{topic_label} 관련 비식별 문의와 당시 대응 기록을 분리한 {label} 검수 후보.",
+        tags=["CHECK Expert", "문의 대응", label, "검수 필요", *topics[:5]],
+        source=ENRICHMENT_NAME if mapping_status == "mapped" else UNMAPPED_ENRICHMENT_NAME,
+        extra={
+            "knowledge_id": knowledge_id,
+            "document_type": "support_case",
+            "case_type": case_type,
+            "case_facets": facets,
+            "case_topic": topics[0],
+            "case_topics": topics,
+            "related_ids": related_ids,
+            "review_status": "candidate",
+            "mapping_status": mapping_status,
+            "source_locator": evidence_locator,
+            "candidate_id": candidate_id or case_hash,
+        },
+    )
+    document += f"# {title}\n\n"
+    document += (
+        "> 비식별 문의 기록에서 추출한 검수 전 사례입니다. 당시 대응이 현재 제품의 공식 해결책임을 "
+        "의미하지 않으며, 공식 매뉴얼과 재현 시험으로 확인해야 합니다.\n\n"
+    )
+    document += "## 사용자가 겪은 상황\n\n"
+    document += f"{request}\n\n"
+    document += "## 당시 대응\n\n"
+    document += f"{action}\n\n"
+    document += "## 의미 분류\n\n"
+    document += f"- 대표 유형: **{label}**\n"
+    document += f"- 함께 볼 유형: {', '.join(CASE_TYPE_LABELS.get(item, item) for item in facets)}\n"
+    document += f"- 업무·주제: {topic_label}\n"
+    document += f"- 공식 문서 연결: {'연결됨' if mapping_status == 'mapped' else '분류 대기'}\n"
+    document += f"- 증거 위치: `{evidence_locator}`\n\n"
+    document += "## 검증할 사항\n\n"
+    document += (
+        "- [ ] 현재 버전에서도 같은 상황이 재현되는가\n"
+        "- [ ] 당시 대응이 공식 매뉴얼의 절차와 일치하는가\n"
+        "- [ ] 원인과 해결 조치를 구분해 설명할 수 있는가\n"
+        "- [ ] 고객·직원·기관 식별정보가 남아 있지 않은가\n"
+    )
+    write_text(target_path, document)
+    return relative, knowledge_id
+
+
 def build_manual_enrichment() -> int:
     """Create reviewable companion pages from privacy-screened customer signals."""
     source = SOURCE_DIR / ENRICHMENT_NAME
@@ -564,6 +695,7 @@ def build_manual_enrichment() -> int:
         json.loads(line) for line in source.read_text(encoding="utf-8").splitlines() if line
     ]
     links: list[str] = []
+    case_links: dict[str, list[str]] = {key: [] for key in CASE_TYPE_LABELS}
     documents = 0
     for summary in summaries:
         target_id = str(summary.get("target_knowledge_id") or "")
@@ -571,12 +703,12 @@ def build_manual_enrichment() -> int:
         if not target:
             continue
         target_title = str(target["title"])
-        relative = Path("운영-보강") / f"{slug(target_id.replace(':', '-'))}.md"
+        relative = Path("문의-대응") / "화면별" / f"{slug(target_id.replace(':', '-'))}.md"
         knowledge_id = f"check:enrichment:{target_id.removeprefix('check:')}"
         document = frontmatter(
-            title=f"실사용 보강 — {target_title}",
-            description=f"{target_title} 관련 비식별 고객 문의와 운영 사례의 검수 전 보강 후보.",
-            tags=["CHECK Expert", "실사용 보강", "검수 필요", target_title],
+            title=f"문의 대응 사례 묶음 — {target_title}",
+            description=f"{target_title} 관련 비식별 문의를 유형별 사례로 연결한 검수 묶음.",
+            tags=["CHECK Expert", "문의 대응", "사례 묶음", "검수 필요", target_title],
             source=ENRICHMENT_NAME,
             extra={
                 "knowledge_id": knowledge_id,
@@ -586,7 +718,7 @@ def build_manual_enrichment() -> int:
                 "source_locator": f"target:{target_id}",
             },
         )
-        document += f"# 실사용 보강 — {target_title}\n\n"
+        document += f"# 문의 대응 사례 묶음 — {target_title}\n\n"
         document += (
             f"> 공식 문서: [[{target['path']}|{target_title}]]  \n"
             "> 아래 내용은 비식별 고객 문의·운영 기록에서 추출한 **검수 전 후보**입니다. "
@@ -619,6 +751,18 @@ def build_manual_enrichment() -> int:
 
         document += "\n## 문의·대응 사례\n\n"
         for index, example in enumerate(summary.get("examples", []), start=1):
+            case_relative, _ = build_support_case(
+                example=example,
+                topic=target_title,
+                related_ids=[target_id, knowledge_id],
+                mapping_status="mapped",
+            )
+            case_type = primary_case_type(example)
+            case_links[case_type].append(
+                f"- [[check-expert/{case_relative.with_suffix('').as_posix()}|"
+                f"{_single_line(example.get('request_text'))[:100]}]]"
+            )
+            documents += 1
             request = _single_line(example.get("request_text")) or "문의 내용 미기재"
             action = _single_line(example.get("action_text")) or "대응 내용 미기재"
             document += f"### 후보 {index}\n\n"
@@ -643,21 +787,42 @@ def build_manual_enrichment() -> int:
         documents += 1
 
     index = frontmatter(
-        title="실사용 보강 후보",
-        description="비식별 고객 문의와 운영 기록을 공식 매뉴얼 문서에 연결한 검수 대기 색인.",
-        tags=["CHECK Expert", "실사용 보강", "검수 필요"],
+        title="문의 대응 지식",
+        description="비식별 문의를 질문과 답변·사용 절차·오류 해결·주의사항·활용 팁으로 탐색하는 검수 대기 색인.",
+        tags=["CHECK Expert", "문의 대응", "검수 필요"],
         source=ENRICHMENT_NAME,
         extra={"knowledge_id": "check:enrichment:index", "review_status": "candidate"},
     )
-    index += "# 실사용 보강 후보\n\n"
+    index += "# 문의 대응 지식\n\n"
     index += (
-        "고객 문의와 운영 기록에서 발견한 FAQ·절차·문제 해결 후보입니다. "
-        "모든 항목은 공식 매뉴얼과 실제 동작 검증 전까지 `candidate` 상태입니다.\n\n"
+        "문의 사례를 화면별 한 묶음으로만 보지 않고 질문과 답변·사용 절차·오류 해결·주의사항·활용 팁으로 "
+        "분리했습니다. 모든 항목은 공식 매뉴얼과 실제 동작 검증 전까지 `candidate` 상태입니다.\n\n"
     )
+    index += "## 문의 유형으로 찾기\n\n"
+    for case_type, label in CASE_TYPE_LABELS.items():
+        index += f"- [[check-expert/문의-대응/{case_type}/index|{label}]] ({len(case_links[case_type]):,}건)\n"
+        type_index = frontmatter(
+            title=f"문의 대응 — {label}",
+            description=f"비식별 문의 대응 사례 중 {label} 유형의 검수 후보 색인.",
+            tags=["CHECK Expert", "문의 대응", label, "검수 필요"],
+            source=ENRICHMENT_NAME,
+            extra={
+                "knowledge_id": f"check:support-case:index:{case_type}",
+                "document_type": "support_case_index",
+                "case_type": case_type,
+                "review_status": "candidate",
+            },
+        )
+        type_index += f"# 문의 대응 — {label}\n\n"
+        type_index += "공식 문서와 제품 동작 검증 전의 대표 사례입니다.\n\n"
+        type_index += "\n".join(case_links[case_type])
+        write_text(OUTPUT_DIR / "문의-대응" / case_type / "index.md", type_index)
+        documents += 1
+    index += "\n## 화면별 사례 묶음\n\n"
     if (SOURCE_DIR / UNMAPPED_ENRICHMENT_NAME).exists():
-        index += "- [[check-expert/운영-보강/미매핑/index|자동 연결되지 않은 주제별 후보]]\n\n"
+        index += "- [[check-expert/문의-대응/분류-대기/index|공식 문서에 아직 연결되지 않은 사례]]\n\n"
     index += "\n".join(links)
-    write_text(OUTPUT_DIR / "운영-보강" / "index.md", index)
+    write_text(OUTPUT_DIR / "문의-대응" / "index.md", index)
     return documents + 1
 
 
@@ -674,21 +839,22 @@ def build_unmapped_enrichment() -> int:
     for summary in summaries:
         topic = _single_line(summary.get("topic")) or "미분류"
         topic_hash = hashlib.sha256(topic.encode("utf-8")).hexdigest()[:12]
-        relative = Path("운영-보강") / "미매핑" / f"{topic_hash}-{slug(topic)}.md"
+        collection_id = f"check:enrichment:unmapped:{topic_hash}"
+        relative = Path("문의-대응") / "분류-대기" / f"{topic_hash}-{slug(topic)}.md"
         document = frontmatter(
-            title=f"미매핑 보강 후보 — {topic}",
-            description=f"기존 화면·기능 문서에 자동 연결되지 않은 {topic} 관련 검수 후보.",
-            tags=["CHECK Expert", "실사용 보강", "미매핑", "검수 필요", topic],
+            title=f"공식 문서 연결 대기 — {topic}",
+            description=f"기존 화면·기능 문서에 아직 연결되지 않은 {topic} 관련 문의 사례 묶음.",
+            tags=["CHECK Expert", "문의 대응", "분류 대기", "검수 필요", topic],
             source=UNMAPPED_ENRICHMENT_NAME,
             extra={
-                "knowledge_id": f"check:enrichment:unmapped:{topic_hash}",
+                "knowledge_id": collection_id,
                 "review_status": "candidate",
                 "mapping_status": "unmapped",
                 "signal_count": int(summary.get("signal_count", 0)),
                 "source_locator": f"topic:{topic}",
             },
         )
-        document += f"# 미매핑 보강 후보 — {topic}\n\n"
+        document += f"# 공식 문서 연결 대기 — {topic}\n\n"
         document += (
             "> 기존 위키 화면·기능에 자동 연결되지 않은 비식별 신호입니다. "
             "삭제하거나 임의 연결하지 않고 사람 검수 대기 상태로 보존합니다.\n\n"
@@ -703,6 +869,13 @@ def build_unmapped_enrichment() -> int:
             ) + "\n"
         document += "\n## 대표 사례\n\n"
         for index, example in enumerate(summary.get("examples", []), start=1):
+            build_support_case(
+                example=example,
+                topic=topic,
+                related_ids=[collection_id],
+                mapping_status="unmapped",
+            )
+            documents += 1
             document += f"### 후보 {index}\n\n"
             document += (
                 f"- 고객 질문·증상: {_single_line(example.get('request_text')) or '미기재'}\n"
@@ -727,9 +900,9 @@ def build_unmapped_enrichment() -> int:
         documents += 1
 
     index = frontmatter(
-        title="자동 연결되지 않은 보강 후보",
-        description="화면·기능 문서에 자동 연결되지 않은 비식별 신호의 주제별 검수 대기열.",
-        tags=["CHECK Expert", "실사용 보강", "미매핑", "검수 필요"],
+        title="공식 문서 연결 대기",
+        description="화면·기능 문서에 아직 연결되지 않은 비식별 문의 사례의 주제별 검수 대기열.",
+        tags=["CHECK Expert", "문의 대응", "분류 대기", "검수 필요"],
         source=UNMAPPED_ENRICHMENT_NAME,
         extra={
             "knowledge_id": "check:enrichment:unmapped:index",
@@ -737,14 +910,49 @@ def build_unmapped_enrichment() -> int:
             "mapping_status": "unmapped",
         },
     )
-    index += "# 자동 연결되지 않은 보강 후보\n\n"
+    index += "# 공식 문서 연결 대기\n\n"
     index += (
         "자동 매핑의 불확실성을 숨기지 않고 주제별 검수 대기열로 보존합니다. "
         "각 문서는 기존 문서 연결 또는 신규 공식 문서 작성 여부를 결정하기 위한 입력입니다.\n\n"
     )
     index += "\n".join(links)
-    write_text(OUTPUT_DIR / "운영-보강" / "미매핑" / "index.md", index)
+    write_text(OUTPUT_DIR / "문의-대응" / "분류-대기" / "index.md", index)
     return documents + 1
+
+
+def rebuild_support_case_indexes() -> None:
+    links: dict[str, list[str]] = {key: [] for key in CASE_TYPE_LABELS}
+    for path in (OUTPUT_DIR / "문의-대응").rglob("*.md"):
+        raw = path.read_text(encoding="utf-8")
+        match = re.match(r"^---\n(.*?)\n---\n?", raw, re.DOTALL)
+        if not match:
+            continue
+        metadata = yaml.safe_load(match.group(1)) or {}
+        if metadata.get("document_type") != "support_case":
+            continue
+        case_type = str(metadata.get("case_type") or "faq")
+        relative = path.relative_to(ROOT / "content").with_suffix("").as_posix()
+        links.setdefault(case_type, []).append(
+            f"- [[{relative}|{metadata.get('title', path.stem)}]]"
+        )
+    for case_type, label in CASE_TYPE_LABELS.items():
+        document = frontmatter(
+            title=f"문의 대응 — {label}",
+            description=f"비식별 문의 대응 사례 중 {label} 유형의 검수 후보 색인.",
+            tags=["CHECK Expert", "문의 대응", label, "검수 필요"],
+            source=f"{ENRICHMENT_NAME}; {UNMAPPED_ENRICHMENT_NAME}",
+            extra={
+                "knowledge_id": f"check:support-case:index:{case_type}",
+                "document_type": "support_case_index",
+                "case_type": case_type,
+                "review_status": "candidate",
+                "signal_count": len(links.get(case_type, [])),
+            },
+        )
+        document += f"# 문의 대응 — {label}\n\n"
+        document += "공식 문서와 제품 동작 검증 전의 대표 사례입니다.\n\n"
+        document += "\n".join(sorted(links.get(case_type, [])))
+        write_text(OUTPUT_DIR / "문의-대응" / case_type / "index.md", document)
 
 
 def semantic_tokens(record: dict[str, object]) -> set[str]:
@@ -752,6 +960,9 @@ def semantic_tokens(record: dict[str, object]) -> set[str]:
         str(record.get("title") or ""),
         str(record.get("category") or ""),
         " ".join(str(item) for item in record.get("aliases", [])),
+        str(record.get("case_topic") or ""),
+        " ".join(str(item) for item in record.get("case_topics", [])),
+        " ".join(str(item) for item in record.get("case_facets", [])),
     ]
     tokens = re.findall(r"[0-9A-Za-z가-힣]{2,}", unicodedata.normalize("NFKC", " ".join(values)).lower())
     return {token for token in tokens if token not in SEMANTIC_STOPWORDS}
@@ -775,13 +986,16 @@ def enrich_relationships(records: list[dict[str, object]]) -> None:
     for record in records:
         record["relationships"] = []
         for target_id in record.get("related_ids", []):
-            relation_type = (
-                "usage_evidence"
-                if str(record["id"]).startswith("check:enrichment:")
-                or str(target_id).startswith("check:enrichment:")
-                else "screen_reference"
-            )
-            label = "실사용 검수 자료" if relation_type == "usage_evidence" else "본문에서 언급"
+            if str(record["id"]).startswith("check:support-case:"):
+                relation_type, label = "case_context", "이 문의가 연결된 문서"
+            elif str(target_id).startswith("check:support-case:"):
+                relation_type, label = "support_case", "관련 문의 대응 사례"
+            elif str(record["id"]).startswith("check:enrichment:") or str(
+                target_id
+            ).startswith("check:enrichment:"):
+                relation_type, label = "case_collection", "문의 사례 묶음"
+            else:
+                relation_type, label = "screen_reference", "본문에서 언급"
             add_relationship(record, str(target_id), relation_type, label)
 
     manual_records = [
@@ -863,10 +1077,12 @@ def export_knowledge() -> dict[str, int]:
             }
         )
         metadata_related_ids = [str(item) for item in metadata.get("related_ids", [])]
+        document_type = metadata.get("document_type")
         record = {
             "schema_version": "1.0",
             "id": knowledge_id,
-            "type": "screen" if code else ("excel" if "excel-premium" in relative else "manual"),
+            "type": document_type
+            or ("screen" if code else ("excel" if "excel-premium" in relative else "manual")),
             "title": metadata.get("title", path.stem),
             "aliases": metadata.get("aliases", []),
             "category": metadata.get("category"),
@@ -879,6 +1095,11 @@ def export_knowledge() -> dict[str, int]:
             "review_status": metadata.get("review_status"),
             "mapping_status": metadata.get("mapping_status"),
             "signal_count": metadata.get("signal_count"),
+            "case_type": metadata.get("case_type"),
+            "case_facets": metadata.get("case_facets", []),
+            "case_topic": metadata.get("case_topic"),
+            "case_topics": metadata.get("case_topics", []),
+            "candidate_id": metadata.get("candidate_id"),
             "related_screen_codes": related_codes,
             "related_ids": metadata_related_ids,
             "markdown_path": relative,
@@ -900,7 +1121,7 @@ def export_knowledge() -> dict[str, int]:
 
     records_by_id = {str(record["id"]): record for record in records}
     for record in records:
-        if not str(record["id"]).startswith("check:enrichment:"):
+        if not str(record["id"]).startswith(("check:enrichment:", "check:support-case:")):
             continue
         for target_id in record["related_ids"]:
             target = records_by_id.get(str(target_id))
@@ -913,10 +1134,21 @@ def export_knowledge() -> dict[str, int]:
         for record in records:
             stream.write(json.dumps(record, ensure_ascii=False) + "\n")
 
+    case_type_counts = Counter(
+        str(record.get("case_type"))
+        for record in records
+        if record.get("type") == "support_case"
+    )
     manifest = {
         "schema_version": "1.0",
         "record_count": len(records),
         "screen_count": sum(record["type"] == "screen" for record in records),
+        "support_case_count": sum(record["type"] == "support_case" for record in records),
+        "support_case_type_counts": dict(sorted(case_type_counts.items())),
+        "unmapped_support_case_count": sum(
+            record["type"] == "support_case" and record.get("mapping_status") == "unmapped"
+            for record in records
+        ),
         "source_hashes": source_hashes(),
     }
     manifest_text = json.dumps(manifest, ensure_ascii=False, indent=2)
@@ -1025,8 +1257,14 @@ def build_download_archive() -> None:
 
 def build() -> dict[str, int]:
     if OUTPUT_DIR.exists():
-        shutil.rmtree(OUTPUT_DIR)
-    OUTPUT_DIR.mkdir(parents=True)
+        for path in OUTPUT_DIR.iterdir():
+            if path.name == "assets":
+                continue
+            if path.is_dir():
+                shutil.rmtree(path)
+            else:
+                path.unlink()
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
     stats = build_pdf_wiki()
     excel_documents = 0
@@ -1053,6 +1291,7 @@ def build() -> dict[str, int]:
     stats["excel_documents"] = excel_documents + code_documents
     stats["code_records"] = code_records
     stats["enrichment_documents"] = build_manual_enrichment() + build_unmapped_enrichment()
+    rebuild_support_case_indexes()
     build_home(stats, source_hashes())
     build_download_page()
     stats.update(export_knowledge())

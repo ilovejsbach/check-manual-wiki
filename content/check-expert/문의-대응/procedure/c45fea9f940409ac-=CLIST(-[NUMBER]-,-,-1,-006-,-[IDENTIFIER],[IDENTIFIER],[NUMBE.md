@@ -1,0 +1,52 @@
+---
+title: "사용 절차 — =CLIST( \"[NUMBER]\", \"\", -1, \"*006\", \"[IDENTIFIER],[IDENTIFIER],[NUMBE…"
+description: "종목·코드·분류·기본정보 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+tags:
+  - "CHECK Expert"
+  - "문의 대응"
+  - "사용 절차"
+  - "검수 필요"
+  - "종목·코드·분류·기본정보"
+source: "manual-enrichment-unmapped.jsonl"
+knowledge_id: "check:support-case:c45fea9f940409ac"
+document_type: "support_case"
+case_type: "procedure"
+case_facets:
+  - "procedure"
+  - "faq"
+case_topic: "종목·코드·분류·기본정보"
+case_topics:
+  - "종목·코드·분류·기본정보"
+related_ids:
+  - "check:enrichment:unmapped:0b0b120f64a7"
+review_status: "candidate"
+mapping_status: "unmapped"
+source_locator: "CRM데이터(PID복원)!row:1257"
+candidate_id: "manual-candidate:VOC-01255"
+---
+# 사용 절차 — =CLIST( "[NUMBER]", "", -1, "*006", "[IDENTIFIER],[IDENTIFIER],[NUMBE…
+
+> 비식별 문의 기록에서 추출한 검수 전 사례입니다. 당시 대응이 현재 제품의 공식 해결책임을 의미하지 않으며, 공식 매뉴얼과 재현 시험으로 확인해야 합니다.
+
+## 사용자가 겪은 상황
+
+=CLIST( "[NUMBER]", "", -1, "*006", "[IDENTIFIER],[IDENTIFIER],[NUMBER]", "_[IDENTIFIER]=1152:[NUMBER],1153:1&_[IDENTIFIER]=1152:[NUMBER],1153:Y", "[IDENTIFIER],[IDENTIFIER],[IDENTIFIER],[IDENTIFIER],[NUMBER],[NUMBER],[IDENTIFIER],[NUMBER]", "DESC", "[IDENTIFIER]=true;") 위 함수처럼 과거 K200 옵션의 ATM 종목을 보고 싶은데 _[IDENTIFIER]=1152:[NUMBER],1153:1이랑 &_[IDENTIFIER]=1152:[NUMBER],1153:Y 이렇게 조건을 중복해서 여러가지로 걸고 싶은데 어떻게 해야하나요?
+
+## 당시 대응
+
+안녕하세요. [IDENTIFIER]+ 입니다. 다음과 같이 '&_[IDENTIFIER]=' 대신 ',' 값을 입력하여 연결할 수 있습니다. =CLIST( "[NUMBER]", "", -1, "*006", "[IDENTIFIER],[IDENTIFIER],[NUMBER]", "_[IDENTIFIER]=1152:[NUMBER],1153:1,1152:[NUMBER],1153:Y", "[IDENTIFIER],[IDENTIFIER],[IDENTIFIER],[IDENTIFIER],[NUMBER],[NUMBER],[IDENTIFIER],[NUMBER]", "DESC", "[IDENTIFIER]=true;") 복사 및 붙여넣기로 사용해보시고 어려운점 있으시면 말씀 부탁 드립니다. 감사합니다.
+
+## 의미 분류
+
+- 대표 유형: **사용 절차**
+- 함께 볼 유형: 사용 절차, 질문과 답변
+- 업무·주제: 종목·코드·분류·기본정보
+- 공식 문서 연결: 분류 대기
+- 증거 위치: `CRM데이터(PID복원)!row:1257`
+
+## 검증할 사항
+
+- [ ] 현재 버전에서도 같은 상황이 재현되는가
+- [ ] 당시 대응이 공식 매뉴얼의 절차와 일치하는가
+- [ ] 원인과 해결 조치를 구분해 설명할 수 있는가
+- [ ] 고객·직원·기관 식별정보가 남아 있지 않은가

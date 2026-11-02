@@ -57,6 +57,11 @@ def build(source: Path = SOURCE, output: Path = OUTPUT) -> dict[str, object]:
                 "review_status": record.get("review_status"),
                 "mapping_status": record.get("mapping_status"),
                 "signal_count": record.get("signal_count"),
+                "case_type": record.get("case_type"),
+                "case_facets": record.get("case_facets", []),
+                "case_topic": record.get("case_topic"),
+                "case_topics": record.get("case_topics", []),
+                "candidate_id": record.get("candidate_id"),
                 "markdown_path": record.get("markdown_path"),
                 "related": related,
                 "text": record.get("text", ""),
@@ -72,6 +77,14 @@ def build(source: Path = SOURCE, output: Path = OUTPUT) -> dict[str, object]:
         "record_count": len(payload),
         "screen_count": sum(item.get("screen_code") is not None for item in payload),
         "candidate_count": sum(item.get("review_status") == "candidate" for item in payload),
+        "support_case_count": sum(item.get("type") == "support_case" for item in payload),
+        "support_case_type_counts": {
+            case_type: sum(
+                item.get("type") == "support_case" and item.get("case_type") == case_type
+                for item in payload
+            )
+            for case_type in ["faq", "procedure", "troubleshooting", "caution", "tip"]
+        },
         "source_sha256": source_hash,
         "data_bytes": len(serialized.encode("utf-8")),
     }

@@ -1,0 +1,53 @@
+---
+title: "주의사항 — 혹시 3500화면에서 없는 레포트는 왜 없는지 이유를 알 수 있을가요? [IDENTIFIER] [REDACTED_ENTITY…"
+description: "3500 - 시장종합 > 투자분석리포트 관련 비식별 문의와 당시 대응 기록을 분리한 주의사항 검수 후보."
+tags:
+  - "CHECK Expert"
+  - "문의 대응"
+  - "주의사항"
+  - "검수 필요"
+  - "3500 - 시장종합 > 투자분석리포트"
+source: "manual-enrichment.jsonl"
+knowledge_id: "check:support-case:a6c0b265efd64929"
+document_type: "support_case"
+case_type: "caution"
+case_facets:
+  - "caution"
+  - "faq"
+case_topic: "3500 - 시장종합 > 투자분석리포트"
+case_topics:
+  - "3500 - 시장종합 > 투자분석리포트"
+related_ids:
+  - "check:screen:3500"
+  - "check:enrichment:screen:3500"
+review_status: "candidate"
+mapping_status: "mapped"
+source_locator: "20260916!row:5491"
+candidate_id: "manual-candidate:CRM-05489"
+---
+# 주의사항 — 혹시 3500화면에서 없는 레포트는 왜 없는지 이유를 알 수 있을가요? [IDENTIFIER] [REDACTED_ENTITY…
+
+> 비식별 문의 기록에서 추출한 검수 전 사례입니다. 당시 대응이 현재 제품의 공식 해결책임을 의미하지 않으며, 공식 매뉴얼과 재현 시험으로 확인해야 합니다.
+
+## 사용자가 겪은 상황
+
+혹시 3500화면에서 없는 레포트는 왜 없는지 이유를 알 수 있을가요? [IDENTIFIER] [REDACTED_ENTITY] 레포트에는 있는데 저 화면에서는 없는 레포트가 있어서요,
+
+## 당시 대응
+
+안녕하세요. [IDENTIFIER]+ 입니다. 현재 CHECK는 증권사들과 유상 또는 무상으로 협약을 맺어 리포트를 받고 있습니다. 다만 일부 증권사들의 경우 저희 쪽에서 리포트 유상 제공을 제안했음에도 불구하고, 리포트의 관리 상의 문제 등 때문에 CHECK 단말에 리포트 제공이 불가하다는 입장입니다. 때문에 증권사 동사 홈페이지, [IDENTIFIER] 등 제한된 매체를 통해서만 리포트를 제공하고 있습니다. 참고로 [IDENTIFIER]의 경우 증권사 [REDACTED_ENTITY] 내 리포트 관리 프로그램을 개발해주는 특수 관계가 있다보니 거의 대부분의 증권사의 리포트를 확보하고 있습니다. 감사합니다.
+
+## 의미 분류
+
+- 대표 유형: **주의사항**
+- 함께 볼 유형: 주의사항, 질문과 답변
+- 업무·주제: 3500 - 시장종합 > 투자분석리포트
+- 공식 문서 연결: 연결됨
+- 증거 위치: `20260916!row:5491`
+
+## 검증할 사항
+
+- [ ] 현재 버전에서도 같은 상황이 재현되는가
+- [ ] 당시 대응이 공식 매뉴얼의 절차와 일치하는가
+- [ ] 원인과 해결 조치를 구분해 설명할 수 있는가
+- [ ] 고객·직원·기관 식별정보가 남아 있지 않은가

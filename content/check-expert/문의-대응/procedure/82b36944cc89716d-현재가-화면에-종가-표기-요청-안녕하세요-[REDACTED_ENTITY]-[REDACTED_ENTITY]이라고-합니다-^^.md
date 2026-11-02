@@ -1,0 +1,53 @@
+---
+title: "사용 절차 — 현재가 화면에 종가 표기 요청 안녕하세요 [REDACTED_ENTITY] [REDACTED_ENTITY]이라고 합니다 ^^…"
+description: "1300 - 주식현재가 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+tags:
+  - "CHECK Expert"
+  - "문의 대응"
+  - "사용 절차"
+  - "검수 필요"
+  - "1300 - 주식현재가"
+source: "manual-enrichment.jsonl"
+knowledge_id: "check:support-case:82b36944cc89716d"
+document_type: "support_case"
+case_type: "procedure"
+case_facets:
+  - "procedure"
+  - "faq"
+case_topic: "1300 - 주식현재가"
+case_topics:
+  - "1300 - 주식현재가"
+related_ids:
+  - "check:screen:1300"
+  - "check:enrichment:screen:1300"
+review_status: "candidate"
+mapping_status: "mapped"
+source_locator: "20260916!row:1653"
+candidate_id: "manual-candidate:CRM-01651"
+---
+# 사용 절차 — 현재가 화면에 종가 표기 요청 안녕하세요 [REDACTED_ENTITY] [REDACTED_ENTITY]이라고 합니다 ^^…
+
+> 비식별 문의 기록에서 추출한 검수 전 사례입니다. 당시 대응이 현재 제품의 공식 해결책임을 의미하지 않으며, 공식 매뉴얼과 재현 시험으로 확인해야 합니다.
+
+## 사용자가 겪은 상황
+
+현재가 화면에 종가 표기 요청 안녕하세요 [REDACTED_ENTITY] [REDACTED_ENTITY]이라고 합니다 ^^ 다름이 아니오라 1300 현재가 화면에 시가 고가 저가 그 컬럼에 종가도 표기해주시면 안될까요 오늘 같은 경우 장 끝나고 하이닉스 krx 장종료 체결가가 제대로 반영이 되지 않아 당황했거든요 허허 종가도 시가처럼 표기해주심 너무 감사할거 같아요 ㅠㅠ
+
+## 당시 대응
+
+안녕하세요. [IDENTIFIER]+ 입니다. 먼저 불편을 드려 죄송합니다. 그리고 좋은 의견 주셔서 감사합니다. 다만 오늘 같은 경우 종가가 반영이 안된 경우로 종가 칸이 따로 있었다고 하더라도 값이 반영되지 못했을 듯 합니다. 내부 논의 후 혼선 및 재발 방지를 위한 최선의 방안을 마련하도록 하겠습니다. 감사합니다. 오늘 장애로 인해 [REDACTED_ENTITY] 빨리 [PERSON]님의 의견을 반영해드리고 싶으나, 현재 CHECK 신버전이 조만간 출시됨에 따라 화면 구성을 변경하기가 어려운 상황입니다.
+
+## 의미 분류
+
+- 대표 유형: **사용 절차**
+- 함께 볼 유형: 사용 절차, 질문과 답변
+- 업무·주제: 1300 - 주식현재가
+- 공식 문서 연결: 연결됨
+- 증거 위치: `20260916!row:1653`
+
+## 검증할 사항
+
+- [ ] 현재 버전에서도 같은 상황이 재현되는가
+- [ ] 당시 대응이 공식 매뉴얼의 절차와 일치하는가
+- [ ] 원인과 해결 조치를 구분해 설명할 수 있는가
+- [ ] 고객·직원·기관 식별정보가 남아 있지 않은가

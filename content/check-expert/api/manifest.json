@@ -1,7 +1,16 @@
 {
   "schema_version": "1.0",
-  "record_count": 812,
+  "record_count": 2235,
   "screen_count": 420,
+  "support_case_count": 1418,
+  "support_case_type_counts": {
+    "caution": 33,
+    "faq": 318,
+    "procedure": 776,
+    "tip": 123,
+    "troubleshooting": 168
+  },
+  "unmapped_support_case_count": 426,
   "source_hashes": {
     "CHECKPlus_Manual.pdf": "b3ca8de468ffb238d16bb49882a2e7d2f85585f87c28698587331c8022948631",
     "excel-manual1_menu_template.xls.pia": "64529436ce861e37a2658d9bd0577d4f9f8c5230cd4a81dc1272a6f021293810",

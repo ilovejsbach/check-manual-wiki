@@ -8,7 +8,7 @@
 | --- | --- |
 | `schema_version` | 레코드 스키마 버전 |
 | `id` | 변경되지 않는 지식 ID. 화면은 `check:screen:1300` 형식 |
-| `type` | `screen`, `manual`, `excel` |
+| `type` | `screen`, `manual`, `excel`, `support_case`, `support_case_index` |
 | `title`, `aliases` | 정식 제목과 검색 동의어 |
 | `category`, `screen_code` | 업무 분류와 CHECK 화면번호 |
 | `source`, `source_locator` | 공식 원본과 PDF 페이지·Excel 시트/행 위치 |
@@ -18,6 +18,11 @@
 | `review_status` | 보강 자료의 검수 상태. 공식 추출 문서는 비어 있고 보강 초안은 `candidate` |
 | `mapping_status` | 보강 자료의 기존 문서 연결 상태. 미연결 검수 대기열은 `unmapped` |
 | `signal_count` | 보강 문서에 집계된 비식별 고객·운영 신호 수 |
+| `case_type` | 문의 사례의 대표 의미. `faq`, `procedure`, `troubleshooting`, `caution`, `tip` |
+| `case_facets` | 한 사례가 동시에 포함하는 문의 유형 목록 |
+| `case_topic`, `case_topics` | 사례가 연결된 업무·화면 주제. 복수 연결을 보존한다. |
+| `candidate_id` | 비식별 원천에서 파생된 사례의 안정적인 후보 ID |
+| `relationships` | `target_id`, 관계 유형, 사람용 관계명을 가진 유형화된 연결 |
 
 ## 배포 경로
 
@@ -33,4 +38,5 @@
 - `related_ids`는 존재하는 레코드로 해석되는지 검증한다. 오래된 매뉴얼에만 등장하는 화면은 미해결 관계로 별도 집계한다.
 - 화면번호, `TR` 접두사, 화면명, 업무용 자연어를 `aliases`로 검색한다.
 - 원본 매뉴얼이 바뀌면 전체를 재생성하고 `manifest.json`의 SHA-256으로 입력 버전을 식별한다.
-- `review_status=candidate`인 실사용 보강 자료는 공식 정의나 현재 제품 동작으로 단정하지 않는다.
+- `review_status=candidate`인 문의 대응 사례는 당시 대응 기록이며 공식 정의나 현재 제품 동작으로 단정하지 않는다.
+- 동일 문의가 여러 화면과 관련되면 하나의 `support_case`에 `case_topics`와 관계를 병합한다.

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="CHECK Expert 화면·업무·Excel Premium 통합 도움말" />
+    <meta name="description" content="CHECK Expert 화면·업무·Excel Premium·문의 대응 통합 도움말" />
     <title>CHECK Expert 도움말</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -15,7 +15,7 @@
       </a>
       <div class="search-wrap">
         <label class="sr-only" for="search">도움말 검색</label>
-        <input id="search" type="search" autocomplete="off" placeholder="화면번호, 업무 질문, Excel 기능을 검색하세요" />
+        <input id="search" type="search" autocomplete="off" placeholder="증상, 질문, 화면번호, 업무 또는 Excel 기능을 검색하세요" />
         <kbd>/</kbd>
       </div>
       <button id="theme" class="icon-button" type="button" aria-label="색상 모드 변경">◐</button>
@@ -24,19 +24,26 @@
     <main class="layout">
       <aside class="sidebar" aria-label="검색 조건">
         <section>
-          <h2>빠른 조회</h2>
-          <button class="quick active" data-filter="all">전체 도움말 <span id="count-all">–</span></button>
+          <h2>도움말</h2>
+          <button class="quick active" data-filter="all">전체 <span id="count-all">–</span></button>
           <button class="quick" data-filter="screen">TR·화면 <span id="count-screen">–</span></button>
           <button class="quick" data-filter="excel">Excel Premium <span id="count-excel">–</span></button>
-          <button class="quick" data-filter="candidate">실사용 보강 <span id="count-candidate">–</span></button>
-          <button class="quick" data-filter="unmapped">분류 대기 <span id="count-unmapped">–</span></button>
+        </section>
+        <section class="case-filters">
+          <h2>문의 대응</h2>
+          <button class="quick" data-filter="inquiry">문의 대응 전체 <span id="count-inquiry">–</span></button>
+          <button class="quick" data-filter="case-faq">질문과 답변 <span id="count-case-faq">–</span></button>
+          <button class="quick" data-filter="case-procedure">사용 절차 <span id="count-case-procedure">–</span></button>
+          <button class="quick" data-filter="case-troubleshooting">오류 해결 <span id="count-case-troubleshooting">–</span></button>
+          <button class="quick" data-filter="case-caution">주의사항 <span id="count-case-caution">–</span></button>
+          <button class="quick" data-filter="case-tip">활용 팁 <span id="count-case-tip">–</span></button>
+          <button class="quick" data-filter="unmapped">공식 문서 연결 대기 <span id="count-unmapped">–</span></button>
         </section>
         <section class="guide">
           <h2>검색 예시</h2>
-          <button class="example" data-query="1923">1923</button>
-          <button class="example" data-query="월별 순매수">월별 순매수</button>
-          <button class="example" data-query="엑셀 연동 오류">엑셀 연동 오류</button>
-          <button class="example" data-query="채권 단가">채권 단가</button>
+          <button class="example" data-query="1923 월별 순매수">1923 월별 순매수</button>
+          <button class="example" data-query="엑셀 연동 안 됨">엑셀 연동 안 됨</button>
+          <button class="example" data-query="채권 단가 조회 방법">채권 단가 조회 방법</button>
         </section>
         <p class="privacy">고객명·계좌·사용자 ID를 검색어에 입력하지 마세요.</p>
       </aside>
@@ -56,12 +63,12 @@
 
       <section id="viewer" class="viewer" aria-live="polite">
         <div class="welcome">
-          <p class="eyebrow">업무 문맥 중심 도움말</p>
-          <h1>찾는 화면보다<br />하려는 업무를 검색하세요.</h1>
-          <p>공식 매뉴얼, 화면번호, Excel Premium과 검수 전 실사용 사례를 한곳에서 조회합니다.</p>
+          <p class="eyebrow">업무와 문제 상황 중심 도움말</p>
+          <h1>화면번호뿐 아니라<br />겪고 있는 상황을 검색하세요.</h1>
+          <p>공식 매뉴얼과 화면 정보, Excel Premium, 검수 전 문의 대응 사례를 의미별로 연결해 조회합니다.</p>
           <div class="legend">
             <span><i class="dot official"></i>공식 자료</span>
-            <span><i class="dot candidate"></i>검수 전 사례</span>
+            <span><i class="dot candidate"></i>검수 전 문의 사례</span>
           </div>
         </div>
       </section>

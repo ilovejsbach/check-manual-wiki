@@ -24,6 +24,17 @@ RECORDS = [
         "category": "선물",
         "text": "선물과 옵션의 시세를 제공합니다.",
     },
+    {
+        "id": "check:support-case:one",
+        "type": "support_case",
+        "title": "오류 해결 — 엑셀 연동이 되지 않음",
+        "aliases": [],
+        "case_type": "troubleshooting",
+        "case_topic": "Excel Premium",
+        "case_topics": ["Excel Premium", "화면 1923"],
+        "case_facets": ["troubleshooting", "procedure"],
+        "text": "엑셀 재설치 후 연동 상태를 확인한 당시 대응 기록",
+    },
 ]
 
 
@@ -38,3 +49,8 @@ def test_alias_query_returns_matching_screen_first() -> None:
 def test_type_and_category_filters() -> None:
     results = search(RECORDS, "시세", record_type="screen", category="선물")
     assert [record["id"] for record in results] == ["check:screen:4000"]
+
+
+def test_support_case_semantics_and_type_filter() -> None:
+    results = search(RECORDS, "엑셀 연동 오류", case_type="troubleshooting")
+    assert results[0]["id"] == "check:support-case:one"

@@ -5,7 +5,13 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import build_check_wiki
-from build_check_wiki import enrich_relationships, frontmatter, screen_code, slug
+from build_check_wiki import (
+    clean_case_request,
+    enrich_relationships,
+    frontmatter,
+    screen_code,
+    slug,
+)
 
 
 def test_slug_normalizes_for_paths() -> None:
@@ -15,6 +21,11 @@ def test_slug_normalizes_for_paths() -> None:
 def test_screen_code_accepts_only_four_digit_token() -> None:
     assert screen_code("1300 - 주식현재가") == "1300"
     assert screen_code("12345 데이터") is None
+
+
+def test_clean_case_request_removes_source_form_fields() -> None:
+    raw = "- 화면번호 : 1949 - 전화번호 : [PHONE] - 버전 : 신버전 - 문의내용 : 엑셀 연동 오류"
+    assert clean_case_request(raw) == "엑셀 연동 오류"
 
 
 def test_frontmatter_supports_alias_lists() -> None:
@@ -68,12 +79,14 @@ def test_manual_enrichment_builds_candidate_companion(tmp_path, monkeypatch) -> 
     monkeypatch.setattr(build_check_wiki, "OUTPUT_DIR", output)
     monkeypatch.setattr(build_check_wiki, "SOURCE_DIR", sources)
 
-    assert build_check_wiki.build_manual_enrichment() == 2
-    page = output / "운영-보강" / "check-screen-1300.md"
+    assert build_check_wiki.build_manual_enrichment() == 8
+    page = output / "문의-대응" / "화면별" / "check-screen-1300.md"
     assert page.exists()
     text = page.read_text(encoding="utf-8")
     assert "검수 전 후보" in text
     assert "sheet!row:1" in text
+    cases = list((output / "문의-대응" / "procedure").glob("*.md"))
+    assert any('document_type: "support_case"' in item.read_text(encoding="utf-8") for item in cases)
 
 
 def test_unmapped_enrichment_preserves_topic_queue(tmp_path, monkeypatch) -> None:
@@ -100,8 +113,8 @@ def test_unmapped_enrichment_preserves_topic_queue(tmp_path, monkeypatch) -> Non
     monkeypatch.setattr(build_check_wiki, "OUTPUT_DIR", output)
     monkeypatch.setattr(build_check_wiki, "SOURCE_DIR", sources)
 
-    assert build_check_wiki.build_unmapped_enrichment() == 2
-    pages = list((output / "운영-보강" / "미매핑").glob("*.md"))
+    assert build_check_wiki.build_unmapped_enrichment() == 3
+    pages = list((output / "문의-대응" / "분류-대기").glob("*.md"))
     assert len(pages) == 2
     assert any("mapping_status: \"unmapped\"" in page.read_text(encoding="utf-8") for page in pages)
 
@@ -143,3 +156,35 @@ def test_typed_relationships_include_manual_sequence_and_semantic_links() -> Non
     assert "next" in first_types
     assert "semantic" in first_types
     assert records[0]["related_ids"]
+
+
+def test_support_case_merges_multiple_official_contexts(tmp_path, monkeypatch) -> None:
+    output = tmp_path / "content" / "check-expert"
+    output.mkdir(parents=True)
+    monkeypatch.setattr(build_check_wiki, "OUTPUT_DIR", output)
+    example = {
+        "candidate_id": "manual-candidate:CRM-1",
+        "request_text": "조회 방법 문의",
+        "action_text": "조회 절차 안내",
+        "manual_candidates": ["faq", "procedure"],
+        "evidence_locator": "sheet!row:1",
+    }
+
+    relative, _ = build_check_wiki.build_support_case(
+        example=example,
+        topic="주식",
+        related_ids=["check:screen:1000"],
+        mapping_status="mapped",
+    )
+    build_check_wiki.build_support_case(
+        example=example,
+        topic="채권",
+        related_ids=["check:screen:3000"],
+        mapping_status="mapped",
+    )
+
+    text = (output / relative).read_text(encoding="utf-8")
+    assert '  - "check:screen:1000"' in text
+    assert '  - "check:screen:3000"' in text
+    assert '  - "주식"' in text
+    assert '  - "채권"' in text
