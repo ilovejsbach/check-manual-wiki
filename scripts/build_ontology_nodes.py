@@ -53,7 +53,15 @@ SEQ_RE = re.compile(r"(\d+)&cl(.*?)(?=\d+&cl|$)")
 RATIO_RE = re.compile(r"율|률|비율|비중|배율|괴리|수익률|%")
 QTY_RE = re.compile(r"량|수량|잔량|건수|좌수|횟수|주식수|계약수|미결")
 DATE_RE = re.compile(r"일자|날짜|시각|(?<!가)시간(?!가치|외)|만기일|발행일|상장일|결제일|기준일")  # 일시 는 전일시가 와 겹쳐 제외
-SURVEY_RE = re.compile(r"조사\(|전망|BSI|SBHI")  # 설문·전망 지표는 값의 종류를 단정하지 않는다
+SURVEY_RE = re.compile(r"BSI|SBHI|전망")  # 설문·전망 지표는 값의 종류를 단정하지 않는다
+INDEX_RE = re.compile(r"지수|지표|\bDI\b|\bPMI\b|\bCSI\b")  # 설문·경기 지수(단위 없는 점수)
+AMOUNT_RE = re.compile(r"지출|소득|수입액|수출액|매출|이익|손실|손익|자산|부채|자본금|자본|비용|수익$|충당금|차입금")  # 재무·경제 금액
+# (시장, 분류) 별 기본 값 종류. 이름 규칙이 못 정한 항목에만 쓴다.
+CATEGORY_KIND = {
+    ("기업", "대차대조표"): "amount", ("기업", "손익계산서"): "amount", ("기업", "현금흐름표"): "amount",
+    ("기업", "자본변동표"): "amount", ("기업", "재무비율"): "ratio",
+    ("경제금융", "국민계정"): "amount", ("경제금융", "경기/기업/소비자"): "index", ("경제금융", "광고"): "index",
+}
 PRICE_RE = re.compile(r"가$|가격|호가|시가|고가|저가|종가|현재가|단가|금액|대금|환율|NAV")  # 가격·금액 계열. 지수값은 제외(unknown)
 
 
@@ -82,21 +90,18 @@ def split_enum(name: str) -> tuple[str, str | None, list[dict] | None, str | Non
     return base, raw, vals, method
 
 
-def guess_value_kind(base_name: str, has_enum: bool) -> str:
-    """항목명 휴리스틱(자동추출). 모호하면 unknown 으로 둔다."""
+def guess_value_kind(base_name: str, has_enum: bool, applies: list[dict] | None = None) -> str:
+    """항목명 → 분류 휴리스틱(자동추출). 모호하면 unknown 으로 둔다.
+    값 종류: enum / date / ratio / qty / price / amount(재무·경제 금액) / index(설문·경기 지수) / unknown."""
     if has_enum:
         return "enum"
-    if SURVEY_RE.search(base_name):
-        return "unknown"
-    if DATE_RE.search(base_name):
-        return "date"
-    if RATIO_RE.search(base_name):
-        return "ratio"
-    if QTY_RE.search(base_name):
-        return "qty"
-    if PRICE_RE.search(base_name):
-        return "price"
-    return "unknown"
+    if SURVEY_RE.search(base_name) and not RATIO_RE.search(base_name):
+        return "index"
+    for rx, kind in ((DATE_RE, "date"), (RATIO_RE, "ratio"), (QTY_RE, "qty"), (PRICE_RE, "price"), (INDEX_RE, "index"), (AMOUNT_RE, "amount")):
+        if rx.search(base_name):
+            return kind
+    kinds = {CATEGORY_KIND.get((a.get("market"), a.get("category"))) for a in (applies or [])}
+    return kinds.pop() if len(kinds) == 1 and None not in kinds else "unknown"
 
 
 def dictionary_rows(records: list[dict]) -> list[dict]:
@@ -128,7 +133,7 @@ def build_item_nodes(records: list[dict], as_of: str) -> tuple[list[dict], list[
         node = {
             "id": f"check:item:{code}", "type": "item", "title": base, "code": code, "name": base,
             "aliases": [split_enum(n)[0] for n in alt],
-            "value_kind": guess_value_kind(base, enum_raw is not None), "value_kind_grade": "auto_extracted",
+            "value_kind": guess_value_kind(base, enum_raw is not None, [{"market": m, "category": c} for _, m, c in applies]), "value_kind_grade": "auto_extracted",
             "applies_to": [{"function": f, "market": m, "category": c} for f, m, c in applies],
             "definition_ref": [],
             "source": DICT_SOURCE, "source_locator": "; ".join(sorted({r["loc"] for r in rows})),

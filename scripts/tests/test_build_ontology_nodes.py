@@ -104,3 +104,14 @@ def test_validate_catches_duplicate_unknown_function_and_missing_link_target(tmp
                      encoding="utf-8")
     errs = bon.validate_nodes(all_nodes, links)
     assert errs == ["I1 관계 대상 노드 없음 check:item:99999"]
+
+
+def test_guess_value_kind_amount_index_and_category_fallback():
+    g = bon.guess_value_kind
+    assert g("KDB산업경기전망조사(산업별BSI 경기전망(실적)-생산)", False) == "index"
+    assert g("중소기업경기전망조사(평균가동률)", False) == "ratio"
+    assert g("제조업-영업비용", False) == "amount"
+    assert g("제조업-부채비율", False) == "ratio"
+    assert g("현금", False, [{"market": "기업", "category": "대차대조표"}]) == "amount"
+    assert g("현금", False, [{"market": "기업", "category": "대차대조표"}, {"market": "채권", "category": "x"}]) == "unknown"
+    assert g("Market코드", False, [{"market": "옵션", "category": "기본정보"}]) == "unknown"

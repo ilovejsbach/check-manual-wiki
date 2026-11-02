@@ -52,7 +52,7 @@
 
 ### 2.2 데이터 항목 (`item`)
 
-정의: 하나의 항목코드(FID)가 가리키는 데이터. 필수 속성: `code`(문자열, 예 `14501`), `name`(기준 항목명), `aliases`(별칭·약어. 엑셀 함수 설명에 따르면 alias 입력 가능), `value_kind`(price/qty/ratio/date/enum/unknown; 항목명 휴리스틱이라 `value_kind_grade: auto_extracted`이고 모호하면 `unknown`. 2026-11-02 현재 unknown이 약 58%이므로 값의 종류를 단정하는 근거로 쓰지 않는다), `unit`(선택), `applies_to`(`[{function, market, category}]` 목록, 항목코드표의 행에서 그대로 유도), `definition_ref`(개념·매뉴얼 링크), `source_locator`(시트+행).
+정의: 하나의 항목코드(FID)가 가리키는 데이터. 필수 속성: `code`(문자열, 예 `14501`), `name`(기준 항목명), `aliases`(별칭·약어. 엑셀 함수 설명에 따르면 alias 입력 가능), `value_kind`(price/qty/ratio/amount/index/date/enum/unknown; amount=재무·경제 금액, index=설문·경기 지수. 항목명 규칙과 (시장, 분류) 기본값으로 정한 휴리스틱이라 `value_kind_grade: auto_extracted`이고 모호하면 `unknown`. 2026-11-02 현재 unknown은 약 9%이나 표본 검수 전이므로 값의 종류를 단정하는 근거로 쓰지 않는다), `unit`(선택), `applies_to`(`[{function, market, category}]` 목록, 항목코드표의 행에서 그대로 유도), `definition_ref`(개념·매뉴얼 링크), `source_locator`(시트+행).
 
 예시: `check:excel:항목코드표:CH:001` 의 행 `| CH | 상품 | 상품 | 14501 | 매도호가1 |` → `check:item:14501`(매도호가1). 같은 코드가 CH:008(외환/자금·호가), CH:009(주식종목·호가)에도 있으므로 `applies_to`에 3건이 들어간다. 코드값 정의가 이름에 섞인 경우(`3028 전일등락구분(0&cl거래무1&cl상한…)`, `check:excel:항목코드표:CT:001`)는 `name`과 `enum_values`로 분리한다.
 
