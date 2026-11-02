@@ -34,7 +34,7 @@ candidate_id: manual-candidate:CRM-00533
 
 ## 당시 대응
 
-자사회선사용중으로 기관 [REDACTED_ENTITY]에 문의 안내
+자사회선사용중으로 기관 고객사에 문의 안내
 
 ## 연결된 화면·기능
 

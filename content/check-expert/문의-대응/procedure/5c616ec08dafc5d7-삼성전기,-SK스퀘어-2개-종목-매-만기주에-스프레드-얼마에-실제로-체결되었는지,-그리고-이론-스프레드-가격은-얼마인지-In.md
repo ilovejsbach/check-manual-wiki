@@ -40,7 +40,7 @@ candidate_id: manual-candidate:CRM-05822
 
 ## 당시 대응
 
-매 만기주에 스프레드 얼마나 체결되었는지 → 4338 화면 확인 부탁드립니다. 이론 스프레드 가격 intra → 를 제공하는 화면은 따로 없고.. =CTS(" "," ",1000,1000,TRUE,"[IDENTIFIER]*091","[NUMBER]","DESC","[IDENTIFIER]=tue; [IDENTIFIER]=vert; t[REDACTED_ENTITY]le=[REDACTED_ENTITY]em+[IDENTIFIER];") 엑셀에 위의 함수를 입력하시면, 확인 가능하십니다.
+매 만기주에 스프레드 얼마나 체결되었는지 → 4338 화면 확인 부탁드립니다. 이론 스프레드 가격 intra → 를 제공하는 화면은 따로 없고.. =CTS(" "," ",1000,1000,TRUE,"⟦[IDENTIFIER]⟧*091","⟦[NUMBER]⟧","DESC","⟦[IDENTIFIER]⟧=tue; ⟦[IDENTIFIER]⟧=vert; t⟦[REDACTED_ENTITY]⟧le=⟦[REDACTED_ENTITY]⟧em+⟦[IDENTIFIER]⟧;") 엑셀에 위의 함수를 입력하시면, 확인 가능하십니다.
 
 ## 연결된 화면·기능
 

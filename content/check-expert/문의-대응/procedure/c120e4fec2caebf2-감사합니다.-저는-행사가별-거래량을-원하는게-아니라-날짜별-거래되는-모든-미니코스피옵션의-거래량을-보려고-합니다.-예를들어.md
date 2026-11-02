@@ -36,7 +36,7 @@ candidate_id: manual-candidate:CRM-03351
 
 ## 당시 대응
 
-안녕하세요. [IDENTIFIER]+ 입니다. 4172 화면에서 확인하실 수 있습니다. 좌측 상단 메뉴에서 [IDENTIFIER] 으로 종목을 선택하시고 주간 또는 야간을 선택하시기 바랍니다. 다만 화면에서는 연간 합산 데이터로는 제공되지 않고, 월간 기준으로 조회해 보실 수 있습니다. 연간 기준으로는 아래 함수를 사용해서 엑셀에서 거래량과 거래대금을 보실 수 있습니다. <주간 기준> =CH("","",-1,"Y",TRUE,"*103","7419^12,7422^12","DESC","[IDENTIFIER]=true; [IDENTIFIER]=vert; t[REDACTED_ENTITY]le=[REDACTED_ENTITY]em+[IDENTIFIER];") <야간 기준> =CH("","",-1,"Y",TRUE,"*232","7419^12,7422^12","DESC","[IDENTIFIER]=true; [IDENTIFIER]=vert; t[REDACTED_ENTITY]le=[REDACTED_ENTITY]em+[IDENTIFIER];") 감사합니다.
+안녕하세요. 특정 종목+ 입니다. 4172 화면에서 확인하실 수 있습니다. 좌측 상단 메뉴에서 특정 종목 으로 종목을 선택하시고 주간 또는 야간을 선택하시기 바랍니다. 다만 화면에서는 연간 합산 데이터로는 제공되지 않고, 월간 기준으로 조회해 보실 수 있습니다. 연간 기준으로는 아래 함수를 사용해서 엑셀에서 거래량과 거래대금을 보실 수 있습니다. <주간 기준> =CH("","",-1,"Y",TRUE,"*103","7419^12,7422^12","DESC","⟦[IDENTIFIER]⟧=true; ⟦[IDENTIFIER]⟧=vert; t⟦[REDACTED_ENTITY]⟧le=⟦[REDACTED_ENTITY]⟧em+⟦[IDENTIFIER]⟧;") <야간 기준> =CH("","",-1,"Y",TRUE,"*232","7419^12,7422^12","DESC","⟦[IDENTIFIER]⟧=true; ⟦[IDENTIFIER]⟧=vert; t⟦[REDACTED_ENTITY]⟧le=⟦[REDACTED_ENTITY]⟧em+⟦[IDENTIFIER]⟧;") 감사합니다.
 
 ## 연결된 화면·기능
 

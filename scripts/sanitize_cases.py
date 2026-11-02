@@ -508,6 +508,28 @@ def sanitize_text(text: str, ctx: Ctx) -> str:
     return store.restore(text)
 
 
+def neutralize_tokens(text: str) -> str:
+    """마스킹 토큰만 일반어로 바꾸는 최소 변형. 날짜·고유명사·인사말·원본 위치는 건드리지 않는다.
+    함수식·오류 문구·증상 문장 안의 토큰은 ⟦ ⟧ 로 감싸 보존한다(sanitize_text 5단계와 같은 규칙)."""
+    if not text or "[" not in text:
+        return text
+    st: Counter[str] = Counter()
+    store = _Store()
+    text = _protect(text, store, find_function_spans(text) + find_error_spans(text), True)
+    text = _protect(text, store, find_screen_spans(text), False)
+    sym_spans = [m.span() for rx in SYMPTOM_RES for m in rx.finditer(text)]
+    out, last = [], 0
+    for a, b in _merge_spans(sym_spans):
+        out.append(_tok_words(text[last:a], st))
+        out.append(store.put(_wrap_tokens(text[a:b])))
+        last = b
+    out.append(_tok_words(text[last:], st))
+    text = PARTIAL_TOKEN_RE.sub("", "".join(out))
+    text = re.sub(r"(고객사|특정 종목|특정 수치|담당자|상담 창구|공식 문의 채널|특정 경로)(?:[\s,/·]+\1)+", r"\1", text)
+    text = re.sub(r"특정 종목\s*(종목|코드)", "특정 종목", text)
+    return store.restore(text)
+
+
 def _tok_words(seg: str, st: Counter[str]) -> str:
     def rep(m: re.Match[str]) -> str:
         st["token->word"] += 1

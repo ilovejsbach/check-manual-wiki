@@ -29,11 +29,11 @@ candidate_id: manual-candidate:VOC-00861
 
 ## 사용자가 겪은 상황
 
-CLIST 함수 문의드립니다. 현재 상장된 '삼성전자', '하이닉스' 콜옵션의 티커 및 행사가를 추출하고자 하며, 만약에 가능하다면, 현재가 기준 OTM 행사가 옵션만 뽑도록 조건을 주는 것도 가능한지 여쭙고 싶습니다. 제가 현재 작성한 함수는 아래와 같습니다. =@CLIST( "", "", -1, "1*012", "[NUMBER],[NUMBER]", "", "[NUMBER],[NUMBER],[NUMBER],[NUMBER],[NUMBER],[NUMBER]", "DESC", "[IDENTIFIER]=true;")
+CLIST 함수 문의드립니다. 현재 상장된 '삼성전자', '하이닉스' 콜옵션의 티커 및 행사가를 추출하고자 하며, 만약에 가능하다면, 현재가 기준 OTM 행사가 옵션만 뽑도록 조건을 주는 것도 가능한지 여쭙고 싶습니다. 제가 현재 작성한 함수는 아래와 같습니다. =@CLIST( "", "", -1, "1*012", "⟦[NUMBER]⟧,⟦[NUMBER]⟧", "", "⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧", "DESC", "⟦[IDENTIFIER]⟧=true;")
 
 ## 당시 대응
 
-안녕하세요. [IDENTIFIER]+ 입니다. =CLIST( "", "", -1, "*012", "[NUMBER]", "_[IDENTIFIER]=1191:[NUMBER],1192:C12", "[NUMBER],[NUMBER],[NUMBER],[NUMBER]", "DESC", "[IDENTIFIER]=true;") 첨부한 CLIST 함수를 가공하시면 원하시는 데이터 추출이 가능할 것 같습니다. 함수 한번 보시고, 사용법 추가 문의 있으시면 전화 부탁드립니다. 감사합니다.
+안녕하세요. 특정 종목+ 입니다. =CLIST( "", "", -1, "*012", "⟦[NUMBER]⟧", "_⟦[IDENTIFIER]⟧=1191:⟦[NUMBER]⟧,1192:C12", "⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧", "DESC", "⟦[IDENTIFIER]⟧=true;") 첨부한 CLIST 함수를 가공하시면 원하시는 데이터 추출이 가능할 것 같습니다. 함수 한번 보시고, 사용법 추가 문의 있으시면 전화 부탁드립니다. 감사합니다.
 
 ## 연결된 화면·기능
 

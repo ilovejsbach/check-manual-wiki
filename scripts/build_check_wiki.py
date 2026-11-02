@@ -191,6 +191,7 @@ def yaml_string(value: str) -> str:
 def slug(value: str, fallback: str = "document") -> str:
     value = unicodedata.normalize("NFKC", value).strip()
     value = re.sub(r"[<>:\"/\\|?*#^]", "-", value)  # #, ^ 는 위키 링크에서 문서 내 위치 표시로 읽혀 주소가 잘린다
+    value = re.sub(r"⟦|⟧|\[(?:IDENTIFIER|NUMBER|PHONE|REDACTED_ENTITY|EMAIL|PERSON|PATH)\]?", "", value)  # 마스킹 토큰은 파일명에 쓰지 않는다
     value = re.sub(r"\s+", "-", value)
     value = re.sub(r"-+", "-", value).strip("-. ")
     return value[:120] or fallback
@@ -779,6 +780,14 @@ def _single_line(value: object) -> str:
     return re.sub(r"\s+", " ", str(value or "")).strip()
 
 
+def _neutralize(value: str) -> str:
+    """사례 본문의 마스킹 토큰([IDENTIFIER] 등)을 일반어로 바꾼다. 규칙은 sanitize_cases.neutralize_tokens."""
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    import sanitize_cases
+
+    return sanitize_cases.neutralize_tokens(value)
+
+
 def clean_case_request(value: object) -> str:
     text = _single_line(value)
     inquiry = re.search(r"(?:^|\s)-?\s*문의\s*내용\s*:\s*(.+)$", text, re.IGNORECASE)
@@ -816,8 +825,8 @@ def build_support_case(
     related_ids = list(dict.fromkeys(canonical_knowledge_id(item) for item in related_ids))
     case_type = primary_case_type(example)
     label = CASE_TYPE_LABELS[case_type]
-    request = clean_case_request(example.get("request_text")) or "문의 내용 미기재"
-    action = _single_line(example.get("action_text")) or "대응 내용 미기재"
+    request = _neutralize(clean_case_request(example.get("request_text"))) or "문의 내용 미기재"
+    action = _neutralize(_single_line(example.get("action_text"))) or "대응 내용 미기재"
     candidate_id = _single_line(example.get("candidate_id"))
     evidence_locator = _single_line(example.get("evidence_locator"))
     stable_seed = candidate_id or f"{evidence_locator}|{request}|{action}"
@@ -1007,11 +1016,11 @@ def build_manual_enrichment() -> int:
             case_type = primary_case_type(example)
             case_links[case_type].append(
                 f"- [[check-expert/{case_relative.with_suffix('').as_posix()}|"
-                f"{_single_line(example.get('request_text'))[:100]}]]"
+                f"{_neutralize(_single_line(example.get('request_text')))[:100]}]]"
             )
             documents += 1
-            request = _single_line(example.get("request_text")) or "문의 내용 미기재"
-            action = _single_line(example.get("action_text")) or "대응 내용 미기재"
+            request = _neutralize(_single_line(example.get("request_text"))) or "문의 내용 미기재"
+            action = _neutralize(_single_line(example.get("action_text"))) or "대응 내용 미기재"
             document += f"### 후보 {index}\n\n"
             document += f"- 고객 질문·증상: {request}\n"
             document += f"- 당시 대응 기록: {action}\n"
@@ -1131,10 +1140,10 @@ def build_unmapped_enrichment() -> int:
             documents += 1
             document += f"### 후보 {index}\n\n"
             document += (
-                f"- 고객 질문·증상: {_single_line(example.get('request_text')) or '미기재'}\n"
+                f"- 고객 질문·증상: {_neutralize(_single_line(example.get('request_text'))) or '미기재'}\n"
             )
             document += (
-                f"- 당시 대응 기록: {_single_line(example.get('action_text')) or '미기재'}\n"
+                f"- 당시 대응 기록: {_neutralize(_single_line(example.get('action_text'))) or '미기재'}\n"
             )
             document += f"- 증거 위치: `{_single_line(example.get('evidence_locator'))}`\n"
             document += "- 검토 과제: 연결할 기존 문서 또는 신규 문서 필요 여부 결정\n\n"

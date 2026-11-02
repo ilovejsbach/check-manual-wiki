@@ -112,3 +112,13 @@ def test_cli_end_to_end(tmp_path):
     for bad in ("321-5678", "가나다", "06.25", "row:1"):
         assert bad not in body
     assert "1300" in body
+
+
+def test_neutralize_tokens_replaces_placeholders_but_keeps_symptoms_and_facts():
+    import sanitize_cases as sc
+
+    assert sc.neutralize_tokens("[REDACTED_ENTITY]에서 [PERSON]님 문의") == "고객사에서 담당자님 문의"
+    assert sc.neutralize_tokens("[IDENTIFIER] 종목 시세") == "특정 종목 시세"
+    assert sc.neutralize_tokens("함수가 '[NUMBER]' 로 표시됩니다") == "함수가 '⟦[NUMBER]⟧' 로 표시됩니다"
+    assert sc.neutralize_tokens('=CT([IDENTIFIER], 4001)') == '=CT(⟦[IDENTIFIER]⟧, 4001)'
+    assert sc.neutralize_tokens("화면번호 : 1300 TR 4611 2026년 3월") == "화면번호 : 1300 TR 4611 2026년 3월"  # 토큰 외에는 건드리지 않는다

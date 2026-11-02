@@ -35,7 +35,7 @@ candidate_id: manual-candidate:VOC-01286
 
 ## 당시 대응
 
-안녕하세요. [IDENTIFIER]+ 입니다. 관련하여 유선으로 연락하여 안내 하였습니다. KOSPI 200 콜옵션 2605 1095.0 종목의 전일자 값을 아래 함수를 사용하여 활용 부탁 드립니다. =CH( TODAY()-1, TODAY()-1, 10, "D", TRUE, "B0165A33*006", "[NUMBER], [NUMBER]", "DESC", "[IDENTIFIER]=true;") 감사합니다.
+안녕하세요. 특정 종목+ 입니다. 관련하여 유선으로 연락하여 안내 하였습니다. KOSPI 200 콜옵션 2605 1095.0 종목의 전일자 값을 아래 함수를 사용하여 활용 부탁 드립니다. =CH( TODAY()-1, TODAY()-1, 10, "D", TRUE, "B0165A33*006", "⟦[NUMBER]⟧, ⟦[NUMBER]⟧", "DESC", "⟦[IDENTIFIER]⟧=true;") 감사합니다.
 
 ## 연결된 화면·기능
 

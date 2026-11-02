@@ -7,11 +7,11 @@
 {"case_id": "check:support-case:013e5bb3fb986e50", "intent": "data_error", "intent_rule": "안나", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0151920252b5fae7", "intent": "data_availability", "intent_rule": "있을까요", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0152193af88a3763", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:015e06a3812182bf", "intent": "data_availability", "intent_rule": "입수", "domains": ["경제지표"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:015e06a3812182bf", "intent": "data_availability", "intent_rule": "입수", "domains": ["주식", "경제지표"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:01e188f04c73d2d3", "intent": "data_availability", "intent_rule": "있을까요", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:023a39faf7599af2", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0279b44702d0e6f4", "intent": "other", "intent_rule": null, "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:02959b36c1f26016", "intent": "data_availability", "intent_rule": "데이터", "domains": ["해외"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:02959b36c1f26016", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식", "해외"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:029fe9aff1944e6e", "intent": "other", "intent_rule": null, "domains": ["외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:02a82a6ff8288885", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0304b80a9663b083", "intent": "other", "intent_rule": null, "domains": ["해외"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -19,7 +19,7 @@
 {"case_id": "check:support-case:0325ba1463f44ecc", "intent": "data_availability", "intent_rule": "항목", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:032e256df893e11f", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0373ded0012fb739", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["주식", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:03995654e2bac7e9", "intent": "other", "intent_rule": null, "domains": ["외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:03995654e2bac7e9", "intent": "other", "intent_rule": null, "domains": ["주식", "외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:03999a4c61b9390a", "intent": "other", "intent_rule": null, "domains": ["ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:03d8d9abd20b8e13", "intent": "data_error", "intent_rule": "안나", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0439e7d7526d5842", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -37,7 +37,7 @@
 {"case_id": "check:support-case:076a0c59fc4309ea", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:078a3928d91b4f6d", "intent": "data_availability", "intent_rule": "데이터", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:07bd05b85a59722a", "intent": "env_setup", "intent_rule": "윈도우", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:07ce457dc4a8530c", "intent": "data_error", "intent_rule": "변경되어", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:07ce457dc4a8530c", "intent": "data_error", "intent_rule": "변경되어", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0819a88fd513aab1", "intent": "screen_finding", "intent_rule": "볼수있는화면", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0842c80f3d6b5bec", "intent": "howto", "intent_rule": "방법", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0862886a0362f0e4", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -58,7 +58,7 @@
 {"case_id": "check:support-case:0a44eda0609fb7f8", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0a6c1d9decc7480e", "intent": "other", "intent_rule": null, "domains": ["채권", "주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0aa244cf18e919d7", "intent": "data_availability", "intent_rule": "항목", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:0af6a16dfb994002", "intent": "howto", "intent_rule": "문의드립니다", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:0af6a16dfb994002", "intent": "howto", "intent_rule": "문의드립니다", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0b13fbe5bd4a14ee", "intent": "env_setup", "intent_rule": "설치", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0b7474fb6a78ee5e", "intent": "env_setup", "intent_rule": "원격", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0b81e946c430578b", "intent": "data_availability", "intent_rule": "제공", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -79,7 +79,7 @@
 {"case_id": "check:support-case:0ebaa1689d852bce", "intent": "howto", "intent_rule": "문의 드립니다", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0ecd3b37712032b9", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0f033b16f7c4d551", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:0f16972d6f7bf271", "intent": "data_error", "intent_rule": "상이", "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:0f16972d6f7bf271", "intent": "data_error", "intent_rule": "상이", "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0f1cda03bdeb121f", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0fed5785e7f08aa2", "intent": "data_availability", "intent_rule": "데이터", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:0ff13c1f6beed9c7", "intent": "howto", "intent_rule": "사용법", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -98,7 +98,7 @@
 {"case_id": "check:support-case:11a68e6dc1be3d11", "intent": "screen_finding", "intent_rule": "조회 가능한 화면", "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:11ac4c6196c0b5a8", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:11d3fbdb2648ed26", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:1211fad8471452c1", "intent": "account_access", "intent_rule": "재택근무", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:1211fad8471452c1", "intent": "account_access", "intent_rule": "재택근무", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:125ec3f84f136da2", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:1283a0125694c32f", "intent": "data_error", "intent_rule": "상이", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:1284d45e30416abf", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -114,19 +114,19 @@
 {"case_id": "check:support-case:14a7367e187a63c3", "intent": "data_availability", "intent_rule": "있을까요", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:14ab7d6c0f782eb4", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:14b57b4e26e62679", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:1516f2962744ddd8", "intent": "other", "intent_rule": null, "domains": ["선물", "외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:1516f2962744ddd8", "intent": "other", "intent_rule": null, "domains": ["주식", "선물", "외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:15258ae62e8970df", "intent": "other", "intent_rule": null, "domains": ["경제지표"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:15606938906ce307", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:156fd1bc86eb855a", "intent": "howto", "intent_rule": "어떻게", "domains": ["옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:158a9c923c090934", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["채권", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:16be400644d37cf9", "intent": "howto", "intent_rule": "방법", "domains": ["채권", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:16f479288f39d469", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:16f7c2e97682b196", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:16f7c2e97682b196", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:174247d9f59b3d04", "intent": "data_error", "intent_rule": "안나", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:175bd9d1193f0293", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:177deea14fa504bf", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:17b6a431f3a81a1e", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:18abcbd5a71d9f7d", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:18abcbd5a71d9f7d", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:18bd21f1352d307a", "intent": "data_availability", "intent_rule": "있나요", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:18c6eec14953b1d6", "intent": "data_availability", "intent_rule": "데이터", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:18eea2bd7e74e89b", "intent": "env_setup", "intent_rule": "초기화", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -136,7 +136,7 @@
 {"case_id": "check:support-case:19b0605e245f1a19", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["채권", "주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:19cc2a92045e0737", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:1a46deb80792e2c1", "intent": "howto", "intent_rule": "어떻게", "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:1a57de94d8106c84", "intent": "data_availability", "intent_rule": "제공", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:1a57de94d8106c84", "intent": "data_availability", "intent_rule": "제공", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:1b22567c812734e8", "intent": "data_error", "intent_rule": "오류", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:1b37ee9274653e1c", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:1ba60b02e3dca86b", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -174,12 +174,12 @@
 {"case_id": "check:support-case:1f1bd0480ff6efa1", "intent": "other", "intent_rule": null, "domains": ["채권", "주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:1f9b15a0e877ee78", "intent": "other", "intent_rule": null, "domains": ["선물", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:1fa203ec4813a47f", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:1fb883f4e96db197", "intent": "env_setup", "intent_rule": "초기화", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:1fb883f4e96db197", "intent": "env_setup", "intent_rule": "초기화", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:1fc73717092c27d8", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:20022b473f37a9a3", "intent": "data_availability", "intent_rule": "항목", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:205d8e2ba3504e42", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:2082cd9ff60be297", "intent": "data_availability", "intent_rule": "언제", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:20a1dc9f4b3fde35", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:20a1dc9f4b3fde35", "intent": "other", "intent_rule": null, "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:20a8459b2305b679", "intent": "data_availability", "intent_rule": "있나요", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:20bcb5183e11f089", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:2162bedd350f6c44", "intent": "env_setup", "intent_rule": "원격", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -192,7 +192,7 @@
 {"case_id": "check:support-case:2252260ae7c39547", "intent": "howto", "intent_rule": "방법", "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:22563c8dbc231195", "intent": "howto", "intent_rule": "방법", "domains": ["주식", "선물", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:2271da2b3253a7f5", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:22770ed37f8aa9b4", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:22770ed37f8aa9b4", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:227e8fbe9d019bf3", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:22c445e8b19ab80b", "intent": "howto", "intent_rule": "방법", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:22e69d17a8f37309", "intent": "env_setup", "intent_rule": "접속 불가", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -209,7 +209,7 @@
 {"case_id": "check:support-case:24dc94cbc1346dfb", "intent": "data_availability", "intent_rule": "확인할 수", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:2500e2db38a2921d", "intent": "howto", "intent_rule": "방법", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:250cc71b4feb033c", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": ["채권", "해외"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:251a9720830a68f3", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:251a9720830a68f3", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:251aabd14a94bdd9", "intent": "data_error", "intent_rule": "갱신", "domains": ["채권", "주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:255b8b0aff066428", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:255e3009cf57dcf6", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -226,7 +226,7 @@
 {"case_id": "check:support-case:27593e7a020cbf2f", "intent": "data_availability", "intent_rule": "데이터", "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:276a62129eaebbb7", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:27b8b483f58a5df0", "intent": "data_availability", "intent_rule": "데이터", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:27b96df79c74d574", "intent": "howto", "intent_rule": "문의드립니다", "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:27b96df79c74d574", "intent": "howto", "intent_rule": "문의드립니다", "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:27da2094b69dc218", "intent": "account_access", "intent_rule": "사용자 로그인 처리", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:27e3d3e11cc60fb0", "intent": "howto", "intent_rule": "방법", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:27fda8997973b911", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -253,7 +253,7 @@
 {"case_id": "check:support-case:2b2bcd67fe33256a", "intent": "env_setup", "intent_rule": "윈도우", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:2b32fe035ea61d07", "intent": "howto", "intent_rule": "어떻게", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:2b45f92dba04526a", "intent": "data_availability", "intent_rule": "있을까요", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:2bbe5ec8ee0b5d75", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:2bbe5ec8ee0b5d75", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:2bf2d90b1b013079", "intent": "data_error", "intent_rule": "잘못", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:2c4de2703be69688", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:2c65a9489f886cab", "intent": "data_error", "intent_rule": "갱신", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -328,7 +328,7 @@
 {"case_id": "check:support-case:3aa5415bf31cd5a6", "intent": "data_availability", "intent_rule": "항목", "domains": ["채권", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:3b0972803bbb30f6", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:3b23987094dd8bf0", "intent": "data_error", "intent_rule": "오류", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:3b58d2d8c727b455", "intent": "other", "intent_rule": null, "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:3b58d2d8c727b455", "intent": "other", "intent_rule": null, "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:3b5d166896b49309", "intent": "data_availability", "intent_rule": "가능할까", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:3b8ffcbc631cf5b6", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:3bb182130a78ce05", "intent": "data_availability", "intent_rule": "있나요", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -352,7 +352,7 @@
 {"case_id": "check:support-case:3dc9ab3b1d0f26c2", "intent": "other", "intent_rule": null, "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:3e5efd0a748ca973", "intent": "env_setup", "intent_rule": "MAC", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:3e8abcc3b5368a52", "intent": "env_setup", "intent_rule": "MAC", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:3ea4165468b8df83", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:3ea4165468b8df83", "intent": "other", "intent_rule": null, "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:3ef4f911245d93f8", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:3fa21a0820e8077d", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:3fe6d6377460f81a", "intent": "empty", "intent_rule": "empty", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -374,22 +374,22 @@
 {"case_id": "check:support-case:4215cb276601f37f", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:42436932e647dc94", "intent": "data_availability", "intent_rule": "제공", "domains": ["채권", "주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:42658b69b573d711", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:428fceba726601a7", "intent": "data_availability", "intent_rule": "제공", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:428fceba726601a7", "intent": "data_availability", "intent_rule": "제공", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:43ec15f8b129cba5", "intent": "other", "intent_rule": null, "domains": ["옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:43f1a33c45a183b5", "intent": "howto", "intent_rule": "어떻게", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:443b70534c60db0d", "intent": "other", "intent_rule": null, "domains": ["주식", "펀드"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4446d05b5efd5116", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": ["주식", "외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:444eba18c4606828", "intent": "env_setup", "intent_rule": "설치", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:4458da19f3daaba1", "intent": "data_availability", "intent_rule": "데이터", "domains": ["외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:453420d288456daa", "intent": "howto", "intent_rule": "어떻게", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:456b5b868e8f74f6", "intent": "data_error", "intent_rule": "다르", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:4458da19f3daaba1", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식", "외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:453420d288456daa", "intent": "howto", "intent_rule": "어떻게", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:456b5b868e8f74f6", "intent": "data_error", "intent_rule": "다르", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:456c356470c856f7", "intent": "other", "intent_rule": null, "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:45b596173f09baba", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:45e046f2c5ddeab8", "intent": "data_error", "intent_rule": "수정요청", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:45e046f2c5ddeab8", "intent": "data_error", "intent_rule": "수정요청", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4607c0f5a0bb750a", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4620c5788a0f14bf", "intent": "data_availability", "intent_rule": "제공", "domains": ["주식", "펀드"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:46474989c5d237b1", "intent": "other", "intent_rule": null, "domains": ["외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:467cbee196464540", "intent": "screen_finding", "intent_rule": "찾을수", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:467cbee196464540", "intent": "screen_finding", "intent_rule": "찾을수", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:468a5152ca325a25", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:46cfa518fe936a72", "intent": "env_setup", "intent_rule": "교체", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:470eeed38f6cea8e", "intent": "other", "intent_rule": null, "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -398,11 +398,11 @@
 {"case_id": "check:support-case:47d4b98da2f0e1c2", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:47d51a1e4fd7cc58", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:47e2a170101a7260", "intent": "env_setup", "intent_rule": "교체", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:48a1ef58d57772f7", "intent": "data_availability", "intent_rule": "데이터", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:48a1ef58d57772f7", "intent": "data_availability", "intent_rule": "데이터", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:48af789fe954ef9e", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:48c9f8d645667dac", "intent": "data_error", "intent_rule": "오류", "domains": ["주식", "옵션", "펀드"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:48dc48710e05577c", "intent": "account_access", "intent_rule": "계정", "domains": ["ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:49335b5ed2aa4801", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:48dc48710e05577c", "intent": "account_access", "intent_rule": "계정", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:49335b5ed2aa4801", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:49ce3055b4f7dc97", "intent": "other", "intent_rule": null, "domains": ["외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:49cea60e8173c83d", "intent": "other", "intent_rule": null, "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:49dc8baf5b3efeaa", "intent": "other", "intent_rule": null, "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -414,7 +414,7 @@
 {"case_id": "check:support-case:4a9d6cae5f3ad643", "intent": "other", "intent_rule": null, "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4ac15a4a91cfc974", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4ad5f39702355b83", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:4aec7420d1b2f42c", "intent": "data_error", "intent_rule": "상이", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:4aec7420d1b2f42c", "intent": "data_error", "intent_rule": "상이", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4b3a055842ce39e1", "intent": "howto", "intent_rule": "방법", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4b75ff5aa222eac8", "intent": "data_availability", "intent_rule": "데이터", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4b9d474556aa1a8b", "intent": "data_availability", "intent_rule": "있나요", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -437,28 +437,28 @@
 {"case_id": "check:support-case:4ddb8056f708e33f", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4dfdfa22cd9a2db5", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4e4b7831e539af1a", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:4e87f36a1b098665", "intent": "data_error", "intent_rule": "오류", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:4e87f36a1b098665", "intent": "data_error", "intent_rule": "오류", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4e91b5bb5ddf554f", "intent": "screen_finding", "intent_rule": "어디서 볼", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4e994f9662425b5d", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": ["채권", "해외"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4eb23dfedc8a26d7", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4ec367bc11025548", "intent": "data_error", "intent_rule": "안나", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4eca4b2e94ccda36", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:4ecb27c75003d51c", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:4ecb27c75003d51c", "intent": "other", "intent_rule": null, "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4ee4e5ed332bb805", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4eed1ce1487b3d41", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4f251a5f46dcf140", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4f56aa9654e0eecf", "intent": "howto", "intent_rule": "문의드립니다", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4f626b222d2ef8ff", "intent": "env_setup", "intent_rule": "교체", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4f628cca16b805ba", "intent": "empty", "intent_rule": "empty", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:4fa98aa2add2af83", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:4fa98aa2add2af83", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4fb46913c8b0d2d5", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:4feeafcb789a998c", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:502a19031732c35c", "intent": "data_availability", "intent_rule": "있나요", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:5080e2a0ef83a50d", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:5114454900d6eea7", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:51601fbf8d091734", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:5114454900d6eea7", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:51601fbf8d091734", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:518316043154d14d", "intent": "howto", "intent_rule": "하는법", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:51869a5bb7f3402d", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:51869a5bb7f3402d", "intent": "other", "intent_rule": null, "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:51d69d808cd5356a", "intent": "empty", "intent_rule": "empty", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:525f6e67d9ce0422", "intent": "env_setup", "intent_rule": "교체", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:52e3a3d7eeec67bc", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -473,7 +473,7 @@
 {"case_id": "check:support-case:540617ec715d0e25", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:542fef2c20008500", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:54447e7e552306b7", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": ["채권", "주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:5464c52ff3fffd9d", "intent": "data_error", "intent_rule": "상이", "domains": ["채권", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:5464c52ff3fffd9d", "intent": "data_error", "intent_rule": "상이", "domains": ["채권", "주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:54755783c958ca34", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:5492e2383ef5800b", "intent": "data_error", "intent_rule": "안 나", "domains": ["채권", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:549649e69836a2ed", "intent": "data_availability", "intent_rule": "확인할 수", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -490,7 +490,7 @@
 {"case_id": "check:support-case:5715aaa84cfa5a2c", "intent": "data_availability", "intent_rule": "입수", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:5722031461d0a670", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:5738a01ea6e2474e", "intent": "env_setup", "intent_rule": "초기화", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:574bc9c68325c0f4", "intent": "data_availability", "intent_rule": "추가 요청", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:574bc9c68325c0f4", "intent": "data_availability", "intent_rule": "추가 요청", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:575236dbcb596e9e", "intent": "screen_finding", "intent_rule": "어디서볼", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:579a522332a681ef", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:57ac2987e108e863", "intent": "howto", "intent_rule": "방법", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -503,7 +503,7 @@
 {"case_id": "check:support-case:58af959ddfcd6bf8", "intent": "data_availability", "intent_rule": "항목", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:591f2626372bc668", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:592046cf7de04432", "intent": "env_setup", "intent_rule": "교체", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:595b3c81d4d7b716", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:595b3c81d4d7b716", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:59a3cd810737d4cf", "intent": "data_availability", "intent_rule": "항목", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:59c1ef46d8c82a7d", "intent": "screen_finding", "intent_rule": "볼수있는 화면", "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:5a0b8b331d2df599", "intent": "other", "intent_rule": null, "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -513,7 +513,7 @@
 {"case_id": "check:support-case:5ad0db2b6baa15c4", "intent": "data_availability", "intent_rule": "데이터", "domains": ["선물", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:5afafdad20adf4bd", "intent": "data_error", "intent_rule": "갱신", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:5b2d57adea3f9ac8", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:5b53414ee5b79ac5", "intent": "howto", "intent_rule": "문의드립니다", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:5b53414ee5b79ac5", "intent": "howto", "intent_rule": "문의드립니다", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:5b5fa0a186d41293", "intent": "data_availability", "intent_rule": "있을까요", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:5b9f7df8bd25fbd2", "intent": "howto", "intent_rule": "방법", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:5bd713487121ba54", "intent": "howto", "intent_rule": "문의드립니다", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -521,7 +521,7 @@
 {"case_id": "check:support-case:5c616ec08dafc5d7", "intent": "data_availability", "intent_rule": "있을까요", "domains": ["채권", "주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:5c7543b1dd4da38f", "intent": "other", "intent_rule": null, "domains": ["ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:5ccd128ce54245ea", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:5cedcf834cafff7e", "intent": "data_error", "intent_rule": "오류", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:5cedcf834cafff7e", "intent": "data_error", "intent_rule": "오류", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:5cee8303b3381c89", "intent": "screen_finding", "intent_rule": "화면 있", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:5d1517362cd35c4e", "intent": "screen_finding", "intent_rule": "화면있", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:5dc3e9fad46cd1de", "intent": "data_error", "intent_rule": "오류", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -535,7 +535,7 @@
 {"case_id": "check:support-case:5fa9491a4bab86e5", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:5fb9085f5cb3a0cb", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:5fc1da38885d7c4b", "intent": "howto", "intent_rule": "설정", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:5fdafe31a8d4e85a", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:5fdafe31a8d4e85a", "intent": "other", "intent_rule": null, "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:6060a1732f2a8538", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:607c2fdcae30aa78", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:60ba8a3421b6865f", "intent": "howto", "intent_rule": "설정", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -552,7 +552,7 @@
 {"case_id": "check:support-case:62614d969c8be995", "intent": "howto", "intent_rule": "방법", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:626193cb58a145ff", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:6271f3c9aa992676", "intent": "data_availability", "intent_rule": "확인할수", "domains": ["채권", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:6288c9e1e97d631b", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:6288c9e1e97d631b", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:62ad0024817b4611", "intent": "other", "intent_rule": null, "domains": ["ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:62fb80e56656fb04", "intent": "data_availability", "intent_rule": "있을까요", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:62fd31d2e5fb303a", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -586,9 +586,9 @@
 {"case_id": "check:support-case:671f9c2c2da4ddc0", "intent": "data_error", "intent_rule": "상이", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:676446d02810b2aa", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:6767810f5de9a3ee", "intent": "other", "intent_rule": null, "domains": ["ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:67ccc344c1f75f2a", "intent": "data_error", "intent_rule": "상이", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:67ccc344c1f75f2a", "intent": "data_error", "intent_rule": "상이", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:681a30f57e640c4e", "intent": "other", "intent_rule": null, "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:681ae83fa04c6b6c", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:681ae83fa04c6b6c", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:682f80ab64f7eb87", "intent": "data_error", "intent_rule": "오류", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:6873988d799f59b9", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:688820727ae79f09", "intent": "screen_finding", "intent_rule": "볼수있는 화면", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -614,7 +614,7 @@
 {"case_id": "check:support-case:6e4d2f34212a04ee", "intent": "other", "intent_rule": null, "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:6e6539c5908516af", "intent": "data_error", "intent_rule": "다르", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:6e7f2d58d690d260", "intent": "data_error", "intent_rule": "상이", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:6e97dc52a949d5e7", "intent": "account_access", "intent_rule": "권한", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:6e97dc52a949d5e7", "intent": "account_access", "intent_rule": "권한", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:6ead589b94a2e892", "intent": "account_access", "intent_rule": "계정", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:6ebd4231302eaa5d", "intent": "data_error", "intent_rule": "상이", "domains": ["외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:6ec171a395a2f07a", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -636,14 +636,14 @@
 {"case_id": "check:support-case:71d1a01b05dbe629", "intent": "data_error", "intent_rule": "오류", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:72233ee71e906dd0", "intent": "data_availability", "intent_rule": "있을까요", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:727f0c6b110a989f", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:732efdd81e556b35", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:732efdd81e556b35", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:734554d24352db3f", "intent": "data_availability", "intent_rule": "확인 가능", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:7365957e130eeb54", "intent": "env_setup", "intent_rule": "안열", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:7366c56705bd6341", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:7372f3c35a0ca56f", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:73a1defe209b8491", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:73a5eb1114ebcaa1", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:73e8dabf540617a3", "intent": "data_error", "intent_rule": "변경되어", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:73e8dabf540617a3", "intent": "data_error", "intent_rule": "변경되어", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:74092023219a5b10", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": ["주식", "선물", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:740db9ed4e43b708", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:740ea4df2d5529ad", "intent": "data_availability", "intent_rule": "있을까요", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -674,13 +674,13 @@
 {"case_id": "check:support-case:77a04ece7e5efeb2", "intent": "data_error", "intent_rule": "갱신", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:77d8ee08238ca583", "intent": "env_setup", "intent_rule": "초기화", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:77dac649b3e7e589", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:77eae7dea2c44288", "intent": "data_error", "intent_rule": "안 나", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:77eae7dea2c44288", "intent": "data_error", "intent_rule": "안 나", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:7828657e3ac0b2d6", "intent": "howto", "intent_rule": "문의드립니다", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:7881306cd2c201e0", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:793c1ede6d531bbf", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:79a1d53c2e60c15d", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:79de48571c644944", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:79e29fed5dbf0e85", "intent": "data_error", "intent_rule": "상이", "domains": ["채권", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:79e29fed5dbf0e85", "intent": "data_error", "intent_rule": "상이", "domains": ["채권", "주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:79ef047e6ee82dda", "intent": "other", "intent_rule": null, "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:79f706cff691d864", "intent": "data_availability", "intent_rule": "있나요", "domains": ["채권", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:7a2007bd65d975df", "intent": "data_availability", "intent_rule": "데이터", "domains": ["경제지표"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -700,9 +700,9 @@
 {"case_id": "check:support-case:7d5c97b09d72519a", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:7d79fd16dee1a022", "intent": "other", "intent_rule": null, "domains": ["주식", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:7dacce1ee31e8410", "intent": "data_availability", "intent_rule": "항목", "domains": ["옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:7db15270d1258cd1", "intent": "howto", "intent_rule": "문의드립니다", "domains": ["선물", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:7db15270d1258cd1", "intent": "howto", "intent_rule": "문의드립니다", "domains": ["주식", "선물", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:7e145038ef1384ec", "intent": "data_error", "intent_rule": "갱신", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:7e31069108270036", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:7e31069108270036", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:7e3d7ef2099e5c1e", "intent": "account_access", "intent_rule": "권한", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:7e4b4ef91247f130", "intent": "data_error", "intent_rule": "오류", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:7e7f9d9c3e179656", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -741,13 +741,13 @@
 {"case_id": "check:support-case:8445a89f0f0466f1", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:845649e0df83d903", "intent": "howto", "intent_rule": "하려면", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:846f786c02ff86b5", "intent": "data_availability", "intent_rule": "제공", "domains": ["채권", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:84862e272f76aac9", "intent": "howto", "intent_rule": "설정", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:84aaea2d7ef63e60", "intent": "account_access", "intent_rule": "사용자 로그인 처리", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:84862e272f76aac9", "intent": "howto", "intent_rule": "설정", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:84aaea2d7ef63e60", "intent": "account_access", "intent_rule": "사용자 로그인 처리", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:85bfb2e0c6e18b63", "intent": "env_setup", "intent_rule": "단말 교체", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:85e9bbe1b0a1c3e5", "intent": "data_availability", "intent_rule": "있을까요", "domains": ["채권", "해외"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:85f963c437449dbc", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:86272a6390822487", "intent": "data_error", "intent_rule": "갱신", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:865ad4795f9d1079", "intent": "screen_finding", "intent_rule": "찾을 수", "domains": ["ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:865ad4795f9d1079", "intent": "screen_finding", "intent_rule": "찾을 수", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:86ad48f9d0783b07", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:872cc3312c3b2e52", "intent": "howto", "intent_rule": "절차", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:87aafd07058fd241", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -778,7 +778,7 @@
 {"case_id": "check:support-case:8bf6762e33690c8b", "intent": "data_availability", "intent_rule": "항목", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:8c17a4a83d0ff7d8", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:8c1e668354fab317", "intent": "other", "intent_rule": null, "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:8c2350887aa3d468", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:8c2350887aa3d468", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:8c48f38606955bf7", "intent": "other", "intent_rule": null, "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:8cbba057f6a0a113", "intent": "data_error", "intent_rule": "안 나", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:8d0b84c593b575ba", "intent": "data_error", "intent_rule": "상이", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -786,7 +786,7 @@
 {"case_id": "check:support-case:8d407a9e31f1fc3f", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:8d6741489989f665", "intent": "empty", "intent_rule": "empty", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:8da314bac6da029d", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:8df1d6fcd20d0f6f", "intent": "other", "intent_rule": null, "domains": ["채권", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:8df1d6fcd20d0f6f", "intent": "other", "intent_rule": null, "domains": ["채권", "주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:8e3053278037434d", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:8e5ff8951fe8c3bd", "intent": "other", "intent_rule": null, "domains": ["주식", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:8e8033a82a9d0d6c", "intent": "howto", "intent_rule": "문의 드립니다", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -804,7 +804,7 @@
 {"case_id": "check:support-case:90b5704b0fcbebc8", "intent": "data_availability", "intent_rule": "있을까요", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:90bf9fc596d40fc5", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:9145a327521ab0ee", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:91c4d71f8914a019", "intent": "env_setup", "intent_rule": "교체", "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:91c4d71f8914a019", "intent": "env_setup", "intent_rule": "교체", "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:91e53f7f1b0dc0d4", "intent": "data_error", "intent_rule": "안 보", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:9264587015fb53d9", "intent": "screen_finding", "intent_rule": "어디서 볼", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:92a36f36caff2bb3", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -837,7 +837,7 @@
 {"case_id": "check:support-case:96db12dbe0ff3d3a", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:96e8a90252909e9f", "intent": "env_setup", "intent_rule": "설치", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:96ff4758ea5af062", "intent": "data_availability", "intent_rule": "제공", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:978dc048eb38aafc", "intent": "data_error", "intent_rule": "반영이 안", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:978dc048eb38aafc", "intent": "data_error", "intent_rule": "반영이 안", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:97ad9a1946493315", "intent": "data_availability", "intent_rule": "확인할 수", "domains": ["ETP", "펀드"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:97ccacb036ea9888", "intent": "data_error", "intent_rule": "오류", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:97d72586df2bd3c3", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -855,7 +855,7 @@
 {"case_id": "check:support-case:99cfdee9784c01b1", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["펀드"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:99e5411ef8c6ef22", "intent": "data_availability", "intent_rule": "데이터", "domains": ["ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:9a8a5acae9b035d9", "intent": "data_error", "intent_rule": "상이", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:9adfcbccabd0681b", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:9adfcbccabd0681b", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:9b4fe575a2dced5a", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:9b996da1514c3339", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": ["채권", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:9bbbb38a17d02bf2", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -867,13 +867,13 @@
 {"case_id": "check:support-case:9c98acce296ecf45", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:9ca0e77eba9f44fc", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:9ce93e2e5640fd01", "intent": "env_setup", "intent_rule": "윈도우", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:9d68c36301e2d593", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:9d68c36301e2d593", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:9d7bbb4fff0d32ab", "intent": "env_setup", "intent_rule": "접속이", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:9d9c2c86543d8709", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:9dc047c210d75f65", "intent": "other", "intent_rule": null, "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:9e3ac4179438a98a", "intent": "howto", "intent_rule": "문의드립니다", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:9e3ac4179438a98a", "intent": "howto", "intent_rule": "문의드립니다", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:9e440f8b2122ab84", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:9e69e82d50f99a65", "intent": "data_error", "intent_rule": "상이", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:9e69e82d50f99a65", "intent": "data_error", "intent_rule": "상이", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:9e98e51c0338929d", "intent": "howto", "intent_rule": "문의드립니다", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:9f0e5696b7aaf7bb", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:9fa3129cb1f1d790", "intent": "data_availability", "intent_rule": "있을까요", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -913,7 +913,7 @@
 {"case_id": "check:support-case:a57f8c229673308f", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:a581b81ff676efd8", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["주식", "선물", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:a5a34199c782922e", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:a5c14f2c49aebbec", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:a5c14f2c49aebbec", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:a5d17a04b8aeb11d", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:a5e85ea42a031acc", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:a644ccc8c31cb5c7", "intent": "data_error", "intent_rule": "안보", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -921,7 +921,7 @@
 {"case_id": "check:support-case:a6811fa88ebdddf3", "intent": "data_error", "intent_rule": "수정 요청", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:a6b4031b87bd8db8", "intent": "env_setup", "intent_rule": "초기화", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:a6bc9e7276c3e034", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:a6c0b265efd64929", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:a6c0b265efd64929", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:a71c09827bd77931", "intent": "other", "intent_rule": null, "domains": ["채권", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:a7477e484780923f", "intent": "howto", "intent_rule": "방법", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:a747f7fbeb40a0be", "intent": "data_error", "intent_rule": "변경되어", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -936,7 +936,7 @@
 {"case_id": "check:support-case:a82166c5f8a8ce1b", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:a82fd77af2c6f0cb", "intent": "howto", "intent_rule": "어떻게", "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:a839e936a1549ca2", "intent": "other", "intent_rule": null, "domains": ["외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:a84e4ebbbdf16e40", "intent": "env_setup", "intent_rule": "교체", "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:a84e4ebbbdf16e40", "intent": "env_setup", "intent_rule": "교체", "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:a88c18a8c5df6ab5", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:a8a1de17198c5004", "intent": "data_availability", "intent_rule": "데이터", "domains": ["채권", "주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:a8b650f49eddf00a", "intent": "howto", "intent_rule": "어떻게", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -971,7 +971,7 @@
 {"case_id": "check:support-case:af253204c5a89010", "intent": "data_availability", "intent_rule": "확인할수", "domains": ["옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:af26b145421f13ae", "intent": "data_availability", "intent_rule": "확인할 수", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:af820f73d8003874", "intent": "screen_finding", "intent_rule": "어디서 볼", "domains": ["ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:af8965ee5ade6838", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:af8965ee5ade6838", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:afcf45b8d49b7b20", "intent": "howto", "intent_rule": "설정", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:afd567787917d434", "intent": "env_setup", "intent_rule": "교체", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:b00c90a0442951e4", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -981,13 +981,13 @@
 {"case_id": "check:support-case:b0925909002fb87f", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:b0bffff0d20dd164", "intent": "data_availability", "intent_rule": "있을까요", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:b0e66f8126693aa2", "intent": "other", "intent_rule": null, "domains": ["채권", "선물", "해외"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:b0f27f3afcf41c05", "intent": "howto", "intent_rule": "방법", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:b0f27f3afcf41c05", "intent": "howto", "intent_rule": "방법", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:b113457f12632925", "intent": "other", "intent_rule": null, "domains": ["옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:b14dee8f0a2142f1", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:b14dee8f0a2142f1", "intent": "other", "intent_rule": null, "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:b19fdac0b8dd83f1", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:b1a01f92268922dc", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:b235771a44053dc3", "intent": "data_error", "intent_rule": "업데이트가 안", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:b244f6cd32455a22", "intent": "howto", "intent_rule": "어떻게", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:b244f6cd32455a22", "intent": "howto", "intent_rule": "어떻게", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:b25c1293bd8f6537", "intent": "data_availability", "intent_rule": "항목", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:b25f3f4af3372677", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:b282237ef5367135", "intent": "howto", "intent_rule": "어떻게", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -1011,10 +1011,10 @@
 {"case_id": "check:support-case:b5b75140cb4cdd85", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:b5c594960988df7d", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:b5f2cfcf6241846e", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:b626fc9047cc1ff1", "intent": "account_access", "intent_rule": "재택근무", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:b626fc9047cc1ff1", "intent": "account_access", "intent_rule": "재택근무", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:b65907ab3fa6f293", "intent": "data_availability", "intent_rule": "제공", "domains": ["주식", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:b67abbd9244322a1", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:b6cdd822372328b7", "intent": "screen_finding", "intent_rule": "찾을수", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:b6cdd822372328b7", "intent": "screen_finding", "intent_rule": "찾을수", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:b75297fa881a3ec1", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:b768cd478e7f1a9f", "intent": "data_error", "intent_rule": "안 보", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:b77b1956aca3c525", "intent": "data_availability", "intent_rule": "있을까요", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -1036,14 +1036,14 @@
 {"case_id": "check:support-case:b9c3a91aa3f49a06", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:b9f903c5bdbc736a", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:ba2e38530a49dfea", "intent": "env_setup", "intent_rule": "윈도우", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:ba2edd341f7d3e58", "intent": "data_error", "intent_rule": "상이", "domains": ["채권", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:ba2edd341f7d3e58", "intent": "data_error", "intent_rule": "상이", "domains": ["채권", "주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:ba3ad2cd921cd407", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:ba3e8e332e81f8f4", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:ba41f030441ec82a", "intent": "other", "intent_rule": null, "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:ba9dbae0c9dae3eb", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:baf9dbc1b142924b", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:bafd5af764a452ba", "intent": "data_availability", "intent_rule": "데이터", "domains": ["해외"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:bb062f94bcb19c92", "intent": "data_availability", "intent_rule": "데이터", "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:bb062f94bcb19c92", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:bb2bb5a21a6efd8d", "intent": "howto", "intent_rule": "문의 드립니다", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:bb4955cd1ce5db23", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:bb58df5df243f419", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -1066,7 +1066,7 @@
 {"case_id": "check:support-case:be0ab7e99470409b", "intent": "data_availability", "intent_rule": "있을까요", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:be5678102827c012", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:be9058dcf0aa2136", "intent": "data_error", "intent_rule": "상이", "domains": ["채권", "주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:beabe1e4d0c3b1ed", "intent": "howto", "intent_rule": "방법", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:beabe1e4d0c3b1ed", "intent": "howto", "intent_rule": "방법", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:beb4935a51132c05", "intent": "data_error", "intent_rule": "안보", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:bebe26abebd1b559", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:bed822cf412f74ba", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -1122,7 +1122,7 @@
 {"case_id": "check:support-case:c7df0cef41b7e43e", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:c838fb1556e88037", "intent": "howto", "intent_rule": "어떻게", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:c868c749bcf48eb8", "intent": "data_error", "intent_rule": "안 보", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:c89c2ed54a18e1b0", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:c89c2ed54a18e1b0", "intent": "other", "intent_rule": null, "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:c8a8bee38d35aa6a", "intent": "env_setup", "intent_rule": "교체", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:c8bbb1d9ea6fd543", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:c8e39c34cadc56de", "intent": "other", "intent_rule": null, "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -1137,18 +1137,18 @@
 {"case_id": "check:support-case:cbc73c8875838fda", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:cc47aed51654ee00", "intent": "data_availability", "intent_rule": "제공", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:cca57186b1e6a558", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:ccb37ddf3f6c3af9", "intent": "data_availability", "intent_rule": "추가 요청", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:ccb37ddf3f6c3af9", "intent": "data_availability", "intent_rule": "추가 요청", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:cd74861a0bc229e5", "intent": "other", "intent_rule": null, "domains": ["외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:cd85642fff1958a6", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:cd9a56ab9b3f8bdf", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:cdd8879c934d719d", "intent": "env_setup", "intent_rule": "단말 교체", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:cddf5ad869957da5", "intent": "data_availability", "intent_rule": "있나요", "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:cdeee966e620b418", "intent": "data_error", "intent_rule": "안나", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:ce180efda137fae7", "intent": "data_error", "intent_rule": "상이", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:ce180efda137fae7", "intent": "data_error", "intent_rule": "상이", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:ce8af3aa34ee80a0", "intent": "data_availability", "intent_rule": "항목", "domains": ["ETP", "펀드"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:ce8c2450dfcbabe5", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:cee58a898ef1cfdc", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:cef9d553d3b10886", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:cef9d553d3b10886", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:ceff2156af80a54a", "intent": "other", "intent_rule": null, "domains": ["외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:cf364c7d391fdd4a", "intent": "other", "intent_rule": null, "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:cf4ee873cf8c0bf6", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -1169,7 +1169,7 @@
 {"case_id": "check:support-case:d1ddd8ae8026d883", "intent": "data_error", "intent_rule": "안 나", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:d2438789fc034af7", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:d2516c7a259b0f60", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:d26dcfe4120af66d", "intent": "data_availability", "intent_rule": "데이터", "domains": ["선물", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:d26dcfe4120af66d", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식", "선물", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:d29f9780719bc2f3", "intent": "env_setup", "intent_rule": "윈도우", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:d2b3ed5b24faca95", "intent": "other", "intent_rule": null, "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:d2bbe50f8532f60a", "intent": "howto", "intent_rule": "어떻게", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -1191,11 +1191,11 @@
 {"case_id": "check:support-case:d475dc7140473d2a", "intent": "data_availability", "intent_rule": "데이터", "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:d48b4d03d2705504", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:d4c1dac560fa9892", "intent": "data_availability", "intent_rule": "확인할 수", "domains": ["선물", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:d551a058164dae6e", "intent": "data_availability", "intent_rule": "데이터", "domains": ["외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:d551a058164dae6e", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식", "외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:d5a090abc866b175", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:d5d32d097d8442c3", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:d5d8fba95e6d2f46", "intent": "data_availability", "intent_rule": "데이터", "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:d621def0d769a8ef", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:d621def0d769a8ef", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:d628cec2690f06e0", "intent": "env_setup", "intent_rule": "설치", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:d65c6a0684dd0f20", "intent": "data_error", "intent_rule": "업데이트가 안", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:d6bb149816910f39", "intent": "data_availability", "intent_rule": "있나요", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -1237,7 +1237,7 @@
 {"case_id": "check:support-case:dd970c20417f9606", "intent": "other", "intent_rule": null, "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:dda0c0682f179053", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:dde6718ea30042c6", "intent": "screen_finding", "intent_rule": "어디서 확인", "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:de9312347ceb3370", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:de9312347ceb3370", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:df1a2e08a5883c60", "intent": "data_error", "intent_rule": "업데이트가 안", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:df2d24a127ff6ff3", "intent": "other", "intent_rule": null, "domains": ["외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:df380702ed1ea235", "intent": "data_availability", "intent_rule": "확인할 수", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -1246,7 +1246,7 @@
 {"case_id": "check:support-case:df7b2e05df5aa205", "intent": "data_error", "intent_rule": "갱신", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:df8a5ba454bdf182", "intent": "env_setup", "intent_rule": "교체", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:e01b2ffafd573206", "intent": "data_error", "intent_rule": "안보", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:e05783682a7964c5", "intent": "data_error", "intent_rule": "상이", "domains": ["옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:e05783682a7964c5", "intent": "data_error", "intent_rule": "상이", "domains": ["주식", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:e07dd45f25c47c78", "intent": "data_availability", "intent_rule": "제공", "domains": ["주식", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:e07fd6be1f6fcc20", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:e093d150dffa8d75", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -1265,7 +1265,7 @@
 {"case_id": "check:support-case:e29c338a27f61fc2", "intent": "data_availability", "intent_rule": "있을까요", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:e2d6a8a591789e30", "intent": "data_availability", "intent_rule": "있나요", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:e2fa1f606994bedd", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": ["채권", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:e338157d7e4ecfb4", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:e338157d7e4ecfb4", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:e36534fa9f8b8f2f", "intent": "env_setup", "intent_rule": "멈춤", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:e42331f8a64fc531", "intent": "data_error", "intent_rule": "갱신", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:e47f91ea7dce5ff2", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -1280,7 +1280,7 @@
 {"case_id": "check:support-case:e58935670e8f656d", "intent": "other", "intent_rule": null, "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:e593072c5d399c18", "intent": "data_availability", "intent_rule": "있을까요", "domains": ["주식", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:e5b6926ada06200e", "intent": "data_availability", "intent_rule": "항목", "domains": ["채권", "주식", "선물", "외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:e5cddd182d47286c", "intent": "other", "intent_rule": null, "domains": ["ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:e5cddd182d47286c", "intent": "other", "intent_rule": null, "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:e5f1184589bfee62", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:e6148488b329938e", "intent": "howto", "intent_rule": "문의 드립니다", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:e61b4d98f2c6fa46", "intent": "env_setup", "intent_rule": "맥", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -1314,7 +1314,7 @@
 {"case_id": "check:support-case:eb6dc9365e9ca1b3", "intent": "other", "intent_rule": null, "domains": ["ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:eb986412bf7c515f", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:ebd831a0d2d20b97", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:ec1c6389aa8b746c", "intent": "data_error", "intent_rule": "잘못", "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:ec1c6389aa8b746c", "intent": "data_error", "intent_rule": "잘못", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:ec20c2541ead80a4", "intent": "data_availability", "intent_rule": "데이터", "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:ec359857e4869893", "intent": "data_availability", "intent_rule": "있을까요", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:ec998fdc4d5c79aa", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -1339,9 +1339,9 @@
 {"case_id": "check:support-case:f13a785ce685cd46", "intent": "empty", "intent_rule": "empty", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:f159351766ec0b54", "intent": "other", "intent_rule": null, "domains": ["채권", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:f166dcad432310c3", "intent": "data_error", "intent_rule": "반영이 안", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:f1f8bfa9f3347a3d", "intent": "data_availability", "intent_rule": "데이터", "domains": ["선물", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:f1f8bfa9f3347a3d", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식", "선물", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:f1ffba7569a7565e", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:f2100b39bd381652", "intent": "other", "intent_rule": null, "domains": ["채권"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:f2100b39bd381652", "intent": "other", "intent_rule": null, "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:f2386109df921f39", "intent": "empty", "intent_rule": "empty", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:f2597454f695951b", "intent": "screen_finding", "intent_rule": "화면이있", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:f273f1b52dd353b8", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -1352,10 +1352,10 @@
 {"case_id": "check:support-case:f3400a0e143cec6f", "intent": "data_error", "intent_rule": "오류", "domains": ["ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:f369163f60d1558a", "intent": "other", "intent_rule": null, "domains": ["채권", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:f37ea62b415a6a43", "intent": "data_availability", "intent_rule": "있을까요", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:f3c3c65857632bc9", "intent": "data_error", "intent_rule": "오류", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:f3c3c65857632bc9", "intent": "data_error", "intent_rule": "오류", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:f3d1d09a0770a143", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["주식", "선물", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:f43f6e9f7f1bf719", "intent": "data_availability", "intent_rule": "있을까요", "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:f47bd39e2255f0e8", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": ["선물", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:f47bd39e2255f0e8", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": ["주식", "선물", "옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:f4cbc7c875ed76a9", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:f4def54caf40e864", "intent": "data_availability", "intent_rule": "데이터", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:f5401971d00d7c76", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -1397,7 +1397,7 @@
 {"case_id": "check:support-case:fbdd9ffbdbd3086c", "intent": "data_availability", "intent_rule": "확인할수", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:fc1c43b0449918eb", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:fc3b1d28c63b75f4", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:fc54e3b244b3ef4e", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": ["선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:fc54e3b244b3ef4e", "intent": "screen_finding", "intent_rule": "화면이 있", "domains": ["주식", "선물"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:fc5535530b1820ed", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:fc9fb34ffc35e87f", "intent": "data_error", "intent_rule": "안나", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:fd13a80bcbbbea24", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}

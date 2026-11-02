@@ -35,7 +35,7 @@ candidate_id: manual-candidate:VOC-01414
 
 ## 당시 대응
 
-$$ 2013 32b[REDACTED_ENTITY], 원격으로 셋팅 수정
+$$ 2013 32b고객사, 원격으로 셋팅 수정
 
 ## 연결된 화면·기능
 

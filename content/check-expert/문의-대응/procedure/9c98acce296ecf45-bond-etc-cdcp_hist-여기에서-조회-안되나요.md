@@ -36,7 +36,7 @@ candidate_id: manual-candidate:CRM-04376
 
 ## 당시 대응
 
-/bond/etc/cdcp_hist 에서 3743 화면의 개별 데이터를 받아보실 수 있습니다. https://[IDENTIFIER].[REDACTED_ENTITY].co.kr/cdcp_hist 에서 API 테스트도구를 통해 직접 데이터도 확인이 가능하십니다.
+/bond/etc/cdcp_hist 에서 3743 화면의 개별 데이터를 받아보실 수 있습니다. https://특정 종목.고객사.co.kr/cdcp_hist 에서 API 테스트도구를 통해 직접 데이터도 확인이 가능하십니다.
 
 ## 연결된 화면·기능
 
