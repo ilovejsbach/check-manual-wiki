@@ -33,10 +33,6 @@ screen_code: "4153"
 
 ### 화면 항목 2. 상하/좌우 스크롤을 이용하여 월물 이동을 하실 수 있습니다.
 
-<small>원본 PDF 213쪽</small>
-
-<details class="source-page"><summary>원문 PDF 213쪽 보기</summary>
+## 원문 화면
 
 ![4153 - Basis-Spread 원문 PDF 213쪽](assets/manual-pages/page-0213.webp)
-
-</details>

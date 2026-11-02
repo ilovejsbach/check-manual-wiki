@@ -11,6 +11,7 @@ from build_check_wiki import (
     format_pdf_page_text,
     frontmatter,
     normalize_screen_title,
+    render_pdf_section,
     screen_code,
     slug,
 )
@@ -36,6 +37,21 @@ def test_screen_title_and_internal_numbering_have_distinct_hierarchy() -> None:
     assert "11. 해외" not in rendered
     assert "1002- 세계지수종합" not in rendered
     assert "### 화면 항목 1. 대륙별 버튼 선택" in rendered
+
+
+def test_screen_page_uses_plain_markdown_for_source_image() -> None:
+    rendered = render_pdf_section(
+        title="1002 - 세계지수종합",
+        category="해외",
+        start_page=0,
+        end_page=1,
+        page_texts=["화면 개요\n세계 주요 지수를 제공합니다."],
+        child_headings=[],
+    )
+    assert "## 원문 화면" in rendered
+    assert "![1002 - 세계지수종합 원문 PDF 1쪽]" in rendered
+    assert "<small>" not in rendered
+    assert "<details" not in rendered
 
 
 def test_clean_case_request_removes_source_form_fields() -> None:

@@ -38,10 +38,6 @@ MSCI 지수를 지역별/국가별/섹터별/업종별 분류에 따라 조회�
 ### 화면 항목 4. 차트실행
 "차트실행" 버튼을 누르면 복수개의 차트가 그려집니다. (최대 12개까지 가능)
 
-<small>원본 PDF 801쪽</small>
-
-<details class="source-page"><summary>원문 PDF 801쪽 보기</summary>
+## 원문 화면
 
 ![6431 - MSCI/FTSE>MSCI 비교 원문 PDF 801쪽](assets/manual-pages/page-0801.webp)
-
-</details>

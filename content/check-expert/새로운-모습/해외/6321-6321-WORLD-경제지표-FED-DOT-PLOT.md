@@ -34,22 +34,10 @@ https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm Meeting 일정 �
 ### 화면 항목 2. 날짜를 클릭하면 해당 월의 FED DOT PLOT이 오른쪽 3 번 영역에 제공됩니다.
 PDF버튼을 클릭하면 FOMC 홈페이지에 회의 종료 후 게시된 PDF파일을 확인할 수 있습니다.
 
-### 화면 항목 3. FED DOT PLOT이 조회됩니다.
+### 화면 항목 3. FED DOT PLOT이 조회됩니다.- TR 6322 — WORLD/경제지표 > FED WATCH(CME)
 
-<small>원본 PDF 813쪽</small>
-
-<details class="source-page"><summary>원문 PDF 813쪽 보기</summary>
+## 원문 화면
 
 ![6321 - WORLD/경제지표 > FED DOT PLOT 원문 PDF 813쪽](assets/manual-pages/page-0813.webp)
 
-</details>
-
-- TR 6322 — WORLD/경제지표 > FED WATCH(CME)
-
-<small>원본 PDF 814쪽</small>
-
-<details class="source-page"><summary>원문 PDF 814쪽 보기</summary>
-
 ![6321 - WORLD/경제지표 > FED DOT PLOT 원문 PDF 814쪽](assets/manual-pages/page-0814.webp)
-
-</details>

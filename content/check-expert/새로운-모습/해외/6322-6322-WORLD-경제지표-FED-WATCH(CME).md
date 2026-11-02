@@ -28,23 +28,11 @@ screen_code: "6322"
 
 ### 화면 항목 1. CME 제공 미래 FED Meeting의 Target Rate 확률을 제공합니다.
 
-### 화면 항목 2. FED DOT PLOT을 제공합니다.
+### 화면 항목 2. FED DOT PLOT을 제공합니다.## 관련 화면
+- TR 6321 — WORLD/경제지표 > FED DOT PLOT
 
-<small>원본 PDF 815쪽</small>
-
-<details class="source-page"><summary>원문 PDF 815쪽 보기</summary>
+## 원문 화면
 
 ![6322 - WORLD/경제지표 > FED WATCH(CME) 원문 PDF 815쪽](assets/manual-pages/page-0815.webp)
 
-</details>
-
-## 관련 화면
-- TR 6321 — WORLD/경제지표 > FED DOT PLOT
-
-<small>원본 PDF 816쪽</small>
-
-<details class="source-page"><summary>원문 PDF 816쪽 보기</summary>
-
 ![6322 - WORLD/경제지표 > FED WATCH(CME) 원문 PDF 816쪽](assets/manual-pages/page-0816.webp)
-
-</details>

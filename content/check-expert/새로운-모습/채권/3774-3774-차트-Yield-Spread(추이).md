@@ -38,17 +38,7 @@ screen_code: "3774"
 함께 조회할 수 있습니다.
 
 ### 화면 항목 5. 기준금리를 선택합니다.
-- 시가그룹(YTM, SPOT), 기업별 Term Structure, IRS(MID), CRS(MID), 해외금리
-
-<small>원본 PDF 687쪽</small>
-
-<details class="source-page"><summary>원문 PDF 687쪽 보기</summary>
-
-![3774 - 차트 > Yield Spread(추이) 원문 PDF 687쪽](assets/manual-pages/page-0687.webp)
-
-</details>
-
-### 화면 항목 6. 비교금리를 선택합니다.
+- 시가그룹(YTM, SPOT), 기업별 Term Structure, IRS(MID), CRS(MID), 해외금리### 화면 항목 6. 비교금리를 선택합니다.
 - 시가그룹(YTM, SPOT), 기업별 Term Structure, IRS(MID), CRS(MID), 해외금리
 
 ### 화면 항목 7. 기준금리, 비교금리, 스프레드 중에 선택된 정보가 조회됩니다.
@@ -74,10 +64,8 @@ screen_code: "3774"
 3913
 3926
 
-<small>원본 PDF 688쪽</small>
+## 원문 화면
 
-<details class="source-page"><summary>원문 PDF 688쪽 보기</summary>
+![3774 - 차트 > Yield Spread(추이) 원문 PDF 687쪽](assets/manual-pages/page-0687.webp)
 
 ![3774 - 차트 > Yield Spread(추이) 원문 PDF 688쪽](assets/manual-pages/page-0688.webp)
-
-</details>

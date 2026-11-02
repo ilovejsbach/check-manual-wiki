@@ -324,6 +324,7 @@ def render_pdf_section(
         headings_by_page.setdefault(child.page, []).append(child.title)
 
     seen_headings: set[str] = set()
+    source_images: list[str] = []
     for page in range(start_page, end_page):
         page_headings: set[str] = set()
         for heading in headings_by_page.get(page, []):
@@ -343,12 +344,12 @@ def render_pdf_section(
                 r"\n(?=###\s|\d+[.)]\s|[가-힣A-Za-z][^\n]{0,45}$)", text
             )
             body += "\n\n".join(part.strip() for part in paragraphs if part.strip())
-            body += f"\n\n<small>원본 PDF {page + 1}쪽</small>\n\n"
-        body += (
-            f"<details class=\"source-page\"><summary>원문 PDF {page + 1}쪽 보기</summary>\n\n"
-            f"![{title} 원문 PDF {page + 1}쪽](assets/manual-pages/page-{page + 1:04d}.webp)\n\n"
-            "</details>\n\n"
+        source_images.append(
+            f"![{title} 원문 PDF {page + 1}쪽]"
+            f"(assets/manual-pages/page-{page + 1:04d}.webp)"
         )
+    if source_images:
+        body += "\n\n## 원문 화면\n\n" + "\n\n".join(source_images) + "\n"
     return body
 
 

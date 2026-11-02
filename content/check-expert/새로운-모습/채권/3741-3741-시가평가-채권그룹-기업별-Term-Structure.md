@@ -28,17 +28,7 @@ screen_code: "3741"
 
 ### 화면 항목 1. 기준일을 설정합니다. 당일의 데이터는 오후 6시~7시경 업데이트 됩니다.
 
-### 화면 항목 2. 발행기관 코드를 선택합니다.
-
-<small>원본 PDF 676쪽</small>
-
-<details class="source-page"><summary>원문 PDF 676쪽 보기</summary>
-
-![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 676쪽](assets/manual-pages/page-0676.webp)
-
-</details>
-
-### 화면 항목 3. 시가평가 기관을 선택할 수 있습니다.
+### 화면 항목 2. 발행기관 코드를 선택합니다.### 화면 항목 3. 시가평가 기관을 선택할 수 있습니다.
 • 민평(3사), 민평(4사), KIS채권평가, NICE피앤아이, 한국자산평가, FN자산평가
 
 ### 화면 항목 4. 조회되는 데이터의 유형을 선택합니다.
@@ -53,60 +43,34 @@ screen_code: "3741"
 
 ### 화면 항목 7. 발행기관을 채권그룹별로 분류하려 조회할 수 있습니다.
 
-그룹명, 평가사 숫자를 더블클릭하면 우측의 Matrix에 해당 정보가 조회됩니다.
-
-<small>원본 PDF 677쪽</small>
-
-<details class="source-page"><summary>원문 PDF 677쪽 보기</summary>
-
-![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 677쪽](assets/manual-pages/page-0677.webp)
-
-</details>
-
-### 화면 항목 8. 그룹명, 만기, 셀 헤더 더블클릭시 [채권종목]에 상세내역 조회 가능
+그룹명, 평가사 숫자를 더블클릭하면 우측의 Matrix에 해당 정보가 조회됩니다.### 화면 항목 8. 그룹명, 만기, 셀 헤더 더블클릭시 [채권종목]에 상세내역 조회 가능
 [채권종목], [추이], [추이(차트)], [스프레드], [기간구조]탭 조회시에 상단의 수익률 Matrix에서
 Ctrl + 클릭으로 10개까지 선택해서 복수 지표를 조회할 수 있음
 
 ### 화면 항목 9. 시가평가 수익률 Matrix에 대한 다양한 정보를 조회 가능
 • 채권종목 : 상단에서 선택된 그룹, 만기, 셀의 상세 종목 정보가 조회
 • 추이 : 상단에서 Ctrl + 클릭으로 선택된 지표의 시계열 추이를 조회
-• 추이(차트) : 상단에서 Ctrl + 클릭으로 선택된 지표의 시계열 추이에 대한 차트를 조회
-
-<small>원본 PDF 678쪽</small>
-
-<details class="source-page"><summary>원문 PDF 678쪽 보기</summary>
-
-![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 678쪽](assets/manual-pages/page-0678.webp)
-
-</details>
-
-• 전체추이 : 상단에서 더블클릭한 그룹의 만기전체 추이를 조회, Ctrl + 클릭으로 선택시에는
+• 추이(차트) : 상단에서 Ctrl + 클릭으로 선택된 지표의 시계열 추이에 대한 차트를 조회• 전체추이 : 상단에서 더블클릭한 그룹의 만기전체 추이를 조회, Ctrl + 클릭으로 선택시에는
 마지막으로 클릭된 그룹의 만기전체 추이가 조회
 • 스프레드 : 상단에서 Ctrl + 클릭으로 선택된 지표간 시계열 추이의 스프레드 및 통계 산출 가능
 콤보박스에서 선택된 지표 변경 가능
 • 기간구조 : 상단에서 Ctrl + 클릭으로 선택된 지표간 기간구조에 대한 스프레드 산출 가능
 
-콤보박스에서 선택된 지표 변경 가능
-
-<small>원본 PDF 679쪽</small>
-
-<details class="source-page"><summary>원문 PDF 679쪽 보기</summary>
-
-![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 679쪽](assets/manual-pages/page-0679.webp)
-
-</details>
-
-## 특이 사항
+콤보박스에서 선택된 지표 변경 가능## 특이 사항
 • 발행기관에 대한 채권분류 기준 : 1년 3개월이내 수신한 발행기관의 등급 우선, 발행기관 등급 없을 시
 가장 최근(1년 3개월 이내)에 발행된 채권 종목에 대한 등급으로 분류
 ## 관련 화면
 3773 차트 > Yield Spread
 3774 차트 > Yield Spread 추이
 
-<small>원본 PDF 680쪽</small>
+## 원문 화면
 
-<details class="source-page"><summary>원문 PDF 680쪽 보기</summary>
+![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 676쪽](assets/manual-pages/page-0676.webp)
+
+![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 677쪽](assets/manual-pages/page-0677.webp)
+
+![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 678쪽](assets/manual-pages/page-0678.webp)
+
+![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 679쪽](assets/manual-pages/page-0679.webp)
 
 ![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 680쪽](assets/manual-pages/page-0680.webp)
-
-</details>

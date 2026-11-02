@@ -35,17 +35,7 @@ MSCI 지수가 조회됩니다.
 
 ### 화면 항목 2. 가격 산정 기준에 따른 조회
 
-Price : 배당의 재투자 수익을 고려하지 않은 Price Return Index
-
-<small>원본 PDF 799쪽</small>
-
-<details class="source-page"><summary>원문 PDF 799쪽 보기</summary>
-
-![6430 - MSCI/FTSE>MSCI 종합 원문 PDF 799쪽](assets/manual-pages/page-0799.webp)
-
-</details>
-
-Gross : Price Return에 현금배당의 재투자수익을 더한 Total Return 개념의 Index
+Price : 배당의 재투자 수익을 고려하지 않은 Price Return IndexGross : Price Return에 현금배당의 재투자수익을 더한 Total Return 개념의 Index
 Net : Price Return에 세금을 제외한 현금배당의 재투자수익을 더한 Net Return 개념의 Index
 
 ### 화면 항목 3. 통화 단위 선택
@@ -79,10 +69,8 @@ MSCI에서는 USD 및 Local 통화 단위의 값을 제공하고, KRW는 CHECK �
 - TR 6432 — MSCI 지역/국가
 - TR 6433 — MSCI 섹터/업종
 
-<small>원본 PDF 800쪽</small>
+## 원문 화면
 
-<details class="source-page"><summary>원문 PDF 800쪽 보기</summary>
+![6430 - MSCI/FTSE>MSCI 종합 원문 PDF 799쪽](assets/manual-pages/page-0799.webp)
 
 ![6430 - MSCI/FTSE>MSCI 종합 원문 PDF 800쪽](assets/manual-pages/page-0800.webp)
-
-</details>

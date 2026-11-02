@@ -38,17 +38,7 @@ screen_code: "3940"
 - End of Day : (당일 데이터) 익일 16시 30분에 산출
 
 ### 화면 항목 4. 5Y만기 레이아웃 조회시 최저, 최고, 평균 산출 기준을 선택합니다.
-- 3개월, 6개월, 1년
-
-<small>원본 PDF 720쪽</small>
-
-<details class="source-page"><summary>원문 PDF 720쪽 보기</summary>
-
-![3940 - 해외금리 > Markit CDS 원문 PDF 720쪽](assets/manual-pages/page-0720.webp)
-
-</details>
-
-### 화면 항목 5. 대륙 및 섹터를 더블클릭으로 선택합니다.
+- 3개월, 6개월, 1년### 화면 항목 5. 대륙 및 섹터를 더블클릭으로 선택합니다.
 - 대륙 : All, America, Asia, Europe, Africa/Middle East, Oceania
 - 섹터 : All, Country, Government, Financials, Utilities, Etc
 
@@ -66,10 +56,8 @@ Name을 더블클릭하면 하단의 추이와 차트에 시계열을 조회할 
 ## 관련 화면
 3941
 
-<small>원본 PDF 721쪽</small>
+## 원문 화면
 
-<details class="source-page"><summary>원문 PDF 721쪽 보기</summary>
+![3940 - 해외금리 > Markit CDS 원문 PDF 720쪽](assets/manual-pages/page-0720.webp)
 
 ![3940 - 해외금리 > Markit CDS 원문 PDF 721쪽](assets/manual-pages/page-0721.webp)
-
-</details>

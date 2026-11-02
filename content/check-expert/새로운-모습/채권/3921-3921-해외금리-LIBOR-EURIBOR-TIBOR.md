@@ -30,17 +30,7 @@ screen_code: "3921"
 - 종합 : 지정한 날짜의 만기별 통화별 금리
 - 통화 : 지정한 만기의 일별 통화별 금리
 - 만기 : 지정한 통화의 일별 만기별 금리
-● 통화 조회시
-
-<small>원본 PDF 714쪽</small>
-
-<details class="source-page"><summary>원문 PDF 714쪽 보기</summary>
-
-![3921 - 해외금리 > LIBOR/EURIBOR/TIBOR 원문 PDF 714쪽](assets/manual-pages/page-0714.webp)
-
-</details>
-
-● 만기 조회시
+● 통화 조회시● 만기 조회시
 
 ### 화면 항목 2. 기준일을 설정합니다. 캘린더 기본 설정은 당일이며, 데이터는 전일, 전전일 기준으로 제공됩니다.
 - 전일 : ICE에 고객사 명단 제출하는 경우
@@ -64,10 +54,8 @@ LIBOR 모든 통화의 2W, 4M, 5M, 7M, 8M, 9M, 10M, 11M 만기의 경우 2013.05
 ## 관련 화면
 3933
 
-<small>원본 PDF 715쪽</small>
+## 원문 화면
 
-<details class="source-page"><summary>원문 PDF 715쪽 보기</summary>
+![3921 - 해외금리 > LIBOR/EURIBOR/TIBOR 원문 PDF 714쪽](assets/manual-pages/page-0714.webp)
 
 ![3921 - 해외금리 > LIBOR/EURIBOR/TIBOR 원문 PDF 715쪽](assets/manual-pages/page-0715.webp)
-
-</details>

@@ -29,17 +29,7 @@ category: "메인프레임"
 바 형식으로 제공합니다.
 가장 기본적인 구성요소만 노출하여 심플함을 강조하였고 메인프레임과 화면이 디폴트 독립된 상태라 멀티모니터
 
-사용시 화면을 원하는 위치에 쉽게 옮길 수 있습니다.
-
-<small>원본 PDF 12쪽</small>
-
-<details class="source-page"><summary>원문 PDF 12쪽 보기</summary>
-
-![메인프레임 New형 원문 PDF 12쪽](assets/manual-pages/page-0012.webp)
-
-</details>
-
-### 화면 항목 1. 도구아이콘 리스트
+사용시 화면을 원하는 위치에 쉽게 옮길 수 있습니다.### 화면 항목 1. 도구아이콘 리스트
 Winodws의 시작 아이콘과 유사하게 클릭시에는 다음과 같이 도구메뉴가 팝업됩니다.
 
 ### 화면 항목 2. 통합검색
@@ -56,10 +46,8 @@ Winodws의 시작 아이콘과 유사하게 클릭시에는 다음과 같이 도
 
 ### 화면 항목 5. 즐겨찾기바 ~ 11 통합알리미의 기능은 메인프레임 클래식형의 설명을 참고하시기 바랍니다.
 
-<small>원본 PDF 13쪽</small>
+## 원문 화면
 
-<details class="source-page"><summary>원문 PDF 13쪽 보기</summary>
+![메인프레임 New형 원문 PDF 12쪽](assets/manual-pages/page-0012.webp)
 
 ![메인프레임 New형 원문 PDF 13쪽](assets/manual-pages/page-0013.webp)
-
-</details>

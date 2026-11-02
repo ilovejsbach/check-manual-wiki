@@ -39,17 +39,7 @@ screen_code: "3227"
 ### 화면 항목 5. 산출기준 및 시기에 대한 도움말을 제공합니다.
 - 금융기관채 AA-, 공모무보증회사채 AA+, AA0, AA- : 2000/10/06부터 산출
 - 2009/11/02 전 : 금융투자협회시장수익률
-- 2009/11/02 이후 : 채권평가사 3사(KIS, NICE, 한국) 평균
-
-<small>원본 PDF 606쪽</small>
-
-<details class="source-page"><summary>원문 PDF 606쪽 보기</summary>
-
-![3227 - 주요금리 > Matrix(KOFIA) 원문 PDF 606쪽](assets/manual-pages/page-0606.webp)
-
-</details>
-
-- 2012/04/02 이후 : 채권평가사 4사(KIS, NICE, 한국, FN) 평균
+- 2009/11/02 이후 : 채권평가사 3사(KIS, NICE, 한국) 평균- 2012/04/02 이후 : 채권평가사 4사(KIS, NICE, 한국, FN) 평균
 ## 관련 화면
 - TR 3430 — 시가평가 > 채권그룹 > Matrix 종합
 - TR 3431 — 시가평가 > 채권그룹 > 일별추이
@@ -57,10 +47,8 @@ screen_code: "3227"
 3228
 3884
 
-<small>원본 PDF 607쪽</small>
+## 원문 화면
 
-<details class="source-page"><summary>원문 PDF 607쪽 보기</summary>
+![3227 - 주요금리 > Matrix(KOFIA) 원문 PDF 606쪽](assets/manual-pages/page-0606.webp)
 
 ![3227 - 주요금리 > Matrix(KOFIA) 원문 PDF 607쪽](assets/manual-pages/page-0607.webp)
-
-</details>
