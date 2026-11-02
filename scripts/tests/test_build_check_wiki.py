@@ -5,7 +5,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import build_check_wiki
-from build_check_wiki import frontmatter, screen_code, slug
+from build_check_wiki import enrich_relationships, frontmatter, screen_code, slug
 
 
 def test_slug_normalizes_for_paths() -> None:
@@ -104,3 +104,42 @@ def test_unmapped_enrichment_preserves_topic_queue(tmp_path, monkeypatch) -> Non
     pages = list((output / "운영-보강" / "미매핑").glob("*.md"))
     assert len(pages) == 2
     assert any("mapping_status: \"unmapped\"" in page.read_text(encoding="utf-8") for page in pages)
+
+
+def test_typed_relationships_include_manual_sequence_and_semantic_links() -> None:
+    records = [
+        {
+            "id": "check:screen:1000",
+            "title": "주식 현재가",
+            "aliases": ["현재가"],
+            "category": "주식",
+            "source": build_check_wiki.PDF_NAME,
+            "source_locator": "10-11",
+            "related_ids": [],
+        },
+        {
+            "id": "check:screen:1001",
+            "title": "주식 현재가 비교",
+            "aliases": ["현재가 비교"],
+            "category": "주식",
+            "source": build_check_wiki.PDF_NAME,
+            "source_locator": "12",
+            "related_ids": [],
+        },
+        {
+            "id": "check:excel:current-price",
+            "title": "주식 현재가 함수",
+            "aliases": ["현재가 함수"],
+            "category": "Excel Premium",
+            "source": "excel-manual.xls",
+            "source_locator": "함수설명",
+            "related_ids": [],
+        },
+    ]
+
+    enrich_relationships(records)
+
+    first_types = {item["type"] for item in records[0]["relationships"]}
+    assert "next" in first_types
+    assert "semantic" in first_types
+    assert records[0]["related_ids"]

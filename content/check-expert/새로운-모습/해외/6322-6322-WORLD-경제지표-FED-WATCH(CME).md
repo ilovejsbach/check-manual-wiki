@@ -20,7 +20,7 @@ screen_code: "6322"
 ---
 # 6322 - WORLD/경제지표 > FED WATCH(CME)
 
-> 출처: `CHECKPlus_Manual.pdf`, PDF 815-816쪽. 자동 추출 문서이므로 도표와 화면 이미지는 원본을 함께 확인하세요.
+> 출처: `CHECKPlus_Manual.pdf`, PDF 815-816쪽. 검색 가능한 본문과 원문 페이지 이미지를 함께 제공합니다.
 
 ## 화면 개요
 
@@ -36,6 +36,12 @@ screen_code: "6322"
 
 <small>원본 PDF 815쪽</small>
 
+<details class="source-page"><summary>원문 PDF 815쪽 보기</summary>
+
+![6322 - WORLD/경제지표 > FED WATCH(CME) 원문 PDF 815쪽](assets/manual-pages/page-0815.webp)
+
+</details>
+
 ## 관련 화면
 
 해외
@@ -43,3 +49,9 @@ screen_code: "6322"
 6321 - WORLD/경제지표 > FED DOT PLOT
 
 <small>원본 PDF 816쪽</small>
+
+<details class="source-page"><summary>원문 PDF 816쪽 보기</summary>
+
+![6322 - WORLD/경제지표 > FED WATCH(CME) 원문 PDF 816쪽](assets/manual-pages/page-0816.webp)
+
+</details>

@@ -20,7 +20,7 @@ screen_code: "6431"
 ---
 # 6431 - MSCI/FTSE>MSCI 비교
 
-> 출처: `CHECKPlus_Manual.pdf`, PDF 801-801쪽. 자동 추출 문서이므로 도표와 화면 이미지는 원본을 함께 확인하세요.
+> 출처: `CHECKPlus_Manual.pdf`, PDF 801-801쪽. 검색 가능한 본문과 원문 페이지 이미지를 함께 제공합니다.
 
 ## 화면개요
 
@@ -39,3 +39,9 @@ MSCI 지수를 지역별/국가별/섹터별/업종별 분류에 따라 조회�
 "차트실행" 버튼을 누르면 복수개의 차트가 그려집니다. (최대 12개까지 가능)
 
 <small>원본 PDF 801쪽</small>
+
+<details class="source-page"><summary>원문 PDF 801쪽 보기</summary>
+
+![6431 - MSCI/FTSE>MSCI 비교 원문 PDF 801쪽](assets/manual-pages/page-0801.webp)
+
+</details>

@@ -27,12 +27,19 @@ def build(source: Path = SOURCE, output: Path = OUTPUT) -> dict[str, object]:
     by_id = {str(record["id"]): record for record in records}
     payload: list[dict[str, object]] = []
     for record in records:
+        relationship_by_id = {
+            str(item.get("target_id")): item
+            for item in record.get("relationships", [])
+            if isinstance(item, dict)
+        }
         related = [
             {
                 "id": related_id,
                 "title": by_id.get(str(related_id), {}).get("title", related_id),
                 "screen_code": by_id.get(str(related_id), {}).get("screen_code"),
                 "review_status": by_id.get(str(related_id), {}).get("review_status"),
+                "relation_type": relationship_by_id.get(str(related_id), {}).get("type"),
+                "relation_label": relationship_by_id.get(str(related_id), {}).get("label"),
             }
             for related_id in record.get("related_ids", [])
             if str(related_id) in by_id
@@ -71,6 +78,9 @@ def build(source: Path = SOURCE, output: Path = OUTPUT) -> dict[str, object]:
     (data_dir / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
+    assets = ROOT / "content" / "check-expert" / "assets"
+    if assets.exists():
+        shutil.copytree(assets, output / "assets")
     (output / ".nojekyll").write_text("", encoding="utf-8")
     return manifest
 

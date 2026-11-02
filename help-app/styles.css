@@ -93,9 +93,17 @@ button { color: inherit; }
 .doc-body blockquote { margin: 16px 0; padding: 10px 16px; border-left: 3px solid var(--brand); background: var(--brand-soft); color: var(--muted); }
 .doc-body code { padding: 2px 5px; border-radius: 5px; background: var(--surface-2); font-family: Consolas, monospace; }
 .doc-body .raw-table { white-space: pre-wrap; font-family: Consolas, monospace; font-size: 12px; overflow-x: auto; background: var(--surface); border: 1px solid var(--line); padding: 12px; }
+.table-wrap { max-width: 100%; overflow-x: auto; margin: 16px 0 24px; border: 1px solid var(--line); border-radius: 9px; }
+.doc-body table { width: 100%; border-collapse: collapse; background: var(--surface); font-size: 13px; }
+.doc-body th, .doc-body td { padding: 9px 11px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; white-space: nowrap; }
+.doc-body th { position: sticky; top: 0; background: var(--surface-2); color: var(--muted); font-weight: 800; }
+.source-page { margin: 12px 0 24px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.source-page summary { cursor: pointer; padding: 11px 14px; color: var(--brand); font-weight: 700; }
+.source-image { display: block; width: min(100%, 820px); height: auto; margin: 0 auto; border-top: 1px solid var(--line); }
 .related { max-width: 960px; margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line); }
 .related h2 { font-size: 14px; }
 .related button { border: 1px solid var(--line); background: var(--surface); border-radius: 8px; padding: 8px 10px; margin: 0 6px 6px 0; cursor: pointer; }
+.related button small { display: block; color: var(--muted); font-size: 9px; margin-bottom: 3px; text-align: left; }
 
 @media (max-width: 1050px) {
   .topbar { grid-template-columns: 210px 1fr 42px; }

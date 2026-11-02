@@ -11,11 +11,13 @@ import sys
 import tempfile
 import unicodedata
 import zipfile
+from collections import Counter
 from collections.abc import Iterable
 from dataclasses import dataclass, field
 from pathlib import Path
 
 import pandas as pd
+import pymupdf
 import yaml
 from pypdf import PdfReader
 from pypdf.errors import PdfReadError
@@ -28,6 +30,12 @@ PDF_NAME = "CHECKPlus_Manual.pdf"
 CODE_TABLE_ROWS = 750
 ENRICHMENT_NAME = "manual-enrichment.jsonl"
 UNMAPPED_ENRICHMENT_NAME = "manual-enrichment-unmapped.jsonl"
+MANUAL_ASSET_DIR = OUTPUT_DIR / "assets" / "manual-pages"
+MANUAL_ASSET_SCALE = 1.25
+SEMANTIC_STOPWORDS = {
+    "check", "expert", "공식", "매뉴얼", "기능", "사용", "설명", "화면", "조회",
+    "관련", "정보", "데이터", "메뉴", "방법", "기타", "새로운", "모습", "주요",
+}
 
 
 @dataclass
@@ -144,7 +152,8 @@ def clean_pdf_text(text: str, page_number: int) -> str:
     cleaned: list[str] = []
     previous = ""
     for raw_line in text.replace("\x00", "").splitlines():
-        line = re.sub(r"\s+", " ", raw_line).strip()
+        line = unicodedata.normalize("NFKC", raw_line.replace("\u00a0", " "))
+        line = re.sub(r"[ \t]+", " ", line).strip()
         if not line or line == previous:
             continue
         if re.fullmatch(rf"[|\s]*{page_number}[|\s]*", line):
@@ -154,6 +163,50 @@ def clean_pdf_text(text: str, page_number: int) -> str:
             cleaned.append(line)
             previous = line
     return "\n".join(cleaned)
+
+
+def render_manual_page_assets(pdf_path: Path) -> int:
+    """Render every source page once so screenshots, diagrams and tables are never discarded."""
+    MANUAL_ASSET_DIR.mkdir(parents=True, exist_ok=True)
+    rendered = 0
+    with pymupdf.open(pdf_path) as document:
+        matrix = pymupdf.Matrix(MANUAL_ASSET_SCALE, MANUAL_ASSET_SCALE)
+        for index, page in enumerate(document):
+            target = MANUAL_ASSET_DIR / f"page-{index + 1:04d}.webp"
+            pixmap = page.get_pixmap(matrix=matrix, alpha=False, annots=True)
+            pixmap.pil_save(target, format="WEBP", quality=68, method=6)
+            rendered += 1
+    return rendered
+
+
+def build_manual_page_index(page_count: int) -> None:
+    document = frontmatter(
+        title="CHECK Expert+ 원문 페이지 색인",
+        description="공식 매뉴얼 전 페이지의 그림·화면·표를 빠짐없이 확인하는 원문 색인.",
+        tags=["CHECK Expert", "공식 매뉴얼", "원문", "이미지", "표"],
+        source=PDF_NAME,
+        extra={
+            "knowledge_id": "check:manual:source-page-index",
+            "aliases": ["원문 페이지", "그림 색인", "표 색인", "화면 캡처"],
+            "source_pages": f"1-{page_count}",
+            "category": "원문",
+        },
+    )
+    document += "# CHECK Expert+ 원문 페이지 색인\n\n"
+    document += (
+        "텍스트 변환 과정에서 사라질 수 있는 화면 캡처, 도형, 표, 각주를 검증하기 위한 "
+        "전 페이지 색인입니다. 각 항목을 펼치면 해당 원문을 그대로 확인할 수 있습니다.\n\n"
+    )
+    for page in range(1, page_count + 1):
+        if (page - 1) % 50 == 0:
+            end = min(page + 49, page_count)
+            document += f"## {page}-{end}쪽\n\n"
+        document += (
+            f"<details class=\"source-page\"><summary>원문 PDF {page}쪽 보기</summary>\n\n"
+            f"![CHECK Expert+ 원문 PDF {page}쪽](assets/manual-pages/page-{page:04d}.webp)\n\n"
+            "</details>\n\n"
+        )
+    write_text(OUTPUT_DIR / "원문-페이지-색인.md", document)
 
 
 def screen_code(title: str) -> str | None:
@@ -198,7 +251,10 @@ def render_pdf_section(
         },
     )
     body += f"# {title}\n\n"
-    body += f"> 출처: `{PDF_NAME}`, PDF {start_page + 1}-{end_page}쪽. 자동 추출 문서이므로 도표와 화면 이미지는 원본을 함께 확인하세요.\n\n"
+    body += (
+        f"> 출처: `{PDF_NAME}`, PDF {start_page + 1}-{end_page}쪽. "
+        "검색 가능한 본문과 원문 페이지 이미지를 함께 제공합니다.\n\n"
+    )
 
     headings_by_page: dict[int, list[str]] = {}
     for child in child_headings:
@@ -216,11 +272,17 @@ def render_pdf_section(
             paragraphs = re.split(r"\n(?=\d+[.)]\s|[가-힣A-Za-z][^\n]{0,45}$)", text)
             body += "\n\n".join(part.strip() for part in paragraphs if part.strip())
             body += f"\n\n<small>원본 PDF {page + 1}쪽</small>\n\n"
+        body += (
+            f"<details class=\"source-page\"><summary>원문 PDF {page + 1}쪽 보기</summary>\n\n"
+            f"![{title} 원문 PDF {page + 1}쪽](assets/manual-pages/page-{page + 1:04d}.webp)\n\n"
+            "</details>\n\n"
+        )
     return body
 
 
 def build_pdf_wiki() -> dict[str, int]:
-    reader = PdfReader(SOURCE_DIR / PDF_NAME)
+    pdf_path = SOURCE_DIR / PDF_NAME
+    reader = PdfReader(pdf_path)
     bookmarks = parse_bookmarks(reader)
     flat = flatten_bookmarks(bookmarks)
     page_texts = [(page.extract_text() or "") for page in reader.pages]
@@ -286,7 +348,14 @@ def build_pdf_wiki() -> dict[str, int]:
         write_text(OUTPUT_DIR / part_dir / category_dir / filename, document)
         generated += 1
 
-    return {"pdf_pages": len(reader.pages), "pdf_documents": generated, "bookmarks": len(flat)}
+    rendered_pages = render_manual_page_assets(pdf_path)
+    build_manual_page_index(rendered_pages)
+    return {
+        "pdf_pages": len(reader.pages),
+        "pdf_page_assets": rendered_pages,
+        "pdf_documents": generated + 1,
+        "bookmarks": len(flat),
+    }
 
 
 def normalized_rows(frame: pd.DataFrame) -> list[list[str]]:
@@ -309,15 +378,23 @@ def build_excel_manual(path: Path, title: str) -> int:
     sections: list[str] = []
     for sheet in workbook.sheet_names:
         frame = pd.read_excel(path, sheet_name=sheet, header=None, engine="calamine")
-        rows = normalized_rows(frame)
         sections.append(f"## {sheet}\n")
-        seen: set[str] = set()
-        for row in rows:
-            line = " — ".join(row)
-            if line in seen:
-                continue
-            seen.add(line)
-            sections.append(f"- {line}")
+        sections.append("| 원문 셀 | 내용 |")
+        sections.append("| --- | --- |")
+        for row_index, values in enumerate(frame.itertuples(index=False, name=None), start=1):
+            for column_index, value in enumerate(values, start=1):
+                if pd.isna(value):
+                    continue
+                text = re.sub(r"\s+", " ", unicodedata.normalize("NFKC", str(value))).strip()
+                if not text or text.lower() == "nan":
+                    continue
+                column = ""
+                number = column_index
+                while number:
+                    number, remainder = divmod(number - 1, 26)
+                    column = chr(65 + remainder) + column
+                safe = text.replace("|", "\\|")
+                sections.append(f"| `{column}{row_index}` | {safe} |")
         sections.append("")
 
     document = frontmatter(
@@ -332,7 +409,10 @@ def build_excel_manual(path: Path, title: str) -> int:
         },
     )
     document += f"# {title}\n\n"
-    document += f"> 출처: `{path.name}`. 그림과 도형은 원본 Excel 파일에서 확인하세요.\n\n"
+    document += (
+        f"> 출처: `{path.name}`. 모든 비어 있지 않은 셀을 원문 좌표와 함께 보존했습니다. "
+        "도형·그림의 의미는 CHECK Expert+ 공식 PDF의 대응 원문 페이지와 함께 검증합니다.\n\n"
+    )
     document += "\n".join(sections)
     write_text(OUTPUT_DIR / "excel-premium" / "매뉴얼" / f"{slug(title)}.md", document)
     return 1
@@ -667,6 +747,92 @@ def build_unmapped_enrichment() -> int:
     return documents + 1
 
 
+def semantic_tokens(record: dict[str, object]) -> set[str]:
+    values = [
+        str(record.get("title") or ""),
+        str(record.get("category") or ""),
+        " ".join(str(item) for item in record.get("aliases", [])),
+    ]
+    tokens = re.findall(r"[0-9A-Za-z가-힣]{2,}", unicodedata.normalize("NFKC", " ".join(values)).lower())
+    return {token for token in tokens if token not in SEMANTIC_STOPWORDS}
+
+
+def add_relationship(
+    record: dict[str, object], target_id: str, relation_type: str, label: str
+) -> None:
+    if target_id == record["id"]:
+        return
+    relationships = record.setdefault("relationships", [])
+    assert isinstance(relationships, list)
+    if any(item.get("target_id") == target_id for item in relationships):
+        return
+    relationships.append({"target_id": target_id, "type": relation_type, "label": label})
+
+
+def enrich_relationships(records: list[dict[str, object]]) -> None:
+    """Build typed, bounded links instead of an unexplained flat related-ID list."""
+    by_id = {str(record["id"]): record for record in records}
+    for record in records:
+        record["relationships"] = []
+        for target_id in record.get("related_ids", []):
+            relation_type = (
+                "usage_evidence"
+                if str(record["id"]).startswith("check:enrichment:")
+                or str(target_id).startswith("check:enrichment:")
+                else "screen_reference"
+            )
+            label = "실사용 검수 자료" if relation_type == "usage_evidence" else "본문에서 언급"
+            add_relationship(record, str(target_id), relation_type, label)
+
+    manual_records = [
+        record
+        for record in records
+        if record.get("source") == PDF_NAME
+        and re.fullmatch(r"\d+(?:-\d+)?", str(record.get("source_locator") or ""))
+    ]
+    manual_records.sort(key=lambda item: int(str(item["source_locator"]).split("-")[0]))
+    for index, record in enumerate(manual_records):
+        if index:
+            add_relationship(record, str(manual_records[index - 1]["id"]), "previous", "매뉴얼 이전 항목")
+        if index + 1 < len(manual_records):
+            add_relationship(record, str(manual_records[index + 1]["id"]), "next", "매뉴얼 다음 항목")
+
+    token_map = {str(record["id"]): semantic_tokens(record) for record in records}
+    document_frequency = Counter(token for tokens in token_map.values() for token in tokens)
+    for record in records:
+        source_tokens = token_map[str(record["id"])]
+        if not source_tokens:
+            continue
+        scores: list[tuple[float, str]] = []
+        for candidate in records:
+            if candidate["id"] == record["id"]:
+                continue
+            candidate_tokens = token_map[str(candidate["id"])]
+            shared = source_tokens & candidate_tokens
+            if not shared:
+                continue
+            weighted = sum(1 / max(1, document_frequency[token]) for token in shared)
+            category_bonus = 0.15 if record.get("category") == candidate.get("category") else 0
+            score = weighted / max(1, len(source_tokens | candidate_tokens)) + category_bonus
+            if score > 0.04:
+                scores.append((score, str(candidate["id"])))
+        existing = {item["target_id"] for item in record["relationships"]}
+        added = 0
+        for _, target_id in sorted(scores, reverse=True):
+            if target_id in existing:
+                continue
+            add_relationship(record, target_id, "semantic", "같은 업무·용어")
+            added += 1
+            if added == 3:
+                break
+
+    for record in records:
+        record["relationships"] = [
+            item for item in record["relationships"] if item["target_id"] in by_id
+        ]
+        record["related_ids"] = [item["target_id"] for item in record["relationships"]]
+
+
 def export_knowledge() -> dict[str, int]:
     """Export generated Markdown as stable JSONL records and human navigation indexes."""
     if KNOWLEDGE_DIR.exists():
@@ -740,6 +906,8 @@ def export_knowledge() -> dict[str, int]:
             target = records_by_id.get(str(target_id))
             if target is not None:
                 target["related_ids"] = sorted(set(target["related_ids"] + [record["id"]]))
+
+    enrich_relationships(records)
 
     with (KNOWLEDGE_DIR / "knowledge.jsonl").open("w", encoding="utf-8", newline="\n") as stream:
         for record in records:

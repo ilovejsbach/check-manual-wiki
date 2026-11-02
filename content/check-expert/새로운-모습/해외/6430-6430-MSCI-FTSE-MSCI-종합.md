@@ -20,7 +20,7 @@ screen_code: "6430"
 ---
 # 6430 - MSCI/FTSE>MSCI 종합
 
-> 출처: `CHECKPlus_Manual.pdf`, PDF 799-800쪽. 자동 추출 문서이므로 도표와 화면 이미지는 원본을 함께 확인하세요.
+> 출처: `CHECKPlus_Manual.pdf`, PDF 799-800쪽. 검색 가능한 본문과 원문 페이지 이미지를 함께 제공합니다.
 
 ## 화면개요
 
@@ -42,6 +42,12 @@ MSCI 지수가 조회됩니다.
 Price : 배당의 재투자 수익을 고려하지 않은 Price Return Index
 
 <small>원본 PDF 799쪽</small>
+
+<details class="source-page"><summary>원문 PDF 799쪽 보기</summary>
+
+![6430 - MSCI/FTSE>MSCI 종합 원문 PDF 799쪽](assets/manual-pages/page-0799.webp)
+
+</details>
 
 ## 참고 사항
 
@@ -78,3 +84,9 @@ MSCI에서는 USD 및 Local 통화 단위의 값을 제공하고, KRW는 CHECK �
 6433 - MSCI 섹터/업종
 
 <small>원본 PDF 800쪽</small>
+
+<details class="source-page"><summary>원문 PDF 800쪽 보기</summary>
+
+![6430 - MSCI/FTSE>MSCI 종합 원문 PDF 800쪽](assets/manual-pages/page-0800.webp)
+
+</details>

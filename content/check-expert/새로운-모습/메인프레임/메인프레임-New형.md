@@ -15,7 +15,7 @@ category: "메인프레임"
 ---
 # 메인프레임 New형
 
-> 출처: `CHECKPlus_Manual.pdf`, PDF 12-13쪽. 자동 추출 문서이므로 도표와 화면 이미지는 원본을 함께 확인하세요.
+> 출처: `CHECKPlus_Manual.pdf`, PDF 12-13쪽. 검색 가능한 본문과 원문 페이지 이미지를 함께 제공합니다.
 
 메인프레임
 10 세계시계
@@ -34,6 +34,12 @@ category: "메인프레임"
 
 <small>원본 PDF 12쪽</small>
 
+<details class="source-page"><summary>원문 PDF 12쪽 보기</summary>
+
+![메인프레임 New형 원문 PDF 12쪽](assets/manual-pages/page-0012.webp)
+
+</details>
+
 메인프레임 New형 | 13
 1 도구아이콘 리스트
 Winodws의 시작 아이콘과 유사하게 클릭시에는 다음과 같이 도구메뉴가 팝업됩니다.
@@ -49,3 +55,9 @@ Winodws의 시작 아이콘과 유사하게 클릭시에는 다음과 같이 도
 5 즐겨찾기바 ~ 11 통합알리미의 기능은 메인프레임 클래식형의 설명을 참고하시기 바랍니다.
 
 <small>원본 PDF 13쪽</small>
+
+<details class="source-page"><summary>원문 PDF 13쪽 보기</summary>
+
+![메인프레임 New형 원문 PDF 13쪽](assets/manual-pages/page-0013.webp)
+
+</details>

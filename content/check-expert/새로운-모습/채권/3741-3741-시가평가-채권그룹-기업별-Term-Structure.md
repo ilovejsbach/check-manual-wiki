@@ -20,7 +20,7 @@ screen_code: "3741"
 ---
 # 3741 - 시가평가 > 채권그룹 > 기업별 Term Structure
 
-> 출처: `CHECKPlus_Manual.pdf`, PDF 676-680쪽. 자동 추출 문서이므로 도표와 화면 이미지는 원본을 함께 확인하세요.
+> 출처: `CHECKPlus_Manual.pdf`, PDF 676-680쪽. 검색 가능한 본문과 원문 페이지 이미지를 함께 제공합니다.
 
 ## 화면 개요
 
@@ -35,6 +35,12 @@ screen_code: "3741"
 2 발행기관 코드를 선택합니다.
 
 <small>원본 PDF 676쪽</small>
+
+<details class="source-page"><summary>원문 PDF 676쪽 보기</summary>
+
+![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 676쪽](assets/manual-pages/page-0676.webp)
+
+</details>
 
 3741 - 시가평가 > 채권그룹 > 기업별 Term Structure | 677
 3 시가평가 기관을 선택할 수 있습니다.
@@ -52,6 +58,12 @@ screen_code: "3741"
 
 <small>원본 PDF 677쪽</small>
 
+<details class="source-page"><summary>원문 PDF 677쪽 보기</summary>
+
+![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 677쪽](assets/manual-pages/page-0677.webp)
+
+</details>
+
 채권
 8 그룹명, 만기, 셀 헤더 더블클릭시 [채권종목]에 상세내역 조회 가능
 [채권종목], [추이], [추이(차트)], [스프레드], [기간구조]탭 조회시에 상단의 수익률 Matrix에서
@@ -63,6 +75,12 @@ Ctrl + 클릭으로 10개까지 선택해서 복수 지표를 조회할 수 있�
 
 <small>원본 PDF 678쪽</small>
 
+<details class="source-page"><summary>원문 PDF 678쪽 보기</summary>
+
+![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 678쪽](assets/manual-pages/page-0678.webp)
+
+</details>
+
 3741 - 시가평가 > 채권그룹 > 기업별 Term Structure | 679
 • 전체추이 : 상단에서 더블클릭한 그룹의 만기전체 추이를 조회, Ctrl + 클릭으로 선택시에는
 마지막으로 클릭된 그룹의 만기전체 추이가 조회
@@ -73,6 +91,12 @@ Ctrl + 클릭으로 10개까지 선택해서 복수 지표를 조회할 수 있�
 콤보박스에서 선택된 지표 변경 가능
 
 <small>원본 PDF 679쪽</small>
+
+<details class="source-page"><summary>원문 PDF 679쪽 보기</summary>
+
+![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 679쪽](assets/manual-pages/page-0679.webp)
+
+</details>
 
 ## 특이 사항
 
@@ -87,3 +111,9 @@ Ctrl + 클릭으로 10개까지 선택해서 복수 지표를 조회할 수 있�
 3774 차트 > Yield Spread 추이
 
 <small>원본 PDF 680쪽</small>
+
+<details class="source-page"><summary>원문 PDF 680쪽 보기</summary>
+
+![3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 원문 PDF 680쪽](assets/manual-pages/page-0680.webp)
+
+</details>

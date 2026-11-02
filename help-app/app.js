@@ -97,10 +97,27 @@ function renderMarkdown(markdown) {
   let listOpen = false;
   let tableLines = [];
   const flushList = () => { if (listOpen) { html.push("</ul>"); listOpen = false; } };
-  const flushTable = () => { if (tableLines.length) { html.push(`<pre class="raw-table">${escapeHtml(tableLines.join("\n"))}</pre>`); tableLines = []; } };
+  const flushTable = () => {
+    if (!tableLines.length) return;
+    const rows = tableLines.map((line) => line.slice(1, -1).split(/(?<!\\)\|/).map((cell) => cell.trim().replace(/\\\|/g, "|")));
+    const hasDivider = rows.length > 1 && rows[1].every((cell) => /^:?-{3,}:?$/.test(cell));
+    if (!hasDivider) html.push(`<pre class="raw-table">${escapeHtml(tableLines.join("\n"))}</pre>`);
+    else {
+      const header = `<thead><tr>${rows[0].map((cell) => `<th>${inlineMarkup(cell)}</th>`).join("")}</tr></thead>`;
+      const body = rows.slice(2).map((row) => `<tr>${row.map((cell) => `<td>${inlineMarkup(cell)}</td>`).join("")}</tr>`).join("");
+      html.push(`<div class="table-wrap"><table>${header}<tbody>${body}</tbody></table></div>`);
+    }
+    tableLines = [];
+  };
   for (const line of lines) {
     if (/^\|.*\|$/.test(line)) { flushList(); tableLines.push(line); continue; }
     flushTable();
+    const image = line.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+    if (image) { flushList(); html.push(`<img class="source-image" src="${escapeHtml(image[2])}" alt="${escapeHtml(image[1])}" loading="lazy">`); continue; }
+    if (/^<details class="source-page">$/.test(line)) { flushList(); html.push('<details class="source-page">'); continue; }
+    if (line === "</details>") { flushList(); html.push("</details>"); continue; }
+    const summary = line.match(/^<summary>(.+)<\/summary>$/);
+    if (summary) { flushList(); html.push(`<summary>${inlineMarkup(summary[1])}</summary>`); continue; }
     const heading = line.match(/^(#{1,3})\s+(.+)/);
     if (heading) { flushList(); html.push(`<h${heading[1].length}>${inlineMarkup(heading[2])}</h${heading[1].length}>`); continue; }
     if (line.startsWith("> ")) { flushList(); html.push(`<blockquote>${inlineMarkup(line.slice(2))}</blockquote>`); continue; }
@@ -120,7 +137,7 @@ function openRecord(id, push = true) {
   if (!record) return;
   state.selected = id;
   const candidate = record.review_status === "candidate";
-  $("#viewer").innerHTML = `<header class="doc-head"><div class="result-top"><span class="badge ${candidate ? "candidate" : ""}">${record.screen_code ? `TR ${escapeHtml(record.screen_code)}` : candidate ? "검수 전 후보" : escapeHtml(record.type)}</span>${record.signal_count ? `<span class="badge candidate">관련 신호 ${record.signal_count}건</span>` : ""}</div><h1>${escapeHtml(record.title)}</h1><div class="doc-meta"><span>출처: ${escapeHtml(record.source || "미기재")}</span><span>위치: ${escapeHtml(record.source_locator || "미기재")}</span><span>ID: ${escapeHtml(record.id)}</span></div></header>${candidate ? '<div class="notice">이 문서는 비식별 실사용 기록에서 만든 검수 전 후보입니다. 공식 매뉴얼과 현재 제품 동작을 확인한 뒤 사용하세요.</div>' : ""}<article class="doc-body">${renderMarkdown(record.text)}</article>${record.related?.length ? `<nav class="related"><h2>관련 도움말</h2>${record.related.map((item) => `<button type="button" data-related="${escapeHtml(item.id)}">${item.screen_code ? `TR ${escapeHtml(item.screen_code)} · ` : ""}${escapeHtml(item.title)}</button>`).join("")}</nav>` : ""}`;
+  $("#viewer").innerHTML = `<header class="doc-head"><div class="result-top"><span class="badge ${candidate ? "candidate" : ""}">${record.screen_code ? `TR ${escapeHtml(record.screen_code)}` : candidate ? "검수 전 후보" : escapeHtml(record.type)}</span>${record.signal_count ? `<span class="badge candidate">관련 신호 ${record.signal_count}건</span>` : ""}</div><h1>${escapeHtml(record.title)}</h1><div class="doc-meta"><span>출처: ${escapeHtml(record.source || "미기재")}</span><span>위치: ${escapeHtml(record.source_locator || "미기재")}</span><span>ID: ${escapeHtml(record.id)}</span></div></header>${candidate ? '<div class="notice">이 문서는 비식별 실사용 기록에서 만든 검수 전 후보입니다. 공식 매뉴얼과 현재 제품 동작을 확인한 뒤 사용하세요.</div>' : ""}<article class="doc-body">${renderMarkdown(record.text)}</article>${record.related?.length ? `<nav class="related"><h2>관련 도움말</h2>${record.related.map((item) => `<button type="button" data-related="${escapeHtml(item.id)}"><small>${escapeHtml(item.relation_label || "관련 문서")}</small>${item.screen_code ? `TR ${escapeHtml(item.screen_code)} · ` : ""}${escapeHtml(item.title)}</button>`).join("")}</nav>` : ""}`;
   renderResults();
   if (push) updateUrl();
   $("#viewer").scrollTo?.(0, 0);

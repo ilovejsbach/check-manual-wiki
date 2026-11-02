@@ -20,7 +20,7 @@ screen_code: "3921"
 ---
 # 3921 - 해외금리 > LIBOR/EURIBOR/TIBOR
 
-> 출처: `CHECKPlus_Manual.pdf`, PDF 714-715쪽. 자동 추출 문서이므로 도표와 화면 이미지는 원본을 함께 확인하세요.
+> 출처: `CHECKPlus_Manual.pdf`, PDF 714-715쪽. 검색 가능한 본문과 원문 페이지 이미지를 함께 제공합니다.
 
 ## 화면 개요
 
@@ -38,6 +38,12 @@ screen_code: "3921"
 ● 통화 조회시
 
 <small>원본 PDF 714쪽</small>
+
+<details class="source-page"><summary>원문 PDF 714쪽 보기</summary>
+
+![3921 - 해외금리 > LIBOR/EURIBOR/TIBOR 원문 PDF 714쪽](assets/manual-pages/page-0714.webp)
+
+</details>
 
 ## 특이 사항
 
@@ -67,3 +73,9 @@ LIBOR 모든 통화의 2W, 4M, 5M, 7M, 8M, 9M, 10M, 11M 만기의 경우 2013.05
 3933
 
 <small>원본 PDF 715쪽</small>
+
+<details class="source-page"><summary>원문 PDF 715쪽 보기</summary>
+
+![3921 - 해외금리 > LIBOR/EURIBOR/TIBOR 원문 PDF 715쪽](assets/manual-pages/page-0715.webp)
+
+</details>

@@ -20,7 +20,7 @@ screen_code: "6321"
 ---
 # 6321 - WORLD/경제지표 > FED DOT PLOT
 
-> 출처: `CHECKPlus_Manual.pdf`, PDF 813-814쪽. 자동 추출 문서이므로 도표와 화면 이미지는 원본을 함께 확인하세요.
+> 출처: `CHECKPlus_Manual.pdf`, PDF 813-814쪽. 검색 가능한 본문과 원문 페이지 이미지를 함께 제공합니다.
 
 ## 화면 개요
 
@@ -44,7 +44,19 @@ PDF버튼을 클릭하면 FOMC 홈페이지에 회의 종료 후 게시된 PDF�
 
 <small>원본 PDF 813쪽</small>
 
+<details class="source-page"><summary>원문 PDF 813쪽 보기</summary>
+
+![6321 - WORLD/경제지표 > FED DOT PLOT 원문 PDF 813쪽](assets/manual-pages/page-0813.webp)
+
+</details>
+
 해외
 6322 - WORLD/경제지표 > FED WATCH(CME)
 
 <small>원본 PDF 814쪽</small>
+
+<details class="source-page"><summary>원문 PDF 814쪽 보기</summary>
+
+![6321 - WORLD/경제지표 > FED DOT PLOT 원문 PDF 814쪽](assets/manual-pages/page-0814.webp)
+
+</details>

@@ -20,7 +20,7 @@ screen_code: "4153"
 ---
 # 4153 - Basis-Spread
 
-> 출처: `CHECKPlus_Manual.pdf`, PDF 213-213쪽. 자동 추출 문서이므로 도표와 화면 이미지는 원본을 함께 확인하세요.
+> 출처: `CHECKPlus_Manual.pdf`, PDF 213-213쪽. 검색 가능한 본문과 원문 페이지 이미지를 함께 제공합니다.
 
 ## 화면 개요
 
@@ -38,3 +38,9 @@ screen_code: "4153"
 2 상하/좌우 스크롤을 이용하여 월물 이동을 하실 수 있습니다.
 
 <small>원본 PDF 213쪽</small>
+
+<details class="source-page"><summary>원문 PDF 213쪽 보기</summary>
+
+![4153 - Basis-Spread 원문 PDF 213쪽](assets/manual-pages/page-0213.webp)
+
+</details>

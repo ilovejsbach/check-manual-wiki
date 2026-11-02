@@ -20,7 +20,7 @@ screen_code: "3227"
 ---
 # 3227 - 주요금리 > Matrix(KOFIA)
 
-> 출처: `CHECKPlus_Manual.pdf`, PDF 606-607쪽. 자동 추출 문서이므로 도표와 화면 이미지는 원본을 함께 확인하세요.
+> 출처: `CHECKPlus_Manual.pdf`, PDF 606-607쪽. 검색 가능한 본문과 원문 페이지 이미지를 함께 제공합니다.
 
 ## 화면 개요
 
@@ -44,6 +44,12 @@ screen_code: "3227"
 
 <small>원본 PDF 606쪽</small>
 
+<details class="source-page"><summary>원문 PDF 606쪽 보기</summary>
+
+![3227 - 주요금리 > Matrix(KOFIA) 원문 PDF 606쪽](assets/manual-pages/page-0606.webp)
+
+</details>
+
 ## 관련 화면
 
 3227 - 주요금리 > Matrix(KOFIA) | 607
@@ -56,3 +62,9 @@ screen_code: "3227"
 3884
 
 <small>원본 PDF 607쪽</small>
+
+<details class="source-page"><summary>원문 PDF 607쪽 보기</summary>
+
+![3227 - 주요금리 > Matrix(KOFIA) 원문 PDF 607쪽](assets/manual-pages/page-0607.webp)
+
+</details>

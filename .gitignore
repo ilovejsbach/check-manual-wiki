@@ -29,3 +29,5 @@ sources/check-expert/*
 !sources/check-expert/manual-enrichment.jsonl
 !sources/check-expert/manual-enrichment-unmapped.jsonl
 .tools/
+tmp-*
+help-preview.png
