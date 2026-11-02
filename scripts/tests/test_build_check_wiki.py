@@ -35,6 +35,38 @@ def test_slug_normalizes_for_paths() -> None:
     assert slug(" 1300 - 주식현재가 ") == "1300-주식현재가"
 
 
+def test_case_key_projection_keeps_only_structural_fields() -> None:
+    case = {"id":"check:support-case:x", "type":"support_case", "text":"## 사용자가 겪은 상황\nTR 1300 조회"}
+    screen = {"id":"check:screen:1300", "type":"screen", "screen_code":"1300", "title":"1300 - 주식현재가"}
+    keys = build_check_wiki._derive_case_keys([case, screen])[case["id"]]
+    assert keys["screen_codes"][0]["kind"] == "tr"
+    assert "TR 1300" not in json.dumps(keys, ensure_ascii=False)
+    assert set(keys) == {"screen_codes", "tr_candidates", "functions", "item_codes"}
+
+
+def test_tr_candidate_pages_are_created_and_registry_absence_skips(tmp_path, monkeypatch) -> None:
+    output = tmp_path / "content" / "check-expert"
+    output.mkdir(parents=True)
+    registry = tmp_path / "ontology" / "tr_registry.jsonl"
+    registry.parent.mkdir()
+    registry.write_text(json.dumps({"tr":"9999","status":"case_mentioned"}) + "\n", encoding="utf-8")
+    case_path = output / "case.md"
+    case_path.write_text(frontmatter(title="사례", description="", tags=[], source="fixture", extra={"knowledge_id":"check:support-case:x"}) + "# 사례\n", encoding="utf-8")
+    monkeypatch.setattr(build_check_wiki, "ROOT", tmp_path)
+    monkeypatch.setattr(build_check_wiki, "OUTPUT_DIR", output)
+    monkeypatch.setattr(build_check_wiki, "_derive_case_keys", lambda records: {"check:support-case:x":{"screen_codes":[],"tr_candidates":[{"code":"9999","kind":"tr","start":1,"end":5,"section":"S"}],"functions":[],"item_codes":[]}})
+    case = {"id":"check:support-case:x", "type":"support_case", "markdown_path":"check-expert/case.md", "title":"사례", "related_ids":[], "relationships":[]}
+    records = [case]
+    build_check_wiki._add_case_tr_links(records)
+    page = output / "tr-후보" / "9999.md"
+    assert page.exists() and "check:tr:9999" in {r["id"] for r in records}
+    assert "[[check-expert/tr-후보/9999|TR 9999" in case_path.read_text(encoding="utf-8")
+    registry.unlink()
+    records = [dict(case, related_ids=[], relationships=[])]
+    build_check_wiki._add_case_tr_links(records)
+    assert len(records) == 1
+
+
 def test_screen_code_accepts_only_four_digit_token() -> None:
     assert screen_code("1300 - 주식현재가") == "1300"
     assert screen_code("12345 데이터") is None

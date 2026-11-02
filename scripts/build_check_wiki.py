@@ -63,6 +63,101 @@ CASE_TYPE_PRIORITY = ("troubleshooting", "procedure", "caution", "tip", "faq")
 LEGACY_SCREEN_IDS = {"check:screen:1002:종합": "check:screen:1002", "check:screen:1002:해외": "check:screen:1002"}
 
 
+def _derive_case_keys(records: list[dict[str, object]]) -> dict[str, dict[str, object]]:
+    """Import the standalone extractor only after all knowledge records exist."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("derive_case_links", ROOT / "scripts" / "derive_case_links.py")
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = module
+    spec.loader.exec_module(module)
+    idx = module.Index(records)
+    out = {}
+    for case in idx.cases:
+        extracted = module.extract_case_keys(case, idx)
+        strong = [f for f in extracted["screen_codes"] if f["kind"] in {"tr", "ctx"}]
+        out[case["id"]] = {
+            "screen_codes": [{k: f[k] for k in ("code", "kind", "start", "end", "section")} for f in strong],
+            "tr_candidates": [{k: f[k] for k in ("code", "kind", "start", "end", "section")} for f in extracted["unresolved_screen_codes"] if f.get("kind") != "bare"],
+            "functions": [{k: f[k] for k in ("name", "start", "end", "section")} if "name" in f else {k: f[k] for k in ("function", "start", "end", "section") if k in f} for f in extracted["functions"]],
+            "item_codes": [{"code": f["codes"][0], "name": f.get("name"), "start": f["start"], "end": f["end"], "section": f["section"]} for f in extracted["item_codes"] if f.get("match") == "code" and len(f.get("codes", [])) == 1],
+        }
+    return out
+
+
+def _add_case_tr_links(records: list[dict[str, object]]) -> None:
+    """Add key-only case links and candidate TR pages after normal page export."""
+    by_id = {str(r["id"]): r for r in records}
+    case_keys = _derive_case_keys(records)
+    registry = ROOT / "ontology" / "tr_registry.jsonl"
+    tr_cases: dict[str, set[str]] = {}
+    for case in (r for r in records if r.get("type") == "support_case"):
+        keys = case_keys.get(str(case["id"]), {})
+        case.update(keys)
+        screen_ids = [f"check:screen:{key['code']}" for key in keys.get("screen_codes", [])]
+        candidates = [str(k["code"]) for k in keys.get("tr_candidates", [])]
+        for code in candidates:
+            tr_cases.setdefault(code, set()).add(str(case["id"]))
+        non_placeholder = [x for x in case.get("related_ids", []) if not str(x).startswith("check:enrichment:unmapped:")]
+        semantic = [str(x) for x in non_placeholder if str(x) in by_id and by_id[str(x)].get("type") == "support_case"][:2]
+        other = [str(x) for x in non_placeholder if str(x) in by_id and by_id[str(x)].get("type") != "support_case"]
+        case["related_ids"] = list(dict.fromkeys(screen_ids + other + semantic + [f"check:tr:{c}" for c in candidates]))
+        # Add readable wiki links without copying extracted source text.
+        path = ROOT / "content" / str(case.get("markdown_path", "").replace(".md", ".md"))
+        raw = path.read_text(encoding="utf-8") if path.exists() else ""
+        links = []
+        for sid in screen_ids:
+            target = by_id.get(sid)
+            if target:
+                links.append(f"- [[{str(target['markdown_path']).removesuffix('.md')}|{target['title']}]]")
+        for code in candidates:
+            links.append(f"- [[check-expert/tr-후보/{code}|TR {code} (화면 문서 없음)]]")
+        for f in keys.get("functions", []):
+            name = f.get("name")
+            if name:
+                target = next((r for r in records if r.get("id", "").startswith("check:excel:manual:") and name in str(r.get("text", ""))), None)
+                if target:
+                    links.append(f"- [[{str(target['markdown_path']).removesuffix('.md')}|{name} 함수 설명]]")
+        for item in keys.get("item_codes", []):
+            code = item["code"]
+            links.append(f"- 항목코드 `{code}` — {item.get('name') or '항목명 확인 필요'}")
+        section = "## 연결된 화면·기능\n\n" + ("\n".join(dict.fromkeys(links)) if links else "연결 키가 없습니다.") + "\n\n"
+        if raw:
+            front, body = raw.split("---\n", 2)[1:]
+            metadata = yaml.safe_load(front) or {}
+            metadata["related_ids"] = case["related_ids"]
+            front = yaml.safe_dump(metadata, allow_unicode=True, sort_keys=False).rstrip() + "\n"
+            body = re.sub(r"(?ms)^## 연결된 화면·기능\s*\n.*?(?=^## |\Z)", "", body)
+            if "## 의미 분류" not in body:
+                body = body.rstrip() + "\n\n" + section
+            body = re.sub(r"(?m)^## 의미 분류\s*$", "## 의미 분류", body)
+            if "## 연결된 화면·기능" not in body:
+                body = re.sub(r"(?m)^## 의미 분류\s*$", section + "## 의미 분류", body, count=1)
+            path.write_text("---\n" + front + "---\n" + body, encoding="utf-8")
+            case["text"] = body.strip()
+            path.write_text("---\n" + front + "---\n" + body, encoding="utf-8")
+    if registry.exists():
+        for line in registry.read_text(encoding="utf-8").splitlines():
+            entry = json.loads(line)
+            code = str(entry.get("tr", ""))
+            if entry.get("status") not in {"case_mentioned", "screen_observed"} or code not in tr_cases:
+                continue
+            case_ids = sorted(tr_cases[code])
+            rel = f"check-expert/tr-후보/{code}.md"
+            title = f"TR {code} (화면 문서 없음)"
+            note = "매뉴얼에 없는 화면 번호이며 실제 CHECK 화면 확인 대기.\n"
+            if len(case_ids) == 1:
+                note += "오탐 가능: 한 사례에서만 언급되어 화면번호가 아닌 값일 수 있습니다.\n"
+            body = f"# {title}\n\n상태: `{entry.get('status')}`  \n언급 사례 수: {len(case_ids)}\n\n{note}\n## 언급 사례\n\n"
+            for cid in case_ids:
+                target = by_id[cid]
+                body += f"- [[{str(target['markdown_path']).removesuffix('.md')}|문의 사례 {cid.rsplit(':', 1)[-1]}]]\n"
+            page = OUTPUT_DIR / "tr-후보" / f"{code}.md"
+            write_text(page, frontmatter(title=title, description="매뉴얼에 없는 TR 후보", tags=["CHECK", "TR 후보"], source="ontology/tr_registry.jsonl", extra={"knowledge_id": f"check:tr:{code}", "document_type": "tr_candidate"}) + body)
+            records.append({"schema_version":"1.0", "id":f"check:tr:{code}", "type":"tr_candidate", "title":title, "aliases":[code, f"TR{code}"], "screen_code":None, "source":"ontology/tr_registry.jsonl", "related_ids":case_ids, "markdown_path":rel, "text":body})
+            for cid in case_ids:
+                by_id[cid]["related_ids"] = list(dict.fromkeys(by_id[cid]["related_ids"] + [f"check:tr:{code}"]))
+
+
 def canonical_knowledge_id(value: object) -> str:
     text = str(value)
     return LEGACY_SCREEN_IDS.get(text, text)
@@ -1483,6 +1578,8 @@ def export_knowledge() -> dict[str, int]:
         ]
         record["related_ids"] = sorted(set(record["related_ids"] + detected_related_ids))
 
+    _add_case_tr_links(records)
+
     records_by_id = {str(record["id"]): record for record in records}
     # A manual's explicit related-screen list is directional in prose but useful in both
     # directions for navigation and graph search.
@@ -1502,10 +1599,72 @@ def export_knowledge() -> dict[str, int]:
             if target is not None:
                 target["related_ids"] = sorted(set(target["related_ids"] + [record["id"]]))
 
+    # Keep case links intentionally bounded after reverse-link expansion.
+    for case in (r for r in records if r.get("type") == "support_case"):
+        ids = [str(x) for x in case.get("related_ids", []) if not str(x).startswith("check:enrichment:unmapped:")]
+        similar = [x for x in ids if x.startswith("check:support-case:")][:2]
+        case["related_ids"] = [x for x in ids if not x.startswith("check:support-case:")] + similar
+
+    # Preserve symmetric graph edges after pruning case placeholders and excess similar cases.
+    cases_by_id = {str(r["id"]): r for r in records if r.get("type") == "support_case"}
+    for case in cases_by_id.values():
+        case_id = str(case["id"])
+        for other_id in [x for x in case["related_ids"] if x in cases_by_id]:
+            other = cases_by_id[other_id]
+            if case_id not in other["related_ids"]:
+                case["related_ids"].remove(other_id)
+    for record in records:
+        if record.get("type") == "support_case":
+            continue
+        record["related_ids"] = [x for x in record.get("related_ids", []) if x not in cases_by_id or record["id"] in cases_by_id[x]["related_ids"]]
+    by_id = {str(r["id"]): r for r in records}
+    for case in cases_by_id.values():
+        for target_id in case["related_ids"]:
+            target = by_id.get(str(target_id))
+            if target is not None and case["id"] not in target.get("related_ids", []):
+                target["related_ids"] = list(target.get("related_ids", [])) + [case["id"]]
+
     enrich_relationships(records)
+    for case in (r for r in records if r.get("type") == "support_case"):
+        semantic_ids = {r["target_id"] for r in case.get("relationships", []) if r.get("target_id", "").startswith("check:support-case:")}
+        for rel in case.get("relationships", []):
+            if rel.get("target_id") in semantic_ids:
+                rel["type"] = "similar_to"
+
+    case_pairings: dict[str, list[str]] = {cid: [] for cid in cases_by_id}
+    case_edges = sorted({tuple(sorted((cid, str(target)))) for cid, item in cases_by_id.items()
+                         for target in item.get("related_ids", []) if target in cases_by_id and target != cid})
+    for left, right in case_edges:
+        if len(case_pairings[left]) < 2 and len(case_pairings[right]) < 2:
+            case_pairings[left].append(right)
+            case_pairings[right].append(left)
+    case_related_output = {
+        cid: {str(x) for x in item.get("related_ids", []) if not str(x).startswith(("check:support-case:", "check:enrichment:unmapped:"))} | set(case_pairings[cid])
+        for cid, item in cases_by_id.items()
+    }
+
+    current_related = {str(r["id"]): {str(x) for x in r.get("related_ids", [])} for r in records}
+    for record in records:
+        rid = str(record["id"])
+        record["related_ids"] = [str(x) for x in record.get("related_ids", []) if rid in current_related.get(str(x), set())]
+    records_by_id = {str(r["id"]): r for r in records}
+    for source in records:
+        for target_id in list(source.get("related_ids", [])):
+            target = records_by_id.get(str(target_id))
+            if target is not None and target.get("type") != "support_case" and source["id"] not in target.get("related_ids", []):
+                target["related_ids"] = list(target.get("related_ids", [])) + [source["id"]]
 
     with (KNOWLEDGE_DIR / "knowledge.jsonl").open("w", encoding="utf-8", newline="\n") as stream:
         for record in records:
+            if record.get("type") == "support_case":
+                ids = [str(x) for x in record.get("related_ids", []) if not str(x).startswith("check:enrichment:unmapped:")]
+                semantic = case_pairings.get(str(record["id"]), [])
+                record["related_ids"] = [x for x in ids if not x.startswith("check:support-case:")] + semantic
+                record["relationships"] = [r for r in record.get("relationships", []) if r.get("target_id") in record["related_ids"]]
+            else:
+                record["related_ids"] = [str(x) for x in record.get("related_ids", [])
+                                          if str(x) not in cases_by_id
+                                          or str(record["id"]) in case_related_output.get(str(x), set())]
             stream.write(json.dumps(record, ensure_ascii=False) + "\n")
 
     case_type_counts = Counter(

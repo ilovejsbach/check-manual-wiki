@@ -32,12 +32,15 @@ def validate() -> tuple[dict[str, object], list[str]]:
     missing_source = 0
     empty_bodies = 0
     size_outliers: list[str] = []
+    candidate_ids = set()
     for path in markdown_files:
         metadata, body = parse_markdown(path)
         if path.name not in {"화면번호-색인.md", "업무-기능-색인.md"}:
             knowledge_id = metadata.get("knowledge_id")
             if knowledge_id:
                 ids.append(str(knowledge_id))
+                if metadata.get("document_type") == "tr_candidate":
+                    candidate_ids.add(str(knowledge_id))
             if not metadata.get("source"):
                 missing_source += 1
         if len(body.strip()) < 20:
@@ -64,6 +67,10 @@ def validate() -> tuple[dict[str, object], list[str]]:
     record_ids = {str(record["id"]) for record in records}
     if len(record_ids) != len(records):
         errors.append("knowledge.jsonl contains duplicate record IDs")
+    if any(record.get("type") == "tr_candidate" for record in records):
+        missing_candidate_pages = sorted(record["id"] for record in records if record.get("type") == "tr_candidate" and record["id"] not in candidate_ids)
+        if missing_candidate_pages:
+            errors.append(f"TR candidate records missing pages: {missing_candidate_pages[:10]}")
     unresolved = sorted(
         {
             str(related)

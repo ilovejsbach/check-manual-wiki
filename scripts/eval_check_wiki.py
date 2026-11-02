@@ -75,6 +75,15 @@ def crosslink_metrics(records: list[dict[str, Any]]) -> dict[str, Any]:
         manual_reasons[record_id] = reason
     edges = {(str(item["id"]), str(target)) for item in records for target in item.get("related_ids", [])}
     asymmetric = [(source, target) for source, target in edges if (target, source) not in edges]
+    cases = [r for r in records if r.get("type") == "support_case"]
+    # The extracted strong keys are spans from body sections (TR notation or
+    # distinguishing context); case_topic labels are deliberately excluded.
+    tr_cases = [r for r in cases if r.get("screen_codes")]
+    unresolved_cases = [r for r in cases if r.get("tr_candidates")]
+    candidate_linked = sum(any(x in set(r.get("related_ids", [])) for x in (f"check:tr:{c['code']}" for c in r.get("tr_candidates", []))) for r in unresolved_cases)
+    screen_counts = [sum(1 for target in r.get("related_ids", []) if str(target).startswith("check:screen:")) for r in cases]
+    placeholder_count = sum(str(target).startswith("check:enrichment:unmapped:") for r in cases for target in r.get("related_ids", []))
+    pages_linked = sum("[[" in str(r.get("text", "")) for r in cases)
     return {
         "body_mentions": total_mentions,
         "linked_body_mentions": linked_mentions,
@@ -85,6 +94,13 @@ def crosslink_metrics(records: list[dict[str, Any]]) -> dict[str, Any]:
         "manual_records_without_screen_link_reasons": manual_reasons,
         "relationship_edges": len(edges),
         "asymmetric_relationship_edges": len(asymmetric),
+        "case_tr_screen_key_rate": sum(bool(r.get("screen_codes")) for r in tr_cases) / len(tr_cases) if tr_cases else 1.0,
+        "case_tr_screen_key_cases": len(tr_cases),
+        "case_wiki_link_rate": pages_linked / len(cases) if cases else 1.0,
+        "unregistered_tr_candidate_link_rate": candidate_linked / len(unresolved_cases) if unresolved_cases else 1.0,
+        "unregistered_tr_cases": len(unresolved_cases),
+        "average_case_screen_related_ids": sum(screen_counts) / len(screen_counts) if screen_counts else 0.0,
+        "case_unmapped_placeholder_links": placeholder_count,
     }
 
 
