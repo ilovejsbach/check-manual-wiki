@@ -129,3 +129,9 @@ uv run python scripts/derive_item_links.py --out tmp/item_links.jsonl --report
 uv run python scripts/derive_case_links.py --knowledge knowledge/check-expert/knowledge.jsonl --out-dir tmp --report
 ```
 프로젝트 스킬: `.claude/skills/check-wiki-verify`(전체 검증 절차), `.claude/skills/check-delegate-codex`(Codex 위임 절차).
+
+## 사례 의도·영역 분류 (2026-11-02)
+
+- `scripts/classify_cases.py` → `ontology/case_classes.jsonl`: 사례 1,418건을 문의 의도(screen_finding·data_availability·data_error·env_setup·account_access·howto·empty·other)와 시장 영역(채권·주식·선물·옵션·외환·ETP·ELW·펀드·해외·경제지표)으로 규칙 분류한다. 근거는 제목과 '사용자가 겪은 상황' 절뿐이고 본문·원본 위치는 출력하지 않는다. 등급 auto_extracted, 검수 전.
+- 화면 찾기 의도 165건 중 화면/TR 엣지가 없는 사례는 18건이다. 이 18건은 정보요구(`check:need:*`) 승격 후보다.
+- 한계: 키워드 규칙이라 의도 `other` 457건, 영역 없음 635건이 남는다. 오분류는 검수 큐로 보완한다.
