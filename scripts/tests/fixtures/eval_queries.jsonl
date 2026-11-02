@@ -1,0 +1,59 @@
+{"id":"eval-01","query":"6106","expected_ids":["check:screen:6106"],"kind":"screen_code"}
+{"id":"eval-02","query":"TR1201","expected_ids":["check:screen:1201"],"kind":"alias"}
+{"id":"eval-03","query":"ELW 시세표","expected_ids":["check:screen:1211"],"kind":"title"}
+{"id":"eval-04","query":"ETF 현재가 화면","expected_ids":["check:screen:1440"],"kind":"natural_language"}
+{"id":"eval-05","query":"ETF 시세표","expected_ids":["check:screen:1443"],"kind":"function"}
+{"id":"eval-06","query":"ETF 구성종목 확인","expected_ids":["check:screen:1448"],"kind":"natural_language"}
+{"id":"eval-07","query":"TR2250","expected_ids":["check:screen:2250"],"kind":"alias"}
+{"id":"eval-08","query":"ETN 시세표","expected_ids":["check:screen:2251"],"kind":"title"}
+{"id":"eval-09","query":"관심종목 평가 화면","expected_ids":["check:screen:1370"],"kind":"natural_language"}
+{"id":"eval-10","query":"TR1379","expected_ids":["check:screen:1379"],"kind":"alias"}
+{"id":"eval-11","query":"기업종합","expected_ids":["check:screen:7000"],"kind":"title"}
+{"id":"eval-12","query":"재무제표 조회","expected_ids":["check:screen:7031"],"kind":"natural_language"}
+{"id":"eval-13","query":"4000","expected_ids":["check:screen:4000"],"kind":"screen_code"}
+{"id":"eval-14","query":"TR4001","expected_ids":["check:screen:4001"],"kind":"alias"}
+{"id":"eval-15","query":"투자자일중","expected_ids":["check:screen:4002"],"kind":"title"}
+{"id":"eval-16","query":"선물 투자자 일별","expected_ids":["check:screen:4003"],"kind":"natural_language"}
+{"id":"eval-17","query":"KOSPI200","expected_ids":["check:screen:4100"],"kind":"title"}
+{"id":"eval-18","query":"선물 현재가","expected_ids":["check:screen:4101"],"kind":"natural_language"}
+{"id":"eval-19","query":"TR4103","expected_ids":["check:screen:4103"],"kind":"alias"}
+{"id":"eval-20","query":"단일가매매 화면","expected_ids":["check:screen:4104"],"kind":"function"}
+{"id":"eval-21","query":"현재가 요약","expected_ids":["check:screen:4105"],"kind":"natural_language"}
+{"id":"eval-22","query":"선물 전종목 현재가","expected_ids":["check:screen:4106"],"kind":"natural_language"}
+{"id":"eval-23","query":"복수종목","expected_ids":["check:screen:4107"],"kind":"title"}
+{"id":"eval-24","query":"TR4108","expected_ids":["check:screen:4108"],"kind":"alias"}
+{"id":"eval-25","query":"개별주식 선물","expected_ids":["check:screen:4109"],"kind":"natural_language"}
+{"id":"eval-26","query":"투자자현황","expected_ids":["check:screen:4110"],"kind":"function"}
+{"id":"eval-27","query":"주식선물 현재가","expected_ids":["check:screen:4111"],"kind":"title"}
+{"id":"eval-28","query":"TR4112","expected_ids":["check:screen:4112"],"kind":"alias"}
+{"id":"eval-29","query":"섹터지수 조회","expected_ids":["check:screen:4113"],"kind":"natural_language"}
+{"id":"eval-30","query":"주식선물 시세표","expected_ids":["check:screen:4114"],"kind":"title"}
+{"id":"eval-31","query":"4125","expected_ids":["check:screen:4125"],"kind":"screen_code"}
+{"id":"eval-32","query":"지수선물 투자자","expected_ids":["check:screen:4126"],"kind":"natural_language"}
+{"id":"eval-33","query":"TR4128","expected_ids":["check:screen:4128"],"kind":"alias"}
+{"id":"eval-34","query":"체결 실시간","expected_ids":["check:screen:4131"],"kind":"title"}
+{"id":"eval-35","query":"매매단위 확인","expected_ids":["check:screen:4132"],"kind":"natural_language"}
+{"id":"eval-36","query":"성향분석","expected_ids":["check:screen:4133"],"kind":"title"}
+{"id":"eval-37","query":"마켓 프로파일","expected_ids":["check:screen:4134"],"kind":"natural_language"}
+{"id":"eval-38","query":"TR4135","expected_ids":["check:screen:4135"],"kind":"alias"}
+{"id":"eval-39","query":"선물 체결잔량 조회","expected_ids":["check:screen:4140"],"kind":"natural_language"}
+{"id":"eval-40","query":"호가잔량","expected_ids":["check:screen:4141"],"kind":"title"}
+{"id":"eval-41","query":"전종목 호가","expected_ids":["check:screen:4142"],"kind":"natural_language"}
+{"id":"eval-42","query":"TR4151","expected_ids":["check:screen:4151"],"kind":"alias"}
+{"id":"eval-43","query":"전종목 일중","expected_ids":["check:screen:4152"],"kind":"natural_language"}
+{"id":"eval-44","query":"Basis-Spread","expected_ids":["check:screen:4153"],"kind":"title"}
+{"id":"eval-45","query":"선물 종목 일별","expected_ids":["check:screen:4171"],"kind":"natural_language"}
+{"id":"eval-46","query":"TR4175","expected_ids":["check:screen:4175"],"kind":"alias"}
+{"id":"eval-47","query":"주식선물 시세표","expected_ids":["check:screen:4114"],"kind":"title"}
+{"id":"eval-48","query":"투자자현황","expected_ids":["check:screen:4110"],"kind":"title"}
+{"id":"eval-49","query":"VKOSPI","expected_ids":["check:screen:4112"],"kind":"title"}
+{"id":"eval-50","query":"가격대별","expected_ids":["check:screen:4135"],"kind":"title"}
+{"id":"eval-51","query":"Basis-Spread","expected_ids":["check:screen:4153"],"kind":"title"}
+{"id":"eval-52","query":"종목일중","expected_ids":["check:screen:4151"],"kind":"title"}
+{"id":"eval-53","query":"국채선물수정가","expected_ids":["check:screen:4175"],"kind":"title"}
+{"id":"eval-54","query":"TR4111","expected_ids":["check:screen:4111"],"kind":"alias"}
+{"id":"eval-55","query":"TR4135","expected_ids":["check:screen:4135"],"kind":"alias"}
+{"id":"eval-56","query":"TR4175","expected_ids":["check:screen:4175"],"kind":"alias"}
+{"id":"eval-57","query":"4114","expected_ids":["check:screen:4114"],"kind":"screen_code"}
+{"id":"eval-58","query":"1002","expected_ids":["check:screen:1002"],"kind":"screen_code"}
+{"id":"eval-59","query":"선물 현재가","expected_ids":["check:screen:4101"],"kind":"natural_language"}

@@ -9,6 +9,7 @@ from build_check_wiki import (
     clean_case_request,
     enrich_relationships,
     extract_related_screen_codes,
+    find_screen_mentions,
     format_pdf_page_text,
     frontmatter,
     normalize_screen_title,
@@ -16,6 +17,18 @@ from build_check_wiki import (
     screen_code,
     slug,
 )
+
+
+def test_generated_screen_records_are_unique_by_screen_code() -> None:
+    index = build_check_wiki.KNOWLEDGE_DIR / "knowledge.jsonl"
+    records = [json.loads(line) for line in index.read_text(encoding="utf-8").splitlines()]
+    screens = [record for record in records if record["type"] == "screen"]
+    codes = [record["screen_code"] for record in screens]
+    assert len(codes) == len(set(codes))
+    merged = next(record for record in screens if record["screen_code"] == "1002")
+    assert merged["categories"] == ["종합", "해외"]
+    assert "60-62" in str(merged["source_locator"])
+    assert "771-773" in str(merged["source_locator"])
 
 
 def test_slug_normalizes_for_paths() -> None:
@@ -30,6 +43,20 @@ def test_screen_code_accepts_only_four_digit_token() -> None:
 def test_related_screen_codes_accept_tr_notation() -> None:
     body = "## 관련 화면\n\n- TR 6350 — 아시아 지수종합\n- 6342 - 대륙별지수"
     assert extract_related_screen_codes(body, "1002") == ["6342", "6350"]
+
+
+def test_screen_mention_detection_uses_tr_code_title_and_skips_years() -> None:
+    by_code = {
+        "1002": (Path("1002.md"), {"knowledge_id": "check:screen:1002"}),
+        "2020": (Path("2020.md"), {"knowledge_id": "check:screen:2020"}),
+    }
+    found = find_screen_mentions(
+        "TR1002 관련 설명, 1002 - 세계지수종합 화면, 2020년 자료, 2020-01 개정",
+        by_code,
+        [("세계지수종합", "check:screen:1002")],
+        "check:screen:9999",
+    )
+    assert found == {"check:screen:1002": "mentions_tr"}
 
 
 def test_screen_title_and_internal_numbering_have_distinct_hierarchy() -> None:
@@ -177,7 +204,8 @@ def test_typed_relationships_include_manual_sequence_and_semantic_links() -> Non
             "category": "주식",
             "source": build_check_wiki.PDF_NAME,
             "source_locator": "12",
-            "related_ids": [],
+            "related_ids": ["check:screen:1000"],
+            "relationship_types": {"check:screen:1000": "mentions_tr"},
         },
         {
             "id": "check:excel:current-price",
@@ -196,6 +224,8 @@ def test_typed_relationships_include_manual_sequence_and_semantic_links() -> Non
     assert "next" in first_types
     assert "semantic" in first_types
     assert records[0]["related_ids"]
+    relation = next(item for item in records[1]["relationships"] if item["target_id"] == "check:screen:1000")
+    assert relation["type"] == "mentions_tr"
 
 
 def test_support_case_merges_multiple_official_contexts(tmp_path, monkeypatch) -> None:

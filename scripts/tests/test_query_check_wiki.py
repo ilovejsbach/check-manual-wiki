@@ -54,3 +54,12 @@ def test_type_and_category_filters() -> None:
 def test_support_case_semantics_and_type_filter() -> None:
     results = search(RECORDS, "엑셀 연동 오류", case_type="troubleshooting")
     assert results[0]["id"] == "check:support-case:one"
+
+
+def test_official_screen_outranks_cases_for_screen_query() -> None:
+    screen = {
+        "id": "check:screen:1923", "type": "screen", "title": "1923 - 엑셀 연동 오류",
+        "aliases": [], "screen_code": "1923", "category": "공통", "text": "엑셀 연동 오류 확인",
+    }
+    results = search([screen, RECORDS[2]], "엑셀 연동 오류")
+    assert results[0]["id"] == "check:screen:1923"

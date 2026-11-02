@@ -11,6 +11,7 @@
 | `type` | `screen`, `manual`, `excel`, `support_case`, `support_case_index` |
 | `title`, `aliases` | 정식 제목과 검색 동의어 |
 | `category`, `screen_code` | 업무 분류와 CHECK 화면번호 |
+| `categories` | 중복 수록 화면을 병합했을 때 보존하는 전체 분류 목록. `category`는 대표 분류 |
 | `source`, `source_locator` | 공식 원본과 PDF 페이지·Excel 시트/행 위치 |
 | `related_ids` | 같은 ID 체계로 표현한 관련 화면 |
 | `markdown_path` | 사람용 문서 위치 |
@@ -23,6 +24,8 @@
 | `case_topic`, `case_topics` | 사례가 연결된 업무·화면 주제. 복수 연결을 보존한다. |
 | `candidate_id` | 비식별 원천에서 파생된 사례의 안정적인 후보 ID |
 | `relationships` | `target_id`, 관계 유형, 사람용 관계명을 가진 유형화된 연결 |
+
+`source_locator`는 병합된 화면의 모든 PDF 구간을 `60-62; 771-773`처럼 세미콜론으로 보존합니다. 화면 본문에서 확인한 연결 유형은 `mentions_tr`(TR 번호)와 `mentions_title`(고유 화면명)으로 구분하며, 두 방향 모두 `related_ids`와 `relationships`에 기록합니다.
 
 ## 배포 경로
 

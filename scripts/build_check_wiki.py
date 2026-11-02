@@ -60,6 +60,12 @@ CASE_TYPE_LABELS = {
     "tip": "활용 팁",
 }
 CASE_TYPE_PRIORITY = ("troubleshooting", "procedure", "caution", "tip", "faq")
+LEGACY_SCREEN_IDS = {"check:screen:1002:종합": "check:screen:1002", "check:screen:1002:해외": "check:screen:1002"}
+
+
+def canonical_knowledge_id(value: object) -> str:
+    text = str(value)
+    return LEGACY_SCREEN_IDS.get(text, text)
 
 
 @dataclass
@@ -97,6 +103,10 @@ def frontmatter(
         if isinstance(value, list):
             lines.append(f"{key}:")
             lines.extend(f"  - {yaml_string(str(item))}" for item in value)
+            continue
+        if isinstance(value, dict):
+            lines.append(f"{key}:")
+            lines.extend(f"  {yaml_string(str(name))}: {yaml_string(str(item))}" for name, item in value.items())
             continue
         if isinstance(value, bool):
             rendered = "true" if value else "false"
@@ -316,6 +326,8 @@ def render_pdf_section(
     page_texts: list[str],
     child_headings: list[Bookmark],
     knowledge_id: str | None = None,
+    categories: list[str] | None = None,
+    source_pages: list[str] | None = None,
 ) -> str:
     code = screen_code(title)
     knowledge_id = knowledge_id or (
@@ -340,6 +352,8 @@ def render_pdf_section(
             "aliases": list(dict.fromkeys(aliases)),
             "source_pages": f"{start_page + 1}-{end_page}",
             "category": category,
+            **({"categories": categories} if categories else {}),
+            **({"source_locator": "; ".join(source_pages)} if source_pages else {}),
             **({"screen_code": code} if code else {}),
         },
     )
@@ -412,40 +426,55 @@ def build_pdf_wiki() -> dict[str, int]:
         elif bookmark.depth == 2:
             candidates.append((bookmark, current_part_dir, category))
 
-    code_counts: dict[str, int] = {}
-    for bookmark, _, _ in candidates:
-        if code := screen_code(bookmark.title):
-            code_counts[code] = code_counts.get(code, 0) + 1
+    grouped: dict[str, list[tuple[Bookmark, str, str]]] = {}
+    for item in candidates:
+        code = screen_code(item[0].title)
+        key = f"screen:{code}" if code else f"manual:{item[0].page}:{item[0].title}"
+        grouped.setdefault(key, []).append(item)
 
-    for index, (bookmark, part_dir, bookmark_category) in enumerate(candidates):
-        later_pages = [
-            candidate.page
-            for candidate, _, _ in candidates[index + 1 :]
-            if candidate.page > bookmark.page
-        ]
-        end_page = min(later_pages, default=len(reader.pages))
-        end_page = max(bookmark.page + 1, end_page)
-        title = normalize_screen_title(bookmark.title)
+    for items in grouped.values():
+        rendered_sections: list[str] = []
+        locators: list[str] = []
+        categories = list(dict.fromkeys(item[2] for item in items))
+        first_bookmark, part_dir, bookmark_category = items[0]
+        title = normalize_screen_title(first_bookmark.title)
         code = screen_code(title)
+        for index, (bookmark, _, category_value) in enumerate(items):
+            later_pages = [
+                candidate.page
+                for candidate, _, _ in candidates
+                if candidate.page > bookmark.page
+            ]
+            end_page = max(bookmark.page + 1, min(later_pages, default=len(reader.pages)))
+            locators.append(f"{bookmark.page + 1}-{end_page}")
+            children = [child for child in flatten_bookmarks(bookmark.children) if child.page < end_page]
+            rendered_sections.append(render_pdf_section(
+                title=normalize_screen_title(bookmark.title), category=category_value,
+                start_page=bookmark.page, end_page=end_page, page_texts=page_texts,
+                child_headings=children, knowledge_id=f"check:screen:{code}" if code else None,
+            ))
+        document = rendered_sections[0]
+        if len(rendered_sections) > 1:
+            # Keep every repeated listing's prose and page-image provenance on one stable screen page.
+            for section in rendered_sections[1:]:
+                body_match = re.match(r"^---\n.*?\n---\n?(.*)$", section, re.DOTALL)
+                if body_match:
+                    body = re.sub(r"^# .+?\n+", "", body_match.group(1), count=1)
+                    document += "\n\n" + body
+            match = re.match(r"^---\n(.*?)\n---\n?(.*)$", document, re.DOTALL)
+            if match:
+                metadata = yaml.safe_load(match.group(1)) or {}
+                metadata.update({"source_pages": locators, "source_locator": "; ".join(locators),
+                                 "category": categories[0], "categories": categories})
+                document = frontmatter(
+                    title=str(metadata.get("title", title)),
+                    description=str(metadata.get("description", "")),
+                    tags=metadata.get("tags", []), source=str(metadata.get("source", PDF_NAME)),
+                    extra={key: value for key, value in metadata.items()
+                           if key not in {"title", "description", "tags", "source"}},
+                ) + match.group(2)
         filename = f"{code}-{slug(title)}.md" if code else f"{slug(title)}.md"
-        category_dir = slug(bookmark_category)
-        children = [
-            child for child in flatten_bookmarks(bookmark.children) if child.page < end_page
-        ]
-        document = render_pdf_section(
-            title=title,
-            category=bookmark_category,
-            start_page=bookmark.page,
-            end_page=end_page,
-            page_texts=page_texts,
-            child_headings=children,
-            knowledge_id=(
-                f"check:screen:{code}:{slug(bookmark_category)}"
-                if code and code_counts[code] > 1
-                else None
-            ),
-        )
-        write_text(OUTPUT_DIR / part_dir / category_dir / filename, document)
+        write_text(OUTPUT_DIR / part_dir / slug(bookmark_category) / filename, document)
         generated += 1
 
     rendered_pages = render_manual_page_assets(pdf_path)
@@ -676,6 +705,7 @@ def build_support_case(
     related_ids: list[str],
     mapping_status: str,
 ) -> tuple[Path, str]:
+    related_ids = list(dict.fromkeys(canonical_knowledge_id(item) for item in related_ids))
     case_type = primary_case_type(example)
     label = CASE_TYPE_LABELS[case_type]
     request = clean_case_request(example.get("request_text")) or "문의 내용 미기재"
@@ -774,14 +804,37 @@ def build_manual_enrichment() -> int:
                 "path": path.relative_to(ROOT / "content").with_suffix("").as_posix(),
             }
 
-    summaries = [
+    raw_summaries = [
         json.loads(line) for line in source.read_text(encoding="utf-8").splitlines() if line
     ]
+    grouped_summaries: dict[str, dict[str, object]] = {}
+    for raw_summary in raw_summaries:
+        target_id = canonical_knowledge_id(raw_summary.get("target_knowledge_id") or "")
+        summary = grouped_summaries.setdefault(target_id, {
+            "target_knowledge_id": target_id, "signal_count": 0, "duplicate_group_count": 0,
+            "manual_candidate_counts": {}, "topic_counts": {}, "examples": [],
+        })
+        summary["signal_count"] = int(summary.get("signal_count", 0)) + int(raw_summary.get("signal_count", 0))
+        summary["duplicate_group_count"] = int(summary.get("duplicate_group_count", 0)) + int(raw_summary.get("duplicate_group_count", 0))
+        for field_name in ("manual_candidate_counts", "topic_counts"):
+            counts = summary.setdefault(field_name, {})
+            assert isinstance(counts, dict)
+            for key, count in raw_summary.get(field_name, {}).items():
+                counts[str(key)] = int(counts.get(str(key), 0)) + int(count)
+        examples = summary.setdefault("examples", [])
+        assert isinstance(examples, list)
+        known = {str(item.get("candidate_id") or item.get("evidence_locator") or "") for item in examples}
+        for example in raw_summary.get("examples", []):
+            key = str(example.get("candidate_id") or example.get("evidence_locator") or "")
+            if key not in known:
+                examples.append(example)
+                known.add(key)
+    summaries = list(grouped_summaries.values())
     links: list[str] = []
     case_links: dict[str, list[str]] = {key: [] for key in CASE_TYPE_LABELS}
     documents = 0
     for summary in summaries:
-        target_id = str(summary.get("target_knowledge_id") or "")
+        target_id = canonical_knowledge_id(summary.get("target_knowledge_id") or "")
         target = target_metadata.get(target_id)
         if not target:
             continue
@@ -1074,6 +1127,28 @@ def extract_related_screen_codes(body: str, own_code: str | None = None) -> list
     return sorted(codes)
 
 
+def find_screen_mentions(
+    text: str, by_code: dict[str, tuple[Path, dict[str, object]]],
+    titles: list[tuple[str, str]], own_id: str,
+) -> dict[str, str]:
+    found: dict[str, str] = {}
+    for match in re.finditer(r"(?i)\bTR\s*(\d{4})\b", text):
+        code = match.group(1)
+        if code in by_code and str(by_code[code][1]["knowledge_id"]) != own_id:
+            found[str(by_code[code][1]["knowledge_id"])] = "mentions_tr"
+    for match in re.finditer(r"(?<!\d)(\d{4})(?!\d)", text):
+        code = match.group(1)
+        suffix = text[match.end():]
+        if re.match(r"\s*년", suffix) or re.match(r"\s*[-/.]\s*\d{1,2}(?:\D|$)", suffix):
+            continue
+        if code in by_code and str(by_code[code][1]["knowledge_id"]) != own_id:
+            found.setdefault(str(by_code[code][1]["knowledge_id"]), "mentions_title")
+    for title, target_id in titles:
+        if target_id != own_id and title in text:
+            found.setdefault(target_id, "mentions_title")
+    return found
+
+
 def add_relationship(
     record: dict[str, object],
     target_id: str,
@@ -1120,6 +1195,10 @@ def enrich_relationships(records: list[dict[str, object]]) -> None:
                 relation_type, label = "related_screen", "관련 화면"
             else:
                 relation_type, label = "screen_reference", "본문에서 언급"
+            typed = record.get("relationship_types", {})
+            if isinstance(typed, dict):
+                relation_type = str(typed.get(str(target_id), relation_type))
+            label = {"mentions_tr": "본문의 TR 번호 언급", "mentions_title": "본문의 화면명 언급"}.get(relation_type, label)
             add_relationship(
                 record,
                 str(target_id),
@@ -1196,7 +1275,146 @@ def enrich_relationships(records: list[dict[str, object]]) -> None:
         record["relationships"] = [
             item for item in record["relationships"] if item["target_id"] in by_id
         ]
-        record["related_ids"] = [item["target_id"] for item in record["relationships"]]
+    # Semantic similarity and sequential navigation must be traversable from both ends.
+    for record in records:
+        source_id = str(record["id"])
+        for relationship in list(record["relationships"]):
+            target_id = str(relationship["target_id"])
+            target = by_id[target_id]
+            add_relationship(
+                target, source_id, str(relationship["type"]), "상호 연결",
+                evidence_type=str(relationship.get("evidence_type", "generated")),
+                review_status=str(relationship.get("review_status", "candidate")),
+            )
+    # Bound official cross-links at 96 per screen; keep TR and curated links ahead of semantic edges.
+    relation_priority = {"mentions_tr": 0, "related_screen": 1, "mentions_title": 2,
+                         "screen_reference": 3, "previous": 4, "next": 4, "semantic": 5}
+    type_priority = {"screen": 0, "manual": 1, "excel": 2}
+    records_by_id = {str(record["id"]): record for record in records}
+    for target in records:
+        if target.get("type") != "screen":
+            continue
+        incoming: list[tuple[int, int, str, str]] = []
+        target_id = str(target["id"])
+        for source in records:
+            if source.get("type") not in type_priority:
+                continue
+            for relationship in source["relationships"]:
+                if relationship["target_id"] == target_id:
+                    incoming.append((type_priority[str(source["type"])],
+                                     relation_priority.get(str(relationship["type"]), 6),
+                                     str(source["id"]), str(relationship["type"])))
+        keep = {item[2] for item in sorted(incoming)[:96]}
+        for _, _, source_id, _ in incoming:
+            if source_id not in keep:
+                records_by_id[source_id]["relationships"] = [
+                    item for item in records_by_id[source_id]["relationships"]
+                    if item["target_id"] != target_id
+                ]
+                target["relationships"] = [
+                    item for item in target["relationships"] if item["target_id"] != source_id
+                ]
+    for record in records:
+        record["related_ids"] = list(dict.fromkeys(item["target_id"] for item in record["relationships"]))
+
+
+def add_screen_mention_links() -> None:
+    """Create bounded, reciprocal links from explicit TR, code, and distinctive title mentions."""
+    pages: list[tuple[Path, dict[str, object], str]] = []
+    for path in sorted(OUTPUT_DIR.rglob("*.md")):
+        raw = path.read_text(encoding="utf-8")
+        match = re.match(r"^---\n(.*?)\n---\n?(.*)$", raw, re.DOTALL)
+        if not match:
+            continue
+        metadata = yaml.safe_load(match.group(1)) or {}
+        if metadata.get("knowledge_id"):
+            pages.append((path, metadata, match.group(2)))
+    screens = [(path, meta) for path, meta, _ in pages if meta.get("screen_code")]
+    by_code = {str(meta["screen_code"]): (path, meta) for path, meta in screens}
+    page_by_id = {str(meta["knowledge_id"]): (path, meta, body) for path, meta, body in pages}
+    # Require five characters, a unique title, and no substring ambiguity; this excludes broad labels such as “종합”.
+    generic = {"기타", "종합", "조회", "현황", "정보", "관리", "설정", "검색", "화면"}
+    raw_titles: list[tuple[str, str]] = []
+    for _, metadata in screens:
+        title = re.sub(r"^\d{4}\s*[-–—:]?\s*", "", str(metadata.get("title", ""))).strip()
+        if len(title) >= 5 and title not in generic:
+            raw_titles.append((title, str(metadata["knowledge_id"])))
+    titles = [(title, target_id) for title, target_id in raw_titles
+              if sum(title == other for other, _ in raw_titles) == 1
+              and not any(title != other and title in other for other, _ in raw_titles)]
+    titles.sort(key=lambda item: (-len(item[0]), item[0]))
+
+    edges: dict[str, dict[str, str]] = {}
+    for path, metadata, body in pages:
+        source_id = str(metadata["knowledge_id"])
+        if not metadata.get("screen_code") and "excel-premium" not in path.as_posix() and not str(metadata.get("source", "")).lower().endswith((".xls", ".xlsx")):
+            if metadata.get("document_type"):
+                continue
+        source_type = "screen" if metadata.get("screen_code") else ("excel" if "excel-premium" in path.as_posix() else "manual")
+        searchable = re.sub(r"(?ms)^## (?:관련 화면|원문 근거)\s*\n.*?(?=^## |\Z)", "\n", body)
+        found = find_screen_mentions(searchable, by_code, titles, source_id)
+        for code in extract_related_screen_codes(body, str(metadata.get("screen_code") or "")):
+            if code in by_code:
+                found.setdefault(str(by_code[code][1]["knowledge_id"]), "related_screen")
+        cap = {"screen": 24, "manual": 24, "excel": 16}.get(source_type, 8)
+        ordered = sorted(found.items(), key=lambda item: (0 if item[1] == "mentions_tr" else 1, item[0]))[:cap]
+        edges[source_id] = dict(ordered)
+
+    for source_id, targets in list(edges.items()):
+        for target_id, relation in targets.items():
+            edges.setdefault(target_id, {}).setdefault(source_id, relation)
+
+    # Cap incoming official links per screen while preferring screen, manual, then Excel evidence.
+    source_priority = {"screen": 0, "manual": 1, "excel": 2}
+    relation_priority = {"mentions_tr": 0, "related_screen": 1, "mentions_title": 2}
+    for target_id, (_, target_metadata, _) in page_by_id.items():
+        if not target_metadata.get("screen_code"):
+            continue
+        incoming = []
+        for source_id, targets in edges.items():
+            if target_id not in targets or source_id not in page_by_id:
+                continue
+            source_path, source_metadata, _ = page_by_id[source_id]
+            source_type = ("screen" if source_metadata.get("screen_code") else
+                           "excel" if "excel-premium" in source_path.as_posix() else "manual")
+            incoming.append((source_priority.get(source_type, 3),
+                             relation_priority.get(targets[target_id], 3), source_id))
+        keep = {item[2] for item in sorted(incoming)[:96]}
+        for _, _, source_id in incoming:
+            if source_id not in keep:
+                edges[source_id].pop(target_id, None)
+                edges.get(target_id, {}).pop(source_id, None)
+
+    for path, metadata, body in pages:
+        source_id = str(metadata["knowledge_id"])
+        targets = [(target_id, relation) for target_id, relation in edges.get(source_id, {}).items()
+                   if target_id in page_by_id and page_by_id[target_id][1].get("screen_code")]
+        targets.sort(key=lambda item: (0 if item[1] == "mentions_tr" else 1,
+                                       str(page_by_id[item[0]][1].get("screen_code"))))
+        if not targets:
+            continue
+        ids = [canonical_knowledge_id(item) for item in metadata.get("related_ids", [])]
+        metadata["related_ids"] = list(dict.fromkeys(ids + [target_id for target_id, _ in targets]))
+        relation_types = dict(metadata.get("relationship_types", {}))
+        relation_types.update({target_id: relation for target_id, relation in targets})
+        metadata["relationship_types"] = relation_types
+        lines = [f"- [[{page_by_id[target_id][0].relative_to(ROOT / 'content').with_suffix('').as_posix()}|{page_by_id[target_id][1].get('title')}]] ({relation})"
+                 for target_id, relation in targets]
+        clean_body = re.sub(r"(?ms)^## 관련 화면\s*\n.*?(?=^## |\Z)", "", body).rstrip()
+        section = "## 관련 화면\n\n" + "\n".join(lines) + "\n\n"
+        if "## 원문 근거" in clean_body:
+            clean_body = clean_body.replace("## 원문 근거", section + "## 원문 근거", 1)
+        else:
+            clean_body += "\n\n" + section
+        front = frontmatter(
+            title=str(metadata.get("title", path.stem)),
+            description=str(metadata.get("description", "")),
+            tags=metadata.get("tags", []),
+            source=str(metadata.get("source", "")),
+            extra={key: value for key, value in metadata.items()
+                   if key not in {"title", "description", "tags", "source"}},
+        )
+        write_text(path, front + clean_body)
 
 
 def export_knowledge() -> dict[str, int]:
@@ -1220,7 +1438,7 @@ def export_knowledge() -> dict[str, int]:
             or f"check:doc:{path.relative_to(OUTPUT_DIR).with_suffix('').as_posix()}"
         )
         related_codes = extract_related_screen_codes(body, code)
-        metadata_related_ids = [str(item) for item in metadata.get("related_ids", [])]
+        metadata_related_ids = [canonical_knowledge_id(item) for item in metadata.get("related_ids", [])]
         document_type = metadata.get("document_type")
         record = {
             "schema_version": "1.0",
@@ -1230,9 +1448,10 @@ def export_knowledge() -> dict[str, int]:
             "title": metadata.get("title", path.stem),
             "aliases": metadata.get("aliases", []),
             "category": metadata.get("category"),
+            "categories": metadata.get("categories", [metadata.get("category")] if metadata.get("category") else []),
             "screen_code": code,
             "source": metadata.get("source"),
-            "source_locator": metadata.get("source_pages")
+            "source_locator": metadata.get("source_locator") or metadata.get("source_pages")
             or metadata.get("sheet")
             or metadata.get("row_start")
             or metadata.get("source_locator"),
@@ -1246,6 +1465,7 @@ def export_knowledge() -> dict[str, int]:
             "candidate_id": metadata.get("candidate_id"),
             "related_screen_codes": related_codes,
             "related_ids": metadata_related_ids,
+            "relationship_types": metadata.get("relationship_types", {}),
             "markdown_path": relative,
             "text": body,
         }
@@ -1446,6 +1666,7 @@ def build() -> dict[str, int]:
     stats["code_records"] = code_records
     stats["enrichment_documents"] = build_manual_enrichment() + build_unmapped_enrichment()
     rebuild_support_case_indexes()
+    add_screen_mention_links()
     build_home(stats, source_hashes())
     build_download_page()
     stats.update(export_knowledge())

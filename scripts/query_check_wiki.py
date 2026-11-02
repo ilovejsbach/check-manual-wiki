@@ -46,6 +46,12 @@ def score_record(record: dict[str, Any], query: str) -> float:
     text = normalize(record.get("text"))
 
     score = 0.0
+    # Prefer official screen/manual guidance over noisy case-topic overlap in general search.
+    score += {"screen": 24, "manual": 8, "excel": 4}.get(str(record.get("type")), 0)
+    if record.get("type") == "support_case":
+        score -= 20
+    elif str(record.get("id", "")).startswith("check:enrichment:"):
+        score -= 16
     if query_normalized == screen_code:
         score += 100
     if query_normalized == title or query_normalized in aliases:
@@ -66,7 +72,7 @@ def score_record(record: dict[str, Any], query: str) -> float:
         if token in category_tokens:
             score += 5
         if token in set(tokens(case_context)):
-            score += 9
+            score += 1
         score += min(text.count(token), 8) * 0.5
     return score
 
