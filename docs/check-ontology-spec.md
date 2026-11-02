@@ -57,7 +57,7 @@
 
 ### 2.3 화면 (`screen`)
 
-기존 레코드. 필수 속성은 현행 스키마의 `id`, `title`, `screen_code`, `category`, `source`, `source_locator`, `aliases`. 신규 권장 속성: `variant`(동일 화면번호의 중복 구분), `menu_path`.
+기존 레코드. 필수 속성은 현행 스키마의 `id`, `title`, `screen_code`, `category`, `source`, `source_locator`, `aliases`. 신규 권장 속성: `categories`(여러 분류에 수록된 경우), `menu_path`, `variant`(병합할 수 없는 변형이 생긴 경우에만; 11.2 규칙 3). 화면번호(TR)는 화면 층의 정본 키이며 마스터 목록과 비연결 지식의 기준은 15절에 둔다.
 
 예시: `check:screen:4153`(4153 - Basis-Spread, PDF 213쪽). 본문에 "선물 종목간 시장Basis, 이론Basis, 시장Spread, 이론Spread를 제공"이라 되어 있어, 항목 `시장베이시스`(4001)와 개념 `kcm:concept:basis`로 `provides`/`explains`가 걸린다.
 
@@ -210,6 +210,9 @@
 | I8 | **비식별**: `public` 노드 본문에 개인·회사 식별자 패턴이 없다 | 사례 본문에 담당자 이름 |
 | I9 | **카디널리티**: `part_of` 부모 ≤1, `same_as` 그룹 내 정본 1개 | 메뉴 노드가 부모 2개 |
 | I10 | **질문 평가 세트**: `competency_questions.jsonl`의 `expected_ids`가 모두 실존(`scripts/tests/test_competency_fixture.py`). `gap:true` 개수는 보고용이며 감소하는 것이 목표 | 실존하지 않는 기대 ID |
+| I11 | **TR 마스터 유일성**: `ontology/tr_registry.jsonl`에서 `tr`은 유일하고, `status`가 `manual_confirmed`/`screen_observed`인 TR은 대응하는 `check:screen:<TR>` 레코드가 정확히 하나다. 화면 레코드의 `screen_code`는 모두 마스터에 있다 | 마스터에 없는 화면 레코드, 같은 TR의 화면 레코드 둘 |
+| I12 | **미확인 TR 격리**: `status: case_mentioned`인 TR은 `about_screen`의 target이 될 수 없고(화면 레코드가 없으므로), 공개 노출 시 "미확인"으로 표시한다. 상태 승격은 근거(매뉴얼 또는 화면 관찰)와 함께만 한다 | 미확인 TR에 정본 `about_screen` |
+| I13 | **TR 비연결 지식 표시**: 15.2의 비연결 대상은 TR 링크를 강제하지 않고, TR이 없는 이유(`reason`)를 `needs_review` 또는 허용 목록으로 둔다. `reason` 없이 TR 링크도 없는 `support_case`는 보고 대상이다 | 사유 없는 키 없는 사례 |
 
 ## 11. ID 규칙
 
@@ -255,8 +258,57 @@ information_need ──(resolves)──> screen ──(provides)──> item ─
 
 ## 14. 단계별 도입 순서 (제안)
 
+0. TR 마스터 목록(15절): 매뉴얼 화면 419개로 시작하고 사례 언급 TR을 `case_mentioned`로 등록, 화면 관찰 결과가 들어오면 승격.
 1. 항목 사전: 항목코드표 → `item` 노드 + `available_via` (매뉴얼확인, 자동 생성 가능).
 2. 화면 → 항목 `provides`: 화면 본문·문의 사례에서 자동추출 후 상위 100개 항목부터 검수.
 3. `information_need` + `resolves`: 질문 세트와 `support_case`에서 승격.
 4. 개념·법령 연결: 파일럿으로 `kcm:concept:basis`, `kcm:concept:short-selling`, `kcm:metric:cds-spread`와 `law:` 1~2개.
 5. 불변식 I1~I10을 `validate_check_wiki.py`에 추가.
+
+## 15. TR 마스터 목록과 TR 비연결 지식
+
+### 15.1 원칙: TR은 화면 층의 정본 키이고, 모든 것의 허브는 아니다
+
+- TR(4자리 화면번호)은 CHECK 쪽 **화면**을 식별하는 정본 키다. 화면에 관한 사례, 매뉴얼 절, 원문 쪽, 화면 간 이동(`previous`/`next`), 관련 화면은 TR을 기준으로 모은다.
+- 사용자의 필요는 TR이 아니라 **내용**에서 출발한다. 중심 노드는 데이터 항목이고, TR은 그 항목을 제공하는 답(`provides`) 중 하나다. 함수·API와 나란히 대안으로 비교할 수 있어야 한다.
+- 표준 구조:
+
+```
+[정보요구·개념·법령] ──> [데이터 항목] ──┬─ provides ──> TR(화면) <── about_screen ── 사례 / 매뉴얼 절 / 이동
+                                        ├─ available_via ──> 함수(종목코드·항목코드)
+                                        └─ API
+```
+
+### 15.2 TR에 연결하지 않는 지식 (억지 연결 금지)
+
+| 대상 | 이유 | 대신 연결할 곳 |
+| --- | --- | --- |
+| 엑셀 함수·항목코드·종목코드 | 종목코드·항목코드로 동작하며 TR과 무관 | `item`, `function` |
+| 자본시장 개념·기관·법령 조문 | 제도 지식. TR이 없음 | `item`, 화면(`explains_concept`), 후보는 `needs_review` |
+| 키 없는 문의 사례(현재 384개) | 본문에 화면·제목·함수 키가 없음 | 검색 기반 후보(`inferred`, `needs_review`) 또는 주제 노드 |
+| 인프라·일반 주제 사례(네트워크, 윈도우, 설치, 로그인 등) | 특정 화면이 정답일 수 없음 | `feature_sections`, 주제 노드 |
+| 공통 기능 매뉴얼 절(PDF 6~59쪽) | 화면 설명(60쪽~)과 쪽수가 겹치지 않음 | 메뉴·기능 노드, 사례의 `explained_in_manual` |
+
+### 15.3 TR 마스터 목록 (`ontology/tr_registry.jsonl`, 제안 경로)
+
+한 줄 = TR 하나. 모든 TR 존재 여부와 근거를 한곳에서 관리한다.
+
+| 필드 | 설명 |
+| --- | --- |
+| `tr` | 4자리 문자열. 유일(I11) |
+| `status` | `manual_confirmed`(매뉴얼 화면 레코드 있음), `screen_observed`(실제 CHECK 화면에서 확인), `case_mentioned`(사례 본문에서만 언급, **미확인**), `conflict`(매뉴얼과 화면이 불일치), `retired`(폐지 확인), `rejected`(TR이 아님: 연도·금액 등 오탐) |
+| `screen_id` | 대응하는 화면 레코드 ID. `case_mentioned`는 비어 있다 |
+| `title` | 확인된 제목. 미확인이면 비움 |
+| `sources[]` | `{kind: manual\|observation\|case, ref, as_of}` |
+| `grade` | 4절의 근거 등급 (`manual_confirmed`→매뉴얼확인, `screen_observed`→화면관찰, `case_mentioned`→추정) |
+| `case_mentions` | 이 TR을 언급한 사례 수(우선순위 정렬용) |
+| `notes` | 오탐 가능성(예: 연도·금액과 혼동) |
+
+상태 전이: `case_mentioned` → `screen_observed`(화면에서 확인) 또는 `rejected`(TR이 아님: 연도·금액 등). `manual_confirmed`가 화면 관찰과 다르면 `conflict`로 두고 불일치 항목을 `notes`에 남긴다. 승격과 기각에는 근거를 남긴다(I12).
+
+### 15.4 현황 (2026-11-02, 추출 도구 기준)
+
+- 매뉴얼 화면(`manual_confirmed`): 419개.
+- 사례 본문에서만 언급된 TR 후보(`case_mentioned`): **고유 172개, 언급 사례 219개**. 그중 117개는 한 번만 언급되어 연도·금액 같은 4자리 숫자 오탐일 수 있다. 다회 언급 상위: 8003(10), 1335(6), 3702(6), 3123(5), 1000(5), 1320(5), 3052(4).
+- **우선순위 규칙**: `case_mentions`가 큰 순서대로 화면 관찰 대상으로 삼는다. 1회 언급 TR은 관찰 전에 오탐 여부부터 판정한다.
+- 화면 관찰은 윈도우 PC 세션이 맡는다(결과 형식은 `docs/CHECK-WIKI-HANDOFF.md`의 "화면 관찰 결과를 받는 형식"). 관찰 결과가 들어오면 마스터 상태를 승격하고, 매뉴얼에 없는 화면은 새 화면 레코드로 만든다.
