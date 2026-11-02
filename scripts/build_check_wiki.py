@@ -781,11 +781,11 @@ def _single_line(value: object) -> str:
 
 
 def _neutralize(value: str) -> str:
-    """사례 본문의 마스킹 토큰([IDENTIFIER] 등)을 일반어로 바꾼다. 규칙은 sanitize_cases.neutralize_tokens."""
+    """사례 본문에서 인사말·맺음 문장을 지우고 마스킹 토큰([IDENTIFIER] 등)을 일반어로 바꾼다. 규칙은 sanitize_cases."""
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import sanitize_cases
 
-    return sanitize_cases.neutralize_tokens(value)
+    return sanitize_cases.neutralize_tokens(sanitize_cases.strip_pleasantries(value))
 
 
 def clean_case_request(value: object) -> str:

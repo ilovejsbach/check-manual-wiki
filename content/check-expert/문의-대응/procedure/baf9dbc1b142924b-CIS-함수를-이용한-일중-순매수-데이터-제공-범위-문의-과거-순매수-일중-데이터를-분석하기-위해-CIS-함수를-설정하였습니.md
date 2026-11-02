@@ -31,11 +31,11 @@ candidate_id: manual-candidate:VOC-00825
 
 ## 사용자가 겪은 상황
 
-CIS 함수를 이용한 일중 순매수 데이터 제공 범위 문의 과거 순매수 일중 데이터를 분석하기 위해 CIS 함수를 설정하였습니다. 일중 데이터(30초 단위 등)의 경우 서버에서 제공하는 과거 누적 데이터의 한계치가 궁금합니다 =CIS(" "," ",-1,-1,"30S",TRUE,"K2FS020.N,*236","⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧^8,⟦[NUMBER]⟧^11,⟦[NUMBER]⟧^10,⟦[NUMBER]⟧^1,⟦[NUMBER]⟧^3,⟦[NUMBER]⟧^4,⟦[NUMBER]⟧^2","DESC","⟦[IDENTIFIER]⟧=true; ⟦[IDENTIFIER]⟧=vert; t⟦[REDACTED_ENTITY]⟧le=⟦[REDACTED_ENTITY]⟧em+⟦[IDENTIFIER]⟧;")
+CIS 함수를 이용한 일중 순매수 데이터 제공 범위 문의 과거 순매수 일중 데이터를 분석하기 위해 CIS 함수를 설정하였습니다. 일중 데이터(30초 단위 등)의 경우 서버에서 제공하는 과거 누적 데이터의 한계치가 궁금합니다 =CIS(" "," ",-1,-1,"30S",TRUE,"K2FS020.N,*236","<값>,<값>,<값>,<값>,<값>,<값>,<값>^8,<값>^11,<값>^10,<값>^1,<값>^3,<값>^4,<값>^2","DESC","<값>=true; <값>=vert; t<값>le=<값>em+<값>;")
 
 ## 당시 대응
 
-안녕하세요. 특정 종목+ 입니다. 특정 종목 / KOSDAQ 야간선물 30초 일중 데이터의 경우 약 30일 정도 데이터를 보관하고 있으며, 아래 함수를 참조해보실 수 있습니다. =CIS("⟦[NUMBER]⟧ ","⟦[NUMBER]⟧ ",-1,-1,"30S",TRUE,"K2FS020.N,*236","⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧^8,⟦[NUMBER]⟧^11,⟦[NUMBER]⟧^10,⟦[NUMBER]⟧^1,⟦[NUMBER]⟧^3,⟦[NUMBER]⟧^4,⟦[NUMBER]⟧^2","DESC","⟦[IDENTIFIER]⟧=true; ⟦[IDENTIFIER]⟧=vert; t⟦[REDACTED_ENTITY]⟧le=⟦[REDACTED_ENTITY]⟧em+⟦[IDENTIFIER]⟧;") 주간선물의 경우 약 120일 데이터를 보관하여 아래와 같이 보여주고 있습니다. =CIS("⟦[NUMBER]⟧ ","⟦[NUMBER]⟧ ",-1,-1,"30S",TRUE,"K2FS020,*005","⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧^8,⟦[NUMBER]⟧^11,⟦[NUMBER]⟧^10,⟦[NUMBER]⟧^1,⟦[NUMBER]⟧^3,⟦[NUMBER]⟧^4,⟦[NUMBER]⟧^2","DESC","⟦[IDENTIFIER]⟧=true; ⟦[IDENTIFIER]⟧=vert; t⟦[REDACTED_ENTITY]⟧le=⟦[REDACTED_ENTITY]⟧em+⟦[IDENTIFIER]⟧;") 위 함수식을 활용해보시면 데이터 조회가 가능합니다. 감사합니다.
+특정 종목 / KOSDAQ 야간선물 30초 일중 데이터의 경우 약 30일 정도 데이터를 보관하고 있으며, 아래 함수를 참조해보실 수 있습니다. =CIS("<값> ","<값> ",-1,-1,"30S",TRUE,"K2FS020.N,*236","<값>,<값>,<값>,<값>,<값>,<값>,<값>^8,<값>^11,<값>^10,<값>^1,<값>^3,<값>^4,<값>^2","DESC","<값>=true; <값>=vert; t<값>le=<값>em+<값>;") 주간선물의 경우 약 120일 데이터를 보관하여 아래와 같이 보여주고 있습니다. =CIS("<값> ","<값> ",-1,-1,"30S",TRUE,"K2FS020,*005","<값>,<값>,<값>,<값>,<값>,<값>,<값>^8,<값>^11,<값>^10,<값>^1,<값>^3,<값>^4,<값>^2","DESC","<값>=true; <값>=vert; t<값>le=<값>em+<값>;") 위 함수식을 활용해보시면 데이터 조회가 가능합니다.
 
 ## 연결된 화면·기능
 

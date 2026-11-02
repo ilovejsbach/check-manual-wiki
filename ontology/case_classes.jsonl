@@ -401,7 +401,7 @@
 {"case_id": "check:support-case:48a1ef58d57772f7", "intent": "data_availability", "intent_rule": "데이터", "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:48af789fe954ef9e", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:48c9f8d645667dac", "intent": "data_error", "intent_rule": "오류", "domains": ["주식", "옵션", "펀드"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:48dc48710e05577c", "intent": "account_access", "intent_rule": "계정", "domains": ["주식", "ETP"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:48dc48710e05577c", "intent": "account_access", "intent_rule": "계정", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:49335b5ed2aa4801", "intent": "other", "intent_rule": null, "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:49ce3055b4f7dc97", "intent": "other", "intent_rule": null, "domains": ["외환"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:49cea60e8173c83d", "intent": "other", "intent_rule": null, "domains": ["채권", "주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
@@ -1110,7 +1110,7 @@
 {"case_id": "check:support-case:c5364de37c26a458", "intent": "data_availability", "intent_rule": "확인할 수", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:c542bd0ac1e332bb", "intent": "env_setup", "intent_rule": "MAC", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:c54f99398e2db4b2", "intent": "data_availability", "intent_rule": "항목", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
-{"case_id": "check:support-case:c5d80efac9b4afee", "intent": "other", "intent_rule": null, "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
+{"case_id": "check:support-case:c5d80efac9b4afee", "intent": "empty", "intent_rule": "empty", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:c62b403b9d5a5f77", "intent": "data_availability", "intent_rule": "데이터", "domains": [], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:c63714c095c0cd95", "intent": "screen_finding", "intent_rule": "볼 수 있는 화면", "domains": ["주식"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}
 {"case_id": "check:support-case:c6c581d6ff9f88e8", "intent": "screen_finding", "intent_rule": "조회가능한 화면", "domains": ["옵션"], "grade": "auto_extracted", "review_status": "candidate", "as_of": "2026-11-02"}

@@ -29,11 +29,11 @@ candidate_id: manual-candidate:VOC-01291
 
 ## 사용자가 겪은 상황
 
-ETF 전체 리스트의 항목을 조회하기 위해 XL 특정 종목 Lab을 통해 아래 함수와 같이 작성했는데, 어제 상장한 단일종목 레버리지 ETF만 빠진 나머지 ETF가 나옵니다. 혹시 함수의 문제일까요? 참고로 어제는 정상적으로 모든 ETF(단일종목 레버리지 ETF 포함)가 조회되었습니다. CLIST( "", TEXT(TODAY(),"⟦[IDENTIFIER]⟧"), -1, "*001", "⟦[NUMBER]⟧", "_⟦[IDENTIFIER]⟧=1140:⟦[NUMBER]⟧,1141:1,1142:2,1150:⟦[NUMBER]⟧,1151:0,1191:7748,1192:0", "⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,6511^10", "DESC", "⟦[IDENTIFIER]⟧=true; ⟦[IDENTIFIER]⟧=vert; t⟦[REDACTED_ENTITY]⟧le=⟦[REDACTED_ENTITY]⟧em+⟦[IDENTIFIER]⟧; un⟦[REDACTED_ENTITY]⟧=⟦[NUMBER]⟧:0:2,⟦[NUMBER]⟧:0:2,⟦[NUMBER]⟧:0:2;")
+ETF 전체 리스트의 항목을 조회하기 위해 XL 특정 종목 Lab을 통해 아래 함수와 같이 작성했는데, 어제 상장한 단일종목 레버리지 ETF만 빠진 나머지 ETF가 나옵니다. 혹시 함수의 문제일까요? 참고로 어제는 정상적으로 모든 ETF(단일종목 레버리지 ETF 포함)가 조회되었습니다. CLIST( "", TEXT(TODAY(),"<값>"), -1, "*001", "<값>", "_<값>=1140:<값>,1141:1,1142:2,1150:<값>,1151:0,1191:7748,1192:0", "<값>,<값>,<값>,<값>,<값>,<값>,<값>,<값>,6511^10", "DESC", "<값>=true; <값>=vert; t<값>le=<값>em+<값>; un<값>=<값>:0:2,<값>:0:2,<값>:0:2;")
 
 ## 당시 대응
 
-안녕하세요. 특정 종목+ 입니다. 아래처럼 조회하시면 단일종목ETF 모두 조회되실 겁니다. CLIST( "", TEXT(TODAY(),"⟦[IDENTIFIER]⟧"), -1, "*001", "⟦[NUMBER]⟧", "_⟦[IDENTIFIER]⟧=1150:⟦[NUMBER]⟧,1151:0,1152:⟦[NUMBER]⟧,1153:EF,1191:7748,1192:0", "⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,⟦[NUMBER]⟧,6511^10", "DESC", "⟦[IDENTIFIER]⟧=true; ⟦[IDENTIFIER]⟧=vert; t⟦[REDACTED_ENTITY]⟧le=⟦[REDACTED_ENTITY]⟧em+⟦[IDENTIFIER]⟧; un⟦[REDACTED_ENTITY]⟧=⟦[NUMBER]⟧:0:2,⟦[NUMBER]⟧:0:2,⟦[NUMBER]⟧:0:2;")
+아래처럼 조회하시면 단일종목ETF 모두 조회되실 겁니다. CLIST( "", TEXT(TODAY(),"<값>"), -1, "*001", "<값>", "_<값>=1150:<값>,1151:0,1152:<값>,1153:EF,1191:7748,1192:0", "<값>,<값>,<값>,<값>,<값>,<값>,<값>,<값>,6511^10", "DESC", "<값>=true; <값>=vert; t<값>le=<값>em+<값>; un<값>=<값>:0:2,<값>:0:2,<값>:0:2;")
 
 ## 연결된 화면·기능
 

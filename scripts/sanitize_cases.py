@@ -69,6 +69,7 @@ from typing import Any
 
 SENT_L, SENT_R = "", ""
 WRAP_L, WRAP_R = "⟦", "⟧"
+VALUE_WORD = "<값>"  # 가려진 함수 인자·값의 자리
 
 TOKEN_NAMES = ("REDACTED_ENTITY", "IDENTIFIER", "NUMBER", "PERSON", "PHONE", "EMAIL", "PATH")
 TOKEN_RE = re.compile(r"\[(" + "|".join(TOKEN_NAMES) + r")\]")
@@ -508,26 +509,74 @@ def sanitize_text(text: str, ctx: Ctx) -> str:
     return store.restore(text)
 
 
+# 검색·활용에 쓸모없는 인사·맺음 문장. 요청·질문("확인 부탁드립니다")은 지우지 않는다.
+_PLEASANT = (r"안녕하(?:세요|십니까)|수고(?:하세요|하십니다|하십시오|하셨습니다|\s*많으십니다|\s*많으셨습니다)|"
+             r"감사(?:합니다|드립니다|드려요|해요)|고맙습니다|좋은\s*(?:하루|주말|오후|저녁|아침)\s*(?:되세요|보내세요|되십시오)|"
+             r"잘\s*부탁\s*(?:드립니다|드려요|드리겠습니다)|수고\s*부탁\s*드립니다|그럼\s*(?:수고하세요|이만)")
+PLEASANT_SENT_RE = re.compile(r"^[\s\W]*(?:(?:빠른|신속한|친절한|상세한)?\s*(?:회신|답변|응대|안내|도움|설명)[^.!?\n]{0,12}\s*)?(?:진심으로\s*|항상\s*|늘\s*|정말\s*|너무\s*)*(?:" + _PLEASANT + r")[\s\W]*$")
+THANKS_TAIL_RE = re.compile(r"^[^.!?\n]{0,40}(?:주셔서|해\s*주셔서|답변\s*주셔서|회신\s*주셔서)\s*(?:정말\s*|진심으로\s*)?(?:감사(?:합니다|드립니다)|고맙습니다)[\s\W]*$")
+INTRO_RE = re.compile(r"^[\s\W]*안녕하(?:세요|십니까)[.,!~\s]*(?:(?:[\w가-힣+()·\[\]]+\s?){1,4}입니다[.!]\s*)?")
+
+
+def strip_pleasantries(text: str) -> str:
+    """인사말·자기소개·감사·맺음 문장을 지운다(문장 단위). 질문·요청·기술 내용은 남긴다."""
+    if not text:
+        return text
+    lines = []
+    for line in text.split("\n"):
+        head = INTRO_RE.match(line)
+        if head:
+            line = line[head.end():]
+        parts = re.split(r"(?<=[.!?])\s+", line)
+        kept = []
+        for x in parts:
+            if PLEASANT_SENT_RE.match(x) or THANKS_TAIL_RE.match(x):
+                if re.search(r"\d{4}|[A-Z]{2,}\(|=", x):  # 화면번호·함수 근거가 든 문장은 감사 표현만 떼고 남긴다
+                    x = re.sub(r"\s*주셔서.*$", "", x)
+                    if x.strip():
+                        kept.append(x)
+                continue
+            kept.append(x)
+        parts = kept
+        line = " ".join(parts)
+        line = re.sub(r"\s*(?:감사합니다|감사드립니다|고맙습니다|수고하세요)[.!~]*\s*$", "", line)
+        lines.append(line.strip())
+    out = "\n".join(lines)
+    return re.sub(r"[ \t]{2,}", " ", out).strip()
+
+
 def neutralize_tokens(text: str) -> str:
     """마스킹 토큰만 일반어로 바꾸는 최소 변형. 날짜·고유명사·인사말·원본 위치는 건드리지 않는다.
-    함수식·오류 문구·증상 문장 안의 토큰은 ⟦ ⟧ 로 감싸 보존한다(sanitize_text 5단계와 같은 규칙)."""
+    함수식·오류 문구·증상 문장 안의 토큰은 가려진 인자·값이라 복원할 수 없으므로 `<값>` 하나로 바꾼다
+    (함수 이름과 인자 구조는 남는다). 그 밖의 자리표시자는 TOKEN_WORDS 의 일반어로 바꾼다."""
     if not text or "[" not in text:
         return text
     st: Counter[str] = Counter()
     store = _Store()
-    text = _protect(text, store, find_function_spans(text) + find_error_spans(text), True)
-    text = _protect(text, store, find_screen_spans(text), False)
+    value = lambda seg: TOKEN_RE.sub(VALUE_WORD, seg)  # noqa: E731
+    text = _protect_with(text, store, find_function_spans(text) + find_error_spans(text), value)
+    text = _protect_with(text, store, find_screen_spans(text), lambda seg: seg)
     sym_spans = [m.span() for rx in SYMPTOM_RES for m in rx.finditer(text)]
     out, last = [], 0
-    for a, b in _merge_spans(sym_spans):
-        out.append(_tok_words(text[last:a], st))
-        out.append(store.put(_wrap_tokens(text[a:b])))
-        last = b
+    for x, y in _merge_spans(sym_spans):
+        out.append(_tok_words(text[last:x], st))
+        out.append(store.put(value(text[x:y])))
+        last = y
     out.append(_tok_words(text[last:], st))
     text = PARTIAL_TOKEN_RE.sub("", "".join(out))
     text = re.sub(r"(고객사|특정 종목|특정 수치|담당자|상담 창구|공식 문의 채널|특정 경로)(?:[\s,/·]+\1)+", r"\1", text)
     text = re.sub(r"특정 종목\s*(종목|코드)", "특정 종목", text)
     return store.restore(text)
+
+
+def _protect_with(text: str, store: _Store, spans: list[tuple[int, int]], fn) -> str:
+    out, last = [], 0
+    for x, y in _merge_spans(spans):
+        out.append(text[last:x])
+        out.append(store.put(fn(text[x:y])))
+        last = y
+    out.append(text[last:])
+    return "".join(out)
 
 
 def _tok_words(seg: str, st: Counter[str]) -> str:

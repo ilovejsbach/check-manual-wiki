@@ -119,6 +119,23 @@ def test_neutralize_tokens_replaces_placeholders_but_keeps_symptoms_and_facts():
 
     assert sc.neutralize_tokens("[REDACTED_ENTITY]에서 [PERSON]님 문의") == "고객사에서 담당자님 문의"
     assert sc.neutralize_tokens("[IDENTIFIER] 종목 시세") == "특정 종목 시세"
-    assert sc.neutralize_tokens("함수가 '[NUMBER]' 로 표시됩니다") == "함수가 '⟦[NUMBER]⟧' 로 표시됩니다"
-    assert sc.neutralize_tokens('=CT([IDENTIFIER], 4001)') == '=CT(⟦[IDENTIFIER]⟧, 4001)'
+    assert sc.neutralize_tokens("함수가 '[NUMBER]' 로 표시됩니다") == "함수가 '<값>' 로 표시됩니다"
+    assert sc.neutralize_tokens('=CT([IDENTIFIER], 4001)') == '=CT(<값>, 4001)'
     assert sc.neutralize_tokens("화면번호 : 1300 TR 4611 2026년 3월") == "화면번호 : 1300 TR 4611 2026년 3월"  # 토큰 외에는 건드리지 않는다
+
+
+def test_strip_pleasantries_removes_greetings_but_keeps_requests_and_content():
+    import sanitize_cases as sc
+
+    assert sc.strip_pleasantries("안녕하세요. 체크플러스 입니다. 1300 화면 질문입니다 감사합니다.") == "1300 화면 질문입니다"
+    assert sc.strip_pleasantries("빠른 회신 진심으로 감사드립니다. TR 4611 데이터에 협의대량이 포함되나요?") == "TR 4611 데이터에 협의대량이 포함되나요?"
+    assert sc.strip_pleasantries("안녕하세요! [IDENTIFIER] 인데요 문의드립니다") == "[IDENTIFIER] 인데요 문의드립니다"
+    assert sc.strip_pleasantries("확인 부탁드립니다.") == "확인 부탁드립니다."
+    assert sc.strip_pleasantries("수고하세요") == ""
+
+
+def test_strip_pleasantries_keeps_screen_evidence_in_thanks_sentence():
+    import sanitize_cases as sc
+
+    out = sc.strip_pleasantries("신버전 TR 4000 화면에 대한 소중한 의견 주셔서 진심으로 감사합니다. 검토하겠습니다.")
+    assert "TR 4000 화면" in out and "감사" not in out and "검토하겠습니다" in out
