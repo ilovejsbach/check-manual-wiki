@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="CHECK Expert 화면·업무·Excel Premium 통합 도움말" />
+    <title>CHECK Expert 도움말</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="CHECK Expert 도움말 홈">
+        <span class="brand-mark">C</span>
+        <span><strong>CHECK Expert</strong><small>통합 도움말</small></span>
+      </a>
+      <div class="search-wrap">
+        <label class="sr-only" for="search">도움말 검색</label>
+        <input id="search" type="search" autocomplete="off" placeholder="화면번호, 업무 질문, Excel 기능을 검색하세요" />
+        <kbd>/</kbd>
+      </div>
+      <button id="theme" class="icon-button" type="button" aria-label="색상 모드 변경">◐</button>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar" aria-label="검색 조건">
+        <section>
+          <h2>빠른 조회</h2>
+          <button class="quick active" data-filter="all">전체 도움말 <span id="count-all">–</span></button>
+          <button class="quick" data-filter="screen">TR·화면 <span id="count-screen">–</span></button>
+          <button class="quick" data-filter="excel">Excel Premium <span id="count-excel">–</span></button>
+          <button class="quick" data-filter="candidate">실사용 보강 <span id="count-candidate">–</span></button>
+          <button class="quick" data-filter="unmapped">분류 대기 <span id="count-unmapped">–</span></button>
+        </section>
+        <section class="guide">
+          <h2>검색 예시</h2>
+          <button class="example" data-query="1923">1923</button>
+          <button class="example" data-query="월별 순매수">월별 순매수</button>
+          <button class="example" data-query="엑셀 연동 오류">엑셀 연동 오류</button>
+          <button class="example" data-query="채권 단가">채권 단가</button>
+        </section>
+        <p class="privacy">고객명·계좌·사용자 ID를 검색어에 입력하지 마세요.</p>
+      </aside>
+
+      <section class="results-pane" aria-label="검색 결과">
+        <div class="results-head">
+          <div><span id="result-count">0</span>개 결과</div>
+          <select id="sort" aria-label="결과 정렬">
+            <option value="relevance">관련도순</option>
+            <option value="screen">화면번호순</option>
+            <option value="signals">문의 많은 순</option>
+          </select>
+        </div>
+        <div id="loading" class="state">도움말 데이터를 불러오는 중입니다…</div>
+        <ol id="results" class="results" hidden></ol>
+      </section>
+
+      <section id="viewer" class="viewer" aria-live="polite">
+        <div class="welcome">
+          <p class="eyebrow">업무 문맥 중심 도움말</p>
+          <h1>찾는 화면보다<br />하려는 업무를 검색하세요.</h1>
+          <p>공식 매뉴얼, 화면번호, Excel Premium과 검수 전 실사용 사례를 한곳에서 조회합니다.</p>
+          <div class="legend">
+            <span><i class="dot official"></i>공식 자료</span>
+            <span><i class="dot candidate"></i>검수 전 사례</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js" defer></script>
+  </body>
+</html>

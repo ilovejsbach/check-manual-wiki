@@ -26,6 +26,8 @@ OUTPUT_DIR = ROOT / "content" / "check-expert"
 KNOWLEDGE_DIR = ROOT / "knowledge" / "check-expert"
 PDF_NAME = "CHECKPlus_Manual.pdf"
 CODE_TABLE_ROWS = 750
+ENRICHMENT_NAME = "manual-enrichment.jsonl"
+UNMAPPED_ENRICHMENT_NAME = "manual-enrichment-unmapped.jsonl"
 
 
 @dataclass
@@ -421,6 +423,7 @@ def build_home(stats: dict[str, int], hashes: dict[str, str]) -> None:
 - [[check-expert/excel-premium/매뉴얼|Excel Premium 매뉴얼]]
 - [[check-expert/excel-premium/종목코드표|종목코드표]]
 - [[check-expert/excel-premium/항목코드표|항목코드표]]
+- [[check-expert/운영-보강/index|실사용 보강 후보]]
 
 상단 검색에서 화면번호(`1300`), TR 형식(`TR1300`), 화면명 또는 업무 용어를 입력할 수 있습니다.
 
@@ -440,6 +443,7 @@ def build_home(stats: dict[str, int], hashes: dict[str, str]) -> None:
     document += f"- 화면·기능 문서: {stats['pdf_documents']:,}개\n"
     document += f"- Excel 문서: {stats['excel_documents']:,}개\n"
     document += f"- 코드 레코드: {stats['code_records']:,}개\n\n"
+    document += f"- 실사용 보강 문서: {stats.get('enrichment_documents', 0):,}개\n\n"
     document += """## 사용 시 주의
 
 - 자동 추출 과정에서 이미지, 도형, 복잡한 표의 배치가 생략될 수 있습니다.
@@ -452,6 +456,215 @@ def build_home(stats: dict[str, int], hashes: dict[str, str]) -> None:
     document += hash_lines
     write_text(OUTPUT_DIR / "index.md", document)
     write_text(ROOT / "content" / "index.md", document)
+
+
+def _single_line(value: object) -> str:
+    return re.sub(r"\s+", " ", str(value or "")).strip()
+
+
+def build_manual_enrichment() -> int:
+    """Create reviewable companion pages from privacy-screened customer signals."""
+    source = SOURCE_DIR / ENRICHMENT_NAME
+    if not source.exists():
+        return 0
+    target_metadata: dict[str, dict[str, object]] = {}
+    for path in OUTPUT_DIR.rglob("*.md"):
+        raw = path.read_text(encoding="utf-8")
+        match = re.match(r"^---\n(.*?)\n---\n?", raw, re.DOTALL)
+        if not match:
+            continue
+        metadata = yaml.safe_load(match.group(1)) or {}
+        if metadata.get("knowledge_id"):
+            target_metadata[str(metadata["knowledge_id"])] = {
+                "title": metadata.get("title", path.stem),
+                "path": path.relative_to(ROOT / "content").with_suffix("").as_posix(),
+            }
+
+    summaries = [
+        json.loads(line) for line in source.read_text(encoding="utf-8").splitlines() if line
+    ]
+    links: list[str] = []
+    documents = 0
+    for summary in summaries:
+        target_id = str(summary.get("target_knowledge_id") or "")
+        target = target_metadata.get(target_id)
+        if not target:
+            continue
+        target_title = str(target["title"])
+        relative = Path("운영-보강") / f"{slug(target_id.replace(':', '-'))}.md"
+        knowledge_id = f"check:enrichment:{target_id.removeprefix('check:')}"
+        document = frontmatter(
+            title=f"실사용 보강 — {target_title}",
+            description=f"{target_title} 관련 비식별 고객 문의와 운영 사례의 검수 전 보강 후보.",
+            tags=["CHECK Expert", "실사용 보강", "검수 필요", target_title],
+            source=ENRICHMENT_NAME,
+            extra={
+                "knowledge_id": knowledge_id,
+                "related_ids": [target_id],
+                "review_status": "candidate",
+                "signal_count": int(summary.get("signal_count", 0)),
+                "source_locator": f"target:{target_id}",
+            },
+        )
+        document += f"# 실사용 보강 — {target_title}\n\n"
+        document += (
+            f"> 공식 문서: [[{target['path']}|{target_title}]]  \n"
+            "> 아래 내용은 비식별 고객 문의·운영 기록에서 추출한 **검수 전 후보**입니다. "
+            "공식 금융 정의나 현재 CHECK 동작으로 자동 승인되지 않습니다.\n\n"
+        )
+        document += "## 수요 요약\n\n"
+        document += f"- 관련 신호: {int(summary.get('signal_count', 0)):,}건\n"
+        document += (
+            f"- 중복 제거 그룹: {int(summary.get('duplicate_group_count', 0)):,}개\n"
+        )
+        candidate_counts = summary.get("manual_candidate_counts", {})
+        if candidate_counts:
+            labels = {
+                "faq": "FAQ",
+                "procedure": "절차",
+                "troubleshooting": "문제 해결",
+                "caution": "주의사항",
+                "tip": "활용 팁",
+            }
+            rendered = ", ".join(
+                f"{labels.get(kind, kind)} {count:,}건"
+                for kind, count in sorted(candidate_counts.items(), key=lambda item: -item[1])
+            )
+            document += f"- 후보 유형: {rendered}\n"
+        topics = summary.get("topic_counts", {})
+        if topics:
+            document += "- 주요 주제: " + ", ".join(
+                f"{_single_line(topic)} ({count:,})" for topic, count in list(topics.items())[:8]
+            ) + "\n"
+
+        document += "\n## 문의·대응 사례\n\n"
+        for index, example in enumerate(summary.get("examples", []), start=1):
+            request = _single_line(example.get("request_text")) or "문의 내용 미기재"
+            action = _single_line(example.get("action_text")) or "대응 내용 미기재"
+            document += f"### 후보 {index}\n\n"
+            document += f"- 고객 질문·증상: {request}\n"
+            document += f"- 당시 대응 기록: {action}\n"
+            document += f"- 후보 유형: {', '.join(example.get('manual_candidates', []))}\n"
+            document += f"- 증거 위치: `{_single_line(example.get('evidence_locator'))}`\n"
+            document += "- 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요\n\n"
+        document += "## 승인 게이트\n\n"
+        document += (
+            "- [ ] 공식 매뉴얼의 정의·절차와 일치하는가\n"
+            "- [ ] 현재 CHECK 또는 Excel Premium에서 재현되는가\n"
+            "- [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가\n"
+            "- [ ] 고객·직원·기관 식별정보가 남아 있지 않은가\n"
+            "- [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가\n"
+        )
+        write_text(OUTPUT_DIR / relative, document)
+        links.append(
+            f"- **{int(summary.get('signal_count', 0)):,}건** — "
+            f"[[check-expert/{relative.with_suffix('').as_posix()}|{target_title}]]"
+        )
+        documents += 1
+
+    index = frontmatter(
+        title="실사용 보강 후보",
+        description="비식별 고객 문의와 운영 기록을 공식 매뉴얼 문서에 연결한 검수 대기 색인.",
+        tags=["CHECK Expert", "실사용 보강", "검수 필요"],
+        source=ENRICHMENT_NAME,
+        extra={"knowledge_id": "check:enrichment:index", "review_status": "candidate"},
+    )
+    index += "# 실사용 보강 후보\n\n"
+    index += (
+        "고객 문의와 운영 기록에서 발견한 FAQ·절차·문제 해결 후보입니다. "
+        "모든 항목은 공식 매뉴얼과 실제 동작 검증 전까지 `candidate` 상태입니다.\n\n"
+    )
+    if (SOURCE_DIR / UNMAPPED_ENRICHMENT_NAME).exists():
+        index += "- [[check-expert/운영-보강/미매핑/index|자동 연결되지 않은 주제별 후보]]\n\n"
+    index += "\n".join(links)
+    write_text(OUTPUT_DIR / "운영-보강" / "index.md", index)
+    return documents + 1
+
+
+def build_unmapped_enrichment() -> int:
+    """Preserve every unmapped signal as a topic-level human review queue."""
+    source = SOURCE_DIR / UNMAPPED_ENRICHMENT_NAME
+    if not source.exists():
+        return 0
+    summaries = [
+        json.loads(line) for line in source.read_text(encoding="utf-8").splitlines() if line
+    ]
+    links: list[str] = []
+    documents = 0
+    for summary in summaries:
+        topic = _single_line(summary.get("topic")) or "미분류"
+        topic_hash = hashlib.sha256(topic.encode("utf-8")).hexdigest()[:12]
+        relative = Path("운영-보강") / "미매핑" / f"{topic_hash}-{slug(topic)}.md"
+        document = frontmatter(
+            title=f"미매핑 보강 후보 — {topic}",
+            description=f"기존 화면·기능 문서에 자동 연결되지 않은 {topic} 관련 검수 후보.",
+            tags=["CHECK Expert", "실사용 보강", "미매핑", "검수 필요", topic],
+            source=UNMAPPED_ENRICHMENT_NAME,
+            extra={
+                "knowledge_id": f"check:enrichment:unmapped:{topic_hash}",
+                "review_status": "candidate",
+                "mapping_status": "unmapped",
+                "signal_count": int(summary.get("signal_count", 0)),
+                "source_locator": f"topic:{topic}",
+            },
+        )
+        document += f"# 미매핑 보강 후보 — {topic}\n\n"
+        document += (
+            "> 기존 위키 화면·기능에 자동 연결되지 않은 비식별 신호입니다. "
+            "삭제하거나 임의 연결하지 않고 사람 검수 대기 상태로 보존합니다.\n\n"
+        )
+        document += f"- 관련 신호: {int(summary.get('signal_count', 0)):,}건\n"
+        document += "- 상태: `candidate` / `unmapped`\n"
+        counts = summary.get("manual_candidate_counts", {})
+        if counts:
+            document += "- 후보 유형: " + ", ".join(
+                f"{kind} {count:,}건"
+                for kind, count in sorted(counts.items(), key=lambda item: -item[1])
+            ) + "\n"
+        document += "\n## 대표 사례\n\n"
+        for index, example in enumerate(summary.get("examples", []), start=1):
+            document += f"### 후보 {index}\n\n"
+            document += (
+                f"- 고객 질문·증상: {_single_line(example.get('request_text')) or '미기재'}\n"
+            )
+            document += (
+                f"- 당시 대응 기록: {_single_line(example.get('action_text')) or '미기재'}\n"
+            )
+            document += f"- 증거 위치: `{_single_line(example.get('evidence_locator'))}`\n"
+            document += "- 검토 과제: 연결할 기존 문서 또는 신규 문서 필요 여부 결정\n\n"
+        document += "## 분류 게이트\n\n"
+        document += (
+            "- [ ] 화면번호·기능명·업무 용어를 추가 확인했는가\n"
+            "- [ ] 기존 문서 연결과 신규 문서 생성 중 적절한 경로를 결정했는가\n"
+            "- [ ] 공식 근거 또는 실제 동작 증거를 확보했는가\n"
+            "- [ ] 식별정보와 내부 전용 정보가 남아 있지 않은가\n"
+        )
+        write_text(OUTPUT_DIR / relative, document)
+        links.append(
+            f"- **{int(summary.get('signal_count', 0)):,}건** — "
+            f"[[check-expert/{relative.with_suffix('').as_posix()}|{topic}]]"
+        )
+        documents += 1
+
+    index = frontmatter(
+        title="자동 연결되지 않은 보강 후보",
+        description="화면·기능 문서에 자동 연결되지 않은 비식별 신호의 주제별 검수 대기열.",
+        tags=["CHECK Expert", "실사용 보강", "미매핑", "검수 필요"],
+        source=UNMAPPED_ENRICHMENT_NAME,
+        extra={
+            "knowledge_id": "check:enrichment:unmapped:index",
+            "review_status": "candidate",
+            "mapping_status": "unmapped",
+        },
+    )
+    index += "# 자동 연결되지 않은 보강 후보\n\n"
+    index += (
+        "자동 매핑의 불확실성을 숨기지 않고 주제별 검수 대기열로 보존합니다. "
+        "각 문서는 기존 문서 연결 또는 신규 공식 문서 작성 여부를 결정하기 위한 입력입니다.\n\n"
+    )
+    index += "\n".join(links)
+    write_text(OUTPUT_DIR / "운영-보강" / "미매핑" / "index.md", index)
+    return documents + 1
 
 
 def export_knowledge() -> dict[str, int]:
@@ -483,6 +696,7 @@ def export_knowledge() -> dict[str, int]:
                 if found != code
             }
         )
+        metadata_related_ids = [str(item) for item in metadata.get("related_ids", [])]
         record = {
             "schema_version": "1.0",
             "id": knowledge_id,
@@ -494,9 +708,13 @@ def export_knowledge() -> dict[str, int]:
             "source": metadata.get("source"),
             "source_locator": metadata.get("source_pages")
             or metadata.get("sheet")
-            or metadata.get("row_start"),
+            or metadata.get("row_start")
+            or metadata.get("source_locator"),
+            "review_status": metadata.get("review_status"),
+            "mapping_status": metadata.get("mapping_status"),
+            "signal_count": metadata.get("signal_count"),
             "related_screen_codes": related_codes,
-            "related_ids": [],
+            "related_ids": metadata_related_ids,
             "markdown_path": relative,
             "text": body,
         }
@@ -507,11 +725,21 @@ def export_knowledge() -> dict[str, int]:
         if record["type"] == "screen" and record["screen_code"]:
             screen_ids_by_code.setdefault(str(record["screen_code"]), []).append(str(record["id"]))
     for record in records:
-        record["related_ids"] = [
+        detected_related_ids = [
             related_id
             for related_code in record.pop("related_screen_codes")
             for related_id in screen_ids_by_code.get(str(related_code), [])
         ]
+        record["related_ids"] = sorted(set(record["related_ids"] + detected_related_ids))
+
+    records_by_id = {str(record["id"]): record for record in records}
+    for record in records:
+        if not str(record["id"]).startswith("check:enrichment:"):
+            continue
+        for target_id in record["related_ids"]:
+            target = records_by_id.get(str(target_id))
+            if target is not None:
+                target["related_ids"] = sorted(set(target["related_ids"] + [record["id"]]))
 
     with (KNOWLEDGE_DIR / "knowledge.jsonl").open("w", encoding="utf-8", newline="\n") as stream:
         for record in records:
@@ -656,6 +884,7 @@ def build() -> dict[str, int]:
 
     stats["excel_documents"] = excel_documents + code_documents
     stats["code_records"] = code_records
+    stats["enrichment_documents"] = build_manual_enrichment() + build_unmapped_enrichment()
     build_home(stats, source_hashes())
     build_download_page()
     stats.update(export_knowledge())

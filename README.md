@@ -16,24 +16,43 @@ CHECK Expert+와 Excel Premium 공식 매뉴얼을 사람, LLM/RAG, AI 콜센터
 - 프로그램용 데이터: `/check-expert/api/knowledge.jsonl`
 - 버전·무결성 정보: `/check-expert/api/manifest.json`
 - LLM 안내: `/check-expert/api/llms.txt`
+- 비식별 고객 신호 기반 실사용 보강: `/check-expert/운영-보강/`
 
-## 로컬 실행과 검증
+실사용 보강 문서는 공식 매뉴얼과 분리된 `candidate` 계층입니다. 고객 문의 빈도, FAQ,
+절차 및 문제 해결 사례를 제공하지만 공식 문서와 현재 제품 동작의 교차 검증 전에는
+확정된 사용법으로 취급하지 않습니다.
+
+## 빠른 로컬 도움말
+
+PowerShell에서 다음 파일을 실행하면 검색 앱을 새로 만들고 브라우저에서 엽니다.
+
+```powershell
+.\start-help.ps1
+```
+
+기본 주소는 `http://127.0.0.1:8765/`입니다. GitHub Pages도 같은 `help-dist` 산출물을
+사용하므로 온라인과 로컬의 검색 결과와 UI가 같습니다. 화면번호, 자연어 업무 질문,
+Excel Premium, 공식 문서와 검수 전 실사용 후보를 한 화면에서 조회할 수 있습니다.
+
+## 빌드와 검증
 
 ```powershell
 uv sync --frozen
 uv run pytest
 uv run python scripts/validate_check_wiki.py --json
-npm ci
-npx quartz build --concurrency 4
+uv run python scripts/build_help_app.py --json
 ```
 
-빌드된 `public/`은 다음과 같이 조회할 수 있습니다.
+빌드된 `help-dist/`는 다음과 같이 조회할 수 있습니다.
 
 ```powershell
-uv run python -m http.server 8080 --bind 127.0.0.1 --directory public
+uv run python scripts/serve_help_app.py --no-browser
 ```
 
 공식 PDF와 Excel 원본 묶음은 `sources/check-expert/`에 함께 버전 관리합니다. 저장소를
 클론하면 별도 다운로드 없이 `uv run python scripts/build_check_wiki.py --json`으로 전체
 지식베이스를 다시 생성할 수 있습니다. 파일 무결성 정보는 같은 폴더의 README와
 `manifest.json`에서 확인할 수 있습니다.
+
+Quartz 소스와 기존 `public/` 빌드는 전환 기간의 복구 경로로 유지하지만 GitHub Pages의
+기본 배포는 검색 중심 정적 도움말 앱을 사용합니다.

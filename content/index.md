@@ -18,6 +18,7 @@ generated: true
 - [[check-expert/excel-premium/매뉴얼|Excel Premium 매뉴얼]]
 - [[check-expert/excel-premium/종목코드표|종목코드표]]
 - [[check-expert/excel-premium/항목코드표|항목코드표]]
+- [[check-expert/운영-보강/index|실사용 보강 후보]]
 
 상단 검색에서 화면번호(`1300`), TR 형식(`TR1300`), 화면명 또는 업무 용어를 입력할 수 있습니다.
 
@@ -37,6 +38,8 @@ generated: true
 - Excel 문서: 103개
 - 코드 레코드: 71,586개
 
+- 실사용 보강 문서: 264개
+
 ## 사용 시 주의
 
 - 자동 추출 과정에서 이미지, 도형, 복잡한 표의 배치가 생략될 수 있습니다.
@@ -53,3 +56,6 @@ generated: true
 - `excel-sources.zip`: `20185ff5f1a57e15de2f8b913a44af1f9f1dddb5ed4016ac9ff6f9c4dbdaecac`
 - `HangMokCodeTable_ExcelPremium_update01.xlsx.pia`: `0da74fa58847c625d106286fe2c13df9d06e57806e44b85f500c5b666f857138`
 - `JongMokCodeTable_20140616_Uodate02.xlsx.pia`: `4d623d44e9b4fb35a1ac8aef7016098e58ed44d9fbe5b30fc4369e1836b9044b`
+- `manual-enrichment-unmapped.jsonl`: `263bcd62d028b37ff23c5f07d16307061065670de2ca5fbb2f00caa5f31c3e70`
+- `manual-enrichment.jsonl`: `fb56904fe3d55c902010e238ca281c7c00b99d16eb3023367936d097a2ddd25c`
+- `README.md`: `11b7c8d437fe01123004cd74500e4cfc661f69172231d1c297eab3dc52c7bd1c`
