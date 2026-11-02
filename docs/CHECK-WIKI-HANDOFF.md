@@ -115,7 +115,7 @@ Python 작업은 반드시 `uv` 격리 환경으로 수행한다.
 3. 사례 화면 연결 비율 목표(85%) 미달. 인프라·일반 주제를 분모에서 빼면 82.2%, 후보 포함 86.1%. 키 없는 사례 후보 매핑은 hit@3 57%라 `needs_review`로만 쓴다.
 4. 현재 지식에 없는 화면번호(TR)를 언급하는 사례가 219개이고 고유 TR 후보는 172개다(그중 117개는 1회 언급이라 연도·금액 오탐일 수 있음). 상위: 8003(10), 1335(6), 3702(6), 3123(5), 1000(5), 1320(5), 3052(4). **윈도우 PC 화면 역추출은 언급 횟수 순으로 이 후보를 확인한다.** TR 마스터 목록(`case_mentioned` → `screen_observed`/`rejected` 승격 규칙)은 `docs/check-ontology-spec.md` 15절을 따른다.
 5. 항목코드표에 없는 개념(투자자별 매매현황, NAV, 추적오차율, 델타 등)과 자매 위키에 없는 시세·지표 개념(대차, 신용융자, 미결제약정 등)이 빈틈이다.
-6. 새 관계 5종(`about_screen`, `uses_function`, `involves_item`, `explained_in_manual`, `similar_to`)은 명세 13종에 아직 없다. 함수 노드 8종, 항목 노드 103종은 `knowledge.jsonl`에 레코드가 없어 불변식 I1 검사에 노드 목록 내보내기가 필요하다.
+6. 새 관계 5종(`about_screen`, `uses_function`, `involves_item`, `explained_in_manual`, `similar_to`)은 명세 13종에 아직 없다. 항목·함수 노드는 `ontology/nodes.jsonl`로 내보냈고(`scripts/build_ontology_nodes.py`, `--links tmp/case_links.jsonl`로 사례 관계의 item/func 대상 111개가 모두 실존함을 확인), 화면·사례 노드를 포함한 전체 I1 검사는 아직 없다. 항목 `value_kind`는 휴리스틱이라 58%가 `unknown`이다. 함수 `CRS`는 사례에서만 언급되고 매뉴얼 정의가 없어 `mentioned_only`다.
 7. 결정 사항(사용자 승인): 항목 노드 키는 코드 단독 `check:item:<코드>`, 새 노드·관계는 `knowledge.jsonl`과 분리한 `ontology/nodes.jsonl`, 법령은 후보(`needs_review`)만.
 
 ### 재현

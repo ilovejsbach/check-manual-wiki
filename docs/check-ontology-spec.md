@@ -51,7 +51,7 @@
 
 ### 2.2 데이터 항목 (`item`)
 
-정의: 하나의 항목코드(FID)가 가리키는 데이터. 필수 속성: `code`(문자열, 예 `14501`), `name`(기준 항목명), `aliases`(별칭·약어. 엑셀 함수 설명에 따르면 alias 입력 가능), `value_kind`(price/qty/ratio/date/enum/text), `unit`(선택), `applies_to`(`[{function, market, category}]` 목록, 항목코드표의 행에서 그대로 유도), `definition_ref`(개념·매뉴얼 링크), `source_locator`(시트+행).
+정의: 하나의 항목코드(FID)가 가리키는 데이터. 필수 속성: `code`(문자열, 예 `14501`), `name`(기준 항목명), `aliases`(별칭·약어. 엑셀 함수 설명에 따르면 alias 입력 가능), `value_kind`(price/qty/ratio/date/enum/unknown; 항목명 휴리스틱이라 `value_kind_grade: auto_extracted`이고 모호하면 `unknown`. 2026-11-02 현재 unknown이 약 58%이므로 값의 종류를 단정하는 근거로 쓰지 않는다), `unit`(선택), `applies_to`(`[{function, market, category}]` 목록, 항목코드표의 행에서 그대로 유도), `definition_ref`(개념·매뉴얼 링크), `source_locator`(시트+행).
 
 예시: `check:excel:항목코드표:CH:001` 의 행 `| CH | 상품 | 상품 | 14501 | 매도호가1 |` → `check:item:14501`(매도호가1). 같은 코드가 CH:008(외환/자금·호가), CH:009(주식종목·호가)에도 있으므로 `applies_to`에 3건이 들어간다. 코드값 정의가 이름에 섞인 경우(`3028 전일등락구분(0&cl거래무1&cl상한…)`, `check:excel:항목코드표:CT:001`)는 `name`과 `enum_values`로 분리한다.
 
@@ -63,7 +63,7 @@
 
 ### 2.4 함수 (`function`)
 
-정의: 엑셀 프리미엄에서 항목을 가져오는 호출 단위. 필수 속성: `name`(CT, CH, CTD, CIS, CTS), `signature`, `scope`(실시간/과거/기간집계), `source_locator`.
+정의: 엑셀 프리미엄에서 항목을 가져오는 호출 단위. 필수 속성: `name`(CT, CH, CTS, CIS, CLIST, CTD, CTR, CPFG, CPF), `signature`(매뉴얼 PDF 45-54쪽 본문에서 추출), `scope`(매뉴얼 '내용' 문장 요약), `data_shape`(single/series/tick_series/intraday_series/matrix/calc/analysis_result/group_list), `uses_item_codes`, `item_table_sheet`(항목코드표에 해당 시트가 있는지), `source_locator`. 매뉴얼에 정의가 없고 사례에서만 언급되는 함수(현재 `CRS`)는 `verification: mentioned_only`, `visibility: internal`로 두고 서명·범위를 만들지 않는다. `CTD`는 `subfunctions`(SPT, SUM, MAX 등)를 가진다.
 
 예시: `check:excel:manual:함수-설명` 본문의 `=CT("종목정보","항목정보")`, `=CT("005930","15001")`, `=CTD("세부함수명","종목코드","원하는 일자 혹은 기간","항목코드")` → `check:func:CT`, `check:func:CTD`. 항목코드표의 시트명(CT/CH/CIS/CTS)이 함수 가용성의 근거다.
 
@@ -259,7 +259,7 @@ information_need ──(resolves)──> screen ──(provides)──> item ─
 ## 14. 단계별 도입 순서 (제안)
 
 0. TR 마스터 목록(15절): 매뉴얼 화면 419개로 시작하고 사례 언급 TR을 `case_mentioned`로 등록, 화면 관찰 결과가 들어오면 승격.
-1. 항목 사전: 항목코드표 → `item` 노드 + `available_via` (매뉴얼확인, 자동 생성 가능).
+1. 항목 사전: 항목코드표 → `item` 노드 + `available_via` (매뉴얼확인, 자동 생성 가능). **완료(2026-11-02)**: `scripts/build_ontology_nodes.py` → `ontology/nodes.jsonl`(항목 18,944 + 함수 10).
 2. 화면 → 항목 `provides`: 화면 본문·문의 사례에서 자동추출 후 상위 100개 항목부터 검수.
 3. `information_need` + `resolves`: 질문 세트와 `support_case`에서 승격.
 4. 개념·법령 연결: 파일럿으로 `kcm:concept:basis`, `kcm:concept:short-selling`, `kcm:metric:cds-spread`와 `law:` 1~2개.
