@@ -34,11 +34,11 @@ generated: true
 ## 생성 현황
 
 - PDF: 829쪽, 북마크 1,664개
-- 화면·기능 문서: 443개
+- 화면·기능 문서: 442개
 - Excel 문서: 103개
 - 코드 레코드: 71,586개
 
-- 실사용 보강 문서: 1,923개
+- 실사용 보강 문서: 1,911개
 
 ## 사용 시 주의
 
@@ -49,13 +49,7 @@ generated: true
 ## 원본 무결성(SHA-256)
 
 - `CHECKPlus_Manual.pdf`: `b3ca8de468ffb238d16bb49882a2e7d2f85585f87c28698587331c8022948631`
-- `excel-manual1_menu_template.xls.pia`: `64529436ce861e37a2658d9bd0577d4f9f8c5230cd4a81dc1272a6f021293810`
-- `excel-manual2_function.xls.pia`: `8138d73fee8ceab0fbe450fa8146c7dd8dcea996e69450dabf3ccf39716f3ca2`
-- `excel-manual3_askWizard.xls.pia`: `34b5ae20df97bfa29b997f16622a3ff81500e193a91c27454f567996929e7966`
-- `excel-manual4_ezChart.xls.pia`: `520d271aa1a08433e4eb95fb0c83e88caee6708eea5a903903b5114088375470`
-- `excel-sources.zip`: `20185ff5f1a57e15de2f8b913a44af1f9f1dddb5ed4016ac9ff6f9c4dbdaecac`
-- `HangMokCodeTable_ExcelPremium_update01.xlsx.pia`: `0da74fa58847c625d106286fe2c13df9d06e57806e44b85f500c5b666f857138`
-- `JongMokCodeTable_20140616_Uodate02.xlsx.pia`: `4d623d44e9b4fb35a1ac8aef7016098e58ed44d9fbe5b30fc4369e1836b9044b`
-- `manual-enrichment-unmapped.jsonl`: `263bcd62d028b37ff23c5f07d16307061065670de2ca5fbb2f00caa5f31c3e70`
-- `manual-enrichment.jsonl`: `fb56904fe3d55c902010e238ca281c7c00b99d16eb3023367936d097a2ddd25c`
 - `README.md`: `11b7c8d437fe01123004cd74500e4cfc661f69172231d1c297eab3dc52c7bd1c`
+- `excel-sources.zip`: `20185ff5f1a57e15de2f8b913a44af1f9f1dddb5ed4016ac9ff6f9c4dbdaecac`
+- `manual-enrichment-unmapped.jsonl`: `263bcd62d028b37ff23c5f07d16307061065670de2ca5fbb2f00caa5f31c3e70`
+- `manual-enrichment.jsonl`: `382284c99f1e4d0c79990062f055157709371ee4a9d9fb52e1b972edc8329ec1`

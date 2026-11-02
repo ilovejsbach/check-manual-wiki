@@ -11,9 +11,31 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:4110"
 related_ids:
   - "check:screen:4110"
+  - "check:screen:4211"
+  - "check:screen:4213"
+  - "check:screen:1002"
+  - "check:screen:3022"
+  - "check:screen:3210"
+  - "check:screen:3471"
+  - "check:screen:3741"
+  - "check:screen:4215"
+  - "check:screen:4217"
+  - "check:screen:4338"
 review_status: "candidate"
 signal_count: 12
 source_locator: "target:check:screen:4110"
+relationship_types:
+  "check:screen:4211": "mentions_tr"
+  "check:screen:4213": "mentions_tr"
+  "check:screen:1002": "mentions_title"
+  "check:screen:3022": "mentions_title"
+  "check:screen:3210": "mentions_title"
+  "check:screen:3471": "mentions_title"
+  "check:screen:3741": "mentions_title"
+  "check:screen:4110": "mentions_title"
+  "check:screen:4215": "mentions_title"
+  "check:screen:4217": "mentions_title"
+  "check:screen:4338": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 4110 - 투자자현황
 
@@ -133,3 +155,17 @@ source_locator: "target:check:screen:4110"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/선물/4211-4211-일별추이|4211 - 일별추이]] (mentions_tr)
+- [[check-expert/새로운-모습/선물/4213-4213-일별비교|4213 - 일별비교]] (mentions_tr)
+- [[check-expert/새로운-모습/종합/1002-1002-세계지수종합|1002 - 세계지수종합]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3022-3022-발행정보-주요-종목검색|3022 - 발행정보 > 주요 > 종목검색]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3210-3210-장외(15분체결)-건별-체결|3210 - 장외(15분체결) > 건별 체결]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3471-3471-단가계산-발행종목|3471 - 단가계산 > 발행종목]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3741-3741-시가평가-채권그룹-기업별-Term-Structure|3741 - 시가평가 > 채권그룹 > 기업별 Term Structure]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4110-4110-투자자현황|4110 - 투자자현황]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4215-4215-누적비교|4215 - 누적비교]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4217-4217-종합순매수|4217 - 종합순매수]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4338-4338-순매수일별|4338 - 순매수일별]] (mentions_title)

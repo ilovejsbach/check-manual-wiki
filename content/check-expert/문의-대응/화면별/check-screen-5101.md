@@ -11,9 +11,27 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:5101"
 related_ids:
   - "check:screen:5101"
+  - "check:screen:1300"
+  - "check:screen:3080"
+  - "check:screen:3212"
+  - "check:screen:4102"
+  - "check:screen:4235"
+  - "check:screen:5100"
+  - "check:screen:5104"
+  - "check:screen:5500"
 review_status: "candidate"
 signal_count: 13
 source_locator: "target:check:screen:5101"
+relationship_types:
+  "check:screen:1300": "mentions_title"
+  "check:screen:3080": "mentions_title"
+  "check:screen:3212": "mentions_title"
+  "check:screen:4102": "mentions_title"
+  "check:screen:4235": "mentions_title"
+  "check:screen:5100": "mentions_title"
+  "check:screen:5101": "mentions_title"
+  "check:screen:5104": "mentions_title"
+  "check:screen:5500": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 5101 - 달러-원>현재가
 
@@ -133,3 +151,15 @@ source_locator: "target:check:screen:5101"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/주식/1300-1300-주식현재가|1300 - 주식현재가]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3080-3080-장내국채-호가(6종목)|3080 - 장내국채 > 호가(6종목)]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3212-3212-장외(15분체결)-(장외)투자자별-종목체결|3212 - 장외(15분체결) > (장외)투자자별 종목체결]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4102-4102-금리선물|4102 - 금리선물]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4235-4235-일중순매수|4235 - 일중순매수]] (mentions_title)
+- [[check-expert/새로운-모습/외환/5100-5100-달러-원-종합화면|5100 - 달러-원>종합화면]] (mentions_title)
+- [[check-expert/새로운-모습/외환/5101-5101-달러-원-현재가|5101 - 달러-원>현재가]] (mentions_title)
+- [[check-expert/새로운-모습/외환/5104-5104-달러-원-시간대별|5104 - 달러-원>시간대별]] (mentions_title)
+- [[check-expert/새로운-모습/외환/5500-5500-해외SPOT-종합화면|5500 - 해외SPOT>종합화면]] (mentions_title)

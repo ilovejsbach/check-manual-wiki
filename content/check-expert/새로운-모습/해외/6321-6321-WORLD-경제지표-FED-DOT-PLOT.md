@@ -17,12 +17,15 @@ aliases:
 source_pages: "813-814"
 category: "해외"
 screen_code: "6321"
+related_ids:
+  - "check:screen:6322"
+relationship_types:
+  "check:screen:6322": "mentions_tr"
 ---
 # 6321 - WORLD/경제지표 > FED DOT PLOT
 
 > 출처: `CHECKPlus_Manual.pdf`, PDF 813-814쪽. 검색 가능한 본문과 원문 페이지 이미지를 함께 제공합니다.
 
-## 관련 화면
 ## 화면 개요
 ● 미연준 점도표(FED DOT PLOT)를 제공합니다.
 ## 화면 설명
@@ -35,6 +38,10 @@ https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm Meeting 일정 �
 PDF버튼을 클릭하면 FOMC 홈페이지에 회의 종료 후 게시된 PDF파일을 확인할 수 있습니다.
 
 ### 화면 항목 3. FED DOT PLOT이 조회됩니다.- TR 6322 — WORLD/경제지표 > FED WATCH(CME)
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/해외/6322-6322-WORLD-경제지표-FED-WATCH(CME)|6322 - WORLD/경제지표 > FED WATCH(CME)]] (mentions_tr)
 
 ## 원문 근거
 

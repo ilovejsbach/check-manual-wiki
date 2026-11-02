@@ -14,6 +14,8 @@ related_ids:
 review_status: "candidate"
 signal_count: 6
 source_locator: "target:check:screen:4733"
+relationship_types:
+  "check:screen:4733": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 4733 - 변동성복합차트
 
@@ -77,3 +79,7 @@ source_locator: "target:check:screen:4733"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/옵션/4733-4733-변동성복합차트|4733 - 변동성복합차트]] (mentions_title)

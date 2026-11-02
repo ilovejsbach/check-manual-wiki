@@ -11,9 +11,27 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:3022"
 related_ids:
   - "check:screen:3022"
+  - "check:screen:1002"
+  - "check:screen:3011"
+  - "check:screen:3210"
+  - "check:screen:3471"
+  - "check:screen:3500"
+  - "check:screen:3649"
+  - "check:screen:3741"
+  - "check:screen:4110"
 review_status: "candidate"
 signal_count: 30
 source_locator: "target:check:screen:3022"
+relationship_types:
+  "check:screen:3022": "mentions_tr"
+  "check:screen:1002": "mentions_title"
+  "check:screen:3011": "mentions_title"
+  "check:screen:3210": "mentions_title"
+  "check:screen:3471": "mentions_title"
+  "check:screen:3500": "mentions_title"
+  "check:screen:3649": "mentions_title"
+  "check:screen:3741": "mentions_title"
+  "check:screen:4110": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3022 - 발행정보 > 주요 > 종목검색
 
@@ -133,3 +151,15 @@ source_locator: "target:check:screen:3022"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/채권/3022-3022-발행정보-주요-종목검색|3022 - 발행정보 > 주요 > 종목검색]] (mentions_tr)
+- [[check-expert/새로운-모습/종합/1002-1002-세계지수종합|1002 - 세계지수종합]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3011-3011-신용등급-종합1|3011 - 신용등급 > 종합1]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3210-3210-장외(15분체결)-건별-체결|3210 - 장외(15분체결) > 건별 체결]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3471-3471-단가계산-발행종목|3471 - 단가계산 > 발행종목]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3500-3500-시장종합-투자분석리포트|3500 - 시장종합 > 투자분석리포트]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3649-3649-발행정보-주요-일별-발행종목|3649 - 발행정보 > 주요 > 일별 발행종목]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3741-3741-시가평가-채권그룹-기업별-Term-Structure|3741 - 시가평가 > 채권그룹 > 기업별 Term Structure]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4110-4110-투자자현황|4110 - 투자자현황]] (mentions_title)

@@ -11,9 +11,13 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:1302"
 related_ids:
   - "check:screen:1302"
+  - "check:screen:3904"
 review_status: "candidate"
 signal_count: 3
 source_locator: "target:check:screen:1302"
+relationship_types:
+  "check:screen:1302": "mentions_tr"
+  "check:screen:3904": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 1302 - 당일시세예측
 
@@ -61,3 +65,8 @@ source_locator: "target:check:screen:1302"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/주식/1302-1302-당일시세예측|1302 - 당일시세예측]] (mentions_tr)
+- [[check-expert/새로운-모습/채권/3904-3904-시장종합-종목요약|3904 - 시장종합 > 종목요약]] (mentions_title)

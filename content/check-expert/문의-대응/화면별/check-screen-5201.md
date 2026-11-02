@@ -11,9 +11,15 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:5201"
 related_ids:
   - "check:screen:5201"
+  - "check:screen:5203"
+  - "check:screen:5722"
 review_status: "candidate"
 signal_count: 5
 source_locator: "target:check:screen:5201"
+relationship_types:
+  "check:screen:5201": "mentions_tr"
+  "check:screen:5203": "mentions_tr"
+  "check:screen:5722": "mentions_tr"
 ---
 # 문의 대응 사례 묶음 — 5201 - 달러-원 FX스왑>현재가(종합)
 
@@ -77,3 +83,9 @@ source_locator: "target:check:screen:5201"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/외환/5201-5201-달러-원-FX스왑-현재가(종합)|5201 - 달러-원 FX스왑>현재가(종합)]] (mentions_tr)
+- [[check-expert/새로운-모습/외환/5203-5203-달러-원-FX스왑-일별추이|5203 - 달러-원 FX스왑>일별추이]] (mentions_tr)
+- [[check-expert/새로운-모습/외환/5722-5722-계산기-달러-원-FX-SWAP-계산기|5722 - 계산기>달러-원 FX SWAP 계산기]] (mentions_tr)

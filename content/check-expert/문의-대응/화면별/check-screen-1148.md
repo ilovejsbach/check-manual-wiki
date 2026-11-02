@@ -14,6 +14,8 @@ related_ids:
 review_status: "candidate"
 signal_count: 32
 source_locator: "target:check:screen:1148"
+relationship_types:
+  "check:screen:1148": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148
 
@@ -133,3 +135,7 @@ source_locator: "target:check:screen:1148"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/주식/1148-1148-KRX지수구성정보-서비스(지수구성종목-정보)-1148|1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148]] (mentions_title)

@@ -17,6 +17,12 @@ aliases:
 source_pages: "720-721"
 category: "채권"
 screen_code: "3940"
+related_ids:
+  - "check:screen:3104"
+  - "check:screen:3924"
+relationship_types:
+  "check:screen:3104": "related_screen"
+  "check:screen:3924": "mentions_title"
 ---
 # 3940 - 해외금리 > Markit CDS
 
@@ -54,7 +60,9 @@ Name을 더블클릭하면 하단의 추이와 차트에 시계열을 조회할 
 - 해당 정보는 제공처인 Markit의 정책에 따라 View Only로 제공되며 다운로드를 원하실 경우 Markit과
 라이센스 계약이 필요합니다.
 ## 관련 화면
-3941
+
+- [[check-expert/새로운-모습/채권/3104-3104-시장종합-채권데일리|3104 - 시장종합 > 채권데일리]] (related_screen)
+- [[check-expert/새로운-모습/채권/3924-3924-해외금리-해외국채-Matrix|3924 - 해외금리 > 해외국채 Matrix]] (mentions_title)
 
 ## 원문 근거
 

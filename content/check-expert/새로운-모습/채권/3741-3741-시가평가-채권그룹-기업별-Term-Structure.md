@@ -17,6 +17,10 @@ aliases:
 source_pages: "676-680"
 category: "채권"
 screen_code: "3741"
+related_ids:
+  - "check:screen:3011"
+relationship_types:
+  "check:screen:3011": "related_screen"
 ---
 # 3741 - 시가평가 > 채권그룹 > 기업별 Term Structure
 
@@ -60,8 +64,8 @@ Ctrl + 클릭으로 10개까지 선택해서 복수 지표를 조회할 수 있�
 • 발행기관에 대한 채권분류 기준 : 1년 3개월이내 수신한 발행기관의 등급 우선, 발행기관 등급 없을 시
 가장 최근(1년 3개월 이내)에 발행된 채권 종목에 대한 등급으로 분류
 ## 관련 화면
-3773 차트 > Yield Spread
-3774 차트 > Yield Spread 추이
+
+- [[check-expert/새로운-모습/채권/3011-3011-신용등급-종합1|3011 - 신용등급 > 종합1]] (related_screen)
 
 ## 원문 근거
 

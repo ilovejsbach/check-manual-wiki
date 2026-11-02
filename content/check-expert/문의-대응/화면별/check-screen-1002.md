@@ -8,25 +8,29 @@ tags:
   - "검수 필요"
   - "1002 - 세계지수종합"
 source: "manual-enrichment.jsonl"
-knowledge_id: "check:enrichment:screen:1002:해외"
+knowledge_id: "check:enrichment:screen:1002"
 related_ids:
-  - "check:screen:1002:해외"
+  - "check:screen:1002"
+  - "check:screen:4733"
 review_status: "candidate"
-signal_count: 12
-source_locator: "target:check:screen:1002:해외"
+signal_count: 24
+source_locator: "target:check:screen:1002"
+relationship_types:
+  "check:screen:1002": "mentions_tr"
+  "check:screen:4733": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 1002 - 세계지수종합
 
-> 공식 문서: [[check-expert/새로운-모습/해외/1002-1002-세계지수종합|1002 - 세계지수종합]]
+> 공식 문서: [[check-expert/새로운-모습/종합/1002-1002-세계지수종합|1002 - 세계지수종합]]
 
 > 아래 내용은 비식별 고객 문의·운영 기록에서 추출한 **검수 전 후보**입니다. 공식 금융 정의나 현재 CHECK 동작으로 자동 승인되지 않습니다.
 
 ## 수요 요약
 
-- 관련 신호: 12건
-- 중복 제거 그룹: 12개
-- 후보 유형: FAQ 10건, 절차 9건
-- 주요 주제: 기타 (1), 미분류 (1), 요구-최적응대 (8), 조회정보 불명확 (1), 해외 (1)
+- 관련 신호: 24건
+- 중복 제거 그룹: 24개
+- 후보 유형: FAQ 20건, 절차 18건
+- 주요 주제: 기타 (2), 미분류 (2), 요구-최적응대 (16), 조회정보 불명확 (2), 해외 (2)
 
 ## 문의·대응 사례
 
@@ -125,3 +129,8 @@ source_locator: "target:check:screen:1002:해외"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/종합/1002-1002-세계지수종합|1002 - 세계지수종합]] (mentions_tr)
+- [[check-expert/새로운-모습/옵션/4733-4733-변동성복합차트|4733 - 변동성복합차트]] (mentions_title)

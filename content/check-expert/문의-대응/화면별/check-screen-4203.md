@@ -11,9 +11,21 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:4203"
 related_ids:
   - "check:screen:4203"
+  - "check:screen:4192"
+  - "check:screen:4199"
+  - "check:screen:3210"
+  - "check:screen:4205"
+  - "check:screen:4213"
 review_status: "candidate"
 signal_count: 10
 source_locator: "target:check:screen:4203"
+relationship_types:
+  "check:screen:4192": "mentions_tr"
+  "check:screen:4199": "mentions_tr"
+  "check:screen:4203": "mentions_tr"
+  "check:screen:3210": "mentions_title"
+  "check:screen:4205": "mentions_title"
+  "check:screen:4213": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 4203 - 일중추이
 
@@ -109,3 +121,12 @@ source_locator: "target:check:screen:4203"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/종합/4192-4192-선물체결|4192 - 선물체결]] (mentions_tr)
+- [[check-expert/새로운-모습/선물/4199-4199-과거종목|4199 - 과거종목]] (mentions_tr)
+- [[check-expert/새로운-모습/선물/4203-4203-일중추이|4203 - 일중추이]] (mentions_tr)
+- [[check-expert/새로운-모습/채권/3210-3210-장외(15분체결)-건별-체결|3210 - 장외(15분체결) > 건별 체결]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4205-4205-일중순매수|4205 - 일중순매수]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4213-4213-일별비교|4213 - 일별비교]] (mentions_title)

@@ -11,9 +11,26 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:excel:manual:Ez-차트"
 related_ids:
   - "check:excel:manual:Ez-차트"
+  - "check:screen:1103"
+  - "check:screen:1148"
+  - "check:screen:1440"
+  - "check:screen:3431"
+  - "check:screen:3527"
+  - "check:screen:3774"
+  - "check:screen:4199"
+  - "check:screen:8112"
 review_status: "candidate"
 signal_count: 36
 source_locator: "target:check:excel:manual:Ez-차트"
+relationship_types:
+  "check:screen:1103": "mentions_title"
+  "check:screen:1148": "mentions_title"
+  "check:screen:1440": "mentions_title"
+  "check:screen:3431": "mentions_title"
+  "check:screen:3527": "mentions_title"
+  "check:screen:3774": "mentions_title"
+  "check:screen:4199": "mentions_title"
+  "check:screen:8112": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — Ez 차트
 
@@ -133,3 +150,14 @@ source_locator: "target:check:excel:manual:Ez-차트"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/종합/1103-1103-지수편집|1103 - 지수편집]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1148-1148-KRX지수구성정보-서비스(지수구성종목-정보)-1148|1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148]] (mentions_title)
+- [[check-expert/새로운-모습/ETP/1440-1440-ETF-현재가|1440 - ETF 현재가]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3431-3431-시가평가-채권그룹-일별추이|3431 - 시가평가 > 채권그룹 > 일별추이]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3527-3527-차트-복수금리-비교2|3527 - 차트 > 복수금리 비교2]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3774-3774-차트-Yield-Spread(추이)|3774 - 차트 > Yield Spread(추이)]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4199-4199-과거종목|4199 - 과거종목]] (mentions_title)
+- [[check-expert/새로운-모습/차트/8112-8112-신종합차트|8112 - 신종합차트]] (mentions_title)

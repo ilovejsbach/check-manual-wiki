@@ -11,9 +11,15 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:1542"
 related_ids:
   - "check:screen:1542"
+  - "check:screen:3277"
+  - "check:screen:6444"
 review_status: "candidate"
 signal_count: 14
 source_locator: "target:check:screen:1542"
+relationship_types:
+  "check:screen:1542": "mentions_tr"
+  "check:screen:3277": "mentions_title"
+  "check:screen:6444": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 1542 - 업종내 구성종목의 상대성과
 
@@ -133,3 +139,9 @@ source_locator: "target:check:screen:1542"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/주식/1542-1542-업종내-구성종목의-상대성과|1542 - 업종내 구성종목의 상대성과]] (mentions_tr)
+- [[check-expert/새로운-모습/채권/3277-3277-투자자-(장외)투자자별-잔고비중|3277 - 투자자 > (장외)투자자별 잔고비중]] (mentions_title)
+- [[check-expert/새로운-모습/해외/6444-6444-글로벌재무분석-종목별컨센서스|6444 - 글로벌재무분석 > 종목별컨센서스]] (mentions_title)

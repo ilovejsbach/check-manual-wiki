@@ -11,9 +11,17 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:1318"
 related_ids:
   - "check:screen:1318"
+  - "check:screen:3030"
+  - "check:screen:3704"
+  - "check:screen:3774"
 review_status: "candidate"
 signal_count: 40
 source_locator: "target:check:screen:1318"
+relationship_types:
+  "check:screen:1318": "mentions_tr"
+  "check:screen:3030": "mentions_title"
+  "check:screen:3704": "mentions_title"
+  "check:screen:3774": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 1318 - 시간대별 평균
 
@@ -133,3 +141,10 @@ source_locator: "target:check:screen:1318"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/주식/1318-1318-시간대별-평균|1318 - 시간대별 평균]] (mentions_tr)
+- [[check-expert/새로운-모습/채권/3030-3030-발행통계-종합|3030 - 발행통계 > 종합]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3704-3704-유통종합-종목별-체결|3704 - 유통종합 > 종목별 체결]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3774-3774-차트-Yield-Spread(추이)|3774 - 차트 > Yield Spread(추이)]] (mentions_title)

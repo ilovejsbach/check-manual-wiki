@@ -11,9 +11,17 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:4511"
 related_ids:
   - "check:screen:4511"
+  - "check:screen:4101"
+  - "check:screen:4501"
+  - "check:screen:4571"
 review_status: "candidate"
 signal_count: 14
 source_locator: "target:check:screen:4511"
+relationship_types:
+  "check:screen:4101": "mentions_title"
+  "check:screen:4501": "mentions_title"
+  "check:screen:4511": "mentions_title"
+  "check:screen:4571": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 4511 - 기본시세표
 
@@ -133,3 +141,10 @@ source_locator: "target:check:screen:4511"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/선물/4101-4101-현재가|4101 - 현재가]] (mentions_title)
+- [[check-expert/새로운-모습/옵션/4501-4501-현재가1|4501 - 현재가1]] (mentions_title)
+- [[check-expert/새로운-모습/옵션/4511-4511-기본시세표|4511 - 기본시세표]] (mentions_title)
+- [[check-expert/새로운-모습/옵션/4571-4571-종목일별|4571 - 종목일별]] (mentions_title)

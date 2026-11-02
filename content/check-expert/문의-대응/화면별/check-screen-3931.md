@@ -11,9 +11,19 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:3931"
 related_ids:
   - "check:screen:3931"
+  - "check:screen:1002"
+  - "check:screen:1103"
+  - "check:screen:3920"
+  - "check:screen:3924"
 review_status: "candidate"
 signal_count: 13
 source_locator: "target:check:screen:3931"
+relationship_types:
+  "check:screen:3931": "mentions_tr"
+  "check:screen:1002": "mentions_title"
+  "check:screen:1103": "mentions_title"
+  "check:screen:3920": "mentions_title"
+  "check:screen:3924": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3931 - 해외금리 > 해외국채 국가별
 
@@ -133,3 +143,11 @@ source_locator: "target:check:screen:3931"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/채권/3931-3931-해외금리-해외국채-국가별|3931 - 해외금리 > 해외국채 국가별]] (mentions_tr)
+- [[check-expert/새로운-모습/종합/1002-1002-세계지수종합|1002 - 세계지수종합]] (mentions_title)
+- [[check-expert/새로운-모습/종합/1103-1103-지수편집|1103 - 지수편집]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3920-3920-해외금리-미국-일본-국채금리|3920 - 해외금리 > 미국/일본 국채금리]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3924-3924-해외금리-해외국채-Matrix|3924 - 해외금리 > 해외국채 Matrix]] (mentions_title)

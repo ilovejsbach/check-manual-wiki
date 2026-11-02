@@ -11,9 +11,13 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:3026"
 related_ids:
   - "check:screen:3026"
+  - "check:screen:3000"
 review_status: "candidate"
 signal_count: 14
 source_locator: "target:check:screen:3026"
+relationship_types:
+  "check:screen:3000": "mentions_tr"
+  "check:screen:3026": "mentions_tr"
 ---
 # 문의 대응 사례 묶음 — 3026 - 발행정보 > 주요 > DLB(DLS)
 
@@ -133,3 +137,8 @@ source_locator: "target:check:screen:3026"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/채권/3000-3000-발행정보-주요-종목상세|3000 - 발행정보 > 주요 > 종목상세]] (mentions_tr)
+- [[check-expert/새로운-모습/채권/3026-3026-발행정보-주요-DLB(DLS)|3026 - 발행정보 > 주요 > DLB(DLS)]] (mentions_tr)

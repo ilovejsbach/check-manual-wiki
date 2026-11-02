@@ -11,9 +11,19 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:3269"
 related_ids:
   - "check:screen:3269"
+  - "check:screen:3210"
+  - "check:screen:3703"
+  - "check:screen:4235"
+  - "check:screen:5100"
 review_status: "candidate"
 signal_count: 7
 source_locator: "target:check:screen:3269"
+relationship_types:
+  "check:screen:3210": "mentions_title"
+  "check:screen:3269": "mentions_title"
+  "check:screen:3703": "mentions_title"
+  "check:screen:4235": "mentions_title"
+  "check:screen:5100": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3269 - 투자자 > (장외)종류/투자자 실시간 종합
 
@@ -93,3 +103,11 @@ source_locator: "target:check:screen:3269"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/채권/3210-3210-장외(15분체결)-건별-체결|3210 - 장외(15분체결) > 건별 체결]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3269-3269-투자자-(장외)종류-투자자-실시간-종합|3269 - 투자자 > (장외)종류/투자자 실시간 종합]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3703-3703-유통종합-건별-체결|3703 - 유통종합 > 건별 체결]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4235-4235-일중순매수|4235 - 일중순매수]] (mentions_title)
+- [[check-expert/새로운-모습/외환/5100-5100-달러-원-종합화면|5100 - 달러-원>종합화면]] (mentions_title)

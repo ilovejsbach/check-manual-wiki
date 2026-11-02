@@ -11,9 +11,23 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:3011"
 related_ids:
   - "check:screen:3011"
+  - "check:screen:3000"
+  - "check:screen:3022"
+  - "check:screen:3471"
+  - "check:screen:3741"
+  - "check:screen:4502"
+  - "check:screen:5104"
 review_status: "candidate"
 signal_count: 7
 source_locator: "target:check:screen:3011"
+relationship_types:
+  "check:screen:3000": "mentions_tr"
+  "check:screen:3011": "mentions_tr"
+  "check:screen:3022": "mentions_tr"
+  "check:screen:3471": "mentions_tr"
+  "check:screen:3741": "mentions_title"
+  "check:screen:4502": "mentions_title"
+  "check:screen:5104": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3011 - 신용등급 > 종합1
 
@@ -93,3 +107,13 @@ source_locator: "target:check:screen:3011"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/채권/3000-3000-발행정보-주요-종목상세|3000 - 발행정보 > 주요 > 종목상세]] (mentions_tr)
+- [[check-expert/새로운-모습/채권/3011-3011-신용등급-종합1|3011 - 신용등급 > 종합1]] (mentions_tr)
+- [[check-expert/새로운-모습/채권/3022-3022-발행정보-주요-종목검색|3022 - 발행정보 > 주요 > 종목검색]] (mentions_tr)
+- [[check-expert/새로운-모습/채권/3471-3471-단가계산-발행종목|3471 - 단가계산 > 발행종목]] (mentions_tr)
+- [[check-expert/새로운-모습/채권/3741-3741-시가평가-채권그룹-기업별-Term-Structure|3741 - 시가평가 > 채권그룹 > 기업별 Term Structure]] (mentions_title)
+- [[check-expert/새로운-모습/옵션/4502-4502-현재가2|4502 - 현재가2]] (mentions_title)
+- [[check-expert/새로운-모습/외환/5104-5104-달러-원-시간대별|5104 - 달러-원>시간대별]] (mentions_title)

@@ -11,9 +11,29 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:4171"
 related_ids:
   - "check:screen:4171"
+  - "check:screen:4111"
+  - "check:screen:4151"
+  - "check:screen:1318"
+  - "check:screen:3101"
+  - "check:screen:3924"
+  - "check:screen:4101"
+  - "check:screen:4105"
+  - "check:screen:4106"
+  - "check:screen:4114"
 review_status: "candidate"
 signal_count: 33
 source_locator: "target:check:screen:4171"
+relationship_types:
+  "check:screen:4111": "mentions_tr"
+  "check:screen:4151": "mentions_tr"
+  "check:screen:4171": "mentions_tr"
+  "check:screen:1318": "mentions_title"
+  "check:screen:3101": "mentions_title"
+  "check:screen:3924": "mentions_title"
+  "check:screen:4101": "mentions_title"
+  "check:screen:4105": "mentions_title"
+  "check:screen:4106": "mentions_title"
+  "check:screen:4114": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 4171 - 종목일별
 
@@ -133,3 +153,16 @@ source_locator: "target:check:screen:4171"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/선물/4111-4111-주식선물-현재가|4111 - 주식선물 현재가]] (mentions_tr)
+- [[check-expert/새로운-모습/선물/4151-4151-종목일중|4151 - 종목일중]] (mentions_tr)
+- [[check-expert/새로운-모습/선물/4171-4171-종목일별|4171 - 종목일별]] (mentions_tr)
+- [[check-expert/새로운-모습/주식/1318-1318-시간대별-평균|1318 - 시간대별 평균]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3101-3101-시장종합-국채시장|3101 - 시장종합 > 국채시장]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3924-3924-해외금리-해외국채-Matrix|3924 - 해외금리 > 해외국채 Matrix]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4101-4101-현재가|4101 - 현재가]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4105-4105-현재가(요약)|4105 - 현재가(요약)]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4106-4106-현재가(전종목)|4106 - 현재가(전종목)]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4114-4114-주식선물-시세표|4114 - 주식선물 시세표]] (mentions_title)

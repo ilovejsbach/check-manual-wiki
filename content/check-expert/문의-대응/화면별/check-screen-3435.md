@@ -11,9 +11,21 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:3435"
 related_ids:
   - "check:screen:3435"
+  - "check:screen:3471"
+  - "check:screen:3805"
+  - "check:screen:3000"
+  - "check:screen:3703"
+  - "check:screen:3741"
 review_status: "candidate"
 signal_count: 35
 source_locator: "target:check:screen:3435"
+relationship_types:
+  "check:screen:3435": "mentions_tr"
+  "check:screen:3471": "mentions_tr"
+  "check:screen:3805": "mentions_tr"
+  "check:screen:3000": "mentions_title"
+  "check:screen:3703": "mentions_title"
+  "check:screen:3741": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3435 - 시가평가 > 채권종목 > 일별추이
 
@@ -133,3 +145,12 @@ source_locator: "target:check:screen:3435"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/채권/3435-3435-시가평가-채권종목-일별추이|3435 - 시가평가 > 채권종목 > 일별추이]] (mentions_tr)
+- [[check-expert/새로운-모습/채권/3471-3471-단가계산-발행종목|3471 - 단가계산 > 발행종목]] (mentions_tr)
+- [[check-expert/새로운-모습/채권/3805-3805-관심채권-기본정보-시가평가|3805 - 관심채권 > 기본정보 > 시가평가]] (mentions_tr)
+- [[check-expert/새로운-모습/채권/3000-3000-발행정보-주요-종목상세|3000 - 발행정보 > 주요 > 종목상세]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3703-3703-유통종합-건별-체결|3703 - 유통종합 > 건별 체결]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3741-3741-시가평가-채권그룹-기업별-Term-Structure|3741 - 시가평가 > 채권그룹 > 기업별 Term Structure]] (mentions_title)

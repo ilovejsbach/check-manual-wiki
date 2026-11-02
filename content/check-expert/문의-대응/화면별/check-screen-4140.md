@@ -11,9 +11,15 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:4140"
 related_ids:
   - "check:screen:4140"
+  - "check:screen:4199"
+  - "check:screen:4781"
 review_status: "candidate"
 signal_count: 7
 source_locator: "target:check:screen:4140"
+relationship_types:
+  "check:screen:4140": "mentions_tr"
+  "check:screen:4199": "mentions_title"
+  "check:screen:4781": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 4140 - 체결잔량
 
@@ -85,3 +91,9 @@ source_locator: "target:check:screen:4140"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/선물/4140-4140-체결잔량|4140 - 체결잔량]] (mentions_tr)
+- [[check-expert/새로운-모습/선물/4199-4199-과거종목|4199 - 과거종목]] (mentions_title)
+- [[check-expert/새로운-모습/옵션/4781-4781-종목일중|4781 - 종목일중]] (mentions_title)

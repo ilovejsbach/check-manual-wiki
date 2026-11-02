@@ -11,9 +11,13 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:1448"
 related_ids:
   - "check:screen:1448"
+  - "check:screen:1443"
 review_status: "candidate"
 signal_count: 84
 source_locator: "target:check:screen:1448"
+relationship_types:
+  "check:screen:1448": "mentions_tr"
+  "check:screen:1443": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 1448 - ETF 구성종목(PDF)
 
@@ -133,3 +137,8 @@ source_locator: "target:check:screen:1448"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/ETP/1448-1448-ETF-구성종목(PDF)|1448 - ETF 구성종목(PDF)]] (mentions_tr)
+- [[check-expert/새로운-모습/ETP/1443-1443-ETF-시세표|1443 - ETF 시세표]] (mentions_title)

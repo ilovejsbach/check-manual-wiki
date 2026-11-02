@@ -11,9 +11,21 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:1425"
 related_ids:
   - "check:screen:1425"
+  - "check:screen:1300"
+  - "check:screen:3046"
+  - "check:screen:4202"
+  - "check:screen:4602"
+  - "check:screen:6106"
 review_status: "candidate"
 signal_count: 10
 source_locator: "target:check:screen:1425"
+relationship_types:
+  "check:screen:1425": "mentions_tr"
+  "check:screen:1300": "mentions_title"
+  "check:screen:3046": "mentions_title"
+  "check:screen:4202": "mentions_title"
+  "check:screen:4602": "mentions_title"
+  "check:screen:6106": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 1425 - 시간외단일가 시세표
 
@@ -117,3 +129,12 @@ source_locator: "target:check:screen:1425"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/주식/1425-1425-시간외단일가-시세표|1425 - 시간외단일가 시세표]] (mentions_tr)
+- [[check-expert/새로운-모습/주식/1300-1300-주식현재가|1300 - 주식현재가]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3046-3046-단기자금-전단채-전자단기사채-발행통계|3046 - 단기자금 > 전단채 > 전자단기사채 발행통계]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4202-4202-선물옵션당일|4202 - 선물옵션당일]] (mentions_title)
+- [[check-expert/새로운-모습/옵션/4602-4602-선물옵션당일|4602 - 선물옵션당일]] (mentions_title)
+- [[check-expert/새로운-모습/Daily/6106-6106-종합|6106 - 종합]] (mentions_title)

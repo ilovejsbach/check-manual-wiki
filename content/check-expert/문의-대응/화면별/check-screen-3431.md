@@ -11,9 +11,25 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:3431"
 related_ids:
   - "check:screen:3431"
+  - "check:screen:3223"
+  - "check:screen:3430"
+  - "check:screen:3649"
+  - "check:screen:3703"
+  - "check:screen:3741"
+  - "check:screen:4512"
+  - "check:screen:4656"
 review_status: "candidate"
 signal_count: 19
 source_locator: "target:check:screen:3431"
+relationship_types:
+  "check:screen:3223": "mentions_title"
+  "check:screen:3430": "mentions_title"
+  "check:screen:3431": "mentions_title"
+  "check:screen:3649": "mentions_title"
+  "check:screen:3703": "mentions_title"
+  "check:screen:3741": "mentions_title"
+  "check:screen:4512": "mentions_title"
+  "check:screen:4656": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3431 - 시가평가 > 채권그룹 > 일별추이
 
@@ -133,3 +149,14 @@ source_locator: "target:check:screen:3431"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/채권/3223-3223-주요금리-최종호가수익률(추이)|3223 - 주요금리 > 최종호가수익률(추이)]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3430-3430-시가평가-채권그룹-Matrix-종합|3430 - 시가평가 > 채권그룹 > Matrix 종합]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3431-3431-시가평가-채권그룹-일별추이|3431 - 시가평가 > 채권그룹 > 일별추이]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3649-3649-발행정보-주요-일별-발행종목|3649 - 발행정보 > 주요 > 일별 발행종목]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3703-3703-유통종합-건별-체결|3703 - 유통종합 > 건별 체결]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3741-3741-시가평가-채권그룹-기업별-Term-Structure|3741 - 시가평가 > 채권그룹 > 기업별 Term Structure]] (mentions_title)
+- [[check-expert/새로운-모습/옵션/4512-4512-가격시세표|4512 - 가격시세표]] (mentions_title)
+- [[check-expert/새로운-모습/옵션/4656-4656-월물일별|4656 - 월물일별]] (mentions_title)

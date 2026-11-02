@@ -11,9 +11,15 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:4204"
 related_ids:
   - "check:screen:4204"
+  - "check:screen:4205"
+  - "check:screen:5100"
 review_status: "candidate"
 signal_count: 3
 source_locator: "target:check:screen:4204"
+relationship_types:
+  "check:screen:4204": "mentions_title"
+  "check:screen:4205": "mentions_title"
+  "check:screen:5100": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 4204 - 일중비교
 
@@ -53,3 +59,9 @@ source_locator: "target:check:screen:4204"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/선물/4204-4204-일중비교|4204 - 일중비교]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4205-4205-일중순매수|4205 - 일중순매수]] (mentions_title)
+- [[check-expert/새로운-모습/외환/5100-5100-달러-원-종합화면|5100 - 달러-원>종합화면]] (mentions_title)

@@ -17,6 +17,10 @@ aliases:
 source_pages: "714-715"
 category: "채권"
 screen_code: "3921"
+related_ids:
+  - "check:screen:3102"
+relationship_types:
+  "check:screen:3102": "mentions_title"
 ---
 # 3921 - 해외금리 > LIBOR/EURIBOR/TIBOR
 
@@ -52,7 +56,8 @@ LIBOR 모든 통화의 2W, 4M, 5M, 7M, 8M, 9M, 10M, 11M 만기의 경우 2013.05
 제출될 수 있습니다.
 - ICE : https://www.theice.com/iba
 ## 관련 화면
-3933
+
+- [[check-expert/새로운-모습/채권/3102-3102-시장종합-주요금리|3102 - 시장종합 > 주요금리]] (mentions_title)
 
 ## 원문 근거
 

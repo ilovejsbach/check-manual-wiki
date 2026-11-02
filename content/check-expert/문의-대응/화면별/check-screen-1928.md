@@ -11,9 +11,13 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:1928"
 related_ids:
   - "check:screen:1928"
+  - "check:screen:4003"
 review_status: "candidate"
 signal_count: 2
 source_locator: "target:check:screen:1928"
+relationship_types:
+  "check:screen:1928": "mentions_title"
+  "check:screen:4003": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 1928 - 기관외국인합계상세
 
@@ -53,3 +57,8 @@ source_locator: "target:check:screen:1928"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/주식/1928-1928-기관외국인합계상세|1928 - 기관외국인합계상세]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4003-4003-투자자일별|4003 - 투자자일별]] (mentions_title)

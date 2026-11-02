@@ -13,6 +13,12 @@ review_status: "candidate"
 mapping_status: "unmapped"
 signal_count: 7
 source_locator: "topic:엑셀"
+related_ids:
+  - "check:screen:3075"
+  - "check:screen:4657"
+relationship_types:
+  "check:screen:3075": "mentions_title"
+  "check:screen:4657": "mentions_title"
 ---
 # 공식 문서 연결 대기 — 엑셀
 
@@ -79,3 +85,8 @@ source_locator: "topic:엑셀"
 - [ ] 기존 문서 연결과 신규 문서 생성 중 적절한 경로를 결정했는가
 - [ ] 공식 근거 또는 실제 동작 증거를 확보했는가
 - [ ] 식별정보와 내부 전용 정보가 남아 있지 않은가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/채권/3075-3075-발행정보-기타-국채-STRIPS|3075 - 발행정보 > 기타 > 국채 STRIPS]] (mentions_title)
+- [[check-expert/새로운-모습/옵션/4657-4657-틱차트|4657 - 틱차트]] (mentions_title)

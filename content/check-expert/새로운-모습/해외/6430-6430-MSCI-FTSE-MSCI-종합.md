@@ -17,6 +17,12 @@ aliases:
 source_pages: "799-800"
 category: "해외"
 screen_code: "6430"
+related_ids:
+  - "check:screen:6431"
+  - "check:screen:6432"
+relationship_types:
+  "check:screen:6431": "related_screen"
+  "check:screen:6432": "related_screen"
 ---
 # 6430 - MSCI/FTSE>MSCI 종합
 
@@ -65,9 +71,9 @@ MSCI에서는 USD 및 Local 통화 단위의 값을 제공하고, KRW는 CHECK �
 - MSCI는 각국별 지수도 발표하는데 우리나라의 경우, MSCI한국지수임. 주가의 등락 뿐만 아니라 환율의 변동이 반영되는 달
 러환산 주가지수이므로 주가가 오르더라도 원화가치가 크게떨어졌다면 지수는 오히려 하락할 수 있음
 ## 관련 화면
-- TR 6431 — MSCI 비교
-- TR 6432 — MSCI 지역/국가
-- TR 6433 — MSCI 섹터/업종
+
+- [[check-expert/새로운-모습/해외/6431-6431-MSCI-FTSE-MSCI-비교|6431 - MSCI/FTSE>MSCI 비교]] (related_screen)
+- [[check-expert/새로운-모습/해외/6432-6432-MSCI-FTSE-지역-국가|6432 - MSCI/FTSE>지역/국가]] (related_screen)
 
 ## 원문 근거
 

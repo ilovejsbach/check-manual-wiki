@@ -17,6 +17,18 @@ aliases:
 source_pages: "687-688"
 category: "채권"
 screen_code: "3774"
+related_ids:
+  - "check:screen:1147"
+  - "check:screen:1148"
+  - "check:screen:1149"
+  - "check:screen:3430"
+  - "check:screen:3431"
+relationship_types:
+  "check:screen:1147": "mentions_title"
+  "check:screen:1148": "mentions_title"
+  "check:screen:1149": "mentions_title"
+  "check:screen:3430": "related_screen"
+  "check:screen:3431": "mentions_title"
 ---
 # 3774 - 차트 > Yield Spread(추이)
 
@@ -58,11 +70,12 @@ screen_code: "3774"
 
 ### 화면 항목 11. 데이터가 재조회됩니다.
 ## 관련 화면
-- TR 3430 — 시가평가 > 채권그룹 > Matrix 종합
-3737
-- TR 3741 — 시가평가 > 채권그룹 > 기업별 Term Structure
-3913
-3926
+
+- [[check-expert/새로운-모습/주식/1147-1147-KRX지수구성정보-서비스(업종별-지수정보)-1147|1147 - KRX지수구성정보 서비스(업종별 지수정보) - 1147]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1148-1148-KRX지수구성정보-서비스(지수구성종목-정보)-1148|1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1149-1149-KRX지수구성정보-서비스-(지수변동조치(CA)-내역)-1149|1149 - KRX지수구성정보 서비스 (지수변동조치(CA) 내역) - 1149]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3430-3430-시가평가-채권그룹-Matrix-종합|3430 - 시가평가 > 채권그룹 > Matrix 종합]] (related_screen)
+- [[check-expert/새로운-모습/채권/3431-3431-시가평가-채권그룹-일별추이|3431 - 시가평가 > 채권그룹 > 일별추이]] (mentions_title)
 
 ## 원문 근거
 

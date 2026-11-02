@@ -11,9 +11,33 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:3210"
 related_ids:
   - "check:screen:3210"
+  - "check:screen:1002"
+  - "check:screen:3022"
+  - "check:screen:3211"
+  - "check:screen:3212"
+  - "check:screen:3269"
+  - "check:screen:3471"
+  - "check:screen:3703"
+  - "check:screen:3741"
+  - "check:screen:4110"
+  - "check:screen:4191"
+  - "check:screen:5100"
 review_status: "candidate"
 signal_count: 9
 source_locator: "target:check:screen:3210"
+relationship_types:
+  "check:screen:1002": "mentions_title"
+  "check:screen:3022": "mentions_title"
+  "check:screen:3210": "mentions_title"
+  "check:screen:3211": "mentions_title"
+  "check:screen:3212": "mentions_title"
+  "check:screen:3269": "mentions_title"
+  "check:screen:3471": "mentions_title"
+  "check:screen:3703": "mentions_title"
+  "check:screen:3741": "mentions_title"
+  "check:screen:4110": "mentions_title"
+  "check:screen:4191": "mentions_title"
+  "check:screen:5100": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3210 - 장외(15분체결) > 건별 체결
 
@@ -109,3 +133,18 @@ source_locator: "target:check:screen:3210"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/종합/1002-1002-세계지수종합|1002 - 세계지수종합]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3022-3022-발행정보-주요-종목검색|3022 - 발행정보 > 주요 > 종목검색]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3210-3210-장외(15분체결)-건별-체결|3210 - 장외(15분체결) > 건별 체결]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3211-3211-장외(15분체결)-종목별-체결|3211 - 장외(15분체결) > 종목별 체결]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3212-3212-장외(15분체결)-(장외)투자자별-종목체결|3212 - 장외(15분체결) > (장외)투자자별 종목체결]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3269-3269-투자자-(장외)종류-투자자-실시간-종합|3269 - 투자자 > (장외)종류/투자자 실시간 종합]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3471-3471-단가계산-발행종목|3471 - 단가계산 > 발행종목]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3703-3703-유통종합-건별-체결|3703 - 유통종합 > 건별 체결]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3741-3741-시가평가-채권그룹-기업별-Term-Structure|3741 - 시가평가 > 채권그룹 > 기업별 Term Structure]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4110-4110-투자자현황|4110 - 투자자현황]] (mentions_title)
+- [[check-expert/새로운-모습/종합/4191-4191-주식체결|4191 - 주식체결]] (mentions_title)
+- [[check-expert/새로운-모습/외환/5100-5100-달러-원-종합화면|5100 - 달러-원>종합화면]] (mentions_title)

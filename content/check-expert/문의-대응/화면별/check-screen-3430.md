@@ -11,9 +11,35 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:3430"
 related_ids:
   - "check:screen:3430"
+  - "check:screen:3000"
+  - "check:screen:3080"
+  - "check:screen:3431"
+  - "check:screen:3471"
+  - "check:screen:3527"
+  - "check:screen:3705"
+  - "check:screen:3741"
+  - "check:screen:3924"
+  - "check:screen:4080"
+  - "check:screen:4131"
+  - "check:screen:4151"
+  - "check:screen:4199"
 review_status: "candidate"
 signal_count: 32
 source_locator: "target:check:screen:3430"
+relationship_types:
+  "check:screen:3430": "mentions_tr"
+  "check:screen:3000": "mentions_title"
+  "check:screen:3080": "mentions_title"
+  "check:screen:3431": "mentions_title"
+  "check:screen:3471": "mentions_title"
+  "check:screen:3527": "mentions_title"
+  "check:screen:3705": "mentions_title"
+  "check:screen:3741": "mentions_title"
+  "check:screen:3924": "mentions_title"
+  "check:screen:4080": "mentions_title"
+  "check:screen:4131": "mentions_title"
+  "check:screen:4151": "mentions_title"
+  "check:screen:4199": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3430 - 시가평가 > 채권그룹 > Matrix 종합
 
@@ -133,3 +159,19 @@ source_locator: "target:check:screen:3430"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/채권/3430-3430-시가평가-채권그룹-Matrix-종합|3430 - 시가평가 > 채권그룹 > Matrix 종합]] (mentions_tr)
+- [[check-expert/새로운-모습/채권/3000-3000-발행정보-주요-종목상세|3000 - 발행정보 > 주요 > 종목상세]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3080-3080-장내국채-호가(6종목)|3080 - 장내국채 > 호가(6종목)]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3431-3431-시가평가-채권그룹-일별추이|3431 - 시가평가 > 채권그룹 > 일별추이]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3471-3471-단가계산-발행종목|3471 - 단가계산 > 발행종목]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3527-3527-차트-복수금리-비교2|3527 - 차트 > 복수금리 비교2]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3705-3705-유통종합-주요채권-시세표|3705 - 유통종합 > 주요채권 시세표]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3741-3741-시가평가-채권그룹-기업별-Term-Structure|3741 - 시가평가 > 채권그룹 > 기업별 Term Structure]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3924-3924-해외금리-해외국채-Matrix|3924 - 해외금리 > 해외국채 Matrix]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4080-4080-선물-KTB이론가|4080 - 선물 KTB이론가]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4131-4131-체결(실시간)|4131 - 체결(실시간)]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4151-4151-종목일중|4151 - 종목일중]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4199-4199-과거종목|4199 - 과거종목]] (mentions_title)

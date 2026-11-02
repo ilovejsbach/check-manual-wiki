@@ -11,9 +11,15 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:6461"
 related_ids:
   - "check:screen:6461"
+  - "check:screen:1440"
+  - "check:screen:6463"
 review_status: "candidate"
 signal_count: 2
 source_locator: "target:check:screen:6461"
+relationship_types:
+  "check:screen:1440": "mentions_title"
+  "check:screen:6461": "mentions_title"
+  "check:screen:6463": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 6461 - 글로벌ETF > 성과
 
@@ -53,3 +59,9 @@ source_locator: "target:check:screen:6461"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/ETP/1440-1440-ETF-현재가|1440 - ETF 현재가]] (mentions_title)
+- [[check-expert/새로운-모습/해외/6461-6461-글로벌ETF-성과|6461 - 글로벌ETF > 성과]] (mentions_title)
+- [[check-expert/새로운-모습/해외/6463-6463-글로벌ETF-현재가|6463 - 글로벌ETF > 현재가]] (mentions_title)

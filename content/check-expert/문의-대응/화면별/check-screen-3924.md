@@ -11,9 +11,35 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:3924"
 related_ids:
   - "check:screen:3924"
+  - "check:screen:3000"
+  - "check:screen:3080"
+  - "check:screen:3430"
+  - "check:screen:3471"
+  - "check:screen:3705"
+  - "check:screen:3741"
+  - "check:screen:3826"
+  - "check:screen:3920"
+  - "check:screen:3931"
+  - "check:screen:4080"
+  - "check:screen:5501"
+  - "check:screen:5722"
 review_status: "candidate"
 signal_count: 9
 source_locator: "target:check:screen:3924"
+relationship_types:
+  "check:screen:3000": "mentions_title"
+  "check:screen:3080": "mentions_title"
+  "check:screen:3430": "mentions_title"
+  "check:screen:3471": "mentions_title"
+  "check:screen:3705": "mentions_title"
+  "check:screen:3741": "mentions_title"
+  "check:screen:3826": "mentions_title"
+  "check:screen:3920": "mentions_title"
+  "check:screen:3924": "mentions_title"
+  "check:screen:3931": "mentions_title"
+  "check:screen:4080": "mentions_title"
+  "check:screen:5501": "mentions_title"
+  "check:screen:5722": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3924 - 해외금리 > 해외국채 Matrix
 
@@ -109,3 +135,19 @@ source_locator: "target:check:screen:3924"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/채권/3000-3000-발행정보-주요-종목상세|3000 - 발행정보 > 주요 > 종목상세]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3080-3080-장내국채-호가(6종목)|3080 - 장내국채 > 호가(6종목)]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3430-3430-시가평가-채권그룹-Matrix-종합|3430 - 시가평가 > 채권그룹 > Matrix 종합]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3471-3471-단가계산-발행종목|3471 - 단가계산 > 발행종목]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3705-3705-유통종합-주요채권-시세표|3705 - 유통종합 > 주요채권 시세표]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3741-3741-시가평가-채권그룹-기업별-Term-Structure|3741 - 시가평가 > 채권그룹 > 기업별 Term Structure]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3826-3826-단가계산-1bp당-단가표|3826 - 단가계산 > 1bp당 단가표]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3920-3920-해외금리-미국-일본-국채금리|3920 - 해외금리 > 미국/일본 국채금리]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3924-3924-해외금리-해외국채-Matrix|3924 - 해외금리 > 해외국채 Matrix]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3931-3931-해외금리-해외국채-국가별|3931 - 해외금리 > 해외국채 국가별]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4080-4080-선물-KTB이론가|4080 - 선물 KTB이론가]] (mentions_title)
+- [[check-expert/새로운-모습/외환/5501-5501-해외SPOT-현재가(주요)|5501 - 해외SPOT>현재가(주요)]] (mentions_title)
+- [[check-expert/새로운-모습/외환/5722-5722-계산기-달러-원-FX-SWAP-계산기|5722 - 계산기>달러-원 FX SWAP 계산기]] (mentions_title)

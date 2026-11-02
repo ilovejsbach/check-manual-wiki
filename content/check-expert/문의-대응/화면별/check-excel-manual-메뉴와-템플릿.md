@@ -11,9 +11,16 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:excel:manual:메뉴와-템플릿"
 related_ids:
   - "check:excel:manual:메뉴와-템플릿"
+  - "check:screen:1211"
+  - "check:screen:1340"
+  - "check:screen:1448"
 review_status: "candidate"
 signal_count: 296
 source_locator: "target:check:excel:manual:메뉴와-템플릿"
+relationship_types:
+  "check:screen:1211": "mentions_title"
+  "check:screen:1340": "mentions_title"
+  "check:screen:1448": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 메뉴와 템플릿
 
@@ -133,3 +140,9 @@ source_locator: "target:check:excel:manual:메뉴와-템플릿"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/ELW/1211-1211-ELW-시세표|1211 - ELW 시세표]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1340-1340-종류주식-스프레드|1340 - 종류주식 스프레드]] (mentions_title)
+- [[check-expert/새로운-모습/ETP/1448-1448-ETF-구성종목(PDF)|1448 - ETF 구성종목(PDF)]] (mentions_title)

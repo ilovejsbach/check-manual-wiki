@@ -11,9 +11,13 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:3083"
 related_ids:
   - "check:screen:3083"
+  - "check:screen:3704"
 review_status: "candidate"
 signal_count: 1
 source_locator: "target:check:screen:3083"
+relationship_types:
+  "check:screen:3083": "mentions_title"
+  "check:screen:3704": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3083 - 장내국채 > 시세표
 
@@ -45,3 +49,8 @@ source_locator: "target:check:screen:3083"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/채권/3083-3083-장내국채-시세표|3083 - 장내국채 > 시세표]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3704-3704-유통종합-종목별-체결|3704 - 유통종합 > 종목별 체결]] (mentions_title)

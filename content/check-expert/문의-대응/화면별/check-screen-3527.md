@@ -11,9 +11,25 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:3527"
 related_ids:
   - "check:screen:3527"
+  - "check:screen:3741"
+  - "check:screen:3430"
+  - "check:screen:3774"
+  - "check:screen:4131"
+  - "check:screen:4151"
+  - "check:screen:4755"
+  - "check:screen:4765"
 review_status: "candidate"
 signal_count: 18
 source_locator: "target:check:screen:3527"
+relationship_types:
+  "check:screen:3741": "mentions_tr"
+  "check:screen:3430": "mentions_title"
+  "check:screen:3527": "mentions_title"
+  "check:screen:3774": "mentions_title"
+  "check:screen:4131": "mentions_title"
+  "check:screen:4151": "mentions_title"
+  "check:screen:4755": "mentions_title"
+  "check:screen:4765": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3527 - 차트 > 복수금리 비교2
 
@@ -133,3 +149,14 @@ source_locator: "target:check:screen:3527"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/채권/3741-3741-시가평가-채권그룹-기업별-Term-Structure|3741 - 시가평가 > 채권그룹 > 기업별 Term Structure]] (mentions_tr)
+- [[check-expert/새로운-모습/채권/3430-3430-시가평가-채권그룹-Matrix-종합|3430 - 시가평가 > 채권그룹 > Matrix 종합]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3527-3527-차트-복수금리-비교2|3527 - 차트 > 복수금리 비교2]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3774-3774-차트-Yield-Spread(추이)|3774 - 차트 > Yield Spread(추이)]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4131-4131-체결(실시간)|4131 - 체결(실시간)]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4151-4151-종목일중|4151 - 종목일중]] (mentions_title)
+- [[check-expert/새로운-모습/옵션/4755-4755-관심전략비교|4755 - 관심전략비교]] (mentions_title)
+- [[check-expert/새로운-모습/옵션/4765-4765-합성손익|4765 - 합성손익]] (mentions_title)

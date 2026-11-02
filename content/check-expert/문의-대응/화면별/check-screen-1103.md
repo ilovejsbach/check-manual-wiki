@@ -11,9 +11,15 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:1103"
 related_ids:
   - "check:screen:1103"
+  - "check:screen:1002"
+  - "check:screen:3931"
 review_status: "candidate"
 signal_count: 5
 source_locator: "target:check:screen:1103"
+relationship_types:
+  "check:screen:1002": "mentions_title"
+  "check:screen:1103": "mentions_title"
+  "check:screen:3931": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 1103 - 지수편집
 
@@ -77,3 +83,9 @@ source_locator: "target:check:screen:1103"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/종합/1002-1002-세계지수종합|1002 - 세계지수종합]] (mentions_title)
+- [[check-expert/새로운-모습/종합/1103-1103-지수편집|1103 - 지수편집]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3931-3931-해외금리-해외국채-국가별|3931 - 해외금리 > 해외국채 국가별]] (mentions_title)

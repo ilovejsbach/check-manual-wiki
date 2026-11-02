@@ -13,6 +13,16 @@ review_status: "candidate"
 mapping_status: "unmapped"
 signal_count: 19
 source_locator: "topic:ETP"
+related_ids:
+  - "check:screen:3267"
+  - "check:screen:4659"
+  - "check:screen:4703"
+  - "check:screen:4731"
+relationship_types:
+  "check:screen:3267": "mentions_title"
+  "check:screen:4659": "mentions_title"
+  "check:screen:4703": "mentions_title"
+  "check:screen:4731": "mentions_title"
 ---
 # 공식 문서 연결 대기 — ETP
 
@@ -163,3 +173,10 @@ source_locator: "topic:ETP"
 - [ ] 기존 문서 연결과 신규 문서 생성 중 적절한 경로를 결정했는가
 - [ ] 공식 근거 또는 실제 동작 증거를 확보했는가
 - [ ] 식별정보와 내부 전용 정보가 남아 있지 않은가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/채권/3267-3267-투자자-(장외)종류-투자자-잔고종합|3267 - 투자자 > (장외)종류/투자자 잔고종합]] (mentions_title)
+- [[check-expert/새로운-모습/옵션/4659-4659-협의거래(종목)|4659 - 협의거래(종목)]] (mentions_title)
+- [[check-expert/새로운-모습/옵션/4703-4703-기술적지표|4703 - 기술적지표]] (mentions_title)
+- [[check-expert/새로운-모습/옵션/4731-4731-역사적변동성|4731 - 역사적변동성]] (mentions_title)

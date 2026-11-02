@@ -11,9 +11,17 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:2251"
 related_ids:
   - "check:screen:2251"
+  - "check:screen:1443"
+  - "check:screen:1211"
+  - "check:screen:2250"
 review_status: "candidate"
 signal_count: 5
 source_locator: "target:check:screen:2251"
+relationship_types:
+  "check:screen:1443": "mentions_tr"
+  "check:screen:1211": "mentions_title"
+  "check:screen:2250": "mentions_title"
+  "check:screen:2251": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 2251 - ETN 시세표
 
@@ -77,3 +85,10 @@ source_locator: "target:check:screen:2251"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/ETP/1443-1443-ETF-시세표|1443 - ETF 시세표]] (mentions_tr)
+- [[check-expert/새로운-모습/ELW/1211-1211-ELW-시세표|1211 - ELW 시세표]] (mentions_title)
+- [[check-expert/새로운-모습/ETP/2250-2250-ETN-현재가|2250 - ETN 현재가]] (mentions_title)
+- [[check-expert/새로운-모습/ETP/2251-2251-ETN-시세표|2251 - ETN 시세표]] (mentions_title)

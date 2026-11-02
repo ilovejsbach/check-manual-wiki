@@ -8,6 +8,56 @@ tags:
 source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:index"
 review_status: "candidate"
+related_ids:
+  - "check:screen:1002"
+  - "check:screen:1103"
+  - "check:screen:1147"
+  - "check:screen:1148"
+  - "check:screen:1149"
+  - "check:screen:1155"
+  - "check:screen:1160"
+  - "check:screen:1211"
+  - "check:screen:1300"
+  - "check:screen:1302"
+  - "check:screen:1318"
+  - "check:screen:1339"
+  - "check:screen:1340"
+  - "check:screen:1370"
+  - "check:screen:1379"
+  - "check:screen:1425"
+  - "check:screen:1440"
+  - "check:screen:1443"
+  - "check:screen:1448"
+  - "check:screen:1511"
+  - "check:screen:1531"
+  - "check:screen:1542"
+  - "check:screen:1547"
+  - "check:screen:1584"
+relationship_types:
+  "check:screen:1002": "mentions_title"
+  "check:screen:1103": "mentions_title"
+  "check:screen:1147": "mentions_title"
+  "check:screen:1148": "mentions_title"
+  "check:screen:1149": "mentions_title"
+  "check:screen:1155": "mentions_title"
+  "check:screen:1160": "mentions_title"
+  "check:screen:1211": "mentions_title"
+  "check:screen:1300": "mentions_title"
+  "check:screen:1302": "mentions_title"
+  "check:screen:1318": "mentions_title"
+  "check:screen:1339": "mentions_title"
+  "check:screen:1340": "mentions_title"
+  "check:screen:1370": "mentions_title"
+  "check:screen:1379": "mentions_title"
+  "check:screen:1425": "mentions_title"
+  "check:screen:1440": "mentions_title"
+  "check:screen:1443": "mentions_title"
+  "check:screen:1448": "mentions_title"
+  "check:screen:1511": "mentions_title"
+  "check:screen:1531": "mentions_title"
+  "check:screen:1542": "mentions_title"
+  "check:screen:1547": "mentions_title"
+  "check:screen:1584": "mentions_title"
 ---
 # 문의 대응 지식
 
@@ -15,8 +65,8 @@ review_status: "candidate"
 
 ## 문의 유형으로 찾기
 
-- [[check-expert/문의-대응/faq/index|질문과 답변]] (343건)
-- [[check-expert/문의-대응/procedure/index|사용 절차]] (720건)
+- [[check-expert/문의-대응/faq/index|질문과 답변]] (340건)
+- [[check-expert/문의-대응/procedure/index|사용 절차]] (712건)
 - [[check-expert/문의-대응/troubleshooting/index|오류 해결]] (119건)
 - [[check-expert/문의-대응/caution/index|주의사항]] (23건)
 - [[check-expert/문의-대응/tip/index|활용 팁]] (23건)
@@ -71,8 +121,7 @@ review_status: "candidate"
 - **13건** — [[check-expert/문의-대응/화면별/check-screen-4199|4199 - 과거종목]]
 - **13건** — [[check-expert/문의-대응/화면별/check-screen-4338|4338 - 순매수일별]]
 - **13건** — [[check-expert/문의-대응/화면별/check-screen-5101|5101 - 달러-원>현재가]]
-- **12건** — [[check-expert/문의-대응/화면별/check-screen-1002-종합|1002 - 세계지수종합]]
-- **12건** — [[check-expert/문의-대응/화면별/check-screen-1002-해외|1002 - 세계지수종합]]
+- **24건** — [[check-expert/문의-대응/화면별/check-screen-1002|1002 - 세계지수종합]]
 - **12건** — [[check-expert/문의-대응/화면별/check-screen-3649|3649 - 발행정보 > 주요 > 일별 발행종목]]
 - **12건** — [[check-expert/문의-대응/화면별/check-screen-3703|3703 - 유통종합 > 건별 체결]]
 - **12건** — [[check-expert/문의-대응/화면별/check-screen-4110|4110 - 투자자현황]]
@@ -250,3 +299,30 @@ review_status: "candidate"
 - **1건** — [[check-expert/문의-대응/화면별/check-screen-6430|6430 - MSCI/FTSE>MSCI 종합]]
 - **1건** — [[check-expert/문의-대응/화면별/check-screen-6431|6431 - MSCI/FTSE>MSCI 비교]]
 - **1건** — [[check-expert/문의-대응/화면별/check-screen-6464|6464 - 글로벌ETF > 구성종목]]
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/종합/1002-1002-세계지수종합|1002 - 세계지수종합]] (mentions_title)
+- [[check-expert/새로운-모습/종합/1103-1103-지수편집|1103 - 지수편집]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1147-1147-KRX지수구성정보-서비스(업종별-지수정보)-1147|1147 - KRX지수구성정보 서비스(업종별 지수정보) - 1147]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1148-1148-KRX지수구성정보-서비스(지수구성종목-정보)-1148|1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1149-1149-KRX지수구성정보-서비스-(지수변동조치(CA)-내역)-1149|1149 - KRX지수구성정보 서비스 (지수변동조치(CA) 내역) - 1149]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1155-1155-K200-구성종목-등락기여도-1155|1155 - K200 구성종목 등락기여도 - 1155]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1160-1160-섹터종합|1160 - 섹터종합]] (mentions_title)
+- [[check-expert/새로운-모습/ELW/1211-1211-ELW-시세표|1211 - ELW 시세표]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1300-1300-주식현재가|1300 - 주식현재가]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1302-1302-당일시세예측|1302 - 당일시세예측]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1318-1318-시간대별-평균|1318 - 시간대별 평균]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1339-1339-종목(지수)-스프레드|1339 - 종목(지수) 스프레드]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1340-1340-종류주식-스프레드|1340 - 종류주식 스프레드]] (mentions_title)
+- [[check-expert/새로운-모습/관심/1370-1370-관심종목-평가|1370 - 관심종목 평가]] (mentions_title)
+- [[check-expert/새로운-모습/관심/1379-1379-관심종목-160|1379 - 관심종목 160]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1425-1425-시간외단일가-시세표|1425 - 시간외단일가 시세표]] (mentions_title)
+- [[check-expert/새로운-모습/ETP/1440-1440-ETF-현재가|1440 - ETF 현재가]] (mentions_title)
+- [[check-expert/새로운-모습/ETP/1443-1443-ETF-시세표|1443 - ETF 시세표]] (mentions_title)
+- [[check-expert/새로운-모습/ETP/1448-1448-ETF-구성종목(PDF)|1448 - ETF 구성종목(PDF)]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1511-1511-제한폭등락-연속등락|1511 - 제한폭등락/연속등락]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1531-1531-섹터별-시세분석|1531 - 섹터별 시세분석]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1542-1542-업종내-구성종목의-상대성과|1542 - 업종내 구성종목의 상대성과]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1547-1547-역사적변동성|1547 - 역사적변동성]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1584-1584-업종구성종목-베타|1584 - 업종구성종목 베타]] (mentions_title)

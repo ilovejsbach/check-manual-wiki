@@ -11,9 +11,13 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:6315"
 related_ids:
   - "check:screen:6315"
+  - "check:screen:6316"
 review_status: "candidate"
 signal_count: 2
 source_locator: "target:check:screen:6315"
+relationship_types:
+  "check:screen:6315": "mentions_title"
+  "check:screen:6316": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 6315 - 세계경제지표
 
@@ -53,3 +57,8 @@ source_locator: "target:check:screen:6315"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/해외/6315-6315-세계경제지표|6315 - 세계경제지표]] (mentions_title)
+- [[check-expert/새로운-모습/해외/6316-6316-경제지표-(실시간)세계경제지표|6316 - 경제지표 > (실시간)세계경제지표]] (mentions_title)

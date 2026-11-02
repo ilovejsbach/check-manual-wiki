@@ -11,9 +11,27 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:4151"
 related_ids:
   - "check:screen:4151"
+  - "check:screen:1318"
+  - "check:screen:3430"
+  - "check:screen:3527"
+  - "check:screen:4131"
+  - "check:screen:4171"
+  - "check:screen:4189"
+  - "check:screen:4199"
+  - "check:screen:4333"
 review_status: "candidate"
 signal_count: 17
 source_locator: "target:check:screen:4151"
+relationship_types:
+  "check:screen:4151": "mentions_tr"
+  "check:screen:1318": "mentions_title"
+  "check:screen:3430": "mentions_title"
+  "check:screen:3527": "mentions_title"
+  "check:screen:4131": "mentions_title"
+  "check:screen:4171": "mentions_title"
+  "check:screen:4189": "mentions_title"
+  "check:screen:4199": "mentions_title"
+  "check:screen:4333": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 4151 - 종목일중
 
@@ -133,3 +151,15 @@ source_locator: "target:check:screen:4151"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/선물/4151-4151-종목일중|4151 - 종목일중]] (mentions_tr)
+- [[check-expert/새로운-모습/주식/1318-1318-시간대별-평균|1318 - 시간대별 평균]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3430-3430-시가평가-채권그룹-Matrix-종합|3430 - 시가평가 > 채권그룹 > Matrix 종합]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3527-3527-차트-복수금리-비교2|3527 - 차트 > 복수금리 비교2]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4131-4131-체결(실시간)|4131 - 체결(실시간)]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4171-4171-종목일별|4171 - 종목일별]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4189-4189-일별편집|4189 - 일별편집]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4199-4199-과거종목|4199 - 과거종목]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4333-4333-투자자일중|4333 - 투자자일중]] (mentions_title)

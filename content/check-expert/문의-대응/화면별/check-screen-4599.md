@@ -11,9 +11,21 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:4599"
 related_ids:
   - "check:screen:4599"
+  - "check:screen:4193"
+  - "check:screen:4199"
+  - "check:screen:4501"
+  - "check:screen:4510"
+  - "check:screen:4611"
 review_status: "candidate"
 signal_count: 7
 source_locator: "target:check:screen:4599"
+relationship_types:
+  "check:screen:4193": "mentions_tr"
+  "check:screen:4599": "mentions_tr"
+  "check:screen:4199": "mentions_title"
+  "check:screen:4501": "mentions_title"
+  "check:screen:4510": "mentions_title"
+  "check:screen:4611": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 4599 - 과거종목
 
@@ -85,3 +97,12 @@ source_locator: "target:check:screen:4599"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/종합/4193-4193-옵션체결|4193 - 옵션체결]] (mentions_tr)
+- [[check-expert/새로운-모습/옵션/4599-4599-과거종목|4599 - 과거종목]] (mentions_tr)
+- [[check-expert/새로운-모습/선물/4199-4199-과거종목|4199 - 과거종목]] (mentions_title)
+- [[check-expert/새로운-모습/옵션/4501-4501-현재가1|4501 - 현재가1]] (mentions_title)
+- [[check-expert/새로운-모습/옵션/4510-4510-투자자현황|4510 - 투자자현황]] (mentions_title)
+- [[check-expert/새로운-모습/옵션/4611-4611-일별추이|4611 - 일별추이]] (mentions_title)

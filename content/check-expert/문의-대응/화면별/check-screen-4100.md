@@ -11,9 +11,20 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:4100"
 related_ids:
   - "check:screen:4100"
+  - "check:screen:4331"
+  - "check:screen:4204"
+  - "check:screen:4205"
+  - "check:screen:4336"
+  - "check:screen:4338"
 review_status: "candidate"
 signal_count: 4
 source_locator: "target:check:screen:4100"
+relationship_types:
+  "check:screen:4331": "mentions_tr"
+  "check:screen:4204": "mentions_title"
+  "check:screen:4205": "mentions_title"
+  "check:screen:4336": "mentions_title"
+  "check:screen:4338": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 4100 - KOSPI200
 
@@ -61,3 +72,11 @@ source_locator: "target:check:screen:4100"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/선물/4331-4331-현재가|4331 - 현재가]] (mentions_tr)
+- [[check-expert/새로운-모습/선물/4204-4204-일중비교|4204 - 일중비교]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4205-4205-일중순매수|4205 - 일중순매수]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4336-4336-일별|4336 - 일별]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4338-4338-순매수일별|4338 - 순매수일별]] (mentions_title)

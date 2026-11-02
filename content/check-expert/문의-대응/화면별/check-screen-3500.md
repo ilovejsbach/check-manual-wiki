@@ -11,9 +11,13 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:3500"
 related_ids:
   - "check:screen:3500"
+  - "check:screen:4501"
 review_status: "candidate"
 signal_count: 17
 source_locator: "target:check:screen:3500"
+relationship_types:
+  "check:screen:3500": "mentions_tr"
+  "check:screen:4501": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3500 - 시장종합 > 투자분석리포트
 
@@ -133,3 +137,8 @@ source_locator: "target:check:screen:3500"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/채권/3500-3500-시장종합-투자분석리포트|3500 - 시장종합 > 투자분석리포트]] (mentions_tr)
+- [[check-expert/새로운-모습/옵션/4501-4501-현재가1|4501 - 현재가1]] (mentions_title)

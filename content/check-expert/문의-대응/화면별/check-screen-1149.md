@@ -11,9 +11,15 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:1149"
 related_ids:
   - "check:screen:1149"
+  - "check:screen:1147"
+  - "check:screen:1148"
 review_status: "candidate"
 signal_count: 6
 source_locator: "target:check:screen:1149"
+relationship_types:
+  "check:screen:1147": "mentions_title"
+  "check:screen:1148": "mentions_title"
+  "check:screen:1149": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 1149 - KRX지수구성정보 서비스 (지수변동조치(CA) 내역) - 1149
 
@@ -85,3 +91,9 @@ source_locator: "target:check:screen:1149"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/주식/1147-1147-KRX지수구성정보-서비스(업종별-지수정보)-1147|1147 - KRX지수구성정보 서비스(업종별 지수정보) - 1147]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1148-1148-KRX지수구성정보-서비스(지수구성종목-정보)-1148|1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148]] (mentions_title)
+- [[check-expert/새로운-모습/주식/1149-1149-KRX지수구성정보-서비스-(지수변동조치(CA)-내역)-1149|1149 - KRX지수구성정보 서비스 (지수변동조치(CA) 내역) - 1149]] (mentions_title)

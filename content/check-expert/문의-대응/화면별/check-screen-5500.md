@@ -11,9 +11,15 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:5500"
 related_ids:
   - "check:screen:5500"
+  - "check:screen:5100"
+  - "check:screen:5101"
 review_status: "candidate"
 signal_count: 9
 source_locator: "target:check:screen:5500"
+relationship_types:
+  "check:screen:5100": "mentions_title"
+  "check:screen:5101": "mentions_title"
+  "check:screen:5500": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 5500 - 해외SPOT>종합화면
 
@@ -109,3 +115,9 @@ source_locator: "target:check:screen:5500"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/외환/5100-5100-달러-원-종합화면|5100 - 달러-원>종합화면]] (mentions_title)
+- [[check-expert/새로운-모습/외환/5101-5101-달러-원-현재가|5101 - 달러-원>현재가]] (mentions_title)
+- [[check-expert/새로운-모습/외환/5500-5500-해외SPOT-종합화면|5500 - 해외SPOT>종합화면]] (mentions_title)

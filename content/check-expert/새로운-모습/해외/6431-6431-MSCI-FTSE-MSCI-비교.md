@@ -17,6 +17,10 @@ aliases:
 source_pages: "801-801"
 category: "해외"
 screen_code: "6431"
+related_ids:
+  - "check:screen:6430"
+relationship_types:
+  "check:screen:6430": "related_screen"
 ---
 # 6431 - MSCI/FTSE>MSCI 비교
 
@@ -37,6 +41,10 @@ MSCI 지수를 지역별/국가별/섹터별/업종별 분류에 따라 조회�
 
 ### 화면 항목 4. 차트실행
 "차트실행" 버튼을 누르면 복수개의 차트가 그려집니다. (최대 12개까지 가능)
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/해외/6430-6430-MSCI-FTSE-MSCI-종합|6430 - MSCI/FTSE>MSCI 종합]] (related_screen)
 
 ## 원문 근거
 

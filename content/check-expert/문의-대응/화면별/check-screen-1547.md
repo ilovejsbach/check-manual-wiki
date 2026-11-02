@@ -11,9 +11,13 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:1547"
 related_ids:
   - "check:screen:1547"
+  - "check:screen:4254"
 review_status: "candidate"
 signal_count: 4
 source_locator: "target:check:screen:1547"
+relationship_types:
+  "check:screen:1547": "mentions_title"
+  "check:screen:4254": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 1547 - 역사적변동성
 
@@ -69,3 +73,8 @@ source_locator: "target:check:screen:1547"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/주식/1547-1547-역사적변동성|1547 - 역사적변동성]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4254-4254-선물옵션연계|4254 - 선물옵션연계]] (mentions_title)

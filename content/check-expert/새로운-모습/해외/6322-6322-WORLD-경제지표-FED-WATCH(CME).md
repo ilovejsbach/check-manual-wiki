@@ -17,6 +17,10 @@ aliases:
 source_pages: "815-816"
 category: "해외"
 screen_code: "6322"
+related_ids:
+  - "check:screen:6321"
+relationship_types:
+  "check:screen:6321": "mentions_tr"
 ---
 # 6322 - WORLD/경제지표 > FED WATCH(CME)
 
@@ -30,6 +34,10 @@ screen_code: "6322"
 
 ### 화면 항목 2. FED DOT PLOT을 제공합니다.## 관련 화면
 - TR 6321 — WORLD/경제지표 > FED DOT PLOT
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/해외/6321-6321-WORLD-경제지표-FED-DOT-PLOT|6321 - WORLD/경제지표 > FED DOT PLOT]] (mentions_tr)
 
 ## 원문 근거
 

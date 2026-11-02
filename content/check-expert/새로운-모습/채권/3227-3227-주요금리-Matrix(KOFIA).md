@@ -17,6 +17,14 @@ aliases:
 source_pages: "606-607"
 category: "채권"
 screen_code: "3227"
+related_ids:
+  - "check:screen:3430"
+  - "check:screen:3431"
+  - "check:screen:3432"
+relationship_types:
+  "check:screen:3430": "mentions_title"
+  "check:screen:3431": "related_screen"
+  "check:screen:3432": "related_screen"
 ---
 # 3227 - 주요금리 > Matrix(KOFIA)
 
@@ -41,11 +49,10 @@ screen_code: "3227"
 - 2009/11/02 전 : 금융투자협회시장수익률
 - 2009/11/02 이후 : 채권평가사 3사(KIS, NICE, 한국) 평균- 2012/04/02 이후 : 채권평가사 4사(KIS, NICE, 한국, FN) 평균
 ## 관련 화면
-- TR 3430 — 시가평가 > 채권그룹 > Matrix 종합
-- TR 3431 — 시가평가 > 채권그룹 > 일별추이
-- TR 3432 — 시가평가 > 채권그룹 > 스프레드
-3228
-3884
+
+- [[check-expert/새로운-모습/채권/3430-3430-시가평가-채권그룹-Matrix-종합|3430 - 시가평가 > 채권그룹 > Matrix 종합]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3431-3431-시가평가-채권그룹-일별추이|3431 - 시가평가 > 채권그룹 > 일별추이]] (related_screen)
+- [[check-expert/새로운-모습/채권/3432-3432-시가평가-채권그룹-스프레드|3432 - 시가평가 > 채권그룹 > 스프레드]] (related_screen)
 
 ## 원문 근거
 

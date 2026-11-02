@@ -11,9 +11,15 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:1379"
 related_ids:
   - "check:screen:1379"
+  - "check:screen:1300"
+  - "check:screen:4386"
 review_status: "candidate"
 signal_count: 14
 source_locator: "target:check:screen:1379"
+relationship_types:
+  "check:screen:1379": "mentions_tr"
+  "check:screen:1300": "mentions_title"
+  "check:screen:4386": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 1379 - 관심종목 160
 
@@ -133,3 +139,9 @@ source_locator: "target:check:screen:1379"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/관심/1379-1379-관심종목-160|1379 - 관심종목 160]] (mentions_tr)
+- [[check-expert/새로운-모습/주식/1300-1300-주식현재가|1300 - 주식현재가]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4386-4386-틱차트|4386 - 틱차트]] (mentions_title)

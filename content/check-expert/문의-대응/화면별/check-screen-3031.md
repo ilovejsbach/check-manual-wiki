@@ -11,9 +11,19 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:3031"
 related_ids:
   - "check:screen:3031"
+  - "check:screen:3046"
+  - "check:screen:3022"
+  - "check:screen:3035"
+  - "check:screen:3066"
 review_status: "candidate"
 signal_count: 13
 source_locator: "target:check:screen:3031"
+relationship_types:
+  "check:screen:3031": "mentions_tr"
+  "check:screen:3046": "mentions_tr"
+  "check:screen:3022": "mentions_title"
+  "check:screen:3035": "mentions_title"
+  "check:screen:3066": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3031 - 발행통계 > 추이
 
@@ -133,3 +143,11 @@ source_locator: "target:check:screen:3031"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/채권/3031-3031-발행통계-추이|3031 - 발행통계 > 추이]] (mentions_tr)
+- [[check-expert/새로운-모습/채권/3046-3046-단기자금-전단채-전자단기사채-발행통계|3046 - 단기자금 > 전단채 > 전자단기사채 발행통계]] (mentions_tr)
+- [[check-expert/새로운-모습/채권/3022-3022-발행정보-주요-종목검색|3022 - 발행정보 > 주요 > 종목검색]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3035-3035-발행통계-발행기관별-종합(상세)|3035 - 발행통계 > 발행기관별 종합(상세)]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3066-3066-단기자금-CD-CP-CP-발행통계(예탁원)|3066 - 단기자금 > CD/CP > CP 발행통계(예탁원)]] (mentions_title)

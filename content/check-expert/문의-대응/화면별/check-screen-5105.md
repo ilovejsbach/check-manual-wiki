@@ -14,6 +14,8 @@ related_ids:
 review_status: "candidate"
 signal_count: 1
 source_locator: "target:check:screen:5105"
+relationship_types:
+  "check:screen:5105": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 5105 - 달러-원>주요환율비교
 
@@ -45,3 +47,7 @@ source_locator: "target:check:screen:5105"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/외환/5105-5105-달러-원-주요환율비교|5105 - 달러-원>주요환율비교]] (mentions_title)

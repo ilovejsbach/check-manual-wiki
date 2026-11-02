@@ -11,9 +11,21 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:3744"
 related_ids:
   - "check:screen:3744"
+  - "check:screen:3471"
+  - "check:screen:3743"
+  - "check:screen:4284"
+  - "check:screen:4753"
+  - "check:screen:6432"
 review_status: "candidate"
 signal_count: 7
 source_locator: "target:check:screen:3744"
+relationship_types:
+  "check:screen:3744": "mentions_tr"
+  "check:screen:3471": "mentions_title"
+  "check:screen:3743": "mentions_title"
+  "check:screen:4284": "mentions_title"
+  "check:screen:4753": "mentions_title"
+  "check:screen:6432": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3744 - 시가평가 > CD/CP > CD/CP 등급별 수익률 추이
 
@@ -93,3 +105,12 @@ source_locator: "target:check:screen:3744"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/채권/3744-3744-시가평가-CD-CP-CD-CP-등급별-수익률-추이|3744 - 시가평가 > CD/CP > CD/CP 등급별 수익률 추이]] (mentions_tr)
+- [[check-expert/새로운-모습/채권/3471-3471-단가계산-발행종목|3471 - 단가계산 > 발행종목]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3743-3743-시가평가-CD-CP-CD-CP-등급별-수익률|3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률]] (mentions_title)
+- [[check-expert/새로운-모습/선물/4284-4284-일별순매수|4284 - 일별순매수]] (mentions_title)
+- [[check-expert/새로운-모습/옵션/4753-4753-이론가차트|4753 - 이론가차트]] (mentions_title)
+- [[check-expert/새로운-모습/해외/6432-6432-MSCI-FTSE-지역-국가|6432 - MSCI/FTSE>지역/국가]] (mentions_title)

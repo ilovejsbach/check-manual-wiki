@@ -11,9 +11,15 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:3082"
 related_ids:
   - "check:screen:3082"
+  - "check:screen:3101"
+  - "check:screen:3703"
 review_status: "candidate"
 signal_count: 3
 source_locator: "target:check:screen:3082"
+relationship_types:
+  "check:screen:3082": "mentions_title"
+  "check:screen:3101": "mentions_title"
+  "check:screen:3703": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3082 - 장내국채 > 현재가
 
@@ -61,3 +67,9 @@ source_locator: "target:check:screen:3082"
 - [ ] 금융 해석이 필요한 문장은 금융 전문가가 검토했는가
 - [ ] 고객·직원·기관 식별정보가 남아 있지 않은가
 - [ ] 충돌하거나 미확인된 내용을 공식 사실과 분리했는가
+
+## 관련 화면
+
+- [[check-expert/새로운-모습/채권/3082-3082-장내국채-현재가|3082 - 장내국채 > 현재가]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3101-3101-시장종합-국채시장|3101 - 시장종합 > 국채시장]] (mentions_title)
+- [[check-expert/새로운-모습/채권/3703-3703-유통종합-건별-체결|3703 - 유통종합 > 건별 체결]] (mentions_title)
