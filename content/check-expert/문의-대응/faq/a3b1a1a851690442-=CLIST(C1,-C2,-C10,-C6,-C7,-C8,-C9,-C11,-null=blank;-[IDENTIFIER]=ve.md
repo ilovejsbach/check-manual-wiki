@@ -1,27 +1,27 @@
 ---
-title: "질문과 답변 — =CLIST(C1, C2, C10, C6, C7, C8, C9, C11, \"null=blank; [IDENTIFIER]=ve…"
-description: "투자자·회원사 매매·보유 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — =CLIST(C1, C2, C10, C6, C7, C8, C9, C11, "null=blank; [IDENTIFIER]=ve…
+description: 투자자·회원사 매매·보유 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "투자자·회원사 매매·보유"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:a3b1a1a851690442"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 투자자·회원사 매매·보유
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:a3b1a1a851690442
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "투자자·회원사 매매·보유"
+- faq
+case_topic: 투자자·회원사 매매·보유
 case_topics:
-  - "투자자·회원사 매매·보유"
+- 투자자·회원사 매매·보유
 related_ids:
-  - "check:enrichment:unmapped:b9f8ede83d20"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:1364"
-candidate_id: "manual-candidate:VOC-01362"
+- check:tr:1175
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:1364
+candidate_id: manual-candidate:VOC-01362
 ---
 # 질문과 답변 — =CLIST(C1, C2, C10, C6, C7, C8, C9, C11, "null=blank; [IDENTIFIER]=ve…
 
@@ -35,8 +35,12 @@ candidate_id: "manual-candidate:VOC-01362"
 
 주식시장 거래소구분 코드 1175 - 0 (KRX, [IDENTIFIER]) 1175 - 1 (NXT) 1175 - 2 (통합)
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/tr-후보/1175|TR 1175 (화면 문서 없음)]]
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CLIST 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 투자자·회원사 매매·보유

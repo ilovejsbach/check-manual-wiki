@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — 답변 감사합니다. 몇가지 추가적으로 여쭤볼게 있어 문의 남깁니다. 1. 만약 장 중 체결이 발생하면 체결된 가격을 토대로 기…"
-description: "4571 - 종목일별 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 답변 감사합니다. 몇가지 추가적으로 여쭤볼게 있어 문의 남깁니다. 1. 만약 장 중 체결이 발생하면 체결된 가격을 토대로
+  기…
+description: 4571 - 종목일별 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4571 - 종목일별"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:6b1cbfff6127afbe"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4571 - 종목일별
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:6b1cbfff6127afbe
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4571 - 종목일별"
+- procedure
+- faq
+case_topic: 4571 - 종목일별
 case_topics:
-  - "4571 - 종목일별"
+- 4571 - 종목일별
 related_ids:
-  - "check:screen:4571"
-  - "check:enrichment:screen:4571"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:2815"
-candidate_id: "manual-candidate:CRM-02813"
+- check:enrichment:screen:4571
+- check:screen:4571
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:2815
+candidate_id: manual-candidate:CRM-02813
 ---
 # 사용 절차 — 답변 감사합니다. 몇가지 추가적으로 여쭤볼게 있어 문의 남깁니다. 1. 만약 장 중 체결이 발생하면 체결된 가격을 토대로 기…
 
@@ -37,8 +38,11 @@ candidate_id: "manual-candidate:CRM-02813"
 
 1. 만약 장 중 체결이 발생하면 체결된 가격을 토대로 기준가가 산정되는 걸까요? → 그걸 원칙으로 하지만, 변경도 가능합니다. 거래소 내부 기준에 따릅니다. 2. 오늘 내재변동성은 오늘 현재가 기준으로 산출된다 하셨는데, 티커 C016C800의 경우로 예를 들면 8/25 내재변동성 56.1%는 기준가 23.00으로 산출되는 것인가요? 같은 맥락으로 8/24 내재변동성 52.0%는 기준가 25.45로 산정되는것인지 문의드립니다. → 8/25일은 기준가가 아닌 종가 기준으로 산출합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4571 - 종목일별

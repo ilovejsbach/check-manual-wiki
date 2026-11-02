@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — check 단말기에서 [IDENTIFIER] 선물의 과거(2006~2010)년 데이터를 조회할 수 있나요? 가능하다면 방법이…"
-description: "4151 - 종목일중 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — check 단말기에서 [IDENTIFIER] 선물의 과거(2006~2010)년 데이터를 조회할 수 있나요? 가능하다면 방법이…
+description: 4151 - 종목일중 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4151 - 종목일중"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:bb062f94bcb19c92"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4151 - 종목일중
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:bb062f94bcb19c92
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4151 - 종목일중"
+- procedure
+- faq
+case_topic: 4151 - 종목일중
 case_topics:
-  - "4151 - 종목일중"
+- 4151 - 종목일중
 related_ids:
-  - "check:screen:4151"
-  - "check:enrichment:screen:4151"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4094"
-candidate_id: "manual-candidate:CRM-04092"
+- check:enrichment:screen:4151
+- check:screen:4151
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4094
+candidate_id: manual-candidate:CRM-04092
 ---
 # 사용 절차 — check 단말기에서 [IDENTIFIER] 선물의 과거(2006~2010)년 데이터를 조회할 수 있나요? 가능하다면 방법이…
 
@@ -37,8 +37,11 @@ check 단말기에서 [IDENTIFIER] 선물의 과거(2006~2010)년 데이터를 �
 
 안녕하세요. [IDENTIFIER]+ 입니다. 선물 데이터의 일중 데이터를 말씀하시는거면, 저희도 데이터를 가지고 있지 않습니다. 용량 문제로 일중 데이터는 상품마다 30일 ~ 12개월 정도의 기간만 저장하고 있습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4151 - 종목일중

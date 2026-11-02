@@ -1,28 +1,27 @@
 ---
-title: "오류 해결 — 본체 O/S 오류"
-description: "요구-오류/장애 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — 본체 O/S 오류
+description: 요구-오류/장애 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "요구-오류/장애"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:b5b490ec9ab83ad1"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 요구-오류/장애
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:b5b490ec9ab83ad1
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "caution"
-case_topic: "요구-오류/장애"
+- troubleshooting
+- caution
+case_topic: 요구-오류/장애
 case_topics:
-  - "요구-오류/장애"
-related_ids:
-  - "check:enrichment:unmapped:32a69f6bf9d9"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:72"
-candidate_id: "manual-candidate:CRM-00070"
+- 요구-오류/장애
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:72
+candidate_id: manual-candidate:CRM-00070
 ---
 # 오류 해결 — 본체 O/S 오류
 
@@ -36,8 +35,11 @@ candidate_id: "manual-candidate:CRM-00070"
 
 본체 교체
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 주의사항
 - 업무·주제: 요구-오류/장애

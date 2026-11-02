@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — KTB 10선물의 최종결제가격을 볼 수 있는 화면이 있을까요? [PHONE] / [PHONE]"
-description: "4199 - 과거종목 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — KTB 10선물의 최종결제가격을 볼 수 있는 화면이 있을까요? [PHONE] / [PHONE]
+description: 4199 - 과거종목 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4199 - 과거종목"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:158a9c923c090934"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4199 - 과거종목
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:158a9c923c090934
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4199 - 과거종목"
+- procedure
+- faq
+case_topic: 4199 - 과거종목
 case_topics:
-  - "4199 - 과거종목"
+- 4199 - 과거종목
 related_ids:
-  - "check:screen:4199"
-  - "check:enrichment:screen:4199"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:5792"
-candidate_id: "manual-candidate:CRM-05790"
+- check:screen:4199
+- check:enrichment:screen:4199
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:5792
+candidate_id: manual-candidate:CRM-05790
 ---
 # 사용 절차 — KTB 10선물의 최종결제가격을 볼 수 있는 화면이 있을까요? [PHONE] / [PHONE]
 
@@ -37,8 +37,11 @@ KTB 10선물의 최종결제가격을 볼 수 있는 화면이 있을까요? [PH
 
 안녕하세요. [IDENTIFIER]+ 입니다. 최종결제가격을 볼 수 있는 화면은 존재하지 않습니다. 다만, 4199화면에서 상장폐지된 종목들이 조회가 가능한데요, 조회하고 싶은 종목을 선택한 뒤 화면 상단에서 [베이시스] 버튼을 클릭하면 하단에서 '정산가' 항목이 존재합니다. 그러나, 이 방식으로 조회되는 최종거래일의 '정산가'와 '최종결제가격'이 일치하는지는 답변드리기 어렵습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/선물/4199-4199-과거종목|4199 - 과거종목]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4199 - 과거종목

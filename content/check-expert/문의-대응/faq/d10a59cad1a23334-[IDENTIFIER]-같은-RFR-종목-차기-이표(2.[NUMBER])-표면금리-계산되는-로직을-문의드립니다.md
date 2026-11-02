@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — [IDENTIFIER] 같은 RFR 종목 차기 이표(2.[NUMBER]) 표면금리 계산되는 로직을 문의드립니다."
-description: "3005 - 발행정보 > 주요 > 종목별 현금흐름 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — [IDENTIFIER] 같은 RFR 종목 차기 이표(2.[NUMBER]) 표면금리 계산되는 로직을 문의드립니다.
+description: 3005 - 발행정보 > 주요 > 종목별 현금흐름 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "3005 - 발행정보 > 주요 > 종목별 현금흐름"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:d10a59cad1a23334"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 3005 - 발행정보 > 주요 > 종목별 현금흐름
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:d10a59cad1a23334
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "3005 - 발행정보 > 주요 > 종목별 현금흐름"
+- faq
+case_topic: 3005 - 발행정보 > 주요 > 종목별 현금흐름
 case_topics:
-  - "3005 - 발행정보 > 주요 > 종목별 현금흐름"
+- 3005 - 발행정보 > 주요 > 종목별 현금흐름
 related_ids:
-  - "check:screen:3005"
-  - "check:enrichment:screen:3005"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3649"
-candidate_id: "manual-candidate:CRM-03647"
+- check:enrichment:screen:3005
+- check:screen:3005
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3649
+candidate_id: manual-candidate:CRM-03647
 ---
 # 질문과 답변 — [IDENTIFIER] 같은 RFR 종목 차기 이표(2.[NUMBER]) 표면금리 계산되는 로직을 문의드립니다.
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-03647"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 3000번 발행정보화면에서 확인가능하듯이 FRN 기준금리 산정방식에 따라 [IDENTIFIER] [IDENTIFIER] [IDENTIFIER] SHIFT(5영업일) 방식으로 계산됩니다. 상세 내용은 해당 종목의 투자설명서를 참고 부탁드립니다. 계산된 금리와 예탁결제원에 보고된 금리 등을 크로스체크하여 확정합니다. 혹, 표면금리에 이상이 있다고 생각되실 경우 추가 문의 남겨주시면 확인 후 답변드리겠습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3005 - 발행정보 > 주요 > 종목별 현금흐름

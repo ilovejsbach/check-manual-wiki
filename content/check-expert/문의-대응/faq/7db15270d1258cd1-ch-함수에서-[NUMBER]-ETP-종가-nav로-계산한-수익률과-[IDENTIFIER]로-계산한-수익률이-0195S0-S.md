@@ -1,27 +1,27 @@
 ---
-title: "질문과 답변 — ch 함수에서 [NUMBER] ETP 종가 nav로 계산한 수익률과 [IDENTIFIER]로 계산한 수익률이 0195S0 S…"
-description: "펀드·ETF 구성·운용정보 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — ch 함수에서 [NUMBER] ETP 종가 nav로 계산한 수익률과 [IDENTIFIER]로 계산한 수익률이 0195S0
+  S…
+description: 펀드·ETF 구성·운용정보 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "펀드·ETF 구성·운용정보"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:7db15270d1258cd1"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 펀드·ETF 구성·운용정보
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:7db15270d1258cd1
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "펀드·ETF 구성·운용정보"
+- faq
+case_topic: 펀드·ETF 구성·운용정보
 case_topics:
-  - "펀드·ETF 구성·운용정보"
-related_ids:
-  - "check:enrichment:unmapped:ee6126df39aa"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:1045"
-candidate_id: "manual-candidate:VOC-01043"
+- 펀드·ETF 구성·운용정보
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:1045
+candidate_id: manual-candidate:VOC-01043
 ---
 # 질문과 답변 — ch 함수에서 [NUMBER] ETP 종가 nav로 계산한 수익률과 [IDENTIFIER]로 계산한 수익률이 0195S0 S…
 
@@ -35,8 +35,11 @@ ch 함수에서 [NUMBER] ETP 종가 nav로 계산한 수익률과 [IDENTIFIER]�
 
 $$
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 펀드·ETF 구성·운용정보

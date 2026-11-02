@@ -1,28 +1,29 @@
 ---
-title: "사용 절차 — ETF 자금 동향 관련, ETF 자금 유출입 금액을 자산군별(주식, 채권, 원자재 ETF 등)로 나눠서 기간(월, 연간) 단…"
-description: "복합 데이터 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — ETF 자금 동향 관련, ETF 자금 유출입 금액을 자산군별(주식, 채권, 원자재 ETF 등)로 나눠서 기간(월, 연간)
+  단…
+description: 복합 데이터 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "복합 데이터"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:3bbb1d41e92cfb40"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 복합 데이터
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:3bbb1d41e92cfb40
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "복합 데이터"
+- procedure
+- faq
+case_topic: 복합 데이터
 case_topics:
-  - "복합 데이터"
+- 복합 데이터
 related_ids:
-  - "check:enrichment:unmapped:5f12703cdf12"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:823"
-candidate_id: "manual-candidate:VOC-00821"
+- check:tr:1457
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:823
+candidate_id: manual-candidate:VOC-00821
 ---
 # 사용 절차 — ETF 자금 동향 관련, ETF 자금 유출입 금액을 자산군별(주식, 채권, 원자재 ETF 등)로 나눠서 기간(월, 연간) 단…
 
@@ -36,8 +37,11 @@ ETF 자금 동향 관련, ETF 자금 유출입 금액을 자산군별(주식, �
 
 안녕하세요. [IDENTIFIER]+ 입니다. 문의하신 내용 답변 드립니다. 1) 자산군별 자금 동향은 1457 화면에서 확인하실 수 있습니다. 상단 메뉴 중 둘째줄 중 가운데쯤에 자산군(주식, 채권, 원자재, 부동산 등)을 선택할 수 있게 돼 있습니다. 우측으로 일별, 주별, 월별로 기간을 설정하실 수 있습니다. 2) API 신청은 1:1문의로 남겨주시면 선택옵션으로 추가 계약을 진행하게 됩니다. 먼저 사용할 수 있게 승인해드리고, 사용료는 익월부터 청구됩니다. 가격 등 정보는 CHECK API 홈페이지인 https://[IDENTIFIER].[REDACTED_ENTITY].co.kr/에서 이용요금을 확인해 주시기 바랍니다. 거래소 유동시총 비중 관[PERSON] 담당자가 월요일에 연락 드리도록 하겠습니다. 3) 체크 단말기 교육 오프라인 교육 가능합니다. 원하시는 요일과 시간대를 남겨주시면 일정 잡아드리도록 하겠습니다. 추가로 업무와 필요하신 화면 등을 알려주시면 필요하신 내용으로 교육을 준비해드릴 수 있습니다. 감사합니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/tr-후보/1457|TR 1457 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 복합 데이터

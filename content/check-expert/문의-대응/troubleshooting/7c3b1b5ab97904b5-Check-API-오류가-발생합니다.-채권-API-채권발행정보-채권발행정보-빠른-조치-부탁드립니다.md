@@ -1,29 +1,28 @@
 ---
-title: "오류 해결 — Check API 오류가 발생합니다. 채권-API - 채권발행정보 - 채권발행정보 빠른 조치 부탁드립니다."
-description: "금리·채권 발행·평가 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — Check API 오류가 발생합니다. 채권-API - 채권발행정보 - 채권발행정보 빠른 조치 부탁드립니다.
+description: 금리·채권 발행·평가 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "금리·채권 발행·평가"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:7c3b1b5ab97904b5"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 금리·채권 발행·평가
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:7c3b1b5ab97904b5
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "caution"
-  - "faq"
-case_topic: "금리·채권 발행·평가"
+- troubleshooting
+- caution
+- faq
+case_topic: 금리·채권 발행·평가
 case_topics:
-  - "금리·채권 발행·평가"
-related_ids:
-  - "check:enrichment:unmapped:d04e710dcd7a"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:390"
-candidate_id: "manual-candidate:VOC-00388"
+- 금리·채권 발행·평가
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:390
+candidate_id: manual-candidate:VOC-00388
 ---
 # 오류 해결 — Check API 오류가 발생합니다. 채권-API - 채권발행정보 - 채권발행정보 빠른 조치 부탁드립니다.
 
@@ -37,8 +36,11 @@ Check API 오류가 발생합니다. 채권-API - 채권발행정보 - 채권발
 
 $$
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 주의사항, 질문과 답변
 - 업무·주제: 금리·채권 발행·평가

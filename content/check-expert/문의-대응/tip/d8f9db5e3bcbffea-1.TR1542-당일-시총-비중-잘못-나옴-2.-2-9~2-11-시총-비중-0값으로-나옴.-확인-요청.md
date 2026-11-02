@@ -1,28 +1,28 @@
 ---
-title: "활용 팁 — 1.TR1542 당일 시총 비중 잘못 나옴 2. 2/9~2/11 시총 비중 0값으로 나옴. 확인 요청"
-description: "1542 - 업종내 구성종목의 상대성과 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보."
+title: 활용 팁 — 1.TR1542 당일 시총 비중 잘못 나옴 2. 2/9~2/11 시총 비중 0값으로 나옴. 확인 요청
+description: 1542 - 업종내 구성종목의 상대성과 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "활용 팁"
-  - "검수 필요"
-  - "1542 - 업종내 구성종목의 상대성과"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:d8f9db5e3bcbffea"
-document_type: "support_case"
-case_type: "tip"
+- CHECK Expert
+- 문의 대응
+- 활용 팁
+- 검수 필요
+- 1542 - 업종내 구성종목의 상대성과
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:d8f9db5e3bcbffea
+document_type: support_case
+case_type: tip
 case_facets:
-  - "tip"
-case_topic: "1542 - 업종내 구성종목의 상대성과"
+- tip
+case_topic: 1542 - 업종내 구성종목의 상대성과
 case_topics:
-  - "1542 - 업종내 구성종목의 상대성과"
+- 1542 - 업종내 구성종목의 상대성과
 related_ids:
-  - "check:screen:1542"
-  - "check:enrichment:screen:1542"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:6444"
-candidate_id: "manual-candidate:CRM-06442"
+- check:screen:1542
+- check:enrichment:screen:1542
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:6444
+candidate_id: manual-candidate:CRM-06442
 ---
 # 활용 팁 — 1.TR1542 당일 시총 비중 잘못 나옴 2. 2/9~2/11 시총 비중 0값으로 나옴. 확인 요청
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-06442"
 
 [PERSON]님께 메일링 -수정 후 고객분께 해피콜 완료
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/주식/1542-1542-업종내-구성종목의-상대성과|1542 - 업종내 구성종목의 상대성과]]
+
+## 의미 분류
 - 대표 유형: **활용 팁**
 - 함께 볼 유형: 활용 팁
 - 업무·주제: 1542 - 업종내 구성종목의 상대성과

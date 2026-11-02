@@ -1,27 +1,26 @@
 ---
-title: "사용 절차 — [IDENTIFIER] 파인디앤씨12CB 전환가액이 3165로 변경되어 데이터 확인요청"
-description: "채권 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — [IDENTIFIER] 파인디앤씨12CB 전환가액이 3165로 변경되어 데이터 확인요청
+description: 채권 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "채권"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:73e8dabf540617a3"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 채권
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:73e8dabf540617a3
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-case_topic: "채권"
+- procedure
+case_topic: 채권
 case_topics:
-  - "채권"
-related_ids:
-  - "check:enrichment:unmapped:11200aac2497"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:1002"
-candidate_id: "manual-candidate:CRM-01000"
+- 채권
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:1002
+candidate_id: manual-candidate:CRM-01000
 ---
 # 사용 절차 — [IDENTIFIER] 파인디앤씨12CB 전환가액이 3165로 변경되어 데이터 확인요청
 
@@ -35,8 +34,11 @@ candidate_id: "manual-candidate:CRM-01000"
 
 공시 확인하여 수정 후 연락드림
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차
 - 업무·주제: 채권

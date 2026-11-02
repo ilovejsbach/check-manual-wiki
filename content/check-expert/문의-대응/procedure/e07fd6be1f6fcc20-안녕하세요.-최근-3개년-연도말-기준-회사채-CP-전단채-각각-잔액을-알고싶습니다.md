@@ -1,37 +1,38 @@
 ---
-title: "사용 절차 — 안녕하세요. 최근 3개년 연도말 기준 회사채/ CP / 전단채 각각 잔액을 알고싶습니다."
-description: "3031 - 발행통계 > 추이, 3046 - 단기자금 > 전단채 > 전자단기사채 발행통계, 3066 - 단기자금 > CD/CP > CP 발행통계(예탁원) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 안녕하세요. 최근 3개년 연도말 기준 회사채/ CP / 전단채 각각 잔액을 알고싶습니다.
+description: 3031 - 발행통계 > 추이, 3046 - 단기자금 > 전단채 > 전자단기사채 발행통계, 3066 - 단기자금 > CD/CP
+  > CP 발행통계(예탁원) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3031 - 발행통계 > 추이"
-  - "3046 - 단기자금 > 전단채 > 전자단기사채 발행통계"
-  - "3066 - 단기자금 > CD/CP > CP 발행통계(예탁원)"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:e07fd6be1f6fcc20"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3031 - 발행통계 > 추이
+- 3046 - 단기자금 > 전단채 > 전자단기사채 발행통계
+- 3066 - 단기자금 > CD/CP > CP 발행통계(예탁원)
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:e07fd6be1f6fcc20
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3031 - 발행통계 > 추이"
+- procedure
+- faq
+case_topic: 3031 - 발행통계 > 추이
 case_topics:
-  - "3031 - 발행통계 > 추이"
-  - "3046 - 단기자금 > 전단채 > 전자단기사채 발행통계"
-  - "3066 - 단기자금 > CD/CP > CP 발행통계(예탁원)"
+- 3031 - 발행통계 > 추이
+- 3046 - 단기자금 > 전단채 > 전자단기사채 발행통계
+- 3066 - 단기자금 > CD/CP > CP 발행통계(예탁원)
 related_ids:
-  - "check:screen:3031"
-  - "check:enrichment:screen:3031"
-  - "check:screen:3046"
-  - "check:enrichment:screen:3046"
-  - "check:screen:3066"
-  - "check:enrichment:screen:3066"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1352"
-candidate_id: "manual-candidate:CRM-01350"
+- check:screen:3031
+- check:screen:3046
+- check:enrichment:screen:3031
+- check:enrichment:screen:3046
+- check:enrichment:screen:3066
+- check:screen:3066
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1352
+candidate_id: manual-candidate:CRM-01350
 ---
 # 사용 절차 — 안녕하세요. 최근 3개년 연도말 기준 회사채/ CP / 전단채 각각 잔액을 알고싶습니다.
 
@@ -45,8 +46,12 @@ candidate_id: "manual-candidate:CRM-01350"
 
 안녕하세요. [IDENTIFIER]+ 입니다. TR 3031 채권 발행통계 추이 (종류별) 화면 좌측 상단 드롭다운 버튼 중 '년' 을 선택하시어 최근 3개년을 누르시고 우측 세 번째 드롭다운 버튼 중 '잔액' 을 고르신 후, 'ELS/DLS 포함' 체크 해제를 합니다. (※ ELS/DLS 포함을 원하실 경우 체크 박스 선택) TR 3046, 3066 전단채, CP 종합통계(신용등급별) 화면 우측 상단 구분값 중 '잔존' 선택하시어 보실 수 있습니다. 화면 하단 그리드의 '추이' 탭을 누르셔서 기간 고르시고 잔존 데이터를 확인하시면 되십니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/채권/3031-3031-발행통계-추이|3031 - 발행통계 > 추이]]
+- [[check-expert/새로운-모습/채권/3046-3046-단기자금-전단채-전자단기사채-발행통계|3046 - 단기자금 > 전단채 > 전자단기사채 발행통계]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3031 - 발행통계 > 추이, 3046 - 단기자금 > 전단채 > 전자단기사채 발행통계, 3066 - 단기자금 > CD/CP > CP 발행통계(예탁원)

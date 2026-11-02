@@ -1,28 +1,29 @@
 ---
-title: "질문과 답변 — 기존 다른 부서원이 쓰던 종목코드 중 [IDENTIFIER] 이라는 종목이 있는데 이건 어떤 환율을 의미하는지 궁금하고, 종…"
-description: "5103 - 달러-원>일별추이 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 기존 다른 부서원이 쓰던 종목코드 중 [IDENTIFIER] 이라는 종목이 있는데 이건 어떤 환율을 의미하는지 궁금하고,
+  종…
+description: 5103 - 달러-원>일별추이 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "5103 - 달러-원>일별추이"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:3748ae16b0ab150a"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 5103 - 달러-원>일별추이
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:3748ae16b0ab150a
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "5103 - 달러-원>일별추이"
+- faq
+case_topic: 5103 - 달러-원>일별추이
 case_topics:
-  - "5103 - 달러-원>일별추이"
+- 5103 - 달러-원>일별추이
 related_ids:
-  - "check:screen:5103"
-  - "check:enrichment:screen:5103"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:2631"
-candidate_id: "manual-candidate:CRM-02629"
+- check:enrichment:screen:5103
+- check:screen:5103
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:2631
+candidate_id: manual-candidate:CRM-02629
 ---
 # 질문과 답변 — 기존 다른 부서원이 쓰던 종목코드 중 [IDENTIFIER] 이라는 종목이 있는데 이건 어떤 환율을 의미하는지 궁금하고, 종…
 
@@ -36,8 +37,11 @@ candidate_id: "manual-candidate:CRM-02629"
 
 해당 종목은 종가 개념의 원달러 환율[REDACTED_ENTITY], 현재는 사용하지 않는 종목이기에 종목교체를 권장드립니다. 종목코드는 8112 등과 같은 화면에서 검색창을 통해 원하시는 종목을 클릭하셔서 종목코드를 알 수 있습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 5103 - 달러-원>일별추이

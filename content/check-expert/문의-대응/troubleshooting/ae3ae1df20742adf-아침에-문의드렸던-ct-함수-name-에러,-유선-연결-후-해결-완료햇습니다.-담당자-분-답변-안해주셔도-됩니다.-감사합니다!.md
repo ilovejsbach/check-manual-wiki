@@ -1,28 +1,27 @@
 ---
-title: "오류 해결 — 아침에 문의드렸던 ct 함수 name 에러, 유선 연결 후 해결 완료햇습니다. 담당자 분 답변 안해주셔도 됩니다. 감사합니다!"
-description: "조회정보 없음(이용 문의) 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — 아침에 문의드렸던 ct 함수 name 에러, 유선 연결 후 해결 완료햇습니다. 담당자 분 답변 안해주셔도 됩니다. 감사합니다!
+description: 조회정보 없음(이용 문의) 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "조회정보 없음(이용 문의)"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:ae3ae1df20742adf"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 조회정보 없음(이용 문의)
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:ae3ae1df20742adf
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "faq"
-case_topic: "조회정보 없음(이용 문의)"
+- troubleshooting
+- faq
+case_topic: 조회정보 없음(이용 문의)
 case_topics:
-  - "조회정보 없음(이용 문의)"
-related_ids:
-  - "check:enrichment:unmapped:3ac5dac18b2d"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:342"
-candidate_id: "manual-candidate:VOC-00340"
+- 조회정보 없음(이용 문의)
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:342
+candidate_id: manual-candidate:VOC-00340
 ---
 # 오류 해결 — 아침에 문의드렸던 ct 함수 name 에러, 유선 연결 후 해결 완료햇습니다. 담당자 분 답변 안해주셔도 됩니다. 감사합니다!
 
@@ -36,8 +35,11 @@ candidate_id: "manual-candidate:VOC-00340"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 해결되어서 다행입니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 질문과 답변
 - 업무·주제: 조회정보 없음(이용 문의)

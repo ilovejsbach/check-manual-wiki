@@ -1,29 +1,31 @@
 ---
-title: "사용 절차 — 해당 화면 번호에서 [IDENTIFIER] 이 종목을 입력하면 총 4개의 거래가 나옵니다. 여기서 매수 매도 하나의 거래 쌍…"
-description: "3210 - 장외(15분체결) > 건별 체결 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 해당 화면 번호에서 [IDENTIFIER] 이 종목을 입력하면 총 4개의 거래가 나옵니다. 여기서 매수 매도 하나의 거래
+  쌍…
+description: 3210 - 장외(15분체결) > 건별 체결 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3210 - 장외(15분체결) > 건별 체결"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:0132ddcabcfe7118"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3210 - 장외(15분체결) > 건별 체결
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:0132ddcabcfe7118
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3210 - 장외(15분체결) > 건별 체결"
+- procedure
+- faq
+case_topic: 3210 - 장외(15분체결) > 건별 체결
 case_topics:
-  - "3210 - 장외(15분체결) > 건별 체결"
+- 3210 - 장외(15분체결) > 건별 체결
 related_ids:
-  - "check:screen:3210"
-  - "check:enrichment:screen:3210"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4059"
-candidate_id: "manual-candidate:CRM-04057"
+- check:screen:3210
+- check:enrichment:screen:3210
+- check:tr:3702
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4059
+candidate_id: manual-candidate:CRM-04057
 ---
 # 사용 절차 — 해당 화면 번호에서 [IDENTIFIER] 이 종목을 입력하면 총 4개의 거래가 나옵니다. 여기서 매수 매도 하나의 거래 쌍…
 
@@ -37,8 +39,12 @@ candidate_id: "manual-candidate:CRM-04057"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 당일 장외 거래에서는 매수/매도 정보가 제공되지가 않습니다. (익영업일에는 확인이 가능합니다) 따라서 지금 보여지는 4개의 거래 중 어느 것이 매수/매도인지는 내일 확인이 가능합니다. 하지만 3702화면에서 매수/매도 정보를 제공하지는 않고 3210화면에서 확인이 가능합니다. 증권사는 장외시장에서 거래가 발생하면 15분 이내에 금융투자협회에 해당 거래내역을 신고해야하는 제도가 존재하고, 그 신고내역을 바탕으로 3210이나 3702화면에서 데이터를 보여드립니다. 하지만, 신고가 의무사항이 아니므로 거래 후에 미신고하는 경우도 존재합니다. 따라서 항상 매수/매도가 쌍으로 존재하지는 않음을 참고부탁드립니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/채권/3210-3210-장외(15분체결)-건별-체결|3210 - 장외(15분체결) > 건별 체결]]
+- [[check-expert/tr-후보/3702|TR 3702 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3210 - 장외(15분체결) > 건별 체결

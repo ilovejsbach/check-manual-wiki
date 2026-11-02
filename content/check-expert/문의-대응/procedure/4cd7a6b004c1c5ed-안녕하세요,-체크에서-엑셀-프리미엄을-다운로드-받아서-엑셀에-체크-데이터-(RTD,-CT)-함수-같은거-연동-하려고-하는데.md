@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — 안녕하세요, 체크에서 엑셀 프리미엄을 다운로드 받아서 엑셀에 체크 데이터 (RTD, CT) 함수 같은거 연동 하려고 하는데…"
-description: "1440 - ETF 현재가 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 안녕하세요, 체크에서 엑셀 프리미엄을 다운로드 받아서 엑셀에 체크 데이터 (RTD, CT) 함수 같은거 연동 하려고 하는데…
+description: 1440 - ETF 현재가 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "1440 - ETF 현재가"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:4cd7a6b004c1c5ed"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 1440 - ETF 현재가
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:4cd7a6b004c1c5ed
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "1440 - ETF 현재가"
+- procedure
+- faq
+case_topic: 1440 - ETF 현재가
 case_topics:
-  - "1440 - ETF 현재가"
+- 1440 - ETF 현재가
 related_ids:
-  - "check:screen:1440"
-  - "check:enrichment:screen:1440"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:2499"
-candidate_id: "manual-candidate:CRM-02497"
+- check:enrichment:screen:1440
+- check:screen:1440
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:2499
+candidate_id: manual-candidate:CRM-02497
 ---
 # 사용 절차 — 안녕하세요, 체크에서 엑셀 프리미엄을 다운로드 받아서 엑셀에 체크 데이터 (RTD, CT) 함수 같은거 연동 하려고 하는데…
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-02497"
 
 안녕하세요, 문의주신 부분 확인 후 유선상으로 안내드렸습니다. 사용하시다가 불편한 점 발생하실 경우 1:1문의 남겨주시면 확인 후 연락드리겠습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 1440 - ETF 현재가

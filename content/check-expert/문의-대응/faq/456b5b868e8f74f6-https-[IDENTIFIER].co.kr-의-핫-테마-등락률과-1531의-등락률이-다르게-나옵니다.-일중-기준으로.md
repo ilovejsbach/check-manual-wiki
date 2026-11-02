@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — https://[IDENTIFIER].co.kr/ 의 핫 테마 등락률과 1531의 등락률이 다르게 나옵니다. 일중 기준으로…"
-description: "1531 - 섹터별 시세분석 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — https://[IDENTIFIER].co.kr/ 의 핫 테마 등락률과 1531의 등락률이 다르게 나옵니다. 일중 기준으로…
+description: 1531 - 섹터별 시세분석 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "1531 - 섹터별 시세분석"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:456b5b868e8f74f6"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 1531 - 섹터별 시세분석
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:456b5b868e8f74f6
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "1531 - 섹터별 시세분석"
+- faq
+case_topic: 1531 - 섹터별 시세분석
 case_topics:
-  - "1531 - 섹터별 시세분석"
+- 1531 - 섹터별 시세분석
 related_ids:
-  - "check:screen:1531"
-  - "check:enrichment:screen:1531"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:5649"
-candidate_id: "manual-candidate:CRM-05647"
+- check:enrichment:screen:1531
+- check:screen:1531
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:5649
+candidate_id: manual-candidate:CRM-05647
 ---
 # 질문과 답변 — https://[IDENTIFIER].co.kr/ 의 핫 테마 등락률과 1531의 등락률이 다르게 나옵니다. 일중 기준으로…
 
@@ -36,8 +36,11 @@ https://[IDENTIFIER].co.kr/ 의 핫 테마 등락률과 1531의 등락률이 다
 
 안녕하세요. [IDENTIFIER]+ 입니다. 네. 내일 다시 유선으로 통화드리겠습니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 1531 - 섹터별 시세분석

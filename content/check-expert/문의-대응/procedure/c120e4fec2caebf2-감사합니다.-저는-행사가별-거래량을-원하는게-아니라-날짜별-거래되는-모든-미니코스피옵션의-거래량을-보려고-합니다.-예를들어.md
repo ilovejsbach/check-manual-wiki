@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — 감사합니다. 저는 행사가별 거래량을 원하는게 아니라 날짜별 거래되는 모든 미니코스피옵션의 거래량을 보려고 합니다. 예를들어…"
-description: "4571 - 종목일별 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 감사합니다. 저는 행사가별 거래량을 원하는게 아니라 날짜별 거래되는 모든 미니코스피옵션의 거래량을 보려고 합니다. 예를들어…
+description: 4571 - 종목일별 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4571 - 종목일별"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:c120e4fec2caebf2"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4571 - 종목일별
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:c120e4fec2caebf2
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4571 - 종목일별"
+- procedure
+- faq
+case_topic: 4571 - 종목일별
 case_topics:
-  - "4571 - 종목일별"
+- 4571 - 종목일별
 related_ids:
-  - "check:screen:4571"
-  - "check:enrichment:screen:4571"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3353"
-candidate_id: "manual-candidate:CRM-03351"
+- check:enrichment:screen:4571
+- check:screen:4571
+- check:tr:4172
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3353
+candidate_id: manual-candidate:CRM-03351
 ---
 # 사용 절차 — 감사합니다. 저는 행사가별 거래량을 원하는게 아니라 날짜별 거래되는 모든 미니코스피옵션의 거래량을 보려고 합니다. 예를들어…
 
@@ -37,8 +38,12 @@ candidate_id: "manual-candidate:CRM-03351"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 4172 화면에서 확인하실 수 있습니다. 좌측 상단 메뉴에서 [IDENTIFIER] 으로 종목을 선택하시고 주간 또는 야간을 선택하시기 바랍니다. 다만 화면에서는 연간 합산 데이터로는 제공되지 않고, 월간 기준으로 조회해 보실 수 있습니다. 연간 기준으로는 아래 함수를 사용해서 엑셀에서 거래량과 거래대금을 보실 수 있습니다. <주간 기준> =CH("","",-1,"Y",TRUE,"*103","7419^12,7422^12","DESC","[IDENTIFIER]=true; [IDENTIFIER]=vert; t[REDACTED_ENTITY]le=[REDACTED_ENTITY]em+[IDENTIFIER];") <야간 기준> =CH("","",-1,"Y",TRUE,"*232","7419^12,7422^12","DESC","[IDENTIFIER]=true; [IDENTIFIER]=vert; t[REDACTED_ENTITY]le=[REDACTED_ENTITY]em+[IDENTIFIER];") 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/tr-후보/4172|TR 4172 (화면 문서 없음)]]
+- [[check-expert/excel-premium/매뉴얼/Ez-차트|CH 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4571 - 종목일별

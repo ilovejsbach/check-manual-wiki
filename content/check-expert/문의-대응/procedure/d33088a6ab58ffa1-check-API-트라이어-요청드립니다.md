@@ -1,29 +1,28 @@
 ---
-title: "사용 절차 — check API 트라이어 요청드립니다"
-description: "조회정보 없음(이용 문의) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — check API 트라이어 요청드립니다
+description: 조회정보 없음(이용 문의) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "조회정보 없음(이용 문의)"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:d33088a6ab58ffa1"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 조회정보 없음(이용 문의)
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:d33088a6ab58ffa1
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "faq"
-case_topic: "조회정보 없음(이용 문의)"
+- troubleshooting
+- procedure
+- faq
+case_topic: 조회정보 없음(이용 문의)
 case_topics:
-  - "조회정보 없음(이용 문의)"
-related_ids:
-  - "check:enrichment:unmapped:3ac5dac18b2d"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:468"
-candidate_id: "manual-candidate:VOC-00466"
+- 조회정보 없음(이용 문의)
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:468
+candidate_id: manual-candidate:VOC-00466
 ---
 # 사용 절차 — check API 트라이어 요청드립니다
 
@@ -37,8 +36,11 @@ check API 트라이어 요청드립니다
 
 안녕하세요 API서비스 트라이얼 신청 관련하여 안내드립니다. API서비스 트라이얼의 경우, 최대 3일간의 트라이얼이 가능하시며 [EMAIL] 로 신청하시는 분의 기관, 성함, 연락처, PID와 원하시는 서비스 요금제를 같이 메일로 주시면 됩니다. 요금제 등의 자세한 정보는 https://[IDENTIFIER].[REDACTED_ENTITY].co.kr/ 에서 확인 가능합니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 오류 해결, 사용 절차, 질문과 답변
 - 업무·주제: 조회정보 없음(이용 문의)

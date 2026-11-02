@@ -1,28 +1,29 @@
 ---
-title: "질문과 답변 — 안녕하세요 이전 문의 주식선물 투자자 데이터와 더불어 체크 4110 화면에 대해서 체크 API 개발 진행 일정에 대해 재회신…"
-description: "4110 - 투자자현황 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 안녕하세요 이전 문의 주식선물 투자자 데이터와 더불어 체크 4110 화면에 대해서 체크 API 개발 진행 일정에 대해
+  재회신…
+description: 4110 - 투자자현황 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "4110 - 투자자현황"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:55bdbe0cebfb636c"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 4110 - 투자자현황
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:55bdbe0cebfb636c
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "4110 - 투자자현황"
+- faq
+case_topic: 4110 - 투자자현황
 case_topics:
-  - "4110 - 투자자현황"
+- 4110 - 투자자현황
 related_ids:
-  - "check:screen:4110"
-  - "check:enrichment:screen:4110"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "CRM데이터(PID복원)!row:939"
-candidate_id: "manual-candidate:VOC-00937"
+- check:screen:4110
+- check:enrichment:screen:4110
+review_status: candidate
+mapping_status: mapped
+source_locator: CRM데이터(PID복원)!row:939
+candidate_id: manual-candidate:VOC-00937
 ---
 # 질문과 답변 — 안녕하세요 이전 문의 주식선물 투자자 데이터와 더불어 체크 4110 화면에 대해서 체크 API 개발 진행 일정에 대해 재회신…
 
@@ -36,8 +37,11 @@ candidate_id: "manual-candidate:VOC-00937"
 
 $$
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/선물/4110-4110-투자자현황|4110 - 투자자현황]]
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4110 - 투자자현황

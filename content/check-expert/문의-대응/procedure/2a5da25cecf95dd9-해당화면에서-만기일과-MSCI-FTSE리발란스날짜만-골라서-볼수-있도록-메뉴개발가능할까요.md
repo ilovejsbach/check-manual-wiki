@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — 해당화면에서 만기일과 MSCI/FTSE리발란스날짜만 골라서 볼수 있도록 메뉴개발가능할까요"
-description: "4034 - 상관계수 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 해당화면에서 만기일과 MSCI/FTSE리발란스날짜만 골라서 볼수 있도록 메뉴개발가능할까요
+description: 4034 - 상관계수 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4034 - 상관계수"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:2a5da25cecf95dd9"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4034 - 상관계수
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:2a5da25cecf95dd9
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4034 - 상관계수"
+- procedure
+- faq
+case_topic: 4034 - 상관계수
 case_topics:
-  - "4034 - 상관계수"
+- 4034 - 상관계수
 related_ids:
-  - "check:screen:4034"
-  - "check:enrichment:screen:4034"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3653"
-candidate_id: "manual-candidate:CRM-03651"
+- check:enrichment:screen:4034
+- check:screen:4034
+- check:tr:1320
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3653
+candidate_id: manual-candidate:CRM-03651
 ---
 # 사용 절차 — 해당화면에서 만기일과 MSCI/FTSE리발란스날짜만 골라서 볼수 있도록 메뉴개발가능할까요
 
@@ -37,8 +38,12 @@ candidate_id: "manual-candidate:CRM-03651"
 
 안녕하세요. [IDENTIFIER]+ 입니다. MSCI / FTSE 지수 리밸런싱 데이는 화면상에서 구현이 어렵습니다. 하지만 옵션 만기일의 경우, 엑셀을 통해서 필터하여 보실 수 있습니다. 1) 우선 1320 화면을 띄우신 후, 데이터 아무곳이나 우클릭하여 [ 전체영역 엑셀로 보내기 ]로 엑셀을 기동시켜 주세요. 2) 엑셀 시트 중 [ Y2 셀]에 다음과 같은 코드를 입력하시면, 옵션만기일 필터를 접합하시게 됩니다. =CH( "", "", -1, "D", TRUE, "K2OCNA0", "[NUMBER]", "DESC", "[IDENTIFIER]=true;") ** 여기서 K2OCNA0은 연결옵션의 종목코드이고, [NUMBER]은 옵션종목의 잔존일수 항목코드입니다. 값이 1일 경우 만기일입니다. 3) 그러면 엑셀로 옮긴 1320 화면 전체에, 옵션만기일 필터가 합쳐지게 됩니다. 엑셀시트 3번행 전체를 커서로 선택하시고, 엑셀 상단리본 [ 데이터 ] - [ 필터 ] 기능을 누르시면 위 [ 잔존일수 ] 값을 기준으로 필터가 활성화 됩니다. 값 [ 1 ] 기준으로 필터를 거시면, 옵션만기일에 해당하는 자료들만 선택적으로 일괄 조회가 가능하십니다. 제가 구현해 본 만기일 필터 1320 엑셀 화면을 캡쳐하여 첨부드립니다. 도움이 되셨으면 좋겠습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/tr-후보/1320|TR 1320 (화면 문서 없음)]]
+- [[check-expert/excel-premium/매뉴얼/Ez-차트|CH 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4034 - 상관계수

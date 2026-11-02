@@ -1,28 +1,28 @@
 ---
-title: "사용 절차 — /bond/m060/hist_info jcode: [PHONE] sdate/edate: [NUMBER] <<로 조회하면 데이…"
-description: "금리·채권 발행·평가 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: '사용 절차 — /bond/m060/hist_info jcode: [PHONE] sdate/edate: [NUMBER] <<로 조회하면
+  데이…'
+description: 금리·채권 발행·평가 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "금리·채권 발행·평가"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:4ec367bc11025548"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 금리·채권 발행·평가
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:4ec367bc11025548
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "금리·채권 발행·평가"
+- procedure
+- faq
+case_topic: 금리·채권 발행·평가
 case_topics:
-  - "금리·채권 발행·평가"
-related_ids:
-  - "check:enrichment:unmapped:d04e710dcd7a"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:896"
-candidate_id: "manual-candidate:VOC-00894"
+- 금리·채권 발행·평가
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:896
+candidate_id: manual-candidate:VOC-00894
 ---
 # 사용 절차 — /bond/m060/hist_info jcode: [PHONE] sdate/edate: [NUMBER] <<로 조회하면 데이…
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:VOC-00894"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 이용에 불편을 드려 대단히 죄송합니다. 현재는 조치를 취해서 정상적으로 조회가 될 것입니다. 원인 파악 후 같은 문제가 재발하지 않도록 노력하겠습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 금리·채권 발행·평가

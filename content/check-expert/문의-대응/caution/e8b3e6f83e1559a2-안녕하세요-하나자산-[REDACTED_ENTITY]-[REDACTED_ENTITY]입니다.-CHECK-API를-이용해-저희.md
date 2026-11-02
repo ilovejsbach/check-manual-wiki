@@ -1,28 +1,27 @@
 ---
-title: "주의사항 — 안녕하세요 하나자산 [REDACTED_ENTITY] [REDACTED_ENTITY]입니다. CHECK API를 이용해 저희…"
-description: "가격·호가·거래량 관련 비식별 문의와 당시 대응 기록을 분리한 주의사항 검수 후보."
+title: 주의사항 — 안녕하세요 하나자산 [REDACTED_ENTITY] [REDACTED_ENTITY]입니다. CHECK API를 이용해 저희…
+description: 가격·호가·거래량 관련 비식별 문의와 당시 대응 기록을 분리한 주의사항 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "주의사항"
-  - "검수 필요"
-  - "가격·호가·거래량"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:e8b3e6f83e1559a2"
-document_type: "support_case"
-case_type: "caution"
+- CHECK Expert
+- 문의 대응
+- 주의사항
+- 검수 필요
+- 가격·호가·거래량
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:e8b3e6f83e1559a2
+document_type: support_case
+case_type: caution
 case_facets:
-  - "caution"
-  - "faq"
-case_topic: "가격·호가·거래량"
+- caution
+- faq
+case_topic: 가격·호가·거래량
 case_topics:
-  - "가격·호가·거래량"
-related_ids:
-  - "check:enrichment:unmapped:078f6cd8e320"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:384"
-candidate_id: "manual-candidate:VOC-00382"
+- 가격·호가·거래량
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:384
+candidate_id: manual-candidate:VOC-00382
 ---
 # 주의사항 — 안녕하세요 하나자산 [REDACTED_ENTITY] [REDACTED_ENTITY]입니다. CHECK API를 이용해 저희…
 
@@ -36,8 +35,11 @@ candidate_id: "manual-candidate:VOC-00382"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 관련요청은 767-8322 로 부탁드립니다. 08:40 이후 전화부탁드립니다
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **주의사항**
 - 함께 볼 유형: 주의사항, 질문과 답변
 - 업무·주제: 가격·호가·거래량

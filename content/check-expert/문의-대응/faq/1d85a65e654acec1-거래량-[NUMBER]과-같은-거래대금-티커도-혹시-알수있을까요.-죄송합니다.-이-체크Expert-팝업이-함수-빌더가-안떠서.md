@@ -1,27 +1,27 @@
 ---
-title: "질문과 답변 — 거래량 [NUMBER]과 같은 거래대금 티커도 혹시 알수있을까요. 죄송합니다. 이 체크Expert 팝업이 함수 빌더가 안떠서..."
-description: "종목·코드·분류·기본정보 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 거래량 [NUMBER]과 같은 거래대금 티커도 혹시 알수있을까요. 죄송합니다. 이 체크Expert 팝업이 함수 빌더가
+  안떠서...
+description: 종목·코드·분류·기본정보 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "종목·코드·분류·기본정보"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:1d85a65e654acec1"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 종목·코드·분류·기본정보
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:1d85a65e654acec1
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "종목·코드·분류·기본정보"
+- faq
+case_topic: 종목·코드·분류·기본정보
 case_topics:
-  - "종목·코드·분류·기본정보"
-related_ids:
-  - "check:enrichment:unmapped:0b0b120f64a7"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:1146"
-candidate_id: "manual-candidate:VOC-01144"
+- 종목·코드·분류·기본정보
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:1146
+candidate_id: manual-candidate:VOC-01144
 ---
 # 질문과 답변 — 거래량 [NUMBER]과 같은 거래대금 티커도 혹시 알수있을까요. 죄송합니다. 이 체크Expert 팝업이 함수 빌더가 안떠서...
 
@@ -35,8 +35,11 @@ candidate_id: "manual-candidate:VOC-01144"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 거래대금 [NUMBER] 으로 사용 가능하십니다. 이후에도 빌더가 진행이 안되시는 경우 말씀 부탁 드립니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 종목·코드·분류·기본정보

@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — KTB10선물 연속월물 종목의 리프레쉬가 되지를 않아서 연락드립니다."
-description: "8112 - 신종합차트 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — KTB10선물 연속월물 종목의 리프레쉬가 되지를 않아서 연락드립니다.
+description: 8112 - 신종합차트 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "8112 - 신종합차트"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:1f1bd0480ff6efa1"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 8112 - 신종합차트
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:1f1bd0480ff6efa1
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "8112 - 신종합차트"
+- faq
+case_topic: 8112 - 신종합차트
 case_topics:
-  - "8112 - 신종합차트"
+- 8112 - 신종합차트
 related_ids:
-  - "check:screen:8112"
-  - "check:enrichment:screen:8112"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1206"
-candidate_id: "manual-candidate:CRM-01204"
+- check:screen:8112
+- check:enrichment:screen:8112
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1206
+candidate_id: manual-candidate:CRM-01204
 ---
 # 질문과 답변 — KTB10선물 연속월물 종목의 리프레쉬가 되지를 않아서 연락드립니다.
 
@@ -36,8 +36,11 @@ KTB10선물 연속월물 종목의 리프레쉬가 되지를 않아서 연락드
 
 안녕하세요. [IDENTIFIER]+ 입니다. 현재 저희 쪽에서는 가격이 문제 없이 잘 나오고 있습니다. 혹시 몰라서 제 자리에서 세팅한 8112 화면을 보내드리오니 비교해 봐주시기 바랍니다. 세팅의 이상이 없는데도 업데이트가 안되시면 CHECK를 한번 재부팅해보시고 여전히 안되면 다시 한번 문의주시기 바랍니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/차트/8112-8112-신종합차트|8112 - 신종합차트]]
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 8112 - 신종합차트

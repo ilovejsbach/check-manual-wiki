@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — =CH( \"\", \"\", -1, \"D\", TRUE, \"[NUMBER]\", \"6511^10\", \"DESC\", \"[IDENTIFI…"
-description: "메뉴와 템플릿 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — =CH( "", "", -1, "D", TRUE, "[NUMBER]", "6511^10", "DESC", "[IDENTIFI…
+description: 메뉴와 템플릿 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "메뉴와 템플릿"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:abb40c88f51d6b09"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 메뉴와 템플릿
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:abb40c88f51d6b09
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "메뉴와 템플릿"
+- procedure
+- faq
+case_topic: 메뉴와 템플릿
 case_topics:
-  - "메뉴와 템플릿"
+- 메뉴와 템플릿
 related_ids:
-  - "check:excel:manual:메뉴와-템플릿"
-  - "check:enrichment:excel:manual:메뉴와-템플릿"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:988"
-candidate_id: "manual-candidate:CRM-00986"
+- check:enrichment:excel:manual:메뉴와-템플릿
+- check:excel:manual:메뉴와-템플릿
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:988
+candidate_id: manual-candidate:CRM-00986
 ---
 # 사용 절차 — =CH( "", "", -1, "D", TRUE, "[NUMBER]", "6511^10", "DESC", "[IDENTIFI…
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-00986"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 아래와 같이 사용하시면 종목명, 항목명, 날짜 표시형식 없이 시계열 데이터를 나타낼 수 있습니다. =CH( "", "", -1, "D", TRUE, "[NUMBER]", "6511^10", "DESC", "[IDENTIFIER]=true; t[REDACTED_ENTITY]le=none; [IDENTIFIER]=hide") 엑셀 화면 우측 상단 리본메뉴에서 XL [IDENTIFIER] L[REDACTED_ENTITY]를 선택하신 후 함수 빌더에 들어가셔서 시작일자, 종료일자를 조절하시어 보실 수도 있습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/excel-premium/매뉴얼/Ez-차트|CH 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 메뉴와 템플릿

@@ -1,28 +1,29 @@
 ---
-title: "질문과 답변 — 매매체결이 일어날때 마다 가격 표시창 옆에 B, S, BB, SS 등이 표시가 되는데, 이 문자들이 무엇을 의미하는지 궁금합…"
-description: "4391 - Tick1 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 매매체결이 일어날때 마다 가격 표시창 옆에 B, S, BB, SS 등이 표시가 되는데, 이 문자들이 무엇을 의미하는지
+  궁금합…
+description: 4391 - Tick1 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "4391 - Tick1"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:cee58a898ef1cfdc"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 4391 - Tick1
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:cee58a898ef1cfdc
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "4391 - Tick1"
+- faq
+case_topic: 4391 - Tick1
 case_topics:
-  - "4391 - Tick1"
+- 4391 - Tick1
 related_ids:
-  - "check:screen:4391"
-  - "check:enrichment:screen:4391"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3718"
-candidate_id: "manual-candidate:CRM-03716"
+- check:enrichment:screen:4391
+- check:screen:4391
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3718
+candidate_id: manual-candidate:CRM-03716
 ---
 # 질문과 답변 — 매매체결이 일어날때 마다 가격 표시창 옆에 B, S, BB, SS 등이 표시가 되는데, 이 문자들이 무엇을 의미하는지 궁금합…
 
@@ -36,8 +37,11 @@ candidate_id: "manual-candidate:CRM-03716"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 문의주신 내용은 시세성향에 대한 의미를 나타내고 있습니다. S/SS는 매도체결로서 우선호가가 변동되면 SS, 잔량만 변동되면 S로 표기됩니다. B/BB는 매수체결로서 우선호가가 변동되면 BB, 잔량만 변동되면 B로 표기됩니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4391 - Tick1

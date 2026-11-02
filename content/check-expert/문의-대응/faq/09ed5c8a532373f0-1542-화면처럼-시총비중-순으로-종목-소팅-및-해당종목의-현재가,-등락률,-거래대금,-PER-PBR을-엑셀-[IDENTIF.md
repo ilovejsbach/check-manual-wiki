@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — 1542 화면처럼 시총비중 순으로 종목 소팅 및 해당종목의 현재가, 등락률, 거래대금, PER/PBR을 엑셀 [IDENTIF…"
-description: "1542 - 업종내 구성종목의 상대성과 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 1542 화면처럼 시총비중 순으로 종목 소팅 및 해당종목의 현재가, 등락률, 거래대금, PER/PBR을 엑셀 [IDENTIF…
+description: 1542 - 업종내 구성종목의 상대성과 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "1542 - 업종내 구성종목의 상대성과"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:09ed5c8a532373f0"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 1542 - 업종내 구성종목의 상대성과
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:09ed5c8a532373f0
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "1542 - 업종내 구성종목의 상대성과"
+- faq
+case_topic: 1542 - 업종내 구성종목의 상대성과
 case_topics:
-  - "1542 - 업종내 구성종목의 상대성과"
+- 1542 - 업종내 구성종목의 상대성과
 related_ids:
-  - "check:screen:1542"
-  - "check:enrichment:screen:1542"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3670"
-candidate_id: "manual-candidate:CRM-03668"
+- check:screen:1542
+- check:enrichment:screen:1542
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3670
+candidate_id: manual-candidate:CRM-03668
 ---
 # 질문과 답변 — 1542 화면처럼 시총비중 순으로 종목 소팅 및 해당종목의 현재가, 등락률, 거래대금, PER/PBR을 엑셀 [IDENTIF…
 
@@ -36,8 +36,12 @@ candidate_id: "manual-candidate:CRM-03668"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 우선 내부 확인이 필요하여 답변이 늦어져 죄송합니다. [IDENTIFIER] Per의 경우 추가 라이선스 구매가 필요한 부분으로 계약 비용 관련 이슈로 구성 정보를 수신받지 못하고 있습니다. 이점 양해 부탁 드립니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/주식/1542-1542-업종내-구성종목의-상대성과|1542 - 업종내 구성종목의 상대성과]]
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CLIST 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 1542 - 업종내 구성종목의 상대성과

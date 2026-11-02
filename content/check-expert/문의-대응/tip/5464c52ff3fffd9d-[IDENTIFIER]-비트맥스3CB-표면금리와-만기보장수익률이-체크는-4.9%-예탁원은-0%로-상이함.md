@@ -1,27 +1,26 @@
 ---
-title: "활용 팁 — [IDENTIFIER] 비트맥스3CB 표면금리와 만기보장수익률이 체크는 4.9% 예탁원은 0%로 상이함"
-description: "채권 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보."
+title: 활용 팁 — [IDENTIFIER] 비트맥스3CB 표면금리와 만기보장수익률이 체크는 4.9% 예탁원은 0%로 상이함
+description: 채권 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "활용 팁"
-  - "검수 필요"
-  - "채권"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:5464c52ff3fffd9d"
-document_type: "support_case"
-case_type: "tip"
+- CHECK Expert
+- 문의 대응
+- 활용 팁
+- 검수 필요
+- 채권
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:5464c52ff3fffd9d
+document_type: support_case
+case_type: tip
 case_facets:
-  - "tip"
-case_topic: "채권"
+- tip
+case_topic: 채권
 case_topics:
-  - "채권"
-related_ids:
-  - "check:enrichment:unmapped:11200aac2497"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:814"
-candidate_id: "manual-candidate:CRM-00812"
+- 채권
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:814
+candidate_id: manual-candidate:CRM-00812
 ---
 # 활용 팁 — [IDENTIFIER] 비트맥스3CB 표면금리와 만기보장수익률이 체크는 4.9% 예탁원은 0%로 상이함
 
@@ -35,8 +34,11 @@ candidate_id: "manual-candidate:CRM-00812"
 
 공시 확인결과 0%가 맞으며 수정 후 연락드림
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **활용 팁**
 - 함께 볼 유형: 활용 팁
 - 업무·주제: 채권

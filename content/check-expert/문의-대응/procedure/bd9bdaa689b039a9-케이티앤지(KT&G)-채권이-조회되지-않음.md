@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — 케이티앤지(KT&G) 채권이 조회되지 않음."
-description: "3471 - 단가계산 > 발행종목 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 케이티앤지(KT&G) 채권이 조회되지 않음.
+description: 3471 - 단가계산 > 발행종목 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3471 - 단가계산 > 발행종목"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:bd9bdaa689b039a9"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3471 - 단가계산 > 발행종목
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:bd9bdaa689b039a9
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3471 - 단가계산 > 발행종목"
+- procedure
+- faq
+case_topic: 3471 - 단가계산 > 발행종목
 case_topics:
-  - "3471 - 단가계산 > 발행종목"
+- 3471 - 단가계산 > 발행종목
 related_ids:
-  - "check:screen:3471"
-  - "check:enrichment:screen:3471"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:2334"
-candidate_id: "manual-candidate:CRM-02332"
+- check:enrichment:screen:3471
+- check:screen:3471
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:2334
+candidate_id: manual-candidate:CRM-02332
 ---
 # 사용 절차 — 케이티앤지(KT&G) 채권이 조회되지 않음.
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-02332"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 화면 좌측상단의 종목검색창에 KT&G를 입력하면, 드롭다운 방식으로 6개의 채권이 조회가 됩니다. 만기가 경과했거나, 아직 발행정보가 등록이 되지 않은 채권이라면 조회가 되지 않습니다. 이용에 도움이 되셨길 바랍니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3471 - 단가계산 > 발행종목

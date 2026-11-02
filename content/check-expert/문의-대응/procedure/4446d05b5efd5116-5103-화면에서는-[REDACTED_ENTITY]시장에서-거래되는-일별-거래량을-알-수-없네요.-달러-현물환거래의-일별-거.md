@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — 5103 화면에서는 [REDACTED_ENTITY]시장에서 거래되는 일별 거래량을 알 수 없네요. 달러 현물환거래의 일별 거…"
-description: "5103 - 달러-원>일별추이 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 5103 화면에서는 [REDACTED_ENTITY]시장에서 거래되는 일별 거래량을 알 수 없네요. 달러 현물환거래의 일별
+  거…
+description: 5103 - 달러-원>일별추이 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "5103 - 달러-원>일별추이"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:4446d05b5efd5116"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 5103 - 달러-원>일별추이
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:4446d05b5efd5116
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "5103 - 달러-원>일별추이"
+- procedure
+- faq
+case_topic: 5103 - 달러-원>일별추이
 case_topics:
-  - "5103 - 달러-원>일별추이"
+- 5103 - 달러-원>일별추이
 related_ids:
-  - "check:screen:5103"
-  - "check:enrichment:screen:5103"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3455"
-candidate_id: "manual-candidate:CRM-03453"
+- check:screen:5103
+- check:enrichment:screen:5103
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3455
+candidate_id: manual-candidate:CRM-03453
 ---
 # 사용 절차 — 5103 화면에서는 [REDACTED_ENTITY]시장에서 거래되는 일별 거래량을 알 수 없네요. 달러 현물환거래의 일별 거…
 
@@ -37,8 +38,11 @@ candidate_id: "manual-candidate:CRM-03453"
 
 안녕하세요. [IDENTIFIER]+ 입니다. TR 5103 달러-원 일별추이 화면 우측 상단 격자형 네모박스(바둑판 모양)를 눌러주시면 달러-원 일별추이 데이터를 조회하실 수 있습니다. 이렇게 조회된 화면 우측 끝 부분을 보시면 '거래량' 컬럼이 있습니다. 해당 단위(백만)을 참고 부탁 드립니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/외환/5103-5103-달러-원-일별추이|5103 - 달러-원>일별추이]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 5103 - 달러-원>일별추이

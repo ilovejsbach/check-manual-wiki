@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — cd금리 알려주신 =CT(\"[IDENTIFIER]\", [NUMBER]) 함수를 적용하면 장중에는 0 으로 나오고 장마감하고나…"
-description: "3220 - 주요금리 > 최종호가수익률(종합) 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — cd금리 알려주신 =CT("[IDENTIFIER]", [NUMBER]) 함수를 적용하면 장중에는 0 으로 나오고 장마감하고나…
+description: 3220 - 주요금리 > 최종호가수익률(종합) 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "3220 - 주요금리 > 최종호가수익률(종합)"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:591f2626372bc668"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 3220 - 주요금리 > 최종호가수익률(종합)
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:591f2626372bc668
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "3220 - 주요금리 > 최종호가수익률(종합)"
+- faq
+case_topic: 3220 - 주요금리 > 최종호가수익률(종합)
 case_topics:
-  - "3220 - 주요금리 > 최종호가수익률(종합)"
+- 3220 - 주요금리 > 최종호가수익률(종합)
 related_ids:
-  - "check:screen:3220"
-  - "check:enrichment:screen:3220"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:5529"
-candidate_id: "manual-candidate:CRM-05527"
+- check:enrichment:screen:3220
+- check:screen:3220
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:5529
+candidate_id: manual-candidate:CRM-05527
 ---
 # 질문과 답변 — cd금리 알려주신 =CT("[IDENTIFIER]", [NUMBER]) 함수를 적용하면 장중에는 0 으로 나오고 장마감하고나…
 
@@ -36,8 +36,11 @@ cd금리 알려주신 =CT("[IDENTIFIER]", [NUMBER]) 함수를 적용하면 장�
 
 안녕하세요. [IDENTIFIER]+ 입니다. 해당 금리 CD금리는 금융투자협회에서 제공하는 CD수익률로 하루에 2번 입수가 됩니다. [3220] 화면을 보시면 11시 30분 / 16시 00분에 입수되는것을 확인하실수 있습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CT 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3220 - 주요금리 > 최종호가수익률(종합)

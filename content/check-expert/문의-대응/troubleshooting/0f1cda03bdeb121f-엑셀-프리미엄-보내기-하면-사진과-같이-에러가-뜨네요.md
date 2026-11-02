@@ -1,30 +1,30 @@
 ---
-title: "오류 해결 — 엑셀 프리미엄 보내기 하면 사진과 같이 에러가 뜨네요"
-description: "3430 - 시가평가 > 채권그룹 > Matrix 종합 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — 엑셀 프리미엄 보내기 하면 사진과 같이 에러가 뜨네요
+description: 3430 - 시가평가 > 채권그룹 > Matrix 종합 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "3430 - 시가평가 > 채권그룹 > Matrix 종합"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:0f1cda03bdeb121f"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 3430 - 시가평가 > 채권그룹 > Matrix 종합
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:0f1cda03bdeb121f
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "faq"
-case_topic: "3430 - 시가평가 > 채권그룹 > Matrix 종합"
+- troubleshooting
+- procedure
+- faq
+case_topic: 3430 - 시가평가 > 채권그룹 > Matrix 종합
 case_topics:
-  - "3430 - 시가평가 > 채권그룹 > Matrix 종합"
+- 3430 - 시가평가 > 채권그룹 > Matrix 종합
 related_ids:
-  - "check:screen:3430"
-  - "check:enrichment:screen:3430"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1501"
-candidate_id: "manual-candidate:CRM-01499"
+- check:enrichment:screen:3430
+- check:screen:3430
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1501
+candidate_id: manual-candidate:CRM-01499
 ---
 # 오류 해결 — 엑셀 프리미엄 보내기 하면 사진과 같이 에러가 뜨네요
 
@@ -38,8 +38,11 @@ candidate_id: "manual-candidate:CRM-01499"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 엑셀 상단메뉴에 [XL [IDENTIFIER]] 메뉴가 보이지 않는 것으로보아 애드인 설치가 되지 않은것 같습니다. 아래 두가지 방법 중 한가지로 엑셀프리미엄을 설치한 후 프리미엄 보내기를 다시 시도해주세요. (설치전 사용중인 엑셀 종료) 1. 체크 상단메뉴 도움말>엑셀프리미엄 설치하기 2. Try Icon>Check 엑셀 매니저>설치 버튼 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 사용 절차, 질문과 답변
 - 업무·주제: 3430 - 시가평가 > 채권그룹 > Matrix 종합

@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — 해당 화면 내 비교일 대비 크레딧 스프레드 변동폭 확인 할수 있도록 화면 수정 요청드렸는데요, 2월즈음 연초에 요청드렸고,…"
-description: "3430 - 시가평가 > 채권그룹 > Matrix 종합 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 해당 화면 내 비교일 대비 크레딧 스프레드 변동폭 확인 할수 있도록 화면 수정 요청드렸는데요, 2월즈음 연초에 요청드렸고,…
+description: 3430 - 시가평가 > 채권그룹 > Matrix 종합 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "3430 - 시가평가 > 채권그룹 > Matrix 종합"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:a6811fa88ebdddf3"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 3430 - 시가평가 > 채권그룹 > Matrix 종합
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:a6811fa88ebdddf3
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "3430 - 시가평가 > 채권그룹 > Matrix 종합"
+- faq
+case_topic: 3430 - 시가평가 > 채권그룹 > Matrix 종합
 case_topics:
-  - "3430 - 시가평가 > 채권그룹 > Matrix 종합"
+- 3430 - 시가평가 > 채권그룹 > Matrix 종합
 related_ids:
-  - "check:screen:3430"
-  - "check:enrichment:screen:3430"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4199"
-candidate_id: "manual-candidate:CRM-04197"
+- check:enrichment:screen:3430
+- check:screen:3430
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4199
+candidate_id: manual-candidate:CRM-04197
 ---
 # 질문과 답변 — 해당 화면 내 비교일 대비 크레딧 스프레드 변동폭 확인 할수 있도록 화면 수정 요청드렸는데요, 2월즈음 연초에 요청드렸고,…
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-04197"
 
 안녕하세요. 외화24시간 개장 관련하여 당사 인력이 대부분 투입 된 관계로 해당 개편이 약간 늦어졌습니다. 요청주신 화면은 현재 7월 16일 이행 예정이며, 7월20일부터 화면에서 확인하실 수 있습니다. 다시 한번 늦어져서 죄송한 말씀드립니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3430 - 시가평가 > 채권그룹 > Matrix 종합

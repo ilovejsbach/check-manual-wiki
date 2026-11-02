@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — 안녕하세요 회사채 등급별 금리 시계열 정보를 조회하고 싶은데, 방법을 문의드리니다."
-description: "3431 - 시가평가 > 채권그룹 > 일별추이 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 안녕하세요 회사채 등급별 금리 시계열 정보를 조회하고 싶은데, 방법을 문의드리니다.
+description: 3431 - 시가평가 > 채권그룹 > 일별추이 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3431 - 시가평가 > 채권그룹 > 일별추이"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:1dd60217fd4ccafd"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3431 - 시가평가 > 채권그룹 > 일별추이
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:1dd60217fd4ccafd
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3431 - 시가평가 > 채권그룹 > 일별추이"
+- procedure
+- faq
+case_topic: 3431 - 시가평가 > 채권그룹 > 일별추이
 case_topics:
-  - "3431 - 시가평가 > 채권그룹 > 일별추이"
+- 3431 - 시가평가 > 채권그룹 > 일별추이
 related_ids:
-  - "check:screen:3431"
-  - "check:enrichment:screen:3431"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4441"
-candidate_id: "manual-candidate:CRM-04439"
+- check:screen:3430
+- check:screen:3431
+- check:enrichment:screen:3431
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4441
+candidate_id: manual-candidate:CRM-04439
 ---
 # 사용 절차 — 안녕하세요 회사채 등급별 금리 시계열 정보를 조회하고 싶은데, 방법을 문의드리니다.
 
@@ -37,8 +38,12 @@ candidate_id: "manual-candidate:CRM-04439"
 
 3430화면에서 무보증사채 중 조회를 원하시는 신용등급과 만기에 해당하는 셀을 클릭하시면 하단의 추이, 추이(차트), 전체추이 탭에서 시계열 데이터를 확인하실 수 있습니다. 또는 3431화면에서 화면 상단에서 원하시는 무보증사채 신용등급을 선택하시면 조회하실 수 있습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/채권/3430-3430-시가평가-채권그룹-Matrix-종합|3430 - 시가평가 > 채권그룹 > Matrix 종합]]
+- [[check-expert/새로운-모습/채권/3431-3431-시가평가-채권그룹-일별추이|3431 - 시가평가 > 채권그룹 > 일별추이]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3431 - 시가평가 > 채권그룹 > 일별추이

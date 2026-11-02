@@ -1,28 +1,28 @@
 ---
-title: "사용 절차 — 애프터 거래량 많은 종목들 볼 수 있는 방법"
-description: "1425 - 시간외단일가 시세표 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 애프터 거래량 많은 종목들 볼 수 있는 방법
+description: 1425 - 시간외단일가 시세표 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "1425 - 시간외단일가 시세표"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:81d3b2fbdc54dc7c"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 1425 - 시간외단일가 시세표
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:81d3b2fbdc54dc7c
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-case_topic: "1425 - 시간외단일가 시세표"
+- procedure
+case_topic: 1425 - 시간외단일가 시세표
 case_topics:
-  - "1425 - 시간외단일가 시세표"
+- 1425 - 시간외단일가 시세표
 related_ids:
-  - "check:screen:1425"
-  - "check:enrichment:screen:1425"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:5311"
-candidate_id: "manual-candidate:CRM-05309"
+- check:screen:1425
+- check:enrichment:screen:1425
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:5311
+candidate_id: manual-candidate:CRM-05309
 ---
 # 사용 절차 — 애프터 거래량 많은 종목들 볼 수 있는 방법
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-05309"
 
 TR1425 설명드림
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/주식/1425-1425-시간외단일가-시세표|1425 - 시간외단일가 시세표]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차
 - 업무·주제: 1425 - 시간외단일가 시세표

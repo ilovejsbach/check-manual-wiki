@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — [REDACTED_ENTITY]플랜업(DLB)276 [IDENTIFIER] 금일 공모 발행으로 조회되는 DLB 1종목 다트에…"
-description: "3026 - 발행정보 > 주요 > DLB(DLS) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — [REDACTED_ENTITY]플랜업(DLB)276 [IDENTIFIER] 금일 공모 발행으로 조회되는 DLB 1종목 다트에…
+description: 3026 - 발행정보 > 주요 > DLB(DLS) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3026 - 발행정보 > 주요 > DLB(DLS)"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:14ab7d6c0f782eb4"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3026 - 발행정보 > 주요 > DLB(DLS)
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:14ab7d6c0f782eb4
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3026 - 발행정보 > 주요 > DLB(DLS)"
+- procedure
+- faq
+case_topic: 3026 - 발행정보 > 주요 > DLB(DLS)
 case_topics:
-  - "3026 - 발행정보 > 주요 > DLB(DLS)"
+- 3026 - 발행정보 > 주요 > DLB(DLS)
 related_ids:
-  - "check:screen:3026"
-  - "check:enrichment:screen:3026"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3232"
-candidate_id: "manual-candidate:CRM-03230"
+- check:screen:3000
+- check:enrichment:screen:3026
+- check:screen:3026
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3232
+candidate_id: manual-candidate:CRM-03230
 ---
 # 사용 절차 — [REDACTED_ENTITY]플랜업(DLB)276 [IDENTIFIER] 금일 공모 발행으로 조회되는 DLB 1종목 다트에…
 
@@ -37,8 +38,11 @@ candidate_id: "manual-candidate:CRM-03230"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 문의주신 종목([IDENTIFIER])의 경우 사모로 발행되었음을 [PERSON] 담당자에게 확인하여 안내 드립니다. (TR 3000 채권발행정보 공모 / 사모 구분값) 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/채권/3000-3000-발행정보-주요-종목상세|3000 - 발행정보 > 주요 > 종목상세]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3026 - 발행정보 > 주요 > DLB(DLS)

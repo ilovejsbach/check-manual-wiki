@@ -1,28 +1,27 @@
 ---
-title: "사용 절차 — ETF(국내/[REDACTED_ENTITY] 별로) 전체 합산한 NAV, 시총 볼 수 있는 화면 문의"
-description: "ETP 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — ETF(국내/[REDACTED_ENTITY] 별로) 전체 합산한 NAV, 시총 볼 수 있는 화면 문의
+description: ETP 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "ETP"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:6f4a903d5aeae48e"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- ETP
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:6f4a903d5aeae48e
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "ETP"
+- procedure
+- faq
+case_topic: ETP
 case_topics:
-  - "ETP"
-related_ids:
-  - "check:enrichment:unmapped:feafddfd9f67"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:4770"
-candidate_id: "manual-candidate:CRM-04768"
+- ETP
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:4770
+candidate_id: manual-candidate:CRM-04768
 ---
 # 사용 절차 — ETF(국내/[REDACTED_ENTITY] 별로) 전체 합산한 NAV, 시총 볼 수 있는 화면 문의
 
@@ -36,8 +35,11 @@ ETF(국내/[REDACTED_ENTITY] 별로) 전체 합산한 NAV, 시총 볼 수 있는
 
 해당 화면은 없다 안내드리며 종목별로 보셔야 한다고 안내
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: ETP

@@ -1,28 +1,27 @@
 ---
-title: "사용 절차 — CLIST함수에서 \"그룹\" 지정 시 특정 업종과 특정 종목을 합쳐서 조회 가능한가요? ex) =CLIST( \"[NUMBER]…"
-description: "조회정보 불명확 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — CLIST함수에서 "그룹" 지정 시 특정 업종과 특정 종목을 합쳐서 조회 가능한가요? ex) =CLIST( "[NUMBER]…
+description: 조회정보 불명확 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "조회정보 불명확"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:09f3fa826b552c37"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 조회정보 불명확
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:09f3fa826b552c37
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "조회정보 불명확"
+- procedure
+- faq
+case_topic: 조회정보 불명확
 case_topics:
-  - "조회정보 불명확"
-related_ids:
-  - "check:enrichment:unmapped:19fb9193bdf9"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:750"
-candidate_id: "manual-candidate:VOC-00748"
+- 조회정보 불명확
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:750
+candidate_id: manual-candidate:VOC-00748
 ---
 # 사용 절차 — CLIST함수에서 "그룹" 지정 시 특정 업종과 특정 종목을 합쳐서 조회 가능한가요? ex) =CLIST( "[NUMBER]…
 
@@ -36,8 +35,11 @@ CLIST함수에서 "그룹" 지정 시 특정 업종과 특정 종목을 합쳐�
 
 안녕하세요. [IDENTIFIER]+ 입니다. CLIST함수는 구성목록을 가지고오는 함수로 업종과 종목을 동시에 조회할수없습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CLIST 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 조회정보 불명확

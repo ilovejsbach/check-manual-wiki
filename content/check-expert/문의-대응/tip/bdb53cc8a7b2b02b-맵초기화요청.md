@@ -1,27 +1,26 @@
 ---
-title: "활용 팁 — 맵초기화요청"
-description: "체크실행 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보."
+title: 활용 팁 — 맵초기화요청
+description: 체크실행 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "활용 팁"
-  - "검수 필요"
-  - "체크실행"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:bdb53cc8a7b2b02b"
-document_type: "support_case"
-case_type: "tip"
+- CHECK Expert
+- 문의 대응
+- 활용 팁
+- 검수 필요
+- 체크실행
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:bdb53cc8a7b2b02b
+document_type: support_case
+case_type: tip
 case_facets:
-  - "tip"
-case_topic: "체크실행"
+- tip
+case_topic: 체크실행
 case_topics:
-  - "체크실행"
-related_ids:
-  - "check:enrichment:unmapped:4cbf44690ebb"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:81"
-candidate_id: "manual-candidate:CRM-00079"
+- 체크실행
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:81
+candidate_id: manual-candidate:CRM-00079
 ---
 # 활용 팁 — 맵초기화요청
 
@@ -35,8 +34,11 @@ candidate_id: "manual-candidate:CRM-00079"
 
 맵초기화
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **활용 팁**
 - 함께 볼 유형: 활용 팁
 - 업무·주제: 체크실행

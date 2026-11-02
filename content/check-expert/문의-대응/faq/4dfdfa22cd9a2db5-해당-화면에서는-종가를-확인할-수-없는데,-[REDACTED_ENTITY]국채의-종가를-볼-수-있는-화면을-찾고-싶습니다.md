@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — 해당 화면에서는 종가를 확인할 수 없는데, [REDACTED_ENTITY]국채의 종가를 볼 수 있는 화면을 찾고 싶습니다."
-description: "3931 - 해외금리 > 해외국채 국가별 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 해당 화면에서는 종가를 확인할 수 없는데, [REDACTED_ENTITY]국채의 종가를 볼 수 있는 화면을 찾고 싶습니다.
+description: 3931 - 해외금리 > 해외국채 국가별 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "3931 - 해외금리 > 해외국채 국가별"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:4dfdfa22cd9a2db5"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 3931 - 해외금리 > 해외국채 국가별
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:4dfdfa22cd9a2db5
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "3931 - 해외금리 > 해외국채 국가별"
+- faq
+case_topic: 3931 - 해외금리 > 해외국채 국가별
 case_topics:
-  - "3931 - 해외금리 > 해외국채 국가별"
+- 3931 - 해외금리 > 해외국채 국가별
 related_ids:
-  - "check:screen:3931"
-  - "check:enrichment:screen:3931"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:5440"
-candidate_id: "manual-candidate:CRM-05438"
+- check:enrichment:screen:3931
+- check:screen:3931
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:5440
+candidate_id: manual-candidate:CRM-05438
 ---
 # 질문과 답변 — 해당 화면에서는 종가를 확인할 수 없는데, [REDACTED_ENTITY]국채의 종가를 볼 수 있는 화면을 찾고 싶습니다.
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-05438"
 
 안녕하세요. [IDENTIFIER]+ 입니다. [3931] 화면에서 하단의 일별 추이 Tab에서는 해당 DATA에 대한 일별 정보를 확인할수 있습니다. 일별 [REDACTED_ENTITY] 국채 추이 정보는 [3926] 에서 확인이 가능합니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3931 - 해외금리 > 해외국채 국가별

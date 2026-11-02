@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — [REDACTED_ENTITY]국채 실시간 현재 수익률을 알수 있는 화면 번호를 혹시 알려주실수 있을까요?"
-description: "3924 - 해외금리 > 해외국채 Matrix 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — [REDACTED_ENTITY]국채 실시간 현재 수익률을 알수 있는 화면 번호를 혹시 알려주실수 있을까요?
+description: 3924 - 해외금리 > 해외국채 Matrix 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "3924 - 해외금리 > 해외국채 Matrix"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:5e537ffb1b242650"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 3924 - 해외금리 > 해외국채 Matrix
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:5e537ffb1b242650
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "3924 - 해외금리 > 해외국채 Matrix"
+- faq
+case_topic: 3924 - 해외금리 > 해외국채 Matrix
 case_topics:
-  - "3924 - 해외금리 > 해외국채 Matrix"
+- 3924 - 해외금리 > 해외국채 Matrix
 related_ids:
-  - "check:screen:3924"
-  - "check:enrichment:screen:3924"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3639"
-candidate_id: "manual-candidate:CRM-03637"
+- check:enrichment:screen:3924
+- check:screen:3924
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3639
+candidate_id: manual-candidate:CRM-03637
 ---
 # 질문과 답변 — [REDACTED_ENTITY]국채 실시간 현재 수익률을 알수 있는 화면 번호를 혹시 알려주실수 있을까요?
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-03637"
 
 안녕하세요. [IDENTIFIER]+ 입니다. [REDACTED_ENTITY]국채 수익률의 경우 3930 [REDACTED_ENTITY]국채 시세표 및 3924 [REDACTED_ENTITY]국채 Matrix 등에서 전반적인 시세표를 확인 가능하십니다. 3934 [REDACTED_ENTITY]국채 시간대별 종가 화면에서 특정 국가에 대한 최근 시간대별 추이도 확인 가능하십니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3924 - 해외금리 > 해외국채 Matrix

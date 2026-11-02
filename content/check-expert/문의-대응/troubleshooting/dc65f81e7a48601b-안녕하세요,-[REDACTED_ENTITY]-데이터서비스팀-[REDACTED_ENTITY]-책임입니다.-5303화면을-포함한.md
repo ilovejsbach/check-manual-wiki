@@ -1,31 +1,31 @@
 ---
-title: "오류 해결 — 안녕하세요, [REDACTED_ENTITY] 데이터서비스팀 [REDACTED_ENTITY] 책임입니다. 5303화면을 포함한…"
-description: "5303 - 고시환율>매매기준율(서울외국환) 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — 안녕하세요, [REDACTED_ENTITY] 데이터서비스팀 [REDACTED_ENTITY] 책임입니다. 5303화면을 포함한…
+description: 5303 - 고시환율>매매기준율(서울외국환) 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "5303 - 고시환율>매매기준율(서울외국환)"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:dc65f81e7a48601b"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 5303 - 고시환율>매매기준율(서울외국환)
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:dc65f81e7a48601b
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "caution"
-  - "faq"
-case_topic: "5303 - 고시환율>매매기준율(서울외국환)"
+- troubleshooting
+- procedure
+- caution
+- faq
+case_topic: 5303 - 고시환율>매매기준율(서울외국환)
 case_topics:
-  - "5303 - 고시환율>매매기준율(서울외국환)"
+- 5303 - 고시환율>매매기준율(서울외국환)
 related_ids:
-  - "check:screen:5303"
-  - "check:enrichment:screen:5303"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3035"
-candidate_id: "manual-candidate:CRM-03033"
+- check:screen:5303
+- check:enrichment:screen:5303
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3035
+candidate_id: manual-candidate:CRM-03033
 ---
 # 오류 해결 — 안녕하세요, [REDACTED_ENTITY] 데이터서비스팀 [REDACTED_ENTITY] 책임입니다. 5303화면을 포함한…
 
@@ -39,8 +39,11 @@ candidate_id: "manual-candidate:CRM-03033"
 
 팝업 공지는 저희가 사용자 입장에서 꼭 필요하다고 하는 내용을 공지하는 것이라서, 공식적으로 팝업 원천 차단 방법은 제공해드리지 않습니다. 자동화 프로그램 상에서, 팝업을 인지해서, 지우는 방법을 권장드립니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/외환/5303-5303-고시환율-매매기준율(서울외국환)|5303 - 고시환율>매매기준율(서울외국환)]]
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 5303 - 고시환율>매매기준율(서울외국환)

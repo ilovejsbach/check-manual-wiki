@@ -1,28 +1,28 @@
 ---
-title: "활용 팁 — [IDENTIFIER] [REDACTED_ENTITY]4601구조일20-29 원리금처리구분 절상->원미만인정으로 수정요청"
-description: "4601 - 당일현황 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보."
+title: 활용 팁 — [IDENTIFIER] [REDACTED_ENTITY]4601구조일20-29 원리금처리구분 절상->원미만인정으로 수정요청
+description: 4601 - 당일현황 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "활용 팁"
-  - "검수 필요"
-  - "4601 - 당일현황"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:45e046f2c5ddeab8"
-document_type: "support_case"
-case_type: "tip"
+- CHECK Expert
+- 문의 대응
+- 활용 팁
+- 검수 필요
+- 4601 - 당일현황
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:45e046f2c5ddeab8
+document_type: support_case
+case_type: tip
 case_facets:
-  - "tip"
-case_topic: "4601 - 당일현황"
+- tip
+case_topic: 4601 - 당일현황
 case_topics:
-  - "4601 - 당일현황"
+- 4601 - 당일현황
 related_ids:
-  - "check:screen:4601"
-  - "check:enrichment:screen:4601"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:6434"
-candidate_id: "manual-candidate:CRM-06432"
+- check:enrichment:screen:4601
+- check:screen:4601
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:6434
+candidate_id: manual-candidate:CRM-06432
 ---
 # 활용 팁 — [IDENTIFIER] [REDACTED_ENTITY]4601구조일20-29 원리금처리구분 절상->원미만인정으로 수정요청
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-06432"
 
 [REDACTED_ENTITY] 복리채 앞으로 원미만인정으로 발행한다고 함. 수정 후 연락드림
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **활용 팁**
 - 함께 볼 유형: 활용 팁
 - 업무·주제: 4601 - 당일현황

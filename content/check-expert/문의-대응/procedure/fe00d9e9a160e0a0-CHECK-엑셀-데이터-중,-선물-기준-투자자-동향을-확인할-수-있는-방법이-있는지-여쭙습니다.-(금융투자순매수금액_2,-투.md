@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — CHECK 엑셀 데이터 중, 선물 기준 투자자 동향을 확인할 수 있는 방법이 있는지 여쭙습니다. (금융투자순매수금액_2, 투…"
-description: "4212 - 일별순매수 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — CHECK 엑셀 데이터 중, 선물 기준 투자자 동향을 확인할 수 있는 방법이 있는지 여쭙습니다. (금융투자순매수금액_2,
+  투…
+description: 4212 - 일별순매수 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4212 - 일별순매수"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:fe00d9e9a160e0a0"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4212 - 일별순매수
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:fe00d9e9a160e0a0
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4212 - 일별순매수"
+- procedure
+- faq
+case_topic: 4212 - 일별순매수
 case_topics:
-  - "4212 - 일별순매수"
+- 4212 - 일별순매수
 related_ids:
-  - "check:screen:4212"
-  - "check:enrichment:screen:4212"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "CRM데이터(PID복원)!row:909"
-candidate_id: "manual-candidate:VOC-00907"
+- check:enrichment:screen:4212
+- check:screen:4212
+review_status: candidate
+mapping_status: mapped
+source_locator: CRM데이터(PID복원)!row:909
+candidate_id: manual-candidate:VOC-00907
 ---
 # 사용 절차 — CHECK 엑셀 데이터 중, 선물 기준 투자자 동향을 확인할 수 있는 방법이 있는지 여쭙습니다. (금융투자순매수금액_2, 투…
 
@@ -37,8 +38,11 @@ CHECK 엑셀 데이터 중, 선물 기준 투자자 동향을 확인할 수 있�
 
 안녕하세요. [IDENTIFIER]+ 입니다. CHECK 엑셀프리미엄을 활용하실때 순서는 1) 해당화면 확인 : 4212 2) 오른쪽클릭 - 엑셀프리미엄보내기 3) 프리미엄함수를 기호에 맞게 수정해서 사용 하시면 됩니다. 사용사례를 첨부로 남기니 참조부탁드립니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4212 - 일별순매수

@@ -1,28 +1,29 @@
 ---
-title: "질문과 답변 — [IDENTIFIER] 이 종목 현금흐름 이자에 대해 문의드렸는데 이상 없음 확인해서 답변 안 주셔도 될 거 같습니다 감사합니다."
-description: "3005 - 발행정보 > 주요 > 종목별 현금흐름 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — [IDENTIFIER] 이 종목 현금흐름 이자에 대해 문의드렸는데 이상 없음 확인해서 답변 안 주셔도 될 거 같습니다
+  감사합니다.
+description: 3005 - 발행정보 > 주요 > 종목별 현금흐름 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "3005 - 발행정보 > 주요 > 종목별 현금흐름"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:1d9072d18fc2b797"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 3005 - 발행정보 > 주요 > 종목별 현금흐름
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:1d9072d18fc2b797
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "3005 - 발행정보 > 주요 > 종목별 현금흐름"
+- faq
+case_topic: 3005 - 발행정보 > 주요 > 종목별 현금흐름
 case_topics:
-  - "3005 - 발행정보 > 주요 > 종목별 현금흐름"
+- 3005 - 발행정보 > 주요 > 종목별 현금흐름
 related_ids:
-  - "check:screen:3005"
-  - "check:enrichment:screen:3005"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3417"
-candidate_id: "manual-candidate:CRM-03415"
+- check:enrichment:screen:3005
+- check:screen:3005
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3417
+candidate_id: manual-candidate:CRM-03415
 ---
 # 질문과 답변 — [IDENTIFIER] 이 종목 현금흐름 이자에 대해 문의드렸는데 이상 없음 확인해서 답변 안 주셔도 될 거 같습니다 감사합니다.
 
@@ -36,8 +37,11 @@ candidate_id: "manual-candidate:CRM-03415"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 문의주신 내용에 관하여 이상없음을 확인하였습니다. 추가적으로 문의사항 있으시면 언제든지 연락 주십시오. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3005 - 발행정보 > 주요 > 종목별 현금흐름

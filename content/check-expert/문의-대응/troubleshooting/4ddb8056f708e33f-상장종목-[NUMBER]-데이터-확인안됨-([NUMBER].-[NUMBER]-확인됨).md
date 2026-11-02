@@ -1,30 +1,30 @@
 ---
-title: "오류 해결 — 상장종목 [NUMBER] 데이터 확인안됨 ([NUMBER]. [NUMBER] 확인됨)"
-description: "4724 - 과거민감도 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — 상장종목 [NUMBER] 데이터 확인안됨 ([NUMBER]. [NUMBER] 확인됨)
+description: 4724 - 과거민감도 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "4724 - 과거민감도"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:4ddb8056f708e33f"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 4724 - 과거민감도
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:4ddb8056f708e33f
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "faq"
-case_topic: "4724 - 과거민감도"
+- troubleshooting
+- procedure
+- faq
+case_topic: 4724 - 과거민감도
 case_topics:
-  - "4724 - 과거민감도"
+- 4724 - 과거민감도
 related_ids:
-  - "check:screen:4724"
-  - "check:enrichment:screen:4724"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1274"
-candidate_id: "manual-candidate:CRM-01272"
+- check:screen:4724
+- check:enrichment:screen:4724
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1274
+candidate_id: manual-candidate:CRM-01272
 ---
 # 오류 해결 — 상장종목 [NUMBER] 데이터 확인안됨 ([NUMBER]. [NUMBER] 확인됨)
 
@@ -38,8 +38,11 @@ candidate_id: "manual-candidate:CRM-01272"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 문의주신 사항에 대한 내부 점검으로 답변이 늦어진 점 깊이 사과드립니다. 말씀해주신 대로 3월 옵션 종목이 평소보다 많아 데이터 허용 사이즈를 초과하면서, TR 4724 과거민감도 화면의 [NUMBER] 만기 리스트 조회가 정상적으로 이루어지지 않았습니다. 현재는 수신 전문 사이즈를 분리하여 수정 작업을 완료하였으며, 화면이 정상적으로 작동하고 있음을 알려드립니다. 서비스 이용에 불편을 드린 점 다시 한번 사과드리며, 앞으로는 보다 안정적인 환경을 제공할 수 있도록 최선을 다하겠습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/옵션/4724-4724-과거민감도|4724 - 과거민감도]]
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 사용 절차, 질문과 답변
 - 업무·주제: 4724 - 과거민감도

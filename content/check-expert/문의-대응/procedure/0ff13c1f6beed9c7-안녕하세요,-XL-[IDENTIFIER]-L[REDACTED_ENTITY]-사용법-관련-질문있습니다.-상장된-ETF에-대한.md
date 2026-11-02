@@ -1,28 +1,27 @@
 ---
-title: "사용 절차 — 안녕하세요, XL [IDENTIFIER] L[REDACTED_ENTITY] 사용법 관련 질문있습니다. 상장된 ETF에 대한…"
-description: "펀드·ETF 구성·운용정보 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 안녕하세요, XL [IDENTIFIER] L[REDACTED_ENTITY] 사용법 관련 질문있습니다. 상장된 ETF에 대한…
+description: 펀드·ETF 구성·운용정보 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "펀드·ETF 구성·운용정보"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:0ff13c1f6beed9c7"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 펀드·ETF 구성·운용정보
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:0ff13c1f6beed9c7
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "펀드·ETF 구성·운용정보"
+- procedure
+- faq
+case_topic: 펀드·ETF 구성·운용정보
 case_topics:
-  - "펀드·ETF 구성·운용정보"
-related_ids:
-  - "check:enrichment:unmapped:ee6126df39aa"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:1397"
-candidate_id: "manual-candidate:VOC-01395"
+- 펀드·ETF 구성·운용정보
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:1397
+candidate_id: manual-candidate:VOC-01395
 ---
 # 사용 절차 — 안녕하세요, XL [IDENTIFIER] L[REDACTED_ENTITY] 사용법 관련 질문있습니다. 상장된 ETF에 대한…
 
@@ -36,8 +35,11 @@ candidate_id: "manual-candidate:VOC-01395"
 
 CLIST 함수를 사용하시면 됩니다. 예를 들어, 아래와 같이 사용합니다. =CLIST( "", "", -1, "[NUMBER]*001", "[NUMBER]", "", "[NUMBER]", "DESC", "[IDENTIFIER]=true;")
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CLIST 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 펀드·ETF 구성·운용정보

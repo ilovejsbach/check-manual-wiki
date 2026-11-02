@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — 분석지표 중 PVBP 외, PPC1, PPC100등의 분석지표에 대한 설명이 필요합니다"
-description: "3000 - 발행정보 > 주요 > 종목상세 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 분석지표 중 PVBP 외, PPC1, PPC100등의 분석지표에 대한 설명이 필요합니다
+description: 3000 - 발행정보 > 주요 > 종목상세 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3000 - 발행정보 > 주요 > 종목상세"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:364723ac711f8aab"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3000 - 발행정보 > 주요 > 종목상세
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:364723ac711f8aab
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3000 - 발행정보 > 주요 > 종목상세"
+- procedure
+- faq
+case_topic: 3000 - 발행정보 > 주요 > 종목상세
 case_topics:
-  - "3000 - 발행정보 > 주요 > 종목상세"
+- 3000 - 발행정보 > 주요 > 종목상세
 related_ids:
-  - "check:screen:3000"
-  - "check:enrichment:screen:3000"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1081"
-candidate_id: "manual-candidate:CRM-01079"
+- check:enrichment:screen:3000
+- check:screen:3000
+- check:tr:3436
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1081
+candidate_id: manual-candidate:CRM-01079
 ---
 # 사용 절차 — 분석지표 중 PVBP 외, PPC1, PPC100등의 분석지표에 대한 설명이 필요합니다
 
@@ -37,8 +38,11 @@ candidate_id: "manual-candidate:CRM-01079"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 관련 분석지표에 대해서는 3436화면 분석지표버튼을 통해 확인하실 수 있습니다. PVBP : PPC1 * 민평가격/100 민평가격을 기초로하여 산출하게끔 되어있는데, PPC1 등 정확한 산식을 익일 시스템을 통해 확인한 후 연락드리도록 하겠습니다. 바로 답변드리지 못하여 죄송합니다. 감사합니다. [컨텐츠문의] 11/19 전화로 추가설명하여 응대완료 PPC1 : 수익률 변동에 따른 가격의 실제 변화율 PPC100 : 현재수익률에 *100을 PPC1처럼 적용, 수익률은 민평데이터 사용 가격은 소수2째자리, 결제일은 계산당일 PVBP : PPC1*민평가격/100 채권의 요구수익률 변화가 채권가격에 미치는 영향을 설명하는데 사용되는 척도 채권의 가격민감도를 측정하는 방법 : 채권민감도, 델타
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/tr-후보/3436|TR 3436 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3000 - 발행정보 > 주요 > 종목상세

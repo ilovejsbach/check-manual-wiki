@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — KRX시장과 주간선물 말고 야간선물과 NXT시장의 베이시스차트를 보고싶습니다."
-description: "4315 - Tick차트 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — KRX시장과 주간선물 말고 야간선물과 NXT시장의 베이시스차트를 보고싶습니다.
+description: 4315 - Tick차트 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "4315 - Tick차트"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:fe45744bdddf6a4c"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 4315 - Tick차트
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:fe45744bdddf6a4c
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "4315 - Tick차트"
+- faq
+case_topic: 4315 - Tick차트
 case_topics:
-  - "4315 - Tick차트"
+- 4315 - Tick차트
 related_ids:
-  - "check:screen:4315"
-  - "check:enrichment:screen:4315"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3736"
-candidate_id: "manual-candidate:CRM-03734"
+- check:enrichment:screen:4315
+- check:screen:4315
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3736
+candidate_id: manual-candidate:CRM-03734
 ---
 # 질문과 답변 — KRX시장과 주간선물 말고 야간선물과 NXT시장의 베이시스차트를 보고싶습니다.
 
@@ -36,8 +36,11 @@ KRX시장과 주간선물 말고 야간선물과 NXT시장의 베이시스차트
 
 안녕하세요. [IDENTIFIER]+ 입니다. 야간선물과 NXT시장 거래시간에는 지수 산출이 안되기 때문에 베이시스 데이터가 제공되지 않습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4315 - Tick차트

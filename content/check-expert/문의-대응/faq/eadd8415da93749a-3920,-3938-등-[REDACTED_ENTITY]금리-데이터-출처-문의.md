@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — 3920, 3938 등 [REDACTED_ENTITY]금리 데이터 출처 문의"
-description: "3920 - 해외금리 > 미국/일본 국채금리 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 3920, 3938 등 [REDACTED_ENTITY]금리 데이터 출처 문의
+description: 3920 - 해외금리 > 미국/일본 국채금리 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "3920 - 해외금리 > 미국/일본 국채금리"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:eadd8415da93749a"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 3920 - 해외금리 > 미국/일본 국채금리
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:eadd8415da93749a
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "3920 - 해외금리 > 미국/일본 국채금리"
+- faq
+case_topic: 3920 - 해외금리 > 미국/일본 국채금리
 case_topics:
-  - "3920 - 해외금리 > 미국/일본 국채금리"
+- 3920 - 해외금리 > 미국/일본 국채금리
 related_ids:
-  - "check:screen:3920"
-  - "check:enrichment:screen:3920"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3101"
-candidate_id: "manual-candidate:CRM-03099"
+- check:enrichment:screen:3920
+- check:screen:3920
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3101
+candidate_id: manual-candidate:CRM-03099
 ---
 # 질문과 답변 — 3920, 3938 등 [REDACTED_ENTITY]금리 데이터 출처 문의
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-03099"
 
 프레본 데이터
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3920 - 해외금리 > 미국/일본 국채금리

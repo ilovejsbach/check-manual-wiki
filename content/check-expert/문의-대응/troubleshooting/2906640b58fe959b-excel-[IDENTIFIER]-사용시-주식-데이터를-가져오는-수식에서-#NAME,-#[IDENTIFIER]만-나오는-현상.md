@@ -1,31 +1,32 @@
 ---
-title: "오류 해결 — excel [IDENTIFIER] 사용시 주식 데이터를 가져오는 수식에서 #NAME, #[IDENTIFIER]만 나오는 현상…"
-description: "메뉴와 템플릿 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: '오류 해결 — excel [IDENTIFIER] 사용시 주식 데이터를 가져오는 수식에서 #NAME, #[IDENTIFIER]만 나오는
+  현상…'
+description: 메뉴와 템플릿 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "메뉴와 템플릿"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:2906640b58fe959b"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 메뉴와 템플릿
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:2906640b58fe959b
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "caution"
-  - "faq"
-case_topic: "메뉴와 템플릿"
+- troubleshooting
+- procedure
+- caution
+- faq
+case_topic: 메뉴와 템플릿
 case_topics:
-  - "메뉴와 템플릿"
+- 메뉴와 템플릿
 related_ids:
-  - "check:excel:manual:메뉴와-템플릿"
-  - "check:enrichment:excel:manual:메뉴와-템플릿"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1340"
-candidate_id: "manual-candidate:CRM-01338"
+- check:enrichment:excel:manual:메뉴와-템플릿
+- check:excel:manual:메뉴와-템플릿
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1340
+candidate_id: manual-candidate:CRM-01338
 ---
 # 오류 해결 — excel [IDENTIFIER] 사용시 주식 데이터를 가져오는 수식에서 #NAME, #[IDENTIFIER]만 나오는 현상…
 
@@ -39,8 +40,11 @@ excel [IDENTIFIER] 사용시 주식 데이터를 가져오는 수식에서 #NAME
 
 안녕하세요. [IDENTIFIER]+ 입니다. 엑셀 프리미엄 애드인이 빠졌을 때 나오는 현상으로 체크 [상단메뉴 → 도움말 → 엑셀프리미엄 설치하기]를 진행 후 가능하십니다. 해결되지 않으시면 재문의주시면 유선으로 연락 드리도록 하겠습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 메뉴와 템플릿

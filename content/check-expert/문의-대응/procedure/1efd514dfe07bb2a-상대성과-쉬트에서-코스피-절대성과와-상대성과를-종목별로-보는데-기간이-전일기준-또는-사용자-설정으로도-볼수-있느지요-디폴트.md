@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — 상대성과 쉬트에서 코스피 절대성과와 상대성과를 종목별로 보는데 기간이 전일기준 또는 사용자 설정으로도 볼수 있느지요? 디폴트…"
-description: "1542 - 업종내 구성종목의 상대성과 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 상대성과 쉬트에서 코스피 절대성과와 상대성과를 종목별로 보는데 기간이 전일기준 또는 사용자 설정으로도 볼수 있느지요? 디폴트…
+description: 1542 - 업종내 구성종목의 상대성과 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "1542 - 업종내 구성종목의 상대성과"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:1efd514dfe07bb2a"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 1542 - 업종내 구성종목의 상대성과
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:1efd514dfe07bb2a
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "1542 - 업종내 구성종목의 상대성과"
+- procedure
+- faq
+case_topic: 1542 - 업종내 구성종목의 상대성과
 case_topics:
-  - "1542 - 업종내 구성종목의 상대성과"
+- 1542 - 업종내 구성종목의 상대성과
 related_ids:
-  - "check:screen:1542"
-  - "check:enrichment:screen:1542"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3515"
-candidate_id: "manual-candidate:CRM-03513"
+- check:enrichment:screen:1542
+- check:screen:1542
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3515
+candidate_id: manual-candidate:CRM-03513
 ---
 # 사용 절차 — 상대성과 쉬트에서 코스피 절대성과와 상대성과를 종목별로 보는데 기간이 전일기준 또는 사용자 설정으로도 볼수 있느지요? 디폴트…
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-03513"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 화면 중간 상단의 '절대성과' 하단의 (1주, 1달, 3달, 6달) 가장 우측 탭을 마우스 클릭하시면 '1년', 'YTD', '지정일' 이 나옵니다. 그 중 '지정일' 버튼을 누르신 후, 원하시는 일자(EX. 전일 기준 또는 사용자 설정)를 선택하시어 비교 분석 하실 수 있습니다. 화면 중간 상단 '차감/비율' 오른쪽 엔터 모양 네모 버튼을 눌러주시면 데이터가 버튼을 누르는 시점에 맞게 변환되게 됩니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 1542 - 업종내 구성종목의 상대성과

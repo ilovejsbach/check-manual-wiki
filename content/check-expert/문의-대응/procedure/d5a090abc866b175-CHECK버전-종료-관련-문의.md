@@ -1,29 +1,28 @@
 ---
-title: "사용 절차 — CHECK버전 종료 관련 문의"
-description: "공통기능 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — CHECK버전 종료 관련 문의
+description: 공통기능 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "공통기능"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:d5a090abc866b175"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 공통기능
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:d5a090abc866b175
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "faq"
-case_topic: "공통기능"
+- troubleshooting
+- procedure
+- faq
+case_topic: 공통기능
 case_topics:
-  - "공통기능"
-related_ids:
-  - "check:enrichment:unmapped:e685fe63fa73"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:813"
-candidate_id: "manual-candidate:CRM-00811"
+- 공통기능
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:813
+candidate_id: manual-candidate:CRM-00811
 ---
 # 사용 절차 — CHECK버전 종료 관련 문의
 
@@ -37,8 +36,11 @@ CHECK버전 종료 관련 문의
 
 구버전 종료. 신버전 아이콘 바탕화면 설치됨을 안내. 구버전 USER정보 자동이관 되었으며 관련하여 요청/문의 있으실 경우 다시 연락주시기로 함
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 오류 해결, 사용 절차, 질문과 답변
 - 업무·주제: 공통기능

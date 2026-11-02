@@ -1,29 +1,29 @@
 ---
-title: "오류 해결 — 1335화면 비중은 유동시총비중인지 문의"
-description: "주식 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — 1335화면 비중은 유동시총비중인지 문의
+description: 주식 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "주식"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:c7dbe15deb5fbcd0"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 주식
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:c7dbe15deb5fbcd0
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "faq"
-case_topic: "주식"
+- troubleshooting
+- procedure
+- faq
+case_topic: 주식
 case_topics:
-  - "주식"
+- 주식
 related_ids:
-  - "check:enrichment:unmapped:aa2106d8aba0"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:1361"
-candidate_id: "manual-candidate:CRM-01359"
+- check:tr:1335
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:1361
+candidate_id: manual-candidate:CRM-01359
 ---
 # 오류 해결 — 1335화면 비중은 유동시총비중인지 문의
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-01359"
 
 상장시총/유동시총 버튼 전환으로 KRX라이센스 계약이 되어있으실 경우 유동시총정보 확인가능. 계약이 되어 있지 않을 경우 유동시총비중 - 로 조회안됨 기본조회는 상장시총 비중으로 제공됨을 안내.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/tr-후보/1335|TR 1335 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 사용 절차, 질문과 답변
 - 업무·주제: 주식

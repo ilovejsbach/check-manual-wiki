@@ -1,28 +1,29 @@
 ---
-title: "질문과 답변 — 넥스트트레이드 [IDENTIFIER] 국내주식 시세판과 시간외 국내주식 실시간시세판 알려주세요"
-description: "1425 - 시간외단일가 시세표 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 넥스트트레이드 [IDENTIFIER] 국내주식 시세판과 시간외 국내주식 실시간시세판 알려주세요
+description: 1425 - 시간외단일가 시세표 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "1425 - 시간외단일가 시세표"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:ba9dbae0c9dae3eb"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 1425 - 시간외단일가 시세표
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:ba9dbae0c9dae3eb
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "1425 - 시간외단일가 시세표"
+- faq
+case_topic: 1425 - 시간외단일가 시세표
 case_topics:
-  - "1425 - 시간외단일가 시세표"
+- 1425 - 시간외단일가 시세표
 related_ids:
-  - "check:screen:1425"
-  - "check:enrichment:screen:1425"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4202"
-candidate_id: "manual-candidate:CRM-04200"
+- check:screen:1425
+- check:enrichment:screen:1425
+- check:tr:1550
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4202
+candidate_id: manual-candidate:CRM-04200
 ---
 # 질문과 답변 — 넥스트트레이드 [IDENTIFIER] 국내주식 시세판과 시간외 국내주식 실시간시세판 알려주세요
 
@@ -36,8 +37,12 @@ candidate_id: "manual-candidate:CRM-04200"
 
 [REDACTED_ENTITY] 시세판은 1550, 1559에서 제공하고 있으나, [IDENTIFIER]에 대해서 보시려면 1550 화면을 보셔야 합니다. 상단 좌측에서 'N'과 유가-[IDENTIFIER]으로 세팅해서 보시면 됩니다. 시간외 시세표는 1425 화면에서 제공하고 있습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/주식/1425-1425-시간외단일가-시세표|1425 - 시간외단일가 시세표]]
+- [[check-expert/tr-후보/1550|TR 1550 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 1425 - 시간외단일가 시세표

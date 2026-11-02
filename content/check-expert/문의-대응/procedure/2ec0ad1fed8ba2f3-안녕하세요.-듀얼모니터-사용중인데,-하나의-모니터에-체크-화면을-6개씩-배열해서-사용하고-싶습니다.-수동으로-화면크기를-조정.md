@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — 안녕하세요. 듀얼모니터 사용중인데, 하나의 모니터에 체크 화면을 6개씩 배열해서 사용하고 싶습니다. 수동으로 화면크기를 조정…"
-description: "3080 - 장내국채 > 호가(6종목) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 안녕하세요. 듀얼모니터 사용중인데, 하나의 모니터에 체크 화면을 6개씩 배열해서 사용하고 싶습니다. 수동으로 화면크기를
+  조정…
+description: 3080 - 장내국채 > 호가(6종목) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3080 - 장내국채 > 호가(6종목)"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:2ec0ad1fed8ba2f3"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3080 - 장내국채 > 호가(6종목)
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:2ec0ad1fed8ba2f3
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3080 - 장내국채 > 호가(6종목)"
+- procedure
+- faq
+case_topic: 3080 - 장내국채 > 호가(6종목)
 case_topics:
-  - "3080 - 장내국채 > 호가(6종목)"
+- 3080 - 장내국채 > 호가(6종목)
 related_ids:
-  - "check:screen:3080"
-  - "check:enrichment:screen:3080"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3019"
-candidate_id: "manual-candidate:CRM-03017"
+- check:enrichment:screen:3080
+- check:screen:3080
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3019
+candidate_id: manual-candidate:CRM-03017
 ---
 # 사용 절차 — 안녕하세요. 듀얼모니터 사용중인데, 하나의 모니터에 체크 화면을 6개씩 배열해서 사용하고 싶습니다. 수동으로 화면크기를 조정…
 
@@ -37,8 +38,11 @@ candidate_id: "manual-candidate:CRM-03017"
 
 안녕하세요. F10 키를 누르시면 화면 정렬이 됩니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3080 - 장내국채 > 호가(6종목)

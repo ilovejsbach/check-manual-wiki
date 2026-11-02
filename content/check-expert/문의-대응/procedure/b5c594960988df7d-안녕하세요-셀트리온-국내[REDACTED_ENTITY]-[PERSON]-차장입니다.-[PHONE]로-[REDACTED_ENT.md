@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — 안녕하세요 셀트리온 국내[REDACTED_ENTITY] [PERSON] 차장입니다. [PHONE]로 [REDACTED_ENT…"
-description: "5301 - 고시환율>고시환율 일중추이(외환은행) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 안녕하세요 셀트리온 국내[REDACTED_ENTITY] [PERSON] 차장입니다. [PHONE]로 [REDACTED_ENT…
+description: 5301 - 고시환율>고시환율 일중추이(외환은행) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "5301 - 고시환율>고시환율 일중추이(외환은행)"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:b5c594960988df7d"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 5301 - 고시환율>고시환율 일중추이(외환은행)
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:b5c594960988df7d
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "5301 - 고시환율>고시환율 일중추이(외환은행)"
+- procedure
+- faq
+case_topic: 5301 - 고시환율>고시환율 일중추이(외환은행)
 case_topics:
-  - "5301 - 고시환율>고시환율 일중추이(외환은행)"
+- 5301 - 고시환율>고시환율 일중추이(외환은행)
 related_ids:
-  - "check:screen:5301"
-  - "check:enrichment:screen:5301"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4163"
-candidate_id: "manual-candidate:CRM-04161"
+- check:enrichment:screen:5301
+- check:screen:5301
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4163
+candidate_id: manual-candidate:CRM-04161
 ---
 # 사용 절차 — 안녕하세요 셀트리온 국내[REDACTED_ENTITY] [PERSON] 차장입니다. [PHONE]로 [REDACTED_ENT…
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-04161"
 
 유선으로 안내해 드렸습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 5301 - 고시환율>고시환율 일중추이(외환은행)

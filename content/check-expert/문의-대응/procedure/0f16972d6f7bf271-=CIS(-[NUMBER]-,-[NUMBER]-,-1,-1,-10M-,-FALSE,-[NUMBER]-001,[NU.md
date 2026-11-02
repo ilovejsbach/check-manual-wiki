@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — =CIS( \"[NUMBER]\", \"[NUMBER]\", -1, -1, \"10M\", FALSE, \"[NUMBER]*001,[NU…"
-description: "4151 - 종목일중 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — =CIS( "[NUMBER]", "[NUMBER]", -1, -1, "10M", FALSE, "[NUMBER]*001,[NU…
+description: 4151 - 종목일중 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4151 - 종목일중"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:0f16972d6f7bf271"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4151 - 종목일중
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:0f16972d6f7bf271
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4151 - 종목일중"
+- procedure
+- faq
+case_topic: 4151 - 종목일중
 case_topics:
-  - "4151 - 종목일중"
+- 4151 - 종목일중
 related_ids:
-  - "check:screen:4151"
-  - "check:enrichment:screen:4151"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1299"
-candidate_id: "manual-candidate:CRM-01297"
+- check:screen:4151
+- check:enrichment:screen:4151
+- check:tr:1327
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1299
+candidate_id: manual-candidate:CRM-01297
 ---
 # 사용 절차 — =CIS( "[NUMBER]", "[NUMBER]", -1, -1, "10M", FALSE, "[NUMBER]*001,[NU…
 
@@ -37,8 +38,14 @@ candidate_id: "manual-candidate:CRM-01297"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 문의주신 주식(우선주 포함) 인트라(10분) 데이터는 그 이상 데이터를 저장하고 있지 않아 보여지지 않아 현재 조회되는 일자까지 조회되고 있습니다. 참고로 TR 1327 일중추이, TR 4151 선물일중 화면 등에서 조회일자 및 주기(10초, 1분 등) 선택하신 다음 해당 화면 데이터 조회된 결과창에서 마우스 우클릭하시어 엑셀 [IDENTIFIER]으로 보내기 기능을 실행하실 수 있으며, 조회된 함수를 이용하여 종목코드 변경하면서 조회하실 수 있습니다. 관련하여 유선으로 연락하여 CT함수 활용 등에 대하여서도 안내 드렸습니다. 추가 문의사항 있으시면 언제든지 연락 주십시오. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/선물/4151-4151-종목일중|4151 - 종목일중]]
+- [[check-expert/tr-후보/1327|TR 1327 (화면 문서 없음)]]
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CIS 함수 설명]]
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CT 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4151 - 종목일중

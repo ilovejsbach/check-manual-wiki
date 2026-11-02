@@ -1,29 +1,29 @@
 ---
-title: "오류 해결 — 사학연금 [REDACTED_ENTITY] [REDACTED_ENTITY]입니다 오늘부터 엑셀 복사 붙여넣기가 안되어서 201…"
-description: "1370 - 관심종목 평가 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — 사학연금 [REDACTED_ENTITY] [REDACTED_ENTITY]입니다 오늘부터 엑셀 복사 붙여넣기가 안되어서 201…
+description: 1370 - 관심종목 평가 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "1370 - 관심종목 평가"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:742ef4143d91f40b"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 1370 - 관심종목 평가
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:742ef4143d91f40b
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "faq"
-case_topic: "1370 - 관심종목 평가"
+- troubleshooting
+- faq
+case_topic: 1370 - 관심종목 평가
 case_topics:
-  - "1370 - 관심종목 평가"
+- 1370 - 관심종목 평가
 related_ids:
-  - "check:screen:1370"
-  - "check:enrichment:screen:1370"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "CRM데이터(PID복원)!row:593"
-candidate_id: "manual-candidate:VOC-00591"
+- check:enrichment:screen:1370
+- check:screen:1370
+review_status: candidate
+mapping_status: mapped
+source_locator: CRM데이터(PID복원)!row:593
+candidate_id: manual-candidate:VOC-00591
 ---
 # 오류 해결 — 사학연금 [REDACTED_ENTITY] [REDACTED_ENTITY]입니다 오늘부터 엑셀 복사 붙여넣기가 안되어서 201…
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:VOC-00591"
 
 안녕하세요 재설치 진행 도와드렸습니다. PC재부팅 후 사용해주시면 됩니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 질문과 답변
 - 업무·주제: 1370 - 관심종목 평가

@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — 외국인 보유잔고중 국채 비중을 알고싶은데. 3267 화면을 보면 되나요? 외국인 27.59% 로 나와있는데. 이게 ㄱ외국인…"
-description: "3267 - 투자자 > (장외)종류/투자자 잔고종합 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 외국인 보유잔고중 국채 비중을 알고싶은데. 3267 화면을 보면 되나요? 외국인 27.59% 로 나와있는데. 이게 ㄱ외국인…
+description: 3267 - 투자자 > (장외)종류/투자자 잔고종합 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "3267 - 투자자 > (장외)종류/투자자 잔고종합"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:bd7a4f3bc9b56ba1"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 3267 - 투자자 > (장외)종류/투자자 잔고종합
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:bd7a4f3bc9b56ba1
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "3267 - 투자자 > (장외)종류/투자자 잔고종합"
+- faq
+case_topic: 3267 - 투자자 > (장외)종류/투자자 잔고종합
 case_topics:
-  - "3267 - 투자자 > (장외)종류/투자자 잔고종합"
+- 3267 - 투자자 > (장외)종류/투자자 잔고종합
 related_ids:
-  - "check:screen:3267"
-  - "check:enrichment:screen:3267"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3453"
-candidate_id: "manual-candidate:CRM-03451"
+- check:screen:3267
+- check:enrichment:screen:3267
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3453
+candidate_id: manual-candidate:CRM-03451
 ---
 # 질문과 답변 — 외국인 보유잔고중 국채 비중을 알고싶은데. 3267 화면을 보면 되나요? 외국인 27.59% 로 나와있는데. 이게 ㄱ외국인…
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-03451"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 국채의 외국인 보유량은 확인하신 27.59%가 맞습니다. 다만 장외채권에 대한 잔고정보는 투자자별 거래 정보를 바탕으로 추정하는 데이터이기 때문에 장내거래 입찰 등 기타 사유로 채권을 취득한 정보는 반영되지 않습니다. 관련해 우측 상단 '도움말' 내용을 참고하시기 바랍니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/채권/3267-3267-투자자-(장외)종류-투자자-잔고종합|3267 - 투자자 > (장외)종류/투자자 잔고종합]]
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3267 - 투자자 > (장외)종류/투자자 잔고종합

@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — KODEX MSCI Korea ETF 구성종목에 대하여 자산총계, 부채총계, 자본총계, 시가총액 데이터(2024년, 2025…"
-description: "1448 - ETF 구성종목(PDF) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — KODEX MSCI Korea ETF 구성종목에 대하여 자산총계, 부채총계, 자본총계, 시가총액 데이터(2024년, 2025…
+description: 1448 - ETF 구성종목(PDF) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "1448 - ETF 구성종목(PDF)"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:f4def54caf40e864"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 1448 - ETF 구성종목(PDF)
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:f4def54caf40e864
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "1448 - ETF 구성종목(PDF)"
+- procedure
+- faq
+case_topic: 1448 - ETF 구성종목(PDF)
 case_topics:
-  - "1448 - ETF 구성종목(PDF)"
+- 1448 - ETF 구성종목(PDF)
 related_ids:
-  - "check:screen:1448"
-  - "check:enrichment:screen:1448"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1516"
-candidate_id: "manual-candidate:CRM-01514"
+- check:screen:1448
+- check:enrichment:screen:1448
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1516
+candidate_id: manual-candidate:CRM-01514
 ---
 # 사용 절차 — KODEX MSCI Korea ETF 구성종목에 대하여 자산총계, 부채총계, 자본총계, 시가총액 데이터(2024년, 2025…
 
@@ -37,8 +37,13 @@ KODEX MSCI Korea ETF 구성종목에 대하여 자산총계, 부채총계, 자�
 
 안녕하세요. [IDENTIFIER]+ 입니다. 1448화면에서 원하시는 종목([NUMBER]) 조회하신 후, 마우스우클릭>엑셀[IDENTIFIER]으로보내기를 실행하시면 구성종목정보를 조회하실 수 있습니다. 조회된 엑셀에서 단축코드를 연동하여 자산총계, 부채총계, 자본총계, 특정시점 시가총액을 조회하실 수 있습니다. 자산총계 조회방법 : =CT($B2, "[IDENTIFIER]") 부채총계 조회방법 : =CT($B2, "[IDENTIFIER]") 자본총계 조회방법 : =CT($B2, "[IDENTIFIER]") 2024년말일자 시가총액 =CTD( "SPT", $B2, "[NUMBER]", [NUMBER]) 2025년말일자 시가총액 =CTD( "SPT", $B2, "[NUMBER]", [NUMBER]) 여기서 $B2는 조회된 정보의 단축코드 셀참조 부분입니다. 위와 같이 조회하신 후, 재무제표관련 정보는 해당 함수에 셀을 위치하시고 엑셀 상단 리본메뉴의 XL [IDENTIFIER] L[REDACTED_ENTITY] 탭을 선택하신 후 함수빌더를 눌러보세요. 항목코드영역에 재무제표관련 원하시는 정보를 대체해서 조회하시면 필요하신 정보들을 확인하실 수 있습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/ETP/1448-1448-ETF-구성종목(PDF)|1448 - ETF 구성종목(PDF)]]
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CT 함수 설명]]
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CTD 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 1448 - ETF 구성종목(PDF)

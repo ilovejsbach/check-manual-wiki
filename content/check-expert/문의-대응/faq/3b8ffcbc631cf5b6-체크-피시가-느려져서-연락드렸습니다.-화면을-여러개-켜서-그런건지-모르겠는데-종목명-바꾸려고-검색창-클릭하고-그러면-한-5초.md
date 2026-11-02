@@ -1,28 +1,29 @@
 ---
-title: "질문과 답변 — 체크 피시가 느려져서 연락드렸습니다. 화면을 여러개 켜서 그런건지 모르겠는데 종목명 바꾸려고 검색창 클릭하고 그러면 한 5초…"
-description: "4205 - 일중순매수 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 체크 피시가 느려져서 연락드렸습니다. 화면을 여러개 켜서 그런건지 모르겠는데 종목명 바꾸려고 검색창 클릭하고 그러면 한
+  5초…
+description: 4205 - 일중순매수 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "4205 - 일중순매수"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:3b8ffcbc631cf5b6"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 4205 - 일중순매수
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:3b8ffcbc631cf5b6
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "4205 - 일중순매수"
+- faq
+case_topic: 4205 - 일중순매수
 case_topics:
-  - "4205 - 일중순매수"
+- 4205 - 일중순매수
 related_ids:
-  - "check:screen:4205"
-  - "check:enrichment:screen:4205"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4471"
-candidate_id: "manual-candidate:CRM-04469"
+- check:enrichment:screen:4205
+- check:screen:4205
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4471
+candidate_id: manual-candidate:CRM-04469
 ---
 # 질문과 답변 — 체크 피시가 느려져서 연락드렸습니다. 화면을 여러개 켜서 그런건지 모르겠는데 종목명 바꾸려고 검색창 클릭하고 그러면 한 5초…
 
@@ -36,8 +37,11 @@ candidate_id: "manual-candidate:CRM-04469"
 
 $$
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4205 - 일중순매수

@@ -1,29 +1,31 @@
 ---
-title: "사용 절차 — 안녕하세요? 채권 종목들의 월별 신용등급 데이터를 알아보고 있습니다. 3741 화면에 보면, '조회일' 기준 해당 등급 또는…"
-description: "3011 - 신용등급 > 종합1 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 안녕하세요? 채권 종목들의 월별 신용등급 데이터를 알아보고 있습니다. 3741 화면에 보면, '조회일' 기준 해당 등급
+  또는…
+description: 3011 - 신용등급 > 종합1 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3011 - 신용등급 > 종합1"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:3ceecc2798baff0f"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3011 - 신용등급 > 종합1
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:3ceecc2798baff0f
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3011 - 신용등급 > 종합1"
+- procedure
+- faq
+case_topic: 3011 - 신용등급 > 종합1
 case_topics:
-  - "3011 - 신용등급 > 종합1"
+- 3011 - 신용등급 > 종합1
 related_ids:
-  - "check:screen:3011"
-  - "check:enrichment:screen:3011"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4502"
-candidate_id: "manual-candidate:CRM-04500"
+- check:screen:3741
+- check:enrichment:screen:3011
+- check:screen:3011
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4502
+candidate_id: manual-candidate:CRM-04500
 ---
 # 사용 절차 — 안녕하세요? 채권 종목들의 월별 신용등급 데이터를 알아보고 있습니다. 3741 화면에 보면, '조회일' 기준 해당 등급 또는…
 
@@ -37,8 +39,11 @@ candidate_id: "manual-candidate:CRM-04500"
 
 유선상으로 안내드렸습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/채권/3741-3741-시가평가-채권그룹-기업별-Term-Structure|3741 - 시가평가 > 채권그룹 > 기업별 Term Structure]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3011 - 신용등급 > 종합1

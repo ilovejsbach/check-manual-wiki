@@ -1,33 +1,33 @@
 ---
-title: "사용 절차 — 안녕하세요, 몇 분 전에 4611 화면 관련해서 문의드렸던 [REDACTED_ENTITY] [REDACTED_ENTITY]입…"
-description: "4571 - 종목일별, 4611 - 일별추이 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 안녕하세요, 몇 분 전에 4611 화면 관련해서 문의드렸던 [REDACTED_ENTITY] [REDACTED_ENTITY]입…
+description: 4571 - 종목일별, 4611 - 일별추이 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4571 - 종목일별"
-  - "4611 - 일별추이"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:e593072c5d399c18"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4571 - 종목일별
+- 4611 - 일별추이
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:e593072c5d399c18
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4571 - 종목일별"
+- procedure
+- faq
+case_topic: 4571 - 종목일별
 case_topics:
-  - "4571 - 종목일별"
-  - "4611 - 일별추이"
+- 4571 - 종목일별
+- 4611 - 일별추이
 related_ids:
-  - "check:screen:4571"
-  - "check:enrichment:screen:4571"
-  - "check:screen:4611"
-  - "check:enrichment:screen:4611"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3874"
-candidate_id: "manual-candidate:CRM-03872"
+- check:screen:4611
+- check:screen:4571
+- check:enrichment:screen:4571
+- check:enrichment:screen:4611
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3874
+candidate_id: manual-candidate:CRM-03872
 ---
 # 사용 절차 — 안녕하세요, 몇 분 전에 4611 화면 관련해서 문의드렸던 [REDACTED_ENTITY] [REDACTED_ENTITY]입…
 
@@ -41,8 +41,12 @@ candidate_id: "manual-candidate:CRM-03872"
 
 안녕하세요. [IDENTIFIER]+ 입니다. TR 4611 일별추이 데이터의 경우 협의대량을 포함하지 않고 있으며, TR 4571 종목일별 화면 상단 '체결내역/시세성향/민감도/평균단가/협의대량' 중 '협의대량'을 선택하시면 확인하실 수 있습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/옵션/4611-4611-일별추이|4611 - 일별추이]]
+- [[check-expert/새로운-모습/옵션/4571-4571-종목일별|4571 - 종목일별]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4571 - 종목일별, 4611 - 일별추이

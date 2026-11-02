@@ -1,31 +1,31 @@
 ---
-title: "오류 해결 — 옵션 데이터의 전일/당일 약정가를 활용하기 위해 API로 [NUMBER](기준가), [NUMBER](현재가) 필드를 끌어오고…"
-description: "4581 - 종목일별 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — 옵션 데이터의 전일/당일 약정가를 활용하기 위해 API로 [NUMBER](기준가), [NUMBER](현재가) 필드를 끌어오고…
+description: 4581 - 종목일별 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "4581 - 종목일별"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:7ca38ee525604a55"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 4581 - 종목일별
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:7ca38ee525604a55
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "caution"
-  - "faq"
-case_topic: "4581 - 종목일별"
+- troubleshooting
+- procedure
+- caution
+- faq
+case_topic: 4581 - 종목일별
 case_topics:
-  - "4581 - 종목일별"
+- 4581 - 종목일별
 related_ids:
-  - "check:screen:4581"
-  - "check:enrichment:screen:4581"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:2310"
-candidate_id: "manual-candidate:CRM-02308"
+- check:screen:4581
+- check:enrichment:screen:4581
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:2310
+candidate_id: manual-candidate:CRM-02308
 ---
 # 오류 해결 — 옵션 데이터의 전일/당일 약정가를 활용하기 위해 API로 [NUMBER](기준가), [NUMBER](현재가) 필드를 끌어오고…
 
@@ -39,8 +39,13 @@ candidate_id: "manual-candidate:CRM-02308"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 관련하여 유선으로 연락하여 안내 드렸습니다. KOSPI 200 콜옵션 2605 1095.0 의 오늘 기준가 CT함수를 적용하실 때, [현재가] =CT( "B0165A33*006", [NUMBER]) [기준가] =CT( "B0165A33*006", [NUMBER]) TR 4581 옵션 종목일별 화면의 약정가의 경우 [NUMBER] [현재가]로 적용할 수 있습니다. 약정가(현재가 [NUMBER]) 만 보실 경우, =CH("","",10,"D",TRUE,"B0165A33*006","[NUMBER]","DESC","[IDENTIFIER]=true;") 둘다 보고자 하실 경우, =CH("","",10,"D",TRUE,"B0165A33*006","[NUMBER], [NUMBER]","DESC","[IDENTIFIER]=true;") 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/옵션/4581-4581-종목일별|4581 - 종목일별]]
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CT 함수 설명]]
+- [[check-expert/excel-premium/매뉴얼/Ez-차트|CH 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 4581 - 종목일별

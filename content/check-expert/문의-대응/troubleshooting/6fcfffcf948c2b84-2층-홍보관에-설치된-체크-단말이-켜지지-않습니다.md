@@ -1,28 +1,28 @@
 ---
-title: "오류 해결 — 2층 홍보관에 설치된 체크 단말이 켜지지 않습니다."
-description: "7000 - 기업종합 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — 2층 홍보관에 설치된 체크 단말이 켜지지 않습니다.
+description: 7000 - 기업종합 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "7000 - 기업종합"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:6fcfffcf948c2b84"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 7000 - 기업종합
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:6fcfffcf948c2b84
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-case_topic: "7000 - 기업종합"
+- troubleshooting
+case_topic: 7000 - 기업종합
 case_topics:
-  - "7000 - 기업종합"
+- 7000 - 기업종합
 related_ids:
-  - "check:screen:7000"
-  - "check:enrichment:screen:7000"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1271"
-candidate_id: "manual-candidate:CRM-01269"
+- check:enrichment:screen:7000
+- check:screen:7000
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1271
+candidate_id: manual-candidate:CRM-01269
 ---
 # 오류 해결 — 2층 홍보관에 설치된 체크 단말이 켜지지 않습니다.
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-01269"
 
 원콜(7000)로 이관 완료
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결
 - 업무·주제: 7000 - 기업종합

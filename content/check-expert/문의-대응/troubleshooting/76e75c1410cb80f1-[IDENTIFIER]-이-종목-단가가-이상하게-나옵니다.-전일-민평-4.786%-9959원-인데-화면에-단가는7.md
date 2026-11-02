@@ -1,30 +1,30 @@
 ---
-title: "오류 해결 — [IDENTIFIER] // 이 종목 단가가 이상하게 나옵니다. 전일 민평 4.786% 9959원 인데 // 화면에 단가는7…"
-description: "3471 - 단가계산 > 발행종목 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — [IDENTIFIER] // 이 종목 단가가 이상하게 나옵니다. 전일 민평 4.786% 9959원 인데 // 화면에 단가는7…
+description: 3471 - 단가계산 > 발행종목 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "3471 - 단가계산 > 발행종목"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:76e75c1410cb80f1"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 3471 - 단가계산 > 발행종목
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:76e75c1410cb80f1
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "caution"
-  - "faq"
-case_topic: "3471 - 단가계산 > 발행종목"
+- troubleshooting
+- caution
+- faq
+case_topic: 3471 - 단가계산 > 발행종목
 case_topics:
-  - "3471 - 단가계산 > 발행종목"
+- 3471 - 단가계산 > 발행종목
 related_ids:
-  - "check:screen:3471"
-  - "check:enrichment:screen:3471"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:2297"
-candidate_id: "manual-candidate:CRM-02295"
+- check:enrichment:screen:3471
+- check:screen:3471
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:2297
+candidate_id: manual-candidate:CRM-02295
 ---
 # 오류 해결 — [IDENTIFIER] // 이 종목 단가가 이상하게 나옵니다. 전일 민평 4.786% 9959원 인데 // 화면에 단가는7…
 
@@ -38,8 +38,11 @@ candidate_id: "manual-candidate:CRM-02295"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 저희 쪽 오류를 수정해서 지금은 정상적으로 단가계산이 가능합니다. 이용에 불편을 드려 대단히 죄송합니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 주의사항, 질문과 답변
 - 업무·주제: 3471 - 단가계산 > 발행종목

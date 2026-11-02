@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — 구성종목(PDF) 조회되는 데이터를 '전체영역 엑셀로 보내기' 버튼을 누르면 자주 에러가 뜨면서 엑셀이 멈춰버리고, 데이터도…"
-description: "1448 - ETF 구성종목(PDF) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 구성종목(PDF) 조회되는 데이터를 '전체영역 엑셀로 보내기' 버튼을 누르면 자주 에러가 뜨면서 엑셀이 멈춰버리고, 데이터도…
+description: 1448 - ETF 구성종목(PDF) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "1448 - ETF 구성종목(PDF)"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:fb1cf9f3f0a8e758"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 1448 - ETF 구성종목(PDF)
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:fb1cf9f3f0a8e758
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "1448 - ETF 구성종목(PDF)"
+- procedure
+- faq
+case_topic: 1448 - ETF 구성종목(PDF)
 case_topics:
-  - "1448 - ETF 구성종목(PDF)"
+- 1448 - ETF 구성종목(PDF)
 related_ids:
-  - "check:screen:1448"
-  - "check:enrichment:screen:1448"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1356"
-candidate_id: "manual-candidate:CRM-01354"
+- check:enrichment:screen:1448
+- check:screen:1448
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1356
+candidate_id: manual-candidate:CRM-01354
 ---
 # 사용 절차 — 구성종목(PDF) 조회되는 데이터를 '전체영역 엑셀로 보내기' 버튼을 누르면 자주 에러가 뜨면서 엑셀이 멈춰버리고, 데이터도…
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-01354"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 유선으로 안내드렸습니다. 엑셀 부하가 있는 파일을 종료 후 같은현상이 있는지 확인부탁드립니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 1448 - ETF 구성종목(PDF)

@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — 개별주식선물을 기초자산코드로 조회할 수 있도록 연동파일을 만드려고 하는데 제작 방식 문의"
-description: "4114 - 주식선물 시세표 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 개별주식선물을 기초자산코드로 조회할 수 있도록 연동파일을 만드려고 하는데 제작 방식 문의
+description: 4114 - 주식선물 시세표 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4114 - 주식선물 시세표"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:c410ecd23a2deae3"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4114 - 주식선물 시세표
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:c410ecd23a2deae3
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4114 - 주식선물 시세표"
+- procedure
+- faq
+case_topic: 4114 - 주식선물 시세표
 case_topics:
-  - "4114 - 주식선물 시세표"
+- 4114 - 주식선물 시세표
 related_ids:
-  - "check:screen:4114"
-  - "check:enrichment:screen:4114"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3383"
-candidate_id: "manual-candidate:CRM-03381"
+- check:screen:4101
+- check:enrichment:screen:4114
+- check:screen:4114
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3383
+candidate_id: manual-candidate:CRM-03381
 ---
 # 사용 절차 — 개별주식선물을 기초자산코드로 조회할 수 있도록 연동파일을 만드려고 하는데 제작 방식 문의
 
@@ -37,8 +38,11 @@ candidate_id: "manual-candidate:CRM-03381"
 
 4101 현재가 화면에서 기초자산코드 앞에 STKFA를 붙여 조회 시 연결선물코드로 조회됨을 안내 4114선물시세표 화면에서 자산별 종목월물 확인가능 안내
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/선물/4101-4101-현재가|4101 - 현재가]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4114 - 주식선물 시세표

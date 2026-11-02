@@ -1,28 +1,29 @@
 ---
-title: "질문과 답변 — 안녕하세요 [REDACTED_ENTITY] 글로벌 마켓운용실 [PERSON] 대리입니다. 혹시 4205 ,1911화면에 나오…"
-description: "4205 - 일중순매수 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 안녕하세요 [REDACTED_ENTITY] 글로벌 마켓운용실 [PERSON] 대리입니다. 혹시 4205 ,1911화면에
+  나오…
+description: 4205 - 일중순매수 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "4205 - 일중순매수"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:a12f360f44ef25b9"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 4205 - 일중순매수
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:a12f360f44ef25b9
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "4205 - 일중순매수"
+- faq
+case_topic: 4205 - 일중순매수
 case_topics:
-  - "4205 - 일중순매수"
+- 4205 - 일중순매수
 related_ids:
-  - "check:screen:4205"
-  - "check:enrichment:screen:4205"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3334"
-candidate_id: "manual-candidate:CRM-03332"
+- check:enrichment:screen:4205
+- check:screen:4205
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3334
+candidate_id: manual-candidate:CRM-03332
 ---
 # 질문과 답변 — 안녕하세요 [REDACTED_ENTITY] 글로벌 마켓운용실 [PERSON] 대리입니다. 혹시 4205 ,1911화면에 나오…
 
@@ -36,8 +37,11 @@ candidate_id: "manual-candidate:CRM-03332"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 코스피/코스닥 현물/선물 수급 분 단위 데이터의 경우 저희도 따로 저장을 해놓지 않고 있습니다. 일간 단위로만 저장이 됩니다. 도움을 드리지 못해 죄송합니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4205 - 일중순매수

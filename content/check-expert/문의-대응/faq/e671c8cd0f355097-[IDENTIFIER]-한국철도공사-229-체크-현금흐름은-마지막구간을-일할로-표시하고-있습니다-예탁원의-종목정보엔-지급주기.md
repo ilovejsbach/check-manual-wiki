@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — [IDENTIFIER] 한국철도공사 229 체크 현금흐름은 마지막구간을 일할로 표시하고 있습니다 예탁원의 종목정보엔 지급주기…"
-description: "3005 - 발행정보 > 주요 > 종목별 현금흐름 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — [IDENTIFIER] 한국철도공사 229 체크 현금흐름은 마지막구간을 일할로 표시하고 있습니다 예탁원의 종목정보엔 지급주기…
+description: 3005 - 발행정보 > 주요 > 종목별 현금흐름 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "3005 - 발행정보 > 주요 > 종목별 현금흐름"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:e671c8cd0f355097"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 3005 - 발행정보 > 주요 > 종목별 현금흐름
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:e671c8cd0f355097
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "3005 - 발행정보 > 주요 > 종목별 현금흐름"
+- faq
+case_topic: 3005 - 발행정보 > 주요 > 종목별 현금흐름
 case_topics:
-  - "3005 - 발행정보 > 주요 > 종목별 현금흐름"
+- 3005 - 발행정보 > 주요 > 종목별 현금흐름
 related_ids:
-  - "check:screen:3005"
-  - "check:enrichment:screen:3005"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3329"
-candidate_id: "manual-candidate:CRM-03327"
+- check:enrichment:screen:3005
+- check:screen:3005
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3329
+candidate_id: manual-candidate:CRM-03327
 ---
 # 질문과 답변 — [IDENTIFIER] 한국철도공사 229 체크 현금흐름은 마지막구간을 일할로 표시하고 있습니다 예탁원의 종목정보엔 지급주기…
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-03327"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 문의주신 채권에 대해 예탁원 정보 확인하여 반영하였습니다. 이상있으신경우 재문의주시면 다시 확인하여 연락드리겠습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3005 - 발행정보 > 주요 > 종목별 현금흐름

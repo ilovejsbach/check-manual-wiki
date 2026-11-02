@@ -1,27 +1,26 @@
 ---
-title: "질문과 답변 — 안녕하세요 추가 문의 드립니다. =RTD(\"[IDENTIFIER].rtd\",,\"[NUMBER]\",\"S306\") [IDENTI…"
-description: "기업 재무·배당·컨센서스 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 안녕하세요 추가 문의 드립니다. =RTD("[IDENTIFIER].rtd",,"[NUMBER]","S306") [IDENTI…
+description: 기업 재무·배당·컨센서스 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "기업 재무·배당·컨센서스"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:81aadeeb8b138b5a"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 기업 재무·배당·컨센서스
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:81aadeeb8b138b5a
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "기업 재무·배당·컨센서스"
+- faq
+case_topic: 기업 재무·배당·컨센서스
 case_topics:
-  - "기업 재무·배당·컨센서스"
-related_ids:
-  - "check:enrichment:unmapped:af87cf071c78"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:949"
-candidate_id: "manual-candidate:VOC-00947"
+- 기업 재무·배당·컨센서스
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:949
+candidate_id: manual-candidate:VOC-00947
 ---
 # 질문과 답변 — 안녕하세요 추가 문의 드립니다. =RTD("[IDENTIFIER].rtd",,"[NUMBER]","S306") [IDENTI…
 
@@ -35,8 +34,11 @@ candidate_id: "manual-candidate:VOC-00947"
 
 $$
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 기업 재무·배당·컨센서스

@@ -1,28 +1,27 @@
 ---
-title: "사용 절차 — 체크 단말에서 모니터를 상하로 사용하고 있는데 좌우로 변경이 가능할까요"
-description: "하드웨어 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 체크 단말에서 모니터를 상하로 사용하고 있는데 좌우로 변경이 가능할까요
+description: 하드웨어 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "하드웨어"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:99cadaefa8dd915e"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 하드웨어
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:99cadaefa8dd915e
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "하드웨어"
+- procedure
+- faq
+case_topic: 하드웨어
 case_topics:
-  - "하드웨어"
-related_ids:
-  - "check:enrichment:unmapped:9591fb0a2e47"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:560"
-candidate_id: "manual-candidate:CRM-00558"
+- 하드웨어
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:560
+candidate_id: manual-candidate:CRM-00558
 ---
 # 사용 절차 — 체크 단말에서 모니터를 상하로 사용하고 있는데 좌우로 변경이 가능할까요
 
@@ -36,8 +35,11 @@ candidate_id: "manual-candidate:CRM-00558"
 
 출장소 연락처 안내해드렸습니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 하드웨어

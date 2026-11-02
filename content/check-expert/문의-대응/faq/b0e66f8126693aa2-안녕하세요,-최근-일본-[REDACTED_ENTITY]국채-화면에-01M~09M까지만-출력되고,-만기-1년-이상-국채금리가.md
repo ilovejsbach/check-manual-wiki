@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — 안녕하세요, 최근 일본 [REDACTED_ENTITY]국채 화면에 01M~09M까지만 출력되고, 만기 1년 이상 국채금리가…"
-description: "3931 - 해외금리 > 해외국채 국가별 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 안녕하세요, 최근 일본 [REDACTED_ENTITY]국채 화면에 01M~09M까지만 출력되고, 만기 1년 이상 국채금리가…
+description: 3931 - 해외금리 > 해외국채 국가별 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "3931 - 해외금리 > 해외국채 국가별"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:b0e66f8126693aa2"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 3931 - 해외금리 > 해외국채 국가별
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:b0e66f8126693aa2
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "3931 - 해외금리 > 해외국채 국가별"
+- faq
+case_topic: 3931 - 해외금리 > 해외국채 국가별
 case_topics:
-  - "3931 - 해외금리 > 해외국채 국가별"
+- 3931 - 해외금리 > 해외국채 국가별
 related_ids:
-  - "check:screen:3931"
-  - "check:enrichment:screen:3931"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:6047"
-candidate_id: "manual-candidate:CRM-06045"
+- check:screen:3931
+- check:enrichment:screen:3931
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:6047
+candidate_id: manual-candidate:CRM-06045
 ---
 # 질문과 답변 — 안녕하세요, 최근 일본 [REDACTED_ENTITY]국채 화면에 01M~09M까지만 출력되고, 만기 1년 이상 국채금리가…
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-06045"
 
 안녕하세요.어제(11일)의 경우 일본 휴장일이었고, 1년이상 일본 금리의 경우 오늘 아침 9시 이후에 개장입니다. 1년 이하 단기 금리의 경우 일본 이외의 시장에서 나온 호가가 존재한 걸로 보여집니다. 업무에 참고하시기 바랍니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/채권/3931-3931-해외금리-해외국채-국가별|3931 - 해외금리 > 해외국채 국가별]]
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3931 - 해외금리 > 해외국채 국가별

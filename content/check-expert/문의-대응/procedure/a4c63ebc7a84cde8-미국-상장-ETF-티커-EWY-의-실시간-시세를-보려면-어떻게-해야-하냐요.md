@@ -1,33 +1,35 @@
 ---
-title: "사용 절차 — 미국 상장 ETF 티커 EWY 의 실시간 시세를 보려면 어떻게 해야 하냐요?"
-description: "6463 - 글로벌ETF > 현재가, 6464 - 글로벌ETF > 구성종목 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 미국 상장 ETF 티커 EWY 의 실시간 시세를 보려면 어떻게 해야 하냐요?
+description: 6463 - 글로벌ETF > 현재가, 6464 - 글로벌ETF > 구성종목 관련 비식별 문의와 당시 대응 기록을 분리한 사용
+  절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "6463 - 글로벌ETF > 현재가"
-  - "6464 - 글로벌ETF > 구성종목"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:a4c63ebc7a84cde8"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 6463 - 글로벌ETF > 현재가
+- 6464 - 글로벌ETF > 구성종목
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:a4c63ebc7a84cde8
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "6463 - 글로벌ETF > 현재가"
+- procedure
+- faq
+case_topic: 6463 - 글로벌ETF > 현재가
 case_topics:
-  - "6463 - 글로벌ETF > 현재가"
-  - "6464 - 글로벌ETF > 구성종목"
+- 6463 - 글로벌ETF > 현재가
+- 6464 - 글로벌ETF > 구성종목
 related_ids:
-  - "check:screen:6463"
-  - "check:enrichment:screen:6463"
-  - "check:screen:6464"
-  - "check:enrichment:screen:6464"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3731"
-candidate_id: "manual-candidate:CRM-03729"
+- check:screen:6463
+- check:enrichment:screen:6463
+- check:enrichment:screen:6464
+- check:screen:6464
+- check:tr:6465
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3731
+candidate_id: manual-candidate:CRM-03729
 ---
 # 사용 절차 — 미국 상장 ETF 티커 EWY 의 실시간 시세를 보려면 어떻게 해야 하냐요?
 
@@ -41,8 +43,12 @@ candidate_id: "manual-candidate:CRM-03729"
 
 안녕하세요. [IDENTIFIER]+ 입니다. TR 6463 ETF 글로벌ETF 현재가 화면 좌측 종목검색창에 'EWY'를 입력하시면 블랙록자산운용 [IDENTIFIER] MSCI South Korea ETF 시세 확인을 하실 수 있으며, 6464 구성종목 화면에서 전체 보유종목 및 비중을 보실 수 있습니다. TR 6465 글로벌 ETF 테마분석 화면에서 투자대상의 AUM, 총보수비율 등도 데이터 조회가 가능합니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/해외/6463-6463-글로벌ETF-현재가|6463 - 글로벌ETF > 현재가]]
+- [[check-expert/tr-후보/6465|TR 6465 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 6463 - 글로벌ETF > 현재가, 6464 - 글로벌ETF > 구성종목

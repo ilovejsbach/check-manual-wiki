@@ -1,28 +1,30 @@
 ---
-title: "질문과 답변 — 2261화면 > LP보유율은 단순히 전체 발행 종목별 가격이 반영 안된, 단순 종목별 발행 수량 합계와 LP보유 수량 합계를…"
-description: "2251 - ETN 시세표 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 2261화면 > LP보유율은 단순히 전체 발행 종목별 가격이 반영 안된, 단순 종목별 발행 수량 합계와 LP보유 수량
+  합계를…
+description: 2251 - ETN 시세표 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "2251 - ETN 시세표"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:a7a44b7eb4c2dda3"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 2251 - ETN 시세표
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:a7a44b7eb4c2dda3
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "2251 - ETN 시세표"
+- faq
+case_topic: 2251 - ETN 시세표
 case_topics:
-  - "2251 - ETN 시세표"
+- 2251 - ETN 시세표
 related_ids:
-  - "check:screen:2251"
-  - "check:enrichment:screen:2251"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3999"
-candidate_id: "manual-candidate:CRM-03997"
+- check:screen:2251
+- check:enrichment:screen:2251
+- check:tr:2261
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3999
+candidate_id: manual-candidate:CRM-03997
 ---
 # 질문과 답변 — 2261화면 > LP보유율은 단순히 전체 발행 종목별 가격이 반영 안된, 단순 종목별 발행 수량 합계와 LP보유 수량 합계를…
 
@@ -36,8 +38,12 @@ candidate_id: "manual-candidate:CRM-03997"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 좋은 의견 감사 드립니다. 말씀 주신 LP보유금액비율 정보를 추가로 표시하는 방안에 대해서는 내부적으로 검토를 진행하도록 하겠습니다. 다시 한 번 감사 드립니다 : )
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/ETP/2251-2251-ETN-시세표|2251 - ETN 시세표]]
+- [[check-expert/tr-후보/2261|TR 2261 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 2251 - ETN 시세표

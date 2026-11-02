@@ -1,28 +1,28 @@
 ---
-title: "오류 해결 — TR3805 당일기준 KIS 값 입수 안됨"
-description: "3805 - 관심채권 > 기본정보 > 시가평가 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — TR3805 당일기준 KIS 값 입수 안됨
+description: 3805 - 관심채권 > 기본정보 > 시가평가 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "3805 - 관심채권 > 기본정보 > 시가평가"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:5fa8fe83efb5c1f5"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 3805 - 관심채권 > 기본정보 > 시가평가
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:5fa8fe83efb5c1f5
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-case_topic: "3805 - 관심채권 > 기본정보 > 시가평가"
+- troubleshooting
+case_topic: 3805 - 관심채권 > 기본정보 > 시가평가
 case_topics:
-  - "3805 - 관심채권 > 기본정보 > 시가평가"
+- 3805 - 관심채권 > 기본정보 > 시가평가
 related_ids:
-  - "check:screen:3805"
-  - "check:enrichment:screen:3805"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:568"
-candidate_id: "manual-candidate:CRM-00566"
+- check:screen:3805
+- check:enrichment:screen:3805
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:568
+candidate_id: manual-candidate:CRM-00566
 ---
 # 오류 해결 — TR3805 당일기준 KIS 값 입수 안됨
 
@@ -36,8 +36,11 @@ TR3805 당일기준 KIS 값 입수 안됨
 
 정상 입수 후 연락드림
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/채권/3805-3805-관심채권-기본정보-시가평가|3805 - 관심채권 > 기본정보 > 시가평가]]
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결
 - 업무·주제: 3805 - 관심채권 > 기본정보 > 시가평가

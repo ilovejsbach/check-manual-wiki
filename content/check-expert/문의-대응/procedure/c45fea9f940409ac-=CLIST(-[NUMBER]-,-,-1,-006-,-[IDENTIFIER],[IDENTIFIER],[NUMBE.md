@@ -1,28 +1,27 @@
 ---
-title: "사용 절차 — =CLIST( \"[NUMBER]\", \"\", -1, \"*006\", \"[IDENTIFIER],[IDENTIFIER],[NUMBE…"
-description: "종목·코드·분류·기본정보 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — =CLIST( "[NUMBER]", "", -1, "*006", "[IDENTIFIER],[IDENTIFIER],[NUMBE…
+description: 종목·코드·분류·기본정보 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "종목·코드·분류·기본정보"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:c45fea9f940409ac"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 종목·코드·분류·기본정보
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:c45fea9f940409ac
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "종목·코드·분류·기본정보"
+- procedure
+- faq
+case_topic: 종목·코드·분류·기본정보
 case_topics:
-  - "종목·코드·분류·기본정보"
-related_ids:
-  - "check:enrichment:unmapped:0b0b120f64a7"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:1257"
-candidate_id: "manual-candidate:VOC-01255"
+- 종목·코드·분류·기본정보
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:1257
+candidate_id: manual-candidate:VOC-01255
 ---
 # 사용 절차 — =CLIST( "[NUMBER]", "", -1, "*006", "[IDENTIFIER],[IDENTIFIER],[NUMBE…
 
@@ -36,8 +35,11 @@ candidate_id: "manual-candidate:VOC-01255"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 다음과 같이 '&_[IDENTIFIER]=' 대신 ',' 값을 입력하여 연결할 수 있습니다. =CLIST( "[NUMBER]", "", -1, "*006", "[IDENTIFIER],[IDENTIFIER],[NUMBER]", "_[IDENTIFIER]=1152:[NUMBER],1153:1,1152:[NUMBER],1153:Y", "[IDENTIFIER],[IDENTIFIER],[IDENTIFIER],[IDENTIFIER],[NUMBER],[NUMBER],[IDENTIFIER],[NUMBER]", "DESC", "[IDENTIFIER]=true;") 복사 및 붙여넣기로 사용해보시고 어려운점 있으시면 말씀 부탁 드립니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CLIST 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 종목·코드·분류·기본정보

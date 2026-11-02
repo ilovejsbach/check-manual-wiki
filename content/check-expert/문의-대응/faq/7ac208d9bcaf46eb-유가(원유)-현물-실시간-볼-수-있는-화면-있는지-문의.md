@@ -1,27 +1,26 @@
 ---
-title: "질문과 답변 — 유가(원유) 현물 실시간 볼 수 있는 화면 있는지 문의"
-description: "해외 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 유가(원유) 현물 실시간 볼 수 있는 화면 있는지 문의
+description: 해외 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "해외"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:7ac208d9bcaf46eb"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 해외
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:7ac208d9bcaf46eb
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "해외"
+- faq
+case_topic: 해외
 case_topics:
-  - "해외"
-related_ids:
-  - "check:enrichment:unmapped:82862092ebbd"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:4791"
-candidate_id: "manual-candidate:CRM-04789"
+- 해외
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:4791
+candidate_id: manual-candidate:CRM-04789
 ---
 # 질문과 답변 — 유가(원유) 현물 실시간 볼 수 있는 화면 있는지 문의
 
@@ -35,8 +34,11 @@ candidate_id: "manual-candidate:CRM-04789"
 
 실시간은 없고 일별만 6346에서 확인가능
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 해외

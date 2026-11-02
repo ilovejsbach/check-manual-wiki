@@ -1,27 +1,26 @@
 ---
-title: "질문과 답변 — 체크에 있는 \"ETF 분배금 현황\" 화면 데이터를 API로 받고 싶은데 인터페이스를 좀 만들어 주세요"
-description: "펀드·ETF 구성·운용정보 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 체크에 있는 "ETF 분배금 현황" 화면 데이터를 API로 받고 싶은데 인터페이스를 좀 만들어 주세요
+description: 펀드·ETF 구성·운용정보 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "펀드·ETF 구성·운용정보"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:5dfc6e3f9710ddd7"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 펀드·ETF 구성·운용정보
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:5dfc6e3f9710ddd7
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "펀드·ETF 구성·운용정보"
+- faq
+case_topic: 펀드·ETF 구성·운용정보
 case_topics:
-  - "펀드·ETF 구성·운용정보"
-related_ids:
-  - "check:enrichment:unmapped:ee6126df39aa"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:751"
-candidate_id: "manual-candidate:VOC-00749"
+- 펀드·ETF 구성·운용정보
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:751
+candidate_id: manual-candidate:VOC-00749
 ---
 # 질문과 답변 — 체크에 있는 "ETF 분배금 현황" 화면 데이터를 API로 받고 싶은데 인터페이스를 좀 만들어 주세요
 
@@ -35,8 +34,11 @@ candidate_id: "manual-candidate:VOC-00749"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 해당 정보는 유료로 판매되는 정보로 별도의 API 계약을 필요로합니다. 관련 요청사항은 [PERSON]차장 ([PHONE], [EMAIL]) 으로 연락주시기 바랍니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 펀드·ETF 구성·운용정보

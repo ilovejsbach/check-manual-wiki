@@ -1,30 +1,31 @@
 ---
-title: "오류 해결 — 엑셀 [IDENTIFIER] 내보내기 이후 엑셀 시트 수정 및 저장 단계까지는 아무런 문제가 없으나, 저장 후 엑셀 파일을…"
-description: "3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — 엑셀 [IDENTIFIER] 내보내기 이후 엑셀 시트 수정 및 저장 단계까지는 아무런 문제가 없으나, 저장 후 엑셀 파일을…
+description: 3741 - 시가평가 > 채권그룹 > 기업별 Term Structure 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결
+  검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "3741 - 시가평가 > 채권그룹 > 기업별 Term Structure"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:4aec7420d1b2f42c"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 3741 - 시가평가 > 채권그룹 > 기업별 Term Structure
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:4aec7420d1b2f42c
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "faq"
-case_topic: "3741 - 시가평가 > 채권그룹 > 기업별 Term Structure"
+- troubleshooting
+- procedure
+- faq
+case_topic: 3741 - 시가평가 > 채권그룹 > 기업별 Term Structure
 case_topics:
-  - "3741 - 시가평가 > 채권그룹 > 기업별 Term Structure"
+- 3741 - 시가평가 > 채권그룹 > 기업별 Term Structure
 related_ids:
-  - "check:screen:3741"
-  - "check:enrichment:screen:3741"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:2384"
-candidate_id: "manual-candidate:CRM-02382"
+- check:enrichment:screen:3741
+- check:screen:3741
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:2384
+candidate_id: manual-candidate:CRM-02382
 ---
 # 오류 해결 — 엑셀 [IDENTIFIER] 내보내기 이후 엑셀 시트 수정 및 저장 단계까지는 아무런 문제가 없으나, 저장 후 엑셀 파일을…
 
@@ -38,8 +39,11 @@ candidate_id: "manual-candidate:CRM-02382"
 
 안녕하세요. [IDENTIFIER]+ 입니다. [IDENTIFIER]는 CHECK 서버와 연결이 안된 상태를 의미합니다. 엑셀을 모두 닫고 아래 내용 확인부탁드립니다. 1. 데이터가 있는 화면에서 [마우스 우클릭>실시간 또는 프리미엄 보내기] -> 조회가 정상인지 확인 후 저장 2. 1번에서 저장한 파일을 더블클릭하여 열기 -> 정상인지 확인 3. 2번이 조회되지 않는 다면, 1번을 실행 후 엑셀 메뉴 파일>열기로 저장파일 열었을때 정상인지 확인 => 2번까지 정상인데 만드신 파일만 오픈시 끊기는 거라면 아래메일로 파일전송 부탁드립니다. [EMAIL] => 2번은 안되지만 3번으로 저장된 파일이 열린다면 첨부파일을 참고하여 엑셀프리미엄을 재설치 후 PC를 재부팅후 확인부탁드립니다. - 엑셀매니저에서 [UAC 변경]을 체크한 상태로 설치하셔야 애드인이 정상적으로 됨. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 사용 절차, 질문과 답변
 - 업무·주제: 3741 - 시가평가 > 채권그룹 > 기업별 Term Structure

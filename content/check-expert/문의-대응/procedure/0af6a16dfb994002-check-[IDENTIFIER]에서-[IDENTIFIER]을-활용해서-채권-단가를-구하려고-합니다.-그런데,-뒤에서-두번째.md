@@ -1,28 +1,27 @@
 ---
-title: "사용 절차 — check [IDENTIFIER]에서 [IDENTIFIER]을 활용해서 채권 단가를 구하려고 합니다. 그런데, 뒤에서 두번째…"
-description: "금리·채권 발행·평가 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — check [IDENTIFIER]에서 [IDENTIFIER]을 활용해서 채권 단가를 구하려고 합니다. 그런데, 뒤에서 두번째…
+description: 금리·채권 발행·평가 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "금리·채권 발행·평가"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:0af6a16dfb994002"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 금리·채권 발행·평가
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:0af6a16dfb994002
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "금리·채권 발행·평가"
+- procedure
+- faq
+case_topic: 금리·채권 발행·평가
 case_topics:
-  - "금리·채권 발행·평가"
-related_ids:
-  - "check:enrichment:unmapped:d04e710dcd7a"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:1157"
-candidate_id: "manual-candidate:VOC-01155"
+- 금리·채권 발행·평가
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:1157
+candidate_id: manual-candidate:VOC-01155
 ---
 # 사용 절차 — check [IDENTIFIER]에서 [IDENTIFIER]을 활용해서 채권 단가를 구하려고 합니다. 그런데, 뒤에서 두번째…
 
@@ -36,8 +35,11 @@ check [IDENTIFIER]에서 [IDENTIFIER]을 활용해서 채권 단가를 구하려
 
 안녕하세요. [IDENTIFIER]+ 입니다. 수익률 또는 단가를 의미하며 다섯 번째 파라미터 '1'의 경우 수익률의 세전단가를 의미합니다. 예를 들어, =CTD( "[IDENTIFIER]", "[IDENTIFIER]", "[NUMBER]", "2.67", "1") 관련하여 유선으로도 연락하여 안내하였습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CTD 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 금리·채권 발행·평가

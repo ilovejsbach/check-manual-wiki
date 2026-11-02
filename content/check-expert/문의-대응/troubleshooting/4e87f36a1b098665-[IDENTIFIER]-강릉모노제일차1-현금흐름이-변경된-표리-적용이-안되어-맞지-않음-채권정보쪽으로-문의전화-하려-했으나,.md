@@ -1,31 +1,31 @@
 ---
-title: "오류 해결 — [IDENTIFIER] 강릉모노제일차1 현금흐름이 변경된 표리 적용이 안되어 맞지 않음 채권정보쪽으로 문의전화 하려 했으나,…"
-description: "3005 - 발행정보 > 주요 > 종목별 현금흐름 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — [IDENTIFIER] 강릉모노제일차1 현금흐름이 변경된 표리 적용이 안되어 맞지 않음 채권정보쪽으로 문의전화 하려 했으나,…
+description: 3005 - 발행정보 > 주요 > 종목별 현금흐름 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "3005 - 발행정보 > 주요 > 종목별 현금흐름"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:4e87f36a1b098665"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 3005 - 발행정보 > 주요 > 종목별 현금흐름
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:4e87f36a1b098665
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "caution"
-  - "faq"
-case_topic: "3005 - 발행정보 > 주요 > 종목별 현금흐름"
+- troubleshooting
+- procedure
+- caution
+- faq
+case_topic: 3005 - 발행정보 > 주요 > 종목별 현금흐름
 case_topics:
-  - "3005 - 발행정보 > 주요 > 종목별 현금흐름"
+- 3005 - 발행정보 > 주요 > 종목별 현금흐름
 related_ids:
-  - "check:screen:3005"
-  - "check:enrichment:screen:3005"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:943"
-candidate_id: "manual-candidate:CRM-00941"
+- check:enrichment:screen:3005
+- check:screen:3005
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:943
+candidate_id: manual-candidate:CRM-00941
 ---
 # 오류 해결 — [IDENTIFIER] 강릉모노제일차1 현금흐름이 변경된 표리 적용이 안되어 맞지 않음 채권정보쪽으로 문의전화 하려 했으나,…
 
@@ -39,8 +39,11 @@ candidate_id: "manual-candidate:CRM-00941"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 문의주신 강릉모노제일차1 [IDENTIFIER] 현금흐름의 경우 말씀하신대로 발행 이후 금리 변경이 있었습니다. 금일 KRX 수신 정보 반영완료되어 현금흐름 수정 반영되었습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 3005 - 발행정보 > 주요 > 종목별 현금흐름

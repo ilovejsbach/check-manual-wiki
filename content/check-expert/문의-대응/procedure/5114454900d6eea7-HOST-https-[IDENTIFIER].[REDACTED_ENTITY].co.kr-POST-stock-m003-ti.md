@@ -1,28 +1,27 @@
 ---
-title: "사용 절차 — HOST https://[IDENTIFIER].[REDACTED_ENTITY].co.kr POST /stock/m003/ti…"
-description: "가격·호가·거래량 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — HOST https://[IDENTIFIER].[REDACTED_ENTITY].co.kr POST /stock/m003/ti…
+description: 가격·호가·거래량 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "가격·호가·거래량"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:5114454900d6eea7"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 가격·호가·거래량
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:5114454900d6eea7
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "가격·호가·거래량"
+- procedure
+- faq
+case_topic: 가격·호가·거래량
 case_topics:
-  - "가격·호가·거래량"
-related_ids:
-  - "check:enrichment:unmapped:078f6cd8e320"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:749"
-candidate_id: "manual-candidate:VOC-00747"
+- 가격·호가·거래량
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:749
+candidate_id: manual-candidate:VOC-00747
 ---
 # 사용 절차 — HOST https://[IDENTIFIER].[REDACTED_ENTITY].co.kr POST /stock/m003/ti…
 
@@ -36,8 +35,11 @@ HOST https://[IDENTIFIER].[REDACTED_ENTITY].co.kr POST /stock/m003/tick_date 여
 
 안녕하세요. [IDENTIFIER]+ 입니다. 문의주신 5개월 전 자료를 당사 DB에 저장하고 있지는 않으며, 일자별 코스닥 체결정보의 경우 캘린더 100일 틱 데이터를 보관하고 있습니다. HOST https://[IDENTIFIER].[REDACTED_ENTITY].co.kr POST /stock/m003/tick_date 관련하여 유선으로도 안내 드렸습니다. 추가 문의사항 있으시면 언제든지 연락 주십시오. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 가격·호가·거래량

@@ -1,33 +1,35 @@
 ---
-title: "주의사항 — [REDACTED_ENTITY] [REDACTED_ENTITY]입니다. 당사는 코리아밸류업 지수 계약 완료했습니다. 해당 화…"
-description: "1147 - KRX지수구성정보 서비스(업종별 지수정보) - 1147, 1149 - KRX지수구성정보 서비스 (지수변동조치(CA) 내역) - 1149 관련 비식별 문의와 당시 대응 기록을 분리한 주의사항 검수 후보."
+title: 주의사항 — [REDACTED_ENTITY] [REDACTED_ENTITY]입니다. 당사는 코리아밸류업 지수 계약 완료했습니다. 해당
+  화…
+description: 1147 - KRX지수구성정보 서비스(업종별 지수정보) - 1147, 1149 - KRX지수구성정보 서비스 (지수변동조치(CA)
+  내역) - 1149 관련 비식별 문의와 당시 대응 기록을 분리한 주의사항 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "주의사항"
-  - "검수 필요"
-  - "1147 - KRX지수구성정보 서비스(업종별 지수정보) - 1147"
-  - "1149 - KRX지수구성정보 서비스 (지수변동조치(CA) 내역) - 1149"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:2ce9f0455f16659d"
-document_type: "support_case"
-case_type: "caution"
+- CHECK Expert
+- 문의 대응
+- 주의사항
+- 검수 필요
+- 1147 - KRX지수구성정보 서비스(업종별 지수정보) - 1147
+- 1149 - KRX지수구성정보 서비스 (지수변동조치(CA) 내역) - 1149
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:2ce9f0455f16659d
+document_type: support_case
+case_type: caution
 case_facets:
-  - "caution"
-  - "faq"
-case_topic: "1147 - KRX지수구성정보 서비스(업종별 지수정보) - 1147"
+- caution
+- faq
+case_topic: 1147 - KRX지수구성정보 서비스(업종별 지수정보) - 1147
 case_topics:
-  - "1147 - KRX지수구성정보 서비스(업종별 지수정보) - 1147"
-  - "1149 - KRX지수구성정보 서비스 (지수변동조치(CA) 내역) - 1149"
+- 1147 - KRX지수구성정보 서비스(업종별 지수정보) - 1147
+- 1149 - KRX지수구성정보 서비스 (지수변동조치(CA) 내역) - 1149
 related_ids:
-  - "check:screen:1147"
-  - "check:enrichment:screen:1147"
-  - "check:screen:1149"
-  - "check:enrichment:screen:1149"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4976"
-candidate_id: "manual-candidate:CRM-04974"
+- check:enrichment:screen:1147
+- check:enrichment:screen:1149
+- check:screen:1147
+- check:screen:1149
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4976
+candidate_id: manual-candidate:CRM-04974
 ---
 # 주의사항 — [REDACTED_ENTITY] [REDACTED_ENTITY]입니다. 당사는 코리아밸류업 지수 계약 완료했습니다. 해당 화…
 
@@ -41,8 +43,11 @@ candidate_id: "manual-candidate:CRM-04974"
 
 안녕하세요. [IDENTIFIER]+ 입니다. [REDACTED_ENTITY] 담당 직원께 [REDACTED_ENTITY]의 계약 정보를 저희 쪽에서 확인한 후 제공해 드릴 수 있습니다. 확인 후 권한 열어드리고 남겨주신 전화번호로 다시 연락 드리겠습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **주의사항**
 - 함께 볼 유형: 주의사항, 질문과 답변
 - 업무·주제: 1147 - KRX지수구성정보 서비스(업종별 지수정보) - 1147, 1149 - KRX지수구성정보 서비스 (지수변동조치(CA) 내역) - 1149

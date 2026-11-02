@@ -1,30 +1,29 @@
 ---
-title: "오류 해결 — 체크를 실행하면 module_[IDENTIFIER] 파일을 찾을수 없다고 나옵니다."
-description: "기타 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — 체크를 실행하면 module_[IDENTIFIER] 파일을 찾을수 없다고 나옵니다.
+description: 기타 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "기타"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:b6cdd822372328b7"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 기타
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:b6cdd822372328b7
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "caution"
-  - "faq"
-case_topic: "기타"
+- troubleshooting
+- procedure
+- caution
+- faq
+case_topic: 기타
 case_topics:
-  - "기타"
-related_ids:
-  - "check:enrichment:unmapped:2991f61ced07"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:7"
-candidate_id: "manual-candidate:CRM-00005"
+- 기타
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:7
+candidate_id: manual-candidate:CRM-00005
 ---
 # 오류 해결 — 체크를 실행하면 module_[IDENTIFIER] 파일을 찾을수 없다고 나옵니다.
 
@@ -38,8 +37,11 @@ candidate_id: "manual-candidate:CRM-00005"
 
 원격이 불가능하여 유선상으로 체크 폴더 권한 확인시 이상없음으로 확인 인터넷 pc에서 사용하셔도 된다고 하셔서 [PERSON]담당자분께 아웃도어 권한 확인후 인터넷 pc에서 정상적으로 확인 내부망 pc에 설치된 check에서 user폴더 백업후 삭제후 재설치 안내
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 기타

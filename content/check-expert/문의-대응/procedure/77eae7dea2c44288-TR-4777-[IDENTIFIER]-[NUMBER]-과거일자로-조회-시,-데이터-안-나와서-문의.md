@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — TR 4777 [IDENTIFIER] [NUMBER] 과거일자로 조회 시, 데이터 안 나와서 문의"
-description: "4511 - 기본시세표 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — TR 4777 [IDENTIFIER] [NUMBER] 과거일자로 조회 시, 데이터 안 나와서 문의
+description: 4511 - 기본시세표 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4511 - 기본시세표"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:77eae7dea2c44288"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4511 - 기본시세표
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:77eae7dea2c44288
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4511 - 기본시세표"
+- procedure
+- faq
+case_topic: 4511 - 기본시세표
 case_topics:
-  - "4511 - 기본시세표"
+- 4511 - 기본시세표
 related_ids:
-  - "check:screen:4511"
-  - "check:enrichment:screen:4511"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3135"
-candidate_id: "manual-candidate:CRM-03133"
+- check:screen:4511
+- check:enrichment:screen:4511
+- check:tr:4777
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3135
+candidate_id: manual-candidate:CRM-03133
 ---
 # 사용 절차 — TR 4777 [IDENTIFIER] [NUMBER] 과거일자로 조회 시, 데이터 안 나와서 문의
 
@@ -37,8 +38,12 @@ TR 4777 [IDENTIFIER] [NUMBER] 과거일자로 조회 시, 데이터 안 나와�
 
 [NUMBER] 경우 아직 만기가 아니라 데이터가 안 나오는 것이며, 추가로 4511 화면 안내
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/옵션/4511-4511-기본시세표|4511 - 기본시세표]]
+- [[check-expert/tr-후보/4777|TR 4777 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4511 - 기본시세표

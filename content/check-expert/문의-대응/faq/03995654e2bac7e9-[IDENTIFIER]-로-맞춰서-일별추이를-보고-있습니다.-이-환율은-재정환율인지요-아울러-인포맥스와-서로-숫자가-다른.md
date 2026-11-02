@@ -1,28 +1,29 @@
 ---
-title: "질문과 답변 — [IDENTIFIER] 로 맞춰서 일별추이를 보고 있습니다. 이 환율은 재정환율인지요? 아울러 인포맥스와 서로 숫자가 다른…"
-description: "5500 - 해외SPOT>종합화면 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — [IDENTIFIER] 로 맞춰서 일별추이를 보고 있습니다. 이 환율은 재정환율인지요? 아울러 인포맥스와 서로 숫자가
+  다른…
+description: 5500 - 해외SPOT>종합화면 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "5500 - 해외SPOT>종합화면"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:03995654e2bac7e9"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 5500 - 해외SPOT>종합화면
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:03995654e2bac7e9
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "5500 - 해외SPOT>종합화면"
+- faq
+case_topic: 5500 - 해외SPOT>종합화면
 case_topics:
-  - "5500 - 해외SPOT>종합화면"
+- 5500 - 해외SPOT>종합화면
 related_ids:
-  - "check:screen:5500"
-  - "check:enrichment:screen:5500"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:2739"
-candidate_id: "manual-candidate:CRM-02737"
+- check:enrichment:screen:5500
+- check:screen:5500
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:2739
+candidate_id: manual-candidate:CRM-02737
 ---
 # 질문과 답변 — [IDENTIFIER] 로 맞춰서 일별추이를 보고 있습니다. 이 환율은 재정환율인지요? 아울러 인포맥스와 서로 숫자가 다른…
 
@@ -36,8 +37,11 @@ candidate_id: "manual-candidate:CRM-02737"
 
 안녕하세요. JPYKRW 환율은 재정환율이 맞습니다. 해당 환율은 [IDENTIFIER] 데이터로서 입수처가 다를 경우 타 정보단말기와 가격이 다를 수가 있습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 5500 - 해외SPOT>종합화면

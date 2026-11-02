@@ -1,28 +1,27 @@
 ---
-title: "사용 절차 — =RTD(\"[IDENTIFIER].rtd\",,\"[NUMBER]\",\"51*002\") =RTD(\"[IDENTIFIER].rtd\"…"
-description: "가격·호가·거래량 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — =RTD("[IDENTIFIER].rtd",,"[NUMBER]","51*002") =RTD("[IDENTIFIER].rtd"…
+description: 가격·호가·거래량 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "가격·호가·거래량"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:6ec171a395a2f07a"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 가격·호가·거래량
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:6ec171a395a2f07a
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "가격·호가·거래량"
+- procedure
+- faq
+case_topic: 가격·호가·거래량
 case_topics:
-  - "가격·호가·거래량"
-related_ids:
-  - "check:enrichment:unmapped:078f6cd8e320"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:638"
-candidate_id: "manual-candidate:VOC-00636"
+- 가격·호가·거래량
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:638
+candidate_id: manual-candidate:VOC-00636
 ---
 # 사용 절차 — =RTD("[IDENTIFIER].rtd",,"[NUMBER]","51*002") =RTD("[IDENTIFIER].rtd"…
 
@@ -36,8 +35,11 @@ candidate_id: "manual-candidate:VOC-00636"
 
 지수는 정규장/애프터가 분리되지 않으므로 [NUMBER] 이 없습니다. [NUMBER] 로 그냥 사용하시면 됩니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 가격·호가·거래량

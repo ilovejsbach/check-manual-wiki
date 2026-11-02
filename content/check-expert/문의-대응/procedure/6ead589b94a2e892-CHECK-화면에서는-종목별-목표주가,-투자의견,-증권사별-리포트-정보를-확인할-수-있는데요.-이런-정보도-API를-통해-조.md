@@ -1,28 +1,28 @@
 ---
-title: "사용 절차 — CHECK 화면에서는 종목별 목표주가, 투자의견, 증권사별 리포트 정보를 확인할 수 있는데요. 이런 정보도 API를 통해 조…"
-description: "기업 재무·배당·컨센서스 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — CHECK 화면에서는 종목별 목표주가, 투자의견, 증권사별 리포트 정보를 확인할 수 있는데요. 이런 정보도 API를 통해
+  조…
+description: 기업 재무·배당·컨센서스 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "기업 재무·배당·컨센서스"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:6ead589b94a2e892"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 기업 재무·배당·컨센서스
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:6ead589b94a2e892
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "기업 재무·배당·컨센서스"
+- procedure
+- faq
+case_topic: 기업 재무·배당·컨센서스
 case_topics:
-  - "기업 재무·배당·컨센서스"
-related_ids:
-  - "check:enrichment:unmapped:af87cf071c78"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:539"
-candidate_id: "manual-candidate:VOC-00537"
+- 기업 재무·배당·컨센서스
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:539
+candidate_id: manual-candidate:VOC-00537
 ---
 # 사용 절차 — CHECK 화면에서는 종목별 목표주가, 투자의견, 증권사별 리포트 정보를 확인할 수 있는데요. 이런 정보도 API를 통해 조…
 
@@ -36,8 +36,11 @@ CHECK 화면에서는 종목별 목표주가, 투자의견, 증권사별 리포�
 
 답변이 늦어져 죄송합니다. 해당정보를 제공할수 있는지 검토하느라 답변이 늦어졌습니다. 죄송합니다. 해당정보는 API로 수신하실수 없습니다
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 기업 재무·배당·컨센서스

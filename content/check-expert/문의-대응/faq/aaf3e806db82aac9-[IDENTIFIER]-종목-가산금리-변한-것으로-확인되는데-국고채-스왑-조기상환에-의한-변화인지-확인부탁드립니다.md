@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — [IDENTIFIER] 종목 가산금리 변한 것으로 확인되는데 국고채 스왑 조기상환에 의한 변화인지 확인부탁드립니다"
-description: "3000 - 발행정보 > 주요 > 종목상세 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — [IDENTIFIER] 종목 가산금리 변한 것으로 확인되는데 국고채 스왑 조기상환에 의한 변화인지 확인부탁드립니다
+description: 3000 - 발행정보 > 주요 > 종목상세 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "3000 - 발행정보 > 주요 > 종목상세"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:aaf3e806db82aac9"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 3000 - 발행정보 > 주요 > 종목상세
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:aaf3e806db82aac9
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "3000 - 발행정보 > 주요 > 종목상세"
+- faq
+case_topic: 3000 - 발행정보 > 주요 > 종목상세
 case_topics:
-  - "3000 - 발행정보 > 주요 > 종목상세"
+- 3000 - 발행정보 > 주요 > 종목상세
 related_ids:
-  - "check:screen:3000"
-  - "check:enrichment:screen:3000"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:2309"
-candidate_id: "manual-candidate:CRM-02307"
+- check:enrichment:screen:3000
+- check:screen:3000
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:2309
+candidate_id: manual-candidate:CRM-02307
 ---
 # 질문과 답변 — [IDENTIFIER] 종목 가산금리 변한 것으로 확인되는데 국고채 스왑 조기상환에 의한 변화인지 확인부탁드립니다
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-02307"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 주관사 통해서 확인해 본 결과, 국고채 스왑 조기종료에 따른 변화가 맞습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3000 - 발행정보 > 주요 > 종목상세

@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — [REDACTED_ENTITY](DLB)5364 [IDENTIFIER] 금일 체크에서 사모 발행으로 조회되는 DLB 1종목…"
-description: "3026 - 발행정보 > 주요 > DLB(DLS) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — [REDACTED_ENTITY](DLB)5364 [IDENTIFIER] 금일 체크에서 사모 발행으로 조회되는 DLB 1종목…
+description: 3026 - 발행정보 > 주요 > DLB(DLS) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3026 - 발행정보 > 주요 > DLB(DLS)"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:6500aa9d2951e4e9"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3026 - 발행정보 > 주요 > DLB(DLS)
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:6500aa9d2951e4e9
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3026 - 발행정보 > 주요 > DLB(DLS)"
+- procedure
+- faq
+case_topic: 3026 - 발행정보 > 주요 > DLB(DLS)
 case_topics:
-  - "3026 - 발행정보 > 주요 > DLB(DLS)"
+- 3026 - 발행정보 > 주요 > DLB(DLS)
 related_ids:
-  - "check:screen:3026"
-  - "check:enrichment:screen:3026"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3658"
-candidate_id: "manual-candidate:CRM-03656"
+- check:screen:3026
+- check:screen:3000
+- check:enrichment:screen:3026
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3658
+candidate_id: manual-candidate:CRM-03656
 ---
 # 사용 절차 — [REDACTED_ENTITY](DLB)5364 [IDENTIFIER] 금일 체크에서 사모 발행으로 조회되는 DLB 1종목…
 
@@ -37,8 +38,12 @@ candidate_id: "manual-candidate:CRM-03656"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 3026 화면의 데이터들은 KRX표준코드시스템을 레퍼런스 하고 있습니다. 해당 종목 [PERSON] 담당자와 컨택하여 사실관계 확인 후 KRX표준코드 시스템의 해당 정보를 수정해주시도록 요청드렸고, 3026 화면 및 3000 화면 등 CHECK의 레퍼런스 컨텐츠들도 정상 수정 되었음을 확인하였습니다. 좋은 제보에 감사 드립니다. 새해 복 많이 받으세요 : )
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/채권/3026-3026-발행정보-주요-DLB(DLS)|3026 - 발행정보 > 주요 > DLB(DLS)]]
+- [[check-expert/새로운-모습/채권/3000-3000-발행정보-주요-종목상세|3000 - 발행정보 > 주요 > 종목상세]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3026 - 발행정보 > 주요 > DLB(DLS)

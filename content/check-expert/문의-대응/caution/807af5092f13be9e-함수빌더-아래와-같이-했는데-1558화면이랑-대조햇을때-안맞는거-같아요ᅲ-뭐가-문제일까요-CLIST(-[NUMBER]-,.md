@@ -1,28 +1,28 @@
 ---
-title: "주의사항 — 함수빌더 아래와 같이 했는데 1558화면이랑 대조햇을때 안맞는거 같아요ㅠ 뭐가 문제일까요 CLIST( \"[NUMBER]\",…"
-description: "가격·호가·거래량 관련 비식별 문의와 당시 대응 기록을 분리한 주의사항 검수 후보."
+title: 주의사항 — 함수빌더 아래와 같이 했는데 1558화면이랑 대조햇을때 안맞는거 같아요ㅠ 뭐가 문제일까요 CLIST( "[NUMBER]",…
+description: 가격·호가·거래량 관련 비식별 문의와 당시 대응 기록을 분리한 주의사항 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "주의사항"
-  - "검수 필요"
-  - "가격·호가·거래량"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:807af5092f13be9e"
-document_type: "support_case"
-case_type: "caution"
+- CHECK Expert
+- 문의 대응
+- 주의사항
+- 검수 필요
+- 가격·호가·거래량
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:807af5092f13be9e
+document_type: support_case
+case_type: caution
 case_facets:
-  - "caution"
-  - "faq"
-case_topic: "가격·호가·거래량"
+- caution
+- faq
+case_topic: 가격·호가·거래량
 case_topics:
-  - "가격·호가·거래량"
+- 가격·호가·거래량
 related_ids:
-  - "check:enrichment:unmapped:078f6cd8e320"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:795"
-candidate_id: "manual-candidate:VOC-00793"
+- check:tr:1558
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:795
+candidate_id: manual-candidate:VOC-00793
 ---
 # 주의사항 — 함수빌더 아래와 같이 했는데 1558화면이랑 대조햇을때 안맞는거 같아요ㅠ 뭐가 문제일까요 CLIST( "[NUMBER]",…
 
@@ -36,8 +36,12 @@ candidate_id: "manual-candidate:VOC-00793"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 등락률 범위에 제한을 두시려는게 아니면 [IDENTIFIER]에 1141 부분을 제외하셔야 합니다. CLIST( "[NUMBER]", "[NUMBER]", 5, "51*002", "[IDENTIFIER]", "_[IDENTIFIER]=1140:[NUMBER]", "[IDENTIFIER]", "DESC", "[IDENTIFIER]=true;") 혹시 원하시는 데이터가 아니면 필터링 조건에 대한 설명과 함께 다시 한번 문의해주시기 바랍니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/tr-후보/1558|TR 1558 (화면 문서 없음)]]
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CLIST 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **주의사항**
 - 함께 볼 유형: 주의사항, 질문과 답변
 - 업무·주제: 가격·호가·거래량

@@ -1,28 +1,29 @@
 ---
-title: "질문과 답변 — 안녕하세요 아래 파일처럼 국내 상장된 etf들의 정보를 추출했는데, 미국에 상장된 etf들도 체크에서 이런식으로 데이터를 뽑…"
-description: "6460 - 글로벌ETF > 시세표 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 안녕하세요 아래 파일처럼 국내 상장된 etf들의 정보를 추출했는데, 미국에 상장된 etf들도 체크에서 이런식으로 데이터를
+  뽑…
+description: 6460 - 글로벌ETF > 시세표 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "6460 - 글로벌ETF > 시세표"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:89c3fab8e1302a0f"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 6460 - 글로벌ETF > 시세표
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:89c3fab8e1302a0f
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "6460 - 글로벌ETF > 시세표"
+- faq
+case_topic: 6460 - 글로벌ETF > 시세표
 case_topics:
-  - "6460 - 글로벌ETF > 시세표"
+- 6460 - 글로벌ETF > 시세표
 related_ids:
-  - "check:screen:6460"
-  - "check:enrichment:screen:6460"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4528"
-candidate_id: "manual-candidate:CRM-04526"
+- check:enrichment:screen:6460
+- check:screen:6460
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4528
+candidate_id: manual-candidate:CRM-04526
 ---
 # 질문과 답변 — 안녕하세요 아래 파일처럼 국내 상장된 etf들의 정보를 추출했는데, 미국에 상장된 etf들도 체크에서 이런식으로 데이터를 뽑…
 
@@ -36,8 +37,11 @@ candidate_id: "manual-candidate:CRM-04526"
 
 답변이 늦어져 죄송합니다. 해당정보를 제공할수 없는 상황이라 제공할수 있는 방안을 모색하는데 시간이 걸렸습니다. [REDACTED_ENTITY]ETF 의 경우 국내ETF DB 구성과 달라 현재로서는 화면(6460)에서 엑셀프리미엄연동 외 다른방식으로 바로 엑셀처리하실수 없습니다. 원하는 답변을 드리지 못해 죄송합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 6460 - 글로벌ETF > 시세표

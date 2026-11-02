@@ -1,28 +1,27 @@
 ---
-title: "사용 절차 — 안녕하세요 [REDACTED_ENTITY] [REDACTED_ENTITY]입니다. KB금융 근월물의 주식옵션의 otm 1~6…"
-description: "복합 데이터 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 안녕하세요 [REDACTED_ENTITY] [REDACTED_ENTITY]입니다. KB금융 근월물의 주식옵션의 otm 1~6…
+description: 복합 데이터 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "복합 데이터"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:d6c59bfce8e47842"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 복합 데이터
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:d6c59bfce8e47842
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "복합 데이터"
+- procedure
+- faq
+case_topic: 복합 데이터
 case_topics:
-  - "복합 데이터"
-related_ids:
-  - "check:enrichment:unmapped:5f12703cdf12"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:1398"
-candidate_id: "manual-candidate:VOC-01396"
+- 복합 데이터
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:1398
+candidate_id: manual-candidate:VOC-01396
 ---
 # 사용 절차 — 안녕하세요 [REDACTED_ENTITY] [REDACTED_ENTITY]입니다. KB금융 근월물의 주식옵션의 otm 1~6…
 
@@ -36,8 +35,11 @@ candidate_id: "manual-candidate:VOC-01396"
 
 CLIST 함수를 사용하시면 됩니다. 필터링을 "KB금융" 종목코드로 사용하시면 될 것 같은데... [IDENTIFIER] 구간 필터링은 조회 결과를 가지고 사용하셔야 할 것 같습니다. =CLIST( "", "", -1, "*012", "[NUMBER]", "_[IDENTIFIER]=1152:[NUMBER],1153:[NUMBER]", "[NUMBER],3003", "DESC", "[IDENTIFIER]=true;")
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CLIST 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 복합 데이터

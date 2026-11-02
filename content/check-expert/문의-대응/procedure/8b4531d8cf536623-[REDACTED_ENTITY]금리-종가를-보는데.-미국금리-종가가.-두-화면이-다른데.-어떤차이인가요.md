@@ -1,29 +1,31 @@
 ---
-title: "사용 절차 — [REDACTED_ENTITY]금리 종가를 보는데. 미국금리 종가가. 두 화면이 다른데. 어떤차이인가요"
-description: "3931 - 해외금리 > 해외국채 국가별 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — [REDACTED_ENTITY]금리 종가를 보는데. 미국금리 종가가. 두 화면이 다른데. 어떤차이인가요
+description: 3931 - 해외금리 > 해외국채 국가별 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3931 - 해외금리 > 해외국채 국가별"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:8b4531d8cf536623"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3931 - 해외금리 > 해외국채 국가별
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:8b4531d8cf536623
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3931 - 해외금리 > 해외국채 국가별"
+- procedure
+- faq
+case_topic: 3931 - 해외금리 > 해외국채 국가별
 case_topics:
-  - "3931 - 해외금리 > 해외국채 국가별"
+- 3931 - 해외금리 > 해외국채 국가별
 related_ids:
-  - "check:screen:3931"
-  - "check:enrichment:screen:3931"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3214"
-candidate_id: "manual-candidate:CRM-03212"
+- check:screen:3931
+- check:enrichment:screen:3931
+- check:tr:3938
+- check:tr:3926
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3214
+candidate_id: manual-candidate:CRM-03212
 ---
 # 사용 절차 — [REDACTED_ENTITY]금리 종가를 보는데. 미국금리 종가가. 두 화면이 다른데. 어떤차이인가요
 
@@ -37,8 +39,13 @@ candidate_id: "manual-candidate:CRM-03212"
 
 안녕하세요. [IDENTIFIER]+ 입니다. TR 3938 [REDACTED_ENTITY]국채 화면의 'T'일을 기준으로 미국 금리를 보신다고 가정할 경우, TR 3926 [REDACTED_ENTITY]국채 일별추이의 MID값과 동일함을 확인하실 수 있습니다. TR 3931 [REDACTED_ENTITY]국채 종합(국가별) 화면에서 '미국' 선택하신 후 만기별 값을 비교해보셔도 좋습니다. 장 중에는 통화가 어렵다고 하시어 보시고 이상 있으시면 장 마감 후 유선 연락 드리도록 하겠습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/채권/3931-3931-해외금리-해외국채-국가별|3931 - 해외금리 > 해외국채 국가별]]
+- [[check-expert/tr-후보/3938|TR 3938 (화면 문서 없음)]]
+- [[check-expert/tr-후보/3926|TR 3926 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3931 - 해외금리 > 해외국채 국가별

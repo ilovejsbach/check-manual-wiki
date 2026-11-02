@@ -1,28 +1,29 @@
 ---
-title: "질문과 답변 — 관심전략평가 화면을 여러개 띄우고 한 화면에서 종목을 구성후 \"수정\"을 누르면 다른 창들은 저장되어있는 종목군으로 저절로 갱…"
-description: "4754 - 관심전략평가 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 관심전략평가 화면을 여러개 띄우고 한 화면에서 종목을 구성후 "수정"을 누르면 다른 창들은 저장되어있는 종목군으로 저절로
+  갱…
+description: 4754 - 관심전략평가 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "4754 - 관심전략평가"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:5afafdad20adf4bd"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 4754 - 관심전략평가
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:5afafdad20adf4bd
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "4754 - 관심전략평가"
+- faq
+case_topic: 4754 - 관심전략평가
 case_topics:
-  - "4754 - 관심전략평가"
+- 4754 - 관심전략평가
 related_ids:
-  - "check:screen:4754"
-  - "check:enrichment:screen:4754"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1718"
-candidate_id: "manual-candidate:CRM-01716"
+- check:enrichment:screen:4754
+- check:screen:4754
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1718
+candidate_id: manual-candidate:CRM-01716
 ---
 # 질문과 답변 — 관심전략평가 화면을 여러개 띄우고 한 화면에서 종목을 구성후 "수정"을 누르면 다른 창들은 저장되어있는 종목군으로 저절로 갱…
 
@@ -36,8 +37,11 @@ candidate_id: "manual-candidate:CRM-01716"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 4754 동일화면 다수개 병렬 사용 중 관심전략1번 화면 저장 시 관심전략2 화면, 관심전략3 화면 등 일괄 리로딩되면서 미저장 수정사항들이 휘발되는 현상 때문에 불편하셨으리라 생각됩니다. 해당 사항은 개발 방식에 따라 소요일정 차이가 커서, 내부적으로 조금 검토 후 다시 연락 드리도록 하겠습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4754 - 관심전략평가

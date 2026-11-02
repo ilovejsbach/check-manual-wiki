@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — /bond/etc/cdcp_hist 여기에서 조회 안되나요?"
-description: "3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — /bond/etc/cdcp_hist 여기에서 조회 안되나요?
+description: 3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수
+  후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:9c98acce296ecf45"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:9c98acce296ecf45
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률"
+- procedure
+- faq
+case_topic: 3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률
 case_topics:
-  - "3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률"
+- 3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률
 related_ids:
-  - "check:screen:3743"
-  - "check:enrichment:screen:3743"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4378"
-candidate_id: "manual-candidate:CRM-04376"
+- check:screen:3743
+- check:enrichment:screen:3743
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4378
+candidate_id: manual-candidate:CRM-04376
 ---
 # 사용 절차 — /bond/etc/cdcp_hist 여기에서 조회 안되나요?
 
@@ -37,8 +38,11 @@ candidate_id: "manual-candidate:CRM-04376"
 
 /bond/etc/cdcp_hist 에서 3743 화면의 개별 데이터를 받아보실 수 있습니다. https://[IDENTIFIER].[REDACTED_ENTITY].co.kr/cdcp_hist 에서 API 테스트도구를 통해 직접 데이터도 확인이 가능하십니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/채권/3743-3743-시가평가-CD-CP-CD-CP-등급별-수익률|3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률

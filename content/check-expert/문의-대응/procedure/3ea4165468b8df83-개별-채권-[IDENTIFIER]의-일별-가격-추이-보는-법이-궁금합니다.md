@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — 개별 채권 [IDENTIFIER]의 일별 가격 추이 보는 법이 궁금합니다"
-description: "3703 - 유통종합 > 건별 체결 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 개별 채권 [IDENTIFIER]의 일별 가격 추이 보는 법이 궁금합니다
+description: 3703 - 유통종합 > 건별 체결 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3703 - 유통종합 > 건별 체결"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:3ea4165468b8df83"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3703 - 유통종합 > 건별 체결
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:3ea4165468b8df83
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3703 - 유통종합 > 건별 체결"
+- procedure
+- faq
+case_topic: 3703 - 유통종합 > 건별 체결
 case_topics:
-  - "3703 - 유통종합 > 건별 체결"
+- 3703 - 유통종합 > 건별 체결
 related_ids:
-  - "check:screen:3703"
-  - "check:enrichment:screen:3703"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:5783"
-candidate_id: "manual-candidate:CRM-05781"
+- check:screen:3435
+- check:screen:3703
+- check:enrichment:screen:3703
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:5783
+candidate_id: manual-candidate:CRM-05781
 ---
 # 사용 절차 — 개별 채권 [IDENTIFIER]의 일별 가격 추이 보는 법이 궁금합니다
 
@@ -37,8 +38,12 @@ candidate_id: "manual-candidate:CRM-05781"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 가격에 대한 정의가 애매하긴 합니다. 만약 일별 민평가격을 보실려면 3435화면에서 가능합니다. 시장에서 체결된 내역을 일별로 보시려면 3068에서 가능하고, 각 시장별 건별로 체결된 내역을 조회하시려면 3703화면에서 가능합니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/채권/3435-3435-시가평가-채권종목-일별추이|3435 - 시가평가 > 채권종목 > 일별추이]]
+- [[check-expert/새로운-모습/채권/3703-3703-유통종합-건별-체결|3703 - 유통종합 > 건별 체결]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3703 - 유통종합 > 건별 체결

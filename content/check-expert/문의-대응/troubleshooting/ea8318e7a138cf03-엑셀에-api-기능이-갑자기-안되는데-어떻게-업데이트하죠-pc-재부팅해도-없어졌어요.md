@@ -1,29 +1,29 @@
 ---
-title: "오류 해결 — 엑셀에 api 기능이 갑자기 안되는데 어떻게 업데이트하죠 pc 재부팅해도 없어졌어요"
-description: "메뉴와 템플릿 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — 엑셀에 api 기능이 갑자기 안되는데 어떻게 업데이트하죠 pc 재부팅해도 없어졌어요
+description: 메뉴와 템플릿 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "메뉴와 템플릿"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:ea8318e7a138cf03"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 메뉴와 템플릿
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:ea8318e7a138cf03
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "faq"
-case_topic: "메뉴와 템플릿"
+- troubleshooting
+- faq
+case_topic: 메뉴와 템플릿
 case_topics:
-  - "메뉴와 템플릿"
+- 메뉴와 템플릿
 related_ids:
-  - "check:excel:manual:메뉴와-템플릿"
-  - "check:enrichment:excel:manual:메뉴와-템플릿"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:934"
-candidate_id: "manual-candidate:CRM-00932"
+- check:enrichment:excel:manual:메뉴와-템플릿
+- check:excel:manual:메뉴와-템플릿
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:934
+candidate_id: manual-candidate:CRM-00932
 ---
 # 오류 해결 — 엑셀에 api 기능이 갑자기 안되는데 어떻게 업데이트하죠 pc 재부팅해도 없어졌어요
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-00932"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 엑셀 프리미엄 기능을 말씀하시는 거라면, 체크 상단 메뉴 [도움말>엑셀프리미엄 설치하기]를 진행 후 확인해보시기 바랍니다. 원하시는 답변이 아니거나 다른 기능문의라면 재문의 부탁드립니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 질문과 답변
 - 업무·주제: 메뉴와 템플릿

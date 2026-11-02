@@ -1,27 +1,26 @@
 ---
-title: "활용 팁 — 체크 단말을 교체했는데 프린터 연결이 되어 있지 않아서 연결 요청드립니다."
-description: "윈도우 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보."
+title: 활용 팁 — 체크 단말을 교체했는데 프린터 연결이 되어 있지 않아서 연결 요청드립니다.
+description: 윈도우 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "활용 팁"
-  - "검수 필요"
-  - "윈도우"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:c8a8bee38d35aa6a"
-document_type: "support_case"
-case_type: "tip"
+- CHECK Expert
+- 문의 대응
+- 활용 팁
+- 검수 필요
+- 윈도우
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:c8a8bee38d35aa6a
+document_type: support_case
+case_type: tip
 case_facets:
-  - "tip"
-case_topic: "윈도우"
+- tip
+case_topic: 윈도우
 case_topics:
-  - "윈도우"
-related_ids:
-  - "check:enrichment:unmapped:4c6ff7d5fa8f"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:481"
-candidate_id: "manual-candidate:CRM-00479"
+- 윈도우
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:481
+candidate_id: manual-candidate:CRM-00479
 ---
 # 활용 팁 — 체크 단말을 교체했는데 프린터 연결이 되어 있지 않아서 연결 요청드립니다.
 
@@ -35,8 +34,11 @@ candidate_id: "manual-candidate:CRM-00479"
 
 원격으로 삼성 M2820ND 연결 완료 ([IP])
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **활용 팁**
 - 함께 볼 유형: 활용 팁
 - 업무·주제: 윈도우

@@ -1,28 +1,27 @@
 ---
-title: "사용 절차 — 당발 [IDENTIFIER] 충북개발공사(음성) 2026-06 금리 확정 요청"
-description: "채권 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 당발 [IDENTIFIER] 충북개발공사(음성) 2026-06 금리 확정 요청
+description: 채권 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "채권"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:5fdafe31a8d4e85a"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 채권
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:5fdafe31a8d4e85a
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "caution"
-case_topic: "채권"
+- procedure
+- caution
+case_topic: 채권
 case_topics:
-  - "채권"
-related_ids:
-  - "check:enrichment:unmapped:11200aac2497"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:1295"
-candidate_id: "manual-candidate:CRM-01293"
+- 채권
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:1295
+candidate_id: manual-candidate:CRM-01293
 ---
 # 사용 절차 — 당발 [IDENTIFIER] 충북개발공사(음성) 2026-06 금리 확정 요청
 
@@ -36,8 +35,11 @@ candidate_id: "manual-candidate:CRM-01293"
 
 임의변경 불가 항목이며, 표준코드시스템에 금리 확정 시 체크에 15분 이내로 반영된다고 설명드림
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 주의사항
 - 업무·주제: 채권

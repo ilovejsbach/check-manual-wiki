@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — 접속이 끊겼다가 하네요 ... 오늘은 좀더 심하고 이런 상황이 계속 이어 지고 있습니다"
-description: "6106 - 종합 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 접속이 끊겼다가 하네요 ... 오늘은 좀더 심하고 이런 상황이 계속 이어 지고 있습니다
+description: 6106 - 종합 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "6106 - 종합"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:9d7bbb4fff0d32ab"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 6106 - 종합
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:9d7bbb4fff0d32ab
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "6106 - 종합"
+- procedure
+- faq
+case_topic: 6106 - 종합
 case_topics:
-  - "6106 - 종합"
+- 6106 - 종합
 related_ids:
-  - "check:screen:6106"
-  - "check:enrichment:screen:6106"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:2413"
-candidate_id: "manual-candidate:CRM-02411"
+- check:enrichment:screen:6106
+- check:screen:6106
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:2413
+candidate_id: manual-candidate:CRM-02411
 ---
 # 사용 절차 — 접속이 끊겼다가 하네요 ... 오늘은 좀더 심하고 이런 상황이 계속 이어 지고 있습니다
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-02411"
 
 유선으로 안내 드렸습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 6106 - 종합

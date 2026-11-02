@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — [REDACTED_ENTITY] [REDACTED_ENTITY]입니다. 채권의 표준코드가 부여되거나, 채권이 거래소에 상장될…"
-description: "3000 - 발행정보 > 주요 > 종목상세 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — [REDACTED_ENTITY] [REDACTED_ENTITY]입니다. 채권의 표준코드가 부여되거나, 채권이 거래소에 상장될…
+description: 3000 - 발행정보 > 주요 > 종목상세 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3000 - 발행정보 > 주요 > 종목상세"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:79ef047e6ee82dda"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3000 - 발행정보 > 주요 > 종목상세
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:79ef047e6ee82dda
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3000 - 발행정보 > 주요 > 종목상세"
+- procedure
+- faq
+case_topic: 3000 - 발행정보 > 주요 > 종목상세
 case_topics:
-  - "3000 - 발행정보 > 주요 > 종목상세"
+- 3000 - 발행정보 > 주요 > 종목상세
 related_ids:
-  - "check:screen:3000"
-  - "check:enrichment:screen:3000"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1227"
-candidate_id: "manual-candidate:CRM-01225"
+- check:enrichment:screen:3000
+- check:screen:3000
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1227
+candidate_id: manual-candidate:CRM-01225
 ---
 # 사용 절차 — [REDACTED_ENTITY] [REDACTED_ENTITY]입니다. 채권의 표준코드가 부여되거나, 채권이 거래소에 상장될…
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-01225"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 유선으로 통화한 [PERSON] 차장입니다. 아래 연락처를 안내해드리오니 추가 문의사항이 있으시면 연락주세요. - [REDACTED_ENTITY] / [REDACTED_ENTITY] / [PERSON] 차장 ([PHONE]) 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3000 - 발행정보 > 주요 > 종목상세

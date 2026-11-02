@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — 아이비케이증권(DLB)481 [IDENTIFIER] 안녕하세요. 금일 공모 발행으로 조회되는 DLB 1종목 다트에 공시된 내…"
-description: "3026 - 발행정보 > 주요 > DLB(DLS) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 아이비케이증권(DLB)481 [IDENTIFIER] 안녕하세요. 금일 공모 발행으로 조회되는 DLB 1종목 다트에 공시된
+  내…
+description: 3026 - 발행정보 > 주요 > DLB(DLS) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3026 - 발행정보 > 주요 > DLB(DLS)"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:73a1defe209b8491"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3026 - 발행정보 > 주요 > DLB(DLS)
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:73a1defe209b8491
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3026 - 발행정보 > 주요 > DLB(DLS)"
+- procedure
+- faq
+case_topic: 3026 - 발행정보 > 주요 > DLB(DLS)
 case_topics:
-  - "3026 - 발행정보 > 주요 > DLB(DLS)"
+- 3026 - 발행정보 > 주요 > DLB(DLS)
 related_ids:
-  - "check:screen:3026"
-  - "check:enrichment:screen:3026"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4013"
-candidate_id: "manual-candidate:CRM-04011"
+- check:enrichment:screen:3026
+- check:screen:3026
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4013
+candidate_id: manual-candidate:CRM-04011
 ---
 # 사용 절차 — 아이비케이증권(DLB)481 [IDENTIFIER] 안녕하세요. 금일 공모 발행으로 조회되는 DLB 1종목 다트에 공시된 내…
 
@@ -37,8 +38,11 @@ candidate_id: "manual-candidate:CRM-04011"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 발행사에 확인한 결과, 해당 종목은 사모이고, 거래소 표준코드시스템에도 수정입력한다고 합니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3026 - 발행정보 > 주요 > DLB(DLS)

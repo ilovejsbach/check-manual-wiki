@@ -1,30 +1,30 @@
 ---
-title: "오류 해결 — 어제까지 잘 사용하던 XL [IDENTIFIER]이 갑자기 매크로 오류로 작동하지 않습니다. 함수 빌더 등 버튼 클릭 시 […"
-description: "조회정보 없음(이용 문의) 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — 어제까지 잘 사용하던 XL [IDENTIFIER]이 갑자기 매크로 오류로 작동하지 않습니다. 함수 빌더 등 버튼 클릭 시
+  […
+description: 조회정보 없음(이용 문의) 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "조회정보 없음(이용 문의)"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:f3c3c65857632bc9"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 조회정보 없음(이용 문의)
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:f3c3c65857632bc9
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "caution"
-  - "faq"
-case_topic: "조회정보 없음(이용 문의)"
+- troubleshooting
+- procedure
+- caution
+- faq
+case_topic: 조회정보 없음(이용 문의)
 case_topics:
-  - "조회정보 없음(이용 문의)"
-related_ids:
-  - "check:enrichment:unmapped:3ac5dac18b2d"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:538"
-candidate_id: "manual-candidate:VOC-00536"
+- 조회정보 없음(이용 문의)
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:538
+candidate_id: manual-candidate:VOC-00536
 ---
 # 오류 해결 — 어제까지 잘 사용하던 XL [IDENTIFIER]이 갑자기 매크로 오류로 작동하지 않습니다. 함수 빌더 등 버튼 클릭 시 […
 
@@ -38,8 +38,11 @@ candidate_id: "manual-candidate:VOC-00536"
 
 $$
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 조회정보 없음(이용 문의)

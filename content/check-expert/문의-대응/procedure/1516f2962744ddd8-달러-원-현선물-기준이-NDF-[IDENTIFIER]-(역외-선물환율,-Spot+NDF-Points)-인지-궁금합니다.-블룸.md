@@ -1,34 +1,36 @@
 ---
-title: "사용 절차 — 달러-원 현선물 기준이 NDF [IDENTIFIER] (역외 선물환율, Spot+NDF Points) 인지 궁금합니다. 블룸…"
-description: "5103 - 달러-원>일별추이, 5100 - 달러-원>종합화면 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 달러-원 현선물 기준이 NDF [IDENTIFIER] (역외 선물환율, Spot+NDF Points) 인지 궁금합니다.
+  블룸…
+description: 5103 - 달러-원>일별추이, 5100 - 달러-원>종합화면 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수
+  후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "5103 - 달러-원>일별추이"
-  - "5100 - 달러-원>종합화면"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:1516f2962744ddd8"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 5103 - 달러-원>일별추이
+- 5100 - 달러-원>종합화면
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:1516f2962744ddd8
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "caution"
-  - "faq"
-case_topic: "5103 - 달러-원>일별추이"
+- procedure
+- caution
+- faq
+case_topic: 5103 - 달러-원>일별추이
 case_topics:
-  - "5103 - 달러-원>일별추이"
-  - "5100 - 달러-원>종합화면"
+- 5103 - 달러-원>일별추이
+- 5100 - 달러-원>종합화면
 related_ids:
-  - "check:screen:5103"
-  - "check:enrichment:screen:5103"
-  - "check:screen:5100"
-  - "check:enrichment:screen:5100"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3739"
-candidate_id: "manual-candidate:CRM-03737"
+- check:screen:5100
+- check:screen:5103
+- check:enrichment:screen:5100
+- check:enrichment:screen:5103
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3739
+candidate_id: manual-candidate:CRM-03737
 ---
 # 사용 절차 — 달러-원 현선물 기준이 NDF [IDENTIFIER] (역외 선물환율, Spot+NDF Points) 인지 궁금합니다. 블룸…
 
@@ -42,8 +44,12 @@ candidate_id: "manual-candidate:CRM-03737"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 유선으로 말씀 드렸듯, 우선 5100 화면의 달러-원 현선물 시세는 서울외환-한국자금 역내 환율을 사용합니다. 또한 현재 [PERSON]님께서는 [REDACTED_ENTITY]권한으로 화면을 조회중이시기 때문에 타 단말 대비 스프레드가 적게 책정되어 보이실 수 있습니다. 마지막으로, 5100 화면의 경우 가장 최신 시세인 02:00 종가를 전일종가로 사용하기 때문에, 타 단말에서 15:30 종가를 사용하는 경우 이에 대한 차이가 있을 수 있습니다. 15:30 / 02:00 종가 차이에 대한 부분은 5103 화면을 보시면 확인 가능하십니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/외환/5100-5100-달러-원-종합화면|5100 - 달러-원>종합화면]]
+- [[check-expert/새로운-모습/외환/5103-5103-달러-원-일별추이|5103 - 달러-원>일별추이]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 5103 - 달러-원>일별추이, 5100 - 달러-원>종합화면

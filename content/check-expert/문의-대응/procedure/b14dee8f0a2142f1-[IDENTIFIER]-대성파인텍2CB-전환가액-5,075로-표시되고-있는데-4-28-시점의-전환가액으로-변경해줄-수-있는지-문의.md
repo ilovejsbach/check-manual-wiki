@@ -1,28 +1,28 @@
 ---
-title: "사용 절차 — [IDENTIFIER] 대성파인텍2CB 전환가액 5,075로 표시되고 있는데 4/28 시점의 전환가액으로 변경해줄 수 있는지 문의"
-description: "채권 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — [IDENTIFIER] 대성파인텍2CB 전환가액 5,075로 표시되고 있는데 4/28 시점의 전환가액으로 변경해줄 수 있는지
+  문의
+description: 채권 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "채권"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:b14dee8f0a2142f1"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 채권
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:b14dee8f0a2142f1
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "채권"
+- procedure
+- faq
+case_topic: 채권
 case_topics:
-  - "채권"
-related_ids:
-  - "check:enrichment:unmapped:11200aac2497"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:1184"
-candidate_id: "manual-candidate:CRM-01182"
+- 채권
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:1184
+candidate_id: manual-candidate:CRM-01182
 ---
 # 사용 절차 — [IDENTIFIER] 대성파인텍2CB 전환가액 5,075로 표시되고 있는데 4/28 시점의 전환가액으로 변경해줄 수 있는지 문의
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-01182"
 
 표준코드시스템에 마지막으로 입력된 값으로 보여주고 있어서 특정시점의 값으로 보여드리기는 어렵다고 설명드림
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 채권

@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — 안녕하세요, 체크 API(Level Basic)를 신청하려고 합니다."
-description: "조회정보 없음(이용 문의) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 안녕하세요, 체크 API(Level Basic)를 신청하려고 합니다.
+description: 조회정보 없음(이용 문의) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "조회정보 없음(이용 문의)"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:bb58df5df243f419"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 조회정보 없음(이용 문의)
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:bb58df5df243f419
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "faq"
-case_topic: "조회정보 없음(이용 문의)"
+- troubleshooting
+- procedure
+- faq
+case_topic: 조회정보 없음(이용 문의)
 case_topics:
-  - "조회정보 없음(이용 문의)"
+- 조회정보 없음(이용 문의)
 related_ids:
-  - "check:enrichment:unmapped:3ac5dac18b2d"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:143"
-candidate_id: "manual-candidate:VOC-00141"
+- check:tr:9032
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:143
+candidate_id: manual-candidate:VOC-00141
 ---
 # 사용 절차 — 안녕하세요, 체크 API(Level Basic)를 신청하려고 합니다.
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:VOC-00141"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 유선상 안내드린바와 같이 1/16까지 트라이얼로 제공해드립니다. CHECK 재접속 후 9032화면을 통해 API를 생성하실 수 있으니 참고 부탁드립니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/tr-후보/9032|TR 9032 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 오류 해결, 사용 절차, 질문과 답변
 - 업무·주제: 조회정보 없음(이용 문의)

@@ -1,27 +1,26 @@
 ---
-title: "활용 팁 — 해당 단말 교체로 차단 정책 적용 ([REDACTED_ENTITY] 요청)"
-description: "넷클라이언트 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보."
+title: 활용 팁 — 해당 단말 교체로 차단 정책 적용 ([REDACTED_ENTITY] 요청)
+description: 넷클라이언트 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "활용 팁"
-  - "검수 필요"
-  - "넷클라이언트"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:cdd8879c934d719d"
-document_type: "support_case"
-case_type: "tip"
+- CHECK Expert
+- 문의 대응
+- 활용 팁
+- 검수 필요
+- 넷클라이언트
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:cdd8879c934d719d
+document_type: support_case
+case_type: tip
 case_facets:
-  - "tip"
-case_topic: "넷클라이언트"
+- tip
+case_topic: 넷클라이언트
 case_topics:
-  - "넷클라이언트"
-related_ids:
-  - "check:enrichment:unmapped:47f7a1a06c8f"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:1369"
-candidate_id: "manual-candidate:CRM-01367"
+- 넷클라이언트
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:1369
+candidate_id: manual-candidate:CRM-01367
 ---
 # 활용 팁 — 해당 단말 교체로 차단 정책 적용 ([REDACTED_ENTITY] 요청)
 
@@ -35,8 +34,11 @@ candidate_id: "manual-candidate:CRM-01367"
 
 타 단말과 동일하게 차단 정책 적용
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **활용 팁**
 - 함께 볼 유형: 활용 팁
 - 업무·주제: 넷클라이언트

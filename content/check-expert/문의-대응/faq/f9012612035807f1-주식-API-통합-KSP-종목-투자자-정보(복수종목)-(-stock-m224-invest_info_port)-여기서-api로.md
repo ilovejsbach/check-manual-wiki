@@ -1,27 +1,26 @@
 ---
-title: "질문과 답변 — 주식-API>통합-KSP 종목>투자자 정보(복수종목) (/stock/m224/invest_info_port) 여기서 api로…"
-description: "투자자·회원사 매매·보유 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 주식-API>통합-KSP 종목>투자자 정보(복수종목) (/stock/m224/invest_info_port) 여기서 api로…
+description: 투자자·회원사 매매·보유 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "투자자·회원사 매매·보유"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:f9012612035807f1"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 투자자·회원사 매매·보유
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:f9012612035807f1
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "투자자·회원사 매매·보유"
+- faq
+case_topic: 투자자·회원사 매매·보유
 case_topics:
-  - "투자자·회원사 매매·보유"
-related_ids:
-  - "check:enrichment:unmapped:b9f8ede83d20"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:807"
-candidate_id: "manual-candidate:VOC-00805"
+- 투자자·회원사 매매·보유
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:807
+candidate_id: manual-candidate:VOC-00805
 ---
 # 질문과 답변 — 주식-API>통합-KSP 종목>투자자 정보(복수종목) (/stock/m224/invest_info_port) 여기서 api로…
 
@@ -35,8 +34,11 @@ candidate_id: "manual-candidate:VOC-00805"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 해당 API는 배치성으로 업데이트 되는 자료입니다. - 15:30 / 18:00 경 KRX + 통합 배치 데이터 업데이트 - 20:00 경 NXT + 통합 배치 데이터 업데이트 *** (중요) 모든 배치성 업데이트 시점은 정각 기준이 아니므로 오차가 있을 수 있습니다. 따라서 NXT 포함된 값은 당일 20시 이후 (넉넉하게 20시 30분 이후) 수신 가능하십니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 투자자·회원사 매매·보유

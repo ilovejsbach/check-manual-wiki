@@ -1,29 +1,28 @@
 ---
-title: "사용 절차 — PC재부팅 후 check화면에 설정에 놓은 종목이 사라짐. 사라지지 않도록 설정문의 화면닫기 버튼으로 ESC설정방법 문의"
-description: "공통기능 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — PC재부팅 후 check화면에 설정에 놓은 종목이 사라짐. 사라지지 않도록 설정문의 화면닫기 버튼으로 ESC설정방법 문의
+description: 공통기능 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "공통기능"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:6f257f5aa89537f6"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 공통기능
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:6f257f5aa89537f6
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "caution"
-  - "faq"
-case_topic: "공통기능"
+- procedure
+- caution
+- faq
+case_topic: 공통기능
 case_topics:
-  - "공통기능"
-related_ids:
-  - "check:enrichment:unmapped:e685fe63fa73"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:1432"
-candidate_id: "manual-candidate:CRM-01430"
+- 공통기능
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:1432
+candidate_id: manual-candidate:CRM-01430
 ---
 # 사용 절차 — PC재부팅 후 check화면에 설정에 놓은 종목이 사라짐. 사라지지 않도록 설정문의 화면닫기 버튼으로 ESC설정방법 문의
 
@@ -37,8 +36,11 @@ PC재부팅 후 check화면에 설정에 놓은 종목이 사라짐. 사라지�
 
 page저장 및 시작화면설정 등 안내 ESC버튼은 기능설정 불가. - 버튼으로 화면닫기 가능함을 안내
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 공통기능

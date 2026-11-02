@@ -1,29 +1,31 @@
 ---
-title: "사용 절차 — 안녕하세요, 주요채권시세표 종목을 사용자가 선택할 수 있을지 문의드립니다. 20년 선매출(26-10) 호가는 표시되나, 30…"
-description: "3705 - 유통종합 > 주요채권 시세표 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 안녕하세요, 주요채권시세표 종목을 사용자가 선택할 수 있을지 문의드립니다. 20년 선매출(26-10) 호가는 표시되나,
+  30…
+description: 3705 - 유통종합 > 주요채권 시세표 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3705 - 유통종합 > 주요채권 시세표"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:edcdddee18b36518"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3705 - 유통종합 > 주요채권 시세표
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:edcdddee18b36518
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3705 - 유통종합 > 주요채권 시세표"
+- procedure
+- faq
+case_topic: 3705 - 유통종합 > 주요채권 시세표
 case_topics:
-  - "3705 - 유통종합 > 주요채권 시세표"
+- 3705 - 유통종합 > 주요채권 시세표
 related_ids:
-  - "check:screen:3705"
-  - "check:enrichment:screen:3705"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4541"
-candidate_id: "manual-candidate:CRM-04539"
+- check:enrichment:screen:3705
+- check:screen:3705
+- check:tr:3091
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4541
+candidate_id: manual-candidate:CRM-04539
 ---
 # 사용 절차 — 안녕하세요, 주요채권시세표 종목을 사용자가 선택할 수 있을지 문의드립니다. 20년 선매출(26-10) 호가는 표시되나, 30…
 
@@ -37,8 +39,11 @@ candidate_id: "manual-candidate:CRM-04539"
 
 [#3091] 국고채 유통(실시간 Flash) 화면을 참고하시면 다음과 같이 사용이 가능합니다 . 1. 상단 조건을 실시간으로 선택한다. 2. 하단의 지표채권/지표+직전지표/국채전체에서 국채 전체를 선택한다. 3. 체결/체결+호가에서 체결+호가를 선택한다. 하단의 스크롤을 하단으로 내리시면 26-8 종목을 확인하실수 있습니다. 이때, 상단의 +유통정보 버튼을 누르시고 대상 종목을 선택하시면 실시간 시장정보 및 당일 유통정보를 차트를 통해 확인하실수 있습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/tr-후보/3091|TR 3091 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3705 - 유통종합 > 주요채권 시세표

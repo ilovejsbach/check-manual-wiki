@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — 해당화면의 가중평균과 거래량은 KRX만 포함인가요?"
-description: "1318 - 시간대별 평균 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 해당화면의 가중평균과 거래량은 KRX만 포함인가요?
+description: 1318 - 시간대별 평균 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "1318 - 시간대별 평균"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:4eb23dfedc8a26d7"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 1318 - 시간대별 평균
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:4eb23dfedc8a26d7
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "1318 - 시간대별 평균"
+- procedure
+- faq
+case_topic: 1318 - 시간대별 평균
 case_topics:
-  - "1318 - 시간대별 평균"
+- 1318 - 시간대별 평균
 related_ids:
-  - "check:screen:1318"
-  - "check:enrichment:screen:1318"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3546"
-candidate_id: "manual-candidate:CRM-03544"
+- check:enrichment:screen:1318
+- check:screen:1318
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3546
+candidate_id: manual-candidate:CRM-03544
 ---
 # 사용 절차 — 해당화면의 가중평균과 거래량은 KRX만 포함인가요?
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-03544"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 좌측상단 C/N/K 버튼을 선택하시면 해당 거래소의 가중평균 및 거래량으로 선택됩니다. C : 통합시세 (KRX+NXT) N : NXT K : KRX 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 1318 - 시간대별 평균

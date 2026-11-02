@@ -1,28 +1,28 @@
 ---
-title: "오류 해결 — 담당자 : [PERSON] 대리 [PHONE] 윈도우10 -> 윈도우11 업데이트 시도중 CHECK 단말 윈도우 업데이트 안…"
-description: "요구-오류/장애 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: '오류 해결 — 담당자 : [PERSON] 대리 [PHONE] 윈도우10 -> 윈도우11 업데이트 시도중 CHECK 단말 윈도우 업데이트
+  안…'
+description: 요구-오류/장애 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "요구-오류/장애"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:07bd05b85a59722a"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 요구-오류/장애
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:07bd05b85a59722a
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "caution"
-case_topic: "요구-오류/장애"
+- troubleshooting
+- caution
+case_topic: 요구-오류/장애
 case_topics:
-  - "요구-오류/장애"
-related_ids:
-  - "check:enrichment:unmapped:32a69f6bf9d9"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:59"
-candidate_id: "manual-candidate:CRM-00057"
+- 요구-오류/장애
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:59
+candidate_id: manual-candidate:CRM-00057
 ---
 # 오류 해결 — 담당자 : [PERSON] 대리 [PHONE] 윈도우10 -> 윈도우11 업데이트 시도중 CHECK 단말 윈도우 업데이트 안…
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-00057"
 
 본체 교체 후 조치 완료 내용 : 자사회선 사용중으로 자사회선 차단으로 인한 인터넷 접속불가로 고객사 자체 조치 후 완료
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 주의사항
 - 업무·주제: 요구-오류/장애

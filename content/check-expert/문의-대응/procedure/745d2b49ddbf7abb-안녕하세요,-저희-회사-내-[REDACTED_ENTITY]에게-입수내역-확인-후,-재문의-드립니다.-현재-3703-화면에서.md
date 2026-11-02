@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — 안녕하세요, 저희 회사 내 [REDACTED_ENTITY]에게 입수내역 확인 후, 재문의 드립니다. 현재 3703 화면에서…"
-description: "3703 - 유통종합 > 건별 체결 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 안녕하세요, 저희 회사 내 [REDACTED_ENTITY]에게 입수내역 확인 후, 재문의 드립니다. 현재 3703 화면에서…
+description: 3703 - 유통종합 > 건별 체결 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3703 - 유통종합 > 건별 체결"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:745d2b49ddbf7abb"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3703 - 유통종합 > 건별 체결
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:745d2b49ddbf7abb
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3703 - 유통종합 > 건별 체결"
+- procedure
+- faq
+case_topic: 3703 - 유통종합 > 건별 체결
 case_topics:
-  - "3703 - 유통종합 > 건별 체결"
+- 3703 - 유통종합 > 건별 체결
 related_ids:
-  - "check:screen:3703"
-  - "check:enrichment:screen:3703"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4494"
-candidate_id: "manual-candidate:CRM-04492"
+- check:screen:3703
+- check:enrichment:screen:3703
+- check:tr:3713
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4494
+candidate_id: manual-candidate:CRM-04492
 ---
 # 사용 절차 — 안녕하세요, 저희 회사 내 [REDACTED_ENTITY]에게 입수내역 확인 후, 재문의 드립니다. 현재 3703 화면에서…
 
@@ -37,8 +38,12 @@ candidate_id: "manual-candidate:CRM-04492"
 
 저희는 CHECK내의 콘텐츠만 담당하고 있어서 귀사가 받으시는 KRX전문의 내용에 대해서는 정확한 답변을 드리기 어려운 점 미리 양해부탁드립니다. 내부적으로 살펴본 바에 따르면 신고협의매매의 보드ID는 S1으로 파악됩니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/채권/3703-3703-유통종합-건별-체결|3703 - 유통종합 > 건별 체결]]
+- [[check-expert/tr-후보/3713|TR 3713 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3703 - 유통종합 > 건별 체결

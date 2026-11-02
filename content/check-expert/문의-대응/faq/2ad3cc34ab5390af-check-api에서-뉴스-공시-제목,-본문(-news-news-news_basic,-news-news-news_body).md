@@ -1,27 +1,26 @@
 ---
-title: "질문과 답변 — check api에서 뉴스/공시 제목, 본문(/news/news/news_basic, /news/news/news_body)…"
-description: "뉴스·공시·시장조치 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — check api에서 뉴스/공시 제목, 본문(/news/news/news_basic, /news/news/news_body)…
+description: 뉴스·공시·시장조치 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "뉴스·공시·시장조치"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:2ad3cc34ab5390af"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 뉴스·공시·시장조치
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:2ad3cc34ab5390af
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "뉴스·공시·시장조치"
+- faq
+case_topic: 뉴스·공시·시장조치
 case_topics:
-  - "뉴스·공시·시장조치"
-related_ids:
-  - "check:enrichment:unmapped:1da7508c360b"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:771"
-candidate_id: "manual-candidate:VOC-00769"
+- 뉴스·공시·시장조치
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:771
+candidate_id: manual-candidate:VOC-00769
 ---
 # 질문과 답변 — check api에서 뉴스/공시 제목, 본문(/news/news/news_basic, /news/news/news_body)…
 
@@ -35,8 +34,11 @@ check api에서 뉴스/공시 제목, 본문(/news/news/news_basic, /news/news/n
 
 안녕하세요. [IDENTIFIER]+ 입니다. 해당 API에서 제공하는 정보는 당사 시스템으로 수신되는 공시데이터를 기초로 하여 제공됩니다. 수신받는 원소스에서 원문 공시 URL이 존재하지않아 제공이 어려운 부분임을 양해 부탁드립니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 뉴스·공시·시장조치

@@ -1,28 +1,28 @@
 ---
-title: "사용 절차 — 안녕하세요, 다름이 아니라 host: https://[IDENTIFIER].[REDACTED_ENTITY].co.kr pos…"
-description: "펀드·ETF 구성·운용정보 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: '사용 절차 — 안녕하세요, 다름이 아니라 host: https://[IDENTIFIER].[REDACTED_ENTITY].co.kr
+  pos…'
+description: 펀드·ETF 구성·운용정보 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "펀드·ETF 구성·운용정보"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:e5cddd182d47286c"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 펀드·ETF 구성·운용정보
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:e5cddd182d47286c
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "펀드·ETF 구성·운용정보"
+- procedure
+- faq
+case_topic: 펀드·ETF 구성·운용정보
 case_topics:
-  - "펀드·ETF 구성·운용정보"
-related_ids:
-  - "check:enrichment:unmapped:ee6126df39aa"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:476"
-candidate_id: "manual-candidate:VOC-00474"
+- 펀드·ETF 구성·운용정보
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:476
+candidate_id: manual-candidate:VOC-00474
 ---
 # 사용 절차 — 안녕하세요, 다름이 아니라 host: https://[IDENTIFIER].[REDACTED_ENTITY].co.kr pos…
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:VOC-00474"
 
 $$
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 펀드·ETF 구성·운용정보

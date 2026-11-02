@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — CIS 함수를 이용한 일중 순매수 데이터 제공 범위 문의 과거 순매수 일중 데이터를 분석하기 위해 CIS 함수를 설정하였습니…"
-description: "4334 - 순매수일중 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — CIS 함수를 이용한 일중 순매수 데이터 제공 범위 문의 과거 순매수 일중 데이터를 분석하기 위해 CIS 함수를 설정하였습니…
+description: 4334 - 순매수일중 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4334 - 순매수일중"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:d1c10e79e3fb2fe4"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4334 - 순매수일중
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:d1c10e79e3fb2fe4
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4334 - 순매수일중"
+- procedure
+- faq
+case_topic: 4334 - 순매수일중
 case_topics:
-  - "4334 - 순매수일중"
+- 4334 - 순매수일중
 related_ids:
-  - "check:screen:4334"
-  - "check:enrichment:screen:4334"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3825"
-candidate_id: "manual-candidate:CRM-03823"
+- check:enrichment:screen:4334
+- check:screen:4334
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3825
+candidate_id: manual-candidate:CRM-03823
 ---
 # 사용 절차 — CIS 함수를 이용한 일중 순매수 데이터 제공 범위 문의 과거 순매수 일중 데이터를 분석하기 위해 CIS 함수를 설정하였습니…
 
@@ -37,8 +37,11 @@ CIS 함수를 이용한 일중 순매수 데이터 제공 범위 문의 과거 �
 
 안녕하세요. [IDENTIFIER]+ 입니다. [IDENTIFIER] / KOSDAQ 야간선물 30초 일중 데이터의 경우 약 30일 정도 데이터를 보관하고 있으며, 아래 함수를 참조해보실 수 있습니다. =CIS("[NUMBER] ","[NUMBER] ",-1,-1,"30S",TRUE,"K2FS020.N,*236","[NUMBER],[NUMBER],[NUMBER],[NUMBER],[NUMBER],[NUMBER],[NUMBER]^8,[NUMBER]^11,[NUMBER]^10,[NUMBER]^1,[NUMBER]^3,[NUMBER]^4,[NUMBER]^2","DESC","[IDENTIFIER]=true; [IDENTIFIER]=vert; t[REDACTED_ENTITY]le=[REDACTED_ENTITY]em+[IDENTIFIER];") 주간선물의 경우 약 120일 데이터를 보관하여 아래와 같이 보여주고 있습니다. =CIS("[NUMBER] ","[NUMBER] ",-1,-1,"30S",TRUE,"K2FS020,*005","[NUMBER],[NUMBER],[NUMBER],[NUMBER],[NUMBER],[NUMBER],[NUMBER]^8,[NUMBER]^11,[NUMBER]^10,[NUMBER]^1,[NUMBER]^3,[NUMBER]^4,[NUMBER]^2","DESC","[IDENTIFIER]=true; [IDENTIFIER]=vert; t[REDACTED_ENTITY]le=[REDACTED_ENTITY]em+[IDENTIFIER];") 위 함수식을 활용해보시면 데이터 조회가 가능합니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CIS 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4334 - 순매수일중

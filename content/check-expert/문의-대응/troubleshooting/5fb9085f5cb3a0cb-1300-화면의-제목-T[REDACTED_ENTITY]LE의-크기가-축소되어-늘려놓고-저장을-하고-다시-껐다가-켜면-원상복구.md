@@ -1,28 +1,28 @@
 ---
-title: "오류 해결 — 1300 화면의 제목 T[REDACTED_ENTITY]LE의 크기가 축소되어 늘려놓고 저장을 하고 다시 껐다가 켜면 원상복구…"
-description: "1300 - 주식현재가 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — 1300 화면의 제목 T[REDACTED_ENTITY]LE의 크기가 축소되어 늘려놓고 저장을 하고 다시 껐다가 켜면 원상복구…
+description: 1300 - 주식현재가 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "1300 - 주식현재가"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:5fb9085f5cb3a0cb"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 1300 - 주식현재가
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:5fb9085f5cb3a0cb
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-case_topic: "1300 - 주식현재가"
+- troubleshooting
+case_topic: 1300 - 주식현재가
 case_topics:
-  - "1300 - 주식현재가"
+- 1300 - 주식현재가
 related_ids:
-  - "check:screen:1300"
-  - "check:enrichment:screen:1300"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:993"
-candidate_id: "manual-candidate:CRM-00991"
+- check:screen:1300
+- check:enrichment:screen:1300
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:993
+candidate_id: manual-candidate:CRM-00991
 ---
 # 오류 해결 — 1300 화면의 제목 T[REDACTED_ENTITY]LE의 크기가 축소되어 늘려놓고 저장을 하고 다시 껐다가 켜면 원상복구…
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-00991"
 
 체크 재설치 -> 화면 복원후 정상 확인
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/주식/1300-1300-주식현재가|1300 - 주식현재가]]
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결
 - 업무·주제: 1300 - 주식현재가

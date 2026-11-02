@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — Page 저장부분이 새로 켤때마다 리프레쉬되고 고정이 안됩니다."
-description: "4109 - 개별주식 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — Page 저장부분이 새로 켤때마다 리프레쉬되고 고정이 안됩니다.
+description: 4109 - 개별주식 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "4109 - 개별주식"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:a95b9b23d11ceb12"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 4109 - 개별주식
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:a95b9b23d11ceb12
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "4109 - 개별주식"
+- faq
+case_topic: 4109 - 개별주식
 case_topics:
-  - "4109 - 개별주식"
+- 4109 - 개별주식
 related_ids:
-  - "check:screen:4109"
-  - "check:enrichment:screen:4109"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:6230"
-candidate_id: "manual-candidate:CRM-06228"
+- check:enrichment:screen:4109
+- check:screen:4109
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:6230
+candidate_id: manual-candidate:CRM-06228
 ---
 # 질문과 답변 — Page 저장부분이 새로 켤때마다 리프레쉬되고 고정이 안됩니다.
 
@@ -36,8 +36,11 @@ Page 저장부분이 새로 켤때마다 리프레쉬되고 고정이 안됩니�
 
 통화가 가능하신 연락처를 남겨주시면 연락드리겠습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4109 - 개별주식

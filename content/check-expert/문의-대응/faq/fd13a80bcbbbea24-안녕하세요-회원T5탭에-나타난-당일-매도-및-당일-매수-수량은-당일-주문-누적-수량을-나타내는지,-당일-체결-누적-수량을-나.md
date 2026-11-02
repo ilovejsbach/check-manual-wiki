@@ -1,28 +1,30 @@
 ---
-title: "질문과 답변 — 안녕하세요 회원T5탭에 나타난 당일 매도 및 당일 매수 수량은 당일 주문 누적 수량을 나타내는지, 당일 체결 누적 수량을 나…"
-description: "1614 - 회원별 실시간 체결 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 안녕하세요 회원T5탭에 나타난 당일 매도 및 당일 매수 수량은 당일 주문 누적 수량을 나타내는지, 당일 체결 누적 수량을
+  나…
+description: 1614 - 회원별 실시간 체결 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "1614 - 회원별 실시간 체결"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:fd13a80bcbbbea24"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 1614 - 회원별 실시간 체결
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:fd13a80bcbbbea24
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "1614 - 회원별 실시간 체결"
+- faq
+case_topic: 1614 - 회원별 실시간 체결
 case_topics:
-  - "1614 - 회원별 실시간 체결"
+- 1614 - 회원별 실시간 체결
 related_ids:
-  - "check:screen:1614"
-  - "check:enrichment:screen:1614"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4839"
-candidate_id: "manual-candidate:CRM-04837"
+- check:screen:1614
+- check:enrichment:screen:1614
+- check:tr:1622
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4839
+candidate_id: manual-candidate:CRM-04837
 ---
 # 질문과 답변 — 안녕하세요 회원T5탭에 나타난 당일 매도 및 당일 매수 수량은 당일 주문 누적 수량을 나타내는지, 당일 체결 누적 수량을 나…
 
@@ -36,8 +38,12 @@ candidate_id: "manual-candidate:CRM-04837"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 회원사 별 체결거래량을 보여주고 있습니다. TR 1614 회원사별 실시간체결종목 및 TR 1622 최대거래회원 실시간 화면과 동시에 비교하여 보시면 보다 쉽게 확인 가능하십니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/주식/1614-1614-회원별-실시간-체결|1614 - 회원별 실시간 체결]]
+- [[check-expert/tr-후보/1622|TR 1622 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 1614 - 회원별 실시간 체결

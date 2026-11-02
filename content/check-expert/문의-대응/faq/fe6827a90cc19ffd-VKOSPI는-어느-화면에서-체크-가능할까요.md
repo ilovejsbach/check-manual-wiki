@@ -1,32 +1,32 @@
 ---
-title: "질문과 답변 — VKOSPI는 어느 화면에서 체크 가능할까요?"
-description: "4031 - 일중추이, 4033 - 일별추이 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — VKOSPI는 어느 화면에서 체크 가능할까요?
+description: 4031 - 일중추이, 4033 - 일별추이 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "4031 - 일중추이"
-  - "4033 - 일별추이"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:fe6827a90cc19ffd"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 4031 - 일중추이
+- 4033 - 일별추이
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:fe6827a90cc19ffd
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "4031 - 일중추이"
+- faq
+case_topic: 4031 - 일중추이
 case_topics:
-  - "4031 - 일중추이"
-  - "4033 - 일별추이"
+- 4031 - 일중추이
+- 4033 - 일별추이
 related_ids:
-  - "check:screen:4031"
-  - "check:enrichment:screen:4031"
-  - "check:screen:4033"
-  - "check:enrichment:screen:4033"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:6060"
-candidate_id: "manual-candidate:CRM-06058"
+- check:enrichment:screen:4031
+- check:enrichment:screen:4033
+- check:screen:4031
+- check:screen:4033
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:6060
+candidate_id: manual-candidate:CRM-06058
 ---
 # 질문과 답변 — VKOSPI는 어느 화면에서 체크 가능할까요?
 
@@ -40,8 +40,11 @@ VKOSPI는 어느 화면에서 체크 가능할까요?
 
 4031 또는 4033 같은 화면에서 확인 가능합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4031 - 일중추이, 4033 - 일별추이

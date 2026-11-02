@@ -1,27 +1,26 @@
 ---
-title: "질문과 답변 — 안녕하세요 체크 API, 주식선물 투자자 데이터 수신에 대해서 문의드립니다. 체크 4228 주식선물 투자자 데이터에 대해서…"
-description: "투자자·회원사 매매·보유 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 안녕하세요 체크 API, 주식선물 투자자 데이터 수신에 대해서 문의드립니다. 체크 4228 주식선물 투자자 데이터에 대해서…
+description: 투자자·회원사 매매·보유 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "투자자·회원사 매매·보유"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:e093d150dffa8d75"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 투자자·회원사 매매·보유
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:e093d150dffa8d75
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "투자자·회원사 매매·보유"
+- faq
+case_topic: 투자자·회원사 매매·보유
 case_topics:
-  - "투자자·회원사 매매·보유"
-related_ids:
-  - "check:enrichment:unmapped:b9f8ede83d20"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:426"
-candidate_id: "manual-candidate:VOC-00424"
+- 투자자·회원사 매매·보유
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:426
+candidate_id: manual-candidate:VOC-00424
 ---
 # 질문과 답변 — 안녕하세요 체크 API, 주식선물 투자자 데이터 수신에 대해서 문의드립니다. 체크 4228 주식선물 투자자 데이터에 대해서…
 
@@ -35,8 +34,11 @@ candidate_id: "manual-candidate:VOC-00424"
 
 네. 현재기능은 없으나 바로 반영해 드리고, 오늘 14시 이후부터는 해당기능을 사용하실수 있으실겁니다 파생 > 주식선물(통계정보) > 투자자기본정보(복수종목) 으로 API가 생길겁니다
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 투자자·회원사 매매·보유

@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — 필라델피아 반도체 지수의 엑셀 실시간 데이터 갱신 시각이 궁금합니다. 6300 화면상에는 갱신이 되었는데 엑셀 실시간 데이터…"
-description: "6300 - 미국지수종합 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 필라델피아 반도체 지수의 엑셀 실시간 데이터 갱신 시각이 궁금합니다. 6300 화면상에는 갱신이 되었는데 엑셀 실시간 데이터…
+description: 6300 - 미국지수종합 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "6300 - 미국지수종합"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:77a04ece7e5efeb2"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 6300 - 미국지수종합
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:77a04ece7e5efeb2
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "6300 - 미국지수종합"
+- procedure
+- faq
+case_topic: 6300 - 미국지수종합
 case_topics:
-  - "6300 - 미국지수종합"
+- 6300 - 미국지수종합
 related_ids:
-  - "check:screen:6300"
-  - "check:enrichment:screen:6300"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "CRM데이터(PID복원)!row:463"
-candidate_id: "manual-candidate:VOC-00461"
+- check:screen:6300
+- check:enrichment:screen:6300
+review_status: candidate
+mapping_status: mapped
+source_locator: CRM데이터(PID복원)!row:463
+candidate_id: manual-candidate:VOC-00461
 ---
 # 사용 절차 — 필라델피아 반도체 지수의 엑셀 실시간 데이터 갱신 시각이 궁금합니다. 6300 화면상에는 갱신이 되었는데 엑셀 실시간 데이터…
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:VOC-00461"
 
 불편을 드려서 죄송합니다. 수정 가능한지 확인 후 조치 취하도록 하겠습니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/해외/6300-6300-미국지수종합|6300 - 미국지수종합]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 6300 - 미국지수종합

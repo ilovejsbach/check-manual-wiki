@@ -1,28 +1,29 @@
 ---
-title: "질문과 답변 — 주식선물 종목별로 ticker (기초자산 종목코드가 아닌 주식선물 [REDACTED_ENTITY] 표준코드) 월물 별 거래량…"
-description: "4114 - 주식선물 시세표 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 주식선물 종목별로 ticker (기초자산 종목코드가 아닌 주식선물 [REDACTED_ENTITY] 표준코드) 월물 별
+  거래량…
+description: 4114 - 주식선물 시세표 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "4114 - 주식선물 시세표"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:5fa9491a4bab86e5"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 4114 - 주식선물 시세표
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:5fa9491a4bab86e5
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "4114 - 주식선물 시세표"
+- faq
+case_topic: 4114 - 주식선물 시세표
 case_topics:
-  - "4114 - 주식선물 시세표"
+- 4114 - 주식선물 시세표
 related_ids:
-  - "check:screen:4114"
-  - "check:enrichment:screen:4114"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4132"
-candidate_id: "manual-candidate:CRM-04130"
+- check:screen:4114
+- check:enrichment:screen:4114
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4132
+candidate_id: manual-candidate:CRM-04130
 ---
 # 질문과 답변 — 주식선물 종목별로 ticker (기초자산 종목코드가 아닌 주식선물 [REDACTED_ENTITY] 표준코드) 월물 별 거래량…
 
@@ -36,8 +37,11 @@ candidate_id: "manual-candidate:CRM-04130"
 
 4114 화면에서, 확인해보시고.. 추가로 필요한 사항 있으시면 말씀 부탁드립니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/선물/4114-4114-주식선물-시세표|4114 - 주식선물 시세표]]
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4114 - 주식선물 시세표

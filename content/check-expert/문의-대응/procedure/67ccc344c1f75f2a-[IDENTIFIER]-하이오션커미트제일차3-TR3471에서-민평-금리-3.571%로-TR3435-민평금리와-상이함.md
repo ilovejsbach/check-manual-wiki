@@ -1,32 +1,33 @@
 ---
-title: "사용 절차 — [IDENTIFIER] 하이오션커미트제일차3 TR3471에서 민평 금리 3.571%로 TR3435 민평금리와 상이함"
-description: "3471 - 단가계산 > 발행종목, 3435 - 시가평가 > 채권종목 > 일별추이 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — [IDENTIFIER] 하이오션커미트제일차3 TR3471에서 민평 금리 3.571%로 TR3435 민평금리와 상이함
+description: 3471 - 단가계산 > 발행종목, 3435 - 시가평가 > 채권종목 > 일별추이 관련 비식별 문의와 당시 대응 기록을 분리한
+  사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3471 - 단가계산 > 발행종목"
-  - "3435 - 시가평가 > 채권종목 > 일별추이"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:67ccc344c1f75f2a"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3471 - 단가계산 > 발행종목
+- 3435 - 시가평가 > 채권종목 > 일별추이
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:67ccc344c1f75f2a
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-case_topic: "3471 - 단가계산 > 발행종목"
+- procedure
+case_topic: 3471 - 단가계산 > 발행종목
 case_topics:
-  - "3471 - 단가계산 > 발행종목"
-  - "3435 - 시가평가 > 채권종목 > 일별추이"
+- 3471 - 단가계산 > 발행종목
+- 3435 - 시가평가 > 채권종목 > 일별추이
 related_ids:
-  - "check:screen:3471"
-  - "check:enrichment:screen:3471"
-  - "check:screen:3435"
-  - "check:enrichment:screen:3435"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:573"
-candidate_id: "manual-candidate:CRM-00571"
+- check:screen:3471
+- check:screen:3435
+- check:enrichment:screen:3435
+- check:enrichment:screen:3471
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:573
+candidate_id: manual-candidate:CRM-00571
 ---
 # 사용 절차 — [IDENTIFIER] 하이오션커미트제일차3 TR3471에서 민평 금리 3.571%로 TR3435 민평금리와 상이함
 
@@ -40,8 +41,12 @@ candidate_id: "manual-candidate:CRM-00571"
 
 TR3471 민평(선택)->민평(3사)로 변경 시 동일
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/채권/3471-3471-단가계산-발행종목|3471 - 단가계산 > 발행종목]]
+- [[check-expert/새로운-모습/채권/3435-3435-시가평가-채권종목-일별추이|3435 - 시가평가 > 채권종목 > 일별추이]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차
 - 업무·주제: 3471 - 단가계산 > 발행종목, 3435 - 시가평가 > 채권종목 > 일별추이

@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — [REDACTED_ENTITY]변동일중 그래프가 중간에 직선이 나오면서 차팅이 직선으로 나옵니다. 확인부탁드립니다."
-description: "4565 - 대표변동일중 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — [REDACTED_ENTITY]변동일중 그래프가 중간에 직선이 나오면서 차팅이 직선으로 나옵니다. 확인부탁드립니다.
+description: 4565 - 대표변동일중 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "4565 - 대표변동일중"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:5ccd128ce54245ea"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 4565 - 대표변동일중
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:5ccd128ce54245ea
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "4565 - 대표변동일중"
+- faq
+case_topic: 4565 - 대표변동일중
 case_topics:
-  - "4565 - 대표변동일중"
+- 4565 - 대표변동일중
 related_ids:
-  - "check:screen:4565"
-  - "check:enrichment:screen:4565"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:5210"
-candidate_id: "manual-candidate:CRM-05208"
+- check:enrichment:screen:4565
+- check:screen:4565
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:5210
+candidate_id: manual-candidate:CRM-05208
 ---
 # 질문과 답변 — [REDACTED_ENTITY]변동일중 그래프가 중간에 직선이 나오면서 차팅이 직선으로 나옵니다. 확인부탁드립니다.
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-05208"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 문제 상황 확인됐습니다. [REDACTED_ENTITY] 빠르게 조치하도록 하겠습니다. 불편을 드려 죄송합니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4565 - 대표변동일중

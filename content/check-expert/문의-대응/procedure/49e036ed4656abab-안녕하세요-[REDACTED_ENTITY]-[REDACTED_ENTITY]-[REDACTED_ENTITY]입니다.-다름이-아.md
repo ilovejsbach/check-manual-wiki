@@ -1,33 +1,34 @@
 ---
-title: "사용 절차 — 안녕하세요 [REDACTED_ENTITY] [REDACTED_ENTITY] [REDACTED_ENTITY]입니다. 다름이 아…"
-description: "1614 - 회원별 실시간 체결, 4515 - 투자자시세표 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 안녕하세요 [REDACTED_ENTITY] [REDACTED_ENTITY] [REDACTED_ENTITY]입니다. 다름이
+  아…
+description: 1614 - 회원별 실시간 체결, 4515 - 투자자시세표 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "1614 - 회원별 실시간 체결"
-  - "4515 - 투자자시세표"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:49e036ed4656abab"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 1614 - 회원별 실시간 체결
+- 4515 - 투자자시세표
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:49e036ed4656abab
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "1614 - 회원별 실시간 체결"
+- procedure
+- faq
+case_topic: 1614 - 회원별 실시간 체결
 case_topics:
-  - "1614 - 회원별 실시간 체결"
-  - "4515 - 투자자시세표"
+- 1614 - 회원별 실시간 체결
+- 4515 - 투자자시세표
 related_ids:
-  - "check:screen:1614"
-  - "check:enrichment:screen:1614"
-  - "check:screen:4515"
-  - "check:enrichment:screen:4515"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4604"
-candidate_id: "manual-candidate:CRM-04602"
+- check:enrichment:screen:1614
+- check:enrichment:screen:4515
+- check:screen:1614
+- check:screen:4515
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4604
+candidate_id: manual-candidate:CRM-04602
 ---
 # 사용 절차 — 안녕하세요 [REDACTED_ENTITY] [REDACTED_ENTITY] [REDACTED_ENTITY]입니다. 다름이 아…
 
@@ -41,8 +42,11 @@ candidate_id: "manual-candidate:CRM-04602"
 
 주식선물옵션은 회원사동향을 KRX에서 원천적으로 제공하지 않습니다. 따라서 관련정보는 HTS,CHECK 어디에서도 제공할수 없는 정보입니다. 참고부탁드립니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 1614 - 회원별 실시간 체결, 4515 - 투자자시세표

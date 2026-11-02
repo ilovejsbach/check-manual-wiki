@@ -1,29 +1,30 @@
 ---
-title: "주의사항 — 기존에는 지수구성종목정보가 보였는데, 지금은 보이지 않습니다."
-description: "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148 관련 비식별 문의와 당시 대응 기록을 분리한 주의사항 검수 후보."
+title: 주의사항 — 기존에는 지수구성종목정보가 보였는데, 지금은 보이지 않습니다.
+description: 1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148 관련 비식별 문의와 당시 대응 기록을 분리한 주의사항
+  검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "주의사항"
-  - "검수 필요"
-  - "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:49dc8baf5b3efeaa"
-document_type: "support_case"
-case_type: "caution"
+- CHECK Expert
+- 문의 대응
+- 주의사항
+- 검수 필요
+- 1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:49dc8baf5b3efeaa
+document_type: support_case
+case_type: caution
 case_facets:
-  - "caution"
-  - "faq"
-case_topic: "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
+- caution
+- faq
+case_topic: 1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148
 case_topics:
-  - "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
+- 1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148
 related_ids:
-  - "check:screen:1148"
-  - "check:enrichment:screen:1148"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:917"
-candidate_id: "manual-candidate:CRM-00915"
+- check:enrichment:screen:1148
+- check:screen:1148
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:917
+candidate_id: manual-candidate:CRM-00915
 ---
 # 주의사항 — 기존에는 지수구성종목정보가 보였는데, 지금은 보이지 않습니다.
 
@@ -37,8 +38,11 @@ candidate_id: "manual-candidate:CRM-00915"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 지수구성종목정보 패키지 계약 관련하여 KRX인덱스사업부에 확인하여 권한 연장 확인하였습니다. CHECK단말 재부팅 이후 사용 가능하시오니 확인 부탁 드립니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **주의사항**
 - 함께 볼 유형: 주의사항, 질문과 답변
 - 업무·주제: 1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148

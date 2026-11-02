@@ -1,27 +1,26 @@
 ---
-title: "사용 절차 — CLIST로 ETP,코덱스 제외하고 코스피 지수 종목만 보는 방법"
-description: "엑셀 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — CLIST로 ETP,코덱스 제외하고 코스피 지수 종목만 보는 방법
+description: 엑셀 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "엑셀"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:e138705e43cd72f4"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 엑셀
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:e138705e43cd72f4
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-case_topic: "엑셀"
+- procedure
+case_topic: 엑셀
 case_topics:
-  - "엑셀"
-related_ids:
-  - "check:enrichment:unmapped:f29daeba6ff1"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:4757"
-candidate_id: "manual-candidate:CRM-04755"
+- 엑셀
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:4757
+candidate_id: manual-candidate:CRM-04755
 ---
 # 사용 절차 — CLIST로 ETP,코덱스 제외하고 코스피 지수 종목만 보는 방법
 
@@ -35,8 +34,11 @@ CLIST로 ETP,코덱스 제외하고 코스피 지수 종목만 보는 방법
 
 CFLTER 안내
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차
 - 업무·주제: 엑셀

@@ -1,29 +1,31 @@
 ---
-title: "사용 절차 — 안녕하세요, [REDACTED_ENTITY] 데이터서비스팀 [REDACTED_ENTITY] 책임입니다. 당사는 변동채권 관련…"
-description: "3005 - 발행정보 > 주요 > 종목별 현금흐름 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 안녕하세요, [REDACTED_ENTITY] 데이터서비스팀 [REDACTED_ENTITY] 책임입니다. 당사는 변동채권
+  관련…
+description: 3005 - 발행정보 > 주요 > 종목별 현금흐름 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3005 - 발행정보 > 주요 > 종목별 현금흐름"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:97e2654bd6c145f0"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3005 - 발행정보 > 주요 > 종목별 현금흐름
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:97e2654bd6c145f0
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3005 - 발행정보 > 주요 > 종목별 현금흐름"
+- procedure
+- faq
+case_topic: 3005 - 발행정보 > 주요 > 종목별 현금흐름
 case_topics:
-  - "3005 - 발행정보 > 주요 > 종목별 현금흐름"
+- 3005 - 발행정보 > 주요 > 종목별 현금흐름
 related_ids:
-  - "check:screen:3005"
-  - "check:enrichment:screen:3005"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:2994"
-candidate_id: "manual-candidate:CRM-02992"
+- check:screen:3005
+- check:enrichment:screen:3005
+- check:tr:3003
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:2994
+candidate_id: manual-candidate:CRM-02992
 ---
 # 사용 절차 — 안녕하세요, [REDACTED_ENTITY] 데이터서비스팀 [REDACTED_ENTITY] 책임입니다. 당사는 변동채권 관련…
 
@@ -37,8 +39,12 @@ candidate_id: "manual-candidate:CRM-02992"
 
 안녕하세요. 2번 사항을 확인 했는데, 이 부분은 F5 키를 누르셔서 통합환경설정 창을 띄우시고 기본설정->화면->기타로 들어가셔서 "종목콤보 우선" 박스를 해지하시면 복사기능을 원할히 사용하실 수 있습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/채권/3005-3005-발행정보-주요-종목별-현금흐름|3005 - 발행정보 > 주요 > 종목별 현금흐름]]
+- [[check-expert/tr-후보/3003|TR 3003 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3005 - 발행정보 > 주요 > 종목별 현금흐름

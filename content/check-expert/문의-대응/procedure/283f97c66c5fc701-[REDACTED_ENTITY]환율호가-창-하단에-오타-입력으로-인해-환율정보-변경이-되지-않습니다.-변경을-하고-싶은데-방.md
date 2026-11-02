@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — [REDACTED_ENTITY]환율호가 창 하단에 오타 입력으로 인해 환율정보 변경이 되지 않습니다. 변경을 하고 싶은데 방…"
-description: "5140 - 달러-원>종합화면2 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — [REDACTED_ENTITY]환율호가 창 하단에 오타 입력으로 인해 환율정보 변경이 되지 않습니다. 변경을 하고 싶은데
+  방…
+description: 5140 - 달러-원>종합화면2 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "5140 - 달러-원>종합화면2"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:283f97c66c5fc701"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 5140 - 달러-원>종합화면2
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:283f97c66c5fc701
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "5140 - 달러-원>종합화면2"
+- procedure
+- faq
+case_topic: 5140 - 달러-원>종합화면2
 case_topics:
-  - "5140 - 달러-원>종합화면2"
+- 5140 - 달러-원>종합화면2
 related_ids:
-  - "check:screen:5140"
-  - "check:enrichment:screen:5140"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1177"
-candidate_id: "manual-candidate:CRM-01175"
+- check:enrichment:screen:5140
+- check:screen:5140
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1177
+candidate_id: manual-candidate:CRM-01175
 ---
 # 사용 절차 — [REDACTED_ENTITY]환율호가 창 하단에 오타 입력으로 인해 환율정보 변경이 되지 않습니다. 변경을 하고 싶은데 방…
 
@@ -37,8 +38,11 @@ candidate_id: "manual-candidate:CRM-01175"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 3종 [REDACTED_ENTITY]환율호가 창을 말씀하시는 것이라면, 오타 입력하신 란의 우측 돋보기 단추를 누르시면 원하시는 통화의 환율 정보를 선택하실 수 있으십니다. 문제가 지속되신다면 추가 문의 부탁 드립니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 5140 - 달러-원>종합화면2

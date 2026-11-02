@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — 어제 문의 드렸었는데 삼성전자와 같이 정확하지 않은 수급 표는 (12/9일자 수급) 확정치로 변경이 안되고 추정으로 계속 가…"
-description: "4338 - 순매수일별 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 어제 문의 드렸었는데 삼성전자와 같이 정확하지 않은 수급 표는 (12/9일자 수급) 확정치로 변경이 안되고 추정으로 계속
+  가…
+description: 4338 - 순매수일별 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4338 - 순매수일별"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:bc1bacdd0ba562e4"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4338 - 순매수일별
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:bc1bacdd0ba562e4
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4338 - 순매수일별"
+- procedure
+- faq
+case_topic: 4338 - 순매수일별
 case_topics:
-  - "4338 - 순매수일별"
+- 4338 - 순매수일별
 related_ids:
-  - "check:screen:4338"
-  - "check:enrichment:screen:4338"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1255"
-candidate_id: "manual-candidate:CRM-01253"
+- check:enrichment:screen:4338
+- check:screen:4338
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1255
+candidate_id: manual-candidate:CRM-01253
 ---
 # 사용 절차 — 어제 문의 드렸었는데 삼성전자와 같이 정확하지 않은 수급 표는 (12/9일자 수급) 확정치로 변경이 안되고 추정으로 계속 가…
 
@@ -37,8 +38,11 @@ candidate_id: "manual-candidate:CRM-01253"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 확정치로 수신되는 데이터가 아니다보니 추정치는 추정치로만 남아있습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4338 - 순매수일별

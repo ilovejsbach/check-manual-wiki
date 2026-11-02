@@ -1,29 +1,31 @@
 ---
-title: "사용 절차 — [IDENTIFIER]에서 메지온 종목이 최근 5개년도 연속 영업손실로 수시변경되어 편출되어서, 이번에 감사보고서 통해 나온…"
-description: "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — [IDENTIFIER]에서 메지온 종목이 최근 5개년도 연속 영업손실로 수시변경되어 편출되어서, 이번에 감사보고서 통해
+  나온…
+description: 1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차
+  검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:a747f7fbeb40a0be"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:a747f7fbeb40a0be
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
+- procedure
+- faq
+case_topic: 1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148
 case_topics:
-  - "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
+- 1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148
 related_ids:
-  - "check:screen:1148"
-  - "check:enrichment:screen:1148"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:2070"
-candidate_id: "manual-candidate:CRM-02068"
+- check:enrichment:screen:1148
+- check:screen:1148
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:2070
+candidate_id: manual-candidate:CRM-02068
 ---
 # 사용 절차 — [IDENTIFIER]에서 메지온 종목이 최근 5개년도 연속 영업손실로 수시변경되어 편출되어서, 이번에 감사보고서 통해 나온…
 
@@ -37,8 +39,11 @@ candidate_id: "manual-candidate:CRM-02068"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 지수구성종목 편입편출에 대한 명시적인 기준은 index.krx.co.kr에 공시된 내용에 따릅니다. 해당 판단의 기준이 될 수 있을 감사보고서 등은 KRX 관련부서에서 편입편출 판단을 내리기 위한 참고자료일 수는 있겠지만 저희 코스콤 측에서 사전적으로 편출여부 및 일정에 대해서 말씀드리기는 어려운 입장임을 양해 부탁 드립니다. 메지온의 경우 3/17자로 해당 사이트에 공시된 내용이 있사오니 참고하여 주시기 바랍니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148

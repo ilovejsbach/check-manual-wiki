@@ -1,28 +1,27 @@
 ---
-title: "사용 절차 — 요구불 예금 수신고 잔액이 전체 은행을 포함한 데이터인지 확인요청"
-description: "경제금융 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 요구불 예금 수신고 잔액이 전체 은행을 포함한 데이터인지 확인요청
+description: 경제금융 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "경제금융"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:e47f91ea7dce5ff2"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 경제금융
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:e47f91ea7dce5ff2
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "경제금융"
+- procedure
+- faq
+case_topic: 경제금융
 case_topics:
-  - "경제금융"
-related_ids:
-  - "check:enrichment:unmapped:aef15b25d87e"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:510"
-candidate_id: "manual-candidate:CRM-00508"
+- 경제금융
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:510
+candidate_id: manual-candidate:CRM-00508
 ---
 # 사용 절차 — 요구불 예금 수신고 잔액이 전체 은행을 포함한 데이터인지 확인요청
 
@@ -36,8 +35,11 @@ candidate_id: "manual-candidate:CRM-00508"
 
 산업은행이 포함된 예금은행 데이터로, 출처가 [REDACTED_ENTITY]이라 좀 더 자세한 기준은 [REDACTED_ENTITY] 금융시장국 [REDACTED_ENTITY] [PHONE]에 문의주시도록 안내함 [REDACTED_ENTITY]>뉴스/자료>금융시장>일일 금융시장 주요지표에서 자료 다운로드 가능
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 경제금융

@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — 배당액지수를 확인할 수 있는 방법이 있을까요? 특정일자별 KP200의 배당액 지수 확인이 필요합니다."
-description: "4189 - 일별편집 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 배당액지수를 확인할 수 있는 방법이 있을까요? 특정일자별 KP200의 배당액 지수 확인이 필요합니다.
+description: 4189 - 일별편집 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4189 - 일별편집"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:d12d2bfb9cb3d7f9"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4189 - 일별편집
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:d12d2bfb9cb3d7f9
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4189 - 일별편집"
+- procedure
+- faq
+case_topic: 4189 - 일별편집
 case_topics:
-  - "4189 - 일별편집"
+- 4189 - 일별편집
 related_ids:
-  - "check:screen:4189"
-  - "check:enrichment:screen:4189"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:5154"
-candidate_id: "manual-candidate:CRM-05152"
+- check:screen:4189
+- check:enrichment:screen:4189
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:5154
+candidate_id: manual-candidate:CRM-05152
 ---
 # 사용 절차 — 배당액지수를 확인할 수 있는 방법이 있을까요? 특정일자별 KP200의 배당액 지수 확인이 필요합니다.
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-05152"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 4189 화면에서 보실 수 있습니다. 검색창에서 [IDENTIFIER] 선물을 선택하신 후 화면 상단 메뉴 '항목설정'에서 배당액지수를 첵크하시면 됩니다. 갑사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/선물/4189-4189-일별편집|4189 - 일별편집]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4189 - 일별편집

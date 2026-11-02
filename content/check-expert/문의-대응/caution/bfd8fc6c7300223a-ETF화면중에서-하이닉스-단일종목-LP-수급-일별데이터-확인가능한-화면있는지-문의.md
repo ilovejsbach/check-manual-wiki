@@ -1,28 +1,27 @@
 ---
-title: "주의사항 — ETF화면중에서 하이닉스 단일종목 LP 수급 일별데이터 확인가능한 화면있는지 문의"
-description: "ETP 관련 비식별 문의와 당시 대응 기록을 분리한 주의사항 검수 후보."
+title: 주의사항 — ETF화면중에서 하이닉스 단일종목 LP 수급 일별데이터 확인가능한 화면있는지 문의
+description: ETP 관련 비식별 문의와 당시 대응 기록을 분리한 주의사항 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "주의사항"
-  - "검수 필요"
-  - "ETP"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:bfd8fc6c7300223a"
-document_type: "support_case"
-case_type: "caution"
+- CHECK Expert
+- 문의 대응
+- 주의사항
+- 검수 필요
+- ETP
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:bfd8fc6c7300223a
+document_type: support_case
+case_type: caution
 case_facets:
-  - "caution"
-  - "faq"
-case_topic: "ETP"
+- caution
+- faq
+case_topic: ETP
 case_topics:
-  - "ETP"
-related_ids:
-  - "check:enrichment:unmapped:feafddfd9f67"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:3763"
-candidate_id: "manual-candidate:CRM-03761"
+- ETP
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:3763
+candidate_id: manual-candidate:CRM-03761
 ---
 # 주의사항 — ETF화면중에서 하이닉스 단일종목 LP 수급 일별데이터 확인가능한 화면있는지 문의
 
@@ -36,8 +35,11 @@ ETF화면중에서 하이닉스 단일종목 LP 수급 일별데이터 확인가
 
 당일만 확인가능하며 과거는 확인불가
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **주의사항**
 - 함께 볼 유형: 주의사항, 질문과 답변
 - 업무·주제: ETP

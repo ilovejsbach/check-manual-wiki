@@ -1,27 +1,26 @@
 ---
-title: "질문과 답변 — 기관 체크 단말에 해당 사이트 접근 가능하게 설정 https://webui.[IDENTIFIER].c[REDACTED_ENT…"
-description: "넷클라이언트 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 기관 체크 단말에 해당 사이트 접근 가능하게 설정 https://webui.[IDENTIFIER].c[REDACTED_ENT…
+description: 넷클라이언트 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "넷클라이언트"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:84862e272f76aac9"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 넷클라이언트
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:84862e272f76aac9
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "넷클라이언트"
+- faq
+case_topic: 넷클라이언트
 case_topics:
-  - "넷클라이언트"
-related_ids:
-  - "check:enrichment:unmapped:47f7a1a06c8f"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:4782"
-candidate_id: "manual-candidate:CRM-04780"
+- 넷클라이언트
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:4782
+candidate_id: manual-candidate:CRM-04780
 ---
 # 질문과 답변 — 기관 체크 단말에 해당 사이트 접근 가능하게 설정 https://webui.[IDENTIFIER].c[REDACTED_ENT…
 
@@ -35,8 +34,11 @@ candidate_id: "manual-candidate:CRM-04780"
 
 설정 완료
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 넷클라이언트

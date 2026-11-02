@@ -1,29 +1,29 @@
 ---
-title: "오류 해결 — 안녕하세요 여전히..엑셀프리미엄 작동이 안됩니다...확인 부탁드립니다."
-description: "3095 - 차트 > 국채시장 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — 안녕하세요 여전히..엑셀프리미엄 작동이 안됩니다...확인 부탁드립니다.
+description: 3095 - 차트 > 국채시장 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "3095 - 차트 > 국채시장"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:efb7f18d8e2e6bc2"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 3095 - 차트 > 국채시장
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:efb7f18d8e2e6bc2
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "faq"
-case_topic: "3095 - 차트 > 국채시장"
+- troubleshooting
+- faq
+case_topic: 3095 - 차트 > 국채시장
 case_topics:
-  - "3095 - 차트 > 국채시장"
+- 3095 - 차트 > 국채시장
 related_ids:
-  - "check:screen:3095"
-  - "check:enrichment:screen:3095"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "CRM데이터(PID복원)!row:1416"
-candidate_id: "manual-candidate:VOC-01414"
+- check:enrichment:screen:3095
+- check:screen:3095
+review_status: candidate
+mapping_status: mapped
+source_locator: CRM데이터(PID복원)!row:1416
+candidate_id: manual-candidate:VOC-01414
 ---
 # 오류 해결 — 안녕하세요 여전히..엑셀프리미엄 작동이 안됩니다...확인 부탁드립니다.
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:VOC-01414"
 
 $$ 2013 32b[REDACTED_ENTITY], 원격으로 셋팅 수정
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 질문과 답변
 - 업무·주제: 3095 - 차트 > 국채시장

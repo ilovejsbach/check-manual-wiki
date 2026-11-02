@@ -1,29 +1,31 @@
 ---
-title: "사용 절차 — 안녕하세요, [REDACTED_ENTITY] [REDACTED_ENTITY] 오은석 연구원입니다. 다름이 아니라 3704 화…"
-description: "3704 - 유통종합 > 종목별 체결 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 안녕하세요, [REDACTED_ENTITY] [REDACTED_ENTITY] 오은석 연구원입니다. 다름이 아니라 3704
+  화…
+description: 3704 - 유통종합 > 종목별 체결 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3704 - 유통종합 > 종목별 체결"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:4d55adab6b8f1667"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3704 - 유통종합 > 종목별 체결
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:4d55adab6b8f1667
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3704 - 유통종합 > 종목별 체결"
+- procedure
+- faq
+case_topic: 3704 - 유통종합 > 종목별 체결
 case_topics:
-  - "3704 - 유통종합 > 종목별 체결"
+- 3704 - 유통종합 > 종목별 체결
 related_ids:
-  - "check:screen:3704"
-  - "check:enrichment:screen:3704"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:5983"
-candidate_id: "manual-candidate:CRM-05981"
+- check:screen:3704
+- check:enrichment:screen:3704
+- check:tr:3702
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:5983
+candidate_id: manual-candidate:CRM-05981
 ---
 # 사용 절차 — 안녕하세요, [REDACTED_ENTITY] [REDACTED_ENTITY] 오은석 연구원입니다. 다름이 아니라 3704 화…
 
@@ -37,8 +39,12 @@ candidate_id: "manual-candidate:CRM-05981"
 
 안녕하세요. 괜찮으시다면 3702 화면 대신 3704 화면을 안내 드리겠습니다. 이 화면에서 이자유형 콤보박스에서 "이표"를 선택하시면 원하시는 필터 기능을 사용하실 수 있습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/채권/3704-3704-유통종합-종목별-체결|3704 - 유통종합 > 종목별 체결]]
+- [[check-expert/tr-후보/3702|TR 3702 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3704 - 유통종합 > 종목별 체결

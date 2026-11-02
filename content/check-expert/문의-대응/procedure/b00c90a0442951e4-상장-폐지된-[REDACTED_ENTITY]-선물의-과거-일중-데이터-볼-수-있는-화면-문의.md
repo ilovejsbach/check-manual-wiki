@@ -1,28 +1,27 @@
 ---
-title: "사용 절차 — 상장 폐지된 [REDACTED_ENTITY] 선물의 과거 일중 데이터 볼 수 있는 화면 문의"
-description: "해외 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 상장 폐지된 [REDACTED_ENTITY] 선물의 과거 일중 데이터 볼 수 있는 화면 문의
+description: 해외 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "해외"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:b00c90a0442951e4"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 해외
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:b00c90a0442951e4
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "해외"
+- procedure
+- faq
+case_topic: 해외
 case_topics:
-  - "해외"
-related_ids:
-  - "check:enrichment:unmapped:82862092ebbd"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:3154"
-candidate_id: "manual-candidate:CRM-03152"
+- 해외
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:3154
+candidate_id: manual-candidate:CRM-03152
 ---
 # 사용 절차 — 상장 폐지된 [REDACTED_ENTITY] 선물의 과거 일중 데이터 볼 수 있는 화면 문의
 
@@ -36,8 +35,11 @@ candidate_id: "manual-candidate:CRM-03152"
 
 상장 폐지된 [REDACTED_ENTITY] 선물 경우, 체크 프로그램에서 보기 어렵다 안내
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 해외

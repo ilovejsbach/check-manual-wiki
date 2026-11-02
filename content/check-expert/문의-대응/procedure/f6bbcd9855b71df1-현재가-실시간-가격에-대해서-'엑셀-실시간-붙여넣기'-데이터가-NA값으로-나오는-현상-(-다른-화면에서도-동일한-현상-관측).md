@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — 현재가 실시간 가격에 대해서 '엑셀 실시간 붙여넣기' 데이터가 NA값으로 나오는 현상 ( 다른 화면에서도 동일한 현상 관측)"
-description: "4102 - 금리선물 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 현재가 실시간 가격에 대해서 '엑셀 실시간 붙여넣기' 데이터가 NA값으로 나오는 현상 ( 다른 화면에서도 동일한 현상 관측)
+description: 4102 - 금리선물 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4102 - 금리선물"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:f6bbcd9855b71df1"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4102 - 금리선물
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:f6bbcd9855b71df1
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4102 - 금리선물"
+- procedure
+- faq
+case_topic: 4102 - 금리선물
 case_topics:
-  - "4102 - 금리선물"
+- 4102 - 금리선물
 related_ids:
-  - "check:screen:4102"
-  - "check:enrichment:screen:4102"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3495"
-candidate_id: "manual-candidate:CRM-03493"
+- check:enrichment:screen:4102
+- check:screen:4102
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3495
+candidate_id: manual-candidate:CRM-03493
 ---
 # 사용 절차 — 현재가 실시간 가격에 대해서 '엑셀 실시간 붙여넣기' 데이터가 NA값으로 나오는 현상 ( 다른 화면에서도 동일한 현상 관측)
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-03493"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 원격으로 안내드렸습니다. 체크와 엑셀을 연결하는 체크용서버([IDENTIFIER].rtd)가 차단되었을때, 아래메뉴에서 확인가능합니다. [엑셀>파일>옵션>추가기능>사용할수 없는 항목] 참고 부탁드립니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4102 - 금리선물

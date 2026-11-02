@@ -1,28 +1,27 @@
 ---
-title: "사용 절차 — 체크를 실행하면 module [IDENTIFIER] 파일을 찾을수 없다는 팝업이 발생합니다."
-description: "체크실행 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 체크를 실행하면 module [IDENTIFIER] 파일을 찾을수 없다는 팝업이 발생합니다.
+description: 체크실행 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "체크실행"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:467cbee196464540"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 체크실행
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:467cbee196464540
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "caution"
-case_topic: "체크실행"
+- procedure
+- caution
+case_topic: 체크실행
 case_topics:
-  - "체크실행"
-related_ids:
-  - "check:enrichment:unmapped:4cbf44690ebb"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:93"
-candidate_id: "manual-candidate:CRM-00091"
+- 체크실행
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:93
+candidate_id: manual-candidate:CRM-00091
 ---
 # 사용 절차 — 체크를 실행하면 module [IDENTIFIER] 파일을 찾을수 없다는 팝업이 발생합니다.
 
@@ -36,8 +35,11 @@ candidate_id: "manual-candidate:CRM-00091"
 
 [REDACTED_ENTITY]에 요청하셔서 체크 폴더에 쓰기권한 부여후 사용 안내
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 주의사항
 - 업무·주제: 체크실행

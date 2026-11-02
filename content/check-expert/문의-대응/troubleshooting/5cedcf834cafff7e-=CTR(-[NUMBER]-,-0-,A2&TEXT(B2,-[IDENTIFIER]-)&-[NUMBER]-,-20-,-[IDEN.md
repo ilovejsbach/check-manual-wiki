@@ -1,31 +1,31 @@
 ---
-title: "오류 해결 — =CTR(\"[NUMBER]\",\"0\",A2&TEXT(B2,\"[IDENTIFIER]\")&\"[NUMBER]\",\"20\",\"[IDEN…"
-description: "1448 - ETF 구성종목(PDF) 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — =CTR("[NUMBER]","0",A2&TEXT(B2,"[IDENTIFIER]")&"[NUMBER]","20","[IDEN…
+description: 1448 - ETF 구성종목(PDF) 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "1448 - ETF 구성종목(PDF)"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:5cedcf834cafff7e"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 1448 - ETF 구성종목(PDF)
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:5cedcf834cafff7e
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "caution"
-  - "faq"
-case_topic: "1448 - ETF 구성종목(PDF)"
+- troubleshooting
+- procedure
+- caution
+- faq
+case_topic: 1448 - ETF 구성종목(PDF)
 case_topics:
-  - "1448 - ETF 구성종목(PDF)"
+- 1448 - ETF 구성종목(PDF)
 related_ids:
-  - "check:screen:1448"
-  - "check:enrichment:screen:1448"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1606"
-candidate_id: "manual-candidate:CRM-01604"
+- check:screen:1448
+- check:enrichment:screen:1448
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1606
+candidate_id: manual-candidate:CRM-01604
 ---
 # 오류 해결 — =CTR("[NUMBER]","0",A2&TEXT(B2,"[IDENTIFIER]")&"[NUMBER]","20","[IDEN…
 
@@ -39,8 +39,12 @@ candidate_id: "manual-candidate:CRM-01604"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 수식넣어 확인했을때 함수에 이상이 있어보이지는 않습니다. CTR함수가 있는 시트를 클릭후 엑셀상단메뉴 > XL [IDENTIFIER] > 선택 셀재조회 리스트 중 '선택 워크시트 재조회'로 해당시트 재조회시 정상조회되는지 확인부탁드립니다. 정상조회가 되면 저장 후 다시 열었을때도 정상인지 확인해주시면 됩니다. 해결이 안되시면 원격가능한 시간적어 재문의 주시면 연락드리도록 하겠습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/ETP/1448-1448-ETF-구성종목(PDF)|1448 - ETF 구성종목(PDF)]]
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CTR 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 1448 - ETF 구성종목(PDF)

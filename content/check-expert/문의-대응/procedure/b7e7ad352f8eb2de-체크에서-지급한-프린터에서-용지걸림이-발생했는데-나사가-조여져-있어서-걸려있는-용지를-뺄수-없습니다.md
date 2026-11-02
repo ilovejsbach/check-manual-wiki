@@ -1,27 +1,26 @@
 ---
-title: "사용 절차 — 체크에서 지급한 프린터에서 용지걸림이 발생했는데 나사가 조여져 있어서 걸려있는 용지를 뺄수 없습니다."
-description: "하드웨어 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 체크에서 지급한 프린터에서 용지걸림이 발생했는데 나사가 조여져 있어서 걸려있는 용지를 뺄수 없습니다.
+description: 하드웨어 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "하드웨어"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:b7e7ad352f8eb2de"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 하드웨어
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:b7e7ad352f8eb2de
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-case_topic: "하드웨어"
+- procedure
+case_topic: 하드웨어
 case_topics:
-  - "하드웨어"
-related_ids:
-  - "check:enrichment:unmapped:9591fb0a2e47"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:521"
-candidate_id: "manual-candidate:CRM-00519"
+- 하드웨어
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:521
+candidate_id: manual-candidate:CRM-00519
 ---
 # 사용 절차 — 체크에서 지급한 프린터에서 용지걸림이 발생했는데 나사가 조여져 있어서 걸려있는 용지를 뺄수 없습니다.
 
@@ -35,8 +34,11 @@ candidate_id: "manual-candidate:CRM-00519"
 
 출장소 연락처 안내
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차
 - 업무·주제: 하드웨어

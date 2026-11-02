@@ -1,33 +1,35 @@
 ---
-title: "사용 절차 — [IDENTIFIER] 채권의 이자지급일 기준이 만기일일자로 되어있는데 차기이자지급일이나 3005 현금흐름상에는 발행일 기준…"
-description: "3000 - 발행정보 > 주요 > 종목상세, 3005 - 발행정보 > 주요 > 종목별 현금흐름 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — [IDENTIFIER] 채권의 이자지급일 기준이 만기일일자로 되어있는데 차기이자지급일이나 3005 현금흐름상에는 발행일
+  기준…
+description: 3000 - 발행정보 > 주요 > 종목상세, 3005 - 발행정보 > 주요 > 종목별 현금흐름 관련 비식별 문의와 당시 대응
+  기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3000 - 발행정보 > 주요 > 종목상세"
-  - "3005 - 발행정보 > 주요 > 종목별 현금흐름"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:8df1d6fcd20d0f6f"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3000 - 발행정보 > 주요 > 종목상세
+- 3005 - 발행정보 > 주요 > 종목별 현금흐름
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:8df1d6fcd20d0f6f
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3000 - 발행정보 > 주요 > 종목상세"
+- procedure
+- faq
+case_topic: 3000 - 발행정보 > 주요 > 종목상세
 case_topics:
-  - "3000 - 발행정보 > 주요 > 종목상세"
-  - "3005 - 발행정보 > 주요 > 종목별 현금흐름"
+- 3000 - 발행정보 > 주요 > 종목상세
+- 3005 - 발행정보 > 주요 > 종목별 현금흐름
 related_ids:
-  - "check:screen:3000"
-  - "check:enrichment:screen:3000"
-  - "check:screen:3005"
-  - "check:enrichment:screen:3005"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1342"
-candidate_id: "manual-candidate:CRM-01340"
+- check:screen:3000
+- check:enrichment:screen:3000
+- check:enrichment:screen:3005
+- check:screen:3005
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1342
+candidate_id: manual-candidate:CRM-01340
 ---
 # 사용 절차 — [IDENTIFIER] 채권의 이자지급일 기준이 만기일일자로 되어있는데 차기이자지급일이나 3005 현금흐름상에는 발행일 기준…
 
@@ -41,8 +43,11 @@ candidate_id: "manual-candidate:CRM-01340"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 문의주신 현금흐름(5일기준)으로 파악되어 발행일 기준으로 수정 하였습니다. 사용하시는데 불편함을 드려 죄송합니다. 지금을 TR 3000 채권발행정보에 변경된 내용으로 반영하였습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/채권/3000-3000-발행정보-주요-종목상세|3000 - 발행정보 > 주요 > 종목상세]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3000 - 발행정보 > 주요 > 종목상세, 3005 - 발행정보 > 주요 > 종목별 현금흐름

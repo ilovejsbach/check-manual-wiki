@@ -1,28 +1,28 @@
 ---
-title: "사용 절차 — VDI 환경에서 신체크 실행시 MAC 정보가 없습니다. 라는 메세지가 발생합니다."
-description: "7000 - 기업종합 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — VDI 환경에서 신체크 실행시 MAC 정보가 없습니다. 라는 메세지가 발생합니다.
+description: 7000 - 기업종합 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "7000 - 기업종합"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:f60ec6abd6b24781"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 7000 - 기업종합
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:f60ec6abd6b24781
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-case_topic: "7000 - 기업종합"
+- procedure
+case_topic: 7000 - 기업종합
 case_topics:
-  - "7000 - 기업종합"
+- 7000 - 기업종합
 related_ids:
-  - "check:screen:7000"
-  - "check:enrichment:screen:7000"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1001"
-candidate_id: "manual-candidate:CRM-00999"
+- check:enrichment:screen:7000
+- check:screen:7000
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1001
+candidate_id: manual-candidate:CRM-00999
 ---
 # 사용 절차 — VDI 환경에서 신체크 실행시 MAC 정보가 없습니다. 라는 메세지가 발생합니다.
 
@@ -36,8 +36,11 @@ VDI 환경에서 신체크 실행시 MAC 정보가 없습니다. 라는 메세�
 
 원콜(7000)으로 이관해드렸습니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차
 - 업무·주제: 7000 - 기업종합

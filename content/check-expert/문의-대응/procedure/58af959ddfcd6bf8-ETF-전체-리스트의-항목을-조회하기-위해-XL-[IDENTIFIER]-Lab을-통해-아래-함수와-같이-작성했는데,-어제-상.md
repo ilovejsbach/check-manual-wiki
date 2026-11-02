@@ -1,28 +1,28 @@
 ---
-title: "사용 절차 — ETF 전체 리스트의 항목을 조회하기 위해 XL [IDENTIFIER] Lab을 통해 아래 함수와 같이 작성했는데, 어제 상…"
-description: "종목·코드·분류·기본정보 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — ETF 전체 리스트의 항목을 조회하기 위해 XL [IDENTIFIER] Lab을 통해 아래 함수와 같이 작성했는데, 어제
+  상…
+description: 종목·코드·분류·기본정보 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "종목·코드·분류·기본정보"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:58af959ddfcd6bf8"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 종목·코드·분류·기본정보
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:58af959ddfcd6bf8
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "종목·코드·분류·기본정보"
+- procedure
+- faq
+case_topic: 종목·코드·분류·기본정보
 case_topics:
-  - "종목·코드·분류·기본정보"
-related_ids:
-  - "check:enrichment:unmapped:0b0b120f64a7"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:1293"
-candidate_id: "manual-candidate:VOC-01291"
+- 종목·코드·분류·기본정보
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:1293
+candidate_id: manual-candidate:VOC-01291
 ---
 # 사용 절차 — ETF 전체 리스트의 항목을 조회하기 위해 XL [IDENTIFIER] Lab을 통해 아래 함수와 같이 작성했는데, 어제 상…
 
@@ -36,8 +36,11 @@ ETF 전체 리스트의 항목을 조회하기 위해 XL [IDENTIFIER] Lab을 통
 
 안녕하세요. [IDENTIFIER]+ 입니다. 아래처럼 조회하시면 단일종목ETF 모두 조회되실 겁니다. CLIST( "", TEXT(TODAY(),"[IDENTIFIER]"), -1, "*001", "[NUMBER]", "_[IDENTIFIER]=1150:[NUMBER],1151:0,1152:[NUMBER],1153:EF,1191:7748,1192:0", "[NUMBER],[NUMBER],[NUMBER],[NUMBER],[NUMBER],[NUMBER],[NUMBER],[NUMBER],6511^10", "DESC", "[IDENTIFIER]=true; [IDENTIFIER]=vert; t[REDACTED_ENTITY]le=[REDACTED_ENTITY]em+[IDENTIFIER]; un[REDACTED_ENTITY]=[NUMBER]:0:2,[NUMBER]:0:2,[NUMBER]:0:2;")
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CLIST 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 종목·코드·분류·기본정보

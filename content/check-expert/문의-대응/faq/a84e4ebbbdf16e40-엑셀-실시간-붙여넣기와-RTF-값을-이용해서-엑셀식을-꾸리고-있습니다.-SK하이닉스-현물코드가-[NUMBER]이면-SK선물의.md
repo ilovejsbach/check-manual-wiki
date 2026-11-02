@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — 엑셀 실시간 붙여넣기와 RTF 값을 이용해서 엑셀식을 꾸리고 있습니다. SK하이닉스 현물코드가 [NUMBER]이면 SK선물의…"
-description: "4331 - 현재가 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 엑셀 실시간 붙여넣기와 RTF 값을 이용해서 엑셀식을 꾸리고 있습니다. SK하이닉스 현물코드가 [NUMBER]이면 SK선물의…
+description: 4331 - 현재가 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "4331 - 현재가"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:a84e4ebbbdf16e40"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 4331 - 현재가
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:a84e4ebbbdf16e40
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "4331 - 현재가"
+- faq
+case_topic: 4331 - 현재가
 case_topics:
-  - "4331 - 현재가"
+- 4331 - 현재가
 related_ids:
-  - "check:screen:4331"
-  - "check:enrichment:screen:4331"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:2400"
-candidate_id: "manual-candidate:CRM-02398"
+- check:enrichment:screen:4331
+- check:screen:4331
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:2400
+candidate_id: manual-candidate:CRM-02398
 ---
 # 질문과 답변 — 엑셀 실시간 붙여넣기와 RTF 값을 이용해서 엑셀식을 꾸리고 있습니다. SK하이닉스 현물코드가 [NUMBER]이면 SK선물의…
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-02398"
 
 안녕하세요. [IDENTIFIER]+ 입니다. [IDENTIFIER]의 경우 근월물에 해당하는 연결선물 코드 입니다. 말씀 주신대로 6월물 만기 시 7월물로 자동 교체 되는 코드이오니 참고하여 주시기 바랍니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4331 - 현재가

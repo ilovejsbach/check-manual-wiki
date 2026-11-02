@@ -1,31 +1,34 @@
 ---
-title: "오류 해결 — #체험 안녕하세요. 이번 화면 및 기능 업그레이드 관련하여 개선 작업 진행해주신 노고에 감사드립니다. 전반적으로 화면이 훨씬…"
-description: "Ez 차트 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: '오류 해결 — #체험 안녕하세요. 이번 화면 및 기능 업그레이드 관련하여 개선 작업 진행해주신 노고에 감사드립니다. 전반적으로 화면이
+  훨씬…'
+description: Ez 차트 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "Ez 차트"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:5dc3e9fad46cd1de"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- Ez 차트
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:5dc3e9fad46cd1de
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "caution"
-  - "faq"
-case_topic: "Ez 차트"
+- troubleshooting
+- procedure
+- caution
+- faq
+case_topic: Ez 차트
 case_topics:
-  - "Ez 차트"
+- Ez 차트
 related_ids:
-  - "check:excel:manual:Ez-차트"
-  - "check:enrichment:excel:manual:Ez-차트"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1579"
-candidate_id: "manual-candidate:CRM-01577"
+- check:enrichment:excel:manual:Ez-차트
+- check:excel:manual:Ez-차트
+- check:tr:1491
+- check:tr:1105
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1579
+candidate_id: manual-candidate:CRM-01577
 ---
 # 오류 해결 — #체험 안녕하세요. 이번 화면 및 기능 업그레이드 관련하여 개선 작업 진행해주신 노고에 감사드립니다. 전반적으로 화면이 훨씬…
 
@@ -39,8 +42,12 @@ candidate_id: "manual-candidate:CRM-01577"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 좋은 의견 감사드립니다. 문의주신 내용에 대해 답변을 같이 전달드리오니 참고 부탁드립니다. 2, 3 번 : 오류부분 확인하여 우선적으로 조치될 수 있도록 하겠습니다. "오류진단코드 보낼까요" 메시지가 발생될 경우, "예"를 꼭 선택해주시기 바랍니다. 오류가 발생한 시점의 파일이 전송되어 원인분석에 도움이 됩니다. 6. 히트맵 ETF선택시에 콤보버튼이 있습니다. 순자산총액으로는 없으나, 시총상위순으로 확인이 가능하오니 사용해보시기 바랍니다. 섹터까지의 세분화 된 분류는 해당 화면에서 구현의 어려움이 있어 자산별 분류를 제공하고 있습니다. 자산별 분류를 통해 확인 부탁드립니다. 8. 계절성차트는 라이브러리 문제로 여러종목 비교가 어렵습니다. 비교차트의 경우 1105화면을 사용하신 것을 추천드립니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/tr-후보/1491|TR 1491 (화면 문서 없음)]]
+- [[check-expert/tr-후보/1105|TR 1105 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: Ez 차트

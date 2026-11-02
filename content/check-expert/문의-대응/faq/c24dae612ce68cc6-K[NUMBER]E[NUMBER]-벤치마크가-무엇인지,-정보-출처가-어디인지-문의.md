@@ -1,27 +1,27 @@
 ---
-title: "질문과 답변 — K[NUMBER]E[NUMBER] 벤치마크가 무엇인지, 정보 출처가 어디인지 문의"
-description: "펀드 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — K[NUMBER]E[NUMBER] 벤치마크가 무엇인지, 정보 출처가 어디인지 문의
+description: 펀드 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "펀드"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:c24dae612ce68cc6"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 펀드
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:c24dae612ce68cc6
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "펀드"
+- faq
+case_topic: 펀드
 case_topics:
-  - "펀드"
+- 펀드
 related_ids:
-  - "check:enrichment:unmapped:d37755f60a36"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:6477"
-candidate_id: "manual-candidate:CRM-06475"
+- check:tr:8530
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:6477
+candidate_id: manual-candidate:CRM-06475
 ---
 # 질문과 답변 — K[NUMBER]E[NUMBER] 벤치마크가 무엇인지, 정보 출처가 어디인지 문의
 
@@ -35,8 +35,11 @@ K[NUMBER]E[NUMBER] 벤치마크가 무엇인지, 정보 출처가 어디인지 �
 
 해당종목의 벤치마크는 Rogers [IDENTIFIER] [IDENTIFIER] TR이며 TR8530>우측상단 기간수익률텝에서 확인가능 제로인펀드에서 입수한 정보로 체크에서 벤치마크를 선정하지 않음
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/tr-후보/8530|TR 8530 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 펀드

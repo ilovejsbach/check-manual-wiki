@@ -1,30 +1,31 @@
 ---
-title: "사용 절차 — CHECK API로 조회할 수 있는 민평3사의 CD AAA의 JCODE를 알려주세요"
-description: "3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — CHECK API로 조회할 수 있는 민평3사의 CD AAA의 JCODE를 알려주세요
+description: 3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수
+  후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:6686b56a5c0547d8"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:6686b56a5c0547d8
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "caution"
-  - "faq"
-case_topic: "3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률"
+- procedure
+- caution
+- faq
+case_topic: 3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률
 case_topics:
-  - "3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률"
+- 3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률
 related_ids:
-  - "check:screen:3743"
-  - "check:enrichment:screen:3743"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:5946"
-candidate_id: "manual-candidate:CRM-05944"
+- check:enrichment:screen:3743
+- check:screen:3743
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:5946
+candidate_id: manual-candidate:CRM-05944
 ---
 # 사용 절차 — CHECK API로 조회할 수 있는 민평3사의 CD AAA의 JCODE를 알려주세요
 
@@ -38,8 +39,11 @@ CHECK API로 조회할 수 있는 민평3사의 CD AAA의 JCODE를 알려주세�
 
 현재 민평3사의 CD 수익률은 API로 이용이 불가합니다. 장외채권최종호가수익률에서 최종호가수익률 항목으로는 검색이 가능합니다. [IDENTIFIER] 입니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률

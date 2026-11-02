@@ -1,30 +1,30 @@
 ---
-title: "오류 해결 — 신버전 업데이트 이후 종합 뉴스 창 시간대 업데이트 순서가 맞지 않아 문의 드립니다."
-description: "6106 - 종합 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — 신버전 업데이트 이후 종합 뉴스 창 시간대 업데이트 순서가 맞지 않아 문의 드립니다.
+description: 6106 - 종합 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "6106 - 종합"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:bb2bb5a21a6efd8d"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 6106 - 종합
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:bb2bb5a21a6efd8d
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "caution"
-  - "faq"
-case_topic: "6106 - 종합"
+- troubleshooting
+- caution
+- faq
+case_topic: 6106 - 종합
 case_topics:
-  - "6106 - 종합"
+- 6106 - 종합
 related_ids:
-  - "check:screen:6106"
-  - "check:enrichment:screen:6106"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:2156"
-candidate_id: "manual-candidate:CRM-02154"
+- check:enrichment:screen:6106
+- check:screen:6106
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:2156
+candidate_id: manual-candidate:CRM-02154
 ---
 # 오류 해결 — 신버전 업데이트 이후 종합 뉴스 창 시간대 업데이트 순서가 맞지 않아 문의 드립니다.
 
@@ -38,8 +38,11 @@ candidate_id: "manual-candidate:CRM-02154"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 뉴스 시간대 순서가 맞지 않는 부분 확인했습니다. 관련 오류 담당장에게 전달해서 수정하도록 하겠습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 주의사항, 질문과 답변
 - 업무·주제: 6106 - 종합

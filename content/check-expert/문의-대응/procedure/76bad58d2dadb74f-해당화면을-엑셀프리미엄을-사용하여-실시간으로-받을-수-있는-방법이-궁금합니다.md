@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — 해당화면을 엑셀프리미엄을 사용하여 실시간으로 받을 수 있는 방법이 궁금합니다."
-description: "3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 해당화면을 엑셀프리미엄을 사용하여 실시간으로 받을 수 있는 방법이 궁금합니다.
+description: 3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수
+  후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:76bad58d2dadb74f"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:76bad58d2dadb74f
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률"
+- procedure
+- faq
+case_topic: 3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률
 case_topics:
-  - "3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률"
+- 3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률
 related_ids:
-  - "check:screen:3743"
-  - "check:enrichment:screen:3743"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4262"
-candidate_id: "manual-candidate:CRM-04260"
+- check:enrichment:screen:3743
+- check:screen:3743
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4262
+candidate_id: manual-candidate:CRM-04260
 ---
 # 사용 절차 — 해당화면을 엑셀프리미엄을 사용하여 실시간으로 받을 수 있는 방법이 궁금합니다.
 
@@ -37,8 +38,11 @@ candidate_id: "manual-candidate:CRM-04260"
 
 안녕하세요. 평가사 선택 항목에서 민평을 제외한 개별 평가사를 선택하시면 엑셀 프리미엄으로 받으실 수 있습니다. 다만, 민평(3사) / 민평(4사) 데이터는 체크에서 화면 back 프로그램에서 계산을 수행후 보여주는 것이라 엑셀에서는 받아 보실 수 없습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률

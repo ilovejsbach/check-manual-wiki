@@ -1,30 +1,31 @@
 ---
-title: "사용 절차 — 해당 메뉴 화면에서 수신되는 뉴스 제목은 엑셀로 실시간 연동이 안되나요? 그렇다면 혹시 python , C++ 에 실시간 연…"
-description: "6106 - 종합 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 해당 메뉴 화면에서 수신되는 뉴스 제목은 엑셀로 실시간 연동이 안되나요? 그렇다면 혹시 python , C++ 에 실시간
+  연…
+description: 6106 - 종합 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "6106 - 종합"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:72233ee71e906dd0"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 6106 - 종합
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:72233ee71e906dd0
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "caution"
-  - "faq"
-case_topic: "6106 - 종합"
+- procedure
+- caution
+- faq
+case_topic: 6106 - 종합
 case_topics:
-  - "6106 - 종합"
+- 6106 - 종합
 related_ids:
-  - "check:screen:6106"
-  - "check:enrichment:screen:6106"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:2418"
-candidate_id: "manual-candidate:CRM-02416"
+- check:enrichment:screen:6106
+- check:screen:6106
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:2418
+candidate_id: manual-candidate:CRM-02416
 ---
 # 사용 절차 — 해당 메뉴 화면에서 수신되는 뉴스 제목은 엑셀로 실시간 연동이 안되나요? 그렇다면 혹시 python , C++ 에 실시간 연…
 
@@ -38,8 +39,11 @@ candidate_id: "manual-candidate:CRM-02416"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 뉴스제목은 RTD함수로는 연동이 안되고 엑셀프리미엄 함수로 연동이 가능합니다. 현재 사용중인 PID에 엑셀프리미엄 권한이 없는것으로 보입니다. 프리미엄 사용중인 고객분들 중 파이썬으로 연동하시는 분들도 계신걸로 압니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 6106 - 종합

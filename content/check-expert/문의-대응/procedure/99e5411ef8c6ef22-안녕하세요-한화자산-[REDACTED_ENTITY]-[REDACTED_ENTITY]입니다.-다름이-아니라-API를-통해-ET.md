@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — 안녕하세요 한화자산 [REDACTED_ENTITY] [REDACTED_ENTITY]입니다. 다름이 아니라 API를 통해 ET…"
-description: "펀드·ETF 구성·운용정보 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 안녕하세요 한화자산 [REDACTED_ENTITY] [REDACTED_ENTITY]입니다. 다름이 아니라 API를 통해
+  ET…
+description: 펀드·ETF 구성·운용정보 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "펀드·ETF 구성·운용정보"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:99e5411ef8c6ef22"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 펀드·ETF 구성·운용정보
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:99e5411ef8c6ef22
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "caution"
-  - "faq"
-case_topic: "펀드·ETF 구성·운용정보"
+- procedure
+- caution
+- faq
+case_topic: 펀드·ETF 구성·운용정보
 case_topics:
-  - "펀드·ETF 구성·운용정보"
-related_ids:
-  - "check:enrichment:unmapped:ee6126df39aa"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:1079"
-candidate_id: "manual-candidate:VOC-01077"
+- 펀드·ETF 구성·운용정보
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:1079
+candidate_id: manual-candidate:VOC-01077
 ---
 # 사용 절차 — 안녕하세요 한화자산 [REDACTED_ENTITY] [REDACTED_ENTITY]입니다. 다름이 아니라 API를 통해 ET…
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:VOC-01077"
 
 네. 현재는 불가하고, [REDACTED_ENTITY]검토 진행하기로 했습니다 다만, 지금상황에서 언제 가능하다고 확답드리긴 어렵다는 점 참고 부탁드립니다
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 펀드·ETF 구성·운용정보

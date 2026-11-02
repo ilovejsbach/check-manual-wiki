@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — 애프터마켓(KRX와 NXT 둘 포함)해서 종목의 인트라 호가데이터를 보려고 하는데요.(전일 4시~8시) 함수는 [NUMBER…"
-description: "4315 - Tick차트 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 애프터마켓(KRX와 NXT 둘 포함)해서 종목의 인트라 호가데이터를 보려고 하는데요.(전일 4시~8시) 함수는 [NUMBER…
+description: 4315 - Tick차트 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4315 - Tick차트"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:efdeca2897cc1f00"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4315 - Tick차트
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:efdeca2897cc1f00
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4315 - Tick차트"
+- procedure
+- faq
+case_topic: 4315 - Tick차트
 case_topics:
-  - "4315 - Tick차트"
+- 4315 - Tick차트
 related_ids:
-  - "check:screen:4315"
-  - "check:enrichment:screen:4315"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4609"
-candidate_id: "manual-candidate:CRM-04607"
+- check:enrichment:screen:4315
+- check:screen:4315
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4609
+candidate_id: manual-candidate:CRM-04607
 ---
 # 사용 절차 — 애프터마켓(KRX와 NXT 둘 포함)해서 종목의 인트라 호가데이터를 보려고 하는데요.(전일 4시~8시) 함수는 [NUMBER…
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-04607"
 
 안녕하세요. KRX와 NXT를 함께 보시려면 통합(C)으로 조회하셔야 합니다. 통합의 유가종목 시장코드 *224입니다. 참고로 코스닥종목일 경우 시장코드 *225입니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4315 - Tick차트

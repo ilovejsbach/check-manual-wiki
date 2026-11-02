@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — 오늘 3500 [REDACTED_ENTITY] 업데이트가 안되고 있습니다. 빠른 조치 부탁드립니다"
-description: "3500 - 시장종합 > 투자분석리포트 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 오늘 3500 [REDACTED_ENTITY] 업데이트가 안되고 있습니다. 빠른 조치 부탁드립니다
+description: 3500 - 시장종합 > 투자분석리포트 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3500 - 시장종합 > 투자분석리포트"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:df1a2e08a5883c60"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3500 - 시장종합 > 투자분석리포트
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:df1a2e08a5883c60
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "3500 - 시장종합 > 투자분석리포트"
+- procedure
+- faq
+case_topic: 3500 - 시장종합 > 투자분석리포트
 case_topics:
-  - "3500 - 시장종합 > 투자분석리포트"
+- 3500 - 시장종합 > 투자분석리포트
 related_ids:
-  - "check:screen:3500"
-  - "check:enrichment:screen:3500"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3264"
-candidate_id: "manual-candidate:CRM-03262"
+- check:enrichment:screen:3500
+- check:screen:3500
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3264
+candidate_id: manual-candidate:CRM-03262
 ---
 # 사용 절차 — 오늘 3500 [REDACTED_ENTITY] 업데이트가 안되고 있습니다. 빠른 조치 부탁드립니다
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-03262"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 현재 오늘자 리포트는 대부분 정상 조회되게 수정됐습니다. 다만 일부 증권사 보고서(예를들어 NH투자증권)가 미입수되고 있어 추가 작업 중에 있습니다. 불편을 드려 정말 죄송합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3500 - 시장종합 > 투자분석리포트

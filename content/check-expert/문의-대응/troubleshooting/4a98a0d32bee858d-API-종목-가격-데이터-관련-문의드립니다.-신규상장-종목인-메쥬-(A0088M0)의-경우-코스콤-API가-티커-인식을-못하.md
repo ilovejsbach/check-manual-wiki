@@ -1,29 +1,29 @@
 ---
-title: "오류 해결 — API 종목 가격 데이터 관련 문의드립니다. 신규상장 종목인 메쥬 (A0088M0)의 경우 코스콤 API가 티커 인식을 못하…"
-description: "가격·호가·거래량 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — API 종목 가격 데이터 관련 문의드립니다. 신규상장 종목인 메쥬 (A0088M0)의 경우 코스콤 API가 티커 인식을
+  못하…
+description: 가격·호가·거래량 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "가격·호가·거래량"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:4a98a0d32bee858d"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 가격·호가·거래량
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:4a98a0d32bee858d
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "caution"
-  - "faq"
-case_topic: "가격·호가·거래량"
+- troubleshooting
+- caution
+- faq
+case_topic: 가격·호가·거래량
 case_topics:
-  - "가격·호가·거래량"
-related_ids:
-  - "check:enrichment:unmapped:078f6cd8e320"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:300"
-candidate_id: "manual-candidate:VOC-00298"
+- 가격·호가·거래량
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:300
+candidate_id: manual-candidate:VOC-00298
 ---
 # 오류 해결 — API 종목 가격 데이터 관련 문의드립니다. 신규상장 종목인 메쥬 (A0088M0)의 경우 코스콤 API가 티커 인식을 못하…
 
@@ -37,8 +37,11 @@ API 종목 가격 데이터 관련 문의드립니다. 신규상장 종목인 �
 
 안녕하세요. [IDENTIFIER]+ 입니다. 문자배열 처리에서 저희쪽 오류가 있었던 점 양해 부탁 드립니다. DB 패치 후 아래와 같이 수정하여 사용할 수 있습니다. 괄호 대신에, " " 으로 양끝을 묶고, ' ' 으로 종목코드를 넣으시면 됩니다. ex) "[IDENTIFIER]" : ('B[NUMBER]','B[NUMBER]') → "[IDENTIFIER]" : "'B[NUMBER]','B[NUMBER]'" 혹시 해보신 후 안되시면 사용중이신 코드를 [EMAIL] 로 메일 주시면 확인 후 회신 드리도록 하겠습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 주의사항, 질문과 답변
 - 업무·주제: 가격·호가·거래량

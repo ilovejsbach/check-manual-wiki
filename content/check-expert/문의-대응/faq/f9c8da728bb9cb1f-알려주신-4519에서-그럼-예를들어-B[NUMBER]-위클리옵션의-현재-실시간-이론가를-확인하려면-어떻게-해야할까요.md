@@ -1,32 +1,32 @@
 ---
-title: "질문과 답변 — 알려주신 4519에서 그럼 예를들어 B[NUMBER] 위클리옵션의 현재 실시간 이론가를 확인하려면 어떻게 해야할까요?"
-description: "4519 - 이론가시세표, 4752 - 실시간이론가 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 알려주신 4519에서 그럼 예를들어 B[NUMBER] 위클리옵션의 현재 실시간 이론가를 확인하려면 어떻게 해야할까요?
+description: 4519 - 이론가시세표, 4752 - 실시간이론가 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "4519 - 이론가시세표"
-  - "4752 - 실시간이론가"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:f9c8da728bb9cb1f"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 4519 - 이론가시세표
+- 4752 - 실시간이론가
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:f9c8da728bb9cb1f
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "4519 - 이론가시세표"
+- faq
+case_topic: 4519 - 이론가시세표
 case_topics:
-  - "4519 - 이론가시세표"
-  - "4752 - 실시간이론가"
+- 4519 - 이론가시세표
+- 4752 - 실시간이론가
 related_ids:
-  - "check:screen:4519"
-  - "check:enrichment:screen:4519"
-  - "check:screen:4752"
-  - "check:enrichment:screen:4752"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:5295"
-candidate_id: "manual-candidate:CRM-05293"
+- check:screen:4752
+- check:enrichment:screen:4519
+- check:enrichment:screen:4752
+- check:screen:4519
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:5295
+candidate_id: manual-candidate:CRM-05293
 ---
 # 질문과 답변 — 알려주신 4519에서 그럼 예를들어 B[NUMBER] 위클리옵션의 현재 실시간 이론가를 확인하려면 어떻게 해야할까요?
 
@@ -40,8 +40,11 @@ candidate_id: "manual-candidate:CRM-05293"
 
 안녕하세요. [IDENTIFIER]+ 입니다. B[NUMBER] 종목은 4752 화면에서 K200 옵션 2603 C772.5 항목의 이론가를 확인하시면 됩니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/옵션/4752-4752-실시간이론가|4752 - 실시간이론가]]
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4519 - 이론가시세표, 4752 - 실시간이론가

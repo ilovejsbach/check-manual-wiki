@@ -1,28 +1,29 @@
 ---
-title: "질문과 답변 — 1) 국고채 3년물(종목코드 : [IDENTIFIER]) 민평3사금리 3.306%과 전일종가 3.296%가 차이나는 이유는…"
-description: "3080 - 장내국채 > 호가(6종목) 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: '질문과 답변 — 1) 국고채 3년물(종목코드 : [IDENTIFIER]) 민평3사금리 3.306%과 전일종가 3.296%가 차이나는
+  이유는…'
+description: 3080 - 장내국채 > 호가(6종목) 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "3080 - 장내국채 > 호가(6종목)"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:ff33f324eaea1d58"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 3080 - 장내국채 > 호가(6종목)
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:ff33f324eaea1d58
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "3080 - 장내국채 > 호가(6종목)"
+- faq
+case_topic: 3080 - 장내국채 > 호가(6종목)
 case_topics:
-  - "3080 - 장내국채 > 호가(6종목)"
+- 3080 - 장내국채 > 호가(6종목)
 related_ids:
-  - "check:screen:3080"
-  - "check:enrichment:screen:3080"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3787"
-candidate_id: "manual-candidate:CRM-03785"
+- check:enrichment:screen:3080
+- check:screen:3080
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3787
+candidate_id: manual-candidate:CRM-03785
 ---
 # 질문과 답변 — 1) 국고채 3년물(종목코드 : [IDENTIFIER]) 민평3사금리 3.306%과 전일종가 3.296%가 차이나는 이유는…
 
@@ -36,8 +37,11 @@ candidate_id: "manual-candidate:CRM-03785"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 3080 "장내국채 지표물 호가" 화면에서 현재가 및 전일종가로 표시되는건 장내국채 시장 기준입니다. 민평3사 금리는 장외시장 마감 기준으로, 이 둘의 차이는 시장과 시간차이라고 보시면됩니다. 수익률차이는 [REDACTED_ENTITY] 분들의 뷰에 따른 것으로 보통 전일 민평3사 가격대비 현재 장내국채 금리 차이를 많이 보시기 때문입니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3080 - 장내국채 > 호가(6종목)

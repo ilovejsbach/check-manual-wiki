@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — [IDENTIFIER]에 에임드바이오가 KRX 공시로 3.13 기준으로 수시변경이 된다고 되어있는데, 이 부분은 그럼 내일(…"
-description: "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — [IDENTIFIER]에 에임드바이오가 KRX 공시로 3.13 기준으로 수시변경이 된다고 되어있는데, 이 부분은 그럼 내일(…
+description: 1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차
+  검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:54755783c958ca34"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:54755783c958ca34
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
+- procedure
+- faq
+case_topic: 1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148
 case_topics:
-  - "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
+- 1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148
 related_ids:
-  - "check:screen:1148"
-  - "check:enrichment:screen:1148"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1968"
-candidate_id: "manual-candidate:CRM-01966"
+- check:screen:1148
+- check:enrichment:screen:1148
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1968
+candidate_id: manual-candidate:CRM-01966
 ---
 # 사용 절차 — [IDENTIFIER]에 에임드바이오가 KRX 공시로 3.13 기준으로 수시변경이 된다고 되어있는데, 이 부분은 그럼 내일(…
 
@@ -37,8 +38,11 @@ candidate_id: "manual-candidate:CRM-01966"
 
 안녕하세요. [IDENTIFIER]+ 입니다. [REDACTED_ENTITY] 담장자분께 확인하느라 답변이 조금 늦었습니다. 에임드바이오는 3월 12일자 NXT 파일에 반영되고, 편입 기준가도 전일(3.12) 종가로 해서 비중이 산입된다고 합니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/주식/1148-1148-KRX지수구성정보-서비스(지수구성종목-정보)-1148|1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148

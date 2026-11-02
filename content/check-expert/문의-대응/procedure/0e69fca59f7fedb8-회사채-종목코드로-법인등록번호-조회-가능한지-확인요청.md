@@ -1,30 +1,30 @@
 ---
-title: "사용 절차 — 회사채 종목코드로 법인등록번호 조회 가능한지 확인요청"
-description: "3065 - 단기자금 > CD/CP > 발행정보(예탁원) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 회사채 종목코드로 법인등록번호 조회 가능한지 확인요청
+description: 3065 - 단기자금 > CD/CP > 발행정보(예탁원) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "3065 - 단기자금 > CD/CP > 발행정보(예탁원)"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:0e69fca59f7fedb8"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 3065 - 단기자금 > CD/CP > 발행정보(예탁원)
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:0e69fca59f7fedb8
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "caution"
-  - "faq"
-case_topic: "3065 - 단기자금 > CD/CP > 발행정보(예탁원)"
+- procedure
+- caution
+- faq
+case_topic: 3065 - 단기자금 > CD/CP > 발행정보(예탁원)
 case_topics:
-  - "3065 - 단기자금 > CD/CP > 발행정보(예탁원)"
+- 3065 - 단기자금 > CD/CP > 발행정보(예탁원)
 related_ids:
-  - "check:screen:3065"
-  - "check:enrichment:screen:3065"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:6488"
-candidate_id: "manual-candidate:CRM-06486"
+- check:enrichment:screen:3065
+- check:screen:3065
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:6488
+candidate_id: manual-candidate:CRM-06486
 ---
 # 사용 절차 — 회사채 종목코드로 법인등록번호 조회 가능한지 확인요청
 
@@ -38,8 +38,11 @@ candidate_id: "manual-candidate:CRM-06486"
 
 회사채 종목코드로는 불가, 3065에서 CP만 법인등록번호 조회 가능
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 3065 - 단기자금 > CD/CP > 발행정보(예탁원)

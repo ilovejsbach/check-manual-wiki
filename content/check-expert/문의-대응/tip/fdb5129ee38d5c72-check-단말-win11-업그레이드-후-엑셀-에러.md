@@ -1,28 +1,28 @@
 ---
-title: "활용 팁 — check 단말 win11 업그레이드 후 엑셀 에러"
-description: "함수 설명 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보."
+title: 활용 팁 — check 단말 win11 업그레이드 후 엑셀 에러
+description: 함수 설명 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "활용 팁"
-  - "검수 필요"
-  - "함수 설명"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:fdb5129ee38d5c72"
-document_type: "support_case"
-case_type: "tip"
+- CHECK Expert
+- 문의 대응
+- 활용 팁
+- 검수 필요
+- 함수 설명
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:fdb5129ee38d5c72
+document_type: support_case
+case_type: tip
 case_facets:
-  - "tip"
-case_topic: "함수 설명"
+- tip
+case_topic: 함수 설명
 case_topics:
-  - "함수 설명"
+- 함수 설명
 related_ids:
-  - "check:excel:manual:함수-설명"
-  - "check:enrichment:excel:manual:함수-설명"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:20"
-candidate_id: "manual-candidate:CRM-00018"
+- check:enrichment:excel:manual:함수-설명
+- check:excel:manual:함수-설명
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:20
+candidate_id: manual-candidate:CRM-00018
 ---
 # 활용 팁 — check 단말 win11 업그레이드 후 엑셀 에러
 
@@ -36,8 +36,11 @@ check 단말 win11 업그레이드 후 엑셀 에러
 
 check 단말 본체 교체
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **활용 팁**
 - 함께 볼 유형: 활용 팁
 - 업무·주제: 함수 설명

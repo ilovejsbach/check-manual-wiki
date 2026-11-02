@@ -1,33 +1,33 @@
 ---
-title: "사용 절차 — 야간옵션 시장이 거래소 자체시스템으로 운영되고 있는데, 야간옵션에 대해서도 야간선물을 참조한 옵션 그릭값을 실시간으로 보여주…"
-description: "4512 - 가격시세표, 4551 - 종목일중 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 야간옵션 시장이 거래소 자체시스템으로 운영되고 있는데, 야간옵션에 대해서도 야간선물을 참조한 옵션 그릭값을 실시간으로 보여주…
+description: 4512 - 가격시세표, 4551 - 종목일중 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4512 - 가격시세표"
-  - "4551 - 종목일중"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:37aee8dbf3773ebd"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4512 - 가격시세표
+- 4551 - 종목일중
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:37aee8dbf3773ebd
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4512 - 가격시세표"
+- procedure
+- faq
+case_topic: 4512 - 가격시세표
 case_topics:
-  - "4512 - 가격시세표"
-  - "4551 - 종목일중"
+- 4512 - 가격시세표
+- 4551 - 종목일중
 related_ids:
-  - "check:screen:4512"
-  - "check:enrichment:screen:4512"
-  - "check:screen:4551"
-  - "check:enrichment:screen:4551"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3324"
-candidate_id: "manual-candidate:CRM-03322"
+- check:screen:4551
+- check:screen:4512
+- check:enrichment:screen:4512
+- check:enrichment:screen:4551
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3324
+candidate_id: manual-candidate:CRM-03322
 ---
 # 사용 절차 — 야간옵션 시장이 거래소 자체시스템으로 운영되고 있는데, 야간옵션에 대해서도 야간선물을 참조한 옵션 그릭값을 실시간으로 보여주…
 
@@ -41,8 +41,12 @@ candidate_id: "manual-candidate:CRM-03322"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 주간과 다르게, 야간시장에 대한 그릭값은 거래소에서 제공하고 있지 않습니다. 다만, 말씀하신대로 저희 체크에서는 야간선물을 이용하여, 자체 그릭값을 산출해 제공하고 있습니다. 4551 화면에서, "민감도"를 선택하시면 해당 종목의 그릭값 확인이 가능합니다. 또한 4512 화면에서, 시세표 형태로, 그릭값을 확인할 수 있습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/옵션/4551-4551-종목일중|4551 - 종목일중]]
+- [[check-expert/새로운-모습/옵션/4512-4512-가격시세표|4512 - 가격시세표]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4512 - 가격시세표, 4551 - 종목일중

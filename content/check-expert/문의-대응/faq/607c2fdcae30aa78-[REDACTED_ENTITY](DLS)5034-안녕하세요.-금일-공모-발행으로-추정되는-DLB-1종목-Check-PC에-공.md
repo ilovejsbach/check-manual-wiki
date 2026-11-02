@@ -1,28 +1,29 @@
 ---
-title: "질문과 답변 — [REDACTED_ENTITY](DLS)5034 안녕하세요. 금일 공모 발행으로 추정되는 DLB 1종목 Check PC에 공…"
-description: "3026 - 발행정보 > 주요 > DLB(DLS) 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — [REDACTED_ENTITY](DLS)5034 안녕하세요. 금일 공모 발행으로 추정되는 DLB 1종목 Check PC에
+  공…
+description: 3026 - 발행정보 > 주요 > DLB(DLS) 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "3026 - 발행정보 > 주요 > DLB(DLS)"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:607c2fdcae30aa78"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 3026 - 발행정보 > 주요 > DLB(DLS)
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:607c2fdcae30aa78
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "3026 - 발행정보 > 주요 > DLB(DLS)"
+- faq
+case_topic: 3026 - 발행정보 > 주요 > DLB(DLS)
 case_topics:
-  - "3026 - 발행정보 > 주요 > DLB(DLS)"
+- 3026 - 발행정보 > 주요 > DLB(DLS)
 related_ids:
-  - "check:screen:3026"
-  - "check:enrichment:screen:3026"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:4440"
-candidate_id: "manual-candidate:CRM-04438"
+- check:enrichment:screen:3026
+- check:screen:3026
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:4440
+candidate_id: manual-candidate:CRM-04438
 ---
 # 질문과 답변 — [REDACTED_ENTITY](DLS)5034 안녕하세요. 금일 공모 발행으로 추정되는 DLB 1종목 Check PC에 공…
 
@@ -36,8 +37,11 @@ candidate_id: "manual-candidate:CRM-04438"
 
 안녕하세요, 말씀주신 종목들의 종목명으로 검색이 어려운데 혹시 KR코드를 알고 계시면 적어주시길 부탁드립니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3026 - 발행정보 > 주요 > DLB(DLS)

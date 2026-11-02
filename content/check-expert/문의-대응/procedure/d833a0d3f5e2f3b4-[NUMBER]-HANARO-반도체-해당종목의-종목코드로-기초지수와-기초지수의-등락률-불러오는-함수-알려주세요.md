@@ -1,30 +1,30 @@
 ---
-title: "사용 절차 — [NUMBER] HANARO 반도체 해당종목의 종목코드로 기초지수와 기초지수의 등락률 불러오는 함수 알려주세요"
-description: "1440 - ETF 현재가 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — [NUMBER] HANARO 반도체 해당종목의 종목코드로 기초지수와 기초지수의 등락률 불러오는 함수 알려주세요
+description: 1440 - ETF 현재가 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "1440 - ETF 현재가"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:d833a0d3f5e2f3b4"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 1440 - ETF 현재가
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:d833a0d3f5e2f3b4
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "faq"
-case_topic: "1440 - ETF 현재가"
+- troubleshooting
+- procedure
+- faq
+case_topic: 1440 - ETF 현재가
 case_topics:
-  - "1440 - ETF 현재가"
+- 1440 - ETF 현재가
 related_ids:
-  - "check:screen:1440"
-  - "check:enrichment:screen:1440"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:2508"
-candidate_id: "manual-candidate:CRM-02506"
+- check:enrichment:screen:1440
+- check:screen:1440
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:2508
+candidate_id: manual-candidate:CRM-02506
 ---
 # 사용 절차 — [NUMBER] HANARO 반도체 해당종목의 종목코드로 기초지수와 기초지수의 등락률 불러오는 함수 알려주세요
 
@@ -38,8 +38,11 @@ candidate_id: "manual-candidate:CRM-02506"
 
 먼저 [NUMBER] 종목코드로 기초지수명은 바로 받지 못하고, 기초지수코드(항목코드: [NUMBER])를 받으실 수 있습니다. 기초지수코드를 받은 이후 해당 종목코드에 대한 기초지수명(항목코드: [NUMBER])과 등락률(항목코드: [NUMBER])을 받는 방법으로 안내해드리겠습니다. (캡쳐 화면 참고) 먼저 엑셀 A1 셀에 =CT( "[NUMBER]", "[NUMBER]")로 HANARO 반도체의 기초지수코드를 받는 함수를 넣으신 후 A1셀을 참조하게 종목코드를 넣으시고, 항목코드에는 기초지수명 또는 등락률 항목코드를 넣으시면 됩니다. =CT(A1, "[NUMBER]") =CT(A1, "[NUMBER]") 추가로 엑셀 프리미엄이 설치된 엑셀에서 'XL [IDENTIFIER] L[REDACTED_ENTITY] - 함수빌더' 기능을 사용하시면 원하시는 종목코드와 항목코드를 검색해서 함수를 만드실 수 있습니다. 엑셀 프리미엄 사용법 관련해서는 9025 CHECK 기능 도움말에 '엑셀 프리미엄 - 주요 함수 설명'에 나와 있으니 참고하시기 바랍니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CT 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 오류 해결, 사용 절차, 질문과 답변
 - 업무·주제: 1440 - ETF 현재가

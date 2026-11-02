@@ -1,28 +1,28 @@
 ---
-title: "활용 팁 — TR2250 [NUMBER],[NUMBER] 종목 iIV 값 산출되지 않고 멈춰있음. 확인 요청"
-description: "2250 - ETN 현재가 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보."
+title: 활용 팁 — TR2250 [NUMBER],[NUMBER] 종목 iIV 값 산출되지 않고 멈춰있음. 확인 요청
+description: 2250 - ETN 현재가 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "활용 팁"
-  - "검수 필요"
-  - "2250 - ETN 현재가"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:f6bf4b5f74dc3422"
-document_type: "support_case"
-case_type: "tip"
+- CHECK Expert
+- 문의 대응
+- 활용 팁
+- 검수 필요
+- 2250 - ETN 현재가
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:f6bf4b5f74dc3422
+document_type: support_case
+case_type: tip
 case_facets:
-  - "tip"
-case_topic: "2250 - ETN 현재가"
+- tip
+case_topic: 2250 - ETN 현재가
 case_topics:
-  - "2250 - ETN 현재가"
+- 2250 - ETN 현재가
 related_ids:
-  - "check:screen:2250"
-  - "check:enrichment:screen:2250"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:6418"
-candidate_id: "manual-candidate:CRM-06416"
+- check:screen:2250
+- check:enrichment:screen:2250
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:6418
+candidate_id: manual-candidate:CRM-06416
 ---
 # 활용 팁 — TR2250 [NUMBER],[NUMBER] 종목 iIV 값 산출되지 않고 멈춰있음. 확인 요청
 
@@ -36,8 +36,11 @@ TR2250 [NUMBER],[NUMBER] 종목 iIV 값 산출되지 않고 멈춰있음. 확인
 
 고윤정 [PERSON]님께 전달드림
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/ETP/2250-2250-ETN-현재가|2250 - ETN 현재가]]
+
+## 의미 분류
 - 대표 유형: **활용 팁**
 - 함께 볼 유형: 활용 팁
 - 업무·주제: 2250 - ETN 현재가

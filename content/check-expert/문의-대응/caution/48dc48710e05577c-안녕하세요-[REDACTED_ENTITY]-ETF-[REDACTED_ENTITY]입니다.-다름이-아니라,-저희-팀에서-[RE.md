@@ -1,28 +1,28 @@
 ---
-title: "주의사항 — 안녕하세요 [REDACTED_ENTITY] ETF [REDACTED_ENTITY]입니다. 다름이 아니라, 저희 팀에서 [RE…"
-description: "조회정보 없음(이용 문의) 관련 비식별 문의와 당시 대응 기록을 분리한 주의사항 검수 후보."
+title: 주의사항 — 안녕하세요 [REDACTED_ENTITY] ETF [REDACTED_ENTITY]입니다. 다름이 아니라, 저희 팀에서 [RE…
+description: 조회정보 없음(이용 문의) 관련 비식별 문의와 당시 대응 기록을 분리한 주의사항 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "주의사항"
-  - "검수 필요"
-  - "조회정보 없음(이용 문의)"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:48dc48710e05577c"
-document_type: "support_case"
-case_type: "caution"
+- CHECK Expert
+- 문의 대응
+- 주의사항
+- 검수 필요
+- 조회정보 없음(이용 문의)
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:48dc48710e05577c
+document_type: support_case
+case_type: caution
 case_facets:
-  - "caution"
-  - "faq"
-case_topic: "조회정보 없음(이용 문의)"
+- caution
+- faq
+case_topic: 조회정보 없음(이용 문의)
 case_topics:
-  - "조회정보 없음(이용 문의)"
+- 조회정보 없음(이용 문의)
 related_ids:
-  - "check:enrichment:unmapped:3ac5dac18b2d"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:338"
-candidate_id: "manual-candidate:VOC-00336"
+- check:tr:9032
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:338
+candidate_id: manual-candidate:VOC-00336
 ---
 # 주의사항 — 안녕하세요 [REDACTED_ENTITY] ETF [REDACTED_ENTITY]입니다. 다름이 아니라, 저희 팀에서 [RE…
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:VOC-00336"
 
 안녕하세요. [IDENTIFIER]+ 입니다. CHECK API 서비스의 경우 [IDENTIFIER].[REDACTED_ENTITY].co.kr 사이트를 통해 제공 드리고 있으며, 사용을 위해서는 저희 쪽에서 권한을 부여 드린 후 체크 단말 9032 화면에서 인증키를 발급 받으셔야 합니다. [EMAIL] 메일 주소로 - CHECK 단말 ID - 사용자명 + 연락처 - CHECK API BASIC 신청합니다. 상기 내용을 보내주시면 권한 부여 진행 드리도록 하겠습니다. 관련하여 잠시 후 유선으로 추가 설명 드리겠습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/tr-후보/9032|TR 9032 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **주의사항**
 - 함께 볼 유형: 주의사항, 질문과 답변
 - 업무·주제: 조회정보 없음(이용 문의)

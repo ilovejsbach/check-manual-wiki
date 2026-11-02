@@ -1,30 +1,29 @@
 ---
-title: "오류 해결 — 안녕하세요 check api 문의드립니다 basic_info_all (단건, jcode 1개) → 1초 간격으로 연속 호출…"
-description: "종목·코드·분류·기본정보 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — 안녕하세요 check api 문의드립니다 basic_info_all (단건, jcode 1개) → 1초 간격으로 연속 호출…
+description: 종목·코드·분류·기본정보 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "종목·코드·분류·기본정보"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:9e98e51c0338929d"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 종목·코드·분류·기본정보
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:9e98e51c0338929d
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "caution"
-  - "faq"
-case_topic: "종목·코드·분류·기본정보"
+- troubleshooting
+- procedure
+- caution
+- faq
+case_topic: 종목·코드·분류·기본정보
 case_topics:
-  - "종목·코드·분류·기본정보"
-related_ids:
-  - "check:enrichment:unmapped:0b0b120f64a7"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:280"
-candidate_id: "manual-candidate:VOC-00278"
+- 종목·코드·분류·기본정보
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:280
+candidate_id: manual-candidate:VOC-00278
 ---
 # 오류 해결 — 안녕하세요 check api 문의드립니다 basic_info_all (단건, jcode 1개) → 1초 간격으로 연속 호출…
 
@@ -38,8 +37,11 @@ candidate_id: "manual-candidate:VOC-00278"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 해당 API에 대한 내부 테스트 후 전화 드렸습니다! 혹시 문제가 지속 되실 경우, 안내 드린 메일주소로 코드를 보내주시면 지원 드리도록 하겠습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 종목·코드·분류·기본정보

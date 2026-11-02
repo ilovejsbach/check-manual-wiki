@@ -1,27 +1,27 @@
 ---
-title: "활용 팁 — 주식선물 종목의 과거 VWAP 값을 확인하고 싶다. TR 4161 에서 당일 값 확인중인데 과거치를 어느정도 확인할 수 [P…"
-description: "선물 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보."
+title: 활용 팁 — 주식선물 종목의 과거 VWAP 값을 확인하고 싶다. TR 4161 에서 당일 값 확인중인데 과거치를 어느정도 확인할 수 [P…
+description: 선물 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "활용 팁"
-  - "검수 필요"
-  - "선물"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:1ecb46f0402bfe10"
-document_type: "support_case"
-case_type: "tip"
+- CHECK Expert
+- 문의 대응
+- 활용 팁
+- 검수 필요
+- 선물
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:1ecb46f0402bfe10
+document_type: support_case
+case_type: tip
 case_facets:
-  - "tip"
-case_topic: "선물"
+- tip
+case_topic: 선물
 case_topics:
-  - "선물"
+- 선물
 related_ids:
-  - "check:enrichment:unmapped:807cae1b5708"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:6403"
-candidate_id: "manual-candidate:CRM-06401"
+- check:tr:4161
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:6403
+candidate_id: manual-candidate:CRM-06401
 ---
 # 활용 팁 — 주식선물 종목의 과거 VWAP 값을 확인하고 싶다. TR 4161 에서 당일 값 확인중인데 과거치를 어느정도 확인할 수 [P…
 
@@ -35,8 +35,11 @@ candidate_id: "manual-candidate:CRM-06401"
 
 [PERSON] 대리에게 고객정보 전달
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/tr-후보/4161|TR 4161 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **활용 팁**
 - 함께 볼 유형: 활용 팁
 - 업무·주제: 선물

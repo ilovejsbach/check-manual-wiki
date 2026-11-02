@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — [IDENTIFIER] 하이오션커미트제일차3 3471 매매 단가와 민평단가 괴리가 큰 이유 문의"
-description: "3471 - 단가계산 > 발행종목 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — [IDENTIFIER] 하이오션커미트제일차3 3471 매매 단가와 민평단가 괴리가 큰 이유 문의
+description: 3471 - 단가계산 > 발행종목 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "3471 - 단가계산 > 발행종목"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:af8965ee5ade6838"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 3471 - 단가계산 > 발행종목
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:af8965ee5ade6838
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "3471 - 단가계산 > 발행종목"
+- faq
+case_topic: 3471 - 단가계산 > 발행종목
 case_topics:
-  - "3471 - 단가계산 > 발행종목"
+- 3471 - 단가계산 > 발행종목
 related_ids:
-  - "check:screen:3471"
-  - "check:enrichment:screen:3471"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:569"
-candidate_id: "manual-candidate:CRM-00567"
+- check:enrichment:screen:3471
+- check:screen:3471
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:569
+candidate_id: manual-candidate:CRM-00567
 ---
 # 질문과 답변 — [IDENTIFIER] 하이오션커미트제일차3 3471 매매 단가와 민평단가 괴리가 큰 이유 문의
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-00567"
 
 민평단가는 평가사에 따라 20회 이후 '연1.345% 할인 + 연 2.96% 고정 이표국고채 기초 스왑계약이 조기종료되지 않는 경우 발행액에 1.345% 할인한 이자율로 적용'된 현금흐름으로 평가되었을 수 있음. 체크단가는 현재 만기까지 2.96% 현금흐름으로 계산된 단가임을 설명드리고, 2개 기관의 요청에 따라 소각 시 까지 현재 현금흐름 유지한다고 설명드림
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3471 - 단가계산 > 발행종목

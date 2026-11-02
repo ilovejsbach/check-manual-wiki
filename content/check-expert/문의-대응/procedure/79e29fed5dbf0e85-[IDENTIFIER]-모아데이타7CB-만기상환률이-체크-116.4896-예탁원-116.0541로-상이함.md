@@ -1,27 +1,26 @@
 ---
-title: "사용 절차 — [IDENTIFIER] 모아데이타7CB 만기상환률이 체크 116.4896 / 예탁원 116.0541로 상이함"
-description: "채권 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — [IDENTIFIER] 모아데이타7CB 만기상환률이 체크 116.4896 / 예탁원 116.0541로 상이함
+description: 채권 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "채권"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:79e29fed5dbf0e85"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 채권
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:79e29fed5dbf0e85
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-case_topic: "채권"
+- procedure
+case_topic: 채권
 case_topics:
-  - "채권"
-related_ids:
-  - "check:enrichment:unmapped:11200aac2497"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:1460"
-candidate_id: "manual-candidate:CRM-01458"
+- 채권
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:1460
+candidate_id: manual-candidate:CRM-01458
 ---
 # 사용 절차 — [IDENTIFIER] 모아데이타7CB 만기상환률이 체크 116.4896 / 예탁원 116.0541로 상이함
 
@@ -35,8 +34,11 @@ candidate_id: "manual-candidate:CRM-01458"
 
 확인결과 116.0541이 맞으며 거래소에 변경요청 전달
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차
 - 업무·주제: 채권

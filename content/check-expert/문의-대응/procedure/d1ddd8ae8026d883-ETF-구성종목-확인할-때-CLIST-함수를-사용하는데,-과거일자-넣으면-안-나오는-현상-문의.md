@@ -1,28 +1,27 @@
 ---
-title: "사용 절차 — ETF 구성종목 확인할 때 CLIST 함수를 사용하는데, 과거일자 넣으면 안 나오는 현상 문의"
-description: "엑셀 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — ETF 구성종목 확인할 때 CLIST 함수를 사용하는데, 과거일자 넣으면 안 나오는 현상 문의
+description: 엑셀 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "엑셀"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:d1ddd8ae8026d883"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 엑셀
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:d1ddd8ae8026d883
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "엑셀"
+- procedure
+- faq
+case_topic: 엑셀
 case_topics:
-  - "엑셀"
-related_ids:
-  - "check:enrichment:unmapped:f29daeba6ff1"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:6450"
-candidate_id: "manual-candidate:CRM-06448"
+- 엑셀
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:6450
+candidate_id: manual-candidate:CRM-06448
 ---
 # 사용 절차 — ETF 구성종목 확인할 때 CLIST 함수를 사용하는데, 과거일자 넣으면 안 나오는 현상 문의
 
@@ -36,8 +35,11 @@ ETF 구성종목 확인할 때 CLIST 함수를 사용하는데, 과거일자 넣
 
 CLIST는 오늘자, CTR은 과거일자로 조회되기 때문에 CTR 사용 안내
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CLIST 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 엑셀

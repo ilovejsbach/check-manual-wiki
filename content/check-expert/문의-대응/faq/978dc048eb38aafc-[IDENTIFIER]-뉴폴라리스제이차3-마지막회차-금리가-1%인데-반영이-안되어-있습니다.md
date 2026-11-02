@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — [IDENTIFIER] 뉴폴라리스제이차3 마지막회차 금리가 1%인데 반영이 안되어 있습니다."
-description: "3005 - 발행정보 > 주요 > 종목별 현금흐름 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — [IDENTIFIER] 뉴폴라리스제이차3 마지막회차 금리가 1%인데 반영이 안되어 있습니다.
+description: 3005 - 발행정보 > 주요 > 종목별 현금흐름 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "3005 - 발행정보 > 주요 > 종목별 현금흐름"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:978dc048eb38aafc"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 3005 - 발행정보 > 주요 > 종목별 현금흐름
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:978dc048eb38aafc
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "3005 - 발행정보 > 주요 > 종목별 현금흐름"
+- faq
+case_topic: 3005 - 발행정보 > 주요 > 종목별 현금흐름
 case_topics:
-  - "3005 - 발행정보 > 주요 > 종목별 현금흐름"
+- 3005 - 발행정보 > 주요 > 종목별 현금흐름
 related_ids:
-  - "check:screen:3005"
-  - "check:enrichment:screen:3005"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3466"
-candidate_id: "manual-candidate:CRM-03464"
+- check:enrichment:screen:3005
+- check:screen:3005
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3466
+candidate_id: manual-candidate:CRM-03464
 ---
 # 질문과 답변 — [IDENTIFIER] 뉴폴라리스제이차3 마지막회차 금리가 1%인데 반영이 안되어 있습니다.
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-03464"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 해당종목 현금흐름 수정하여 반영하였습니다. 확인하시고 이상있으시면 재문의 부탁드립니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3005 - 발행정보 > 주요 > 종목별 현금흐름

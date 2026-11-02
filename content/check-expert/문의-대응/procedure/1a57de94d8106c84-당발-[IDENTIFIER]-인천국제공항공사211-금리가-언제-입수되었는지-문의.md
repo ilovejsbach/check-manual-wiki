@@ -1,28 +1,27 @@
 ---
-title: "사용 절차 — 당발 [IDENTIFIER] 인천국제공항공사211 금리가 언제 입수되었는지 문의"
-description: "채권 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 당발 [IDENTIFIER] 인천국제공항공사211 금리가 언제 입수되었는지 문의
+description: 채권 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "채권"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:1a57de94d8106c84"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 채권
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:1a57de94d8106c84
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "채권"
+- procedure
+- faq
+case_topic: 채권
 case_topics:
-  - "채권"
-related_ids:
-  - "check:enrichment:unmapped:11200aac2497"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:875"
-candidate_id: "manual-candidate:CRM-00873"
+- 채권
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:875
+candidate_id: manual-candidate:CRM-00873
 ---
 # 사용 절차 — 당발 [IDENTIFIER] 인천국제공항공사211 금리가 언제 입수되었는지 문의
 
@@ -36,8 +35,11 @@ candidate_id: "manual-candidate:CRM-00873"
 
 현재 채권발행정보 입수시간이 09:43:14로 되어있으며, 금리 입수가 아닌 발행정보 입수로 세부 금리 입수시간은 확인하기 어려움 비상장채권이라 금리 변경 시 15분 이내 체크에 반영되며, 그 경우 새로 정보가 입수된다고 설명드림
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 채권

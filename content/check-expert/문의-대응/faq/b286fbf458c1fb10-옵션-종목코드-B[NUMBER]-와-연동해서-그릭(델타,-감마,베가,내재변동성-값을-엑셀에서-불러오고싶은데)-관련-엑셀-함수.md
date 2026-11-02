@@ -1,40 +1,42 @@
 ---
-title: "질문과 답변 — 옵션 종목코드 B[NUMBER] 와 연동해서 그릭(델타, 감마,베가,내재변동성 값을 엑셀에서 불러오고싶은데) 관련 엑셀 함수…"
-description: "4501 - 현재가1, 4502 - 현재가2, 4503 - Daytrade, 4504 - 단일가매매 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 옵션 종목코드 B[NUMBER] 와 연동해서 그릭(델타, 감마,베가,내재변동성 값을 엑셀에서 불러오고싶은데) 관련 엑셀
+  함수…
+description: 4501 - 현재가1, 4502 - 현재가2, 4503 - Daytrade, 4504 - 단일가매매 관련 비식별 문의와 당시
+  대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "4501 - 현재가1"
-  - "4502 - 현재가2"
-  - "4503 - Daytrade"
-  - "4504 - 단일가매매"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:b286fbf458c1fb10"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 4501 - 현재가1
+- 4502 - 현재가2
+- 4503 - Daytrade
+- 4504 - 단일가매매
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:b286fbf458c1fb10
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "4501 - 현재가1"
+- faq
+case_topic: 4501 - 현재가1
 case_topics:
-  - "4501 - 현재가1"
-  - "4502 - 현재가2"
-  - "4503 - Daytrade"
-  - "4504 - 단일가매매"
+- 4501 - 현재가1
+- 4502 - 현재가2
+- 4503 - Daytrade
+- 4504 - 단일가매매
 related_ids:
-  - "check:screen:4501"
-  - "check:enrichment:screen:4501"
-  - "check:screen:4502"
-  - "check:enrichment:screen:4502"
-  - "check:screen:4503"
-  - "check:enrichment:screen:4503"
-  - "check:screen:4504"
-  - "check:enrichment:screen:4504"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3986"
-candidate_id: "manual-candidate:CRM-03984"
+- check:screen:4501
+- check:enrichment:screen:4501
+- check:enrichment:screen:4502
+- check:enrichment:screen:4503
+- check:enrichment:screen:4504
+- check:screen:4502
+- check:screen:4503
+- check:screen:4504
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3986
+candidate_id: manual-candidate:CRM-03984
 ---
 # 질문과 답변 — 옵션 종목코드 B[NUMBER] 와 연동해서 그릭(델타, 감마,베가,내재변동성 값을 엑셀에서 불러오고싶은데) 관련 엑셀 함수…
 
@@ -48,8 +50,12 @@ candidate_id: "manual-candidate:CRM-03984"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 문의주신 'KOSPI 200 콜옵션 2607 992.5' 종목(B[NUMBER])의 그릭값의 경우 아래와 같이 활용하실 수 있으며, TR 4501 현재가1 화면에 나오는 데이터와 동일한 값을 보기 위하여 엑셀 자릿수 늘림이 필요할 수 있습니다. [내재변동성] =CT("B[NUMBER]","4507") [델 타] =CT("B[NUMBER]","4502") [감 마] =CT("B[NUMBER]","4503") [베 가] =CT("B[NUMBER]","4504") 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/옵션/4501-4501-현재가1|4501 - 현재가1]]
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CT 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4501 - 현재가1, 4502 - 현재가2, 4503 - Daytrade, 4504 - 단일가매매

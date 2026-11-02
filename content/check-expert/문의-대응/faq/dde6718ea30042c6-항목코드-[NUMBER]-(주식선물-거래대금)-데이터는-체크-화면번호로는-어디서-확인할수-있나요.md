@@ -1,44 +1,45 @@
 ---
-title: "질문과 답변 — 항목코드 [NUMBER] (주식선물 거래대금) 데이터는 체크 화면번호로는 어디서 확인할수 있나요?"
-description: "4171 - 종목일별, 4114 - 주식선물 시세표, 4106 - 현재가(전종목), 4105 - 현재가(요약), 4111 - 주식선물 현재가 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 항목코드 [NUMBER] (주식선물 거래대금) 데이터는 체크 화면번호로는 어디서 확인할수 있나요?
+description: 4171 - 종목일별, 4114 - 주식선물 시세표, 4106 - 현재가(전종목), 4105 - 현재가(요약), 4111 -
+  주식선물 현재가 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "4171 - 종목일별"
-  - "4114 - 주식선물 시세표"
-  - "4106 - 현재가(전종목)"
-  - "4105 - 현재가(요약)"
-  - "4111 - 주식선물 현재가"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:dde6718ea30042c6"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 4171 - 종목일별
+- 4114 - 주식선물 시세표
+- 4106 - 현재가(전종목)
+- 4105 - 현재가(요약)
+- 4111 - 주식선물 현재가
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:dde6718ea30042c6
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "4171 - 종목일별"
+- faq
+case_topic: 4171 - 종목일별
 case_topics:
-  - "4171 - 종목일별"
-  - "4114 - 주식선물 시세표"
-  - "4106 - 현재가(전종목)"
-  - "4105 - 현재가(요약)"
-  - "4111 - 주식선물 현재가"
+- 4171 - 종목일별
+- 4114 - 주식선물 시세표
+- 4106 - 현재가(전종목)
+- 4105 - 현재가(요약)
+- 4111 - 주식선물 현재가
 related_ids:
-  - "check:screen:4171"
-  - "check:enrichment:screen:4171"
-  - "check:screen:4114"
-  - "check:enrichment:screen:4114"
-  - "check:screen:4106"
-  - "check:enrichment:screen:4106"
-  - "check:screen:4105"
-  - "check:enrichment:screen:4105"
-  - "check:screen:4111"
-  - "check:enrichment:screen:4111"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3413"
-candidate_id: "manual-candidate:CRM-03411"
+- check:screen:4111
+- check:screen:4114
+- check:screen:4105
+- check:screen:4106
+- check:enrichment:screen:4105
+- check:enrichment:screen:4106
+- check:enrichment:screen:4111
+- check:enrichment:screen:4114
+- check:enrichment:screen:4171
+- check:screen:4171
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3413
+candidate_id: manual-candidate:CRM-03411
 ---
 # 질문과 답변 — 항목코드 [NUMBER] (주식선물 거래대금) 데이터는 체크 화면번호로는 어디서 확인할수 있나요?
 
@@ -52,8 +53,14 @@ candidate_id: "manual-candidate:CRM-03411"
 
 안녕하세요. [IDENTIFIER]+ 입니다. TR 4111 주식선물현재가, 4114 주식선물시세표 계약금액, 거래대금(백만) 으로 표기되어 있습니다. 지수선물, 금리선물 등의 경우에도 4171 선물 일별, 4105 현재가(요약), 4106 현재가(전종목) 등에서 확인하실 수 있습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/선물/4111-4111-주식선물-현재가|4111 - 주식선물 현재가]]
+- [[check-expert/새로운-모습/선물/4114-4114-주식선물-시세표|4114 - 주식선물 시세표]]
+- [[check-expert/새로운-모습/선물/4105-4105-현재가(요약)|4105 - 현재가(요약)]]
+- [[check-expert/새로운-모습/선물/4106-4106-현재가(전종목)|4106 - 현재가(전종목)]]
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4171 - 종목일별, 4114 - 주식선물 시세표, 4106 - 현재가(전종목), 4105 - 현재가(요약), 4111 - 주식선물 현재가

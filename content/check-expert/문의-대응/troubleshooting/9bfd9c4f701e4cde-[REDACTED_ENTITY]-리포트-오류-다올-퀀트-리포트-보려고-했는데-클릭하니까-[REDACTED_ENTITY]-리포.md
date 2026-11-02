@@ -1,30 +1,31 @@
 ---
-title: "오류 해결 — [REDACTED_ENTITY] 리포트 오류 다올 퀀트 리포트 보려고 했는데 클릭하니까 [REDACTED_ENTITY] 리포…"
-description: "3500 - 시장종합 > 투자분석리포트 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — [REDACTED_ENTITY] 리포트 오류 다올 퀀트 리포트 보려고 했는데 클릭하니까 [REDACTED_ENTITY]
+  리포…
+description: 3500 - 시장종합 > 투자분석리포트 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "3500 - 시장종합 > 투자분석리포트"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:9bfd9c4f701e4cde"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 3500 - 시장종합 > 투자분석리포트
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:9bfd9c4f701e4cde
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "caution"
-  - "faq"
-case_topic: "3500 - 시장종합 > 투자분석리포트"
+- troubleshooting
+- caution
+- faq
+case_topic: 3500 - 시장종합 > 투자분석리포트
 case_topics:
-  - "3500 - 시장종합 > 투자분석리포트"
+- 3500 - 시장종합 > 투자분석리포트
 related_ids:
-  - "check:screen:3500"
-  - "check:enrichment:screen:3500"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1074"
-candidate_id: "manual-candidate:CRM-01072"
+- check:enrichment:screen:3500
+- check:screen:3500
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1074
+candidate_id: manual-candidate:CRM-01072
 ---
 # 오류 해결 — [REDACTED_ENTITY] 리포트 오류 다올 퀀트 리포트 보려고 했는데 클릭하니까 [REDACTED_ENTITY] 리포…
 
@@ -38,8 +39,11 @@ candidate_id: "manual-candidate:CRM-01072"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 확인해보겠습니다. 말씀해주셔서 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 주의사항, 질문과 답변
 - 업무·주제: 3500 - 시장종합 > 투자분석리포트

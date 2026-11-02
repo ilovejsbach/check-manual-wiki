@@ -1,33 +1,33 @@
 ---
-title: "사용 절차 — 안녕하세요. 이전에 순매수 일중, 순매수 일별 데이터에 대해서 유선전화로 일중 데이터와 일별데이터가 상이한것이 맞고, 일별…"
-description: "4338 - 순매수일별, 4334 - 순매수일중 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 안녕하세요. 이전에 순매수 일중, 순매수 일별 데이터에 대해서 유선전화로 일중 데이터와 일별데이터가 상이한것이 맞고, 일별…
+description: 4338 - 순매수일별, 4334 - 순매수일중 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4338 - 순매수일별"
-  - "4334 - 순매수일중"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:ce180efda137fae7"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4338 - 순매수일별
+- 4334 - 순매수일중
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:ce180efda137fae7
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4338 - 순매수일별"
+- procedure
+- faq
+case_topic: 4338 - 순매수일별
 case_topics:
-  - "4338 - 순매수일별"
-  - "4334 - 순매수일중"
+- 4338 - 순매수일별
+- 4334 - 순매수일중
 related_ids:
-  - "check:screen:4338"
-  - "check:enrichment:screen:4338"
-  - "check:screen:4334"
-  - "check:enrichment:screen:4334"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "CRM데이터(PID복원)!row:842"
-candidate_id: "manual-candidate:VOC-00840"
+- check:screen:4338
+- check:screen:4334
+- check:enrichment:screen:4334
+- check:enrichment:screen:4338
+review_status: candidate
+mapping_status: mapped
+source_locator: CRM데이터(PID복원)!row:842
+candidate_id: manual-candidate:VOC-00840
 ---
 # 사용 절차 — 안녕하세요. 이전에 순매수 일중, 순매수 일별 데이터에 대해서 유선전화로 일중 데이터와 일별데이터가 상이한것이 맞고, 일별…
 
@@ -41,8 +41,12 @@ candidate_id: "manual-candidate:VOC-00840"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 말씀하신 화면의 일별, 일중 데이터는 확정이 아닌 추정치 데이터로 야간 합산까지 함께 보실 경우 총 합산 차이가 더 날 수 있습니다. TR 4338, 4334 화면 하단에 '추정치 데이터로서, ... 있습니다.' 라는 주석이 있습니다. (※ 참고로 CH는 함수를 보여주는 형태이며, CH 일별 함수로 조회를 하더라도 화면마다 추정치, 확정치 성격에 따라 다를 수 있습니다.) 문의사항 있으시면 언제든지 말씀 부탁 드립니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/선물/4338-4338-순매수일별|4338 - 순매수일별]]
+- [[check-expert/새로운-모습/선물/4334-4334-순매수일중|4334 - 순매수일중]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4338 - 순매수일별, 4334 - 순매수일중

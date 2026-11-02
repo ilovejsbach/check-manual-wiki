@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — 해당 페이지 인쇄 시 다음과 같이 내용 인쇄가 되지 않고 빈페[REDACTED_ENTITY] 인쇄가 됨"
-description: "3473 - 단가계산 > 단가 범위표(6종목) 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 해당 페이지 인쇄 시 다음과 같이 내용 인쇄가 되지 않고 빈페[REDACTED_ENTITY] 인쇄가 됨
+description: 3473 - 단가계산 > 단가 범위표(6종목) 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "3473 - 단가계산 > 단가 범위표(6종목)"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:f68691c1644ec9f7"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 3473 - 단가계산 > 단가 범위표(6종목)
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:f68691c1644ec9f7
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "3473 - 단가계산 > 단가 범위표(6종목)"
+- faq
+case_topic: 3473 - 단가계산 > 단가 범위표(6종목)
 case_topics:
-  - "3473 - 단가계산 > 단가 범위표(6종목)"
+- 3473 - 단가계산 > 단가 범위표(6종목)
 related_ids:
-  - "check:screen:3473"
-  - "check:enrichment:screen:3473"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:5238"
-candidate_id: "manual-candidate:CRM-05236"
+- check:enrichment:screen:3473
+- check:screen:3473
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:5238
+candidate_id: manual-candidate:CRM-05236
 ---
 # 질문과 답변 — 해당 페이지 인쇄 시 다음과 같이 내용 인쇄가 되지 않고 빈페[REDACTED_ENTITY] 인쇄가 됨
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-05236"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 편하신 시간에 02)767-8764로 연락주시면 원격으로 확인해보겠습니다 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3473 - 단가계산 > 단가 범위표(6종목)

@@ -1,28 +1,27 @@
 ---
-title: "사용 절차 — 체크에서 미국 상장 ETF PTP세금,QN여부/유효날짜 확인 가능한지 문의"
-description: "ETP 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 체크에서 미국 상장 ETF PTP세금,QN여부/유효날짜 확인 가능한지 문의
+description: ETP 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "ETP"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:a103793804aba7d8"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- ETP
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:a103793804aba7d8
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "ETP"
+- procedure
+- faq
+case_topic: ETP
 case_topics:
-  - "ETP"
-related_ids:
-  - "check:enrichment:unmapped:feafddfd9f67"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:6439"
-candidate_id: "manual-candidate:CRM-06437"
+- ETP
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:6439
+candidate_id: manual-candidate:CRM-06437
 ---
 # 사용 절차 — 체크에서 미국 상장 ETF PTP세금,QN여부/유효날짜 확인 가능한지 문의
 
@@ -36,8 +35,11 @@ candidate_id: "manual-candidate:CRM-06437"
 
 현재 제공 어렵다 안내
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: ETP

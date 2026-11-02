@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — 스프레드의 vwap 가격을 보려면 어디서 봐야할까요?"
-description: "4109 - 개별주식 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 스프레드의 vwap 가격을 보려면 어디서 봐야할까요?
+description: 4109 - 개별주식 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "4109 - 개별주식"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:811acf9571bfc01f"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 4109 - 개별주식
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:811acf9571bfc01f
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "4109 - 개별주식"
+- faq
+case_topic: 4109 - 개별주식
 case_topics:
-  - "4109 - 개별주식"
+- 4109 - 개별주식
 related_ids:
-  - "check:screen:4109"
-  - "check:enrichment:screen:4109"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "CRM데이터(PID복원)!row:1211"
-candidate_id: "manual-candidate:VOC-01209"
+- check:enrichment:screen:4109
+- check:screen:4109
+review_status: candidate
+mapping_status: mapped
+source_locator: CRM데이터(PID복원)!row:1211
+candidate_id: manual-candidate:VOC-01209
 ---
 # 질문과 답변 — 스프레드의 vwap 가격을 보려면 어디서 봐야할까요?
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:VOC-01209"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 스프레드의 VWAP 같은 경우, 엑셀을 통해 확인하시면 좋을 것 같습니다. VWAP(거래량가중평균)의 항목코드는 [NUMBER] 입니다. 예시> SK하이닉스 SP 2602-2603 VWAP =CT("D[NUMBER]S", "[NUMBER]") 도움이 되셨으면 좋겠습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CT 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4109 - 개별주식

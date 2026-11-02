@@ -1,28 +1,27 @@
 ---
-title: "오류 해결 — PC교체로 맥 초기화 요청 PID 확인 안됨"
-description: "기타 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — PC교체로 맥 초기화 요청 PID 확인 안됨
+description: 기타 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "기타"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:4f626b222d2ef8ff"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 기타
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:4f626b222d2ef8ff
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-case_topic: "기타"
+- troubleshooting
+- procedure
+case_topic: 기타
 case_topics:
-  - "기타"
-related_ids:
-  - "check:enrichment:unmapped:2991f61ced07"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:35"
-candidate_id: "manual-candidate:CRM-00033"
+- 기타
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:35
+candidate_id: manual-candidate:CRM-00033
 ---
 # 오류 해결 — PC교체로 맥 초기화 요청 PID 확인 안됨
 
@@ -36,8 +35,11 @@ PC교체로 맥 초기화 요청 PID 확인 안됨
 
 전화번호와 사용자명으로 PID 확인 후 안내 맥 초기화 후 로그인 확인
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 사용 절차
 - 업무·주제: 기타

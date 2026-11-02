@@ -1,29 +1,28 @@
 ---
-title: "사용 절차 — CHECK API Basic에서 [IDENTIFIER]로 변경. 7월부터 변경금액 적용 청구서 받을 예정 해당 금액 적용된…"
-description: "조회정보 없음(이용 문의) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — CHECK API Basic에서 [IDENTIFIER]로 변경. 7월부터 변경금액 적용 청구서 받을 예정 해당 금액 적용된…
+description: 조회정보 없음(이용 문의) 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "조회정보 없음(이용 문의)"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:49335b5ed2aa4801"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 조회정보 없음(이용 문의)
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:49335b5ed2aa4801
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "faq"
-case_topic: "조회정보 없음(이용 문의)"
+- troubleshooting
+- procedure
+- faq
+case_topic: 조회정보 없음(이용 문의)
 case_topics:
-  - "조회정보 없음(이용 문의)"
-related_ids:
-  - "check:enrichment:unmapped:3ac5dac18b2d"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:56"
-candidate_id: "manual-candidate:VOC-00054"
+- 조회정보 없음(이용 문의)
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:56
+candidate_id: manual-candidate:VOC-00054
 ---
 # 사용 절차 — CHECK API Basic에서 [IDENTIFIER]로 변경. 7월부터 변경금액 적용 청구서 받을 예정 해당 금액 적용된…
 
@@ -37,8 +36,11 @@ CHECK API Basic에서 [IDENTIFIER]로 변경. 7월부터 변경금액 적용 청
 
 [REDACTED_ENTITY] [REDACTED_ENTITY]사원 내용 [PERSON] 담당자와 협의 후 자료전달 예정
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 오류 해결, 사용 절차, 질문과 답변
 - 업무·주제: 조회정보 없음(이용 문의)

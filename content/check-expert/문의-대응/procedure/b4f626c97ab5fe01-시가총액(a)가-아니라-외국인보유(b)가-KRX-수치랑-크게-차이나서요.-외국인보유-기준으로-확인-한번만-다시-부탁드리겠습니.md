@@ -1,28 +1,27 @@
 ---
-title: "사용 절차 — 시가총액(a)가 아니라 외국인보유(b)가 KRX 수치랑 크게 차이나서요. 외국인보유 기준으로 확인 한번만 다시 부탁드리겠습니…"
-description: "투자자·회원사 매매·보유 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 시가총액(a)가 아니라 외국인보유(b)가 KRX 수치랑 크게 차이나서요. 외국인보유 기준으로 확인 한번만 다시 부탁드리겠습니…
+description: 투자자·회원사 매매·보유 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "투자자·회원사 매매·보유"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:b4f626c97ab5fe01"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 투자자·회원사 매매·보유
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:b4f626c97ab5fe01
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "투자자·회원사 매매·보유"
+- procedure
+- faq
+case_topic: 투자자·회원사 매매·보유
 case_topics:
-  - "투자자·회원사 매매·보유"
-related_ids:
-  - "check:enrichment:unmapped:b9f8ede83d20"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "CRM데이터(PID복원)!row:879"
-candidate_id: "manual-candidate:VOC-00877"
+- 투자자·회원사 매매·보유
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: CRM데이터(PID복원)!row:879
+candidate_id: manual-candidate:VOC-00877
 ---
 # 사용 절차 — 시가총액(a)가 아니라 외국인보유(b)가 KRX 수치랑 크게 차이나서요. 외국인보유 기준으로 확인 한번만 다시 부탁드리겠습니…
 
@@ -36,8 +35,11 @@ candidate_id: "manual-candidate:VOC-00877"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 외국인보유와 관련해서는 유선전화드릴예정이며, 외국인보유수량 API 에 대해선 [IDENTIFIER].[REDACTED_ENTITY].co.kr - 기본정보(전체) 제공항목을 확인하시면 됩니다. 전화드려 설명드리겠습니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 투자자·회원사 매매·보유

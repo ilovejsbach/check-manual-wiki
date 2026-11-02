@@ -1,33 +1,35 @@
 ---
-title: "사용 절차 — 해당 차트의 구분값 중 전주말, 전월말 등 기준의 의미 설명 및 MSCE 섹터별 mtd, qtd 등 확인할수 있는 화면이 있…"
-description: "6430 - MSCI/FTSE>MSCI 종합, 6431 - MSCI/FTSE>MSCI 비교 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 해당 차트의 구분값 중 전주말, 전월말 등 기준의 의미 설명 및 MSCE 섹터별 mtd, qtd 등 확인할수 있는 화면이
+  있…
+description: 6430 - MSCI/FTSE>MSCI 종합, 6431 - MSCI/FTSE>MSCI 비교 관련 비식별 문의와 당시 대응 기록을
+  분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "6430 - MSCI/FTSE>MSCI 종합"
-  - "6431 - MSCI/FTSE>MSCI 비교"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:23dabb0758df0890"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 6430 - MSCI/FTSE>MSCI 종합
+- 6431 - MSCI/FTSE>MSCI 비교
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:23dabb0758df0890
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "6430 - MSCI/FTSE>MSCI 종합"
+- procedure
+- faq
+case_topic: 6430 - MSCI/FTSE>MSCI 종합
 case_topics:
-  - "6430 - MSCI/FTSE>MSCI 종합"
-  - "6431 - MSCI/FTSE>MSCI 비교"
+- 6430 - MSCI/FTSE>MSCI 종합
+- 6431 - MSCI/FTSE>MSCI 비교
 related_ids:
-  - "check:screen:6430"
-  - "check:enrichment:screen:6430"
-  - "check:screen:6431"
-  - "check:enrichment:screen:6431"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3631"
-candidate_id: "manual-candidate:CRM-03629"
+- check:screen:6430
+- check:screen:6431
+- check:enrichment:screen:6430
+- check:enrichment:screen:6431
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3631
+candidate_id: manual-candidate:CRM-03629
 ---
 # 사용 절차 — 해당 차트의 구분값 중 전주말, 전월말 등 기준의 의미 설명 및 MSCE 섹터별 mtd, qtd 등 확인할수 있는 화면이 있…
 
@@ -41,8 +43,12 @@ candidate_id: "manual-candidate:CRM-03629"
 
 안녕하세요. [IDENTIFIER]+ 입니다. MSCI 지수의 경우 TR 6430 MSCI종합, 6431 MSCI 비교 화면에서 DM 및 EM 등을 구분하여 조회 가능하시며, 구분값의 경우 아래와 같은 패턴으로 설정되고 있음을 안내 드립니다. [기준일 : 2026/02/05] 전주말 : 2026/01/30 전월말 : 2026/01/30 전분기말 : 2026/12/31 전년말 : 2026/12/31 1개월 : 2026/01/05 1분기 : 2025/11/05 1년 : 2025/02/05 추가 문의사항 있으시면 언제든지 말씀 부탁 드립니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/해외/6430-6430-MSCI-FTSE-MSCI-종합|6430 - MSCI/FTSE>MSCI 종합]]
+- [[check-expert/새로운-모습/해외/6431-6431-MSCI-FTSE-MSCI-비교|6431 - MSCI/FTSE>MSCI 비교]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 6430 - MSCI/FTSE>MSCI 종합, 6431 - MSCI/FTSE>MSCI 비교

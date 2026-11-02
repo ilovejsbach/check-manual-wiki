@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — 한국토지주택공사에서 실제로 call/put 이 일어난 종목을 확인할 수 있는 화면이 있는지 문의"
-description: "채권 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 한국토지주택공사에서 실제로 call/put 이 일어난 종목을 확인할 수 있는 화면이 있는지 문의
+description: 채권 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "채권"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:a6bc9e7276c3e034"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 채권
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:a6bc9e7276c3e034
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "faq"
-case_topic: "채권"
+- troubleshooting
+- procedure
+- faq
+case_topic: 채권
 case_topics:
-  - "채권"
+- 채권
 related_ids:
-  - "check:enrichment:unmapped:11200aac2497"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:542"
-candidate_id: "manual-candidate:CRM-00540"
+- check:tr:3707
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:542
+candidate_id: manual-candidate:CRM-00540
 ---
 # 사용 절차 — 한국토지주택공사에서 실제로 call/put 이 일어난 종목을 확인할 수 있는 화면이 있는지 문의
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-00540"
 
 신버전 TR 3707 에서 확인할 수 있으나, 현재 미설치 상태 2025년 기준으로 454, 447 회차 2종목만 조기상환된 것으로 확인되어 안내해드림
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/tr-후보/3707|TR 3707 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 오류 해결, 사용 절차, 질문과 답변
 - 업무·주제: 채권

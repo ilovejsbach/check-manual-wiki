@@ -1,29 +1,28 @@
 ---
-title: "오류 해결 — 체크를 실행하면 통신 연결 실패 메세지가 발생합니다."
-description: "네트워크 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보."
+title: 오류 해결 — 체크를 실행하면 통신 연결 실패 메세지가 발생합니다.
+description: 네트워크 관련 비식별 문의와 당시 대응 기록을 분리한 오류 해결 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "오류 해결"
-  - "검수 필요"
-  - "네트워크"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:9b4fe575a2dced5a"
-document_type: "support_case"
-case_type: "troubleshooting"
+- CHECK Expert
+- 문의 대응
+- 오류 해결
+- 검수 필요
+- 네트워크
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:9b4fe575a2dced5a
+document_type: support_case
+case_type: troubleshooting
 case_facets:
-  - "troubleshooting"
-  - "procedure"
-  - "faq"
-case_topic: "네트워크"
+- troubleshooting
+- procedure
+- faq
+case_topic: 네트워크
 case_topics:
-  - "네트워크"
-related_ids:
-  - "check:enrichment:unmapped:d09e977b090b"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:535"
-candidate_id: "manual-candidate:CRM-00533"
+- 네트워크
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:535
+candidate_id: manual-candidate:CRM-00533
 ---
 # 오류 해결 — 체크를 실행하면 통신 연결 실패 메세지가 발생합니다.
 
@@ -37,8 +36,11 @@ candidate_id: "manual-candidate:CRM-00533"
 
 자사회선사용중으로 기관 [REDACTED_ENTITY]에 문의 안내
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **오류 해결**
 - 함께 볼 유형: 오류 해결, 사용 절차, 질문과 답변
 - 업무·주제: 네트워크

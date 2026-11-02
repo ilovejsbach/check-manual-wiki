@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — 최근 시중은행들이 발행한 KOFR 연동 변동금리채권 내역을 볼수 있는 화면이 있을까요?"
-description: "5100 - 달러-원>종합화면 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 최근 시중은행들이 발행한 KOFR 연동 변동금리채권 내역을 볼수 있는 화면이 있을까요?
+description: 5100 - 달러-원>종합화면 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "5100 - 달러-원>종합화면"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:57def2577ee1ff24"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 5100 - 달러-원>종합화면
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:57def2577ee1ff24
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "5100 - 달러-원>종합화면"
+- procedure
+- faq
+case_topic: 5100 - 달러-원>종합화면
 case_topics:
-  - "5100 - 달러-원>종합화면"
+- 5100 - 달러-원>종합화면
 related_ids:
-  - "check:screen:5100"
-  - "check:enrichment:screen:5100"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1114"
-candidate_id: "manual-candidate:CRM-01112"
+- check:enrichment:screen:5100
+- check:screen:5100
+- check:tr:3006
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1114
+candidate_id: manual-candidate:CRM-01112
 ---
 # 사용 절차 — 최근 시중은행들이 발행한 KOFR 연동 변동금리채권 내역을 볼수 있는 화면이 있을까요?
 
@@ -37,8 +38,11 @@ candidate_id: "manual-candidate:CRM-01112"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 3006 화면에서 종목검색창(돋보기버튼) 은행채(5100)를 선택하신후 바로 우측에 '주식관련채권1'이라고 되어있는 콤보박스를 'FRN'으로 변경해주세요. 원하시는 발행일조건과 만기일조건을 입력하시고 엔터버튼을 누르시면 은행에서 발행한 FRN종목을 확인하실 수 있습니다. 결과창에서 마우스우클릭>전체내역 엑셀로 보내기를 하신 후, '기준금리 산정방식'에서 KOFR로 필터링 하시면 원하시는 KOFR 연동 변동금리채권을 확인하실 수 있습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/tr-후보/3006|TR 3006 (화면 문서 없음)]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 5100 - 달러-원>종합화면

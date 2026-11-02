@@ -1,28 +1,29 @@
 ---
-title: "질문과 답변 — 6316 >>실시간 경제지표의 경우 [IDENTIFIER] [IDENTIFIER]로부터 입수해 제공하는 데이터로 요청하신 내…"
-description: "6316 - 경제지표 > (실시간)세계경제지표 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — 6316 >>실시간 경제지표의 경우 [IDENTIFIER] [IDENTIFIER]로부터 입수해 제공하는 데이터로 요청하신
+  내…
+description: 6316 - 경제지표 > (실시간)세계경제지표 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "6316 - 경제지표 > (실시간)세계경제지표"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:015e06a3812182bf"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 6316 - 경제지표 > (실시간)세계경제지표
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:015e06a3812182bf
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "6316 - 경제지표 > (실시간)세계경제지표"
+- faq
+case_topic: 6316 - 경제지표 > (실시간)세계경제지표
 case_topics:
-  - "6316 - 경제지표 > (실시간)세계경제지표"
+- 6316 - 경제지표 > (실시간)세계경제지표
 related_ids:
-  - "check:screen:6316"
-  - "check:enrichment:screen:6316"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:3682"
-candidate_id: "manual-candidate:CRM-03680"
+- check:screen:6316
+- check:enrichment:screen:6316
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:3682
+candidate_id: manual-candidate:CRM-03680
 ---
 # 질문과 답변 — 6316 >>실시간 경제지표의 경우 [IDENTIFIER] [IDENTIFIER]로부터 입수해 제공하는 데이터로 요청하신 내…
 
@@ -36,8 +37,11 @@ candidate_id: "manual-candidate:CRM-03680"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 외부솔루션 연동이라는 부분에 있어서 저희도 CHECK단말의 업그레이드를 위해 다방면에서 검토하고 있는데 말씀해주신 서비스도 외부솔루션을 도입해서 제공할 수 있는 부분들이 있을지 찾아보도록 하겠습니다. 말씀하신대로 해당 서비스를 제공할 수 있으면 CHECK단말의 발전뿐만 아니라 실시간 경제지표 화면에 대한 고객들의 활용도와 의존도가 더 높아질 것으로 기대됩니다. 중장기 과제로 두고 검토하도록 하겠습니다. 소중한 의견 주셔서 다시 한번 감사드립니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/새로운-모습/해외/6316-6316-경제지표-(실시간)세계경제지표|6316 - 경제지표 > (실시간)세계경제지표]]
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 6316 - 경제지표 > (실시간)세계경제지표

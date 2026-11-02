@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — 현재가 화면에 종가 표기 요청 안녕하세요 [REDACTED_ENTITY] [REDACTED_ENTITY]이라고 합니다 ^^…"
-description: "1300 - 주식현재가 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 현재가 화면에 종가 표기 요청 안녕하세요 [REDACTED_ENTITY] [REDACTED_ENTITY]이라고 합니다 ^^…
+description: 1300 - 주식현재가 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "1300 - 주식현재가"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:82b36944cc89716d"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 1300 - 주식현재가
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:82b36944cc89716d
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "1300 - 주식현재가"
+- procedure
+- faq
+case_topic: 1300 - 주식현재가
 case_topics:
-  - "1300 - 주식현재가"
+- 1300 - 주식현재가
 related_ids:
-  - "check:screen:1300"
-  - "check:enrichment:screen:1300"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:1653"
-candidate_id: "manual-candidate:CRM-01651"
+- check:enrichment:screen:1300
+- check:screen:1300
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:1653
+candidate_id: manual-candidate:CRM-01651
 ---
 # 사용 절차 — 현재가 화면에 종가 표기 요청 안녕하세요 [REDACTED_ENTITY] [REDACTED_ENTITY]이라고 합니다 ^^…
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-01651"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 먼저 불편을 드려 죄송합니다. 그리고 좋은 의견 주셔서 감사합니다. 다만 오늘 같은 경우 종가가 반영이 안된 경우로 종가 칸이 따로 있었다고 하더라도 값이 반영되지 못했을 듯 합니다. 내부 논의 후 혼선 및 재발 방지를 위한 최선의 방안을 마련하도록 하겠습니다. 감사합니다. 오늘 장애로 인해 [REDACTED_ENTITY] 빨리 [PERSON]님의 의견을 반영해드리고 싶으나, 현재 CHECK 신버전이 조만간 출시됨에 따라 화면 구성을 변경하기가 어려운 상황입니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 1300 - 주식현재가

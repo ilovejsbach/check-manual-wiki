@@ -1,28 +1,28 @@
 ---
-title: "질문과 답변 — =CTD( \"SPT\", \"[NUMBER]*224\", \"1BD\", \"[NUMBER]\") 이 함수 결과값이 안 나옵니다"
-description: "4315 - Tick차트 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+title: 질문과 답변 — =CTD( "SPT", "[NUMBER]*224", "1BD", "[NUMBER]") 이 함수 결과값이 안 나옵니다
+description: 4315 - Tick차트 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "질문과 답변"
-  - "검수 필요"
-  - "4315 - Tick차트"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:13eddc35a3416a5c"
-document_type: "support_case"
-case_type: "faq"
+- CHECK Expert
+- 문의 대응
+- 질문과 답변
+- 검수 필요
+- 4315 - Tick차트
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:13eddc35a3416a5c
+document_type: support_case
+case_type: faq
 case_facets:
-  - "faq"
-case_topic: "4315 - Tick차트"
+- faq
+case_topic: 4315 - Tick차트
 case_topics:
-  - "4315 - Tick차트"
+- 4315 - Tick차트
 related_ids:
-  - "check:screen:4315"
-  - "check:enrichment:screen:4315"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:6340"
-candidate_id: "manual-candidate:CRM-06338"
+- check:enrichment:screen:4315
+- check:screen:4315
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:6340
+candidate_id: manual-candidate:CRM-06338
 ---
 # 질문과 답변 — =CTD( "SPT", "[NUMBER]*224", "1BD", "[NUMBER]") 이 함수 결과값이 안 나옵니다
 
@@ -36,8 +36,11 @@ candidate_id: "manual-candidate:CRM-06338"
 
 224 통합유가, 225 통합코스닥 시장은 프리/정규/애프터의 개념이 없는 시장입니다. 따라서 애프터거래량이 존재할수 없습니다. [NUMBER] 는 KRX 거래소에 한해 값이 존재합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CTD 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4315 - Tick차트

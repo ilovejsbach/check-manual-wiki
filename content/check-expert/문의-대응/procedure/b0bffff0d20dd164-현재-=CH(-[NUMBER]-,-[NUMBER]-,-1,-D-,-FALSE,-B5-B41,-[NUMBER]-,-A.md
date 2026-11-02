@@ -1,29 +1,30 @@
 ---
-title: "사용 절차 — 현재 =CH( \"[NUMBER]\", \"[NUMBER]\", -1, \"D\", FALSE, B5:B41, \"[NUMBER]\", A…"
-description: "4189 - 일별편집 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 현재 =CH( "[NUMBER]", "[NUMBER]", -1, "D", FALSE, B5:B41, "[NUMBER]",
+  A…
+description: 4189 - 일별편집 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4189 - 일별편집"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:b0bffff0d20dd164"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4189 - 일별편집
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:b0bffff0d20dd164
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4189 - 일별편집"
+- procedure
+- faq
+case_topic: 4189 - 일별편집
 case_topics:
-  - "4189 - 일별편집"
+- 4189 - 일별편집
 related_ids:
-  - "check:screen:4189"
-  - "check:enrichment:screen:4189"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "CRM데이터(PID복원)!row:1328"
-candidate_id: "manual-candidate:VOC-01326"
+- check:enrichment:screen:4189
+- check:screen:4189
+review_status: candidate
+mapping_status: mapped
+source_locator: CRM데이터(PID복원)!row:1328
+candidate_id: manual-candidate:VOC-01326
 ---
 # 사용 절차 — 현재 =CH( "[NUMBER]", "[NUMBER]", -1, "D", FALSE, B5:B41, "[NUMBER]", A…
 
@@ -37,8 +38,12 @@ candidate_id: "manual-candidate:VOC-01326"
 
 CTD 함수를 사용하시면 됩니다. 2번째 input값에 종목코드를, 3번째 input값에, 연월일을 입력하시면 됩니다. =CTD( "SPT", "[NUMBER]*001", "[NUMBER]", "[NUMBER]") 셀에 입력한 후, 드래그하시면 편리하게 사용하실 수 있습니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/excel-premium/매뉴얼/Ez-차트|CH 함수 설명]]
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CTD 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4189 - 일별편집

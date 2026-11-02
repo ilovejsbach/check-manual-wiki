@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — 종합일중차트에서 시장 Basis가 비정상적으로 나타납니다. A[NUMBER] 의 시장 Basis차트가 어제와 다르게 나타나서…"
-description: "4319 - 종합일중차트 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 종합일중차트에서 시장 Basis가 비정상적으로 나타납니다. A[NUMBER] 의 시장 Basis차트가 어제와 다르게 나타나서…
+description: 4319 - 종합일중차트 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4319 - 종합일중차트"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:8ec878b9ce8f93a5"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4319 - 종합일중차트
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:8ec878b9ce8f93a5
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4319 - 종합일중차트"
+- procedure
+- faq
+case_topic: 4319 - 종합일중차트
 case_topics:
-  - "4319 - 종합일중차트"
+- 4319 - 종합일중차트
 related_ids:
-  - "check:screen:4319"
-  - "check:enrichment:screen:4319"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:5680"
-candidate_id: "manual-candidate:CRM-05678"
+- check:enrichment:screen:4319
+- check:screen:4319
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:5680
+candidate_id: manual-candidate:CRM-05678
 ---
 # 사용 절차 — 종합일중차트에서 시장 Basis가 비정상적으로 나타납니다. A[NUMBER] 의 시장 Basis차트가 어제와 다르게 나타나서…
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-05678"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 유선으로 안내해 드렸습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4319 - 종합일중차트

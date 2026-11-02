@@ -1,27 +1,27 @@
 ---
-title: "주의사항 — 해당 단말 윈도우 업데이트 불가로 인하여 웹사이트 차단 해제 요청 ([REDACTED_ENTITY] - [PERSON]님 요청)"
-description: "넷클라이언트 관련 비식별 문의와 당시 대응 기록을 분리한 주의사항 검수 후보."
+title: 주의사항 — 해당 단말 윈도우 업데이트 불가로 인하여 웹사이트 차단 해제 요청 ([REDACTED_ENTITY] - [PERSON]님
+  요청)
+description: 넷클라이언트 관련 비식별 문의와 당시 대응 기록을 분리한 주의사항 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "주의사항"
-  - "검수 필요"
-  - "넷클라이언트"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:834133fc7c623b85"
-document_type: "support_case"
-case_type: "caution"
+- CHECK Expert
+- 문의 대응
+- 주의사항
+- 검수 필요
+- 넷클라이언트
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:834133fc7c623b85
+document_type: support_case
+case_type: caution
 case_facets:
-  - "caution"
-case_topic: "넷클라이언트"
+- caution
+case_topic: 넷클라이언트
 case_topics:
-  - "넷클라이언트"
-related_ids:
-  - "check:enrichment:unmapped:47f7a1a06c8f"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:3198"
-candidate_id: "manual-candidate:CRM-03196"
+- 넷클라이언트
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:3198
+candidate_id: manual-candidate:CRM-03196
 ---
 # 주의사항 — 해당 단말 윈도우 업데이트 불가로 인하여 웹사이트 차단 해제 요청 ([REDACTED_ENTITY] - [PERSON]님 요청)
 
@@ -35,8 +35,11 @@ candidate_id: "manual-candidate:CRM-03196"
 
 웹사이트 차단 해제 완료
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **주의사항**
 - 함께 볼 유형: 주의사항
 - 업무·주제: 넷클라이언트

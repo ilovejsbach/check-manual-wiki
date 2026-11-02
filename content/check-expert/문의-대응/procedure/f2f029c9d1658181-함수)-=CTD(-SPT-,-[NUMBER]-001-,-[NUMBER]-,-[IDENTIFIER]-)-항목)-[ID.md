@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — 함수) =CTD( \"SPT\", \"[NUMBER]*001\", \"[NUMBER]\", \"[IDENTIFIER]\") 항목) \"[ID…"
-description: "메뉴와 템플릿 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: 사용 절차 — 함수) =CTD( "SPT", "[NUMBER]*001", "[NUMBER]", "[IDENTIFIER]") 항목) "[ID…
+description: 메뉴와 템플릿 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "메뉴와 템플릿"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:f2f029c9d1658181"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 메뉴와 템플릿
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:f2f029c9d1658181
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "메뉴와 템플릿"
+- procedure
+- faq
+case_topic: 메뉴와 템플릿
 case_topics:
-  - "메뉴와 템플릿"
+- 메뉴와 템플릿
 related_ids:
-  - "check:excel:manual:메뉴와-템플릿"
-  - "check:enrichment:excel:manual:메뉴와-템플릿"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:955"
-candidate_id: "manual-candidate:CRM-00953"
+- check:enrichment:excel:manual:메뉴와-템플릿
+- check:excel:manual:메뉴와-템플릿
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:955
+candidate_id: manual-candidate:CRM-00953
 ---
 # 사용 절차 — 함수) =CTD( "SPT", "[NUMBER]*001", "[NUMBER]", "[IDENTIFIER]") 항목) "[ID…
 
@@ -37,8 +37,11 @@ candidate_id: "manual-candidate:CRM-00953"
 
 안녕하세요. [IDENTIFIER]+ 입니다. 문의주신 동화약품의 컨센서스 항목 '[IDENTIFIER]' EPS.분기.주재무제표기준의 경우 2023-12-01 기준으로 '257.[NUMBER]' 조회가 가능합니다. 컨센서스의 경우 [IDENTIFIER]를 통하여 데이터 수신을 하고 있으며, 해당 데이터가 없는 경우([IDENTIFIER]에서 제공하지 않는 경우) 공란으로 표기가 됩니다. 동화약품의 EPS, EPS(Fwd.12M, 지배), 매출액(Fwd.12M) 변화율(1주, 조정), 매출액(Fwd.12M) 변화율(1개월, 조정), 매출액(Fwd.12M) 변화율(3개월, 조정) 의 경우 제공하지 않고 있습니다. 제공하고 있는 해당 종목 컨센서스를 조회하고자 하실 경우 아래 항목을 이용하시어 필요한 부분을 변경 및 추출하시어 보실 수 있습니다. ※ 엑셀 화면 상단 리본메뉴 XL [IDENTIFIER] L[REDACTED_ENTITY] → 함수빌더 → (팝업) 최상단 함수입력칸('함수선택') 우측에 직접 입력 관련 함수가 길어 이메일([EMAIL])로 내용 작성하여 보내 드립니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+- [[check-expert/excel-premium/매뉴얼/메뉴와-템플릿|CTD 함수 설명]]
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 메뉴와 템플릿

@@ -1,27 +1,26 @@
 ---
-title: "활용 팁 — [IDENTIFIER] 더이앤엠16CB 만기일과 CB행사종료일이 예탁원과 상이하여 확인요청 만기일 : 체크 25/02/22…"
-description: "채권 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보."
+title: '활용 팁 — [IDENTIFIER] 더이앤엠16CB 만기일과 CB행사종료일이 예탁원과 상이하여 확인요청 만기일 : 체크 25/02/22…'
+description: 채권 관련 비식별 문의와 당시 대응 기록을 분리한 활용 팁 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "활용 팁"
-  - "검수 필요"
-  - "채권"
-source: "manual-enrichment-unmapped.jsonl"
-knowledge_id: "check:support-case:ba2edd341f7d3e58"
-document_type: "support_case"
-case_type: "tip"
+- CHECK Expert
+- 문의 대응
+- 활용 팁
+- 검수 필요
+- 채권
+source: manual-enrichment-unmapped.jsonl
+knowledge_id: check:support-case:ba2edd341f7d3e58
+document_type: support_case
+case_type: tip
 case_facets:
-  - "tip"
-case_topic: "채권"
+- tip
+case_topic: 채권
 case_topics:
-  - "채권"
-related_ids:
-  - "check:enrichment:unmapped:11200aac2497"
-review_status: "candidate"
-mapping_status: "unmapped"
-source_locator: "20260916!row:903"
-candidate_id: "manual-candidate:CRM-00901"
+- 채권
+related_ids: []
+review_status: candidate
+mapping_status: unmapped
+source_locator: 20260916!row:903
+candidate_id: manual-candidate:CRM-00901
 ---
 # 활용 팁 — [IDENTIFIER] 더이앤엠16CB 만기일과 CB행사종료일이 예탁원과 상이하여 확인요청 만기일 : 체크 25/02/22…
 
@@ -35,8 +34,11 @@ candidate_id: "manual-candidate:CRM-00901"
 
 정정공시 확인하여 수정 후 연락드림
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **활용 팁**
 - 함께 볼 유형: 활용 팁
 - 업무·주제: 채권

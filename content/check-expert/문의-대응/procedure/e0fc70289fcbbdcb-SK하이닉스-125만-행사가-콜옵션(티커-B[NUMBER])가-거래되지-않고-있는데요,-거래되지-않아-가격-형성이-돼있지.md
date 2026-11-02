@@ -1,29 +1,29 @@
 ---
-title: "사용 절차 — SK하이닉스 125만 행사가 콜옵션(티커: B[NUMBER])가 거래되지 않고 있는데요, 거래되지 않아 가격 형성이 돼있지…"
-description: "4501 - 현재가1 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+title: '사용 절차 — SK하이닉스 125만 행사가 콜옵션(티커: B[NUMBER])가 거래되지 않고 있는데요, 거래되지 않아 가격 형성이 돼있지…'
+description: 4501 - 현재가1 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보.
 tags:
-  - "CHECK Expert"
-  - "문의 대응"
-  - "사용 절차"
-  - "검수 필요"
-  - "4501 - 현재가1"
-source: "manual-enrichment.jsonl"
-knowledge_id: "check:support-case:e0fc70289fcbbdcb"
-document_type: "support_case"
-case_type: "procedure"
+- CHECK Expert
+- 문의 대응
+- 사용 절차
+- 검수 필요
+- 4501 - 현재가1
+source: manual-enrichment.jsonl
+knowledge_id: check:support-case:e0fc70289fcbbdcb
+document_type: support_case
+case_type: procedure
 case_facets:
-  - "procedure"
-  - "faq"
-case_topic: "4501 - 현재가1"
+- procedure
+- faq
+case_topic: 4501 - 현재가1
 case_topics:
-  - "4501 - 현재가1"
+- 4501 - 현재가1
 related_ids:
-  - "check:screen:4501"
-  - "check:enrichment:screen:4501"
-review_status: "candidate"
-mapping_status: "mapped"
-source_locator: "20260916!row:5580"
-candidate_id: "manual-candidate:CRM-05578"
+- check:enrichment:screen:4501
+- check:screen:4501
+review_status: candidate
+mapping_status: mapped
+source_locator: 20260916!row:5580
+candidate_id: manual-candidate:CRM-05578
 ---
 # 사용 절차 — SK하이닉스 125만 행사가 콜옵션(티커: B[NUMBER])가 거래되지 않고 있는데요, 거래되지 않아 가격 형성이 돼있지…
 
@@ -37,8 +37,11 @@ SK하이닉스 125만 행사가 콜옵션(티커: B[NUMBER])가 거래되지 않
 
 안녕하세요. [IDENTIFIER]+ 입니다. 관련하여 유선으로 연락하여 안내드렸습니다. 주식 옵션 가격에서 도출되는 내재변동성은 특정 주식 종목의 옵션 시장을 통해 그 종목의 미래 변동성에 대한 내용을 보여주고 있습니다. 거래가 없어 시장가격이 존재하지 않으나 동일 종목의 다른 행사가격이나 만기의 옵션이 활발히 거래되고 있다면, 옵션 가격 모형([IDENTIFIER] 모델)을 통해 해당 종목의 변동성을 추정하고, 보간하고 있습니다. 감사합니다.
 
-## 의미 분류
+## 연결된 화면·기능
 
+연결 키가 없습니다.
+
+## 의미 분류
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4501 - 현재가1
