@@ -98,6 +98,20 @@ function inlineMarkup(value) {
   return escapeHtml(value).replace(/`([^`]+)`/g, "<code>$1</code>").replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
 }
 
+function documentBody(markdown, title) {
+  const lines = String(markdown || "").split(/\r?\n/);
+  let index = 0;
+  while (index < lines.length && !lines[index].trim()) index += 1;
+  if (lines[index]?.replace(/^#\s+/, "").trim() === String(title || "").trim()) {
+    lines.splice(index, 1);
+  }
+  while (index < lines.length && !lines[index].trim()) index += 1;
+  if (/^>\s*출처\s*:/.test(lines[index] || "")) {
+    lines.splice(index, 1);
+  }
+  return lines.join("\n").trim();
+}
+
 function renderMarkdown(markdown) {
   const lines = String(markdown || "").split(/\r?\n/);
   const html = [];
@@ -145,7 +159,7 @@ function openRecord(id, push = true) {
   state.selected = id;
   const candidate = record.review_status === "candidate";
   const caseLabel = record.type === "support_case" ? caseLabels[record.case_type] || "문의 사례" : null;
-  $("#viewer").innerHTML = `<header class="doc-head"><div class="result-top"><span class="badge ${candidate ? "candidate" : ""}">${record.screen_code ? `TR ${escapeHtml(record.screen_code)}` : caseLabel ? escapeHtml(caseLabel) : candidate ? "검수 전 후보" : escapeHtml(record.type)}</span>${record.signal_count ? `<span class="badge candidate">관련 신호 ${record.signal_count}건</span>` : ""}</div><h1>${escapeHtml(record.title)}</h1><div class="doc-meta"><span>출처: ${escapeHtml(record.source || "미기재")}</span><span>위치: ${escapeHtml(record.source_locator || "미기재")}</span>${record.case_topic ? `<span>업무·주제: ${escapeHtml(record.case_topic)}</span>` : ""}<span>ID: ${escapeHtml(record.id)}</span></div></header>${candidate ? '<div class="notice">비식별 문의 기록에서 만든 검수 전 지식입니다. 당시 대응을 공식 해결책으로 단정하지 말고, 공식 매뉴얼과 현재 제품 동작을 확인하세요.</div>' : ""}<article class="doc-body">${renderMarkdown(record.text)}</article>${record.related?.length ? `<nav class="related"><h2>의미상 연결된 문서</h2>${record.related.map((item) => `<button type="button" data-related="${escapeHtml(item.id)}"><small>${escapeHtml(item.relation_label || "관련 문서")}</small>${item.screen_code ? `TR ${escapeHtml(item.screen_code)} · ` : ""}${escapeHtml(item.title)}</button>`).join("")}</nav>` : ""}`;
+  $("#viewer").innerHTML = `<header class="doc-head"><div class="result-top"><span class="badge ${candidate ? "candidate" : ""}">${record.screen_code ? `TR ${escapeHtml(record.screen_code)}` : caseLabel ? escapeHtml(caseLabel) : candidate ? "검수 전 후보" : escapeHtml(record.type)}</span>${record.signal_count ? `<span class="badge candidate">관련 신호 ${record.signal_count}건</span>` : ""}</div><h1>${escapeHtml(record.title)}</h1><div class="doc-meta"><span>출처: ${escapeHtml(record.source || "미기재")}</span><span>위치: ${escapeHtml(record.source_locator || "미기재")}</span>${record.case_topic ? `<span>업무·주제: ${escapeHtml(record.case_topic)}</span>` : ""}<span>ID: ${escapeHtml(record.id)}</span></div></header>${candidate ? '<div class="notice">비식별 문의 기록에서 만든 검수 전 지식입니다. 당시 대응을 공식 해결책으로 단정하지 말고, 공식 매뉴얼과 현재 제품 동작을 확인하세요.</div>' : ""}<article class="doc-body">${renderMarkdown(documentBody(record.text, record.title))}</article>${record.related?.length ? `<nav class="related"><h2>의미상 연결된 문서</h2>${record.related.map((item) => `<button type="button" data-related="${escapeHtml(item.id)}"><small>${escapeHtml(item.relation_label || "관련 문서")}</small>${item.screen_code ? `TR ${escapeHtml(item.screen_code)} · ` : ""}${escapeHtml(item.title)}</button>`).join("")}</nav>` : ""}`;
   renderResults();
   if (push) updateUrl();
   $("#viewer").scrollTo?.(0, 0);
