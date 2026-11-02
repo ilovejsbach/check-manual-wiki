@@ -23,16 +23,12 @@ screen_code: "6322"
 > 출처: `CHECKPlus_Manual.pdf`, PDF 815-816쪽. 검색 가능한 본문과 원문 페이지 이미지를 함께 제공합니다.
 
 ## 화면 개요
-
+● CME 제공 FED WATCH 및 DOT PLOT을 제공합니다.
 ## 화면 설명
 
-6322 - WORLD/경제지표 > FED WATCH(CME) | 815
-6322 - WORLD/경제지표 > FED WATCH(CME)
-화면 개요
-● CME 제공 FED WATCH 및 DOT PLOT을 제공합니다.
-화면 설명
-1 CME 제공 미래 FED Meeting의 Target Rate 확률을 제공합니다.
-2 FED DOT PLOT을 제공합니다.
+### 화면 항목 1. CME 제공 미래 FED Meeting의 Target Rate 확률을 제공합니다.
+
+### 화면 항목 2. FED DOT PLOT을 제공합니다.
 
 <small>원본 PDF 815쪽</small>
 
@@ -43,10 +39,7 @@ screen_code: "6322"
 </details>
 
 ## 관련 화면
-
-해외
-관련 화면
-6321 - WORLD/경제지표 > FED DOT PLOT
+- TR 6321 — WORLD/경제지표 > FED DOT PLOT
 
 <small>원본 PDF 816쪽</small>
 

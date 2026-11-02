@@ -17,7 +17,8 @@ source_locator: "target:check:excel:manual:Ez-차트"
 ---
 # 문의 대응 사례 묶음 — Ez 차트
 
-> 공식 문서: [[check-expert/excel-premium/매뉴얼/Ez-차트|Ez 차트]]  
+> 공식 문서: [[check-expert/excel-premium/매뉴얼/Ez-차트|Ez 차트]]
+
 > 아래 내용은 비식별 고객 문의·운영 기록에서 추출한 **검수 전 후보**입니다. 공식 금융 정의나 현재 CHECK 동작으로 자동 승인되지 않습니다.
 
 ## 수요 요약

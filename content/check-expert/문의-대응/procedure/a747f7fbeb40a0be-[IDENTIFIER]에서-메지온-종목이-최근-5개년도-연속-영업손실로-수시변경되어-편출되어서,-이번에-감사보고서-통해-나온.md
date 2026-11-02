@@ -1,12 +1,12 @@
 ---
 title: "사용 절차 — [IDENTIFIER]에서 메지온 종목이 최근 5개년도 연속 영업손실로 수시변경되어 편출되어서, 이번에 감사보고서 통해 나온…"
-description: "KRX지수구성정보 서비스(지수구성종목 정보) - 1148 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+description: "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
 tags:
   - "CHECK Expert"
   - "문의 대응"
   - "사용 절차"
   - "검수 필요"
-  - "KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
+  - "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
 source: "manual-enrichment.jsonl"
 knowledge_id: "check:support-case:a747f7fbeb40a0be"
 document_type: "support_case"
@@ -14,9 +14,9 @@ case_type: "procedure"
 case_facets:
   - "procedure"
   - "faq"
-case_topic: "KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
+case_topic: "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
 case_topics:
-  - "KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
+  - "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
 related_ids:
   - "check:screen:1148"
   - "check:enrichment:screen:1148"
@@ -41,7 +41,7 @@ candidate_id: "manual-candidate:CRM-02068"
 
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
-- 업무·주제: KRX지수구성정보 서비스(지수구성종목 정보) - 1148
+- 업무·주제: 1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148
 - 공식 문서 연결: 연결됨
 - 증거 위치: `20260916!row:2070`
 

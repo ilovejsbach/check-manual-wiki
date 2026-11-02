@@ -231,6 +231,52 @@ def screen_code(title: str) -> str | None:
     return match.group(1) if match else None
 
 
+def normalize_screen_title(title: str) -> str:
+    code = screen_code(title)
+    if not code:
+        return title.strip()
+    remainder = re.sub(rf"^\s*{code}\s*[-–—:]?\s*", "", title).strip()
+    return f"{code} - {remainder}" if remainder else code
+
+
+def format_pdf_page_text(
+    text: str, *, title: str, category: str, rendered_headings: set[str]
+) -> str:
+    """Remove repeated page furniture and distinguish screen-item numbers from section numbers."""
+    normalized_title = re.sub(r"\s*[-–—]\s*", "-", title).strip()
+    known_headings = {"화면개요", "화면 개요", "화면설명", "화면 설명", "참고사항", "참고 사항", "관련화면", "관련 화면"}
+    emitted_headings: set[str] = set()
+    lines: list[str] = []
+    for line in text.splitlines():
+        compact = line.strip()
+        comparable = re.sub(r"\s*[-–—]\s*", "-", compact)
+        if not compact or comparable == normalized_title:
+            continue
+        if re.fullmatch(rf"{re.escape(normalized_title)}\s*\|\s*\d+", comparable):
+            continue
+        if compact == category or re.fullmatch(rf"\d+\.\s*{re.escape(category)}", compact):
+            continue
+        if compact in known_headings or compact in rendered_headings:
+            canonical = compact.replace("화면개요", "화면 개요").replace("화면설명", "화면 설명").replace("참고사항", "참고 사항").replace("관련화면", "관련 화면")
+            if canonical not in emitted_headings:
+                lines.append(f"## {canonical}")
+                emitted_headings.add(canonical)
+            continue
+        item = re.fullmatch(r"([1-9]|[1-4]\d)\s+(.+)", compact)
+        if item:
+            lines.append(f"### 화면 항목 {item.group(1)}. {item.group(2)}")
+            continue
+        related = re.fullmatch(r"(\d{4})\s*[-–—]\s*(.+)", compact)
+        if related:
+            lines.append(f"- TR {related.group(1)} — {related.group(2)}")
+            continue
+        lines.append(compact)
+    if lines and lines[-1].startswith("## "):
+        trailing_heading = lines.pop()
+        lines.insert(0, trailing_heading)
+    return "\n".join(lines)
+
+
 def render_pdf_section(
     *,
     title: str,
@@ -279,14 +325,23 @@ def render_pdf_section(
 
     seen_headings: set[str] = set()
     for page in range(start_page, end_page):
+        page_headings: set[str] = set()
         for heading in headings_by_page.get(page, []):
             normalized = heading.strip()
             if normalized and normalized not in seen_headings and normalized != title:
-                body += f"## {normalized}\n\n"
+                page_headings.add(normalized)
                 seen_headings.add(normalized)
         text = clean_pdf_text(page_texts[page], page + 1)
+        text = format_pdf_page_text(
+            text,
+            title=title,
+            category=category,
+            rendered_headings=page_headings,
+        )
         if text:
-            paragraphs = re.split(r"\n(?=\d+[.)]\s|[가-힣A-Za-z][^\n]{0,45}$)", text)
+            paragraphs = re.split(
+                r"\n(?=###\s|\d+[.)]\s|[가-힣A-Za-z][^\n]{0,45}$)", text
+            )
             body += "\n\n".join(part.strip() for part in paragraphs if part.strip())
             body += f"\n\n<small>원본 PDF {page + 1}쪽</small>\n\n"
         body += (
@@ -342,7 +397,7 @@ def build_pdf_wiki() -> dict[str, int]:
         ]
         end_page = min(later_pages, default=len(reader.pages))
         end_page = max(bookmark.page + 1, end_page)
-        title = bookmark.title
+        title = normalize_screen_title(bookmark.title)
         code = screen_code(title)
         filename = f"{code}-{slug(title)}.md" if code else f"{slug(title)}.md"
         category_dir = slug(bookmark_category)
@@ -720,7 +775,7 @@ def build_manual_enrichment() -> int:
         )
         document += f"# 문의 대응 사례 묶음 — {target_title}\n\n"
         document += (
-            f"> 공식 문서: [[{target['path']}|{target_title}]]  \n"
+            f"> 공식 문서: [[{target['path']}|{target_title}]]\n\n"
             "> 아래 내용은 비식별 고객 문의·운영 기록에서 추출한 **검수 전 후보**입니다. "
             "공식 금융 정의나 현재 CHECK 동작으로 자동 승인되지 않습니다.\n\n"
         )

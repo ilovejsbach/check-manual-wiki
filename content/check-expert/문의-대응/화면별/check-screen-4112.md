@@ -17,7 +17,8 @@ source_locator: "target:check:screen:4112"
 ---
 # 문의 대응 사례 묶음 — 4112 - VKOSPI
 
-> 공식 문서: [[check-expert/새로운-모습/선물/4112-4112-VKOSPI|4112 - VKOSPI]]  
+> 공식 문서: [[check-expert/새로운-모습/선물/4112-4112-VKOSPI|4112 - VKOSPI]]
+
 > 아래 내용은 비식별 고객 문의·운영 기록에서 추출한 **검수 전 후보**입니다. 공식 금융 정의나 현재 CHECK 동작으로 자동 승인되지 않습니다.
 
 ## 수요 요약

@@ -1,12 +1,12 @@
 ---
 title: "주의사항 — 기존에는 지수구성종목정보가 보였는데, 지금은 보이지 않습니다."
-description: "KRX지수구성정보 서비스(지수구성종목 정보) - 1148 관련 비식별 문의와 당시 대응 기록을 분리한 주의사항 검수 후보."
+description: "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148 관련 비식별 문의와 당시 대응 기록을 분리한 주의사항 검수 후보."
 tags:
   - "CHECK Expert"
   - "문의 대응"
   - "주의사항"
   - "검수 필요"
-  - "KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
+  - "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
 source: "manual-enrichment.jsonl"
 knowledge_id: "check:support-case:49dc8baf5b3efeaa"
 document_type: "support_case"
@@ -14,9 +14,9 @@ case_type: "caution"
 case_facets:
   - "caution"
   - "faq"
-case_topic: "KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
+case_topic: "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
 case_topics:
-  - "KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
+  - "1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148"
 related_ids:
   - "check:screen:1148"
   - "check:enrichment:screen:1148"
@@ -41,7 +41,7 @@ candidate_id: "manual-candidate:CRM-00915"
 
 - 대표 유형: **주의사항**
 - 함께 볼 유형: 주의사항, 질문과 답변
-- 업무·주제: KRX지수구성정보 서비스(지수구성종목 정보) - 1148
+- 업무·주제: 1148 - KRX지수구성정보 서비스(지수구성종목 정보) - 1148
 - 공식 문서 연결: 연결됨
 - 증거 위치: `20260916!row:917`
 

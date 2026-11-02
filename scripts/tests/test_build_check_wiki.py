@@ -8,7 +8,9 @@ import build_check_wiki
 from build_check_wiki import (
     clean_case_request,
     enrich_relationships,
+    format_pdf_page_text,
     frontmatter,
+    normalize_screen_title,
     screen_code,
     slug,
 )
@@ -21,6 +23,19 @@ def test_slug_normalizes_for_paths() -> None:
 def test_screen_code_accepts_only_four_digit_token() -> None:
     assert screen_code("1300 - 주식현재가") == "1300"
     assert screen_code("12345 데이터") is None
+
+
+def test_screen_title_and_internal_numbering_have_distinct_hierarchy() -> None:
+    assert normalize_screen_title("1002- 세계지수종합") == "1002 - 세계지수종합"
+    rendered = format_pdf_page_text(
+        "11. 해외\n1002- 세계지수종합\n화면 설명\n1 대륙별 버튼 선택\n설명 본문",
+        title="1002 - 세계지수종합",
+        category="해외",
+        rendered_headings={"화면 설명"},
+    )
+    assert "11. 해외" not in rendered
+    assert "1002- 세계지수종합" not in rendered
+    assert "### 화면 항목 1. 대륙별 버튼 선택" in rendered
 
 
 def test_clean_case_request_removes_source_form_fields() -> None:

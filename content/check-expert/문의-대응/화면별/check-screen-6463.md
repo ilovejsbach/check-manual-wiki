@@ -1,12 +1,12 @@
 ---
-title: "문의 대응 사례 묶음 — 6463 글로벌ETF > 현재가"
-description: "6463 글로벌ETF > 현재가 관련 비식별 문의를 유형별 사례로 연결한 검수 묶음."
+title: "문의 대응 사례 묶음 — 6463 - 글로벌ETF > 현재가"
+description: "6463 - 글로벌ETF > 현재가 관련 비식별 문의를 유형별 사례로 연결한 검수 묶음."
 tags:
   - "CHECK Expert"
   - "문의 대응"
   - "사례 묶음"
   - "검수 필요"
-  - "6463 글로벌ETF > 현재가"
+  - "6463 - 글로벌ETF > 현재가"
 source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:6463"
 related_ids:
@@ -15,9 +15,10 @@ review_status: "candidate"
 signal_count: 5
 source_locator: "target:check:screen:6463"
 ---
-# 문의 대응 사례 묶음 — 6463 글로벌ETF > 현재가
+# 문의 대응 사례 묶음 — 6463 - 글로벌ETF > 현재가
 
-> 공식 문서: [[check-expert/새로운-모습/해외/6463-6463-글로벌ETF-현재가|6463 글로벌ETF > 현재가]]  
+> 공식 문서: [[check-expert/새로운-모습/해외/6463-6463-글로벌ETF-현재가|6463 - 글로벌ETF > 현재가]]
+
 > 아래 내용은 비식별 고객 문의·운영 기록에서 추출한 **검수 전 후보**입니다. 공식 금융 정의나 현재 CHECK 동작으로 자동 승인되지 않습니다.
 
 ## 수요 요약

@@ -1,12 +1,12 @@
 ---
 title: "사용 절차 — 지난주까지만 해도 글로벌ETF화면(6460)에서 미국 지역 모든 종목을 검색했을 때 레버리지 종목들(TSLL, SOXS, S…"
-description: "6460 글로벌ETF > 시세표 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+description: "6460 - 글로벌ETF > 시세표 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
 tags:
   - "CHECK Expert"
   - "문의 대응"
   - "사용 절차"
   - "검수 필요"
-  - "6460 글로벌ETF > 시세표"
+  - "6460 - 글로벌ETF > 시세표"
 source: "manual-enrichment.jsonl"
 knowledge_id: "check:support-case:29cea5e2558a0e7a"
 document_type: "support_case"
@@ -14,9 +14,9 @@ case_type: "procedure"
 case_facets:
   - "procedure"
   - "faq"
-case_topic: "6460 글로벌ETF > 시세표"
+case_topic: "6460 - 글로벌ETF > 시세표"
 case_topics:
-  - "6460 글로벌ETF > 시세표"
+  - "6460 - 글로벌ETF > 시세표"
 related_ids:
   - "check:screen:6460"
   - "check:enrichment:screen:6460"
@@ -41,7 +41,7 @@ candidate_id: "manual-candidate:CRM-03281"
 
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
-- 업무·주제: 6460 글로벌ETF > 시세표
+- 업무·주제: 6460 - 글로벌ETF > 시세표
 - 공식 문서 연결: 연결됨
 - 증거 위치: `20260916!row:3283`
 

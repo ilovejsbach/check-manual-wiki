@@ -1,21 +1,21 @@
 ---
 title: "질문과 답변 — 안녕하세요~ 기간별로, 국내etf / [REDACTED_ENTITY]etf 자금 순유입(순유출) 볼 수있는 화면이 있을까요 ?"
-description: "6460 글로벌ETF > 시세표 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+description: "6460 - 글로벌ETF > 시세표 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
 tags:
   - "CHECK Expert"
   - "문의 대응"
   - "질문과 답변"
   - "검수 필요"
-  - "6460 글로벌ETF > 시세표"
+  - "6460 - 글로벌ETF > 시세표"
 source: "manual-enrichment.jsonl"
 knowledge_id: "check:support-case:4c5b4433bc9a3af7"
 document_type: "support_case"
 case_type: "faq"
 case_facets:
   - "faq"
-case_topic: "6460 글로벌ETF > 시세표"
+case_topic: "6460 - 글로벌ETF > 시세표"
 case_topics:
-  - "6460 글로벌ETF > 시세표"
+  - "6460 - 글로벌ETF > 시세표"
 related_ids:
   - "check:screen:6460"
   - "check:enrichment:screen:6460"
@@ -40,7 +40,7 @@ candidate_id: "manual-candidate:CRM-06047"
 
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
-- 업무·주제: 6460 글로벌ETF > 시세표
+- 업무·주제: 6460 - 글로벌ETF > 시세표
 - 공식 문서 연결: 연결됨
 - 증거 위치: `20260916!row:6049`
 

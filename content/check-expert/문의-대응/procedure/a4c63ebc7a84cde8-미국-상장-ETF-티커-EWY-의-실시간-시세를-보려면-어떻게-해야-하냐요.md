@@ -1,13 +1,13 @@
 ---
 title: "사용 절차 — 미국 상장 ETF 티커 EWY 의 실시간 시세를 보려면 어떻게 해야 하냐요?"
-description: "6463 글로벌ETF > 현재가, 6464 글로벌ETF > 구성종목 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+description: "6463 - 글로벌ETF > 현재가, 6464 - 글로벌ETF > 구성종목 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
 tags:
   - "CHECK Expert"
   - "문의 대응"
   - "사용 절차"
   - "검수 필요"
-  - "6463 글로벌ETF > 현재가"
-  - "6464 글로벌ETF > 구성종목"
+  - "6463 - 글로벌ETF > 현재가"
+  - "6464 - 글로벌ETF > 구성종목"
 source: "manual-enrichment.jsonl"
 knowledge_id: "check:support-case:a4c63ebc7a84cde8"
 document_type: "support_case"
@@ -15,10 +15,10 @@ case_type: "procedure"
 case_facets:
   - "procedure"
   - "faq"
-case_topic: "6463 글로벌ETF > 현재가"
+case_topic: "6463 - 글로벌ETF > 현재가"
 case_topics:
-  - "6463 글로벌ETF > 현재가"
-  - "6464 글로벌ETF > 구성종목"
+  - "6463 - 글로벌ETF > 현재가"
+  - "6464 - 글로벌ETF > 구성종목"
 related_ids:
   - "check:screen:6463"
   - "check:enrichment:screen:6463"
@@ -45,7 +45,7 @@ candidate_id: "manual-candidate:CRM-03729"
 
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
-- 업무·주제: 6463 글로벌ETF > 현재가, 6464 글로벌ETF > 구성종목
+- 업무·주제: 6463 - 글로벌ETF > 현재가, 6464 - 글로벌ETF > 구성종목
 - 공식 문서 연결: 연결됨
 - 증거 위치: `20260916!row:3731`
 

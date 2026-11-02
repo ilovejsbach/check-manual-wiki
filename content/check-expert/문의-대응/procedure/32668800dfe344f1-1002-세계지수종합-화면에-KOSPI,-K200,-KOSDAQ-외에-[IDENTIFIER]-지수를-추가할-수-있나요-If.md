@@ -1,12 +1,12 @@
 ---
 title: "사용 절차 — 1002 세계지수종합 화면에 KOSPI, K200, KOSDAQ 외에 [IDENTIFIER] 지수를 추가할 수 있나요? If…"
-description: "1002- 세계지수종합 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+description: "1002 - 세계지수종합 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
 tags:
   - "CHECK Expert"
   - "문의 대응"
   - "사용 절차"
   - "검수 필요"
-  - "1002- 세계지수종합"
+  - "1002 - 세계지수종합"
 source: "manual-enrichment.jsonl"
 knowledge_id: "check:support-case:32668800dfe344f1"
 document_type: "support_case"
@@ -14,9 +14,9 @@ case_type: "procedure"
 case_facets:
   - "procedure"
   - "faq"
-case_topic: "1002- 세계지수종합"
+case_topic: "1002 - 세계지수종합"
 case_topics:
-  - "1002- 세계지수종합"
+  - "1002 - 세계지수종합"
 related_ids:
   - "check:screen:1002:종합"
   - "check:enrichment:screen:1002:종합"
@@ -43,7 +43,7 @@ candidate_id: "manual-candidate:CRM-02185"
 
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
-- 업무·주제: 1002- 세계지수종합
+- 업무·주제: 1002 - 세계지수종합
 - 공식 문서 연결: 연결됨
 - 증거 위치: `20260916!row:2187`
 

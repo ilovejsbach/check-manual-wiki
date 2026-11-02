@@ -1,12 +1,12 @@
 ---
 title: "사용 절차 — [IDENTIFIER] 지수에 포함된 종목들의 유동비율 / 지수주식수 [IDENTIFIER] 데이터를 얻고 싶은데, 방법이…"
-description: "K200 구성종목 등락기여도 - 1155 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+description: "1155 - K200 구성종목 등락기여도 - 1155 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
 tags:
   - "CHECK Expert"
   - "문의 대응"
   - "사용 절차"
   - "검수 필요"
-  - "K200 구성종목 등락기여도 - 1155"
+  - "1155 - K200 구성종목 등락기여도 - 1155"
 source: "manual-enrichment.jsonl"
 knowledge_id: "check:support-case:a57f8c229673308f"
 document_type: "support_case"
@@ -15,9 +15,9 @@ case_facets:
   - "procedure"
   - "caution"
   - "faq"
-case_topic: "K200 구성종목 등락기여도 - 1155"
+case_topic: "1155 - K200 구성종목 등락기여도 - 1155"
 case_topics:
-  - "K200 구성종목 등락기여도 - 1155"
+  - "1155 - K200 구성종목 등락기여도 - 1155"
 related_ids:
   - "check:screen:1155"
   - "check:enrichment:screen:1155"
@@ -42,7 +42,7 @@ candidate_id: "manual-candidate:CRM-04595"
 
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 주의사항, 질문과 답변
-- 업무·주제: K200 구성종목 등락기여도 - 1155
+- 업무·주제: 1155 - K200 구성종목 등락기여도 - 1155
 - 공식 문서 연결: 연결됨
 - 증거 위치: `20260916!row:4597`
 

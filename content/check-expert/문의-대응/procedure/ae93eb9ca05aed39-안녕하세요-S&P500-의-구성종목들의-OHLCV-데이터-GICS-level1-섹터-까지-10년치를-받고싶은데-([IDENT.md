@@ -1,12 +1,12 @@
 ---
 title: "사용 절차 — 안녕하세요 S&P500 의 구성종목들의 OHLCV 데이터/GICS level1 섹터 까지 10년치를 받고싶은데 ([IDENT…"
-description: "6303- 미국지수구성종목 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
+description: "6303 - 미국지수구성종목 관련 비식별 문의와 당시 대응 기록을 분리한 사용 절차 검수 후보."
 tags:
   - "CHECK Expert"
   - "문의 대응"
   - "사용 절차"
   - "검수 필요"
-  - "6303- 미국지수구성종목"
+  - "6303 - 미국지수구성종목"
 source: "manual-enrichment.jsonl"
 knowledge_id: "check:support-case:ae93eb9ca05aed39"
 document_type: "support_case"
@@ -14,9 +14,9 @@ case_type: "procedure"
 case_facets:
   - "procedure"
   - "faq"
-case_topic: "6303- 미국지수구성종목"
+case_topic: "6303 - 미국지수구성종목"
 case_topics:
-  - "6303- 미국지수구성종목"
+  - "6303 - 미국지수구성종목"
 related_ids:
   - "check:screen:6303"
   - "check:enrichment:screen:6303"
@@ -41,7 +41,7 @@ candidate_id: "manual-candidate:CRM-01961"
 
 - 대표 유형: **사용 절차**
 - 함께 볼 유형: 사용 절차, 질문과 답변
-- 업무·주제: 6303- 미국지수구성종목
+- 업무·주제: 6303 - 미국지수구성종목
 - 공식 문서 연결: 연결됨
 - 증거 위치: `20260916!row:1963`
 

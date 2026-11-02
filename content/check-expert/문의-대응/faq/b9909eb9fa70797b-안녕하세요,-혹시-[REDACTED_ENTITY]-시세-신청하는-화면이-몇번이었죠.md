@@ -1,21 +1,21 @@
 ---
 title: "질문과 답변 — 안녕하세요, 혹시 [REDACTED_ENTITY] 시세 신청하는 화면이 몇번이었죠?"
-description: "1002- 세계지수종합 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
+description: "1002 - 세계지수종합 관련 비식별 문의와 당시 대응 기록을 분리한 질문과 답변 검수 후보."
 tags:
   - "CHECK Expert"
   - "문의 대응"
   - "질문과 답변"
   - "검수 필요"
-  - "1002- 세계지수종합"
+  - "1002 - 세계지수종합"
 source: "manual-enrichment.jsonl"
 knowledge_id: "check:support-case:b9909eb9fa70797b"
 document_type: "support_case"
 case_type: "faq"
 case_facets:
   - "faq"
-case_topic: "1002- 세계지수종합"
+case_topic: "1002 - 세계지수종합"
 case_topics:
-  - "1002- 세계지수종합"
+  - "1002 - 세계지수종합"
 related_ids:
   - "check:screen:1002:종합"
   - "check:enrichment:screen:1002:종합"
@@ -42,7 +42,7 @@ candidate_id: "manual-candidate:CRM-04098"
 
 - 대표 유형: **질문과 답변**
 - 함께 볼 유형: 질문과 답변
-- 업무·주제: 1002- 세계지수종합
+- 업무·주제: 1002 - 세계지수종합
 - 공식 문서 연결: 연결됨
 - 증거 위치: `20260916!row:4100`
 
