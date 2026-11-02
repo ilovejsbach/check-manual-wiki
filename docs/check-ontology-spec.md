@@ -260,7 +260,7 @@ information_need ──(resolves)──> screen ──(provides)──> item ─
 
 0. TR 마스터 목록(15절): 매뉴얼 화면 419개로 시작하고 사례 언급 TR을 `case_mentioned`로 등록, 화면 관찰 결과가 들어오면 승격.
 1. 항목 사전: 항목코드표 → `item` 노드 + `available_via` (매뉴얼확인, 자동 생성 가능). **완료(2026-11-02)**: `scripts/build_ontology_nodes.py` → `ontology/nodes.jsonl`(항목 18,944 + 함수 10).
-2. 화면 → 항목 `provides`: 화면 본문·문의 사례에서 자동추출 후 상위 100개 항목부터 검수.
+2. 화면 → 항목 `provides`: 화면 본문·문의 사례에서 자동추출 후 상위 100개 항목부터 검수. **1차 완료(2026-11-02)**: `scripts/build_ontology_edges.py` → `ontology/edges.jsonl`. 규칙: 소제목에서 정확/정규화 일치하고 모호하지 않은 것만 `provides` 후보(`canonical:false`, 271건), 그 밖의 비모호 일치는 `mentions_title`(693건), 항목명이 여러 코드에 해당하는 모호 일치는 엣지로 만들지 않고 `ontology/edges_ambiguous.jsonl` 검수 큐(246건)에 둔다. 항목↔함수 `available_via` 33,092건은 항목코드표 근거로 `manual_confirmed`.
 3. `information_need` + `resolves`: 질문 세트와 `support_case`에서 승격.
 4. 개념·법령 연결: 파일럿으로 `kcm:concept:basis`, `kcm:concept:short-selling`, `kcm:metric:cds-spread`와 `law:` 1~2개.
 5. 불변식 I1~I10을 `validate_check_wiki.py`에 추가.

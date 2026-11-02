@@ -19,6 +19,7 @@ description: CHECK 위키 전체 검증(테스트·빌드·validate·검색 평�
 5. `uv run python scripts/eval_check_wiki.py --json` — 있으면 실행. 지표(recall@1/3/5, MRR)를 직전 값과 비교
 6a. `uv run python scripts/build_tr_registry.py --check` — TR 마스터 목록 I11·I12 검증(위반 0)
 6b. `uv run python scripts/build_ontology_nodes.py --check` — 항목·함수 노드 검증(위반 0)
+6c. `uv run python scripts/build_ontology_edges.py --check` — 엣지 검증(I1·I5·I7, 위반 0)
 6. `uv run python scripts/leak_gate.py` — 현재 레포 데이터에서는 위반이 다수라 실패가 정상(미해결). 일반화 산출물 검증에는 `--pair ORIG=PUBLIC`로 사용
 7. 웹앱: `python scripts/build_help_app.py --json` 후 `python -m unittest discover -s scripts/tests -p "test_help_app.py"` (CI와 동일)
 
