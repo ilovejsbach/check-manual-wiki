@@ -289,7 +289,9 @@ information_need ──(resolves)──> screen ──(provides)──> item ─
 | 인프라·일반 주제 사례(네트워크, 윈도우, 설치, 로그인 등) | 특정 화면이 정답일 수 없음 | `feature_sections`, 주제 노드 |
 | 공통 기능 매뉴얼 절(PDF 6~59쪽) | 화면 설명(60쪽~)과 쪽수가 겹치지 않음 | 메뉴·기능 노드, 사례의 `explained_in_manual` |
 
-### 15.3 TR 마스터 목록 (`ontology/tr_registry.jsonl`, 제안 경로)
+### 15.3 TR 마스터 목록 (`ontology/tr_registry.jsonl`)
+
+생성·검증: `uv run python scripts/build_tr_registry.py` (파일 쓰기), `--check`(검증만, I11·I12 위반 시 종료코드 1). 사람이 승격·기각한 상태(`screen_observed`, `conflict`, `retired`, `rejected`)는 재생성해도 보존되고 사례 언급 수만 갱신된다.
 
 한 줄 = TR 하나. 모든 TR 존재 여부와 근거를 한곳에서 관리한다.
 
@@ -300,7 +302,9 @@ information_need ──(resolves)──> screen ──(provides)──> item ─
 | `screen_id` | 대응하는 화면 레코드 ID. `case_mentioned`는 비어 있다 |
 | `title` | 확인된 제목. 미확인이면 비움 |
 | `sources[]` | `{kind: manual\|observation\|case, ref, as_of}` |
-| `grade` | 4절의 근거 등급 (`manual_confirmed`→매뉴얼확인, `screen_observed`→화면관찰, `case_mentioned`→추정) |
+| `grade` | 4절의 근거 등급 (`manual_confirmed`→`manual_confirmed`, `screen_observed`→`screen_observed`, `case_mentioned`→`auto_extracted`: 사례 본문에서 정규식으로 뽑은 값이라 자동추출) |
+| `categories` | 매뉴얼에서 화면이 수록된 분류 목록(미확인 TR은 비어 있음) |
+| `case_ids` | 언급한 사례 ID 최대 5개(추적용, 사례 본문은 담지 않음) |
 | `case_mentions` | 이 TR을 언급한 사례 수(우선순위 정렬용) |
 | `notes` | 오탐 가능성(예: 연도·금액과 혼동) |
 
@@ -308,7 +312,7 @@ information_need ──(resolves)──> screen ──(provides)──> item ─
 
 ### 15.4 현황 (2026-11-02, 추출 도구 기준)
 
-- 매뉴얼 화면(`manual_confirmed`): 419개.
+- 마스터 목록 591행: 매뉴얼 화면(`manual_confirmed`) 419개 + 사례 언급 후보(`case_mentioned`) 172개.
 - 사례 본문에서만 언급된 TR 후보(`case_mentioned`): **고유 172개, 언급 사례 219개**. 그중 117개는 한 번만 언급되어 연도·금액 같은 4자리 숫자 오탐일 수 있다. 다회 언급 상위: 8003(10), 1335(6), 3702(6), 3123(5), 1000(5), 1320(5), 3052(4).
 - **우선순위 규칙**: `case_mentions`가 큰 순서대로 화면 관찰 대상으로 삼는다. 1회 언급 TR은 관찰 전에 오탐 여부부터 판정한다.
 - 화면 관찰은 윈도우 PC 세션이 맡는다(결과 형식은 `docs/CHECK-WIKI-HANDOFF.md`의 "화면 관찰 결과를 받는 형식"). 관찰 결과가 들어오면 마스터 상태를 승격하고, 매뉴얼에 없는 화면은 새 화면 레코드로 만든다.
