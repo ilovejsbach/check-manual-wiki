@@ -100,6 +100,7 @@ Python 작업은 반드시 `uv` 격리 환경으로 수행한다.
 - **중복 화면 병합**: 1002를 `check:screen:1002` 하나로 병합(`categories`·출처 쪽수 보존). 화면 레코드 419개 = 고유 화면번호 419개.
 - **연결 강화**: 화면 본문의 TR·제목 언급 688건 중 650건(94.5%) 연결, `mentions_tr`/`mentions_title` 관계, 연결 비대칭 0. 화면 연결 없는 매뉴얼 레코드는 66→53개.
 - **검색**: 문의 사례가 화면을 밀어내던 스코어링 수정. 평가 세트 59개 기준 recall@1 86.4%, recall@5 93.2%, MRR 89.0%. 회귀 임계치는 `scripts/tests/test_eval_check_wiki.py`.
+- **사례 ↔ TR 연결(2026-11-02)**: 사례 레코드에 구조화 키(`screen_codes`, `tr_candidates`, `functions`, `item_codes`)를 추가하고, 사례 페이지 본문에 "연결된 화면·기능" 위키 링크 절을 넣었다. 위키에 화면 문서가 없는 TR 172개(사례 219개가 언급)는 후보 페이지(`content/check-expert/tr-후보/<TR>.md`, `check:tr:<TR>`)로 연결한다. 본문에 TR이 명시된 사례 502개는 키 필드 100%, 미등록 TR 언급 사례 219개는 후보 페이지 연결 100%. 온톨로지는 `ontology/edges_cases.jsonl`(4,801개: about_screen 1,364, mentions_tr 267, uses_function 179, involves_item 533, explained_in_manual 1,408, resolves 141, similar_to 909; `scripts/build_ontology_case_edges.py`). **사례 원본 위치(행 번호·CRM 위치)는 엣지에 넣지 않는다.** 본문에 키가 없는 사례의 검색 기반 후보 1,144건은 정답이 아니라 `ontology/edges_cases_review.jsonl` 검수 큐다. 사례 페이지의 본문 위키 링크는 1,418개 중 683개(48%)이고 나머지는 추출 가능한 키가 없는 사례다.
 - **온톨로지 명세**: `docs/check-ontology-spec.md` (엔티티 9종, 관계 13종, 근거 등급 4종), 역량 질문 60개 `scripts/tests/fixtures/competency_questions.jsonl`(gap 7개).
 
 ### 이 브랜치에 추가된 도구 (생성 데이터는 커밋하지 않음, 출력은 `tmp/`)
@@ -113,7 +114,7 @@ Python 작업은 반드시 `uv` 격리 환경으로 수행한다.
 ### 알려진 한계·미해결 (이어받을 때 주의)
 1. **공개 노출은 아직 해결되지 않았다.** `leak_gate.py`를 현재 레포 데이터에 돌리면 위반이 약 86,000건이다(원본 위치 단서, 마스킹 토큰, 일시, 이름 후보, 전화, 이메일). `sanitize_cases.py`는 식별 단서를 제거하지만 문장 재서술은 못 해서 n-gram 겹침 검사(0.8)는 여전히 실패한다 — 재서술은 사람 또는 승인된 모델이 해야 한다. **일반화한 사례 데이터는 사람 검수 전까지 커밋하지 않는다.** 이미 `main`에 있는 원문 노출은 별개 문제로 남아 있다.
 2. 원본 CRM을 외부 모델에 보내도 되는지 미확인 — 확인 전에는 보내지 않는다.
-3. 사례 화면 연결 비율 목표(85%) 미달. 인프라·일반 주제를 분모에서 빼면 82.2%, 후보 포함 86.1%. 키 없는 사례 후보 매핑은 hit@3 57%라 `needs_review`로만 쓴다.
+3. 사례 화면 연결 비율 목표(85%) 미달(전체 기준 68.6%, TR 후보까지 포함한 TR 연결 사례 1,032개 72.8%). 인프라·일반 주제를 분모에서 빼면 82.2%, 후보 포함 86.1%. 키 없는 사례 후보 매핑은 hit@3 57%라 `needs_review`로만 쓴다.
 4. 현재 지식에 없는 화면번호(TR)를 언급하는 사례가 219개이고 고유 TR 후보는 172개다(그중 117개는 1회 언급이라 연도·금액 오탐일 수 있음). 상위: 8003(10), 1335(6), 3702(6), 3123(5), 1000(5), 1320(5), 3052(4). **윈도우 PC 화면 역추출은 언급 횟수 순으로 이 후보를 확인한다.** TR 마스터 목록(`case_mentioned` → `screen_observed`/`rejected` 승격 규칙)은 `docs/check-ontology-spec.md` 15절을 따른다.
 5. 항목코드표에 없는 개념(투자자별 매매현황, NAV, 추적오차율, 델타 등)과 자매 위키에 없는 시세·지표 개념(대차, 신용융자, 미결제약정 등)이 빈틈이다.
 6. 새 관계 5종(`about_screen`, `uses_function`, `involves_item`, `explained_in_manual`, `similar_to`)은 명세 13종에 아직 없다. 항목·함수 노드는 `ontology/nodes.jsonl`로 내보냈고(`scripts/build_ontology_nodes.py`, `--links tmp/case_links.jsonl`로 사례 관계의 item/func 대상 111개가 모두 실존함을 확인), 화면·사례 노드를 포함한 전체 I1 검사는 아직 없다. 엣지는 `ontology/edges.jsonl`(`scripts/build_ontology_edges.py`): `available_via` 33,092(항목코드표 근거), `provides` 후보 271, `mentions_title` 693. **화면과 연결된 항목은 18,944개 중 111개(0.6%)뿐**이다 — 항목 사전의 대부분이 경제금융·기업 시장(경기전망·재무제표)이라 화면과 무관하기 때문이며, 화면 항목명을 항목코드표 이름과 직접 대조하는 규칙으로는 이 격차를 줄이기 어렵다(화면 소제목은 UI 설명이 대부분). 화면 필드↔항목 대응표 또는 윈도우 PC 화면 관찰이 필요하다. 항목 `value_kind`는 휴리스틱이라 58%가 `unknown`이다. 함수 `CRS`는 사례에서만 언급되고 매뉴얼 정의가 없어 `mentioned_only`다.

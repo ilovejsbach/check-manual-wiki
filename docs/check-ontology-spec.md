@@ -38,6 +38,7 @@
 | `menu` | 메뉴 | 신설 | `check:menu:<경로-slug>` | 메뉴 트리의 한 노드 |
 | `manual_section` | 매뉴얼절 | 기존(type=`manual`, `excel`의 매뉴얼류) | `check:manual:<주제>:<절>` | 기능 설명 문서 |
 | `support_case` | 사용사례 | 기존 | `check:support-case:<hash16>` | 비식별 문의 1건 |
+| `tr_candidate` | TR 후보 | 신설 | `check:tr:<NNNN>` | 사례에서만 언급되고 화면 문서가 없는 TR. 화면으로 확인되면 `check:screen:<NNNN>`으로 승격(15절) |
 | `concept` | 자본시장 개념 | 외부 | `kcm:concept:<slug>`, `kcm:metric:<slug>` | 자본시장 위키 항목 |
 | `law_article` | 법령조문 | 외부 | `law:KR:<법령slug>:<조>` | 조문 단위 |
 
@@ -111,6 +112,12 @@
 | `regulated_by` | 항목·화면·개념이 법령조문의 규율을 받는다 | item/screen/concept → law_article | `regulates` | N:M | 매뉴얼확인(조문 원문) / 추정 |
 | `mentions_tr` | 본문이 다른 TR(화면번호)을 언급한다 | any → screen | `mentioned_by_tr` | N:M | 자동추출 |
 | `mentions_title` | 본문이 화면·항목을 제목·이름으로 언급한다 | any → screen/item | `mentioned_by_title` | N:M | 자동추출 |
+| `about_screen` | 사례가 특정 화면(TR)에 관한 것이다 | support_case → screen | `has_case` | N:M | 자동추출(본문 TR·제목) / 추정(기존 연결 이월) |
+| `mentions_tr` (사례) | 사례 본문이 위키에 화면 문서가 없는 TR을 언급한다 | support_case → tr_candidate | `mentioned_by_tr` | N:M | 자동추출. 화면으로 확인되면 `about_screen`으로 승격 |
+| `uses_function` | 사례가 엑셀 함수를 사용·언급한다 | support_case → function | `used_by_case` | N:M | 자동추출(호출) / 추정(언급) |
+| `involves_item` | 사례가 항목코드·항목명을 다룬다 | support_case → item | `involved_in_case` | N:M | 자동추출. 항목명이 여러 코드에 해당하면 후보를 모두 `ambiguous`로 |
+| `explained_in_manual` | 사례의 화면·함수·기능 키워드가 매뉴얼에서 설명된다 | support_case → manual_section | `explains_case` | N:M | 추정(규칙). `via`에 경로(화면, 함수)를 보존 |
+| `similar_to` | 사례끼리 내용·키가 비슷하다(질의 확장용, 정답 근거로 인용 금지) | support_case ↔ support_case | 대칭 | N:M, 사례당 상위 2개 | 추정(TF-IDF + 공유 키) |
 | `same_as` | 같은 대상의 중복 레코드(예 화면 1002 변형) | screen ↔ screen | 대칭 | 1:N | 매뉴얼확인 |
 | `part_of` | 계층 포함(메뉴 트리, 절 계층) | menu/section → menu | `has_part` | N:1 (부모 1개) | 매뉴얼확인 |
 | `next` / `previous` | 매뉴얼 순서(기존) | manual → manual | 서로 역 | 1:1 | 매뉴얼확인 |
@@ -211,7 +218,7 @@
 | I9 | **카디널리티**: `part_of` 부모 ≤1, `same_as` 그룹 내 정본 1개 | 메뉴 노드가 부모 2개 |
 | I10 | **질문 평가 세트**: `competency_questions.jsonl`의 `expected_ids`가 모두 실존(`scripts/tests/test_competency_fixture.py`). `gap:true` 개수는 보고용이며 감소하는 것이 목표 | 실존하지 않는 기대 ID |
 | I11 | **TR 마스터 유일성**: `ontology/tr_registry.jsonl`에서 `tr`은 유일하고, `status`가 `manual_confirmed`/`screen_observed`인 TR은 대응하는 `check:screen:<TR>` 레코드가 정확히 하나다. 화면 레코드의 `screen_code`는 모두 마스터에 있다 | 마스터에 없는 화면 레코드, 같은 TR의 화면 레코드 둘 |
-| I12 | **미확인 TR 격리**: `status: case_mentioned`인 TR은 `about_screen`의 target이 될 수 없고(화면 레코드가 없으므로), 공개 노출 시 "미확인"으로 표시한다. 상태 승격은 근거(매뉴얼 또는 화면 관찰)와 함께만 한다 | 미확인 TR에 정본 `about_screen` |
+| I12 | **미확인 TR 격리**: `status: case_mentioned`인 TR은 `about_screen`의 target이 될 수 없고(화면 레코드가 없으므로) 대신 `tr_candidate` 노드(`check:tr:<NNNN>`)로 `mentions_tr` 연결한다. 공개 노출 시 "미확인"으로 표시한다. 상태 승격은 근거(매뉴얼 또는 화면 관찰)와 함께만 한다 | 미확인 TR에 정본 `about_screen` |
 | I13 | **TR 비연결 지식 표시**: 15.2의 비연결 대상은 TR 링크를 강제하지 않고, TR이 없는 이유(`reason`)를 `needs_review` 또는 허용 목록으로 둔다. `reason` 없이 TR 링크도 없는 `support_case`는 보고 대상이다 | 사유 없는 키 없는 사례 |
 
 ## 11. ID 규칙
@@ -224,6 +231,7 @@
 | `check:manual:<주제>:<절>` | 매뉴얼절 | 기존 |
 | `check:excel:<문서>:<조각>` | 엑셀 문서 조각 | 기존 |
 | `check:support-case:<hash16>` | 사례 | 기존 |
+| `check:tr:<NNNN>` | TR 후보(화면 문서 없음) | 신설 |
 | `check:enrichment:*`, `check:doc:*`, `check:guide:*`, `check:support-case:index:*` | 색인·집계 | 기존, 의미 노드 아님 |
 | `check:item:<항목코드>` | 데이터 항목 | 신설 |
 | `check:func:<이름>` | 함수 | 신설 |
@@ -278,6 +286,14 @@ information_need ──(resolves)──> screen ──(provides)──> item ─
                                         ├─ available_via ──> 함수(종목코드·항목코드)
                                         └─ API
 ```
+
+### 15.1.1 사례 ↔ TR 연결 (구현: `scripts/build_ontology_case_edges.py` → `ontology/edges_cases.jsonl`)
+
+- 사례 본문에서 TR 번호·문맥(`TR 6316`, `6316 - 제목`)을 구조화 키로 추출해 `about_screen`(화면 레코드가 있는 TR) 또는 `mentions_tr`(화면 문서가 없는 TR → `check:tr:<TR>` 후보 노드)로 잇는다. 어느 쪽이든 **본문에 TR이 명시된 사례는 100% 연결**되어야 한다.
+- 근거는 `{section, start, end, sha8, key_type}`만 두고 **사례 원본 위치(`source_locator`: 행 번호·CRM 위치)는 엣지에 넣지 않는다**(개인정보 단서).
+- 기존 `related_ids`·`case_topic` 라벨에서 온 연결은 독립 근거가 아니므로 `inferred`로만 이월한다(`legacy_link`).
+- 본문에 키가 없는 사례의 검색 기반 후보는 정답이 아니라 `ontology/edges_cases_review.jsonl` 검수 큐에 둔다.
+- 후보 TR이 `screen_observed`로 승격되면 `mentions_tr` 엣지는 `about_screen`으로 재생성된다. `rejected`면 만들지 않는다.
 
 ### 15.2 TR에 연결하지 않는 지식 (억지 연결 금지)
 

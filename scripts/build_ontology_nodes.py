@@ -27,6 +27,7 @@ import derive_item_links as dil  # noqa: E402
 
 DEFAULT_KNOWLEDGE = Path("knowledge/check-expert/knowledge.jsonl")
 DEFAULT_OUT = Path("ontology/nodes.jsonl")
+DEFAULT_REGISTRY = Path("ontology/tr_registry.jsonl")
 DEFAULT_AS_OF = "2026-11-02"
 SCHEMA_VERSION = "1.0"
 DICT_SOURCE = "HangMokCodeTable_ExcelPremium_update01.xlsx"
@@ -206,6 +207,22 @@ def build_function_nodes(records: list[dict], as_of: str) -> list[dict]:
     return nodes
 
 
+def build_tr_candidate_nodes(registry: list[dict], as_of: str) -> list[dict]:
+    """TR 마스터에서 화면 문서가 아직 없는 TR(case_mentioned)을 check:tr:<TR> 후보 노드로 만든다.
+    사례가 이 TR 을 언급해도 연결할 대상이 없어 의미 연결이 끊기던 문제를 푼다. 화면으로 확인되면 check:screen:<TR> 로 승격한다."""
+    nodes = []
+    for r in registry:
+        if r.get("status") != "case_mentioned":
+            continue
+        tr, n = r["tr"], r.get("case_mentions", 0)
+        nodes.append({
+            "id": f"check:tr:{tr}", "type": "tr_candidate", "title": f"TR {tr} (화면 문서 없음)", "screen_code": tr,
+            "aliases": [f"TR{tr}", f"화면 {tr}", tr], "status": "case_mentioned", "case_mentions": n,
+            "possible_false_positive": n == 1, "source": "support_case", "source_locator": f"{n}개 사례",
+            "as_of": as_of, "visibility": "public", "grade": "auto_extracted", "schema_version": SCHEMA_VERSION})
+    return nodes
+
+
 def validate_nodes(nodes: list[dict], links_path: Path | None = None) -> list[str]:
     errs: list[str] = []
     ids = collections.Counter(n["id"] for n in nodes)
@@ -237,6 +254,7 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--knowledge", type=Path, default=DEFAULT_KNOWLEDGE)
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
     ap.add_argument("--as-of", default=DEFAULT_AS_OF)
+    ap.add_argument("--registry", type=Path, default=DEFAULT_REGISTRY, help="TR 마스터(후보 TR 노드 생성용). 없으면 건너뜀")
     ap.add_argument("--links", type=Path, default=None, help="관계 JSONL(예: tmp/case_links.jsonl)의 item/func 대상 실존 검사")
     ap.add_argument("--check", action="store_true", help="파일을 쓰지 않고 검증만 한다")
     args = ap.parse_args(argv)
@@ -244,11 +262,13 @@ def main(argv: list[str] | None = None) -> int:
     records = dcl.load_records(args.knowledge)
     items, conflicts = build_item_nodes(records, args.as_of)
     funcs = build_function_nodes(records, args.as_of)
-    nodes = funcs + items
+    registry = [json.loads(l) for l in args.registry.read_text(encoding="utf-8").splitlines() if l.strip()] if args.registry.exists() else []
+    tr_nodes = build_tr_candidate_nodes(registry, args.as_of)
+    nodes = funcs + items + tr_nodes
     errs = validate_nodes(nodes, args.links)
     kinds = collections.Counter(n["value_kind"] for n in items)
     print(json.dumps({
-        "items": len(items), "functions": len(funcs), "name_conflicts": len(conflicts),
+        "items": len(items), "functions": len(funcs), "tr_candidates": len(tr_nodes), "name_conflicts": len(conflicts),
         "value_kind": dict(kinds), "enum_items": sum(1 for n in items if "enum_raw" in n),
         "enum_values_parsed": sum(1 for n in items if n.get("enum_values")),
         "enum_parse": dict(collections.Counter(n.get("enum_parse") for n in items if n.get("enum_values"))),

@@ -438,13 +438,16 @@ def build_links(keys_list: list[dict], idx: Index, as_of: str) -> list[dict]:
         cur = links.get(k)
         if cur is None:
             l["n_evidence"] = 1
+            l["vias"] = [l["via"]] if l.get("via") else []  # 같은 대상에 이르는 경로(함수 등)를 모두 보존한다
             links[k] = l
         else:
             cur["n_evidence"] += 1
+            if l.get("via") and l["via"] not in cur["vias"]:
+                cur["vias"].append(l["via"])
             if l["confidence"] > cur["confidence"]:
-                n = cur["n_evidence"]
-                cur.update({kk: vv for kk, vv in l.items() if kk != "n_evidence"})
-                cur["n_evidence"] = n
+                n, vias = cur["n_evidence"], cur["vias"]
+                cur.update({kk: vv for kk, vv in l.items() if kk not in ("n_evidence", "vias")})
+                cur["n_evidence"], cur["vias"] = n, vias
 
     for k in keys_list:
         case = cases[k["id"]]
