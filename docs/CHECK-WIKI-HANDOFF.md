@@ -66,3 +66,64 @@ Python 작업은 반드시 `uv` 격리 환경으로 수행한다.
 > `docs/CHECK-WIKI-HANDOFF.md`를 먼저 읽고 현재 Git/Pages 상태를 확인해. CHECK Manual Wiki의
 > 기존 구조와 `uv` 규칙을 유지하면서 다음 작업을 진행하고, 검증 후 `wiki/main`에 푸시해.
 
+
+## 2026-11-02 맥 세션 인계 (병렬 작업 지점)
+
+최상위 목적(사용자 확정): 사람이든 AI든 이 참조 데이터로 **CHECK Expert의 원하는 기능·화면을 찾아 원하는 콘텐츠(데이터)를 얻고 활용**하게 한다. 중심 노드는 '데이터 항목'이고, 엑셀 항목코드표(HangMokCodeTable)가 뼈대다. 연결과 추가 자료는 이 목적에 맞춰 계속 애드온한다.
+
+### 역할 분담
+- **윈도우 PC 세션(CHECK 설치)**: 실제 CHECK 화면에서 역으로 추출해 구조 데이터를 만든다(진행 중). 시세 값은 저장하지 않고 구조만 저장한다.
+- **맥 세션**: 매뉴얼·엑셀·사례 데이터 기반 작업(아래). 화면 관찰 결과를 받을 형식과 판정 규칙을 준비한다.
+
+### 데이터 정비 방침
+- 레포는 PUBLIC이다. 문의 사례(support_case)에 회사명·전화번호·`PID복원`·`row:` 원본 위치가 남아 있어, 무조건 비공개가 아니라 **자연스러운 변형(일반화·재서술)** 후 공개한다. 화면번호·TR·함수식·오류문구·처리결과는 보존한다.
+- 파이프라인: 비식별 → 구조화 → 분류 → 중복 병합 → 지식화 → 연결. 원본↔변형본 대응은 해시 ID로만 둔다.
+- 비식별 전 원본 CRM을 외부 모델에 보내도 되는지는 미확인이므로, 확인 전에는 보내지 않는다.
+- 공개 산출물에는 전화번호·이메일·마스킹 토큰·`PID복원`·`row:`가 0건이어야 한다(`scripts/leak_gate.py`가 있으면 사용).
+
+### 자료 확보 순서
+1. 있는 것 활용: 항목코드표 ↔ 화면 항목명 대조로 `화면 ↔ 항목코드 ↔ 엑셀 함수` 연결.
+2. 없으면 찾아서 보강: 공개 CHECK 자료, 내부 설계 문서.
+3. 실제 화면 역추출: 윈도우 PC 세션. 모든 사실에 출처 등급을 붙인다 — `매뉴얼확인` / `화면관찰`(일시·앱 버전) / `추정`.
+
+### 화면 관찰 결과를 받는 형식 (제안, 윈도우 PC 세션과 맞출 것)
+- 위치: `observations/screens/<TR번호>.json` (구조 텍스트만, 스크린샷은 커밋하지 않는다)
+- 필드: `screen_code`, `title`, `menu_path[]`, `inputs[]{label,type,default}`, `tabs[]`, `buttons[]`, `output_columns[]{label}`, `observed_at`, `app_version`, `evidence_level`
+- 판정: 매뉴얼 화면과 대조해 `일치` / `신규(매뉴얼에 없음)` / `불일치` 로 분류하고 불일치는 목록으로 남긴다.
+
+### 자매 위키 연동
+- `capital_market_wiki`(한국 자본시장의 이해: 개념 269·기관 49·규제 28), `kcm_law`(자본시장법 조문 단위, "참조용 초안, 법적 효력 없음").
+- 브리지는 `explains_concept` / `related_institution` / `regulated_by` 로 구분하고, 법령 연결은 사람 검수 후 확정한다. 자매 레포는 직접 수정하지 않는다.
+
+### 이번 세션에서 한 일 (맥, 2026-11-02)
+- **중복 화면 병합**: 1002를 `check:screen:1002` 하나로 병합(`categories`·출처 쪽수 보존). 화면 레코드 419개 = 고유 화면번호 419개.
+- **연결 강화**: 화면 본문의 TR·제목 언급 688건 중 650건(94.5%) 연결, `mentions_tr`/`mentions_title` 관계, 연결 비대칭 0. 화면 연결 없는 매뉴얼 레코드는 66→53개.
+- **검색**: 문의 사례가 화면을 밀어내던 스코어링 수정. 평가 세트 59개 기준 recall@1 86.4%, recall@5 93.2%, MRR 89.0%. 회귀 임계치는 `scripts/tests/test_eval_check_wiki.py`.
+- **온톨로지 명세**: `docs/check-ontology-spec.md` (엔티티 9종, 관계 13종, 근거 등급 4종), 역량 질문 60개 `scripts/tests/fixtures/competency_questions.jsonl`(gap 7개).
+
+### 이 브랜치에 추가된 도구 (생성 데이터는 커밋하지 않음, 출력은 `tmp/`)
+| 도구 | 용도 | 결과 요약 |
+|---|---|---|
+| `scripts/derive_item_links.py` | 화면 항목명 ↔ 항목코드표 대조 | 화면 309/420(73.6%) 연결, 표본 정밀도 약 93%(언급 기준) |
+| `scripts/derive_case_links.py` | 사례 키 추출·타입 관계 | 함수↔엑셀 100%, 자리표시 매뉴얼 0, 사례→사례 평균 0.64. **화면 연결은 68.1→68.6%로 목표 85% 미달** |
+| `scripts/build_bridge_candidates.py` | 자매 위키·법령 브리지 후보 | 화면 60/420(14%) 후보, 엄격 정밀도 약 65%(법령 약 50%) |
+| `scripts/sanitize_cases.py` + `leak_gate.py` | 사례 일반화와 누출 검사 | 규칙 기반 일반화 후 전화·이메일·토큰·원본위치 위반 0 |
+
+### 알려진 한계·미해결 (이어받을 때 주의)
+1. **공개 노출은 아직 해결되지 않았다.** `leak_gate.py`를 현재 레포 데이터에 돌리면 위반이 약 86,000건이다(원본 위치 단서, 마스킹 토큰, 일시, 이름 후보, 전화, 이메일). `sanitize_cases.py`는 식별 단서를 제거하지만 문장 재서술은 못 해서 n-gram 겹침 검사(0.8)는 여전히 실패한다 — 재서술은 사람 또는 승인된 모델이 해야 한다. **일반화한 사례 데이터는 사람 검수 전까지 커밋하지 않는다.** 이미 `main`에 있는 원문 노출은 별개 문제로 남아 있다.
+2. 원본 CRM을 외부 모델에 보내도 되는지 미확인 — 확인 전에는 보내지 않는다.
+3. 사례 화면 연결 비율 목표(85%) 미달. 인프라·일반 주제를 분모에서 빼면 82.2%, 후보 포함 86.1%. 키 없는 사례 후보 매핑은 hit@3 57%라 `needs_review`로만 쓴다.
+4. 현재 지식에 없는 화면번호를 언급하는 사례가 219개(예: 8003, 1335, 1320, 1000, 3702, 3123). **윈도우 PC 화면 역추출에서 우선 채울 화면 목록으로 쓴다.**
+5. 항목코드표에 없는 개념(투자자별 매매현황, NAV, 추적오차율, 델타 등)과 자매 위키에 없는 시세·지표 개념(대차, 신용융자, 미결제약정 등)이 빈틈이다.
+6. 새 관계 5종(`about_screen`, `uses_function`, `involves_item`, `explained_in_manual`, `similar_to`)은 명세 13종에 아직 없다. 함수 노드 8종, 항목 노드 103종은 `knowledge.jsonl`에 레코드가 없어 불변식 I1 검사에 노드 목록 내보내기가 필요하다.
+7. 결정 사항(사용자 승인): 항목 노드 키는 코드 단독 `check:item:<코드>`, 새 노드·관계는 `knowledge.jsonl`과 분리한 `ontology/nodes.jsonl`, 법령은 후보(`needs_review`)만.
+
+### 재현
+```bash
+uv run python -m pytest -q -p no:cacheprovider        # macOS에서 uv 네트워크 오류 시 --offline --no-sync
+uv run python scripts/validate_check_wiki.py --json
+uv run python scripts/eval_check_wiki.py --json
+uv run python scripts/derive_item_links.py --out tmp/item_links.jsonl --report
+uv run python scripts/derive_case_links.py --knowledge knowledge/check-expert/knowledge.jsonl --out-dir tmp --report
+```
+프로젝트 스킬: `.claude/skills/check-wiki-verify`(전체 검증 절차), `.claude/skills/check-delegate-codex`(Codex 위임 절차).

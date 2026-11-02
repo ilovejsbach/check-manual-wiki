@@ -31,3 +31,6 @@ sources/check-expert/*
 .tools/
 tmp-*
 help-preview.png
+
+# 에이전트·도구 임시 산출물
+tmp/
