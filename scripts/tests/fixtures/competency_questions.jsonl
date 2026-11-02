@@ -1,0 +1,60 @@
+{"id": "cq-001", "question": "주식선물 전 종목 베이시스랑 괴리율 현재가를 한번에 볼 수 있는 화면 있나요?", "intent": "find_screen", "expected_ids": ["check:screen:4114"], "notes": "실사례 6502f02821de4f17 이 4114 로 연결됨. 항목: 시장베이시스 4001, 이론가괴리율 4017"}
+{"id": "cq-002", "question": "현선차익 베이시스 추이만 따로 보고 싶어요", "intent": "find_screen", "expected_ids": ["check:screen:4312", "check:screen:4322"], "notes": "차익일중/차익일별. 사례 59c1ef46d8c82a7d"}
+{"id": "cq-003", "question": "글로벌 ETF 호가 볼 수 있는 화면이 어디예요?", "intent": "find_screen", "expected_ids": ["check:screen:6463"], "notes": "사례 4cef81103313f7e5"}
+{"id": "cq-004", "question": "CDS 프리미엄 보는 화면 알려주세요", "intent": "find_screen", "expected_ids": ["check:screen:3940"], "notes": "Markit CDS. 사례 00a3c96bccd90f17"}
+{"id": "cq-005", "question": "회사별 채권 신용등급이랑 단기 신용등급 한 번에 조회하려면 어느 화면?", "intent": "find_screen", "expected_ids": ["check:screen:3011"], "notes": "사례 0320ba3c1da4bba6"}
+{"id": "cq-006", "question": "투자자별 선물옵션 만기손익 추정 화면이 있을까요", "intent": "find_screen", "expected_ids": ["check:screen:4747"], "notes": "사례 68f57ce873786aad"}
+{"id": "cq-007", "question": "국채선물 KTB 이론가 계산하는 화면 뭐죠", "intent": "find_screen", "expected_ids": ["check:screen:4080"], "notes": "4080 선물 KTB이론가"}
+{"id": "cq-008", "question": "FED 점도표 보려면 몇 번 화면이에요?", "intent": "find_screen", "expected_ids": ["check:screen:6321"], "notes": "FED DOT PLOT"}
+{"id": "cq-009", "question": "원달러 환율 일별 추이 화면", "intent": "find_screen", "expected_ids": ["check:screen:5103"], "notes": "5103 달러-원 일별추이"}
+{"id": "cq-010", "question": "옵션 델타 감마 베가 세타를 종목별로 쭉 보고 싶습니다", "intent": "find_screen", "expected_ids": ["check:screen:4514"], "notes": "민감도시세표. 관련 사례 b286fbf458c1fb10(엑셀 그릭 연동)"}
+{"id": "cq-011", "question": "업종 섹터별로 등락 분석해서 보는 화면", "intent": "find_screen", "expected_ids": ["check:screen:1531"], "notes": ""}
+{"id": "cq-012", "question": "풋콜 비율 추이 보는 화면", "intent": "find_screen", "expected_ids": ["check:screen:4714"], "notes": "풋콜Ratio"}
+{"id": "cq-013", "question": "MSCI 지수끼리 비교해서 보고싶어요", "intent": "find_screen", "expected_ids": ["check:screen:6431"], "notes": ""}
+{"id": "cq-014", "question": "시간외 단일가 시세표 보는 법", "intent": "find_screen", "expected_ids": ["check:screen:1425"], "notes": ""}
+{"id": "cq-015", "question": "NXT에서 거래 가능한 종목 리스트 확인할 수 있는 화면 있나요?", "intent": "find_screen", "expected_ids": [], "gap": true, "gap_reason": "NXT 대체거래소 종목 목록 화면이 화면 레코드에 없음. 사례 0ccba28aa61442bc 만 미연결(unmapped) 상태", "notes": "데이터항목/시장 개념 노드 부재. 화면 신설 또는 시장(NXT/KRX) 차원 필요"}
+{"id": "cq-016", "question": "엑셀에서 종목코드랑 항목코드로 현재가 가져오는 함수가 뭐예요?", "intent": "find_function", "expected_ids": ["check:excel:manual:함수-설명", "check:manual:엑셀-프리미엄:주요-함수-설명"], "notes": "=CT(\"005930\",\"15001\"); 항목명/alias 도 허용"}
+{"id": "cq-017", "question": "특정 기간의 합계나 최대값을 엑셀 함수로 구하고 싶어요 CTD 쓰는 법", "intent": "find_function", "expected_ids": ["check:excel:manual:함수-설명"], "notes": ""}
+{"id": "cq-018", "question": "체크에서 종목이나 화면을 한 번에 찾는 통합검색 기능 어떻게 써요?", "intent": "find_function", "expected_ids": ["check:manual:통합검색:기능-설명", "check:manual:통합검색:기능-개요"], "notes": ""}
+{"id": "cq-019", "question": "시세 감시 등록은 어디서 하나요?", "intent": "find_function", "expected_ids": ["check:manual:시세감시:기능-개요", "check:support-case:39b394a12b101542"], "notes": "사례 39b394a12b101542 시세감시 등록 방법"}
+{"id": "cq-020", "question": "관심종목 등록하는 방법 알려주세요", "intent": "find_function", "expected_ids": ["check:manual:관심종목등록:관심종목-등록하기"], "notes": ""}
+{"id": "cq-021", "question": "지금 열어둔 화면 배치를 저장해뒀다가 다시 불러오려면?", "intent": "find_function", "expected_ids": ["check:manual:PAGE-저장:페이지-저장하기", "check:manual:사용자편집화면-저장:4.-사용자-편집화면"], "notes": ""}
+{"id": "cq-022", "question": "CHECK API로 뉴스 제목이랑 본문을 가져오는 함수 있나요?", "intent": "find_function", "expected_ids": [], "gap": true, "gap_reason": "API 엔드포인트/함수는 노드로 모델링돼 있지 않음. 사례 2ad3cc34ab5390af 는 질문뿐 해결 지식 없음", "notes": "함수 엔티티(CT/CH/CTD/API) 부재"}
+{"id": "cq-023", "question": "매도호가1 항목코드가 뭔가요?", "intent": "explain_field", "expected_ids": ["check:excel:항목코드표:CH:001", "check:excel:항목코드표:CT:001"], "notes": "14501. 같은 코드가 CH/CT 시트·여러 시장 카테고리에 중복 등장"}
+{"id": "cq-024", "question": "이론가괴리율 항목코드 4017 이 어느 함수에서 되나요", "intent": "explain_field", "expected_ids": ["check:excel:항목코드표:CH:019", "check:support-case:ee740683f71dccee"], "notes": "선물/체결. 사례: 4017 일간 데이터 제공 여부 문의"}
+{"id": "cq-025", "question": "미결제약정수량 항목 코드", "intent": "explain_field", "expected_ids": ["check:excel:항목코드표:CT:010", "check:excel:항목코드표:CH:018"], "notes": "15101"}
+{"id": "cq-026", "question": "내재변동성 4507 값은 장중에 옵션가격 바뀌면 실시간으로 바뀌나요?", "intent": "explain_field", "expected_ids": ["check:support-case:43ec15f8b129cba5", "check:excel:항목코드표:CT:011"], "notes": ""}
+{"id": "cq-027", "question": "전일등락구분 값 0~9 가 각각 무슨 뜻이에요?", "intent": "explain_field", "expected_ids": ["check:excel:항목코드표:CT:001"], "notes": "3028. 코드값 정의가 항목명 문자열에 포함됨(&cl 구분자)"}
+{"id": "cq-028", "question": "ETF NAV 대비 항목 코드 알려주세요", "intent": "explain_field", "expected_ids": ["check:excel:항목코드표:CT:010", "check:excel:항목코드표:CH:008"], "notes": "15303"}
+{"id": "cq-029", "question": "세계지수종합에서 P O C H 표시는 무슨 뜻이에요?", "intent": "explain_field", "expected_ids": ["check:screen:1002"], "notes": "장 상태 Prepare/Open/Close/Holiday. 화면번호 1002 가 두 레코드로 중복"}
+{"id": "cq-030", "question": "4153 화면 Spread Matrix 에서 위쪽 삼각형이 시장 스프레드 맞나요?", "intent": "explain_field", "expected_ids": ["check:screen:4153"], "notes": "Upper=시장, Lower=이론"}
+{"id": "cq-031", "question": "ETF 순자산 총액을 CT함수로 실시간으로 가져올 수 있나요? 항목코드 52 라고 나오던데", "intent": "explain_field", "expected_ids": ["check:support-case:1c4f951ddf143213"], "notes": "candidate 사례. 공식 정의 아님"}
+{"id": "cq-032", "question": "베이시스는 어떤 공식으로 계산되나요? 시장베이시스랑 이론베이시스 차이", "intent": "explain_field", "expected_ids": [], "gap": true, "gap_reason": "시장베이시스 4001 항목은 있으나 산식·이론베이시스 정의(computes 관계)와 개념 노드가 없음", "notes": "4153 에 Spread 정의만 있음. 자본시장 개념 + computes 필요"}
+{"id": "cq-033", "question": "ETF 괴리율은 정확히 뭐고 어떻게 계산돼요?", "intent": "explain_field", "expected_ids": [], "gap": true, "gap_reason": "괴리율(ETF/ETN NAV 괴리 vs 선물 이론가괴리) 정의 개념 노드 없음. 항목 사전에 독립 항목 \"괴리율\" 도 없음(이론가괴리율, NAV대비 등 파생명)", "notes": "표기 변형(alias) 정규화 필요"}
+{"id": "cq-034", "question": "델타 항목코드가 뭔가요? 엑셀 함수로 가져오고 싶습니다", "intent": "explain_field", "expected_ids": [], "gap": true, "gap_reason": "항목코드표에 \"델타\" 항목명이 없음. 그릭 관련은 사례(55a869c205af1ef8)와 4514 민감도시세표에만 흩어져 있음", "notes": "항목 사전과 화면/사례 간 provides 링크 없음"}
+{"id": "cq-035", "question": "4501 현재가1 이랑 4502 현재가2 는 뭐가 달라요?", "intent": "compare_screens", "expected_ids": ["check:screen:4501", "check:screen:4502"], "notes": ""}
+{"id": "cq-036", "question": "체결잔량 화면이랑 호가잔량 화면 차이가 뭐죠", "intent": "compare_screens", "expected_ids": ["check:screen:4140", "check:screen:4141"], "notes": ""}
+{"id": "cq-037", "question": "4311 일중이랑 4321 일별은 어떻게 구분해서 써요?", "intent": "compare_screens", "expected_ids": ["check:screen:4311", "check:screen:4321"], "notes": ""}
+{"id": "cq-038", "question": "ETF 현재가랑 ETF 시세표 중 뭘 봐야 하나요", "intent": "compare_screens", "expected_ids": ["check:screen:1440", "check:screen:1443"], "notes": ""}
+{"id": "cq-039", "question": "만기손익 당일, 기간, 종합 화면 차이", "intent": "compare_screens", "expected_ids": ["check:screen:4745", "check:screen:4746", "check:screen:4747"], "notes": ""}
+{"id": "cq-040", "question": "옵션 역사적변동성 화면이랑 주식 역사적변동성 화면 차이", "intent": "compare_screens", "expected_ids": ["check:screen:4731", "check:screen:1547"], "notes": ""}
+{"id": "cq-041", "question": "채권 건별 체결 화면과 종목별 체결 화면 차이", "intent": "compare_screens", "expected_ids": ["check:screen:3703", "check:screen:3704"], "notes": ""}
+{"id": "cq-042", "question": "1002 화면과 5103 화면에서 원달러 환율 값이 다른 이유", "intent": "compare_screens", "expected_ids": ["check:screen:1002", "check:screen:5103", "check:support-case:0c53675c77543e38"], "notes": "실사례 0c53675c77543e38"}
+{"id": "cq-043", "question": "엑셀 프리미엄 처음인데 종목코드 항목코드는 어디서 찾아요?", "intent": "excel_howto", "expected_ids": ["check:excel:manual:함수-설명"], "notes": "XL Premium 탭 > 종목검색/항목검색"}
+{"id": "cq-044", "question": "조회마법사 사용법", "intent": "excel_howto", "expected_ids": ["check:excel:manual:조회마법사"], "notes": ""}
+{"id": "cq-045", "question": "엑셀 데이터를 차트로 쉽게 바꾸는 ezChart 쓰는 법", "intent": "excel_howto", "expected_ids": ["check:excel:manual:Ez-차트"], "notes": ""}
+{"id": "cq-046", "question": "엑셀 메뉴랑 템플릿 어떻게 쓰나요", "intent": "excel_howto", "expected_ids": ["check:excel:manual:메뉴와-템플릿"], "notes": ""}
+{"id": "cq-047", "question": "체크 화면 데이터를 엑셀로 연결하는 방법", "intent": "excel_howto", "expected_ids": ["check:manual:엑셀데이터-연결:엑셀데이터-연결하기"], "notes": ""}
+{"id": "cq-048", "question": "관심종목을 엑셀로 불러오고 싶어요", "intent": "excel_howto", "expected_ids": ["check:support-case:0973b71478c65ce1", "check:screen:1379"], "notes": ""}
+{"id": "cq-049", "question": "옵션 그릭(델타 감마 베가)과 내재변동성을 엑셀에서 실시간으로 연동하고 싶어요", "intent": "excel_howto", "expected_ids": ["check:support-case:55a869c205af1ef8", "check:support-case:b286fbf458c1fb10"], "notes": "사례 기반 부분 답. 항목코드 정확 매핑은 위 델타 gap 질문 참조"}
+{"id": "cq-050", "question": "풋콜 패리티 깨진 구간 찾고 싶어요", "intent": "concept_to_screen", "expected_ids": ["check:screen:4711", "check:screen:4712"], "notes": ""}
+{"id": "cq-051", "question": "변동성 스큐 곡면을 보려면", "intent": "concept_to_screen", "expected_ids": ["check:screen:4735", "check:screen:4740"], "notes": ""}
+{"id": "cq-052", "question": "외국인 기관 선물 순매수가 장중에 어떻게 변했는지 보고 싶어요", "intent": "concept_to_screen", "expected_ids": ["check:screen:4205", "check:screen:4203"], "notes": "사례 369b729de71e9923"}
+{"id": "cq-053", "question": "차익거래 프로그램 매매 흐름 보고싶습니다", "intent": "concept_to_screen", "expected_ids": ["check:screen:4271", "check:screen:6151"], "notes": ""}
+{"id": "cq-054", "question": "공매도 거래 제한은 어느 법령 조문 근거인가요? 관련 화면도", "intent": "concept_to_screen", "expected_ids": [], "gap": true, "gap_reason": "법령조문(law:) 노드와 regulated_by 관계 없음. 공매도 관련 화면 지식도 사례(540617ec715d0e25) 수준", "notes": "자본시장 개념/법령 엔티티 부재"}
+{"id": "cq-055", "question": "6106 뉴스 클릭하면 아래 내용창에 아무것도 안 나와요", "intent": "troubleshoot", "expected_ids": ["check:support-case:2cf24b70534c446b", "check:screen:6106"], "notes": ""}
+{"id": "cq-056", "question": "3500 투자분석리포트 접속하니까 유해사이트 차단 화면이 나와요", "intent": "troubleshoot", "expected_ids": ["check:support-case:d7a1c95ff220c35c", "check:screen:3500"], "notes": ""}
+{"id": "cq-057", "question": "신버전 체크로 업데이트했더니 화면이 너무 밝아요 예전 테마로 돌리고 싶어요", "intent": "troubleshoot", "expected_ids": ["check:support-case:931a0ddea98d9684", "check:support-case:f8150b8ef854378d"], "notes": ""}
+{"id": "cq-058", "question": "엑셀 CT함수가 값이 안 나오고 오류에요", "intent": "troubleshoot", "expected_ids": ["check:support-case:8ba270756eb34ab6", "check:excel:manual:함수-설명"], "notes": "candidate 사례. 현재 동작 단정 금지"}
+{"id": "cq-059", "question": "체크메신저로 보내면 전송이 늦거나 안 가요", "intent": "troubleshoot", "expected_ids": ["check:support-case:1428f074790ec6b1"], "notes": ""}
+{"id": "cq-060", "question": "4311 화면에서 NXT 기준 지수값이 안 보여요 왜 그래요", "intent": "troubleshoot", "expected_ids": [], "gap": true, "gap_reason": "NXT 반영 여부는 제품 동작/로드맵 문제. 사례 311f471486708efa 는 기능 요청이며 확정 답 없음", "notes": "시장(KRX/NXT) 차원, 기준일 버전 관리 필요"}
