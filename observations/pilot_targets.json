@@ -1,0 +1,230 @@
+{
+  "purpose": "수집 가능성 파일럿: 라벨↔항목 일치율, UI 자동화 판독 가능 여부, 매뉴얼-실화면 불일치 비율 측정",
+  "measure": [
+    "label_to_item_match_rate",
+    "ui_automation_readable",
+    "manual_drift_rate"
+  ],
+  "targets": [
+    {
+      "tr": "8003",
+      "kind": "unconfirmed",
+      "why": "사례 10개가 언급",
+      "expect": "화면 존재 여부와 제목 확인"
+    },
+    {
+      "tr": "1335",
+      "kind": "unconfirmed",
+      "why": "사례 6개가 언급",
+      "expect": "화면 존재 여부와 제목 확인"
+    },
+    {
+      "tr": "3702",
+      "kind": "unconfirmed",
+      "why": "사례 6개가 언급",
+      "expect": "화면 존재 여부와 제목 확인"
+    },
+    {
+      "tr": "1000",
+      "kind": "unconfirmed",
+      "why": "사례 5개가 언급",
+      "expect": "화면 존재 여부와 제목 확인"
+    },
+    {
+      "tr": "1320",
+      "kind": "unconfirmed",
+      "why": "사례 5개가 언급",
+      "expect": "화면 존재 여부와 제목 확인"
+    },
+    {
+      "tr": "3123",
+      "kind": "unconfirmed",
+      "why": "사례 5개가 언급",
+      "expect": "화면 존재 여부와 제목 확인"
+    },
+    {
+      "tr": "3052",
+      "kind": "unconfirmed",
+      "why": "사례 4개가 언급",
+      "expect": "화면 존재 여부와 제목 확인"
+    },
+    {
+      "tr": "1327",
+      "kind": "unconfirmed",
+      "why": "사례 3개가 언급",
+      "expect": "화면 존재 여부와 제목 확인"
+    },
+    {
+      "tr": "1442",
+      "kind": "unconfirmed",
+      "why": "사례 3개가 언급",
+      "expect": "화면 존재 여부와 제목 확인"
+    },
+    {
+      "tr": "1550",
+      "kind": "unconfirmed",
+      "why": "사례 3개가 언급",
+      "expect": "화면 존재 여부와 제목 확인"
+    },
+    {
+      "tr": "3435",
+      "kind": "manual",
+      "title": "시가평가 > 채권종목 > 일별추이",
+      "category": "채권",
+      "why": "사례 12개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "4199",
+      "kind": "manual",
+      "title": "과거종목",
+      "category": "선물",
+      "why": "사례 11개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "4501",
+      "kind": "manual",
+      "title": "현재가1",
+      "category": "옵션",
+      "why": "사례 8개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "1148",
+      "kind": "manual",
+      "title": "KRX지수구성정보 서비스(지수구성종목 정보) - 1148",
+      "category": "주식",
+      "why": "사례 7개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "5103",
+      "kind": "manual",
+      "title": "달러-원>일별추이",
+      "category": "외환",
+      "why": "사례 9개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "6316",
+      "kind": "manual",
+      "title": "경제지표 > (실시간)세계경제지표",
+      "category": "해외",
+      "why": "사례 5개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "1443",
+      "kind": "manual",
+      "title": "ETF 시세표",
+      "category": "ETP",
+      "why": "사례 10개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "1002",
+      "kind": "manual",
+      "title": "세계지수종합",
+      "category": "종합",
+      "why": "사례 14개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "1370",
+      "kind": "manual",
+      "title": "관심종목 평가",
+      "category": "관심",
+      "why": "사례 4개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "8112",
+      "kind": "manual",
+      "title": "신종합차트",
+      "category": "차트",
+      "why": "사례 10개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "6106",
+      "kind": "manual",
+      "title": "종합",
+      "category": "Daily",
+      "why": "사례 4개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "1211",
+      "kind": "manual",
+      "title": "ELW 시세표",
+      "category": "ELW",
+      "why": "사례 1개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "3000",
+      "kind": "manual",
+      "title": "발행정보 > 주요 > 종목상세",
+      "category": "채권",
+      "why": "사례 11개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "4114",
+      "kind": "manual",
+      "title": "주식선물 시세표",
+      "category": "선물",
+      "why": "사례 10개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "4511",
+      "kind": "manual",
+      "title": "기본시세표",
+      "category": "옵션",
+      "why": "사례 7개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "1425",
+      "kind": "manual",
+      "title": "시간외단일가 시세표",
+      "category": "주식",
+      "why": "사례 7개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "5101",
+      "kind": "manual",
+      "title": "달러-원>현재가",
+      "category": "외환",
+      "why": "사례 5개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "6463",
+      "kind": "manual",
+      "title": "글로벌ETF > 현재가",
+      "category": "해외",
+      "why": "사례 4개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "1448",
+      "kind": "manual",
+      "title": "ETF 구성종목(PDF)",
+      "category": "ETP",
+      "why": "사례 8개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    },
+    {
+      "tr": "1103",
+      "kind": "manual",
+      "title": "지수편집",
+      "category": "종합",
+      "why": "사례 3개가 언급",
+      "expect": "제목 일치, 출력 컬럼, 메뉴 경로, 탭"
+    }
+  ]
+}

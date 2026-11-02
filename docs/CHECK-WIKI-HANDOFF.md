@@ -86,10 +86,11 @@ Python 작업은 반드시 `uv` 격리 환경으로 수행한다.
 2. 없으면 찾아서 보강: 공개 CHECK 자료, 내부 설계 문서.
 3. 실제 화면 역추출: 윈도우 PC 세션. 모든 사실에 출처 등급을 붙인다 — `매뉴얼확인` / `화면관찰`(일시·앱 버전) / `추정`.
 
-### 화면 관찰 결과를 받는 형식 (제안, 윈도우 PC 세션과 맞출 것)
-- 위치: `observations/screens/<TR번호>.json` (구조 텍스트만, 스크린샷은 커밋하지 않는다)
-- 필드: `screen_code`, `title`, `menu_path[]`, `inputs[]{label,type,default}`, `tabs[]`, `buttons[]`, `output_columns[]{label}`, `observed_at`, `app_version`, `evidence_level`
-- 판정: 매뉴얼 화면과 대조해 `일치` / `신규(매뉴얼에 없음)` / `불일치` 로 분류하고 불일치는 목록으로 남긴다.
+### 화면 역추출(윈도우 PC가 수행) — 시작 지점
+- **먼저 `docs/check-screen-crawl-protocol.md`를 읽는다.** 안전 규칙(읽기 전용, 시세 값 저장 금지, 장외 시간 수행), 수집 단계(P0 파일럿 → P1 메뉴 순회 → P2 화면 스냅샷 → P3 상태 확장 → P4 값 유형 샘플링), 관찰 파일 형식이 있다.
+- **P0 파일럿 대상**: `observations/pilot_targets.json` (30개: 사례에서만 언급된 미확인 TR 10개 + 분류가 고르게 퍼진 매뉴얼 화면 20개). 결과를 보고한 뒤 P1 이후 범위를 정한다.
+- 결과 위치: `observations/screens/<TR>.json`. 수집 후 `uv run python scripts/ingest_observations.py --check`로 검증하고, 관찰 파일만 브랜치 `session/check-windows-observations`에 커밋·푸시한다(생성물은 맥이 반영).
+- 맥은 CHECK 앱을 실행할 수 없다. 반영(`ingest_observations.py`)은 매뉴얼 대조(일치/신규/불일치), TR 마스터 승격, 신규 화면 노드, `provides`(화면관찰 등급) 엣지 생성을 한다.
 
 ### 자매 위키 연동
 - `capital_market_wiki`(한국 자본시장의 이해: 개념 269·기관 49·규제 28), `kcm_law`(자본시장법 조문 단위, "참조용 초안, 법적 효력 없음").
