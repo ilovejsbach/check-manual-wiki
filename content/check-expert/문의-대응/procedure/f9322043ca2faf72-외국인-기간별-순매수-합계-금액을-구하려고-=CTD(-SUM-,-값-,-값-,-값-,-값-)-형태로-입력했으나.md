@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:1451
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-01449
 ---
 # 사용 절차 — 외국인 기간별 순매수 합계 금액을 구하려고 =CTD("SUM","<값>,"<값>","<값>","<값>") 형태로 입력했으나…

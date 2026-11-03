@@ -23,7 +23,7 @@ related_ids:
 - check:enrichment:screen:4511
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:3602
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-03600
 ---
 # 사용 절차 — =CIS 함수에 연결옵션 종목코드(예 K2MOCNO1)를 넣어 OTM1을 조회했는데 OTM5는 조회되지 않고, 종목명과 45…

@@ -19,7 +19,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:39
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00037
 ---
 # 오류 해결 — CHECK 로그인 시 사용자 로그인 처리 실패 메시지가 발생한다는 문의입니다.

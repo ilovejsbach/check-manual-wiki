@@ -19,7 +19,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:4757
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-04755
 ---
 # 사용 절차 — CLIST에서 ETP와 코덱스를 제외하고 코스피 지수 종목만 보는 방법을 문의했습니다.

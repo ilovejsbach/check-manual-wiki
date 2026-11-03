@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:384
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00382
 ---
 # 주의사항 — CHECK API로 ETF 괴리율 모니터링과 알람을 구축 중인데, 개발과 테스트로 사용량이 많아 시연 중 API 한도에 도달…

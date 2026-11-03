@@ -22,7 +22,7 @@ related_ids:
 - check:screen:4391
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:3718
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-03716
 ---
 # 질문과 답변 — 체결이 일어날 때마다 가격 표시창 옆에 나타나는 B, S, BB, SS가 무엇을 뜻하는지, 특히 BB와 SS의 의미를 문의했…

@@ -19,7 +19,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:9
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00007
 ---
 # 활용 팁 — 고객정보가 일치하지 않는다고 문의했습니다.

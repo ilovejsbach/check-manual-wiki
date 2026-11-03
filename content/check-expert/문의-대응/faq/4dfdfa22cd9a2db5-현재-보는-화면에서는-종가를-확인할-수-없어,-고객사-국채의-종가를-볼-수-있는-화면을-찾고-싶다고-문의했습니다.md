@@ -22,7 +22,7 @@ related_ids:
 - check:tr:3926
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:5440
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-05438
 ---
 # 질문과 답변 — 현재 보는 화면에서는 종가를 확인할 수 없어, 고객사 국채의 종가를 볼 수 있는 화면을 찾고 싶다고 문의했습니다.

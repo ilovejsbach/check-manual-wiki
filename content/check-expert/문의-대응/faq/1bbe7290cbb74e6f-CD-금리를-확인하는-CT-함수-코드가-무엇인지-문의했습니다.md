@@ -21,7 +21,7 @@ related_ids:
 - check:enrichment:screen:3223
 review_status: candidate
 mapping_status: mapped
-source_locator: CRM데이터(PID복원)!row:844
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00842
 ---
 # 질문과 답변 — CD 금리를 확인하는 CT 함수 코드가 무엇인지 문의했습니다.

@@ -22,7 +22,7 @@ related_ids:
 - check:screen:1002
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:5185
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-05183
 ---
 # 질문과 답변 — 국내 동향 화면의 투자자별 순매수가 KRX 기준으로만 나오는 것 같다며, NXT까지 포함한 통합 기준으로 볼 수 있기를 요청…

@@ -19,7 +19,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:516
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00514
 ---
 # 사용 절차 — CHECK 단말에서 메모장 실행과 그림 파일 열람이 되지 않는다고 문의했습니다.

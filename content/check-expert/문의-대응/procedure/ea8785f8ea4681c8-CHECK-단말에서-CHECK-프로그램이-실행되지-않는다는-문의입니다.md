@@ -19,7 +19,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:353
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00351
 ---
 # 사용 절차 — CHECK 단말에서 CHECK 프로그램이 실행되지 않는다는 문의입니다.

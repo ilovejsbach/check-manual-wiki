@@ -22,7 +22,7 @@ related_ids:
 - check:screen:4571
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:2815
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-02813
 ---
 # 사용 절차 — 장중 체결이 발생하면 체결 가격으로 기준가가 산정되는지, 특정 옵션 종목의 특정 일자 내재변동성이 기준가로 산출되는지 문의했…

@@ -22,7 +22,7 @@ related_ids:
 - check:screen:4319
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:5680
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-05678
 ---
 # 사용 절차 — 종합일중차트에서 시장 Basis가 비정상적으로 표시되며, 특정 수치의 시장 Basis 차트가 전일과 다르게 나타난다는 문의입니다.

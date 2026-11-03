@@ -903,7 +903,7 @@ def build_support_case(
             "related_ids": related_ids,
             "review_status": "candidate",
             "mapping_status": mapping_status,
-            "source_locator": evidence_locator,
+            "source_locator": "비식별 문의 사례",
             "candidate_id": candidate_id or case_hash,
         },
     )

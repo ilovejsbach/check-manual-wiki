@@ -22,7 +22,7 @@ related_ids:
 - check:enrichment:screen:3747
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:5050
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-05048
 ---
 # 질문과 답변 — 전단채 유동화의 민평금리를 확인할 수 있는 화면을 문의했으며, CD/CP는 3747 화면에서 확인하고 있다고 했습니다.

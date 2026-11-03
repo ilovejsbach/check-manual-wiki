@@ -28,7 +28,7 @@ related_ids:
 - check:tr:6465
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:3731
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-03729
 ---
 # 사용 절차 — 미국 상장 ETF 티커 EWY의 실시간 시세를 보려면 어떤 화면을 써야 하는지 문의했습니다.

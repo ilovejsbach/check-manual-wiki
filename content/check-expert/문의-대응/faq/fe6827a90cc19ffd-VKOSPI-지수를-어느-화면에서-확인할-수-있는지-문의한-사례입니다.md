@@ -25,7 +25,7 @@ related_ids:
 - check:screen:4031
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:6060
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-06058
 ---
 # 질문과 답변 — VKOSPI 지수를 어느 화면에서 확인할 수 있는지 문의한 사례입니다.

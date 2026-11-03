@@ -22,7 +22,7 @@ related_ids:
 - check:tr:5410
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:6080
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-06078
 ---
 # 질문과 답변 — 5722 화면과 또 다른 화면에서 보이는 매수호가/매도호가(BID/OFFER) 가격이 SPOT 가격인지 문의했습니다.

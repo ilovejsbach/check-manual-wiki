@@ -23,7 +23,7 @@ related_ids:
 - check:screen:4101
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:2708
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-02706
 ---
 # 사용 절차 — 체크 단말기 안에서 xlsm 파일이 작동하지 않는다고 문의했습니다.

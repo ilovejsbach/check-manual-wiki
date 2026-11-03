@@ -23,7 +23,7 @@ related_ids:
 - check:screen:3026
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:3232
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-03230
 ---
 # 사용 절차 — 당일 공모 발행으로 조회되는 DLB 특정 종목에 대해 공시 내용이 없어 공모인지 사모인지 확인해 달라는 요청입니다.

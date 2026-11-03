@@ -26,7 +26,7 @@ related_ids:
 - check:screen:4531
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:22
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00020
 ---
 # 사용 절차 — 특정 종목의 Intra매수호가1을 엑셀 CIS 함수로 확인한 값과 실시간 호가 화면 값이 서로 다르다고 문의했습니다.

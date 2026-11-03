@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:6450
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-06448
 ---
 # 사용 절차 — ETF 구성종목을 CLIST 함수로 조회하는데 과거일자를 넣으면 나오지 않는 이유를 문의했습니다.

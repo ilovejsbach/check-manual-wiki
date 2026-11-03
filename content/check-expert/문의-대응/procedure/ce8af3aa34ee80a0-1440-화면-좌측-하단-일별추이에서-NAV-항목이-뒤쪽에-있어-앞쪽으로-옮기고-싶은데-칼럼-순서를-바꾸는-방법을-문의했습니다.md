@@ -22,7 +22,7 @@ related_ids:
 - check:enrichment:screen:1440
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:852
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00850
 ---
 # 사용 절차 — 1440 화면 좌측 하단 일별추이에서 NAV 항목이 뒤쪽에 있어 앞쪽으로 옮기고 싶은데 칼럼 순서를 바꾸는 방법을 문의했습니다.

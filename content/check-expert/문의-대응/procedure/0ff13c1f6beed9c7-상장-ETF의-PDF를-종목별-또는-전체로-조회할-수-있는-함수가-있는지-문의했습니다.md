@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:1397
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-01395
 ---
 # 사용 절차 — 상장 ETF의 PDF를 종목별 또는 전체로 조회할 수 있는 함수가 있는지 문의했습니다.

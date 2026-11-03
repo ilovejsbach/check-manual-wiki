@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:736
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00734
 ---
 # 사용 절차 — m236/intra_date 데이터를 요청했는데 응답이 돌아오지 않아 확인을 요청했습니다.

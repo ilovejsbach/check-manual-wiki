@@ -21,7 +21,7 @@ related_ids:
 - check:enrichment:screen:3805
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:568
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00566
 ---
 # 오류 해결 — TR3805 화면에서 당일 기준 KIS 값이 입수되지 않는다고 문의했습니다.

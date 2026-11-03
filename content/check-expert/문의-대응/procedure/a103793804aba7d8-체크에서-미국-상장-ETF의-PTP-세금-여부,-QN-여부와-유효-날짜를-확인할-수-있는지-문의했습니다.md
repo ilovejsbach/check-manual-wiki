@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:6439
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-06437
 ---
 # 사용 절차 — 체크에서 미국 상장 ETF의 PTP 세금 여부, QN 여부와 유효 날짜를 확인할 수 있는지 문의했습니다.

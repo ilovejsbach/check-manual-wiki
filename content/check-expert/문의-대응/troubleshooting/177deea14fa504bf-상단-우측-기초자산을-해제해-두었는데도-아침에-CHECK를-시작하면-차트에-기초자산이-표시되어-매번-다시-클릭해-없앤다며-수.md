@@ -25,7 +25,7 @@ related_ids:
 - check:screen:4205
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:1257
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01255
 ---
 # 오류 해결 — 상단 우측 기초자산을 해제해 두었는데도 아침에 CHECK를 시작하면 차트에 기초자산이 표시되어 매번 다시 클릭해 없앤다며 수…

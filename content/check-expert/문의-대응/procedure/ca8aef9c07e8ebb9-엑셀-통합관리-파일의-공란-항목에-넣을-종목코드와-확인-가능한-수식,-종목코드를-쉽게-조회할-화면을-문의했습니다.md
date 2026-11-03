@@ -27,7 +27,7 @@ related_ids:
 - check:screen:3223
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:5175
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-05173
 ---
 # 사용 절차 — 엑셀 통합관리 파일의 공란 항목에 넣을 종목코드와 확인 가능한 수식, 종목코드를 쉽게 조회할 화면을 문의했습니다.

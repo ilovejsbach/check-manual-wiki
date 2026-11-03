@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:560
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00558
 ---
 # 사용 절차 — CHECK 단말을 모니터 상하 배치로 사용 중인데 좌우 배치로 변경할 수 있는지 문의했습니다.

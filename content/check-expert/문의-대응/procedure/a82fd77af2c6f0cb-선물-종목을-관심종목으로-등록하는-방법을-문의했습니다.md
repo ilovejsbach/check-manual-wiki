@@ -22,7 +22,7 @@ related_ids:
 - check:screen:4109
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:3641
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-03639
 ---
 # 사용 절차 — 선물 종목을 관심종목으로 등록하는 방법을 문의했습니다.

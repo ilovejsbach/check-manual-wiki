@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:1295
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01293
 ---
 # 사용 절차 — 특정 기관 채권의 해당 월 금리를 확정해 달라고 요청했습니다.

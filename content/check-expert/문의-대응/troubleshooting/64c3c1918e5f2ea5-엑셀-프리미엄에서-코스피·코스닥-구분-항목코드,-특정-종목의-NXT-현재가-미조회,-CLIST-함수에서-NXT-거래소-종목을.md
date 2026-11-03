@@ -24,7 +24,7 @@ related_ids:
 - check:excel:manual:함수-설명
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:43
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00041
 ---
 # 오류 해결 — 엑셀 프리미엄에서 코스피·코스닥 구분 항목코드, 특정 종목의 NXT 현재가 미조회, CLIST 함수에서 NXT 거래소 종목을…

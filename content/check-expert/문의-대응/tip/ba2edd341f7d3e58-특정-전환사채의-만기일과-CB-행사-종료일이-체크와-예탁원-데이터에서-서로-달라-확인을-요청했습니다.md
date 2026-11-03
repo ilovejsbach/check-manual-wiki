@@ -19,7 +19,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:903
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00901
 ---
 # 활용 팁 — 특정 전환사채의 만기일과 CB 행사 종료일이 체크와 예탁원 데이터에서 서로 달라 확인을 요청했습니다.

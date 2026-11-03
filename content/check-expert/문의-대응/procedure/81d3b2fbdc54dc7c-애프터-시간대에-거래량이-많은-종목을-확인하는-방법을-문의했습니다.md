@@ -21,7 +21,7 @@ related_ids:
 - check:enrichment:screen:1425
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:5311
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-05309
 ---
 # 사용 절차 — 애프터 시간대에 거래량이 많은 종목을 확인하는 방법을 문의했습니다.

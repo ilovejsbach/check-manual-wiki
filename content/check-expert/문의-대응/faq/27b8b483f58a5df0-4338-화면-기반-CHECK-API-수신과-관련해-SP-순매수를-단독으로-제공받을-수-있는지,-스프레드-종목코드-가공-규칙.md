@@ -22,7 +22,7 @@ related_ids:
 - check:enrichment:screen:4338
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:4416
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-04414
 ---
 # 질문과 답변 — 4338 화면 기반 CHECK API 수신과 관련해 SP 순매수를 단독으로 제공받을 수 있는지, 스프레드 종목코드 가공 규칙…

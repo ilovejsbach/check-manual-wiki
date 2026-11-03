@@ -23,7 +23,7 @@ related_ids:
 - check:screen:3743
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:4262
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-04260
 ---
 # 사용 절차 — 해당 화면의 데이터를 엑셀 프리미엄을 사용해 실시간으로 받을 수 있는 방법을 문의했습니다.

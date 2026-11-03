@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:1226
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-01224
 ---
 # 사용 절차 — /future/m091/intra_date API에서 jcode 입력에 특정 종목을 쓸 수 없는지 문의했습니다.

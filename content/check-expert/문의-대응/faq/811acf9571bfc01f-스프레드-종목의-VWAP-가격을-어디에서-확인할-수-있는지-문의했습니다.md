@@ -21,7 +21,7 @@ related_ids:
 - check:screen:4109
 review_status: candidate
 mapping_status: mapped
-source_locator: CRM데이터(PID복원)!row:1211
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-01209
 ---
 # 질문과 답변 — 스프레드 종목의 VWAP 가격을 어디에서 확인할 수 있는지 문의했습니다.

@@ -22,7 +22,7 @@ related_ids:
 - check:screen:3095
 review_status: candidate
 mapping_status: mapped
-source_locator: CRM데이터(PID복원)!row:1413
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-01411
 ---
 # 오류 해결 — 엑셀의 매크로 기능이 동작하지 않아 원인 확인을 요청한 문의입니다.

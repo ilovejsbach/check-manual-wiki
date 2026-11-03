@@ -21,7 +21,7 @@ related_ids:
 - check:screen:4502
 review_status: candidate
 mapping_status: mapped
-source_locator: CRM데이터(PID복원)!row:1263
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-01261
 ---
 # 질문과 답변 — 미니옵션 화면에서 KRX가 제공하는 델타 항목을 내려받을 수 있는지 문의했습니다.

@@ -21,7 +21,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:1432
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01430
 ---
 # 사용 절차 — PC 재부팅 후 CHECK 화면에 설정해 둔 종목이 사라져, 유지 방법과 화면닫기 버튼에 ESC 키를 설정하는 방법을 문의했…

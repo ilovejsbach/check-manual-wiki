@@ -22,7 +22,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:280
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00278
 ---
 # 오류 해결 — check api에서 basic_info_all은 1초 간격 연속 호출이 되는데, 복수 종목을 넣는 basic_info_al…

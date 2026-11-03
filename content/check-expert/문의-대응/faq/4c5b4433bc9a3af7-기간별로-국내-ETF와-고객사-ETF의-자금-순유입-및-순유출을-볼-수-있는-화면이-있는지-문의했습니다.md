@@ -21,7 +21,7 @@ related_ids:
 - check:enrichment:screen:6460
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:6049
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-06047
 ---
 # 질문과 답변 — 기간별로 국내 ETF와 고객사 ETF의 자금 순유입 및 순유출을 볼 수 있는 화면이 있는지 문의했습니다.

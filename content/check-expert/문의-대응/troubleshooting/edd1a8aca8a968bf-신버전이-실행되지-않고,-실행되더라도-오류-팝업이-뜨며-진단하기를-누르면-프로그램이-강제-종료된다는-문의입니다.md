@@ -24,7 +24,7 @@ related_ids:
 - check:screen:3774
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:2023
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-02021
 ---
 # 오류 해결 — 신버전이 실행되지 않고, 실행되더라도 오류 팝업이 뜨며 진단하기를 누르면 프로그램이 강제 종료된다는 문의입니다.

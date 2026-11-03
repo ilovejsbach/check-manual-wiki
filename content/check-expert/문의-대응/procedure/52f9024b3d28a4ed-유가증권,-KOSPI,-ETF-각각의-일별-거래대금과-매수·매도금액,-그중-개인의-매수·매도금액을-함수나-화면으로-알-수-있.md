@@ -25,7 +25,7 @@ related_ids:
 - check:tr:1948
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:309
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00307
 ---
 # 사용 절차 — 유가증권, KOSPI, ETF 각각의 일별 거래대금과 매수·매도금액, 그중 개인의 매수·매도금액을 함수나 화면으로 알 수 있…

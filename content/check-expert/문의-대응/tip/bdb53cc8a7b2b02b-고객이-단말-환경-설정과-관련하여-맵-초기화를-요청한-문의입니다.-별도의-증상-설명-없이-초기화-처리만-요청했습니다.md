@@ -19,7 +19,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:81
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00079
 ---
 # 활용 팁 — 고객이 단말 환경 설정과 관련하여 맵 초기화를 요청한 문의입니다. 별도의 증상 설명 없이 초기화 처리만 요청했습니다.

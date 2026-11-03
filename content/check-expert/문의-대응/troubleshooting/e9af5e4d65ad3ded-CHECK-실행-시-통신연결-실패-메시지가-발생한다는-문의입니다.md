@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:51
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00049
 ---
 # 오류 해결 — CHECK 실행 시 통신연결 실패 메시지가 발생한다는 문의입니다.

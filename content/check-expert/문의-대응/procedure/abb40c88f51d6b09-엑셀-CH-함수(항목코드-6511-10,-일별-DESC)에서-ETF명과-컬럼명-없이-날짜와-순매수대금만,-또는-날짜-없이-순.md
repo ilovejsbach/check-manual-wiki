@@ -24,7 +24,7 @@ related_ids:
 - check:tr:6511
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:988
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00986
 ---
 # 사용 절차 — 엑셀 CH 함수(항목코드 6511^10, 일별 DESC)에서 ETF명과 컬럼명 없이 날짜와 순매수대금만, 또는 날짜 없이 순…

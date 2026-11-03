@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:342
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00340
 ---
 # 오류 해결 — CT 함수에서 발생한 name 오류를 문의했으나 이후 유선 연결로 해결되었으며 별도 답변은 필요 없다는 내용입니다.

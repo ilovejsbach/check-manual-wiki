@@ -21,7 +21,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:56
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00054
 ---
 # 사용 절차 — CHECK API Basic에서 다른 상품으로 변경하고 특정 월부터 변경 금액이 청구될 예정이라, 해당 금액이 적용된 견적서…

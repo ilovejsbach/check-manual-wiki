@@ -21,7 +21,7 @@ related_ids:
 - check:screen:4315
 review_status: candidate
 mapping_status: mapped
-source_locator: CRM데이터(PID복원)!row:1445
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-01443
 ---
 # 질문과 답변 — =CTD("SPT","<값>*224","1BD","<값>") 함수의 결과값이 나오지 않는 이유를 문의했습니다.

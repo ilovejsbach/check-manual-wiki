@@ -27,7 +27,7 @@ related_ids:
 - check:screen:4235
 review_status: candidate
 mapping_status: mapped
-source_locator: CRM데이터(PID복원)!row:888
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00886
 ---
 # 질문과 답변 — API를 구독해 사용 중인데 특정 화면의 데이터는 API 문서에 받아올 명령어가 없어, 해당 화면 데이터를 API로 받을 수…

@@ -24,7 +24,7 @@ related_ids:
 - check:tr:3123
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:5380
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-05378
 ---
 # 사용 절차 — 캐피탈 금융채 발행리스트를 조회할 수 있는 화면이 있는지 묻는 문의입니다.

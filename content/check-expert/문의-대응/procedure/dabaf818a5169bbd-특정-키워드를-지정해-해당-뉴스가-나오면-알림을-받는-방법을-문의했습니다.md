@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:4725
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-04723
 ---
 # 사용 절차 — 특정 키워드를 지정해 해당 뉴스가 나오면 알림을 받는 방법을 문의했습니다.

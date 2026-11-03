@@ -21,7 +21,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:822
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00820
 ---
 # 사용 절차 — PC 부팅 시 자동 로그인되는데 윈도우 로그인 암호를 설정하려 하니 CHECK의 현재 암호를 요구해, 그 암호가 무엇인지 문…

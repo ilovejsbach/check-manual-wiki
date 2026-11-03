@@ -21,7 +21,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:402
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00400
 ---
 # 오류 해결 — API 사용을 신청하려고 한다는 문의입니다.

@@ -31,7 +31,7 @@ related_ids:
 - check:screen:4503
 review_status: candidate
 mapping_status: mapped
-source_locator: CRM데이터(PID복원)!row:252
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00250
 ---
 # 사용 절차 — K200 위클리옵션을 따로 보는 방법과, 만기 대비 옵션 감마 합계를 XL이나 Check Expert에서 모니터링할 방법을…

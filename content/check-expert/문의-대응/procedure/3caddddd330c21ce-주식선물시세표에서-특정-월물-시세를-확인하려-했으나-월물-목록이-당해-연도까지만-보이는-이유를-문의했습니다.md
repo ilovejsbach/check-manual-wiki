@@ -22,7 +22,7 @@ related_ids:
 - check:screen:4114
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:1061
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01059
 ---
 # 사용 절차 — 주식선물시세표에서 특정 월물 시세를 확인하려 했으나 월물 목록이 당해 연도까지만 보이는 이유를 문의했습니다.

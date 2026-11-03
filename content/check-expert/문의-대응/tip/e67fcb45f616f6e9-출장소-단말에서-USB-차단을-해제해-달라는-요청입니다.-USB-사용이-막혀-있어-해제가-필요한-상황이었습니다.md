@@ -19,7 +19,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:1165
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01163
 ---
 # 활용 팁 — 출장소 단말에서 USB 차단을 해제해 달라는 요청입니다. USB 사용이 막혀 있어 해제가 필요한 상황이었습니다.

@@ -23,7 +23,7 @@ related_ids:
 - check:screen:1379
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:2647
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-02645
 ---
 # 사용 절차 — 재택근무를 위해 노트북 PC에서 CHECK에 접속할 수 있도록 처리해 달라고 요청했습니다.

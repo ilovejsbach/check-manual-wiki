@@ -19,7 +19,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:751
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00749
 ---
 # 질문과 답변 — ETF 분배금 현황 화면의 데이터를 API로 받을 수 있도록 인터페이스를 만들어 달라고 요청했습니다.

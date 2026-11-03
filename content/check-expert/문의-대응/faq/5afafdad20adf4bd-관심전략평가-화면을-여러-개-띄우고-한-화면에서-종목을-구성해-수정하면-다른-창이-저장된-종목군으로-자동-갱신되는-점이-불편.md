@@ -22,7 +22,7 @@ related_ids:
 - check:enrichment:screen:4754
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:1718
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01716
 ---
 # 질문과 답변 — 관심전략평가 화면을 여러 개 띄우고 한 화면에서 종목을 구성해 수정하면 다른 창이 저장된 종목군으로 자동 갱신되는 점이 불편…

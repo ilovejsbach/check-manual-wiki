@@ -23,7 +23,7 @@ related_ids:
 - check:tr:1550
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:4202
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-04200
 ---
 # 질문과 답변 — 넥스트트레이드의 특정 종목을 볼 수 있는 국내주식 시세판과 시간외 국내주식 실시간 시세판이 어느 화면인지 문의했습니다.

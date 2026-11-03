@@ -23,7 +23,7 @@ related_ids:
 - check:screen:3026
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:3669
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-03667
 ---
 # 사용 절차 — 특정 공모 종목의 발행일이 CHECK에서는 당일로 조회되는데, 공시에서 확인되는 증권신고서상 발행일은 다음 날로 나온다며 확…

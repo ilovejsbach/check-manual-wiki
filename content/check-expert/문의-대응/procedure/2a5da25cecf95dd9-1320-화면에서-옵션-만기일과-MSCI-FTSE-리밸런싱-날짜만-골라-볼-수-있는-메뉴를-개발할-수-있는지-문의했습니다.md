@@ -23,7 +23,7 @@ related_ids:
 - check:tr:1320
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:3653
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-03651
 ---
 # 사용 절차 — 1320 화면에서 옵션 만기일과 MSCI/FTSE 리밸런싱 날짜만 골라 볼 수 있는 메뉴를 개발할 수 있는지 문의했습니다.

@@ -19,7 +19,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:693
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00691
 ---
 # 질문과 답변 — CHECK API에서 주식 종목 시세가 전일처럼 지연되는 것 같다며, 고객사의 전일 문제가 해결된 것인지 확인을 요청했습니다.

@@ -22,7 +22,7 @@ related_ids:
 - check:enrichment:screen:3704
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:5252
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-05250
 ---
 # 사용 절차 — 장외주식 종목을 조회하는 화면을 문의했고, 이후 특정 종목이 조회되지 않는다고 다시 문의했습니다.

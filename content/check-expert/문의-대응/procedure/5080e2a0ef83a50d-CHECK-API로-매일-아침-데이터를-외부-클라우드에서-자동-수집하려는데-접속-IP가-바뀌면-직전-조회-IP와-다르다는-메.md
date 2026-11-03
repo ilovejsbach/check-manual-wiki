@@ -21,7 +21,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:517
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00515
 ---
 # 사용 절차 — CHECK API로 매일 아침 데이터를 외부 클라우드에서 자동 수집하려는데 접속 IP가 바뀌면 직전 조회 IP와 다르다는 메…

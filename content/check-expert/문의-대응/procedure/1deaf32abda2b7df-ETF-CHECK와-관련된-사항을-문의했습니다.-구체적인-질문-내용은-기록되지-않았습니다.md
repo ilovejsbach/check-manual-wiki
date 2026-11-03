@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:6469
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-06467
 ---
 # 사용 절차 — ETF CHECK와 관련된 사항을 문의했습니다. 구체적인 질문 내용은 기록되지 않았습니다.

@@ -19,7 +19,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:61
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00059
 ---
 # 주의사항 — CHECK 단말에 접속이 되지 않는다는 문의가 접수되었습니다.

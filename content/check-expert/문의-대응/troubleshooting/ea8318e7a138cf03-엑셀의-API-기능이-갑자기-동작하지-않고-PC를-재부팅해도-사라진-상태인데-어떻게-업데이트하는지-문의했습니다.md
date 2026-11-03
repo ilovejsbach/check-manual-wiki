@@ -22,7 +22,7 @@ related_ids:
 - check:excel:manual:메뉴와-템플릿
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:934
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00932
 ---
 # 오류 해결 — 엑셀의 API 기능이 갑자기 동작하지 않고 PC를 재부팅해도 사라진 상태인데 어떻게 업데이트하는지 문의했습니다.

@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:72
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00070
 ---
 # 오류 해결 — 사용 중인 PC 본체에서 운영체제 오류가 발생했다는 문의입니다.

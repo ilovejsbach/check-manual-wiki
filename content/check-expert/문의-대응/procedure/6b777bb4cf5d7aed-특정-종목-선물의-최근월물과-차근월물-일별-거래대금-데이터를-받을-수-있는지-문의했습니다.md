@@ -22,7 +22,7 @@ related_ids:
 - check:enrichment:screen:4114
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:4206
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-04204
 ---
 # 사용 절차 — 특정 종목 선물의 최근월물과 차근월물 일별 거래대금 데이터를 받을 수 있는지 문의했습니다.

@@ -22,7 +22,7 @@ related_ids:
 - check:tr:1185
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:4254
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-04252
 ---
 # 질문과 답변 — KOSPI 또는 특정 종목의 일중 변동성을 퍼센트로 파악할 수 있는 화면이 있는지 문의했습니다.

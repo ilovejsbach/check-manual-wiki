@@ -21,7 +21,7 @@ related_ids:
 - check:tr:1947
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:6498
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-06496
 ---
 # 사용 절차 — 1947 화면의 ETF 국내 구분에 코스피 종목만 포함되는지, 코스닥 종목도 포함되는지 문의했습니다.

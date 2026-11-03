@@ -21,7 +21,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:468
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00466
 ---
 # 사용 절차 — check API 트라이얼을 신청하고 싶다고 요청했습니다.

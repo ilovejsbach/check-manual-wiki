@@ -25,7 +25,7 @@ related_ids:
 - check:screen:3741
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:2415
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-02413
 ---
 # 오류 해결 — 엑셀 파일을 열면 값이 자동으로 채워질 것으로 기대했으나 가져오지 못해, Expert에서 우클릭으로 엑셀 전송을 해야만 하는…

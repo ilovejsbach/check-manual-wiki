@@ -21,7 +21,7 @@ related_ids:
 - check:screen:3000
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:2309
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-02307
 ---
 # 질문과 답변 — 특정 종목의 가산금리가 변한 것으로 보여 국고채 스왑 조기상환 때문인지 확인을 요청했습니다.

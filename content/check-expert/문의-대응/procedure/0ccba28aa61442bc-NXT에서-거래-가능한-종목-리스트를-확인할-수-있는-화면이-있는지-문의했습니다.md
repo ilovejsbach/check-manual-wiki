@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:798
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00796
 ---
 # 사용 절차 — NXT에서 거래 가능한 종목 리스트를 확인할 수 있는 화면이 있는지 문의했습니다.

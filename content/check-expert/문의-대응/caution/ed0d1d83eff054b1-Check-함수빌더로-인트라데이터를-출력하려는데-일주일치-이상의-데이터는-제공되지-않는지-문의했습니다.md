@@ -19,7 +19,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:832
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00830
 ---
 # 주의사항 — Check 함수빌더로 인트라데이터를 출력하려는데 일주일치 이상의 데이터는 제공되지 않는지 문의했습니다.

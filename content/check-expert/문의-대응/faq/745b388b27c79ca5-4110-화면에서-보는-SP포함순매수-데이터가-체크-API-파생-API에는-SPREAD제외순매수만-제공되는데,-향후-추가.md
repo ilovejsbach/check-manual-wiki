@@ -22,7 +22,7 @@ related_ids:
 - check:enrichment:screen:4110
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:4215
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-04213
 ---
 # 질문과 답변 — 4110 화면에서 보는 "SP포함순매수" 데이터가 체크 API 파생 API에는 SPREAD제외순매수만 제공되는데, 향후 추가…

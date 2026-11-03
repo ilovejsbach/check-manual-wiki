@@ -22,7 +22,7 @@ related_ids:
 - check:screen:1440
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:2499
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-02497
 ---
 # 사용 절차 — 체크에서 엑셀 프리미엄을 내려받아 엑셀에 RTD, CT 같은 체크 데이터 함수를 연동하려는데 방법을 문의했습니다.

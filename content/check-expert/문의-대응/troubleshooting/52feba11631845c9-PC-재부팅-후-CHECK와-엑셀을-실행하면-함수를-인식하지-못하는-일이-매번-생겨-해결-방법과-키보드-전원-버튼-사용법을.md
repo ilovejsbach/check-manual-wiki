@@ -23,7 +23,7 @@ related_ids:
 - check:excel:manual:메뉴와-템플릿
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:838
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00836
 ---
 # 오류 해결 — PC 재부팅 후 CHECK와 엑셀을 실행하면 함수를 인식하지 못하는 일이 매번 생겨 해결 방법과 키보드 전원 버튼 사용법을…

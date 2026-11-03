@@ -19,7 +19,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:840
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00838
 ---
 # 질문과 답변 — CHECK API에서 현물과 선물의 시세와 호가 데이터를 스트리밍 형태로 받을 수 있는지 문의했습니다.

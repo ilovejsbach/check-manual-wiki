@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:35
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00033
 ---
 # 오류 해결 — PC를 교체하면서 맥 초기화를 요청했으나 PID가 확인되지 않는 상황이었습니다.

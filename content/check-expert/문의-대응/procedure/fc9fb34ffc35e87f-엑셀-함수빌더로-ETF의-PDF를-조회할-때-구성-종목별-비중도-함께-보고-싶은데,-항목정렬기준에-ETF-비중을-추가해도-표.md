@@ -23,7 +23,7 @@ related_ids:
 - check:enrichment:screen:1448
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:1837
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01835
 ---
 # 사용 절차 — 엑셀 함수빌더로 ETF의 PDF를 조회할 때 구성 종목별 비중도 함께 보고 싶은데, 항목정렬기준에 ETF 비중을 추가해도 표…

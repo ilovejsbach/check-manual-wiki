@@ -23,7 +23,7 @@ related_ids:
 - check:enrichment:screen:4212
 review_status: candidate
 mapping_status: mapped
-source_locator: CRM데이터(PID복원)!row:909
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00907
 ---
 # 사용 절차 — CHECK 엑셀에서 선물 기준 투자자 동향을 시계열로 받을 수 있는 데이터가 있는지 문의했습니다. 금융투자순매수금액_2, 투…

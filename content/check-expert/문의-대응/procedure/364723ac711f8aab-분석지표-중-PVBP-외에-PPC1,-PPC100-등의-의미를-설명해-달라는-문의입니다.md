@@ -23,7 +23,7 @@ related_ids:
 - check:tr:3436
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:1081
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01079
 ---
 # 사용 절차 — 분석지표 중 PVBP 외에 PPC1, PPC100 등의 의미를 설명해 달라는 문의입니다.

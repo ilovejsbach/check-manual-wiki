@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:949
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00947
 ---
 # 질문과 답변 — =RTD("<값>.rtd",,"<값>","S306") 함수로 레버리지 지수의 배당률을 조회 중인데, 해당 항목에 대응하는 C…

@@ -20,7 +20,7 @@ related_ids:
 - check:tr:6346
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:4791
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-04789
 ---
 # 질문과 답변 — 유가(원유) 현물을 실시간으로 볼 수 있는 화면이 있는지 문의했습니다.

@@ -21,7 +21,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:124
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00122
 ---
 # 사용 절차 — CHECK API의 옵션 기본정보(복수종목) 조회 시, 기본정보와 달리 복수종목 요청에서 "Error while <값> Qu…

@@ -21,7 +21,7 @@ related_ids:
 - check:tr:2601
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:4834
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-04832
 ---
 # 사용 절차 — MMF와 CMA의 잔고 추이를 볼 수 있는 화면과 해당 데이터의 출처가 어디인지 문의했습니다.

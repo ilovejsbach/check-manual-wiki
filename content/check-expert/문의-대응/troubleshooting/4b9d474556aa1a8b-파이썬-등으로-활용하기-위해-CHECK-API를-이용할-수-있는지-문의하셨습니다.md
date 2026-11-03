@@ -22,7 +22,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:380
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00378
 ---
 # 오류 해결 — 파이썬 등으로 활용하기 위해 CHECK API를 이용할 수 있는지 문의하셨습니다.

@@ -21,7 +21,7 @@ related_ids:
 - check:enrichment:screen:8112
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:1206
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01204
 ---
 # 질문과 답변 — KTB10선물 연속월물 종목이 리프레시되지 않는다고 문의했습니다.

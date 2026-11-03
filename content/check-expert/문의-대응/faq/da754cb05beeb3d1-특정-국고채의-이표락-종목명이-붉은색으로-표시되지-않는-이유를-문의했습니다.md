@@ -21,7 +21,7 @@ related_ids:
 - check:enrichment:screen:3029
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:6451
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-06449
 ---
 # 질문과 답변 — 특정 국고채의 이표락 종목명이 붉은색으로 표시되지 않는 이유를 문의했습니다.

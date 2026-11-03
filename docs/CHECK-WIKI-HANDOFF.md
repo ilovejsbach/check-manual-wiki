@@ -163,4 +163,4 @@ uv run python scripts/derive_case_links.py --knowledge knowledge/check-expert/kn
 - 규칙을 시범 30건 결과를 본 뒤 조정했다(복사 기준 25→40자 등). 이 통과율을 독립 품질 지표로 쓰지 말 것.
 - 파일명(제목)이 요약문에서 나오므로 사례 파일이 모두 이름이 바뀌었다.
 - 영향: 사례→화면 엣지 973→971건, TR 연결 사례 1,032→1,045건. TR 후보는 172→170개(요약에서 사라진 18개가 빠지고 번호만 쓰였던 16개가 명시됨). 함수 노드 CRS는 요약에서 함수로 언급되지 않아 없어졌다(10→9).
-- 남은 노출: 원문은 `sources/check-expert/manual-enrichment*.jsonl`과 git 이력에 그대로 있다. 사례 페이지의 "증거 위치" 줄은 제거했지만 frontmatter·지식 레코드의 `source_locator`는 원본 행 번호를 아직 담고 있다. 이 변경은 위키 페이지와 지식 레코드만 정리한다.
+- 남은 노출: 원문은 `sources/check-expert/manual-enrichment*.jsonl`과 git 이력에 그대로 있다. 사례 페이지의 "증거 위치" 줄과 사례의 `source_locator`(원본 행 번호)는 제거했다(사례의 `source_locator`는 "비식별 문의 사례" 고정값; 매뉴얼·화면의 PDF 쪽수 위치는 유지). 이 변경은 위키 페이지와 지식 레코드만 정리한다.

@@ -22,7 +22,7 @@ related_ids:
 - check:excel:manual:Ez-차트
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:1314
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01312
 ---
 # 사용 절차 — 사내 PC 두 대에서 한 대는 CHECK 엑셀 연동, 다른 한 대는 CHECK Expert 차트 모니터링용으로 함께 사용할…

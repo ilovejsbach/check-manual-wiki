@@ -26,7 +26,7 @@ related_ids:
 - check:screen:4311
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:4518
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-04516
 ---
 # 주의사항 — 고객사 담당자가 개별주식선물 베이시스의 과거 추이를 확인할 차트를 찾는다며 문의했습니다.

@@ -19,7 +19,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:481
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00479
 ---
 # 활용 팁 — 체크 단말을 교체한 뒤 프린터 연결이 되어 있지 않아 연결을 요청했습니다.

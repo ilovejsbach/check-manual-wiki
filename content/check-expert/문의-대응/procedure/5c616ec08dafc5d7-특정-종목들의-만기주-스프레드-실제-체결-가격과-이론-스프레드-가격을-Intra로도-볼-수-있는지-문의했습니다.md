@@ -26,7 +26,7 @@ related_ids:
 - check:screen:4189
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:5824
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-05822
 ---
 # 사용 절차 — 특정 종목들의 만기주 스프레드 실제 체결 가격과 이론 스프레드 가격을 Intra로도 볼 수 있는지 문의했습니다.

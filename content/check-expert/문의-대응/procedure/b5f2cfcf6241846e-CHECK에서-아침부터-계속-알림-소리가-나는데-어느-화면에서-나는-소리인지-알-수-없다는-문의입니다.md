@@ -22,7 +22,7 @@ related_ids:
 - check:enrichment:screen:1339
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:5230
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-05228
 ---
 # 사용 절차 — CHECK에서 아침부터 계속 알림 소리가 나는데 어느 화면에서 나는 소리인지 알 수 없다는 문의입니다.

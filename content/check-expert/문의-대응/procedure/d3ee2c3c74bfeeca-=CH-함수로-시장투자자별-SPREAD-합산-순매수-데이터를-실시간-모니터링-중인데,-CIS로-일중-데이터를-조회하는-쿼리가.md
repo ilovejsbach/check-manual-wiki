@@ -24,7 +24,7 @@ related_ids:
 - check:tr:8125
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:2255
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-02253
 ---
 # 사용 절차 — =CH 함수로 시장투자자별 SPREAD 합산 순매수 데이터를 실시간 모니터링 중인데, CIS로 일중 데이터를 조회하는 쿼리가…

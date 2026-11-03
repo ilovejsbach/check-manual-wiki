@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:724
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00722
 ---
 # 주의사항 — PC를 교체한 뒤 집에서 쓰던 CHECK 접속이 되지 않아, 고객번호만 바꾸면 동일하게 접속할 수 있는지 문의했습니다.

@@ -21,7 +21,7 @@ related_ids:
 - check:screen:7000
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:1271
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01269
 ---
 # 오류 해결 — 홍보관에 설치된 CHECK 단말이 켜지지 않는다는 문의입니다.

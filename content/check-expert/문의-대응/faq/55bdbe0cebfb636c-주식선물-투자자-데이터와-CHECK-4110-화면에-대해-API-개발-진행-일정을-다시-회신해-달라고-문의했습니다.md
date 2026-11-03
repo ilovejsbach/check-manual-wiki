@@ -21,7 +21,7 @@ related_ids:
 - check:enrichment:screen:4110
 review_status: candidate
 mapping_status: mapped
-source_locator: CRM데이터(PID복원)!row:939
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00937
 ---
 # 질문과 답변 — 주식선물 투자자 데이터와 CHECK 4110 화면에 대해 API 개발 진행 일정을 다시 회신해 달라고 문의했습니다.

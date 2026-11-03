@@ -21,7 +21,7 @@ related_ids:
 - check:tr:3983
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:830
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00828
 ---
 # 질문과 답변 — IRS, CRS, 스왑베이시스를 시계열로 보고 싶은데 SOFR CRS는 거래 시작 이전 구간 베이시스가 부정확해, 다른 기준…

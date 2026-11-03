@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:740
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00738
 ---
 # 사용 절차 — =CTD("SPT",...) 함수를 쓰면 위아래로 컬럼이 추가되어, 여러 종목의 종가와 거래량을 값만 받아오는 방법이 있는지…

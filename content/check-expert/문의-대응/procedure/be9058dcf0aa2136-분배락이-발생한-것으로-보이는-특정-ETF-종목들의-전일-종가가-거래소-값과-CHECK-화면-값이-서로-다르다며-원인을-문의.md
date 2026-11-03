@@ -23,7 +23,7 @@ related_ids:
 - check:screen:1440
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:1272
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01270
 ---
 # 사용 절차 — 분배락이 발생한 것으로 보이는 특정 ETF 종목들의 전일 종가가 거래소 값과 CHECK 화면 값이 서로 다르다며 원인을 문의…

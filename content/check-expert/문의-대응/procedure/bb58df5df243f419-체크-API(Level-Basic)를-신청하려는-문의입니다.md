@@ -22,7 +22,7 @@ related_ids:
 - check:tr:9032
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:143
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00141
 ---
 # 사용 절차 — 체크 API(Level Basic)를 신청하려는 문의입니다.

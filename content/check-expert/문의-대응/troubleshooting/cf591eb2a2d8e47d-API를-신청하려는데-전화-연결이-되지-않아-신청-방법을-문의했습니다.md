@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:307
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00305
 ---
 # 오류 해결 — API를 신청하려는데 전화 연결이 되지 않아 신청 방법을 문의했습니다.

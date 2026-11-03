@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:690
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00688
 ---
 # 사용 절차 — CHECK 사용자가 아닌 문의자가 NXT와 KRX 호가를 따로 볼 수 있는 화면이 있는지, 과거 1년치 체결 데이터를 받을…

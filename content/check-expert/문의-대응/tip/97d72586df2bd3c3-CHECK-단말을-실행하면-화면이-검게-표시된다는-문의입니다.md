@@ -21,7 +21,7 @@ related_ids:
 - check:screen:7000
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:4653
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-04651
 ---
 # 활용 팁 — CHECK 단말을 실행하면 화면이 검게 표시된다는 문의입니다.

@@ -22,7 +22,7 @@ related_ids:
 - check:tr:1335
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:1361
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01359
 ---
 # 오류 해결 — 1335 화면의 비중이 유동시총 기준 비중인지 문의했습니다.

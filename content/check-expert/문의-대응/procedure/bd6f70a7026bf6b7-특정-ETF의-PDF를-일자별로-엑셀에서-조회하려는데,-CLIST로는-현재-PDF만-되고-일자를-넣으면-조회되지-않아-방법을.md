@@ -22,7 +22,7 @@ related_ids:
 - check:enrichment:screen:1448
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:1324
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01322
 ---
 # 사용 절차 — 특정 ETF의 PDF를 일자별로 엑셀에서 조회하려는데, CLIST로는 현재 PDF만 되고 일자를 넣으면 조회되지 않아 방법을…

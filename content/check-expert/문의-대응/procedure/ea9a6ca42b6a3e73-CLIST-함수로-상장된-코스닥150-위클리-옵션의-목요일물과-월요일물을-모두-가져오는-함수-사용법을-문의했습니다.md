@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:1337
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-01335
 ---
 # 사용 절차 — CLIST 함수로 상장된 코스닥150 위클리 옵션의 목요일물과 월요일물을 모두 가져오는 함수 사용법을 문의했습니다.

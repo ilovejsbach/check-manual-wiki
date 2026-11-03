@@ -24,7 +24,7 @@ related_ids:
 - check:enrichment:screen:3744
 review_status: candidate
 mapping_status: mapped
-source_locator: CRM데이터(PID복원)!row:958
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00956
 ---
 # 사용 절차 — CP와 CD의 YTM 및 듀레이션을 엑셀 프리미엄에서도 볼 수 있게 추가하는 방법을 문의했습니다.

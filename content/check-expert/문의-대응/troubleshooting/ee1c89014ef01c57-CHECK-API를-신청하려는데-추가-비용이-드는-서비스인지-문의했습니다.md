@@ -22,7 +22,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:473
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00471
 ---
 # 오류 해결 — CHECK API를 신청하려는데 추가 비용이 드는 서비스인지 문의했습니다.

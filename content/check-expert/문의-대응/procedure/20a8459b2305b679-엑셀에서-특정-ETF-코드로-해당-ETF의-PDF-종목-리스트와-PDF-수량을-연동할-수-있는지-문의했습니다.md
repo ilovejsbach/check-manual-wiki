@@ -26,7 +26,7 @@ related_ids:
 - check:excel:manual:메뉴와-템플릿
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:1035
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01033
 ---
 # 사용 절차 — 엑셀에서 특정 ETF 코드로 해당 ETF의 PDF 종목 리스트와 PDF 수량을 연동할 수 있는지 문의했습니다.

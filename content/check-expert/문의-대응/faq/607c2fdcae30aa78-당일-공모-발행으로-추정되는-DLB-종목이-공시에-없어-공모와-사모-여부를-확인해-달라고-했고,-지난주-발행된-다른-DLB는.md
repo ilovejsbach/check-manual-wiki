@@ -21,7 +21,7 @@ related_ids:
 - check:screen:3026
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:4440
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-04438
 ---
 # 질문과 답변 — 당일 공모 발행으로 추정되는 DLB 종목이 공시에 없어 공모와 사모 여부를 확인해 달라고 했고, 지난주 발행된 다른 DLB는…

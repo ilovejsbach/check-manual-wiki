@@ -23,7 +23,7 @@ related_ids:
 - check:tr:3006
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:1114
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01112
 ---
 # 사용 절차 — 최근 시중은행이 발행한 KOFR 연동 변동금리채권 내역을 볼 수 있는 화면이 있는지 문의했습니다.

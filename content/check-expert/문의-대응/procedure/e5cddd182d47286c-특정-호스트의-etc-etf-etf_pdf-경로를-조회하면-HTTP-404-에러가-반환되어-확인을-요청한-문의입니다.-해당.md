@@ -21,7 +21,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:476
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00474
 ---
 # 사용 절차 — 특정 호스트의 /etc/etf/etf_pdf 경로를 조회하면 HTTP 404 에러가 반환되어 확인을 요청한 문의입니다. 해당…

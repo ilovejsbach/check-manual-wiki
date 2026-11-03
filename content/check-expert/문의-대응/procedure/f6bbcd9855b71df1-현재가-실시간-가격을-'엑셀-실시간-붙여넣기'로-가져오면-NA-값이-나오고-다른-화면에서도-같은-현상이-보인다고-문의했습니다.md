@@ -22,7 +22,7 @@ related_ids:
 - check:screen:4102
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:3495
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-03493
 ---
 # 사용 절차 — 현재가 실시간 가격을 '엑셀 실시간 붙여넣기'로 가져오면 NA 값이 나오고 다른 화면에서도 같은 현상이 보인다고 문의했습니다.

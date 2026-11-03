@@ -21,7 +21,7 @@ related_ids:
 - check:tr:1852
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:775
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00773
 ---
 # 사용 절차 — 1851과 1852 화면에서 시장분류 드롭박스의 목록명이 나오지 않고, 즐겨찾기바의 화면 등록 순서가 CHECK 재접속 시…

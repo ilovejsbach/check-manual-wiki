@@ -19,7 +19,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:715
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00713
 ---
 # 질문과 답변 — 현재 상장된 국내 주식선물 리스트와 연결 선물 종목코드를 함수 리프레시 때마다 가져올 수 있는 CHECK 함수를 문의했습니다.

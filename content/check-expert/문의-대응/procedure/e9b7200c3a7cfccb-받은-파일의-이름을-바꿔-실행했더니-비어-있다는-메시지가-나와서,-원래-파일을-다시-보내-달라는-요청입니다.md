@@ -22,7 +22,7 @@ related_ids:
 - check:screen:3931
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:2745
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-02743
 ---
 # 사용 절차 — 받은 파일의 이름을 바꿔 실행했더니 비어 있다는 메시지가 나와서, 원래 파일을 다시 보내 달라는 요청입니다.

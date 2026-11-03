@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:807
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00805
 ---
 # 질문과 답변 — 주식 API의 투자자 정보(복수종목) 항목(/stock/m224/invest_info_port)을 전일 저녁에 받으면 KRX…

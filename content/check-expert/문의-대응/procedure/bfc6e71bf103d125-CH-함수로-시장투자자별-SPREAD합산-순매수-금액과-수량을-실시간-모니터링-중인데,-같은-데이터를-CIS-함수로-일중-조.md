@@ -25,7 +25,7 @@ related_ids:
 - check:tr:8125
 review_status: candidate
 mapping_status: mapped
-source_locator: CRM데이터(PID복원)!row:316
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00314
 ---
 # 사용 절차 — CH 함수로 시장투자자별 SPREAD합산 순매수 금액과 수량을 실시간 모니터링 중인데, 같은 데이터를 CIS 함수로 일중 조…

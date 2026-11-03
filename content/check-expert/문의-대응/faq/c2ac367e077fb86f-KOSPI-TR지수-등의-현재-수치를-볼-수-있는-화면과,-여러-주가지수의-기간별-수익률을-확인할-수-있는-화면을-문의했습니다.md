@@ -21,7 +21,7 @@ related_ids:
 - check:enrichment:screen:1103
 review_status: candidate
 mapping_status: mapped
-source_locator: CRM데이터(PID복원)!row:816
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00814
 ---
 # 질문과 답변 — KOSPI TR지수 등의 현재 수치를 볼 수 있는 화면과, 여러 주가지수의 기간별 수익률을 확인할 수 있는 화면을 문의했습니다.

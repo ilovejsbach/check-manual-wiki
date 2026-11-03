@@ -24,7 +24,7 @@ related_ids:
 - check:tr:2551
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:5058
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-05056
 ---
 # 사용 절차 — 과거 특정 기간의 신용등급별 민평금리 변동과 CD, 콜금리 변동 내역을 조회할 수 있는 단말 화면이 있는지 문의했습니다.

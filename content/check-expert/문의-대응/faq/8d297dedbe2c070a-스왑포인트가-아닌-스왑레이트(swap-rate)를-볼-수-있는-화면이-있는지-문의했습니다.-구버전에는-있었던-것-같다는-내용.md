@@ -22,7 +22,7 @@ related_ids:
 - check:screen:5201
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:5442
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-05440
 ---
 # 질문과 답변 — 스왑포인트가 아닌 스왑레이트(swap rate)를 볼 수 있는 화면이 있는지 문의했습니다. 구버전에는 있었던 것 같다는 내용…

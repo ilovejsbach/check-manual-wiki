@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:1667
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01665
 ---
 # 사용 절차 — 사용자가 바뀌어 CHECK를 처음 쓰게 되어 사용 및 설정 방법을 문의했습니다.

@@ -23,7 +23,7 @@ related_ids:
 - check:screen:3430
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:1501
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01499
 ---
 # 오류 해결 — 엑셀 프리미엄 보내기를 실행하면 오류가 표시된다는 문의입니다.

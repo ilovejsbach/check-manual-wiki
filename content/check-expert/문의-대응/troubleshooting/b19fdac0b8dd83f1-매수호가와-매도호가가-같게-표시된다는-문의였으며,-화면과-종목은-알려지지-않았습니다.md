@@ -24,7 +24,7 @@ related_ids:
 - check:enrichment:screen:1300
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:816
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00814
 ---
 # 오류 해결 — 매수호가와 매도호가가 같게 표시된다는 문의였으며, 화면과 종목은 알려지지 않았습니다.

@@ -21,7 +21,7 @@ related_ids:
 - check:screen:7000
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:544
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00542
 ---
 # 활용 팁 — VDI 환경에서 CHECK 접속이 되지 않는다는 문의가 접수되었습니다.

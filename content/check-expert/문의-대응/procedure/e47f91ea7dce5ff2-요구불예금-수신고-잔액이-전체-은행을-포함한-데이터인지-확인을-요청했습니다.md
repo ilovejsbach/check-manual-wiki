@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:510
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00508
 ---
 # 사용 절차 — 요구불예금 수신고 잔액이 전체 은행을 포함한 데이터인지 확인을 요청했습니다.

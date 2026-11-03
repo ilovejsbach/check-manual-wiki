@@ -19,7 +19,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:112
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00110
 ---
 # 사용 절차 — 체크 단말을 교체한 뒤 로그인창이 공란으로 나와 PID를 확인해 달라는 요청이었습니다.

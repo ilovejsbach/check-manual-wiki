@@ -19,7 +19,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:817
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00815
 ---
 # 질문과 답변 — 이전에 문의한 Intra투자자별SP순매수량누적추정치와 시장투자자별SPREAD순매수금액(기관계, 외국인, 개인 등) 데이터를…

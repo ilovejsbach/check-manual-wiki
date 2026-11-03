@@ -20,7 +20,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: 20260916!row:800
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00798
 ---
 # 사용 절차 — 연휴 중 집에서 체크를 실행했더니 아이디는 맞게 들어가 있으나 비밀번호 칸이 활성화되지 않고 자동 로그인되어 비밀번호 오류만…

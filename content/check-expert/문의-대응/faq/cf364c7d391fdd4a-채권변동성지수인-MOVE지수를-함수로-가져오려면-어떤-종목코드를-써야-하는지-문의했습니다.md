@@ -19,7 +19,7 @@ case_topics:
 related_ids: []
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:828
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00826
 ---
 # 질문과 답변 — 채권변동성지수인 MOVE지수를 함수로 가져오려면 어떤 종목코드를 써야 하는지 문의했습니다.

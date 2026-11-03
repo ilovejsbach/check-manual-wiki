@@ -22,7 +22,7 @@ related_ids:
 - check:enrichment:screen:3016
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:5161
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-05159
 ---
 # 사용 절차 — 채권을 신용등급별로, 종목 단위로 볼 수 있는 화면이 있는지 문의했습니다.

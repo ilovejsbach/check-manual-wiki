@@ -22,7 +22,7 @@ related_ids:
 - check:screen:4315
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:4609
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-04607
 ---
 # 사용 절차 — 애프터마켓에서 KRX와 NXT를 모두 포함한 종목의 인트라 호가 데이터를 보려는데, 함수에서 종목코드를 어떻게 써야 하는지…

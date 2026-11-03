@@ -21,7 +21,7 @@ related_ids:
 - check:tr:1923
 review_status: candidate
 mapping_status: unmapped
-source_locator: CRM데이터(PID복원)!row:272
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00270
 ---
 # 사용 절차 — CHECK API의 /stock/m001/rank_invest 투자자 당일 데이터를 장 마감 후 수신한 값이 rank_inv…

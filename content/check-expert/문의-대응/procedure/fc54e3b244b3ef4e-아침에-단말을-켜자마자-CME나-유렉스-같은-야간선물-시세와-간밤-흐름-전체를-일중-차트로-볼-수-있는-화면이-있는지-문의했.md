@@ -22,7 +22,7 @@ related_ids:
 - check:enrichment:screen:4392
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:4090
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-04088
 ---
 # 사용 절차 — 아침에 단말을 켜자마자 CME나 유렉스 같은 야간선물 시세와 간밤 흐름 전체를 일중 차트로 볼 수 있는 화면이 있는지 문의했…

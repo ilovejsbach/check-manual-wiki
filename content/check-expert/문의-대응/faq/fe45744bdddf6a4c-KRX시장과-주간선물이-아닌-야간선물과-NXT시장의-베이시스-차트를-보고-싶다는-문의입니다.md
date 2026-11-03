@@ -21,7 +21,7 @@ related_ids:
 - check:screen:4315
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:3736
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-03734
 ---
 # 질문과 답변 — KRX시장과 주간선물이 아닌 야간선물과 NXT시장의 베이시스 차트를 보고 싶다는 문의입니다.

@@ -21,7 +21,7 @@ related_ids:
 - check:screen:4109
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:6230
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-06228
 ---
 # 질문과 답변 — Page 저장 부분이 단말을 새로 켤 때마다 초기화되어 고정되지 않는다고 문의했습니다.

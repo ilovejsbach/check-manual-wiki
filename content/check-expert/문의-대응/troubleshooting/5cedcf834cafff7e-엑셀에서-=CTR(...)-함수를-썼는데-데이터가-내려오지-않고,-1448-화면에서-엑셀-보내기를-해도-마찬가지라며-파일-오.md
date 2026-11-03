@@ -25,7 +25,7 @@ related_ids:
 - check:enrichment:screen:1448
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:1606
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-01604
 ---
 # 오류 해결 — 엑셀에서 =CTR(...) 함수를 썼는데 데이터가 내려오지 않고, 1448 화면에서 엑셀 보내기를 해도 마찬가지라며 파일 오…

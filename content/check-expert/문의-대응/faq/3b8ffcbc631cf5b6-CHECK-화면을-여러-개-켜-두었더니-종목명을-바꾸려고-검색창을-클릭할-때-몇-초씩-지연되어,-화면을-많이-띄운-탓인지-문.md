@@ -22,7 +22,7 @@ related_ids:
 - check:screen:4205
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:4471
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-04469
 ---
 # 질문과 답변 — CHECK 화면을 여러 개 켜 두었더니 종목명을 바꾸려고 검색창을 클릭할 때 몇 초씩 지연되어, 화면을 많이 띄운 탓인지 문…

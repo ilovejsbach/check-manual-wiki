@@ -22,7 +22,7 @@ related_ids:
 - check:enrichment:screen:3940
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:3691
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-03689
 ---
 # 사용 절차 — CDS 프리미엄을 확인할 수 있는 화면이 어디인지 문의했습니다.

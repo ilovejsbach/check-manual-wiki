@@ -22,7 +22,7 @@ related_ids:
 - check:screen:7000
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:446
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-00444
 ---
 # 오류 해결 — CHECK를 실행하면 통신연결 실패 메시지가 발생한다고 문의했습니다.

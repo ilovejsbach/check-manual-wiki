@@ -23,7 +23,7 @@ related_ids:
 - check:tr:6049
 review_status: candidate
 mapping_status: mapped
-source_locator: CRM데이터(PID복원)!row:880
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:VOC-00878
 ---
 # 사용 절차 — 금감원에서 매일 받는 외국인 수치와 CHECK 수치가 차이 난다고 문의하며, 6049화면의 외국인보유 항목 API와 외국인…

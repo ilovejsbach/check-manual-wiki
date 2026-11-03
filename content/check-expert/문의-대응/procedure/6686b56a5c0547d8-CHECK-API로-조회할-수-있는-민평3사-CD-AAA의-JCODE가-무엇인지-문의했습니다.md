@@ -24,7 +24,7 @@ related_ids:
 - check:screen:3743
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:5946
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-05944
 ---
 # 사용 절차 — CHECK API로 조회할 수 있는 민평3사 CD AAA의 JCODE가 무엇인지 문의했습니다.

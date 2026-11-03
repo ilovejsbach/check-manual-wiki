@@ -23,7 +23,7 @@ related_ids:
 - check:screen:6106
 review_status: candidate
 mapping_status: mapped
-source_locator: 20260916!row:2156
+source_locator: 비식별 문의 사례
 candidate_id: manual-candidate:CRM-02154
 ---
 # 오류 해결 — 신버전 업데이트 이후 종합 뉴스 창의 시간대 순서가 맞지 않게 표시된다고 문의했습니다.
