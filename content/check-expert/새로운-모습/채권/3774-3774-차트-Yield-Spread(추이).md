@@ -50,7 +50,9 @@ relationship_types:
 함께 조회할 수 있습니다.
 
 ### 화면 항목 5. 기준금리를 선택합니다.
-- 시가그룹(YTM, SPOT), 기업별 Term Structure, IRS(MID), CRS(MID), 해외금리### 화면 항목 6. 비교금리를 선택합니다.
+- 시가그룹(YTM, SPOT), 기업별 Term Structure, IRS(MID), CRS(MID), 해외금리
+
+### 화면 항목 6. 비교금리를 선택합니다.
 - 시가그룹(YTM, SPOT), 기업별 Term Structure, IRS(MID), CRS(MID), 해외금리
 
 ### 화면 항목 7. 기준금리, 비교금리, 스프레드 중에 선택된 정보가 조회됩니다.

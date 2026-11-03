@@ -290,3 +290,17 @@ def test_support_case_merges_multiple_official_contexts(tmp_path, monkeypatch) -
     assert '  - "check:screen:3000"' in text
     assert '  - "주식"' in text
     assert '  - "채권"' in text
+
+
+def test_fix_inline_markdown_splits_glued_headings_and_protects_hashtag_words():
+    text = "---\ntitle: x\n---\n끝납니다.### 화면 항목\n#NAME 오류 및 #6000 과 C# 언어\n```\n#NAME\n```\n## 제목"
+    out = build_check_wiki.fix_inline_markdown(text)
+    assert "끝납니다.\n\n### 화면 항목" in out
+    assert "`#NAME` 오류" in out and "#6000" in out and "`#6000`" not in out and "C# 언어" in out
+    assert "```\n#NAME\n```" in out and out.endswith("## 제목")
+    assert build_check_wiki._escape_md_links("신용금고-[1주당금액](원)") == "신용금고-\\[1주당금액\\](원)"
+
+
+def test_fix_inline_markdown_also_fixes_headings_with_glued_headings_and_hashtags():
+    out = build_check_wiki.fix_inline_markdown("---\nt: x\n---\n### 항목 1. 가 ### 항목 2. 나\n# 오류 해결 — #NAME 오류")
+    assert "### 항목 1. 가\n\n### 항목 2. 나" in out and "# 오류 해결 — `#NAME` 오류" in out

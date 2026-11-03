@@ -18,7 +18,7 @@ generated: true
 - [[check-expert/excel-premium/매뉴얼|Excel Premium 매뉴얼]]
 - [[check-expert/excel-premium/종목코드표|종목코드표]]
 - [[check-expert/excel-premium/항목코드표|항목코드표]]
-- [[check-expert/운영-보강/index|실사용 보강 후보]]
+- [[check-expert/문의-대응/index|문의 대응 사례(실사용 보강)]]
 
 상단 검색에서 화면번호(`1300`), TR 형식(`TR1300`), 화면명 또는 업무 용어를 입력할 수 있습니다.
 

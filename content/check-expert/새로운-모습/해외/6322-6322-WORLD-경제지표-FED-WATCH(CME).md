@@ -20,7 +20,7 @@ screen_code: "6322"
 related_ids:
   - "check:screen:6321"
 relationship_types:
-  "check:screen:6321": "mentions_tr"
+  "check:screen:6321": "related_screen"
 ---
 # 6322 - WORLD/경제지표 > FED WATCH(CME)
 
@@ -32,12 +32,11 @@ relationship_types:
 
 ### 화면 항목 1. CME 제공 미래 FED Meeting의 Target Rate 확률을 제공합니다.
 
-### 화면 항목 2. FED DOT PLOT을 제공합니다.## 관련 화면
-- TR 6321 — WORLD/경제지표 > FED DOT PLOT
+### 화면 항목 2. FED DOT PLOT을 제공합니다.
 
 ## 관련 화면
 
-- [[check-expert/새로운-모습/해외/6321-6321-WORLD-경제지표-FED-DOT-PLOT|6321 - WORLD/경제지표 > FED DOT PLOT]] (mentions_tr)
+- [[check-expert/새로운-모습/해외/6321-6321-WORLD-경제지표-FED-DOT-PLOT|6321 - WORLD/경제지표 > FED DOT PLOT]] (related_screen)
 
 ## 원문 근거
 

@@ -44,7 +44,9 @@ relationship_types:
 - End of Day : (당일 데이터) 익일 16시 30분에 산출
 
 ### 화면 항목 4. 5Y만기 레이아웃 조회시 최저, 최고, 평균 산출 기준을 선택합니다.
-- 3개월, 6개월, 1년### 화면 항목 5. 대륙 및 섹터를 더블클릭으로 선택합니다.
+- 3개월, 6개월, 1년
+
+### 화면 항목 5. 대륙 및 섹터를 더블클릭으로 선택합니다.
 - 대륙 : All, America, Asia, Europe, Africa/Middle East, Oceania
 - 섹터 : All, Country, Government, Financials, Utilities, Etc
 

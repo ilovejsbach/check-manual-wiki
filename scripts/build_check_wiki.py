@@ -231,8 +231,34 @@ def frontmatter(
     return "\n".join(lines)
 
 
+_INLINE_HEADING = re.compile(r"(?<=[^\s#])[ \t]*(#{2,6})(?=[ \t]+\S)")
+_HASHTAG_WORD = re.compile(r"(?<![\w/&\[`(#])#(?=[\w가-힣?]*[A-Za-z가-힣])[\w가-힣?]+")
+
+
+def fix_inline_markdown(text: str) -> str:
+    """PDF 추출 때 줄바꿈이 사라져 문장 끝에 붙은 '### 제목'은 제목 줄로 나누고, 본문의 '#NAME' 같은 낱말은
+    Quartz 가 태그 링크(/tags/…)로 바꾸지 못하게 코드 서식으로 감싼다. 프런트매터와 코드 블록은 건드리지 않는다."""
+    head, body = "", text
+    if text.startswith("---\n"):
+        end = text.find("\n---\n", 4)
+        if end != -1:
+            head, body = text[: end + 5], text[end + 5 :]
+    out: list[str] = []
+    in_code = False
+    for line in body.split("\n"):
+        if line.lstrip().startswith("```"):
+            in_code = not in_code
+        if not in_code:
+            line = _INLINE_HEADING.sub(lambda m: "\n\n" + m.group(1), line)
+            line = _HASHTAG_WORD.sub(lambda m: f"`{m.group(0)}`", line)
+        out.append(line)
+    return head + "\n".join(out)
+
+
 def write_text(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
+    if path.suffix == ".md":
+        text = fix_inline_markdown(text)
     path.write_text(text.rstrip() + "\n", encoding="utf-8")
 
 
@@ -659,6 +685,11 @@ def build_excel_manual(path: Path, title: str) -> int:
     return 1
 
 
+def _escape_md_links(cell: str) -> str:
+    """항목명의 '[1주당금액](원)' 같은 표기가 마크다운 링크(→ 없는 문서)로 해석되지 않게 대괄호를 이스케이프한다."""
+    return re.sub(r"\[([^\[\]]*)\]\(([^()]*)\)", r"\\[\1\\](\2)", cell)
+
+
 def markdown_table(headers: list[str], rows: list[list[str]]) -> str:
     safe_headers = [header.replace("|", "\\|") for header in headers]
     lines = [
@@ -667,7 +698,7 @@ def markdown_table(headers: list[str], rows: list[list[str]]) -> str:
     ]
     for row in rows:
         padded = row + [""] * (len(headers) - len(row))
-        cells = [cell.replace("|", "\\|").replace("\n", " ") for cell in padded[: len(headers)]]
+        cells = [_escape_md_links(cell).replace("|", "\\|").replace("\n", " ") for cell in padded[: len(headers)]]
         lines.append("| " + " | ".join(cells) + " |")
     return "\n".join(lines)
 
@@ -744,7 +775,7 @@ def build_home(stats: dict[str, int], hashes: dict[str, str]) -> None:
 - [[check-expert/excel-premium/매뉴얼|Excel Premium 매뉴얼]]
 - [[check-expert/excel-premium/종목코드표|종목코드표]]
 - [[check-expert/excel-premium/항목코드표|항목코드표]]
-- [[check-expert/운영-보강/index|실사용 보강 후보]]
+- [[check-expert/문의-대응/index|문의 대응 사례(실사용 보강)]]
 
 상단 검색에서 화면번호(`1300`), TR 형식(`TR1300`), 화면명 또는 업무 용어를 입력할 수 있습니다.
 

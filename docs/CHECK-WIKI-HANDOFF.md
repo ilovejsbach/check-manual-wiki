@@ -143,7 +143,7 @@ uv run python scripts/derive_case_links.py --knowledge knowledge/check-expert/kn
 - 사례는 본문·제목 없이 해시 8자, 의도, 영역, 위키 링크만 싣는다.
 - 로컬 확인: Quartz 사이트는 `/check-manual-wiki/` 접두어와 확장자 없는 주소를 가정한다. `python -m http.server`는 확장자 없는 주소를 못 찾아 404가 나므로 `.html` 보정과 접두어 처리를 하는 서버로 연다.
 - 사례 파일명에 `#`, `^`가 있으면 위키 링크에서 문서 내 위치 표시로 읽혀 주소가 잘린다. `slug()`가 이 문자를 `-`로 바꾼다.
-- 알려진 깨진 링크 약 260개는 본문 속 `[[DLB]]`, `[phone]` 같은 표기와 `운영-보강` 목차 링크로, 이번 변경 이전부터 있었다.
+- 깨진 링크는 2026-11-03에 모두 정리했다(아래 "깨진 링크 정리" 참고).
 
 ## 마스킹 토큰 일반어 치환 (2026-11-02)
 
@@ -188,3 +188,8 @@ uv run python scripts/derive_case_links.py --knowledge knowledge/check-expert/kn
 - 평가: 제가 직접 읽고 라벨링한 표본 36건에서 기존(저장값) 25/36 → 33/36. 라벨을 규칙 수정 전후에 같이 본 사람이 붙였으므로 독립 평가가 아니다. 분포(1,418건): data_availability 306, howto 284, screen_finding 235, other 176, data_error 143, env_setup 93, hardware_support 69, feedback 31, admin_contract 30, account_access 26, empty 25.
 - 효과: 화면 찾기 사례 163 → 235건, 링크 없는 화면 요구(gap) 노드 3 → 4개(13 → 14건). 요약 파일의 `intent` 값은 더 이상 쓰지 않는다.
 - 제품명 추가 복원(2026-11-03): `국내 ETF / [REDACTED_ENTITY] ETF`(국내 대비, 6460 화면)=해외 ETF, 1002 세계지수종합의 `[REDACTED_ENTITY]실시간시세 신청`(원문에 "[REDACTED_ENTITY]지수 유상 신청")=해외실시간시세 신청, 5500(해외SPOT)의 `[REDACTED_ENTITY]시장`=해외시장. 아직 복원하지 못한 곳(근거 부족): `[IDENTIFIER] TR지수`(KOSPI TR지수와 짝인 지수), `…(구 로이터)` 환율 출처, `5103`의 `[REDACTED_ENTITY]시장`, `업종(…)` 드롭다운 값 등 약 10곳. CRM 원본 또는 마스킹 규칙 확인이 필요하다.
+
+### 깨진 링크 정리(2026-11-03)
+- Quartz 빌드 결과(`public/`)에서 내부 링크 `<a class="internal">`의 대상 파일 존재를 검사: 깨진 링크 155 → 0.
+- 원인과 조치: (1) PDF 추출로 줄바꿈이 사라진 `…다.### 화면 항목` 형태 — 빈 태그(`#`)로 읽혀 `/tags/` 링크가 생김(124건) → `write_text`의 `fix_inline_markdown`이 제목을 줄로 나눈다. (2) 본문의 `#NAME` 같은 낱말이 태그로 오인됨 → 코드 서식으로 감쌈. (3) 항목코드표의 `[1주당금액](원)` 표기가 마크다운 링크로 해석됨(20건) → 표 셀에서 대괄호 이스케이프. (4) 없는 `운영-보강` 목차 링크 → `문의-대응/index`로 교체.
+- 빌드 후 가짜 `tags.html`(빈 태그 페이지, 링크 15.5k)이 사라져 전체 내부 링크 수는 160,890 → 144,464로 줄었다(실제 페이지 링크는 유지).
