@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: a6811fa88ebdddf3
+form_screens:
+- '3430'
 ---
 # 질문과 답변 — 비교일 대비 크레딧 스프레드 변동폭을 화면에서 확인할 수 있도록 연초에 개선을 요청했으나 아직 반영되지 않아 진행 상황을 다…
 
@@ -46,6 +48,7 @@ candidate_id: a6811fa88ebdddf3
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3430 - 시가평가 > 채권그룹 > Matrix 종합
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 3430 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

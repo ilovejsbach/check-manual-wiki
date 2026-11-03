@@ -29,6 +29,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: f7adee7fa7b81e6c
+form_screens:
+- '1913'
 ---
 # 사용 절차 — 증권상품시장(ETF, ETN, ELW)의 거래대금을 볼 수 있는 화면번호를 문의했습니다.
 
@@ -53,6 +55,7 @@ TR 1443 ETF 시세표와 2251 ETN 시세표에서 거래량, 거래대금, 시�
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 2251 - ETN 시세표, 1211 - ELW 시세표
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 1913 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

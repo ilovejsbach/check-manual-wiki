@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 6b1cbfff6127afbe
+form_screens:
+- '4571'
 ---
 # 사용 절차 — 장중 체결이 발생하면 체결 가격으로 기준가가 산정되는지, 특정 옵션 종목의 특정 일자 내재변동성이 기준가로 산출되는지 문의했…
 
@@ -46,6 +48,7 @@ candidate_id: 6b1cbfff6127afbe
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4571 - 종목일별
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4571 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

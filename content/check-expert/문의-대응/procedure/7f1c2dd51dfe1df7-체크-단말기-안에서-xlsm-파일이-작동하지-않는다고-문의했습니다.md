@@ -25,6 +25,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 7f1c2dd51dfe1df7
+form_screens:
+- '4101'
 ---
 # 사용 절차 — 체크 단말기 안에서 xlsm 파일이 작동하지 않는다고 문의했습니다.
 
@@ -47,6 +49,7 @@ candidate_id: 7f1c2dd51dfe1df7
 - 함께 볼 유형: 오류 해결, 사용 절차, 질문과 답변
 - 업무·주제: 4101 - 현재가
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4101 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

@@ -23,6 +23,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: aaf3e806db82aac9
+form_screens:
+- '3000'
 ---
 # 질문과 답변 — 특정 종목의 가산금리가 변한 것으로 보여 국고채 스왑 조기상환 때문인지 확인을 요청했습니다.
 
@@ -45,6 +47,7 @@ candidate_id: aaf3e806db82aac9
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3000 - 발행정보 > 주요 > 종목상세
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 3000 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

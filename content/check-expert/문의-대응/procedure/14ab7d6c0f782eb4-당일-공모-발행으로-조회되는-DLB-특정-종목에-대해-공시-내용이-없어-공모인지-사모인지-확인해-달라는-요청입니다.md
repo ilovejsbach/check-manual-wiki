@@ -25,6 +25,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 14ab7d6c0f782eb4
+form_screens:
+- '3026'
 ---
 # 사용 절차 — 당일 공모 발행으로 조회되는 DLB 특정 종목에 대해 공시 내용이 없어 공모인지 사모인지 확인해 달라는 요청입니다.
 
@@ -47,6 +49,7 @@ candidate_id: 14ab7d6c0f782eb4
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3026 - 발행정보 > 주요 > DLB(DLS)
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 3026 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

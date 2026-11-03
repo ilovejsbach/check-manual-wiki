@@ -23,6 +23,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 92a36f36caff2bb3
+form_screens:
+- '1120'
 ---
 # 질문과 답변 — ETF 전체 거래량과 거래대금을 KOSPI와 함께 일별로 볼 수 있는 추천 화면이 있는지 문의했습니다.
 
@@ -45,6 +47,7 @@ ETF 전체 거래량과 거래대금은 거래소가 보내는 정보가 아니�
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 1443 - ETF 시세표
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 1120 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

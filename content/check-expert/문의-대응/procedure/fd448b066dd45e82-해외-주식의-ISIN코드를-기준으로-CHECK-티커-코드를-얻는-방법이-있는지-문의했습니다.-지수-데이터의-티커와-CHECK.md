@@ -23,6 +23,8 @@ review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
 candidate_id: fd448b066dd45e82
+form_screens:
+- '1550'
 ---
 # 사용 절차 — 해외 주식의 ISIN코드를 기준으로 CHECK 티커 코드를 얻는 방법이 있는지 문의했습니다. 지수 데이터의 티커와 CHECK…
 
@@ -45,6 +47,7 @@ candidate_id: fd448b066dd45e82
 - 함께 볼 유형: 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 종목·코드·분류·기본정보
 - 공식 문서 연결: 분류 대기
+- 문의 양식의 화면번호 입력값: 1550 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

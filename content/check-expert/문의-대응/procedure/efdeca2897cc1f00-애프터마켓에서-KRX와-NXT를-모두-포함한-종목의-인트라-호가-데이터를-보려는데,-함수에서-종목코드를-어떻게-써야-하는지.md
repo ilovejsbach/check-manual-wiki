@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: efdeca2897cc1f00
+form_screens:
+- '4315'
 ---
 # 사용 절차 — 애프터마켓에서 KRX와 NXT를 모두 포함한 종목의 인트라 호가 데이터를 보려는데, 함수에서 종목코드를 어떻게 써야 하는지…
 
@@ -46,6 +48,7 @@ KRX와 NXT를 함께 보려면 통합(C)으로 조회해야 합니다. 통합의
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4315 - Tick차트
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4315 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

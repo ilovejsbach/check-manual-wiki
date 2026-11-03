@@ -27,6 +27,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 4fa98aa2add2af83
+form_screens:
+- '3741'
 ---
 # 오류 해결 — 엑셀 파일을 열면 값이 자동으로 채워질 것으로 기대했으나 가져오지 못해, Expert에서 우클릭으로 엑셀 전송을 해야만 하는…
 
@@ -49,6 +51,7 @@ candidate_id: 4fa98aa2add2af83
 - 함께 볼 유형: 오류 해결, 사용 절차, 질문과 답변
 - 업무·주제: 3741 - 시가평가 > 채권그룹 > 기업별 Term Structure
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 3741 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

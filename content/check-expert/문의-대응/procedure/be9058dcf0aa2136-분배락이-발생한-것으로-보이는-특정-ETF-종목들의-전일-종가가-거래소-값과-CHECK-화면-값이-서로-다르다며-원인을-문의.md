@@ -25,6 +25,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: be9058dcf0aa2136
+form_screens:
+- '1440'
 ---
 # 사용 절차 — 분배락이 발생한 것으로 보이는 특정 ETF 종목들의 전일 종가가 거래소 값과 CHECK 화면 값이 서로 다르다며 원인을 문의…
 
@@ -47,6 +49,7 @@ candidate_id: be9058dcf0aa2136
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 1440 - ETF 현재가
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 1440 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

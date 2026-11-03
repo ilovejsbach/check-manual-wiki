@@ -25,6 +25,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 364723ac711f8aab
+form_screens:
+- '3000'
 ---
 # 사용 절차 — 분석지표 중 PVBP 외에 PPC1, PPC100 등의 의미를 설명해 달라는 문의입니다.
 
@@ -47,6 +49,7 @@ candidate_id: 364723ac711f8aab
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3000 - 발행정보 > 주요 > 종목상세
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 3000 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

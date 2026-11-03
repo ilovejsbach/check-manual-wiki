@@ -26,6 +26,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: e2fa1f606994bedd
+form_screens:
+- '3741'
 ---
 # 사용 절차 — 과거 특정 기간의 신용등급별 민평금리 변동과 CD, 콜금리 변동 내역을 조회할 수 있는 단말 화면이 있는지 문의했습니다.
 
@@ -50,6 +52,7 @@ candidate_id: e2fa1f606994bedd
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3223 - 주요금리 > 최종호가수익률(추이)
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 3741 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

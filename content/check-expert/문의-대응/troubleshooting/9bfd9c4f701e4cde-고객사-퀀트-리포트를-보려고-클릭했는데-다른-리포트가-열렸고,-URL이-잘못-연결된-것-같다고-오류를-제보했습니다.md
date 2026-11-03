@@ -25,6 +25,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 9bfd9c4f701e4cde
+form_screens:
+- '3500'
 ---
 # 오류 해결 — 고객사 퀀트 리포트를 보려고 클릭했는데 다른 리포트가 열렸고, URL이 잘못 연결된 것 같다고 오류를 제보했습니다.
 
@@ -47,6 +49,7 @@ candidate_id: 9bfd9c4f701e4cde
 - 함께 볼 유형: 오류 해결, 주의사항, 질문과 답변
 - 업무·주제: 3500 - 시장종합 > 투자분석리포트
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 3500 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

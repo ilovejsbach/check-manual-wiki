@@ -25,6 +25,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 2a5da25cecf95dd9
+form_screens:
+- '1320'
 ---
 # 사용 절차 — 1320 화면에서 옵션 만기일과 MSCI/FTSE 리밸런싱 날짜만 골라 볼 수 있는 메뉴를 개발할 수 있는지 문의했습니다.
 
@@ -48,6 +50,7 @@ MSCI/FTSE 리밸런싱 데이는 화면 구현이 어렵지만, 옵션 만기일
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4034 - 상관계수
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 1320 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

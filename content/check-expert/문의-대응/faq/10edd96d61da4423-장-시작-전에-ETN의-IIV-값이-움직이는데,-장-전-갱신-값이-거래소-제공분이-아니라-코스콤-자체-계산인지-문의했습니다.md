@@ -27,6 +27,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 10edd96d61da4423
+form_screens:
+- '2250'
 ---
 # 질문과 답변 — 장 시작 전에 ETN의 IIV 값이 움직이는데, 장 전 갱신 값이 거래소 제공분이 아니라 코스콤 자체 계산인지 문의했습니다.
 
@@ -49,6 +51,7 @@ candidate_id: 10edd96d61da4423
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 2250 - ETN 현재가, 2251 - ETN 시세표
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 2250 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

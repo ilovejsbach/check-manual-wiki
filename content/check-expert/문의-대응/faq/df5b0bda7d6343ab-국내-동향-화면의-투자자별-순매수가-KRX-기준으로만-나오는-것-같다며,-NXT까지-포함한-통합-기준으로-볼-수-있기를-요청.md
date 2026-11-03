@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: df5b0bda7d6343ab
+form_screens:
+- '1002'
 ---
 # 질문과 답변 — 국내 동향 화면의 투자자별 순매수가 KRX 기준으로만 나오는 것 같다며, NXT까지 포함한 통합 기준으로 볼 수 있기를 요청…
 
@@ -46,6 +48,7 @@ candidate_id: df5b0bda7d6343ab
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 1002 - 세계지수종합
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 1002 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

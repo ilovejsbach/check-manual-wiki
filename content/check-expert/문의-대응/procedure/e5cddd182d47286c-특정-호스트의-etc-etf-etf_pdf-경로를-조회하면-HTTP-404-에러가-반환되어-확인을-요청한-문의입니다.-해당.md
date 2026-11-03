@@ -23,6 +23,8 @@ review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
 candidate_id: e5cddd182d47286c
+form_screens:
+- '9032'
 ---
 # 사용 절차 — 특정 호스트의 /etc/etf/etf_pdf 경로를 조회하면 HTTP 404 에러가 반환되어 확인을 요청한 문의입니다. 해당…
 
@@ -45,6 +47,7 @@ candidate_id: e5cddd182d47286c
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 펀드·ETF 구성·운용정보
 - 공식 문서 연결: 분류 대기
+- 문의 양식의 화면번호 입력값: 9032 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

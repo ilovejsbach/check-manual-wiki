@@ -25,6 +25,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: bb2bb5a21a6efd8d
+form_screens:
+- '6106'
 ---
 # 오류 해결 — 신버전 업데이트 이후 종합 뉴스 창의 시간대 순서가 맞지 않게 표시된다고 문의했습니다.
 
@@ -47,6 +49,7 @@ candidate_id: bb2bb5a21a6efd8d
 - 함께 볼 유형: 오류 해결, 주의사항, 질문과 답변
 - 업무·주제: 6106 - 종합
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 6106 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

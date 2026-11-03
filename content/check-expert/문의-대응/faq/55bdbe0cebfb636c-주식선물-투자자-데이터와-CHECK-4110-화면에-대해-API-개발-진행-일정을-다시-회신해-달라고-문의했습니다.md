@@ -23,6 +23,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 55bdbe0cebfb636c
+form_screens:
+- '4110'
 ---
 # 질문과 답변 — 주식선물 투자자 데이터와 CHECK 4110 화면에 대해 API 개발 진행 일정을 다시 회신해 달라고 문의했습니다.
 
@@ -45,6 +47,7 @@ candidate_id: 55bdbe0cebfb636c
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4110 - 투자자현황
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4110 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

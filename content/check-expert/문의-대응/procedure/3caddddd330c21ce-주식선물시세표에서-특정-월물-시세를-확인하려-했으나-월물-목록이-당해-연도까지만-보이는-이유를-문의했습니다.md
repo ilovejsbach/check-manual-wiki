@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 3caddddd330c21ce
+form_screens:
+- '4114'
 ---
 # 사용 절차 — 주식선물시세표에서 특정 월물 시세를 확인하려 했으나 월물 목록이 당해 연도까지만 보이는 이유를 문의했습니다.
 
@@ -46,6 +48,7 @@ candidate_id: 3caddddd330c21ce
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4114 - 주식선물 시세표
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4114 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

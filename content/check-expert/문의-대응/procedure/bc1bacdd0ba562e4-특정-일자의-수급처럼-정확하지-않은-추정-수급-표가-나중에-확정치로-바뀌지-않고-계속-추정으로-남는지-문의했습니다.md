@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: bc1bacdd0ba562e4
+form_screens:
+- '4338'
 ---
 # 사용 절차 — 특정 일자의 수급처럼 정확하지 않은 추정 수급 표가 나중에 확정치로 바뀌지 않고 계속 추정으로 남는지 문의했습니다.
 
@@ -46,6 +48,7 @@ candidate_id: bc1bacdd0ba562e4
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4338 - 순매수일별
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4338 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

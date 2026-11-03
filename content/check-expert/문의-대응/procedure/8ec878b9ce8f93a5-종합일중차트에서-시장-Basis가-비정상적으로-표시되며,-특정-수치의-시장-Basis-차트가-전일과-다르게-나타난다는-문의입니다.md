@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 8ec878b9ce8f93a5
+form_screens:
+- '4319'
 ---
 # 사용 절차 — 종합일중차트에서 시장 Basis가 비정상적으로 표시되며, 특정 수치의 시장 Basis 차트가 전일과 다르게 나타난다는 문의입니다.
 
@@ -46,6 +48,7 @@ candidate_id: 8ec878b9ce8f93a5
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4319 - 종합일중차트
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4319 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

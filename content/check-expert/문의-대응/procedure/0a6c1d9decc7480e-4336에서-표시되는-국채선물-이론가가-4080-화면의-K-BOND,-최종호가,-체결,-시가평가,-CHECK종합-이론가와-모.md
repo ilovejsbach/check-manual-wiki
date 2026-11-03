@@ -30,6 +30,9 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 0a6c1d9decc7480e
+form_screens:
+- '4336'
+- '4080'
 ---
 # 사용 절차 — 4336에서 표시되는 국채선물 이론가가 4080 화면의 K-BOND, 최종호가, 체결, 시가평가, CHECK종합 이론가와 모…
 
@@ -54,6 +57,7 @@ candidate_id: 0a6c1d9decc7480e
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4080 - 선물 KTB이론가, 4336 - 일별
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4336, 4080 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

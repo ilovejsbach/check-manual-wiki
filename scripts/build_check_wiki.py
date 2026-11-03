@@ -877,6 +877,7 @@ def build_support_case(
     title = f"{label} — {title_text}"
     relative = Path("문의-대응") / case_type / f"{case_hash}-{slug(title_text)}.md"
     facets = [str(item) for item in example.get("manual_candidates", [])]
+    form_screens = [str(item) for item in example.get("form_screens", [])]
     target_path = OUTPUT_DIR / relative
     topics = [topic]
     if target_path.exists():
@@ -914,6 +915,7 @@ def build_support_case(
             "mapping_status": mapping_status,
             "source_locator": "비식별 문의 사례",
             "candidate_id": case_hash,
+            **({"form_screens": form_screens} if form_screens else {}),
         },
     )
     document += f"# {title}\n\n"
@@ -932,6 +934,8 @@ def build_support_case(
     )
     document += f"- 업무·주제: {topic_label}\n"
     document += f"- 공식 문서 연결: {'연결됨' if mapping_status == 'mapped' else '분류 대기'}\n"
+    if form_screens:
+        document += f"- 문의 양식의 화면번호 입력값: {', '.join(form_screens)} (질문 대상 화면과 다를 수 있음)\n"
     document += "\n"
     document += "## 검증할 사항\n\n"
     document += (
@@ -1619,6 +1623,7 @@ def export_knowledge() -> dict[str, int]:
             "case_topic": metadata.get("case_topic"),
             "case_topics": metadata.get("case_topics", []),
             "candidate_id": metadata.get("candidate_id"),
+            **({"form_screens": metadata["form_screens"]} if metadata.get("form_screens") else {}),
             "related_screen_codes": related_codes,
             "related_ids": metadata_related_ids,
             "relationship_types": metadata.get("relationship_types", {}),

@@ -25,6 +25,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: fd13a80bcbbbea24
+form_screens:
+- '1300'
 ---
 # 질문과 답변 — 회원T5탭에 표시되는 당일 매도 및 당일 매수 수량이 당일 주문 누적 수량인지, 당일 체결 누적 수량인지 확인을 요청한 문의…
 
@@ -48,6 +50,7 @@ candidate_id: fd13a80bcbbbea24
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 1614 - 회원별 실시간 체결
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 1300 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

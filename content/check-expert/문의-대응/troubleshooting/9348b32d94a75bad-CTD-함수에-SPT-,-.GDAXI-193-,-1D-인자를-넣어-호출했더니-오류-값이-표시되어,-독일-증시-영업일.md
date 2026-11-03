@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
 candidate_id: 9348b32d94a75bad
+form_screens:
+- '8003'
 ---
 # 오류 해결 — CTD 함수에 "SPT", ".GDAXI*193", "1D" 인자를 넣어 호출했더니 오류 값이 표시되어, 독일 증시 영업일…
 
@@ -46,6 +48,7 @@ CTD 함수에 "SPT", ".GDAXI*193", "1D" 인자를 넣어 호출했더니 오류 
 - 함께 볼 유형: 오류 해결, 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 가격·호가·거래량
 - 공식 문서 연결: 분류 대기
+- 문의 양식의 화면번호 입력값: 8003 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

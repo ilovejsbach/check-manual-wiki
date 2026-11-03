@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: fb1cf9f3f0a8e758
+form_screens:
+- '1448'
 ---
 # 사용 절차 — 구성종목(PDF) 조회 데이터를 '전체영역 엑셀로 보내기'로 내보내면 자주 에러가 나며 엑셀이 멈추는데 해결 방법이 있는지…
 
@@ -46,6 +48,7 @@ candidate_id: fb1cf9f3f0a8e758
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 1448 - ETF 구성종목(PDF)
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 1448 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

@@ -26,6 +26,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 3170b31e52380ab8
+form_screens:
+- '3000'
 ---
 # 오류 해결 — 엑셀로 종목 정보를 업데이트하는 파일을 작성하는 중 CHECK Expert의 특정 종목 정보가 전송되지 않는다는 문의입니다.
 
@@ -48,6 +50,7 @@ candidate_id: 3170b31e52380ab8
 - 함께 볼 유형: 오류 해결, 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 3000 - 발행정보 > 주요 > 종목상세
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 3000 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

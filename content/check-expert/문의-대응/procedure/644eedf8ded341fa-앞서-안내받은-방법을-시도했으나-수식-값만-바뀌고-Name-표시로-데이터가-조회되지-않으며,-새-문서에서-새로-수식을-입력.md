@@ -23,6 +23,8 @@ review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
 candidate_id: 644eedf8ded341fa
+form_screens:
+- '1001'
 ---
 # 사용 절차 — 앞서 안내받은 방법을 시도했으나 수식 값만 바뀌고 #Name 표시로 데이터가 조회되지 않으며, 새 문서에서 새로 수식을 입력…
 
@@ -45,6 +47,7 @@ candidate_id: 644eedf8ded341fa
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 조회정보 불명확
 - 공식 문서 연결: 분류 대기
+- 문의 양식의 화면번호 입력값: 1001 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

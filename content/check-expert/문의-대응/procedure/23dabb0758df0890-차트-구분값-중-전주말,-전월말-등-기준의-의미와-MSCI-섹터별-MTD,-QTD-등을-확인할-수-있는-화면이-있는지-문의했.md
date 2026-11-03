@@ -29,6 +29,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 23dabb0758df0890
+form_screens:
+- '6433'
 ---
 # 사용 절차 — 차트 구분값 중 전주말, 전월말 등 기준의 의미와 MSCI 섹터별 MTD, QTD 등을 확인할 수 있는 화면이 있는지 문의했…
 
@@ -52,6 +54,7 @@ MSCI 지수는 TR 6430 MSCI종합, 6431 MSCI 비교 화면에서 DM, EM 등을 �
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 6430 - MSCI/FTSE>MSCI 종합, 6431 - MSCI/FTSE>MSCI 비교
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 6433 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

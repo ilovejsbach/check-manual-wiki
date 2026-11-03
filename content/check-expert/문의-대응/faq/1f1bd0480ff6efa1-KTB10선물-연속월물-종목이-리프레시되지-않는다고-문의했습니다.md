@@ -23,6 +23,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 1f1bd0480ff6efa1
+form_screens:
+- '8112'
 ---
 # 질문과 답변 — KTB10선물 연속월물 종목이 리프레시되지 않는다고 문의했습니다.
 
@@ -45,6 +47,7 @@ KTB10선물 연속월물 종목이 리프레시되지 않는다고 문의했습�
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 8112 - 신종합차트
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 8112 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

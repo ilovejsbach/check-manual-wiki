@@ -26,6 +26,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: abb40c88f51d6b09
+form_screens:
+- '1923'
 ---
 # 사용 절차 — 엑셀 CH 함수(항목코드 6511^10, 일별 DESC)에서 ETF명과 컬럼명 없이 날짜와 순매수대금만, 또는 날짜 없이 순…
 
@@ -49,6 +51,7 @@ candidate_id: abb40c88f51d6b09
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 메뉴와 템플릿
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 1923 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

@@ -23,6 +23,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 607c2fdcae30aa78
+form_screens:
+- '3026'
 ---
 # 질문과 답변 — 당일 공모 발행으로 추정되는 DLB 종목이 공시에 없어 공모와 사모 여부를 확인해 달라고 했고, 지난주 발행된 다른 DLB는…
 
@@ -45,6 +47,7 @@ candidate_id: 607c2fdcae30aa78
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3026 - 발행정보 > 주요 > DLB(DLS)
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 3026 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

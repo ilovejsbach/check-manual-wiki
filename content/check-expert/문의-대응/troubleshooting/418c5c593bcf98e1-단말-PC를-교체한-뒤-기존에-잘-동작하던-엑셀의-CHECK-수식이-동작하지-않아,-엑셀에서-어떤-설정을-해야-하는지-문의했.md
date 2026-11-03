@@ -26,6 +26,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 418c5c593bcf98e1
+form_screens:
+- '5140'
 ---
 # 오류 해결 — 단말 PC를 교체한 뒤 기존에 잘 동작하던 엑셀의 CHECK 수식이 동작하지 않아, 엑셀에서 어떤 설정을 해야 하는지 문의했…
 
@@ -48,6 +50,7 @@ candidate_id: 418c5c593bcf98e1
 - 함께 볼 유형: 오류 해결, 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 5140 - 달러-원>종합화면2
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 5140 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

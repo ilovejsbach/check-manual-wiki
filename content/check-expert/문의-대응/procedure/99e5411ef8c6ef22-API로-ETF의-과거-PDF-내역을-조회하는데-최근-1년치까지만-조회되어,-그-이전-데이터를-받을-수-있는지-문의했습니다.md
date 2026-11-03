@@ -23,6 +23,8 @@ review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
 candidate_id: 99e5411ef8c6ef22
+form_screens:
+- '9032'
 ---
 # 사용 절차 — API로 ETF의 과거 PDF 내역을 조회하는데 최근 1년치까지만 조회되어, 그 이전 데이터를 받을 수 있는지 문의했습니다.
 
@@ -45,6 +47,7 @@ API로 ETF의 과거 PDF 내역을 조회하는데 최근 1년치까지만 조�
 - 함께 볼 유형: 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 펀드·ETF 구성·운용정보
 - 공식 문서 연결: 분류 대기
+- 문의 양식의 화면번호 입력값: 9032 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

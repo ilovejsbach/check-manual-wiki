@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
 candidate_id: ee1c89014ef01c57
+form_screens:
+- '9032'
 ---
 # 오류 해결 — CHECK API를 신청하려는데 추가 비용이 드는 서비스인지 문의했습니다.
 
@@ -46,6 +48,7 @@ CHECK API를 신청하려는데 추가 비용이 드는 서비스인지 문의�
 - 함께 볼 유형: 오류 해결, 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 조회정보 없음(이용 문의)
 - 공식 문서 연결: 분류 대기
+- 문의 양식의 화면번호 입력값: 9032 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

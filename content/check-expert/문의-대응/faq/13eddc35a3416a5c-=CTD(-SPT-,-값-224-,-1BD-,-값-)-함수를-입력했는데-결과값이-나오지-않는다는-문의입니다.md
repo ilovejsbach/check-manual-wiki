@@ -23,6 +23,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 13eddc35a3416a5c
+form_screens:
+- '4315'
 ---
 # 질문과 답변 — =CTD("SPT","<값>*224","1BD","<값>") 함수를 입력했는데 결과값이 나오지 않는다는 문의입니다.
 
@@ -45,6 +47,7 @@ candidate_id: 13eddc35a3416a5c
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4315 - Tick차트
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4315 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

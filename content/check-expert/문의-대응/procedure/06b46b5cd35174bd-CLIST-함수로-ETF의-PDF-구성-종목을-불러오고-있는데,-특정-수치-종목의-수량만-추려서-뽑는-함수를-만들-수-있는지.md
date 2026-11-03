@@ -22,6 +22,8 @@ review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
 candidate_id: 06b46b5cd35174bd
+form_screens:
+- '8003'
 ---
 # 사용 절차 — CLIST 함수로 ETF의 PDF 구성 종목을 불러오고 있는데, 특정 수치 종목의 수량만 추려서 뽑는 함수를 만들 수 있는지…
 
@@ -44,6 +46,7 @@ CLS 함수에는 함수빌더에서 참고할 수 있는 필터링 기능이 있
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 펀드·ETF 구성·운용정보
 - 공식 문서 연결: 분류 대기
+- 문의 양식의 화면번호 입력값: 8003 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

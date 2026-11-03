@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: efb7f18d8e2e6bc2
+form_screens:
+- '3095'
 ---
 # 오류 해결 — 엑셀프리미엄이 여전히 작동하지 않아 확인을 요청한 문의입니다.
 
@@ -46,6 +48,7 @@ candidate_id: efb7f18d8e2e6bc2
 - 함께 볼 유형: 오류 해결, 질문과 답변
 - 업무·주제: 3095 - 차트 > 국채시장
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 3095 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

@@ -25,6 +25,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: b75297fa881a3ec1
+form_screens:
+- '3026'
 ---
 # 사용 절차 — 특정 공모 종목의 발행일이 CHECK에서는 당일로 조회되는데, 공시에서 확인되는 증권신고서상 발행일은 다음 날로 나온다며 확…
 
@@ -47,6 +49,7 @@ candidate_id: b75297fa881a3ec1
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3026 - 발행정보 > 주요 > DLB(DLS)
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 3026 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

@@ -44,6 +44,28 @@ def _codes(text: str) -> set[str]:
     return {f.split(":", 1)[1] for f in sc.extract_facts(text) if f.startswith("screen:")}
 
 
+FORM_SCREEN_RE = re.compile(r"화면번호\s*:\s*(.*?)\s*-\s*(?:전화번호|버전|문의\s*내용)")
+INQUIRY_RE = re.compile(r"문의\s*내용\s*:\s*(.*)$", re.S)
+BODY_SCREEN_RE = re.compile(
+    r"(?:TR\s*#?|#|\[#?|화면\s*번호\s*|화면\s*)(\d{4})(?!\d)"
+    r"|(?<![\d,.\-])(\d{4})(?=\s*(?:화면|탭|에서|안내|-|번\b|의\b|과\b|와\b|로\b))"
+)
+
+
+def form_screens(text: str) -> list[str]:
+    """문의 양식의 '화면번호 :' 칸에 적힌 4자리 번호(질문 대상이 아닐 수 있어 따로 보존한다)."""
+    m = FORM_SCREEN_RE.search(text or "")
+    return list(dict.fromkeys(re.findall(r"(?<!\d)(\d{4})(?!\d)", m.group(1)))) if m else []
+
+
+def body_screens(text: str) -> set[str]:
+    """본문(문의내용 이후 + 응답)에서 화면번호로 쓰인 4자리 번호. 연도·전화번호 조각은 뺀다."""
+    m = INQUIRY_RE.search(text or "")
+    body = re.sub(r"\d{2,4}-\d{4}", "", m.group(1) if m else (text or ""))
+    nums = {a or b for a, b in BODY_SCREEN_RE.findall(body)}
+    return {n for n in nums if not 1990 <= int(n) <= 2100}
+
+
 def longest_common(a: str, b: str) -> int:
     m = difflib.SequenceMatcher(None, a, b, autojunk=False).find_longest_match(0, len(a), 0, len(b))
     return m.size
@@ -57,6 +79,13 @@ def check(orig: dict, new: dict) -> list[str]:
     # 화면번호는 단순 숫자 일치로도 인정한다(문장 속 '3435 화면' 등 표기 차이)
     lost = [f for f in lost if not (f.startswith("screen:") and f.split(":", 1)[1] in out)]
     errs += [f"보존 누락 {f[:40]}" for f in lost]
+    # 화면번호 누락 금지: 본문 번호는 요약 문장에, 양식 칸 번호는 form_screens 에 있어야 한다.
+    for n in sorted(body_screens(orig["request"]) | body_screens(orig["response"])):
+        if n not in out:
+            errs.append(f"보존 누락 화면번호 {n}")
+    for n in form_screens(orig["request"]):
+        if n not in out and n not in new.get("form_screens", []):
+            errs.append(f"보존 누락 양식 화면번호 {n}")
     fn_src = {f for f in _facts(src) if f.startswith("fn:")}
     fn_names = {re.match(r"fn:=?([A-Za-z0-9_.가-힣]+)", f).group(1).upper() for f in fn_src if re.match(r"fn:=?([A-Za-z0-9_.가-힣]+)", f)}
     for name in fn_names:

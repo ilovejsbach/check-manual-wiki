@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: ce8af3aa34ee80a0
+form_screens:
+- '1440'
 ---
 # 사용 절차 — 1440 화면 좌측 하단 일별추이에서 NAV 항목이 뒤쪽에 있어 앞쪽으로 옮기고 싶은데 칼럼 순서를 바꾸는 방법을 문의했습니다.
 
@@ -46,6 +48,7 @@ candidate_id: ce8af3aa34ee80a0
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 1440 - ETF 현재가
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 1440 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

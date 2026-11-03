@@ -25,6 +25,9 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 87c2c2d2ea549a6e
+form_screens:
+- '6049'
+- '4242'
 ---
 # 사용 절차 — 금감원에서 매일 받는 외국인 수치와 CHECK 수치가 차이 난다고 문의하며, 6049화면의 외국인보유 항목 API와 외국인…
 
@@ -47,6 +50,7 @@ candidate_id: 87c2c2d2ea549a6e
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4242 - 일별순매수
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 6049, 4242 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

@@ -25,6 +25,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: c120e4fec2caebf2
+form_screens:
+- '4571'
 ---
 # 사용 절차 — 행사가별이 아니라 날짜별로 미니코스피옵션 전체 거래량을 합산해 연간 기준으로 보고 싶다는 문의입니다.
 
@@ -48,6 +50,7 @@ candidate_id: c120e4fec2caebf2
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4571 - 종목일별
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4571 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

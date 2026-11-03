@@ -25,6 +25,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 1dd60217fd4ccafd
+form_screens:
+- '3434'
 ---
 # 사용 절차 — 회사채 신용등급별 금리의 시계열 정보를 조회하는 방법을 문의했습니다.
 
@@ -48,6 +50,7 @@ candidate_id: 1dd60217fd4ccafd
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3431 - 시가평가 > 채권그룹 > 일별추이
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 3434 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

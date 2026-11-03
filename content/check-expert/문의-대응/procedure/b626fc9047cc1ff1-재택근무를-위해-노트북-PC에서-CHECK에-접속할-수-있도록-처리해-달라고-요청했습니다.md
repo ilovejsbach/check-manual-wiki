@@ -25,6 +25,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: b626fc9047cc1ff1
+form_screens:
+- '1379'
 ---
 # 사용 절차 — 재택근무를 위해 노트북 PC에서 CHECK에 접속할 수 있도록 처리해 달라고 요청했습니다.
 
@@ -47,6 +49,7 @@ candidate_id: b626fc9047cc1ff1
 - 함께 볼 유형: 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 1379 - 관심종목 160
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 1379 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

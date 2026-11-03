@@ -26,6 +26,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 5e96ddcd13a39a1c
+form_screens:
+- '6303'
 ---
 # 사용 절차 — S&P500 구성종목의 OHLCV 10년치와 GICS 레벨1 섹터 데이터를 특정 종목 편향 없이 받을 수 있는지 문의했습니다.
 
@@ -51,6 +53,7 @@ GICS 레벨1 구성종목은 1590 화면에서 산업분류를 GIGS, 지역을 �
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 6303 - 미국지수구성종목
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 6303 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

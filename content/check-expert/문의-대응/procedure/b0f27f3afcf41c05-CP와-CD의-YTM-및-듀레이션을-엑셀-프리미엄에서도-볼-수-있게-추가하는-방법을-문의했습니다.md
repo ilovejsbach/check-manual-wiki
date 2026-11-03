@@ -26,6 +26,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: b0f27f3afcf41c05
+form_screens:
+- '3471'
 ---
 # 사용 절차 — CP와 CD의 YTM 및 듀레이션을 엑셀 프리미엄에서도 볼 수 있게 추가하는 방법을 문의했습니다.
 
@@ -49,6 +51,7 @@ CD/CP의 YTM은 3743 화면에서 확인할 수 있으나 화면 특성상 엑�
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3744 - 시가평가 > CD/CP > CD/CP 등급별 수익률 추이
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 3471 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

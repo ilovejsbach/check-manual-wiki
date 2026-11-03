@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: a82fd77af2c6f0cb
+form_screens:
+- '4109'
 ---
 # 사용 절차 — 선물 종목을 관심종목으로 등록하는 방법을 문의했습니다.
 
@@ -46,6 +48,7 @@ candidate_id: a82fd77af2c6f0cb
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4109 - 개별주식
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4109 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

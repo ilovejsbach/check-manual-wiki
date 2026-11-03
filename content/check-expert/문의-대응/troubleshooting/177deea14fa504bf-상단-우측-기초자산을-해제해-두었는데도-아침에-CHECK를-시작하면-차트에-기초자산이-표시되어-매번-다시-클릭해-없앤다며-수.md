@@ -27,6 +27,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 177deea14fa504bf
+form_screens:
+- '4205'
 ---
 # 오류 해결 — 상단 우측 기초자산을 해제해 두었는데도 아침에 CHECK를 시작하면 차트에 기초자산이 표시되어 매번 다시 클릭해 없앤다며 수…
 
@@ -49,6 +51,7 @@ candidate_id: 177deea14fa504bf
 - 함께 볼 유형: 오류 해결, 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 4205 - 일중순매수
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4205 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

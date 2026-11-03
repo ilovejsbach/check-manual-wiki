@@ -28,6 +28,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 20a8459b2305b679
+form_screens:
+- '1448'
 ---
 # 사용 절차 — 엑셀에서 특정 ETF 코드로 해당 ETF의 PDF 종목 리스트와 PDF 수량을 연동할 수 있는지 문의했습니다.
 
@@ -52,6 +54,7 @@ candidate_id: 20a8459b2305b679
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 메뉴와 템플릿, 1448 - ETF 구성종목(PDF)
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 1448 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

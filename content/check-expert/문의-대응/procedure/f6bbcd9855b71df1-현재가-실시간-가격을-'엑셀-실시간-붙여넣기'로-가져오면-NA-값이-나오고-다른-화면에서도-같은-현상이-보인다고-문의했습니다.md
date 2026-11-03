@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: f6bbcd9855b71df1
+form_screens:
+- '4102'
 ---
 # 사용 절차 — 현재가 실시간 가격을 '엑셀 실시간 붙여넣기'로 가져오면 NA 값이 나오고 다른 화면에서도 같은 현상이 보인다고 문의했습니다.
 
@@ -46,6 +48,7 @@ candidate_id: f6bbcd9855b71df1
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4102 - 금리선물
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4102 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

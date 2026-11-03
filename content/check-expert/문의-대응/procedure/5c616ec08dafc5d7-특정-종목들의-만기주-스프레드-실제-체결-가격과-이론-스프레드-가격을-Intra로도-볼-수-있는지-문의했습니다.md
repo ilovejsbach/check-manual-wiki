@@ -28,6 +28,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 5c616ec08dafc5d7
+form_screens:
+- '4189'
 ---
 # 사용 절차 — 특정 종목들의 만기주 스프레드 실제 체결 가격과 이론 스프레드 가격을 Intra로도 볼 수 있는지 문의했습니다.
 
@@ -51,6 +53,7 @@ candidate_id: 5c616ec08dafc5d7
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4338 - 순매수일별, 4189 - 일별편집
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4189 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

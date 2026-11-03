@@ -25,6 +25,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 9c98acce296ecf45
+form_screens:
+- '3743'
 ---
 # 사용 절차 — /bond/etc/cdcp_hist 경로에서 데이터가 조회되는지 문의했습니다.
 
@@ -47,6 +49,7 @@ candidate_id: 9c98acce296ecf45
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 3743 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

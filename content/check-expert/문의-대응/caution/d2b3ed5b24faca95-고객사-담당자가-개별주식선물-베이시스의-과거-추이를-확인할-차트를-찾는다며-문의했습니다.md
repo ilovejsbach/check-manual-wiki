@@ -28,6 +28,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: d2b3ed5b24faca95
+form_screens:
+- '4311'
 ---
 # 주의사항 — 고객사 담당자가 개별주식선물 베이시스의 과거 추이를 확인할 차트를 찾는다며 문의했습니다.
 
@@ -50,6 +52,7 @@ candidate_id: d2b3ed5b24faca95
 - 함께 볼 유형: 주의사항, 질문과 답변
 - 업무·주제: 4311 - 일중, 4316 - 일중차트
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4311 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

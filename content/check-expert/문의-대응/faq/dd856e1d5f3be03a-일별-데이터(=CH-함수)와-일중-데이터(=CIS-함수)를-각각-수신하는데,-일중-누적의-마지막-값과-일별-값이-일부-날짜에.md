@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: dd856e1d5f3be03a
+form_screens:
+- '4334'
 ---
 # 질문과 답변 — 일별 데이터(=CH 함수)와 일중 데이터(=CIS 함수)를 각각 수신하는데, 일중 누적의 마지막 값과 일별 값이 일부 날짜에…
 
@@ -47,6 +49,7 @@ candidate_id: dd856e1d5f3be03a
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4334 - 순매수일중
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4334 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

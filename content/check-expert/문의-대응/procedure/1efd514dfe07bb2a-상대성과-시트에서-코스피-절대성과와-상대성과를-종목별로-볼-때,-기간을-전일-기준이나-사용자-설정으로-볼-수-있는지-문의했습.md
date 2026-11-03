@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 1efd514dfe07bb2a
+form_screens:
+- '1542'
 ---
 # 사용 절차 — 상대성과 시트에서 코스피 절대성과와 상대성과를 종목별로 볼 때, 기간을 전일 기준이나 사용자 설정으로 볼 수 있는지 문의했습…
 
@@ -46,6 +48,7 @@ candidate_id: 1efd514dfe07bb2a
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 1542 - 업종내 구성종목의 상대성과
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 1542 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

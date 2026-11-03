@@ -23,6 +23,8 @@ review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
 candidate_id: d33088a6ab58ffa1
+form_screens:
+- '9032'
 ---
 # 사용 절차 — check API 트라이얼을 신청하고 싶다고 요청했습니다.
 
@@ -45,6 +47,7 @@ API 트라이얼은 최대 3일간 가능합니다. 공식 문의 채널로 기�
 - 함께 볼 유형: 오류 해결, 사용 절차, 질문과 답변
 - 업무·주제: 조회정보 없음(이용 문의)
 - 공식 문서 연결: 분류 대기
+- 문의 양식의 화면번호 입력값: 9032 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

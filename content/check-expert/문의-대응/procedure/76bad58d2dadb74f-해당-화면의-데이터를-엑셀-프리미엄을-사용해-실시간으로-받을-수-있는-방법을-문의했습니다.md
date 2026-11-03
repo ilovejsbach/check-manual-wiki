@@ -25,6 +25,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 76bad58d2dadb74f
+form_screens:
+- '3743'
 ---
 # 사용 절차 — 해당 화면의 데이터를 엑셀 프리미엄을 사용해 실시간으로 받을 수 있는 방법을 문의했습니다.
 
@@ -47,6 +49,7 @@ candidate_id: 76bad58d2dadb74f
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 3743 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

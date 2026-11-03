@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: e338157d7e4ecfb4
+form_screens:
+- '3220'
 ---
 # 질문과 답변 — 이전에 안내받은 =CH(B1,B2,-1,"D",TRUE,"<값>","<값>","ASC","<값>=true;") 함수로 CP9…
 
@@ -46,6 +48,7 @@ candidate_id: e338157d7e4ecfb4
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 3220 - 주요금리 > 최종호가수익률(종합)
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 3220 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

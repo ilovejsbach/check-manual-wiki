@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: 3ffbccc99b9a6bba
+form_screens:
+- '4315'
 ---
 # 사용 절차 — 4315화면 달러 시장 베이시스의 보조표 계약수와 미결제량이 선물 기준인지, 시장 베이시스가 선물 체결가 빼기 현물 체결가인…
 
@@ -46,6 +48,7 @@ candidate_id: 3ffbccc99b9a6bba
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 4315 - Tick차트
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4315 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

@@ -25,6 +25,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: ebd831a0d2d20b97
+form_screens:
+- '1547'
 ---
 # 사용 절차 — 화면의 종목변동성 5일 값을 CT, CH 함수로 엑셀에 받고 싶은데 Alt를 눌러 나온 FID 5로는 조회되지 않는다는 문의…
 
@@ -48,6 +50,7 @@ Alt 누르고 마우스 오버 시 보이는 값은 FID가 아니라 다른 방�
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 1547 - 역사적변동성
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 1547 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

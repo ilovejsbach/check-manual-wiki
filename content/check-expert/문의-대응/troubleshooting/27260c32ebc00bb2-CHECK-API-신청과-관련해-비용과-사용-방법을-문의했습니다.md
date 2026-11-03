@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
 candidate_id: 27260c32ebc00bb2
+form_screens:
+- '9032'
 ---
 # 오류 해결 — CHECK API 신청과 관련해 비용과 사용 방법을 문의했습니다.
 
@@ -46,6 +48,7 @@ CHECK API 신청과 관련해 비용과 사용 방법을 문의했습니다.
 - 함께 볼 유형: 오류 해결, 사용 절차, 주의사항, 질문과 답변
 - 업무·주제: 조회정보 없음(이용 문의)
 - 공식 문서 연결: 분류 대기
+- 문의 양식의 화면번호 입력값: 9032 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

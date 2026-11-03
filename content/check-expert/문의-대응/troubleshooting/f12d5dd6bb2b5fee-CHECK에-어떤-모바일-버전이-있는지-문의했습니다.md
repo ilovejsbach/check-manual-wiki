@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: f12d5dd6bb2b5fee
+form_screens:
+- '3431'
 ---
 # 오류 해결 — CHECK에 어떤 모바일 버전이 있는지 문의했습니다.
 
@@ -46,6 +48,7 @@ CHECK에 어떤 모바일 버전이 있는지 문의했습니다.
 - 함께 볼 유형: 오류 해결, 질문과 답변
 - 업무·주제: 3431 - 시가평가 > 채권그룹 > 일별추이
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 3431 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

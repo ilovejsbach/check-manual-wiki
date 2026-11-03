@@ -23,6 +23,8 @@ review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
 candidate_id: 38b1e53446a55679
+form_screens:
+- '1923'
 ---
 # 사용 절차 — CHECK API의 /stock/m001/rank_invest 투자자 당일 데이터를 장 마감 후 수신한 값이 rank_inv…
 
@@ -45,6 +47,7 @@ CHECK API의 /stock/m001/rank_invest 투자자 당일 데이터를 장 마감 �
 - 함께 볼 유형: 사용 절차, 질문과 답변
 - 업무·주제: 투자자·회원사 매매·보유
 - 공식 문서 연결: 분류 대기
+- 문의 양식의 화면번호 입력값: 1923 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

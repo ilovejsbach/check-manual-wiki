@@ -24,6 +24,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: cee58a898ef1cfdc
+form_screens:
+- '4391'
 ---
 # 질문과 답변 — 체결이 일어날 때마다 가격 표시창 옆에 나타나는 B, S, BB, SS가 무엇을 뜻하는지, 특히 BB와 SS의 의미를 문의했…
 
@@ -46,6 +48,7 @@ candidate_id: cee58a898ef1cfdc
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4391 - Tick1
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4391 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

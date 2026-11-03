@@ -23,6 +23,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: fe45744bdddf6a4c
+form_screens:
+- '4315'
 ---
 # 질문과 답변 — KRX시장과 주간선물이 아닌 야간선물과 NXT시장의 베이시스 차트를 보고 싶다는 문의입니다.
 
@@ -45,6 +47,7 @@ KRX시장과 주간선물이 아닌 야간선물과 NXT시장의 베이시스 �
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4315 - Tick차트
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 4315 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

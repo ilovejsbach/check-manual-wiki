@@ -25,6 +25,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: ba9dbae0c9dae3eb
+form_screens:
+- '6106'
 ---
 # 질문과 답변 — 넥스트트레이드의 특정 종목을 볼 수 있는 국내주식 시세판과 시간외 국내주식 실시간 시세판이 어느 화면인지 문의했습니다.
 
@@ -49,6 +51,7 @@ candidate_id: ba9dbae0c9dae3eb
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 1425 - 시간외단일가 시세표
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 6106 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

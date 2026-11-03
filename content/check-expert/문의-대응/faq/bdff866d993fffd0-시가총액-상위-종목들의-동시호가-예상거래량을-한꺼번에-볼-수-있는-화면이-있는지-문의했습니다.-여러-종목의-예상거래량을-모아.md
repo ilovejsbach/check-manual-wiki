@@ -24,6 +24,9 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: bdff866d993fffd0
+form_screens:
+- '1320'
+- '1318'
 ---
 # 질문과 답변 — 시가총액 상위 종목들의 동시호가 예상거래량을 한꺼번에 볼 수 있는 화면이 있는지 문의했습니다. 여러 종목의 예상거래량을 모아…
 
@@ -46,6 +49,7 @@ candidate_id: bdff866d993fffd0
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 1318 - 시간대별 평균
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 1320, 1318 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 

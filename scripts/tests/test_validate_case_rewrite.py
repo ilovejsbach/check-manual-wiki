@@ -31,3 +31,12 @@ def test_menu_path_overlap_allowed_but_long_copy_flagged_and_empty_response_ok()
     assert any("복사 의심" in e for e in v.check(o, copy))
     empty = {"id": "c", "request": ok["request"], "response": "대응 내용이 기록되지 않았습니다."}
     assert v.check(o, empty) == []
+
+
+def test_form_and_body_screen_numbers_must_be_preserved():
+    orig = {"id": "a", "request": "- 화면번호 : 4101 / 3080 - 전화번호 : - 문의내용 : #6000 공시 화면 검색 방법 문의", "response": "1389-항목편집에서 추가하세요"}
+    ok = {"id": "a", "request": "#6000 공시 화면의 검색 방법을 문의했습니다. 조건은 기록되지 않았습니다.", "response": "1389 화면의 항목편집에서 추가하도록 안내했습니다.", "form_screens": ["4101", "3080"]}
+    assert not [e for e in v.check(orig, ok) if "화면번호" in e]
+    bad = {**ok, "response": "항목편집에서 추가하도록 안내했습니다.", "form_screens": ["4101"]}
+    errs = v.check(orig, bad)
+    assert any("1389" in e for e in errs) and any("3080" in e for e in errs)

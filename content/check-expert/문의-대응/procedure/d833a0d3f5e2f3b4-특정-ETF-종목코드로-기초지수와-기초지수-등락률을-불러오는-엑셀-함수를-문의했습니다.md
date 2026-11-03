@@ -25,6 +25,8 @@ review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
 candidate_id: d833a0d3f5e2f3b4
+form_screens:
+- '1440'
 ---
 # 사용 절차 — 특정 ETF 종목코드로 기초지수와 기초지수 등락률을 불러오는 엑셀 함수를 문의했습니다.
 
@@ -47,6 +49,7 @@ candidate_id: d833a0d3f5e2f3b4
 - 함께 볼 유형: 오류 해결, 사용 절차, 질문과 답변
 - 업무·주제: 1440 - ETF 현재가
 - 공식 문서 연결: 연결됨
+- 문의 양식의 화면번호 입력값: 1440 (질문 대상 화면과 다를 수 있음)
 
 ## 검증할 사항
 
