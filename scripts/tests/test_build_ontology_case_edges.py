@@ -91,3 +91,12 @@ def test_tr_candidate_nodes_from_registry():
     assert set(by) == {"check:tr:9999", "check:tr:9998"}  # 매뉴얼 화면은 후보가 아니다
     assert by["check:tr:9999"]["possible_false_positive"] is True and by["check:tr:9998"]["possible_false_positive"] is False
     assert by["check:tr:9998"]["type"] == "tr_candidate" and by["check:tr:9998"]["visibility"] == "public"
+
+
+def test_form_screens_only_go_to_review_queue_when_no_body_evidence():
+    import build_ontology_case_edges as bce
+    cases = [{"id": "check:support-case:a", "form_screens": ["4101", "9999"]}, {"id": "check:support-case:b", "form_screens": ["4101"]}]
+    known = {"check:screen:4101", "check:support-case:a", "check:support-case:b"}
+    rows = bce.form_screen_review_rows(cases, {"check:support-case:b"}, known, {}, [], "2026-11-03")
+    assert [(r["source_id"], r["target_id"], r["review_status"], r["confident"]) for r in rows] == [
+        ("check:support-case:a", "check:screen:4101", "needs_review", False)]

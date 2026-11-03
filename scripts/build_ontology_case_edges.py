@@ -102,6 +102,27 @@ def review_rows(cands: list[dict], as_of: str) -> list[dict]:
     return rows
 
 
+def form_screen_review_rows(cases: list[dict], covered: set[str], known: set[str], registry: dict[str, dict], existing: list[dict], as_of: str) -> list[dict]:
+    """본문 근거가 없는 사례의 양식 화면번호(form_screens)를 검수 큐로만 낸다. 엣지(정답)로는 쓰지 않는다:
+    양식 칸 번호는 문의를 접수한 화면일 뿐 질문 대상 화면과 다를 수 있다."""
+    rank_of: dict[str, int] = collections.Counter(r["source_id"] for r in existing)
+    seen = {(r["source_id"], r["target_id"]) for r in existing}
+    rows = []
+    for c in cases:
+        if c["id"] in covered:
+            continue
+        for code in c.get("form_screens") or []:
+            target = next((t for t in (f"check:screen:{code}", f"check:tr:{code}") if t in known), None)
+            if target is None or (c["id"], target) in seen:
+                continue
+            rank_of[c["id"]] += 1
+            seen.add((c["id"], target))
+            rows.append({"source_id": c["id"], "target_id": target, "type": "about_screen" if target.startswith("check:screen:") else "mentions_tr",
+                         "rank": rank_of[c["id"]], "score": 0.3, "confident": False, "evidence_tokens": ["form_screen"],
+                         "grade": "inferred", "review_status": "needs_review", "as_of": as_of})
+    return rows
+
+
 def validate_case_edges(edges: list[dict], known_ids: set[str]) -> list[str]:
     errs: list[str] = []
     ids = collections.Counter(e["id"] for e in edges)
@@ -145,6 +166,7 @@ def compute(records: list[dict], registry_rows: list[dict], as_of: str):
         if l["relation"] == "about_screen":
             scr_all[l["from"]].add(l["to"])
     review = review_rows(dcl.build_candidates(keys_list, idx, as_of, no_key, scr_all), as_of)
+    review += form_screen_review_rows(idx.cases, any_screen, known, registry, review, as_of)
     return edges, review, known, keys_list, [c["id"] for c in idx.cases]
 
 
