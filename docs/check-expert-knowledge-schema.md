@@ -8,7 +8,7 @@
 | --- | --- |
 | `schema_version` | 레코드 스키마 버전 |
 | `id` | 변경되지 않는 지식 ID. 화면은 `check:screen:1300` 형식 |
-| `type` | `screen`, `manual`, `excel`, `support_case`, `support_case_index` |
+| `type` | `screen`, `observed_screen`, `manual`, `excel`, `support_case`, `support_case_index` |
 | `title`, `aliases` | 정식 제목과 검색 동의어 |
 | `category`, `screen_code` | 업무 분류와 CHECK 화면번호 |
 | `source`, `source_locator` | 공식 원본과 PDF 페이지·Excel 시트/행 위치 |
@@ -23,6 +23,10 @@
 | `case_topic`, `case_topics` | 사례가 연결된 업무·화면 주제. 복수 연결을 보존한다. |
 | `candidate_id` | 비식별 원천에서 파생된 사례의 안정적인 후보 ID |
 | `relationships` | `target_id`, 관계 유형, 사람용 관계명을 가진 유형화된 연결 |
+| `observation_status` | 실제 CHECK 관찰 수준. 예: `baseline_observed`, `deep_observed` |
+| `golden_status` | 골든 승인 진행 상태. 화면 호출 확인과 별개로 관리 |
+| `financial_review_status` | 화면 필드의 금융 정의·산식 검수 상태 |
+| `e2e` | 관찰시각, 탭, 금융 항목, 캡처 경고, 증거 경로를 보존한 E2E 원문 레코드 |
 
 ## 배포 경로
 
@@ -40,3 +44,7 @@
 - 원본 매뉴얼이 바뀌면 전체를 재생성하고 `manifest.json`의 SHA-256으로 입력 버전을 식별한다.
 - `review_status=candidate`인 문의 대응 사례는 당시 대응 기록이며 공식 정의나 현재 제품 동작으로 단정하지 않는다.
 - 동일 문의가 여러 화면과 관련되면 하나의 `support_case`에 `case_topics`와 관계를 병합한다.
+- `callability_status=verified`는 화면 호출만 확인했다는 뜻이며 금융 의미·산식 또는 고객
+  매뉴얼 승인을 뜻하지 않는다.
+- `observed_screen`은 실제 UI에서 관찰됐지만 공식 매뉴얼 카탈로그에 연결되지 않은 화면이다.
+  누락시키지 말고 별도 검수 후 공식 화면과 연결하거나 비카탈로그 상태를 유지한다.

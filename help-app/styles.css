@@ -70,6 +70,7 @@ button { color: inherit; }
 .result-top { display: flex; gap: 7px; align-items: center; margin-bottom: 8px; }
 .badge { display: inline-flex; align-items: center; border-radius: 5px; padding: 3px 6px; background: var(--brand-soft); color: var(--brand); font-size: 10px; font-weight: 800; }
 .badge.candidate { color: var(--candidate); background: var(--candidate-soft); }
+.badge.observed { color: var(--brand); background: var(--brand-soft); }
 .result h3 { margin: 0 0 7px; font-size: 15px; line-height: 1.4; }
 .result p { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 

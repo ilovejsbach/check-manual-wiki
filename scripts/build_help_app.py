@@ -66,6 +66,9 @@ def build(source: Path = SOURCE, output: Path = OUTPUT) -> dict[str, object]:
                 "case_topic": record.get("case_topic"),
                 "case_topics": record.get("case_topics", []),
                 "candidate_id": record.get("candidate_id"),
+                "observation_status": record.get("observation_status"),
+                "golden_status": record.get("golden_status"),
+                "financial_review_status": record.get("financial_review_status"),
                 "markdown_path": record.get("markdown_path"),
                 "related": related,
                 "text": record.get("text", ""),
@@ -80,6 +83,15 @@ def build(source: Path = SOURCE, output: Path = OUTPUT) -> dict[str, object]:
         "app": "CHECK Expert 로컬 도움말",
         "record_count": len(payload),
         "screen_count": sum(item.get("screen_code") is not None for item in payload),
+        "observed_only_screen_count": sum(
+            item.get("type") == "observed_screen" for item in payload
+        ),
+        "observed_screen_record_count": sum(
+            item.get("observation_status") is not None for item in payload
+        ),
+        "deep_observed_screen_record_count": sum(
+            item.get("observation_status") == "deep_observed" for item in payload
+        ),
         "candidate_count": sum(item.get("review_status") == "candidate" for item in payload),
         "support_case_count": sum(item.get("type") == "support_case" for item in payload),
         "support_case_type_counts": {

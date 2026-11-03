@@ -49,6 +49,7 @@ generated: true
 ## 원본 무결성(SHA-256)
 
 - `CHECKPlus_Manual.pdf`: `b3ca8de468ffb238d16bb49882a2e7d2f85585f87c28698587331c8022948631`
+- `e2e-observations.jsonl`: `9e9d64e15f58e1779ab65180f55541c846ea82b0b50048c774f67b59d5ca5190`
 - `excel-manual1_menu_template.xls.pia`: `64529436ce861e37a2658d9bd0577d4f9f8c5230cd4a81dc1272a6f021293810`
 - `excel-manual2_function.xls.pia`: `8138d73fee8ceab0fbe450fa8146c7dd8dcea996e69450dabf3ccf39716f3ca2`
 - `excel-manual3_askWizard.xls.pia`: `34b5ae20df97bfa29b997f16622a3ff81500e193a91c27454f567996929e7966`

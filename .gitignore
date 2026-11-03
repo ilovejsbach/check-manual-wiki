@@ -28,6 +28,7 @@ sources/check-expert/*
 !sources/check-expert/README.md
 !sources/check-expert/manual-enrichment.jsonl
 !sources/check-expert/manual-enrichment-unmapped.jsonl
+!sources/check-expert/e2e-observations.jsonl
 .tools/
 tmp-*
 help-preview.png

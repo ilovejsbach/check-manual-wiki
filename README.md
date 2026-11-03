@@ -38,10 +38,20 @@ Excel Premium, 공식 문서와 검수 전 실사용 후보를 한 화면에서 
 
 ```powershell
 uv sync --frozen
+uv run python scripts/import_e2e_knowledge.py `
+  ..\check-e2e `
+  sources\check-expert\e2e-observations.jsonl `
+  --json
+uv run python scripts/build_check_wiki.py --json
 uv run pytest
 uv run python scripts/validate_check_wiki.py --json
 uv run python scripts/build_help_app.py --json
 ```
+
+E2E 가져오기는 `check-e2e/golden/**`의 manifest, inventory, analysis, reference를
+화면번호별 관찰 레코드로 병합합니다. 화면 호출 확인, 심층 관찰, 금융 검수 상태는 서로
+독립적으로 유지합니다. 공식 매뉴얼 카탈로그에 없는 실제 관찰 화면도 삭제하지 않고
+`observed_screen` 검수 후보로 보존합니다.
 
 빌드된 `help-dist/`는 다음과 같이 조회할 수 있습니다.
 
