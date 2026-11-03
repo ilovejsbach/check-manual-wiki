@@ -30,6 +30,7 @@ sources/check-expert/*
 !sources/check-expert/manual-enrichment-unmapped.jsonl
 !sources/check-expert/case-summaries.jsonl
 !sources/check-expert/e2e-observations.jsonl
+!sources/check-expert/field-definitions.jsonl
 .tools/
 tmp-*
 help-preview.png

@@ -31,6 +31,7 @@ CODE_TABLE_ROWS = 750
 ENRICHMENT_NAME = "manual-enrichment.jsonl"
 UNMAPPED_ENRICHMENT_NAME = "manual-enrichment-unmapped.jsonl"
 E2E_OBSERVATIONS_NAME = "e2e-observations.jsonl"
+FIELD_DEFINITIONS_NAME = "field-definitions.jsonl"
 MANUAL_ASSET_DIR = OUTPUT_DIR / "assets" / "manual-pages"
 MANUAL_ASSET_SCALE = 1.25
 SEMANTIC_STOPWORDS = {
@@ -1643,6 +1644,26 @@ def load_e2e_observations() -> dict[str, dict[str, object]]:
     return observations
 
 
+def load_field_definitions() -> dict[str, dict[str, object]]:
+    """표시명 → 일반 금융 정의(출처 확인된 것만). 화면에서 표시명만 관찰된 항목에 얹는다."""
+    path = SOURCE_DIR / FIELD_DEFINITIONS_NAME
+    if not path.exists():
+        return {}
+    definitions: dict[str, dict[str, object]] = {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        try:
+            record = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if not record.get("sources") or not record.get("definition"):
+            continue  # 출처 없는 정의는 쓰지 않는다
+        for label in record.get("labels", []):
+            definitions[str(label)] = record
+    return definitions
+
+
 def render_e2e_section(observation: dict[str, object], title: str) -> str:
     status_labels = {
         "baseline_observed": "기본 화면 관찰",
@@ -1741,6 +1762,7 @@ def apply_e2e_observations(records: list[dict[str, object]]) -> int:
 
 def build_screen_field_records(records: list[dict[str, object]]) -> int:
     observations = load_e2e_observations()
+    field_definitions = load_field_definitions()
     screen_ids_by_code: dict[str, list[str]] = defaultdict(list)
     for record in records:
         if record.get("screen_code") and record.get("type") in {"screen", "observed_screen"}:
@@ -1766,6 +1788,26 @@ def build_screen_field_records(records: list[dict[str, object]]) -> int:
         for value in observation.get("observed_fields", []):
             label = str(value).strip()
             if label and label not in detailed_labels:
+                known = field_definitions.get(label)
+                if known and known.get("categories") and observation.get("category") not in known["categories"]:
+                    known = None  # 같은 표시명이라도 다른 시장 화면에서는 뜻이 다를 수 있다
+                if known:
+                    candidates.append(
+                        {
+                            "label": label,
+                            "concept": known.get("concept") or label,
+                            "definition": known["definition"],
+                            "formula": known.get("formula"),
+                            "unit": known.get("unit"),
+                            "basis": known.get("basis"),
+                            "definition_status": "authoritative_general_definition",
+                            "check_field_status": "exact_basis_pending",
+                            "interpretation_caution": known.get("caution"),
+                            "sources": [],
+                            "direct_sources": known["sources"],
+                        }
+                    )
+                    continue
                 candidates.append(
                     {
                         "label": label,
@@ -1792,7 +1834,11 @@ def build_screen_field_records(records: list[dict[str, object]]) -> int:
                 "researched" if definition_status.startswith("authoritative_") else "candidate"
             )
             source_catalog = observation.get("semantic_sources", {})
-            source_entries = []
+            source_entries = [
+                {"id": f"{slug(str(item.get('title') or 'source'))}", **item}
+                for item in candidate.get("direct_sources", [])
+                if isinstance(item, dict)
+            ]
             if isinstance(source_catalog, dict):
                 for source_id in candidate.get("sources", []):
                     source = source_catalog.get(str(source_id))
