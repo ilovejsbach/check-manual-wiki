@@ -258,4 +258,4 @@ uv run python scripts/regenerate_all.py  # ../check-e2e 가 있으면 E2E 가져
 uv run python scripts/regenerate_all.py --site   # Quartz 빌드까지
 ```
 
-`--skip-e2e`(원본 없는 PC), `--e2e-dir <경로>`, `--list`(단계만 출력)를 쓸 수 있다. 끝에 단계별 통과/실패와 기대값 점검(researched 필드 ≥ 68, `None` 링크 없음)이 나오고, 하나라도 실패하면 종료 코드 1이다. 엑셀 원본 6개가 없는 PC(맥)에서는 원본 해시가 빠지므로 생성물을 커밋하지 않는다. 통과하면 생성물을 통합 브랜치에 커밋하고 `main` 으로 병합한다.
+`--skip-e2e`(원본 없는 PC), `--e2e-dir <경로>`, `--list`(단계만 출력)를 쓸 수 있다. 끝에 단계별 통과/실패와 `field_definition_coverage.py` 점검(정의가 적용될 수 있는 (화면, 표시명) 쌍이 모두 반영됐는가; `--explain` 으로 미적용 이유 출력)과 `None` 링크 점검이 나오고, 하나라도 실패하면 종료 코드 1이다. 엑셀 원본 6개가 없는 PC(맥)에서는 원본 해시가 빠지므로 생성물을 커밋하지 않는다. 통과하면 생성물을 통합 브랜치에 커밋하고 `main` 으로 병합한다.
