@@ -32,6 +32,8 @@ def crosslink_metrics(records: list[dict[str, Any]]) -> dict[str, Any]:
             continue
         text = str(record.get("text") or "")
         text = re.sub(r"(?ms)^## (?:관련 화면|원문 근거)\s*\n.*?(?=^## |\Z)", "\n", text)
+        # 실제 앱에서 관찰한 탭·항목 이름은 화면 UI 라벨이지 다른 화면에 대한 언급이 아니다.
+        text = re.sub(r"(?ms)^### 관찰된 (?:탭|금융 항목)\s*\n.*?(?=^#{1,3} |\Z)", "\n", text)
         own = str(record.get("screen_code") or "")
         counts: dict[str, int] = {}
         tr_spans: list[tuple[int, int]] = []
