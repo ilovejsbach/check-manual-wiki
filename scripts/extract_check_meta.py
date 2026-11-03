@@ -112,6 +112,58 @@ def wizard_rows(wizard_dir: Path):
                 yield (fname.replace("_fid.ini", ""), market, category, int(parts[-1]), parts[0])
 
 
+DEFAULT_ROOT = Path(r"C:\KOSCOM\CheckExpert")
+
+
+def menu_rows(menu_json: Path):
+    """system/Menu/menu.json 전체 메뉴 트리 → 화면 한 줄씩(메뉴 경로, 권한 등급 포함)."""
+    data = json.loads(menu_json.read_text(encoding="utf-8"))
+
+    def walk(node, path):
+        if isinstance(node, list):
+            for x in node:
+                yield from walk(x, path)
+        elif isinstance(node, dict):
+            name = node.get("menuName") or ""
+            if "screenId" in node:
+                auth = sorted(k[5:] for k, v in node.items() if k.startswith("auth_") and str(v) not in ("", "0"))
+                yield (node.get("screenId"), node.get("fileName", ""), " > ".join(path), name,
+                       node.get("menuNameEng", ""), node.get("shortName", ""), node.get("tabName", ""),
+                       node.get("marketGb", ""), node.get("menuGubun", ""), node.get("menuType", ""),
+                       node.get("screenType", ""), node.get("dispLevel", ""), "|".join(auth))
+            for ch in node.get("children") or []:
+                yield from walk(ch, path + ([name] if name and "screenId" not in node else []))
+
+    yield from walk(data, [])
+
+
+MENU_HEADER = ["screen_id", "file_name", "menu_path", "menu_name", "menu_name_eng", "short_name", "tab_name",
+               "market_gb", "menu_gubun", "menu_type", "screen_type", "disp_level", "auth"]
+
+
+def sised_rows(path: Path):
+    """CheckXL/system/sisedsp.dat(CP949 CSV): 시장, 영문시장, 분류, 분류, FID, 항목명, 영문키, 설명."""
+    text = path.read_bytes().decode("cp949", "replace")
+    for r in csv.reader(io.StringIO(text)):
+        if len(r) >= 7 and r[4].strip().isdigit():
+            yield (r[0], r[1], r[2], int(r[4]), r[5], r[6], r[7] if len(r) > 7 else "")
+
+
+def infer_mid1_functions(con):
+    """MID 1(장내종목)의 함수 가능 여부 추정. 정답이 아니다.
+
+    CTS = SID 2(단일종목체결)에 속함 (항목코드표 대조 교차검증 정확도 약 99%)
+    CH  = HISTORY 계열 SID(201~238)에 속함 (같은 대조 정확도 약 91%)
+    RTD·CT는 화면 관찰 20행이 모두 가졌지만 규칙을 세우지 못해 비운다.
+    """
+    sids: dict[int, set] = {}
+    for fid, sid in con.execute("SELECT FID, SID FROM SID_MID_FID_TBL WHERE MID = 1"):
+        sids.setdefault(fid, set()).add(sid)
+    for (fid,) in con.execute("SELECT FID FROM MID_FID_TBL WHERE MID = 1 ORDER BY FID"):
+        s = sids.get(fid, set())
+        yield (fid, int(any(201 <= x <= 238 for x in s)), int(2 in s), "|".join(map(str, sorted(s))))
+
+
 def sha256(path: Path) -> str:
     h = hashlib.sha256()
     with path.open("rb") as f:
@@ -136,6 +188,7 @@ def main() -> int:
     ap.add_argument("--src", type=Path, default=DEFAULT_SRC)
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
     ap.add_argument("--wizard-dir", type=Path, default=DEFAULT_WIZARD_DIR, help="엑셀 마법사 INI 폴더(없으면 생략)")
+    ap.add_argument("--root", type=Path, default=DEFAULT_ROOT, help="CHECK 설치 폴더(메뉴·시세표 추출용)")
     ap.add_argument("--check", action="store_true", help="파일을 쓰지 않고 건수만 점검")
     args = ap.parse_args()
 
@@ -165,6 +218,20 @@ def main() -> int:
             data, n = render_csv(wz, ["wizard", "market", "category", "fid", "name"])
             counts["wizard_fid_index.csv.gz"] = n
             outputs["wizard_fid_index.csv.gz"] = gzip.compress(data, mtime=0)
+        data, n = render_csv(infer_mid1_functions(con), ["fid", "ch_inferred", "cts_inferred", "sids"])
+        counts["func_inferred_mid1.csv"] = n
+        outputs["func_inferred_mid1.csv"] = data
+        menu_path = args.root / "system" / "Menu" / "menu.json"
+        if menu_path.exists():
+            data, n = render_csv(menu_rows(menu_path), MENU_HEADER)
+            counts["menu_screens.csv"] = n
+            outputs["menu_screens.csv"] = data
+        sised_path = args.root / "CheckXL" / "system" / "sisedsp.dat"
+        if sised_path.exists():
+            data, n = render_csv(sised_rows(sised_path),
+                                 ["market", "market_eng", "category", "fid", "name", "eng_key", "description"])
+            counts["sisedsp_fid_index.csv.gz"] = n
+            outputs["sisedsp_fid_index.csv.gz"] = gzip.compress(data, mtime=0)
         # 관찰로 확인한 DATA_TYPE 표기
         data, n = render_csv(sorted(OBSERVED_CH_TYPE.items()), ["data_type", "ch_type_observed"])
         counts["data_type_observed.csv"] = n

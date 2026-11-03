@@ -17,6 +17,9 @@
     "sid_mid_fid.csv.gz": 104015,
     "grid_8003.csv.gz": 192468,
     "wizard_fid_index.csv.gz": 14519,
+    "func_inferred_mid1.csv": 4984,
+    "menu_screens.csv": 3710,
+    "sisedsp_fid_index.csv.gz": 17822,
     "data_type_observed.csv": 4
   },
   "integrity": {

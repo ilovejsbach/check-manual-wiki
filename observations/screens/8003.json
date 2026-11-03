@@ -5,6 +5,7 @@
   "app_version": "CheckExpert 4.0.0.000",
   "exists": true,
   "title": "데이터항목 검색",
+  "menu_path": ["숨김메뉴관리"],
   "tabs": ["기본", "상세"],
   "inputs": [
     {"label": "시장 구분(C/K/N)", "type": "radio", "default": null},
