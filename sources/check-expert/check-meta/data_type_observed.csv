@@ -1,0 +1,5 @@
+data_type,ch_type_observed
+3,INT(숫자)
+4,LNLN(숫자)
+17,UCHAR(숫자)
+19,UINT(숫자)

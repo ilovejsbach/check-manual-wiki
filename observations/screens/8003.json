@@ -1,0 +1,32 @@
+{
+  "screen_code": "8003",
+  "capture_id": "cap-win-8003-a1",
+  "observed_at": "2026-11-03",
+  "app_version": "CheckExpert 4.0.0.000",
+  "exists": true,
+  "title": "데이터항목 검색",
+  "tabs": ["기본", "상세"],
+  "inputs": [
+    {"label": "시장 구분(C/K/N)", "type": "radio", "default": null},
+    {"label": "종목", "type": "combo", "default": null},
+    {"label": "검색어", "type": "text", "default": null},
+    {"label": "함수", "type": "combo", "default": "함수(전체)"},
+    {"label": "조회주기", "type": "combo", "default": "전체"},
+    {"label": "시장 목록 선택", "type": "check", "default": null}
+  ],
+  "buttons": ["종목 조회(돋보기)", "검색", "초기화", "엑셀로 보내기", "선택항목 즐겨찾기 추가"],
+  "output_columns": [
+    {"label": "시장코드", "tab": "시장 목록(좌측)"},
+    {"label": "시장명", "tab": "시장 목록(좌측)"},
+    {"label": "항목코드", "tab": "기본"},
+    {"label": "항목명", "tab": "기본"},
+    {"label": "조회주기", "tab": "기본"},
+    {"label": "사용가능함수", "tab": "기본"},
+    {"label": "값(RTD,CT)예시", "tab": "기본"},
+    {"label": "시장코드", "tab": "기본"},
+    {"label": "시장명", "tab": "기본"},
+    {"label": "즐겨찾기", "tab": "기본"},
+    {"label": "CH_Type", "tab": "기본"}
+  ],
+  "notes": "엑셀 항목코드표(HangMokCodeTable)를 화면에서 조회하는 화면. 좌측 시장 목록(체크박스)으로 항목 범위를 거르고 우측 그리드에 항목코드·항목명·조회주기·사용가능함수·값 예시·CH_Type을 보여 준다. 사용가능함수 열에 RTD, CT, CH, CTS 등이 표기된다. 하단 안내문: 투자자별 항목코드를 엑셀에서 조회하려면 항목코드 뒤에 ^숫자를 붙임 / 항목명과 항목코드를 블럭 설정해 엑셀로 던져 넣을 수 있음. 기본 탭만 화면에서 관찰했고 상세 탭, 콤보 옵션, 검색 조작은 하지 못했다(클릭 입력이 앱에 전달되지 않음). 값 예시 열의 숫자는 저장하지 않음. 이 화면의 데이터 원천은 로컬 설치의 CheckXL/system/xlp_meta.sqlite로 확인했다: 항목코드=FID_LIST_TBL.FID, 시장코드=MID_LIST_TBL.MID, CH_Type=MID_FID_TBL.DATA_TYPE(19=UINT, 3=INT, 4=LNLN, 17=UCHAR는 화면 행으로 대조 확인). 사용가능함수 열은 DB의 TICK/INTRA/HISTORY 플래그만으로는 재현되지 않아 미확인. 추출 결과는 sources/check-expert/check-meta/ 참고."
+}
