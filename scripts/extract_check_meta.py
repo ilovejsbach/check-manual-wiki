@@ -74,6 +74,44 @@ TABLES = [
 ]
 
 
+DEFAULT_WIZARD_DIR = Path(r"C:\KOSCOM\CheckExpert\system\exceladdinsystemdata")
+WIZARD_FILES = ["tablewizard_fid.ini", "historywizard_fid.ini", "bondhistorywizard_fid.ini"]
+
+
+def grid_8003_rows(con):
+    """8003 그리드(항목코드 × 시장코드) 재구성. 조회주기·사용가능함수·값 예시 열은 원천에 없어 비운다."""
+    sql = (
+        "SELECT m.MID, COALESCE(l.DSCRPTN, ''), f.FID, f.DSCRPTN, f.FGID, m.DATA_TYPE, m.LEN, m.CNT, m.DEC_POS,"
+        " m.XLP_DATA_TYPE FROM MID_FID_TBL m JOIN FID_LIST_TBL f ON f.FID = m.FID"
+        " LEFT JOIN MID_LIST_TBL l ON l.MID = m.MID ORDER BY m.MID, f.FID"
+    )
+    for mid, mname, fid, fname, fgid, dt, ln, cnt, dec, xdt in con.execute(sql):
+        yield (fid, fname, mid, mname, fgid, dt, OBSERVED_CH_TYPE.get(dt, ""), ln, cnt, dec, xdt)
+
+
+def wizard_rows(wizard_dir: Path):
+    """엑셀 마법사 INI(평문 CP949)의 [시장.분류] 섹션에서 항목코드를 읽는다."""
+    import re
+    for fname in WIZARD_FILES:
+        p = wizard_dir / fname
+        if not p.exists():
+            continue
+        section = None
+        for line in p.read_bytes().decode("cp949", "replace").splitlines():
+            line = line.strip()
+            m = re.fullmatch(r"\[(.+)\]", line)
+            if m:
+                section = m.group(1)
+                continue
+            m = re.fullmatch(r"(\d+)=(.*)", line)
+            if not (m and section and "." in section):
+                continue
+            parts = [x.strip() for x in m.group(2).split(",")]
+            if re.fullmatch(r"\d{4,5}", parts[-1]):
+                market, category = section.rsplit(".", 1)
+                yield (fname.replace("_fid.ini", ""), market, category, int(parts[-1]), parts[0])
+
+
 def sha256(path: Path) -> str:
     h = hashlib.sha256()
     with path.open("rb") as f:
@@ -97,6 +135,7 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--src", type=Path, default=DEFAULT_SRC)
     ap.add_argument("--out", type=Path, default=DEFAULT_OUT)
+    ap.add_argument("--wizard-dir", type=Path, default=DEFAULT_WIZARD_DIR, help="엑셀 마법사 INI 폴더(없으면 생략)")
     ap.add_argument("--check", action="store_true", help="파일을 쓰지 않고 건수만 점검")
     args = ap.parse_args()
 
@@ -115,6 +154,17 @@ def main() -> int:
             data, n = render_csv(con.execute(sql), header)
             counts[name] = n
             outputs[name] = gzip.compress(data, mtime=0) if gz else data
+        data, n = render_csv(
+            grid_8003_rows(con),
+            ["fid", "fid_name", "mid", "market_name", "fgid", "data_type", "ch_type_observed", "len", "cnt",
+             "dec_pos", "xlp_data_type"])
+        counts["grid_8003.csv.gz"] = n
+        outputs["grid_8003.csv.gz"] = gzip.compress(data, mtime=0)
+        wz = list(wizard_rows(args.wizard_dir))
+        if wz:
+            data, n = render_csv(wz, ["wizard", "market", "category", "fid", "name"])
+            counts["wizard_fid_index.csv.gz"] = n
+            outputs["wizard_fid_index.csv.gz"] = gzip.compress(data, mtime=0)
         # 관찰로 확인한 DATA_TYPE 표기
         data, n = render_csv(sorted(OBSERVED_CH_TYPE.items()), ["data_type", "ch_type_observed"])
         counts["data_type_observed.csv"] = n

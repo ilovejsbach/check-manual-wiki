@@ -15,6 +15,8 @@
 | `mid.csv` | 189 | **시장코드(MID)**, 내부 정의명(`MID_KSP_JONG`), 시장명, 기준 FID, 항목 수 |
 | `fgid.csv` | 36 | 항목 그룹 이름 |
 | `sid.csv` | 125 | 데이터 종류(SID) 이름 (마스터, 단일종목체결, 호가 …) |
+| `grid_8003.csv.gz` | 192,468 | **8003 그리드 재구성**: 항목코드·항목명·시장코드·시장명·그룹·data_type·CH_Type(확인분)·len·cnt·dec_pos. 조회주기·사용가능함수·값 예시 열은 원천에 없어 뺐다 |
+| `wizard_fid_index.csv.gz` | 14,519 | 엑셀 마법사 INI(`system\exceladdinsystemdata`)의 **시장·분류별 항목코드**(wizard, market, category, fid, name). 화면 행 대조에서 CH 가능 여부와 맞았으나 `historywizard`는 FID 47개뿐이라 전체 정답은 아님 |
 | `mid_fid.csv.gz` | 192,468 | 시장(MID)별 항목(FID)의 data_type·len·cnt·dec_pos |
 | `sid_mid.csv` | 2,912 | SID×MID, 일자·시각 FID |
 | `sid_mid_fid.csv.gz` | 104,015 | SID×MID×FID |
