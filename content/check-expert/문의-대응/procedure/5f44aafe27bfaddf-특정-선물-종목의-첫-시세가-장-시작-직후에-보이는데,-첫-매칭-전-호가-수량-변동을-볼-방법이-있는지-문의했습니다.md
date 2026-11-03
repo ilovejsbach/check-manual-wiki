@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-01057
+candidate_id: 5f44aafe27bfaddf
 ---
 # 사용 절차 — 특정 선물 종목의 첫 시세가 장 시작 직후에 보이는데, 첫 매칭 전 호가 수량 변동을 볼 방법이 있는지 문의했습니다.
 

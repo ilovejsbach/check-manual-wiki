@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00298
+candidate_id: 94ccb5168ca1771e
 ---
 # 활용 팁 — CHECK 단말에서 인터넷이 연결되지 않는다고 문의했습니다.
 

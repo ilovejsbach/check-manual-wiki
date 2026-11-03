@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00285
+candidate_id: 64407b1d6623caf3
 ---
 # 사용 절차 — =CLIST 함수로 개별주식선물을 조회했으나 Cannot Find Fid(s)만 나오고 종목명·종목코드·원주종목코드 값이 조…
 

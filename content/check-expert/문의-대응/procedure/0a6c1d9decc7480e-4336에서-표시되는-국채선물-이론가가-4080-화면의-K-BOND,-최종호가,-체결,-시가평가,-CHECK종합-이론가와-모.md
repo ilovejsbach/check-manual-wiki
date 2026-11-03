@@ -29,7 +29,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-03652
+candidate_id: 0a6c1d9decc7480e
 ---
 # 사용 절차 — 4336에서 표시되는 국채선물 이론가가 4080 화면의 K-BOND, 최종호가, 체결, 시가평가, CHECK종합 이론가와 모…
 

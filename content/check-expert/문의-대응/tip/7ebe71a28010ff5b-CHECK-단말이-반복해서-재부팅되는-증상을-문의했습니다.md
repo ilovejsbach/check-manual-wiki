@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00233
+candidate_id: 7ebe71a28010ff5b
 ---
 # 활용 팁 — CHECK 단말이 반복해서 재부팅되는 증상을 문의했습니다.
 

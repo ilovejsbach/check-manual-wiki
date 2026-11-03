@@ -24,7 +24,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-03893
+candidate_id: 9f0e5696b7aaf7bb
 ---
 # 사용 절차 — 선물 데이터에서 당일 또는 과거 일자의 VWAP을 제공하는 화면이 있는지 문의했습니다.
 

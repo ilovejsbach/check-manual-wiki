@@ -27,7 +27,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-05030
+candidate_id: ba41f030441ec82a
 ---
 # 사용 절차 — 이론BASIS 일자별/종목별 조회화면과 개별주식선물 거래량/거래대금 상위종목 조회화면이 어느 화면인지 문의했습니다.
 

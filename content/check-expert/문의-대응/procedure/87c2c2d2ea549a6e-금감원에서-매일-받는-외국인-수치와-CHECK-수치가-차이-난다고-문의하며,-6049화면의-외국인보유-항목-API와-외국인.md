@@ -24,7 +24,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00878
+candidate_id: 87c2c2d2ea549a6e
 ---
 # 사용 절차 — 금감원에서 매일 받는 외국인 수치와 CHECK 수치가 차이 난다고 문의하며, 6049화면의 외국인보유 항목 API와 외국인…
 

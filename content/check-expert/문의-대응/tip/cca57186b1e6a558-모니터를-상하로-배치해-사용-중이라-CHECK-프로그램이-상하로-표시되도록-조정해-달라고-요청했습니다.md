@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00789
+candidate_id: cca57186b1e6a558
 ---
 # 활용 팁 — 모니터를 상하로 배치해 사용 중이라 CHECK 프로그램이 상하로 표시되도록 조정해 달라고 요청했습니다.
 

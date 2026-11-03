@@ -27,7 +27,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-03322
+candidate_id: 37aee8dbf3773ebd
 ---
 # 사용 절차 — 야간옵션 시장에서도 야간선물을 참조한 옵션 그릭값을 실시간으로 볼 수 있는 화면을 새로 만들 수 있는지 문의했습니다.
 

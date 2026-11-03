@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00894
+candidate_id: 4ec367bc11025548
 ---
 # 사용 절차 — /bond/m060/hist_info 로 특정 일자를 조회하면 데이터가 나오지 않고 그 전 일자로 조회하면 정상적으로 나오는…
 

@@ -25,7 +25,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-05724
+candidate_id: 14a7367e187a63c3
 ---
 # 사용 절차 — check expert+에서 유가증권 또는 코스닥 상장 종목의 유동주식 수나 유동주식비율을 알 수 있는 방법이 있는지 묻는…
 

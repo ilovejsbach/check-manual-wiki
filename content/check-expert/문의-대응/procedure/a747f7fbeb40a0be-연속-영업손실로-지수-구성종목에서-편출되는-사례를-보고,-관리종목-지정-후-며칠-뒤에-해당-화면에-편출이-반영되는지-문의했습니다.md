@@ -24,7 +24,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-02068
+candidate_id: a747f7fbeb40a0be
 ---
 # 사용 절차 — 연속 영업손실로 지수 구성종목에서 편출되는 사례를 보고, 관리종목 지정 후 며칠 뒤에 해당 화면에 편출이 반영되는지 문의했습니다.
 

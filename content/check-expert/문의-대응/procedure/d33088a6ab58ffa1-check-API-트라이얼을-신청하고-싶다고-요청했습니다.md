@@ -22,7 +22,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00466
+candidate_id: d33088a6ab58ffa1
 ---
 # 사용 절차 — check API 트라이얼을 신청하고 싶다고 요청했습니다.
 

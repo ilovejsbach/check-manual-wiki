@@ -22,7 +22,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-01077
+candidate_id: 99e5411ef8c6ef22
 ---
 # 사용 절차 — API로 ETF의 과거 PDF 내역을 조회하는데 최근 1년치까지만 조회되어, 그 이전 데이터를 받을 수 있는지 문의했습니다.
 

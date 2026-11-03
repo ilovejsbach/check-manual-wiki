@@ -22,7 +22,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-03066
+candidate_id: 9adfcbccabd0681b
 ---
 # 사용 절차 — 특정 종목을 TR3212에서 조회하면 내역이 나오지 않는 이유를 문의했습니다.
 

@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00825
+candidate_id: baf9dbc1b142924b
 ---
 # 사용 절차 — 과거 일중 순매수 데이터를 분석하려고 CIS 함수를 설정했으며, 30초 단위 일중 데이터를 서버가 얼마나 과거까지 보관하는지…
 

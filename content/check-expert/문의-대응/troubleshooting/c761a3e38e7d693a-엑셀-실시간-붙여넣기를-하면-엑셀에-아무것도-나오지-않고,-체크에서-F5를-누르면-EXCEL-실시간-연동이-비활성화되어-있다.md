@@ -26,7 +26,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00014
+candidate_id: c761a3e38e7d693a
 ---
 # 오류 해결 — 엑셀 실시간 붙여넣기를 하면 엑셀에 아무것도 나오지 않고, 체크에서 F5를 누르면 EXCEL 실시간 연동이 비활성화되어 있다…
 

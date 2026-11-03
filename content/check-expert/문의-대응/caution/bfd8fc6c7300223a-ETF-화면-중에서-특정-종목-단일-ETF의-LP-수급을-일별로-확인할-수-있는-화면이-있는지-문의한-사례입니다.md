@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-03761
+candidate_id: bfd8fc6c7300223a
 ---
 # 주의사항 — ETF 화면 중에서 특정 종목 단일 ETF의 LP 수급을 일별로 확인할 수 있는 화면이 있는지 문의한 사례입니다.
 

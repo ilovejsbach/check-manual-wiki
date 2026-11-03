@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00228
+candidate_id: 125ec3f84f136da2
 ---
 # 활용 팁 — check 단말의 모니터 점검을 요청한 문의입니다.
 

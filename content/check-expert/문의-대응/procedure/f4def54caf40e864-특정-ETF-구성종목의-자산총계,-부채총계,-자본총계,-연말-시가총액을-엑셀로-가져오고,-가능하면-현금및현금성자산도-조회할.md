@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-01514
+candidate_id: f4def54caf40e864
 ---
 # 사용 절차 — 특정 ETF 구성종목의 자산총계, 부채총계, 자본총계, 연말 시가총액을 엑셀로 가져오고, 가능하면 현금및현금성자산도 조회할…
 

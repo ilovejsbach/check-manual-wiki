@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-03210
+candidate_id: ccb37ddf3f6c3af9
 ---
 # 활용 팁 — 특정 도메인 사이트를 허용 목록에 추가해 달라고 요청했습니다.
 

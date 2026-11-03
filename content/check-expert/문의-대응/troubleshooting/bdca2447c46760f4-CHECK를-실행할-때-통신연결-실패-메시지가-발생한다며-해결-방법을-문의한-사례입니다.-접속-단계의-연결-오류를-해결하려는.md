@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00601
+candidate_id: bdca2447c46760f4
 ---
 # 오류 해결 — CHECK를 실행할 때 통신연결 실패 메시지가 발생한다며 해결 방법을 문의한 사례입니다. 접속 단계의 연결 오류를 해결하려는…
 

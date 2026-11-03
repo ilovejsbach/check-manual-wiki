@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-04526
+candidate_id: 89c3fab8e1302a0f
 ---
 # 질문과 답변 — 국내 상장 ETF 정보를 엑셀로 추출해 활용 중인데, 해외 상장 ETF도 CHECK에서 같은 방식으로 추출할 수 있는지 문의…
 

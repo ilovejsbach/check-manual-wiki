@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00861
+candidate_id: 61a1bcb57e5e77c1
 ---
 # 질문과 답변 — CLIST 함수로 특정 종목들의 콜옵션 티커와 행사가를 추출하고, 가능하면 현재가 기준 OTM 행사가만 뽑는 조건도 줄 수…
 

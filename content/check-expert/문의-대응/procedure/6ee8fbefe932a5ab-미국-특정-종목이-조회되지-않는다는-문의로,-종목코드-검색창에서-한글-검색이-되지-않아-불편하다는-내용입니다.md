@@ -21,7 +21,7 @@ related_ids:
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-05069
+candidate_id: 6ee8fbefe932a5ab
 ---
 # 사용 절차 — 미국 특정 종목이 조회되지 않는다는 문의로, 종목코드 검색창에서 한글 검색이 되지 않아 불편하다는 내용입니다.
 

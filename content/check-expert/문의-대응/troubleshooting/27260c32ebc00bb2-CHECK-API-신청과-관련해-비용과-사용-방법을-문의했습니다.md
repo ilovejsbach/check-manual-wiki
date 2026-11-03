@@ -23,7 +23,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00366
+candidate_id: 27260c32ebc00bb2
 ---
 # 오류 해결 — CHECK API 신청과 관련해 비용과 사용 방법을 문의했습니다.
 

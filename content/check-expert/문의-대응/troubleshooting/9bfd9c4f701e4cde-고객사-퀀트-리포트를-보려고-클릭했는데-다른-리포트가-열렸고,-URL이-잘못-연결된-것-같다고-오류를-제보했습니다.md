@@ -24,7 +24,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-01072
+candidate_id: 9bfd9c4f701e4cde
 ---
 # 오류 해결 — 고객사 퀀트 리포트를 보려고 클릭했는데 다른 리포트가 열렸고, URL이 잘못 연결된 것 같다고 오류를 제보했습니다.
 

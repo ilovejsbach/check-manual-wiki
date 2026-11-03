@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-01354
+candidate_id: fb1cf9f3f0a8e758
 ---
 # 사용 절차 — 구성종목(PDF) 조회 데이터를 '전체영역 엑셀로 보내기'로 내보내면 자주 에러가 나며 엑셀이 멈추는데 해결 방법이 있는지…
 

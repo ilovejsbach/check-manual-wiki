@@ -24,7 +24,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-04439
+candidate_id: 1dd60217fd4ccafd
 ---
 # 사용 절차 — 회사채 신용등급별 금리의 시계열 정보를 조회하는 방법을 문의했습니다.
 

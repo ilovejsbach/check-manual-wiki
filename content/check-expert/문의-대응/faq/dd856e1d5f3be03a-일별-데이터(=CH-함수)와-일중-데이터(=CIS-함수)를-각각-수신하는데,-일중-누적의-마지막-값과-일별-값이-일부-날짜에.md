@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-03833
+candidate_id: dd856e1d5f3be03a
 ---
 # 질문과 답변 — 일별 데이터(=CH 함수)와 일중 데이터(=CIS 함수)를 각각 수신하는데, 일중 누적의 마지막 값과 일별 값이 일부 날짜에…
 

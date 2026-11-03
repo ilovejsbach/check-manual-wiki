@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-01458
+candidate_id: 79e29fed5dbf0e85
 ---
 # 사용 절차 — 특정 종목 채권의 만기상환률이 CHECK와 예탁원에서 서로 다르게 표시되어 어느 값이 맞는지 문의했습니다.
 

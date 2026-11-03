@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00032
+candidate_id: 3e8abcc3b5368a52
 ---
 # 활용 팁 — 고객이 사용 중인 단말의 MAC 초기화 작업을 요청했으며, 별도의 추가 증상이나 사유는 기록되지 않았습니다.
 

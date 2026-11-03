@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-01168
+candidate_id: cddf5ad869957da5
 ---
 # 사용 절차 — CT 함수 중 기초자산코드를 입력하면 근월물, 차근월물 선물코드를 반환하는 함수가 있는지 문의했습니다.
 

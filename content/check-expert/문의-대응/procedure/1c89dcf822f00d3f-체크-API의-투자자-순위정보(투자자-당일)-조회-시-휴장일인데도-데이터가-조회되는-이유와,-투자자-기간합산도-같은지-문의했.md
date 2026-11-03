@@ -22,7 +22,7 @@ related_ids:
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-01025
+candidate_id: 1c89dcf822f00d3f
 ---
 # 사용 절차 — 체크 API의 투자자 순위정보(투자자-당일) 조회 시 휴장일인데도 데이터가 조회되는 이유와, 투자자-기간합산도 같은지 문의했…
 

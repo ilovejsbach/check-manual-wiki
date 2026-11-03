@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00837
+candidate_id: d2f8f4db54dd8970
 ---
 # 질문과 답변 — CHECK API 사용 중 CHECK EXPERT에서 보던 매도상위회원 등 회원사별 수급 데이터를 API에서 찾을 수 없다며…
 

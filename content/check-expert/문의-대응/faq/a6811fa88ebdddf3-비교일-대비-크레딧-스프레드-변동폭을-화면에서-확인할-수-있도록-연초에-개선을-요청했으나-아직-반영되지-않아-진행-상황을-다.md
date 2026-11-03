@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-04197
+candidate_id: a6811fa88ebdddf3
 ---
 # 질문과 답변 — 비교일 대비 크레딧 스프레드 변동폭을 화면에서 확인할 수 있도록 연초에 개선을 요청했으나 아직 반영되지 않아 진행 상황을 다…
 

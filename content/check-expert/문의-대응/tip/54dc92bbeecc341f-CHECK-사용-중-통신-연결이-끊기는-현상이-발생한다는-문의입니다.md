@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00502
+candidate_id: 54dc92bbeecc341f
 ---
 # 활용 팁 — CHECK 사용 중 통신 연결이 끊기는 현상이 발생한다는 문의입니다.
 

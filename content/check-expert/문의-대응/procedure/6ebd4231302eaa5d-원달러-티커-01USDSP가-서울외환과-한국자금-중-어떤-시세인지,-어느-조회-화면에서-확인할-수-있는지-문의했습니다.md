@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-01369
+candidate_id: 6ebd4231302eaa5d
 ---
 # 사용 절차 — 원달러 티커 01USDSP가 서울외환과 한국자금 중 어떤 시세인지, 어느 조회 화면에서 확인할 수 있는지 문의했습니다.
 

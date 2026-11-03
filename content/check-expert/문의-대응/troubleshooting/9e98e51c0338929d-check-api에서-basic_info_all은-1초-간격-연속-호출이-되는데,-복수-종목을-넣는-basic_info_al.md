@@ -23,7 +23,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00278
+candidate_id: 9e98e51c0338929d
 ---
 # 오류 해결 — check api에서 basic_info_all은 1초 간격 연속 호출이 되는데, 복수 종목을 넣는 basic_info_al…
 

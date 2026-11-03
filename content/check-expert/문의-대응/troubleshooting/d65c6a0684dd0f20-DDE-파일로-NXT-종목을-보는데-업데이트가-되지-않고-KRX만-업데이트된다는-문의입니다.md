@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00030
+candidate_id: d65c6a0684dd0f20
 ---
 # 오류 해결 — DDE 파일로 NXT 종목을 보는데 업데이트가 되지 않고 KRX만 업데이트된다는 문의입니다.
 

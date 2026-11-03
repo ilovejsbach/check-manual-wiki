@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-01388
+candidate_id: 129c2a3f4fc79f6f
 ---
 # 사용 절차 — 모든 ETF의 괴리를 한 번에 모니터링할 수 있는 방법이 있는지 묻는 문의입니다.
 

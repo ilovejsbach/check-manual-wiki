@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00779
+candidate_id: b3f9df00eb32774b
 ---
 # 활용 팁 — CHECK를 사용하는 중에 종료 여부를 묻는 메시지가 반복해서 나타난다는 문의입니다. 원인과 대처 방법을 알고 싶어 했습니다.
 

@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-03544
+candidate_id: 4eb23dfedc8a26d7
 ---
 # 사용 절차 — 화면에 표시되는 가중평균과 거래량이 KRX 기준만 포함하는 값인지 문의했습니다.
 

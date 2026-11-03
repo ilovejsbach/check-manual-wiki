@@ -22,7 +22,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00018
+candidate_id: fdb5129ee38d5c72
 ---
 # 활용 팁 — CHECK 단말 PC를 윈도우11로 업그레이드한 뒤 엑셀에서 에러가 발생한다는 문의입니다.
 

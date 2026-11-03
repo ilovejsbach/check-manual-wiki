@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00783
+candidate_id: fa10a8ee40f0a32d
 ---
 # 질문과 답변 — 이전 문의 때처럼 API 주식 시세가 다시 지연되는 것 같다고 문의했습니다.
 

@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00936
+candidate_id: 86ad48f9d0783b07
 ---
 # 질문과 답변 — 4110 화면의 SP포함순매수 데이터가 체크 API 파생 API에는 SPREAD제외순매수만 제공되어, 향후 추가나 제공 예정…
 

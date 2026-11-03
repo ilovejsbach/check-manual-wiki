@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-01396
+candidate_id: d6c59bfce8e47842
 ---
 # 사용 절차 — 특정 종목의 근월물 주식옵션에서 OTM, ATM, ITM 각 구간의 콜·풋 종목코드와 전일 종가를 한 번에 알아내는 함수를…
 

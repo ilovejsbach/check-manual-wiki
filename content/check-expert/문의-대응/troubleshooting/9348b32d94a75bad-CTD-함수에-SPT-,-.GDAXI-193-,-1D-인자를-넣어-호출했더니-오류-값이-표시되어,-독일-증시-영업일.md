@@ -23,7 +23,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00381
+candidate_id: 9348b32d94a75bad
 ---
 # 오류 해결 — CTD 함수에 "SPT", ".GDAXI*193", "1D" 인자를 넣어 호출했더니 오류 값이 표시되어, 독일 증시 영업일…
 

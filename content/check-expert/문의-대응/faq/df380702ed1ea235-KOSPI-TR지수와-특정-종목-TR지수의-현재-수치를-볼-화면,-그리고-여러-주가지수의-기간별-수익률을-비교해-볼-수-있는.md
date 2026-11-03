@@ -27,7 +27,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-03777
+candidate_id: df380702ed1ea235
 ---
 # 질문과 답변 — KOSPI TR지수와 특정 종목 TR지수의 현재 수치를 볼 화면, 그리고 여러 주가지수의 기간별 수익률을 비교해 볼 수 있는…
 

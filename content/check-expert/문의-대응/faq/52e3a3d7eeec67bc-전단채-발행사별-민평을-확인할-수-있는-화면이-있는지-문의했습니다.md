@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-06003
+candidate_id: 52e3a3d7eeec67bc
 ---
 # 질문과 답변 — 전단채 발행사별 민평을 확인할 수 있는 화면이 있는지 문의했습니다.
 

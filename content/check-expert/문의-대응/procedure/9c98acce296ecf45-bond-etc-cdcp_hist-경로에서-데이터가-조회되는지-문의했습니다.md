@@ -24,7 +24,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-04376
+candidate_id: 9c98acce296ecf45
 ---
 # 사용 절차 — /bond/etc/cdcp_hist 경로에서 데이터가 조회되는지 문의했습니다.
 

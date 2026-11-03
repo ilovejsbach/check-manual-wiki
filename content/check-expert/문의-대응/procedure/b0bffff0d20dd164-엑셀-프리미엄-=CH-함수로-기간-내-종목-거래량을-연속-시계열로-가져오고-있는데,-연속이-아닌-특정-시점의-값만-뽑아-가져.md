@@ -24,7 +24,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-01326
+candidate_id: b0bffff0d20dd164
 ---
 # 사용 절차 — 엑셀 프리미엄 =CH 함수로 기간 내 종목 거래량을 연속 시계열로 가져오고 있는데, 연속이 아닌 특정 시점의 값만 뽑아 가져…
 

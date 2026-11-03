@@ -22,7 +22,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-06442
+candidate_id: d8f9db5e3bcbffea
 ---
 # 활용 팁 — TR1542에서 당일 시총 비중이 잘못 표시되고, 특정 기간의 시총 비중이 0값으로 나온다며 확인을 요청했습니다.
 

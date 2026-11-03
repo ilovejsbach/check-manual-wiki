@@ -24,7 +24,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-03480
+candidate_id: a2890b181db1f0ef
 ---
 # 사용 절차 — 1947, 4001 화면에서 ETF와 KOSPI의 투자자 내역을 볼 때, 국내 개인 투자자 순매수를 KOSPI와 ETF 국내…
 

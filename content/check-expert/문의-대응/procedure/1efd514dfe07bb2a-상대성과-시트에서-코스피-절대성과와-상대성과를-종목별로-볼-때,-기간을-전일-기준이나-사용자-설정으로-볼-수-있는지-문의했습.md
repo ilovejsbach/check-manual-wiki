@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-03513
+candidate_id: 1efd514dfe07bb2a
 ---
 # 사용 절차 — 상대성과 시트에서 코스피 절대성과와 상대성과를 종목별로 볼 때, 기간을 전일 기준이나 사용자 설정으로 볼 수 있는지 문의했습…
 

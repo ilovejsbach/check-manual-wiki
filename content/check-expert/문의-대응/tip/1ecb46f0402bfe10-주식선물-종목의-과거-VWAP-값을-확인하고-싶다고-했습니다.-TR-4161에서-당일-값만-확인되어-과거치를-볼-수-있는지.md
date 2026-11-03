@@ -21,7 +21,7 @@ related_ids:
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-06401
+candidate_id: 1ecb46f0402bfe10
 ---
 # 활용 팁 — 주식선물 종목의 과거 VWAP 값을 확인하고 싶다고 했습니다. TR 4161에서 당일 값만 확인되어 과거치를 볼 수 있는지…
 

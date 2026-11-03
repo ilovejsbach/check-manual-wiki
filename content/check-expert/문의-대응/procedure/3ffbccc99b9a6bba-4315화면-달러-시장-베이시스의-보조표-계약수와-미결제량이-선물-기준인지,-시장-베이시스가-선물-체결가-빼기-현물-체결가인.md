@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-04434
+candidate_id: 3ffbccc99b9a6bba
 ---
 # 사용 절차 — 4315화면 달러 시장 베이시스의 보조표 계약수와 미결제량이 선물 기준인지, 시장 베이시스가 선물 체결가 빼기 현물 체결가인…
 

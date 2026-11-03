@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-02724
+candidate_id: f12d5dd6bb2b5fee
 ---
 # 오류 해결 — CHECK에 어떤 모바일 버전이 있는지 문의했습니다.
 

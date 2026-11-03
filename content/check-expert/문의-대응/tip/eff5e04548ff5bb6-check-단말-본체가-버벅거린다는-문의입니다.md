@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00149
+candidate_id: eff5e04548ff5bb6
 ---
 # 활용 팁 — check 단말 본체가 버벅거린다는 문의입니다.
 

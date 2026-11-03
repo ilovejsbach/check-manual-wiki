@@ -24,7 +24,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00915
+candidate_id: 49dc8baf5b3efeaa
 ---
 # 주의사항 — 기존에 보이던 지수구성종목정보가 지금은 보이지 않는다고 문의하셨습니다.
 

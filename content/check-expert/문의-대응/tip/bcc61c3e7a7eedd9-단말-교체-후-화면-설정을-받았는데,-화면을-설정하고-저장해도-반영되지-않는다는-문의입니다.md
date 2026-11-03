@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00486
+candidate_id: bcc61c3e7a7eedd9
 ---
 # 활용 팁 — 단말 교체 후 화면 설정을 받았는데, 화면을 설정하고 저장해도 반영되지 않는다는 문의입니다.
 

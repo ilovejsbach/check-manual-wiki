@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00469
+candidate_id: 702de74dc2ef2f81
 ---
 # 사용 절차 — CHECK 단말에 로그인이 되지 않는다는 문의입니다.
 

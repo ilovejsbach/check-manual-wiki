@@ -25,7 +25,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-02285
+candidate_id: 3170b31e52380ab8
 ---
 # 오류 해결 — 엑셀로 종목 정보를 업데이트하는 파일을 작성하는 중 CHECK Expert의 특정 종목 정보가 전송되지 않는다는 문의입니다.
 

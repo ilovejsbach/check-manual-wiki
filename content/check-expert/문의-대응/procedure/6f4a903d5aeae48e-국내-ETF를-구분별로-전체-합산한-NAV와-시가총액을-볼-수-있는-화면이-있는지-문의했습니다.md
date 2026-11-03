@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-04768
+candidate_id: 6f4a903d5aeae48e
 ---
 # 사용 절차 — 국내 ETF를 구분별로 전체 합산한 NAV와 시가총액을 볼 수 있는 화면이 있는지 문의했습니다.
 

@@ -32,7 +32,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-01350
+candidate_id: e07fd6be1f6fcc20
 ---
 # 사용 절차 — 최근 3개년 연도말 기준으로 회사채, CP, 전단채 각각의 잔액을 확인하는 방법을 문의했습니다.
 

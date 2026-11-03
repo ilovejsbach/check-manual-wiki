@@ -32,7 +32,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-01980
+candidate_id: f1f8bfa9f3347a3d
 ---
 # 사용 절차 — K200 위클리옵션을 따로 조회하는 방법과, 만기 대비 옵션 감마 합계(GEX)를 엑셀 또는 화면에서 모니터링할 수 있는지…
 

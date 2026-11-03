@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-01414
+candidate_id: efb7f18d8e2e6bc2
 ---
 # 오류 해결 — 엑셀프리미엄이 여전히 작동하지 않아 확인을 요청한 문의입니다.
 

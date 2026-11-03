@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00408
+candidate_id: c33a2bdfecd73d81
 ---
 # 사용 절차 — 페이지를 저장하고 종료할 때 화면 설정을 유지하는 방법을 문의했습니다.
 

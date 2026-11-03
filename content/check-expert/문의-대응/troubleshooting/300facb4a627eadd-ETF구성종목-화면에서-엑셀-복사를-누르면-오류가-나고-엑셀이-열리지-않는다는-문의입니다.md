@@ -25,7 +25,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-02071
+candidate_id: 300facb4a627eadd
 ---
 # 오류 해결 — ETF구성종목 화면에서 엑셀 복사를 누르면 오류가 나고 엑셀이 열리지 않는다는 문의입니다.
 

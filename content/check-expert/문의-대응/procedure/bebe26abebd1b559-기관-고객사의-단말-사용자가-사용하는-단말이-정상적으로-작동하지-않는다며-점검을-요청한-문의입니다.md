@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00517
+candidate_id: bebe26abebd1b559
 ---
 # 사용 절차 — 기관 고객사의 단말 사용자가 사용하는 단말이 정상적으로 작동하지 않는다며 점검을 요청한 문의입니다.
 

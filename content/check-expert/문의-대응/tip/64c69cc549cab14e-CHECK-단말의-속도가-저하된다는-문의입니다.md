@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00157
+candidate_id: 64c69cc549cab14e
 ---
 # 활용 팁 — CHECK 단말의 속도가 저하된다는 문의입니다.
 

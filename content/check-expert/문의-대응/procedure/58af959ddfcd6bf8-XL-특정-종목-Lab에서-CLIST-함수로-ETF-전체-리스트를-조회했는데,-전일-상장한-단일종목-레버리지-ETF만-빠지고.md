@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-01291
+candidate_id: 58af959ddfcd6bf8
 ---
 # 사용 절차 — XL 특정 종목 Lab에서 CLIST 함수로 ETF 전체 리스트를 조회했는데, 전일 상장한 단일종목 레버리지 ETF만 빠지고…
 

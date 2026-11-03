@@ -24,7 +24,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-02333
+candidate_id: ab28e31d77d8f293
 ---
 # 사용 절차 — 보통은 종목명 일부만 입력해도 종목이 조회되는데, 채권 조회에서 KT를 입력해도 KT&G 채권이 조회되지 않는 것 같다고 문…
 

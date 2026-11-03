@@ -25,7 +25,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-04013
+candidate_id: b33fdd7aa462fb97
 ---
 # 사용 절차 — 고객사가 매일 받는 금감원 외국인 보유 수치와 CHECK 수치가 달라 6049 화면의 외국인보유 항목에 해당하는 API와 외…
 

@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-02398
+candidate_id: a84e4ebbbdf16e40
 ---
 # 질문과 답변 — 엑셀 실시간 붙여넣기와 RTF 값으로 식을 구성하면서, 근월 선물에만 쓰이는 코드가 만기 시 다음 월물로 자동 교체되는지 다…
 

@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00004
+candidate_id: 5accc7fa7d87e57b
 ---
 # 오류 해결 — 체크 단말에 로그인이 되지 않는다는 문의입니다.
 

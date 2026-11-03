@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-03823
+candidate_id: d1c10e79e3fb2fe4
 ---
 # 사용 절차 — CIS 함수로 일중 순매수 데이터를 조회할 때 30초 단위 과거 데이터가 서버에서 얼마나 제공되는지 문의했습니다.
 

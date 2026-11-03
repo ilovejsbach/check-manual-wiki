@@ -24,7 +24,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-03381
+candidate_id: c410ecd23a2deae3
 ---
 # 사용 절차 — 개별주식선물을 기초자산코드로 조회할 수 있도록 연동파일을 만들려 하며, 어떤 방식으로 제작해야 하는지 문의했습니다.
 

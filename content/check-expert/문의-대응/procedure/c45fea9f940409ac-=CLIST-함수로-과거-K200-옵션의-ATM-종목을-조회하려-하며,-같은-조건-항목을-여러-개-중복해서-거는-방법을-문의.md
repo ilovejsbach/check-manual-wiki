@@ -22,7 +22,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-01255
+candidate_id: c45fea9f940409ac
 ---
 # 사용 절차 — =CLIST 함수로 과거 K200 옵션의 ATM 종목을 조회하려 하며, 같은 조건 항목을 여러 개 중복해서 거는 방법을 문의…
 

@@ -164,3 +164,8 @@ uv run python scripts/derive_case_links.py --knowledge knowledge/check-expert/kn
 - 파일명(제목)이 요약문에서 나오므로 사례 파일이 모두 이름이 바뀌었다.
 - 영향: 사례→화면 엣지 973→971건, TR 연결 사례 1,032→1,045건. TR 후보는 172→170개(요약에서 사라진 18개가 빠지고 번호만 쓰였던 16개가 명시됨). 함수 노드 CRS는 요약에서 함수로 언급되지 않아 없어졌다(10→9).
 - 남은 노출: 원문은 `sources/check-expert/manual-enrichment*.jsonl`과 git 이력에 그대로 있다. 사례 페이지의 "증거 위치" 줄과 사례의 `source_locator`(원본 행 번호)는 제거했다(사례의 `source_locator`는 "비식별 문의 사례" 고정값; 매뉴얼·화면의 PDF 쪽수 위치는 유지). 이 변경은 위키 페이지와 지식 레코드만 정리한다.
+
+### 소스 원문 제거(2026-11-03)
+- `sources/check-expert/manual-enrichment*.jsonl`은 원문(`request_text`·`action_text`·`candidate_id`·`evidence_locator`·`signal_id`·`source_cell_ids`)을 담지 않는 정리본이다. 각 사례는 `case_hash`(예전 `candidate_id` 해시와 동일해 페이지 ID 불변), `case_type`(원문 기준으로 정한 유형을 저장), `manual_candidates`, 요약된 `request_text`/`action_text`, `review_status`만 갖는다. 빌더는 `case_hash`가 있으면 그것을 쓴다.
+- 결과: 재빌드한 사례 페이지는 `candidate_id` frontmatter가 원본 CRM ID에서 해시로 바뀐 것 외에 동일하다(경로·링크·평가 지표 불변).
+- 원문은 이 저장소 안에서 복원할 수 없다. 요약을 다시 만들려면 CRM 원본이 필요하다. **git 이력에는 이전 원문이 남아 있다**(이력 정리는 별도 결정).

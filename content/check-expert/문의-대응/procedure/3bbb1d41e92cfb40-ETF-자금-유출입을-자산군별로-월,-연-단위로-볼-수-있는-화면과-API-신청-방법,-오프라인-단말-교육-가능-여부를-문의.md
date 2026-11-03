@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00821
+candidate_id: 3bbb1d41e92cfb40
 ---
 # 사용 절차 — ETF 자금 유출입을 자산군별로 월, 연 단위로 볼 수 있는 화면과 API 신청 방법, 오프라인 단말 교육 가능 여부를 문의…
 

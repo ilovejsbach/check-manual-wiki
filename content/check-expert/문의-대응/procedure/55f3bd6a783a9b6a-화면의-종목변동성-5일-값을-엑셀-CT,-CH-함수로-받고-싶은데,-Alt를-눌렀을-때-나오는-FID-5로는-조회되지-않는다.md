@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-02380
+candidate_id: 55f3bd6a783a9b6a
 ---
 # 사용 절차 — 화면의 종목변동성 5일 값을 엑셀 CT, CH 함수로 받고 싶은데, Alt를 눌렀을 때 나오는 FID 5로는 조회되지 않는다…
 

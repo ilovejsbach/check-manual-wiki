@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00769
+candidate_id: 2ad3cc34ab5390af
 ---
 # 질문과 답변 — 뉴스 제목 API와 본문 API에서 공시 원문 링크 주소도 같이 내려받을 수 있는지 물었습니다.
 

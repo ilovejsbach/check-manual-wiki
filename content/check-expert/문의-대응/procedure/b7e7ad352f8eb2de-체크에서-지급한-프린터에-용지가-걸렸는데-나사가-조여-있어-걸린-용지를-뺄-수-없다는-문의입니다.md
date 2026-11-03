@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00519
+candidate_id: b7e7ad352f8eb2de
 ---
 # 사용 절차 — 체크에서 지급한 프린터에 용지가 걸렸는데 나사가 조여 있어 걸린 용지를 뺄 수 없다는 문의입니다.
 

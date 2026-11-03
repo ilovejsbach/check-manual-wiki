@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-03017
+candidate_id: 2ec0ad1fed8ba2f3
 ---
 # 사용 절차 — 듀얼모니터에서 한 모니터에 체크 화면 6개를 수동 조정 없이 쉽게 배열하고 크기를 맞추는 방법을 문의했습니다.
 

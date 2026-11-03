@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-05578
+candidate_id: e0fc70289fcbbdcb
 ---
 # 사용 절차 — 행사가가 높은 특정 종목 콜옵션이 거래되지 않아 가격이 없는데도 화면에 높은 내재변동성이 표시됩니다. 가격이 없는 상태에서…
 

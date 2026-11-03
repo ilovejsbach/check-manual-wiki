@@ -22,7 +22,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00999
+candidate_id: f60ec6abd6b24781
 ---
 # 사용 절차 — VDI 환경에서 신체크를 실행하면 MAC 정보가 없다는 메시지가 발생한다고 문의했습니다.
 

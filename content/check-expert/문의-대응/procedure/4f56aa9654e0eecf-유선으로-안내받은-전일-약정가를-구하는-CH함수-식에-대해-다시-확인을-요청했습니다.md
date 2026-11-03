@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-01286
+candidate_id: 4f56aa9654e0eecf
 ---
 # 사용 절차 — 유선으로 안내받은 전일 약정가를 구하는 CH함수 식에 대해 다시 확인을 요청했습니다.
 

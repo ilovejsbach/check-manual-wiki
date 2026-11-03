@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00747
+candidate_id: 5114454900d6eea7
 ---
 # 사용 절차 — /stock/m003/tick_date 로 조회되는 데이터가 몇 달 전 자료는 없어지는지, 과거 자료를 조회하는 별도 테이블…
 

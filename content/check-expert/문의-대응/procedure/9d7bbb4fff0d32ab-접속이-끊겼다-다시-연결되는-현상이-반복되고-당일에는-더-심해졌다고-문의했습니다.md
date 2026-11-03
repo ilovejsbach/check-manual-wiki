@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-02411
+candidate_id: 9d7bbb4fff0d32ab
 ---
 # 사용 절차 — 접속이 끊겼다 다시 연결되는 현상이 반복되고 당일에는 더 심해졌다고 문의했습니다.
 

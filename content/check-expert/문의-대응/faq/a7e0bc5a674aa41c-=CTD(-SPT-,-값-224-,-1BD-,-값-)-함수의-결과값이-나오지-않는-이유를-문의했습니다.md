@@ -22,7 +22,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-01443
+candidate_id: a7e0bc5a674aa41c
 ---
 # 질문과 답변 — =CTD("SPT","<값>*224","1BD","<값>") 함수의 결과값이 나오지 않는 이유를 문의했습니다.
 

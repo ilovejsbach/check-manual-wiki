@@ -794,11 +794,18 @@ def _case_summaries() -> dict[str, dict[str, object]]:
     return _CASE_SUMMARIES
 
 
-def _case_summary(example: dict[str, object]) -> dict[str, object] | None:
+def _case_hash(example: dict[str, object]) -> str:
+    """사례 식별 해시. 정리된 소스는 case_hash 를 직접 갖고, 옛 형식은 candidate_id 의 해시를 쓴다."""
+    if example.get("case_hash"):
+        return str(example["case_hash"])
     candidate_id = _single_line(example.get("candidate_id"))
-    if not candidate_id:
+    return hashlib.sha256(candidate_id.encode("utf-8")).hexdigest()[:16] if candidate_id else ""
+
+
+def _case_summary(example: dict[str, object]) -> dict[str, object] | None:
+    case_hash = _case_hash(example)
+    if not case_hash:
         return None
-    case_hash = hashlib.sha256(candidate_id.encode("utf-8")).hexdigest()[:16]
     return _case_summaries().get(f"check:support-case:{case_hash}")
 
 
@@ -829,6 +836,8 @@ def clean_case_request(value: object) -> str:
 
 
 def primary_case_type(example: dict[str, object]) -> str:
+    if example.get("case_type"):  # 정리된 소스는 원문 기준으로 정한 유형을 저장해 둔다
+        return str(example["case_type"])
     facets = [str(item) for item in example.get("manual_candidates", [])]
     request = clean_case_request(example.get("request_text"))
     action = _single_line(example.get("action_text"))
@@ -862,7 +871,7 @@ def build_support_case(
     candidate_id = _single_line(example.get("candidate_id"))
     evidence_locator = _single_line(example.get("evidence_locator"))
     stable_seed = candidate_id or f"{evidence_locator}|{request}|{action}"
-    case_hash = hashlib.sha256(stable_seed.encode("utf-8")).hexdigest()[:16]
+    case_hash = _case_hash(example) or hashlib.sha256(stable_seed.encode("utf-8")).hexdigest()[:16]
     knowledge_id = f"check:support-case:{case_hash}"
     title_text = request if len(request) <= 72 else request[:69].rstrip() + "…"
     title = f"{label} — {title_text}"
@@ -904,7 +913,7 @@ def build_support_case(
             "review_status": "candidate",
             "mapping_status": mapping_status,
             "source_locator": "비식별 문의 사례",
-            "candidate_id": candidate_id or case_hash,
+            "candidate_id": case_hash,
         },
     )
     document += f"# {title}\n\n"
@@ -972,9 +981,9 @@ def build_manual_enrichment() -> int:
                 counts[str(key)] = int(counts.get(str(key), 0)) + int(count)
         examples = summary.setdefault("examples", [])
         assert isinstance(examples, list)
-        known = {str(item.get("candidate_id") or item.get("evidence_locator") or "") for item in examples}
+        known = {_case_hash(item) or str(item.get("evidence_locator") or "") for item in examples}
         for example in raw_summary.get("examples", []):
-            key = str(example.get("candidate_id") or example.get("evidence_locator") or "")
+            key = _case_hash(example) or str(example.get("evidence_locator") or "")
             if key not in known:
                 examples.append(example)
                 known.add(key)

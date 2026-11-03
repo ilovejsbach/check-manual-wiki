@@ -25,7 +25,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00245
+candidate_id: 5e96ddcd13a39a1c
 ---
 # 사용 절차 — S&P500 구성종목의 OHLCV 10년치와 GICS 레벨1 섹터 데이터를 특정 종목 편향 없이 받을 수 있는지 문의했습니다.
 

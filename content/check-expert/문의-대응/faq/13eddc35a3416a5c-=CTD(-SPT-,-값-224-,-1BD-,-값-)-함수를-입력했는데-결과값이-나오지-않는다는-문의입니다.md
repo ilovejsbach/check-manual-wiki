@@ -22,7 +22,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-06338
+candidate_id: 13eddc35a3416a5c
 ---
 # 질문과 답변 — =CTD("SPT","<값>*224","1BD","<값>") 함수를 입력했는데 결과값이 나오지 않는다는 문의입니다.
 

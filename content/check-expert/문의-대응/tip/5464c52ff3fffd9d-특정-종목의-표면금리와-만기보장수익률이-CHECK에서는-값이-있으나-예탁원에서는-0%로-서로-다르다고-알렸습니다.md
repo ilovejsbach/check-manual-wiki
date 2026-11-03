@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00812
+candidate_id: 5464c52ff3fffd9d
 ---
 # 활용 팁 — 특정 종목의 표면금리와 만기보장수익률이 CHECK에서는 값이 있으나 예탁원에서는 0%로 서로 다르다고 알렸습니다.
 

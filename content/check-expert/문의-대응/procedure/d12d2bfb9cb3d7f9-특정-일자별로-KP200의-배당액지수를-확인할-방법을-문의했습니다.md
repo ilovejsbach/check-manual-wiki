@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-05152
+candidate_id: d12d2bfb9cb3d7f9
 ---
 # 사용 절차 — 특정 일자별로 KP200의 배당액지수를 확인할 방법을 문의했습니다.
 

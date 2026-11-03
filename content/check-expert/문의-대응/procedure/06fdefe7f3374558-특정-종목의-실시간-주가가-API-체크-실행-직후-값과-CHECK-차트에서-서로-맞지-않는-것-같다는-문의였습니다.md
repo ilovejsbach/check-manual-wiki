@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00056
+candidate_id: 06fdefe7f3374558
 ---
 # 사용 절차 — 특정 종목의 실시간 주가가 API 체크 실행 직후 값과 CHECK 차트에서 서로 맞지 않는 것 같다는 문의였습니다.
 

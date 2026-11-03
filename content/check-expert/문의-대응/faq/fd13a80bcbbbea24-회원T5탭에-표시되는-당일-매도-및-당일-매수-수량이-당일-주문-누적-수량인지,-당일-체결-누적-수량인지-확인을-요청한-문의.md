@@ -24,7 +24,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-04837
+candidate_id: fd13a80bcbbbea24
 ---
 # 질문과 답변 — 회원T5탭에 표시되는 당일 매도 및 당일 매수 수량이 당일 주문 누적 수량인지, 당일 체결 누적 수량인지 확인을 요청한 문의…
 

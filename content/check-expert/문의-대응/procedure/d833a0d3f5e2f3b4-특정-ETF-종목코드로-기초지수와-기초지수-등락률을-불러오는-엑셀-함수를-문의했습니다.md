@@ -24,7 +24,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-02506
+candidate_id: d833a0d3f5e2f3b4
 ---
 # 사용 절차 — 특정 ETF 종목코드로 기초지수와 기초지수 등락률을 불러오는 엑셀 함수를 문의했습니다.
 

@@ -28,7 +28,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-03629
+candidate_id: 23dabb0758df0890
 ---
 # 사용 절차 — 차트 구분값 중 전주말, 전월말 등 기준의 의미와 MSCI 섹터별 MTD, QTD 등을 확인할 수 있는 화면이 있는지 문의했…
 

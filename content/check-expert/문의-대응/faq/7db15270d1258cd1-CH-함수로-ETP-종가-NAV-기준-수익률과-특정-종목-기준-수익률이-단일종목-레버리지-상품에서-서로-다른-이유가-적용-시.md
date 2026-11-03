@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-01043
+candidate_id: 7db15270d1258cd1
 ---
 # 질문과 답변 — CH 함수로 ETP 종가 NAV 기준 수익률과 특정 종목 기준 수익률이 단일종목 레버리지 상품에서 서로 다른 이유가 적용 시…
 

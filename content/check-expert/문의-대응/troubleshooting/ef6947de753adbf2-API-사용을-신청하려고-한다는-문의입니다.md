@@ -22,7 +22,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00400
+candidate_id: ef6947de753adbf2
 ---
 # 오류 해결 — API 사용을 신청하려고 한다는 문의입니다.
 

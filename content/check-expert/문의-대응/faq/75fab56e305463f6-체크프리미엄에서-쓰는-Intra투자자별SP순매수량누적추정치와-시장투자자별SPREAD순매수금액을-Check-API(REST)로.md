@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00811
+candidate_id: 75fab56e305463f6
 ---
 # 질문과 답변 — 체크프리미엄에서 쓰는 Intra투자자별SP순매수량누적추정치와 시장투자자별SPREAD순매수금액을 Check API(REST)로…
 

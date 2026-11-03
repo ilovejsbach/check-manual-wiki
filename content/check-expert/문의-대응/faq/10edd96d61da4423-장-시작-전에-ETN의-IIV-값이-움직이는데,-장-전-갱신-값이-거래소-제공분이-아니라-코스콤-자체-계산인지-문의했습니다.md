@@ -26,7 +26,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-01088
+candidate_id: 10edd96d61da4423
 ---
 # 질문과 답변 — 장 시작 전에 ETN의 IIV 값이 움직이는데, 장 전 갱신 값이 거래소 제공분이 아니라 코스콤 자체 계산인지 문의했습니다.
 

@@ -25,7 +25,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-02304
+candidate_id: 2bbe5ec8ee0b5d75
 ---
 # 오류 해결 — '전체 영역 엑셀로 보내기'를 실행하면 32비트 프로세스가 64비트 프로세스의 모듈에 접근할 수 없다는 경고와 path 매개…
 

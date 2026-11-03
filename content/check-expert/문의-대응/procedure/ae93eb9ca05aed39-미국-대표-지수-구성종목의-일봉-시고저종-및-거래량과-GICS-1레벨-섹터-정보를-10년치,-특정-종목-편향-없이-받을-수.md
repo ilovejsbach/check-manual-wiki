@@ -26,7 +26,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-01961
+candidate_id: ae93eb9ca05aed39
 ---
 # 사용 절차 — 미국 대표 지수 구성종목의 일봉 시고저종 및 거래량과 GICS 1레벨 섹터 정보를 10년치, 특정 종목 편향 없이 받을 수…
 

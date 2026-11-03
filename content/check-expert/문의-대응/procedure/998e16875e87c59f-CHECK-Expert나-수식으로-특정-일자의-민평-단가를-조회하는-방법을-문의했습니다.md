@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-01677
+candidate_id: 998e16875e87c59f
 ---
 # 사용 절차 — CHECK Expert나 수식으로 특정 일자의 민평 단가를 조회하는 방법을 문의했습니다.
 

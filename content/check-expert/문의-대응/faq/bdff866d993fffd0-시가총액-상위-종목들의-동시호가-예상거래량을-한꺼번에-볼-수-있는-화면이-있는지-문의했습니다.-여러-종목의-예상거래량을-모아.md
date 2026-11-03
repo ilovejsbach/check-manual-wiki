@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-03574
+candidate_id: bdff866d993fffd0
 ---
 # 질문과 답변 — 시가총액 상위 종목들의 동시호가 예상거래량을 한꺼번에 볼 수 있는 화면이 있는지 문의했습니다. 여러 종목의 예상거래량을 모아…
 

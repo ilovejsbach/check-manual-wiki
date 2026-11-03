@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00877
+candidate_id: b4f626c97ab5fe01
 ---
 # 사용 절차 — 시가총액이 아니라 외국인보유 수치가 KRX 수치와 크게 차이 난다며 외국인보유 기준 재확인을 요청했습니다. 아울러 CHECK…
 

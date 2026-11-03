@@ -22,7 +22,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-01906
+candidate_id: a3ec0cc51c3d1c60
 ---
 # 질문과 답변 — 레버리지 ETF들의 순매수 현황처럼 자금 유입을 볼 수 있는 화면이 있는지 문의했습니다.
 

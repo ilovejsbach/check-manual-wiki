@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00945
+candidate_id: 70ba36895ab5f7db
 ---
 # 사용 절차 — API 함수로 받는 배당률이 어떤 방법론으로 산출되는지 확인할 수 있는지 문의했습니다.
 

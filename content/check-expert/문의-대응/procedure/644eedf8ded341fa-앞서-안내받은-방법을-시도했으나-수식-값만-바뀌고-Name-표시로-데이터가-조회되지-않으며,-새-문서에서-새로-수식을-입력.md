@@ -22,7 +22,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-01069
+candidate_id: 644eedf8ded341fa
 ---
 # 사용 절차 — 앞서 안내받은 방법을 시도했으나 수식 값만 바뀌고 #Name 표시로 데이터가 조회되지 않으며, 새 문서에서 새로 수식을 입력…
 

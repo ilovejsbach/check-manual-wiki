@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-01039
+candidate_id: c147194bcdfa705e
 ---
 # 질문과 답변 — CHECK 엑셀 4338 화면 기반으로 API 데이터를 수신하면서, SP 순매수 단독 제공 여부와 스프레드 종목코드 가공 규…
 

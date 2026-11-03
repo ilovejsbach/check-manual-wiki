@@ -29,7 +29,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-02201
+candidate_id: 62ad0024817b4611
 ---
 # 사용 절차 — 신버전 전환 후 추가된 화면과 함께 ETF 시계열 성과, ETF PDF, ETF 기초지수를 확인할 수 있는 화면을 문의했습니다.
 

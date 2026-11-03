@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00010
+candidate_id: 8f331b5cffac4fa0
 ---
 # 활용 팁 — 체크 단말을 부팅하면 화면에 아무것도 출력되지 않는다는 고객사 상담 문의입니다.
 

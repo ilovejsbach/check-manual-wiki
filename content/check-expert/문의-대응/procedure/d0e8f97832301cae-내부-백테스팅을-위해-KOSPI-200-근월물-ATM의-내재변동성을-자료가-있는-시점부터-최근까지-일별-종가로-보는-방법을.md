@@ -27,7 +27,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-05032
+candidate_id: d0e8f97832301cae
 ---
 # 사용 절차 — 내부 백테스팅을 위해 KOSPI 200 근월물 ATM의 내재변동성을 자료가 있는 시점부터 최근까지 일별 종가로 보는 방법을…
 

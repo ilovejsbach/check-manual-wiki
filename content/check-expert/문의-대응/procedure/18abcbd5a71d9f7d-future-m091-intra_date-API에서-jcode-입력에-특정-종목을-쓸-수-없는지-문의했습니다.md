@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-01224
+candidate_id: 18abcbd5a71d9f7d
 ---
 # 사용 절차 — /future/m091/intra_date API에서 jcode 입력에 특정 종목을 쓸 수 없는지 문의했습니다.
 

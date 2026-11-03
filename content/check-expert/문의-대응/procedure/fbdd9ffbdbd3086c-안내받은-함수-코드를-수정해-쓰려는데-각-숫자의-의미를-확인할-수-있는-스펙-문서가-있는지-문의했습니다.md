@@ -22,7 +22,7 @@ related_ids:
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00264
+candidate_id: fbdd9ffbdbd3086c
 ---
 # 사용 절차 — 안내받은 함수 코드를 수정해 쓰려는데 각 숫자의 의미를 확인할 수 있는 스펙 문서가 있는지 문의했습니다.
 

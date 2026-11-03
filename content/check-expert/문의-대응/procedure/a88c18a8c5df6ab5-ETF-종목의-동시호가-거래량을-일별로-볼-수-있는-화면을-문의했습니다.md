@@ -22,7 +22,7 @@ related_ids:
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-04693
+candidate_id: a88c18a8c5df6ab5
 ---
 # 사용 절차 — ETF 종목의 동시호가 거래량을 일별로 볼 수 있는 화면을 문의했습니다.
 

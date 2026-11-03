@@ -22,7 +22,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00012
+candidate_id: 1dd29a0bc5c945eb
 ---
 # 오류 해결 — Mac 초기화 이후 재택근무를 하지 않는데도 회사 단말에서 로그인하면 사용자 로그인 처리 실패 메시지가 계속 발생한다고 문의…
 

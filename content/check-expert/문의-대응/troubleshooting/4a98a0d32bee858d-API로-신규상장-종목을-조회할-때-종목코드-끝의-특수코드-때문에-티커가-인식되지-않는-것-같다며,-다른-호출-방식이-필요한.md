@@ -22,7 +22,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00298
+candidate_id: 4a98a0d32bee858d
 ---
 # 오류 해결 — API로 신규상장 종목을 조회할 때 종목코드 끝의 특수코드 때문에 티커가 인식되지 않는 것 같다며, 다른 호출 방식이 필요한…
 

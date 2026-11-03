@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00550
+candidate_id: 06b46b5cd35174bd
 ---
 # 사용 절차 — CLIST 함수로 ETF의 PDF 구성 종목을 불러오고 있는데, 특정 수치 종목의 수량만 추려서 뽑는 함수를 만들 수 있는지…
 

@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-06417
+candidate_id: 36db1b8d92ca1839
 ---
 # 질문과 답변 — ETF CHECK에 표시된 특정 ETF의 배당 주기 정보가 잘못되어 정정을 요청했습니다.
 

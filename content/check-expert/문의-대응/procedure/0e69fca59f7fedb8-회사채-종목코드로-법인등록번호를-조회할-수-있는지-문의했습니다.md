@@ -24,7 +24,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-06486
+candidate_id: 0e69fca59f7fedb8
 ---
 # 사용 절차 — 회사채 종목코드로 법인등록번호를 조회할 수 있는지 문의했습니다.
 

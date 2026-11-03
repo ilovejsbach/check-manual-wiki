@@ -25,7 +25,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-02967
+candidate_id: 418c5c593bcf98e1
 ---
 # 오류 해결 — 단말 PC를 교체한 뒤 기존에 잘 동작하던 엑셀의 CHECK 수식이 동작하지 않아, 엑셀에서 어떤 설정을 해야 하는지 문의했…
 

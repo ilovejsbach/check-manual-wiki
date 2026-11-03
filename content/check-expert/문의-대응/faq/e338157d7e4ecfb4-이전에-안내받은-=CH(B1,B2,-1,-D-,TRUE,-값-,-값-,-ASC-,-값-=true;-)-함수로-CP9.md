@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-04222
+candidate_id: e338157d7e4ecfb4
 ---
 # 질문과 답변 — 이전에 안내받은 =CH(B1,B2,-1,"D",TRUE,"<값>","<값>","ASC","<값>=true;") 함수로 CP9…
 

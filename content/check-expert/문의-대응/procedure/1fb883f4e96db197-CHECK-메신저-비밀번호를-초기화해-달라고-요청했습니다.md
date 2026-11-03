@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-02496
+candidate_id: 1fb883f4e96db197
 ---
 # 사용 절차 — CHECK 메신저 비밀번호를 초기화해 달라고 요청했습니다.
 

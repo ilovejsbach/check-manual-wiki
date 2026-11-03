@@ -22,7 +22,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00898
+candidate_id: 8f5625fd02f2dd38
 ---
 # 사용 절차 — 특이조회에서 주식옵션 전체 내역을 =CLIST 함수로 출력했는데 누락되는 종목이 많은 것 같다는 문의입니다.
 

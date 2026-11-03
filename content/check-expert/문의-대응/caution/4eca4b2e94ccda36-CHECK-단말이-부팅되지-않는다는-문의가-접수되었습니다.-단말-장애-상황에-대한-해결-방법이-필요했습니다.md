@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00050
+candidate_id: 4eca4b2e94ccda36
 ---
 # 주의사항 — CHECK 단말이 부팅되지 않는다는 문의가 접수되었습니다. 단말 장애 상황에 대한 해결 방법이 필요했습니다.
 

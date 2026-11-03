@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-01310
+candidate_id: 865ad4795f9d1079
 ---
 # 사용 절차 — CHECK API로 ETF의 iNAV를 수신할 수 있는지 문의했습니다. 안내 사이트를 참고해 찾아봤으나 찾지 못했다고 합니다.
 

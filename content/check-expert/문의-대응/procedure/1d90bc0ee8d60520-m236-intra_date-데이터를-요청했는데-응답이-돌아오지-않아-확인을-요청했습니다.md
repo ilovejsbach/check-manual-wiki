@@ -21,7 +21,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00734
+candidate_id: 1d90bc0ee8d60520
 ---
 # 사용 절차 — m236/intra_date 데이터를 요청했는데 응답이 돌아오지 않아 확인을 요청했습니다.
 

@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-01229
+candidate_id: 94b53e2473bae960
 ---
 # 사용 절차 — 오랜만에 CHECK를 실행했더니 로그인 시 ID가 확인되지 않는다고 문의했습니다.
 

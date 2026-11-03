@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00163
+candidate_id: d777abaebf812dba
 ---
 # 활용 팁 — 맵 화면에 설정된 내용이 꼬여 처음 상태로 되돌리기 위해 맵 초기화를 요청했습니다.
 

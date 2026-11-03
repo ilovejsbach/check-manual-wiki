@@ -20,7 +20,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00501
+candidate_id: c89c2ed54a18e1b0
 ---
 # 사용 절차 — 특정 종목의 최초 이자지급일이 CHECK에서 변경된 것으로 알고 있어 확인을 요청했습니다.
 

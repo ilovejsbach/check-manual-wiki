@@ -22,7 +22,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-05444
+candidate_id: 7dacce1ee31e8410
 ---
 # 질문과 답변 — 미니옵션에서 KRX 델타 항목을 내려받을 수 있는지 문의했습니다.
 

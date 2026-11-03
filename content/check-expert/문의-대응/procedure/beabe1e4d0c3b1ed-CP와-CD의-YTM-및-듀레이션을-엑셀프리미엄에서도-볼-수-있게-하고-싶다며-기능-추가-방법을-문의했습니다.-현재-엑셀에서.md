@@ -28,7 +28,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-04282
+candidate_id: beabe1e4d0c3b1ed
 ---
 # 사용 절차 — CP와 CD의 YTM 및 듀레이션을 엑셀프리미엄에서도 볼 수 있게 하고 싶다며 기능 추가 방법을 문의했습니다. 현재 엑셀에서…
 

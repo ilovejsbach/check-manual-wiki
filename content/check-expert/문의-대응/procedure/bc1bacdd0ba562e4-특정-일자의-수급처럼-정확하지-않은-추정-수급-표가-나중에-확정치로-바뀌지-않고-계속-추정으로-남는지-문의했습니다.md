@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-01253
+candidate_id: bc1bacdd0ba562e4
 ---
 # 사용 절차 — 특정 일자의 수급처럼 정확하지 않은 추정 수급 표가 나중에 확정치로 바뀌지 않고 계속 추정으로 남는지 문의했습니다.
 

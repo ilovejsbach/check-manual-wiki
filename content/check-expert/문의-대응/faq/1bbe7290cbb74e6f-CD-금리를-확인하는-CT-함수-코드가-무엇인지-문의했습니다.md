@@ -22,7 +22,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00842
+candidate_id: 1bbe7290cbb74e6f
 ---
 # 질문과 답변 — CD 금리를 확인하는 CT 함수 코드가 무엇인지 문의했습니다.
 

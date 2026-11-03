@@ -26,7 +26,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:VOC-00612
+candidate_id: 793c1ede6d531bbf
 ---
 # 오류 해결 — CHECK와 연동된 엑셀에서 연산이 전혀 되지 않는데 어떻게 해야 하는지 문의했습니다.
 

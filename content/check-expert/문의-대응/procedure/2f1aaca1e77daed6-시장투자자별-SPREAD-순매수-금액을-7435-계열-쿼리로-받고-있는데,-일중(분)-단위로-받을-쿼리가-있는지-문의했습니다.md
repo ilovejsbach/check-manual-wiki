@@ -23,7 +23,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-03791
+candidate_id: 2f1aaca1e77daed6
 ---
 # 사용 절차 — 시장투자자별 SPREAD 순매수 금액을 7435 계열 쿼리로 받고 있는데, 일중(분) 단위로 받을 쿼리가 있는지 문의했습니다.
 

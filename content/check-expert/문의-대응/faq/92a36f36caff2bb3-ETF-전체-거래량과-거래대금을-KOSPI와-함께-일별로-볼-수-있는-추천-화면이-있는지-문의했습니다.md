@@ -22,7 +22,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-02627
+candidate_id: 92a36f36caff2bb3
 ---
 # 질문과 답변 — ETF 전체 거래량과 거래대금을 KOSPI와 함께 일별로 볼 수 있는 추천 화면이 있는지 문의했습니다.
 

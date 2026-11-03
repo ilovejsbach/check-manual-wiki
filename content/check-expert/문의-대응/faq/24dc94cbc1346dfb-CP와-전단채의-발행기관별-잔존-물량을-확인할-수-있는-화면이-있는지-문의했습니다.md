@@ -28,7 +28,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-04685
+candidate_id: 24dc94cbc1346dfb
 ---
 # 질문과 답변 — CP와 전단채의 발행기관별 잔존 물량을 확인할 수 있는 화면이 있는지 문의했습니다.
 

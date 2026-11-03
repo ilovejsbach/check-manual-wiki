@@ -22,7 +22,7 @@ related_ids: []
 review_status: candidate
 mapping_status: unmapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00808
+candidate_id: 8a177a0df153ca2f
 ---
 # 사용 절차 — 집에서 CHECK를 실행했을 때 아이디는 입력되어 있으나 비밀번호란이 활성화되지 않고 자동로그인으로 비밀번호 오류만 반복된다…
 

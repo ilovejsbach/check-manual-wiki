@@ -28,7 +28,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-03946
+candidate_id: f7adee7fa7b81e6c
 ---
 # 사용 절차 — 증권상품시장(ETF, ETN, ELW)의 거래대금을 볼 수 있는 화면번호를 문의했습니다.
 

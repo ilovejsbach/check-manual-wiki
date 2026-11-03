@@ -25,7 +25,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-01466
+candidate_id: 11a68e6dc1be3d11
 ---
 # 오류 해결 — 주식선물 Basis를 자산별로 전체 조회할 수 있는 화면과 엑셀연동 기능을 문의했습니다.
 

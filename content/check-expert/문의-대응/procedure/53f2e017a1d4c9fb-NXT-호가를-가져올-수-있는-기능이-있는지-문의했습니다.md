@@ -24,7 +24,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-00952
+candidate_id: 53f2e017a1d4c9fb
 ---
 # 사용 절차 — NXT 호가를 가져올 수 있는 기능이 있는지 문의했습니다.
 

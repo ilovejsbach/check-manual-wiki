@@ -196,7 +196,7 @@
 ## 9. 버전·기준일 규칙
 
 1. `schema_version`: 온톨로지 스키마 버전. 현행 레코드는 `1.0`. 이번 명세 반영 시 `2.0`(노드 필수 속성·`grade` 추가).
-2. `as_of`: 근거 확인 기준일. 항목은 항목코드표 파일 기준(`HangMokCodeTable_ExcelPremium_update01.xlsx`의 `update01`처럼 파일 판을 `source`에 보존), 화면은 매뉴얼 PDF 판의 SHA-256(`manifest.json`), 사례는 `candidate_id`의 날짜 접두(예 `20260101!row:61`).
+2. `as_of`: 근거 확인 기준일. 항목은 항목코드표 파일 기준(`HangMokCodeTable_ExcelPremium_update01.xlsx`의 `update01`처럼 파일 판을 `source`에 보존), 화면은 매뉴얼 PDF 판의 SHA-256(`manifest.json`), 사례는 기준일 필드(`as_of`; 원본 행 번호·CRM 식별자는 공개 산출물에 두지 않는다).
 3. 원본 개정 시 전체 재생성하고 `manifest.json`의 SHA-256로 입력 판을 식별한다(기존 원칙 유지). 노드 ID는 유지, 내용이 바뀌면 `as_of`와 `schema_version`만 갱신, 폐지는 `deprecated: true` + `superseded_by`.
 4. 시장 차원: KRX/NXT처럼 시점에 따라 달라지는 제품 사실은 `valid_from`/`valid_to`를 가진다. 사례 `check:support-case:311f471486708efa`(4311 화면에 NXT 기준 지수값 추가 요청)가 필요성을 보여 준다.
 5. 외부 노드(`kcm:`, `law:`)는 참조 시점의 `kcm_commit` 또는 `law_effective_date`를 엣지 `as_of` 옆에 기록한다.
@@ -212,7 +212,7 @@
 | I3 | **고아 노드**: 타입별 최소 연결을 만족. `item`은 `provides`(화면) 또는 `available_via`(함수) ≥1, `screen`은 `part_of`(메뉴) 또는 `menu_path` ≥1, `information_need`는 `resolves` ≥1(없으면 `gap:true` 명시), `law_article`/`concept`는 인바운드 ≥1 | 어떤 화면도 제공하지 않는 항목코드 |
 | I4 | **대칭성**: 대칭 관계(`same_data_via`, `same_as`)는 양방향이 모두 있거나 정본 한 방향만 저장되고 파생된다. `previous`/`next`는 서로 역이어야 한다(현행 274쌍) | A→B `next`인데 B→A `previous` 없음 |
 | I5 | **등급 필수**: 모든 신규 관계에 `grade`, `evidence`, `as_of`. `auto_extracted`는 `provides`/`computes`/`regulated_by`의 정본이 될 수 없음 | 근거 없는 `regulated_by` |
-| I6 | **evidence 실존**: `evidence.source_locator`가 레코드의 위치 형식(PDF 쪽수 범위, `시트!row:N`)을 만족 | 존재하지 않는 쪽수 |
+| I6 | **evidence 실존**: `evidence.source_locator`가 레코드의 위치 형식(PDF 쪽수 범위, 시트 위치; 사례는 고정값 "비식별 문의 사례")을 만족 | 존재하지 않는 쪽수 |
 | I7 | **타입 제약**: 관계별 source/target 타입 허용표(3절)를 만족 | `provides`의 source가 manual |
 | I8 | **비식별**: `public` 노드 본문에 개인·회사 식별자 패턴이 없다 | 사례 본문에 담당자 이름 |
 | I9 | **카디널리티**: `part_of` 부모 ≤1, `same_as` 그룹 내 정본 1개 | 메뉴 노드가 부모 2개 |

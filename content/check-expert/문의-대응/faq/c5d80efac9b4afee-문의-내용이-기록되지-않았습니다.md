@@ -22,7 +22,7 @@ related_ids:
 review_status: candidate
 mapping_status: mapped
 source_locator: 비식별 문의 사례
-candidate_id: manual-candidate:CRM-06069
+candidate_id: c5d80efac9b4afee
 ---
 # 질문과 답변 — 문의 내용이 기록되지 않았습니다.
 
