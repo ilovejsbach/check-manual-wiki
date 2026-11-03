@@ -245,3 +245,17 @@ uv run python scripts/derive_case_links.py --knowledge knowledge/check-expert/kn
 - 못 채운 것: 에이전트 조사에서 공인 출처로 확인 못 한 것(거래량·시가총액·종목코드·만기일·약정가·계약수·발행일·발행액 등)과, 화면 맥락에 따라 뜻이 갈리는 것(스프레드·3M·CD·기준가·민평·이론가/괴리)은 비워 두었다. 후자는 체크 PC 의 화면 값으로 맥락을 정한 뒤 채운다.
 - 출처 검증: 한국은행 용어집 PDF 는 네이버 호스팅 사본으로만 열려 쓰지 않았고(스프레드·국채선물 제외), 기획재정부·국채시장·한국은행 페이지는 직접 열어 문장을 확인했다.
 - 재생성·커밋은 체크 PC 에서 한다(Mac 에는 엑셀 원본이 없다).
+
+
+## 통합 후 재생성 (윈도우·맥 공통)
+
+생성물(JSONL·manifest·ZIP·생성 Markdown·온톨로지 내보내기)은 병합하지 않고 `scripts/regenerate_all.py` 로 다시 만든다.
+
+```
+git fetch origin
+git switch integration/2026-11-03        # 또는 받을 통합 브랜치
+uv run python scripts/regenerate_all.py  # ../check-e2e 가 있으면 E2E 가져오기 포함
+uv run python scripts/regenerate_all.py --site   # Quartz 빌드까지
+```
+
+`--skip-e2e`(원본 없는 PC), `--e2e-dir <경로>`, `--list`(단계만 출력)를 쓸 수 있다. 끝에 단계별 통과/실패와 기대값 점검(researched 필드 ≥ 68, `None` 링크 없음)이 나오고, 하나라도 실패하면 종료 코드 1이다. 엑셀 원본 6개가 없는 PC(맥)에서는 원본 해시가 빠지므로 생성물을 커밋하지 않는다. 통과하면 생성물을 통합 브랜치에 커밋하고 `main` 으로 병합한다.
