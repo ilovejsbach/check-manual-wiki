@@ -260,6 +260,105 @@ def test_typed_relationships_include_manual_sequence_and_semantic_links() -> Non
     assert relation["type"] == "mentions_tr"
 
 
+def test_apply_e2e_observations_preserves_verification_boundaries(tmp_path, monkeypatch) -> None:
+    observation = {
+        "screen_code": "1300",
+        "observation_status": "deep_observed",
+        "callability_status": "verified",
+        "golden_status": "in_progress",
+        "financial_review_status": "partial_unapproved",
+        "observed_at": "2026-11-03T10:00:00",
+        "observed_fields": ["현재가", "VWAP"],
+        "observed_tabs": ["현재가", "공시"],
+        "warnings": ["clock_overlay_detected"],
+    }
+    (tmp_path / build_check_wiki.E2E_OBSERVATIONS_NAME).write_text(
+        json.dumps(observation, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
+    monkeypatch.setattr(build_check_wiki, "SOURCE_DIR", tmp_path)
+    records = [
+        {
+            "id": "check:screen:1300",
+            "type": "screen",
+            "screen_code": "1300",
+            "title": "1300 - 주식현재가",
+            "text": "# 1300 - 주식현재가",
+        }
+    ]
+
+    assert build_check_wiki.apply_e2e_observations(records) == 1
+    assert records[0]["observation_status"] == "deep_observed"
+    assert records[0]["financial_review_status"] == "partial_unapproved"
+    assert "실제 화면 관찰은 금융 정의나 산식의 승인을 의미하지 않습니다" in records[0]["text"]
+
+
+def test_apply_e2e_observations_preserves_non_catalog_screen(tmp_path, monkeypatch) -> None:
+    observation = {
+        "screen_code": "1515",
+        "observation_status": "baseline_observed",
+        "callability_status": "verified",
+        "title_observed": "저가대비 급등",
+        "evidence": ["check-e2e/golden/meta-ranking/1515/manifest.json"],
+    }
+    (tmp_path / build_check_wiki.E2E_OBSERVATIONS_NAME).write_text(
+        json.dumps(observation, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
+    monkeypatch.setattr(build_check_wiki, "SOURCE_DIR", tmp_path)
+    records = []
+
+    assert build_check_wiki.apply_e2e_observations(records) == 1
+    assert records[0]["type"] == "observed_screen"
+    assert records[0]["mapping_status"] == "observed_not_in_official_catalog"
+
+
+def test_build_screen_field_records_separates_researched_and_observed_labels(
+    tmp_path, monkeypatch
+) -> None:
+    observation = {
+        "screen_code": "1300",
+        "observed_fields": ["PER", "현재가"],
+        "evidence": ["check-e2e/golden/1300/financial-semantics.json"],
+        "field_definitions": [
+            {
+                "field": "PER",
+                "concept": "주가수익비율(PER)",
+                "definition": "주가를 주당순이익으로 나눈 값입니다.",
+                "formula": "주가 / EPS",
+                "unit": "배",
+                "definition_status": "authoritative_external",
+                "check_field_status": "formula_pending",
+                "sources": ["krx"],
+            }
+        ],
+        "semantic_sources": {
+            "krx": {"title": "KRX 정보데이터시스템", "url": "https://example.test/krx"}
+        },
+    }
+    (tmp_path / build_check_wiki.E2E_OBSERVATIONS_NAME).write_text(
+        json.dumps(observation, ensure_ascii=False) + "\n", encoding="utf-8"
+    )
+    monkeypatch.setattr(build_check_wiki, "SOURCE_DIR", tmp_path)
+    records = [
+        {
+            "id": "check:screen:1300",
+            "type": "screen",
+            "screen_code": "1300",
+            "title": "1300 - 주식현재가",
+            "related_ids": [],
+        }
+    ]
+
+    assert build_check_wiki.build_screen_field_records(records) == 2
+    fields = {
+        record["field_label"]: record for record in records if record["type"] == "screen_field"
+    }
+    assert fields["PER"]["formula"] == "주가 / EPS"
+    assert fields["PER"]["review_status"] == "researched"
+    assert fields["현재가"]["definition_status"] == "observed_label_only"
+    assert fields["현재가"]["review_status"] == "candidate"
+    assert set(records[0]["related_ids"]) == {fields["PER"]["id"], fields["현재가"]["id"]}
+
+
 def test_support_case_merges_multiple_official_contexts(tmp_path, monkeypatch) -> None:
     output = tmp_path / "content" / "check-expert"
     output.mkdir(parents=True)

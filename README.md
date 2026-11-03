@@ -38,10 +38,25 @@ Excel Premium, 공식 문서와 검수 전 실사용 후보를 한 화면에서 
 
 ```powershell
 uv sync --frozen
+uv run python scripts/import_e2e_knowledge.py `
+  ..\check-e2e `
+  sources\check-expert\e2e-observations.jsonl `
+  --json
+uv run python scripts/build_check_wiki.py --json
 uv run pytest
 uv run python scripts/validate_check_wiki.py --json
 uv run python scripts/build_help_app.py --json
 ```
+
+E2E 가져오기는 `check-e2e/golden/**`의 manifest, inventory, analysis, reference를
+화면번호별 관찰 레코드로 병합합니다. 화면 호출 확인, 심층 관찰, 금융 검수 상태는 서로
+독립적으로 유지합니다. 공식 매뉴얼 카탈로그에 없는 실제 관찰 화면도 삭제하지 않고
+`observed_screen` 검수 후보로 보존합니다.
+
+화면에서 관찰된 값의 제목은 `screen_field` 데이터 사전으로 분리합니다. 금융 의미와
+산식 근거가 있는 항목은 출처와 함께 기록하고, 표시명만 확인된 항목은 정의·산식·단위
+미확인 상태로 남깁니다. 각 항목은 해당 TR과 양방향으로 연결되며 로컬 도움말의
+`데이터 사전` 필터에서 따로 조회할 수 있습니다.
 
 빌드된 `help-dist/`는 다음과 같이 조회할 수 있습니다.
 

@@ -6,14 +6,16 @@ const escapeHtml = (value) => String(value ?? "").replace(/[&<>"']/g, (char) => 
 const normalize = (value) => String(value ?? "").toLowerCase().normalize("NFKC").replace(/[^0-9a-z가-힣]+/g, " ").trim();
 const tokens = (value) => normalize(value).split(/\s+/).filter(Boolean);
 const caseLabels = { faq: "질문과 답변", procedure: "사용 절차", troubleshooting: "오류 해결", caution: "주의사항", tip: "활용 팁" };
+const observationLabels = { baseline_observed: "실화면 기본 관찰", deep_observed: "실화면 심층 관찰", completed: "실화면 기본 관찰" };
 
 function recordKind(record) {
   if (record.type === "support_case") return `case-${record.case_type || "faq"}`;
+  if (record.type === "screen_field") return "dictionary";
   if (record.mapping_status === "unmapped") return "unmapped";
   if (record.type === "support_case_index" || String(record.id).startsWith("check:enrichment:")) return "inquiry";
+  if (record.screen_code) return "screen";
   if (record.review_status === "candidate") return "candidate";
   if (record.type === "excel" || normalize(record.category).includes("엑셀")) return "excel";
-  if (record.screen_code) return "screen";
   return "manual";
 }
 
@@ -89,7 +91,7 @@ function renderResults() {
   }
   list.innerHTML = state.filtered.map((record) => {
     const kind = recordKind(record);
-    const badge = record.screen_code ? `TR ${escapeHtml(record.screen_code)}` : record.type === "support_case" ? escapeHtml(caseLabels[record.case_type] || "문의 사례") : kind === "inquiry" ? "문의 대응" : kind === "candidate" ? "검수 후보" : kind === "unmapped" ? "분류 대기" : record.type === "excel" ? "Excel" : "매뉴얼";
+    const badge = kind === "dictionary" ? "데이터 사전" : record.screen_code ? `TR ${escapeHtml(record.screen_code)}` : record.type === "support_case" ? escapeHtml(caseLabels[record.case_type] || "문의 사례") : kind === "inquiry" ? "문의 대응" : kind === "candidate" ? "검수 후보" : kind === "unmapped" ? "분류 대기" : record.type === "excel" ? "Excel" : "매뉴얼";
     return `<li class="result ${state.selected === record.id ? "active" : ""}"><button type="button" data-id="${escapeHtml(record.id)}"><div class="result-top"><span class="badge ${record.review_status === "candidate" ? "candidate" : ""}">${badge}</span>${record.signal_count ? `<span class="badge candidate">문의 ${record.signal_count}건</span>` : ""}</div><h3>${escapeHtml(record.title)}</h3><p>${escapeHtml(excerpt(record))}</p></button></li>`;
   }).join("");
 }
@@ -164,7 +166,7 @@ function openRecord(id, push = true) {
   state.selected = id;
   const candidate = record.review_status === "candidate";
   const caseLabel = record.type === "support_case" ? caseLabels[record.case_type] || "문의 사례" : null;
-  $("#viewer").innerHTML = `<header class="doc-head"><div class="result-top"><span class="badge ${candidate ? "candidate" : ""}">${record.screen_code ? `TR ${escapeHtml(record.screen_code)}` : caseLabel ? escapeHtml(caseLabel) : candidate ? "검수 전 후보" : escapeHtml(record.type)}</span>${record.signal_count ? `<span class="badge candidate">관련 신호 ${record.signal_count}건</span>` : ""}</div><h1>${escapeHtml(record.title)}</h1><div class="doc-meta"><span>출처: ${escapeHtml(record.source || "미기재")}</span><span>위치: ${escapeHtml(record.source_locator || "미기재")}</span>${record.case_topic ? `<span>업무·주제: ${escapeHtml(record.case_topic)}</span>` : ""}<span>ID: ${escapeHtml(record.id)}</span></div></header>${candidate ? '<div class="notice">비식별 문의 기록에서 만든 검수 전 지식입니다. 당시 대응을 공식 해결책으로 단정하지 말고, 공식 매뉴얼과 현재 제품 동작을 확인하세요.</div>' : ""}<article class="doc-body">${renderMarkdown(documentBody(record.text, record.title))}</article>${record.related?.length ? `<nav class="related"><h2>의미상 연결된 문서</h2>${record.related.map((item) => `<button type="button" data-related="${escapeHtml(item.id)}"><small>${escapeHtml(item.relation_label || "관련 문서")}</small>${item.screen_code ? `TR ${escapeHtml(item.screen_code)} · ` : ""}${escapeHtml(item.title)}</button>`).join("")}</nav>` : ""}`;
+  $("#viewer").innerHTML = `<header class="doc-head"><div class="result-top"><span class="badge ${candidate ? "candidate" : ""}">${record.screen_code ? `TR ${escapeHtml(record.screen_code)}` : caseLabel ? escapeHtml(caseLabel) : candidate ? "검수 전 후보" : escapeHtml(record.type)}</span>${record.observation_status ? `<span class="badge observed">${escapeHtml(observationLabels[record.observation_status] || record.observation_status)}</span>` : ""}${record.signal_count ? `<span class="badge candidate">관련 신호 ${record.signal_count}건</span>` : ""}</div><h1>${escapeHtml(record.title)}</h1><div class="doc-meta"><span>출처: ${escapeHtml(record.source || "미기재")}</span><span>위치: ${escapeHtml(record.source_locator || "미기재")}</span>${record.case_topic ? `<span>업무·주제: ${escapeHtml(record.case_topic)}</span>` : ""}<span>ID: ${escapeHtml(record.id)}</span></div></header>${candidate ? '<div class="notice">비식별 문의 기록에서 만든 검수 전 지식입니다. 당시 대응을 공식 해결책으로 단정하지 말고, 공식 매뉴얼과 현재 제품 동작을 확인하세요.</div>' : ""}<article class="doc-body">${renderMarkdown(documentBody(record.text, record.title))}</article>${record.related?.length ? `<nav class="related"><h2>의미상 연결된 문서</h2>${record.related.map((item) => `<button type="button" data-related="${escapeHtml(item.id)}"><small>${escapeHtml(item.relation_label || "관련 문서")}</small>${item.screen_code ? `TR ${escapeHtml(item.screen_code)} · ` : ""}${escapeHtml(item.title)}</button>`).join("")}</nav>` : ""}`;
   renderResults();
   if (push) updateUrl();
   $("#viewer").scrollTo?.(0, 0);
@@ -172,7 +174,7 @@ function openRecord(id, push = true) {
 
 function updateCounts() {
   const count = (kind) => state.records.filter((record) => kind === "all" || (kind === "inquiry" ? record.type === "support_case" || record.type === "support_case_index" || String(record.id).startsWith("check:enrichment:") : kind === "unmapped" ? record.mapping_status === "unmapped" : recordKind(record) === kind)).length;
-  for (const kind of ["all", "screen", "excel", "inquiry", "case-faq", "case-procedure", "case-troubleshooting", "case-caution", "case-tip", "unmapped"]) $(`#count-${kind}`).textContent = count(kind).toLocaleString("ko-KR");
+  for (const kind of ["all", "screen", "dictionary", "excel", "inquiry", "case-faq", "case-procedure", "case-troubleshooting", "case-caution", "case-tip", "unmapped"]) $(`#count-${kind}`).textContent = count(kind).toLocaleString("ko-KR");
 }
 
 async function start() {

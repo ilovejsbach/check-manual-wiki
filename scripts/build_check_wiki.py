@@ -11,7 +11,7 @@ import sys
 import tempfile
 import unicodedata
 import zipfile
-from collections import Counter
+from collections import Counter, defaultdict
 from collections.abc import Iterable
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -30,6 +30,7 @@ PDF_NAME = "CHECKPlus_Manual.pdf"
 CODE_TABLE_ROWS = 750
 ENRICHMENT_NAME = "manual-enrichment.jsonl"
 UNMAPPED_ENRICHMENT_NAME = "manual-enrichment-unmapped.jsonl"
+E2E_OBSERVATIONS_NAME = "e2e-observations.jsonl"
 MANUAL_ASSET_DIR = OUTPUT_DIR / "assets" / "manual-pages"
 MANUAL_ASSET_SCALE = 1.25
 SEMANTIC_STOPWORDS = {
@@ -1374,7 +1375,21 @@ def enrich_relationships(records: list[dict[str, object]]) -> None:
     for record in records:
         record["relationships"] = []
         for target_id in record.get("related_ids", []):
-            if str(record["id"]).startswith("check:support-case:"):
+            target = by_id.get(str(target_id), {})
+            evidence_type = "manual_or_curated_reference"
+            if record.get("type") == "screen_field" and target.get("type") in {
+                "screen",
+                "observed_screen",
+            }:
+                relation_type, label = "field_of", "이 항목이 관찰된 화면"
+                evidence_type = "e2e_ui_observation"
+            elif (
+                record.get("type") in {"screen", "observed_screen"}
+                and target.get("type") == "screen_field"
+            ):
+                relation_type, label = "has_field", "화면 데이터 항목"
+                evidence_type = "e2e_ui_observation"
+            elif str(record["id"]).startswith("check:support-case:"):
                 relation_type, label = "case_context", "이 문의가 연결된 문서"
             elif str(target_id).startswith("check:support-case:"):
                 relation_type, label = "support_case", "관련 문의 대응 사례"
@@ -1397,7 +1412,7 @@ def enrich_relationships(records: list[dict[str, object]]) -> None:
                 str(target_id),
                 relation_type,
                 label,
-                evidence_type="manual_or_curated_reference",
+                evidence_type=evidence_type,
                 review_status="documented",
             )
 
@@ -1610,6 +1625,252 @@ def add_screen_mention_links() -> None:
         write_text(path, front + clean_body)
 
 
+def load_e2e_observations() -> dict[str, dict[str, object]]:
+    path = SOURCE_DIR / E2E_OBSERVATIONS_NAME
+    if not path.exists():
+        return {}
+    observations: dict[str, dict[str, object]] = {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        try:
+            record = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        code = str(record.get("screen_code") or "")
+        if re.fullmatch(r"\d{4}", code):
+            observations[code] = record
+    return observations
+
+
+def render_e2e_section(observation: dict[str, object], title: str) -> str:
+    status_labels = {
+        "baseline_observed": "기본 화면 관찰",
+        "deep_observed": "심층 화면 관찰",
+        "completed": "기본 화면 관찰",
+    }
+    status = str(observation.get("observation_status") or "discovered")
+    section = [
+        "## 실제 CHECK 관찰",
+        "",
+        f"- 관찰 수준: {status_labels.get(status, status)}",
+        f"- 호출 확인: {observation.get('callability_status') or '미확인'}",
+        f"- 골든 상태: {observation.get('golden_status') or '미착수'}",
+        f"- 금융 검수: {observation.get('financial_review_status') or '미검수'}",
+    ]
+    if observation.get("observed_at"):
+        section.append(f"- 최종 관찰: {observation['observed_at']}")
+    title_observed = str(observation.get("title_observed") or "").strip()
+    if title_observed and title_observed != title.strip():
+        section.append(f"- 실제 화면 표기: {title_observed}")
+    observed_fields = [str(value) for value in observation.get("observed_fields", [])]
+    if observed_fields:
+        section.extend(["", "### 관찰된 금융 항목", "", ", ".join(observed_fields)])
+    observed_tabs = [str(value) for value in observation.get("observed_tabs", [])]
+    if observed_tabs:
+        section.extend(["", "### 관찰된 탭", "", ", ".join(observed_tabs)])
+    warning_values = [str(value) for value in observation.get("warnings", [])]
+    if warning_values:
+        section.extend(
+            ["", "> 관찰 주의: " + ", ".join(warning_values) + ". 재촬영·재검증이 필요합니다."]
+        )
+    section.extend(
+        [
+            "",
+            "> 실제 화면 관찰은 금융 정의나 산식의 승인을 의미하지 않습니다.",
+        ]
+    )
+    return "\n".join(section)
+
+
+def apply_e2e_observations(records: list[dict[str, object]]) -> int:
+    observations = load_e2e_observations()
+    applied = 0
+    matched_codes: set[str] = set()
+    for record in records:
+        code = str(record.get("screen_code") or "")
+        observation = observations.get(code)
+        if record.get("type") != "screen" or observation is None:
+            continue
+        applied += 1
+        matched_codes.add(code)
+        record["e2e"] = observation
+        record["observation_status"] = observation.get("observation_status")
+        record["golden_status"] = observation.get("golden_status")
+        record["financial_review_status"] = observation.get("financial_review_status")
+        record["text"] = (
+            str(record.get("text") or "").rstrip()
+            + "\n\n"
+            + render_e2e_section(observation, str(record.get("title") or ""))
+        )
+    for code, observation in observations.items():
+        if code in matched_codes:
+            continue
+        title = str(observation.get("title_observed") or f"TR {code} 관찰 화면")
+        records.append(
+            {
+                "schema_version": "1.0",
+                "id": f"check:observed-screen:{code}",
+                "type": "observed_screen",
+                "title": title,
+                "aliases": [code, f"TR{code}", f"화면 {code}"],
+                "category": observation.get("category"),
+                "screen_code": code,
+                "source": "CHECK E2E observed UI",
+                "source_locator": ", ".join(
+                    str(value) for value in observation.get("evidence", [])[:3]
+                ),
+                "review_status": "candidate",
+                "mapping_status": "observed_not_in_official_catalog",
+                "related_ids": [],
+                "markdown_path": None,
+                "e2e": observation,
+                "observation_status": observation.get("observation_status"),
+                "golden_status": observation.get("golden_status"),
+                "financial_review_status": observation.get("financial_review_status"),
+                "text": (
+                    f"# {title}\n\n"
+                    "> 실제 CHECK에서 관찰됐지만 현재 공식 매뉴얼 화면 카탈로그와 연결되지 않은 화면입니다.\n\n"
+                    + render_e2e_section(observation, title)
+                ),
+            }
+        )
+        applied += 1
+    return applied
+
+
+def build_screen_field_records(records: list[dict[str, object]]) -> int:
+    observations = load_e2e_observations()
+    screen_ids_by_code: dict[str, list[str]] = defaultdict(list)
+    for record in records:
+        if record.get("screen_code") and record.get("type") in {"screen", "observed_screen"}:
+            screen_ids_by_code[str(record["screen_code"])].append(str(record["id"]))
+
+    field_records: list[dict[str, object]] = []
+    for code, observation in observations.items():
+        target_ids = screen_ids_by_code.get(code, [])
+        if not target_ids:
+            continue
+        definitions = [
+            item for item in observation.get("field_definitions", []) if isinstance(item, dict)
+        ]
+        detailed_labels: set[str] = set()
+        candidates: list[dict[str, object]] = []
+        for definition in definitions:
+            label = str(definition.get("field") or definition.get("concept") or "").strip()
+            concept = str(definition.get("concept") or label).strip()
+            if not label:
+                continue
+            detailed_labels.update({label, concept})
+            candidates.append({"label": label, "concept": concept, **definition})
+        for value in observation.get("observed_fields", []):
+            label = str(value).strip()
+            if label and label not in detailed_labels:
+                candidates.append(
+                    {
+                        "label": label,
+                        "concept": label,
+                        "definition": "실제 CHECK 화면에서 표시명이 관찰되었습니다.",
+                        "formula": None,
+                        "unit": None,
+                        "definition_status": "observed_label_only",
+                        "check_field_status": "definition_formula_unit_pending",
+                        "interpretation_caution": "표시명만으로 금융 의미와 CHECK 산출 기준을 확정하지 않습니다.",
+                        "sources": [],
+                    }
+                )
+        seen_ids: set[str] = set()
+        for candidate in candidates:
+            label = str(candidate["label"])
+            concept = str(candidate.get("concept") or label)
+            field_id = f"check:field:{code}:{slug(f'{label}-{concept}')}"
+            if field_id in seen_ids:
+                continue
+            seen_ids.add(field_id)
+            definition_status = str(candidate.get("definition_status") or "observed_label_only")
+            review_status = (
+                "researched" if definition_status.startswith("authoritative_") else "candidate"
+            )
+            source_catalog = observation.get("semantic_sources", {})
+            source_entries = []
+            if isinstance(source_catalog, dict):
+                for source_id in candidate.get("sources", []):
+                    source = source_catalog.get(str(source_id))
+                    if isinstance(source, dict):
+                        source_entries.append({"id": source_id, **source})
+            lines = [
+                f"# {concept} — TR {code} 화면 필드",
+                "",
+                f"- 화면 표시명: {label}",
+                f"- 금융 개념: {concept}",
+                f"- 정의 상태: {definition_status}",
+                f"- CHECK 기준 상태: {candidate.get('check_field_status') or 'pending'}",
+                f"- 단위: {candidate.get('unit') or '확인 필요'}",
+                "",
+                "## 정의",
+                "",
+                str(candidate.get("definition") or "정의 확인이 필요합니다."),
+            ]
+            if candidate.get("formula"):
+                lines.extend(["", "## 산식", "", str(candidate["formula"])])
+            if candidate.get("basis"):
+                lines.extend(["", "## 산출 기준", "", str(candidate["basis"])])
+            if candidate.get("interpretation_caution"):
+                lines.extend(["", "## 해석 주의", "", str(candidate["interpretation_caution"])])
+            if source_entries:
+                lines.extend(["", "## 근거", ""])
+                for source in source_entries:
+                    title = str(source.get("title") or source["id"])
+                    url = str(source.get("url") or "")
+                    lines.append(f"- [{title}]({url})" if url else f"- {title}")
+            lines.extend(
+                [
+                    "",
+                    "> 일반 금융 정의와 CHECK 화면의 실제 산출 기준은 별도 검증합니다.",
+                ]
+            )
+            field_records.append(
+                {
+                    "schema_version": "1.0",
+                    "id": field_id,
+                    "type": "screen_field",
+                    "title": f"{concept} — TR {code}",
+                    "aliases": list(dict.fromkeys([label, concept, f"TR {code} {label}"])),
+                    "category": observation.get("category"),
+                    "screen_code": code,
+                    "source": "CHECK E2E + financial semantics",
+                    "source_locator": ", ".join(
+                        str(value) for value in observation.get("evidence", [])[:3]
+                    ),
+                    "review_status": review_status,
+                    "mapping_status": "mapped_to_screen",
+                    "related_ids": target_ids.copy(),
+                    "markdown_path": None,
+                    "field_label": label,
+                    "concept": concept,
+                    "definition": candidate.get("definition"),
+                    "formula": candidate.get("formula"),
+                    "unit": candidate.get("unit"),
+                    "definition_status": definition_status,
+                    "check_field_status": candidate.get("check_field_status"),
+                    "evidence_sources": source_entries,
+                    "text": "\n".join(lines),
+                }
+            )
+    records.extend(field_records)
+    fields_by_screen: dict[str, list[str]] = defaultdict(list)
+    for record in field_records:
+        fields_by_screen[str(record["screen_code"])].append(str(record["id"]))
+    for record in records:
+        if record.get("type") in {"screen", "observed_screen"}:
+            record["related_ids"] = sorted(
+                set(
+                    record.get("related_ids", []) + fields_by_screen[str(record.get("screen_code"))]
+                )
+            )
+    return len(field_records)
+
+
 def export_knowledge() -> dict[str, int]:
     """Export generated Markdown as stable JSONL records and human navigation indexes."""
     if KNOWLEDGE_DIR.exists():
@@ -1724,6 +1985,8 @@ def export_knowledge() -> dict[str, int]:
             if target is not None and case["id"] not in target.get("related_ids", []):
                 target["related_ids"] = list(target.get("related_ids", [])) + [case["id"]]
 
+    e2e_applied_count = apply_e2e_observations(records)
+    field_record_count = build_screen_field_records(records)
     enrich_relationships(records)
     for case in (r for r in records if r.get("type") == "support_case"):
         semantic_ids = {r["target_id"] for r in case.get("relationships", []) if r.get("target_id", "").startswith("check:support-case:")}
@@ -1774,6 +2037,19 @@ def export_knowledge() -> dict[str, int]:
         "schema_version": "1.0",
         "record_count": len(records),
         "screen_count": sum(record["type"] == "screen" for record in records),
+        "e2e_observation_count": len(load_e2e_observations()),
+        "e2e_applied_record_count": e2e_applied_count,
+        "e2e_observed_only_count": sum(
+            record.get("type") == "observed_screen" for record in records
+        ),
+        "e2e_deep_observed_count": sum(
+            record.get("observation_status") == "deep_observed" for record in records
+        ),
+        "screen_field_record_count": field_record_count,
+        "screen_field_researched_count": sum(
+            record.get("type") == "screen_field" and record.get("review_status") == "researched"
+            for record in records
+        ),
         "support_case_count": sum(record["type"] == "support_case" for record in records),
         "support_case_type_counts": dict(sorted(case_type_counts.items())),
         "unmapped_support_case_count": sum(

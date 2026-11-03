@@ -8,7 +8,7 @@
 | --- | --- |
 | `schema_version` | 레코드 스키마 버전 |
 | `id` | 변경되지 않는 지식 ID. 화면은 `check:screen:1300` 형식 |
-| `type` | `screen`, `manual`, `excel`, `support_case`, `support_case_index`, `tr_candidate` |
+| `type` | `screen`, `observed_screen`, `screen_field`, `manual`, `excel`, `support_case`, `support_case_index`, `tr_candidate` |
 | `title`, `aliases` | 정식 제목과 검색 동의어 |
 | `category`, `screen_code` | 업무 분류와 CHECK 화면번호 |
 | `categories` | 중복 수록 화면을 병합했을 때 보존하는 전체 분류 목록. `category`는 대표 분류 |
@@ -26,6 +26,14 @@
 | `relationships` | `target_id`, 관계 유형, 사람용 관계명을 가진 유형화된 연결 |
 | `screen_codes`, `tr_candidates` | 사례 본문에서 추출한 실존 화면 키와 미등록 TR 후보(종류·위치만 저장) |
 | `functions`, `item_codes` | 사례 본문에서 추출한 함수 이름과 모호하지 않은 항목코드(종류·위치만 저장) |
+| `observation_status` | 실제 CHECK 관찰 수준. 예: `baseline_observed`, `deep_observed` |
+| `golden_status` | 골든 승인 진행 상태. 화면 호출 확인과 별개로 관리 |
+| `financial_review_status` | 화면 필드의 금융 정의·산식 검수 상태 |
+| `e2e` | 관찰시각, 탭, 금융 항목, 캡처 경고, 증거 경로를 보존한 E2E 원문 레코드 |
+| `field_label`, `concept` | `screen_field`의 실제 화면 표시명과 연결한 금융 개념 |
+| `definition`, `formula`, `unit` | 확인된 정의·산식·표시 단위. 미확인은 빈 값으로 보존 |
+| `definition_status`, `check_field_status` | 외부 공식 정의와 CHECK 자체 산출 기준의 검증 상태를 분리 기록 |
+| `evidence_sources` | 필드 정의·산식에 사용한 출처 목록 |
 
 `source_locator`는 병합된 화면의 모든 PDF 구간을 `60-62; 771-773`처럼 세미콜론으로 보존합니다. 화면 본문에서 확인한 연결 유형은 `mentions_tr`(TR 번호)와 `mentions_title`(고유 화면명)으로 구분하며, 두 방향 모두 `related_ids`와 `relationships`에 기록합니다.
 
@@ -45,3 +53,8 @@
 - 원본 매뉴얼이 바뀌면 전체를 재생성하고 `manifest.json`의 SHA-256으로 입력 버전을 식별한다.
 - `review_status=candidate`인 문의 대응 사례는 당시 대응 기록이며 공식 정의나 현재 제품 동작으로 단정하지 않는다.
 - 동일 문의가 여러 화면과 관련되면 하나의 `support_case`에 `case_topics`와 관계를 병합한다.
+- `callability_status=verified`는 화면 호출만 확인했다는 뜻이며 금융 의미·산식 또는 고객
+  매뉴얼 승인을 뜻하지 않는다.
+- `observed_screen`은 실제 UI에서 관찰됐지만 공식 매뉴얼 카탈로그에 연결되지 않은 화면이다.
+- `screen_field`는 화면에서 관찰한 항목을 독립 검색·연결하기 위한 데이터 사전 레코드다. 표시명만 관찰된 항목은 `candidate`로 두며, 외부의 공식 금융 정의를 확보해도 CHECK 산식이 검증된 것으로 간주하지 않는다.
+  누락시키지 말고 별도 검수 후 공식 화면과 연결하거나 비카탈로그 상태를 유지한다.
