@@ -2102,9 +2102,11 @@ For an exact screen query, prefer screen_code or aliases before full-text matchi
         category = str(record.get("category") or record["type"])
         grouped.setdefault(category, []).append(record)
     category_lines = ["# 업무·기능 색인", "", "시장과 업무 분류별로 문서를 찾습니다.", ""]
-    for category in sorted(grouped):
+    for category in sorted(c for c in grouped if any(r.get("markdown_path") for r in grouped[c])):
         category_lines.extend([f"## {category}", ""])
         for record in grouped[category]:
+            if not record.get("markdown_path"):  # screen_field 는 문서 없이 레코드로만 존재한다
+                continue
             target = Path(str(record["markdown_path"])).with_suffix("").as_posix()
             category_lines.append(f"- [[{target}|{record['title']}]]")
         category_lines.append("")

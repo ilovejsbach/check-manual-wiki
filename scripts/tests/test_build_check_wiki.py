@@ -403,3 +403,8 @@ def test_fix_inline_markdown_splits_glued_headings_and_protects_hashtag_words():
 def test_fix_inline_markdown_also_fixes_headings_with_glued_headings_and_hashtags():
     out = build_check_wiki.fix_inline_markdown("---\nt: x\n---\n### 항목 1. 가 ### 항목 2. 나\n# 오류 해결 — #NAME 오류")
     assert "### 항목 1. 가\n\n### 항목 2. 나" in out and "# 오류 해결 — `#NAME` 오류" in out
+
+
+def test_category_index_has_no_pathless_links() -> None:
+    index = (Path(__file__).resolve().parents[2] / "content" / "check-expert" / "업무-기능-색인.md").read_text(encoding="utf-8")
+    assert "[[None" not in index
