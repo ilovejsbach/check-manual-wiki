@@ -169,3 +169,10 @@ uv run python scripts/derive_case_links.py --knowledge knowledge/check-expert/kn
 - `sources/check-expert/manual-enrichment*.jsonl`은 원문(`request_text`·`action_text`·`candidate_id`·`evidence_locator`·`signal_id`·`source_cell_ids`)을 담지 않는 정리본이다. 각 사례는 `case_hash`(예전 `candidate_id` 해시와 동일해 페이지 ID 불변), `case_type`(원문 기준으로 정한 유형을 저장), `manual_candidates`, 요약된 `request_text`/`action_text`, `review_status`만 갖는다. 빌더는 `case_hash`가 있으면 그것을 쓴다.
 - 결과: 재빌드한 사례 페이지는 `candidate_id` frontmatter가 원본 CRM ID에서 해시로 바뀐 것 외에 동일하다(경로·링크·평가 지표 불변).
 - 원문은 이 저장소 안에서 복원할 수 없다. 요약을 다시 만들려면 CRM 원본이 필요하다. **git 이력에는 이전 원문이 남아 있다**(이력 정리는 별도 결정).
+
+### 요약 표본 검수(2026-11-03)
+- 원문과 요약을 층화 표본 36건(의도별)으로 대조했다. 대부분은 사실을 보존했고, 발견한 결함은 세 종류다.
+  1. 마스킹 토큰이 제품명을 지웠다: 원문 `엑셀 [IDENTIFIER]`(엑셀 프리미엄)가 `엑셀 특정 종목`이 됐다(21건, "엑셀 프리미엄"으로 수정). 같은 원인으로 `XL 특정 종목`, `특정 종목(구 로이터)` 등 근거 없이 복원할 수 없는 곳이 남아 있다(약 10건).
+  2. 짧은 원문에 없는 이유를 덧붙인 요약: 표본 36건 중 4건(예: "하드웨어 문제로 판단"), 해당 4건은 정정. 나머지 사례의 같은 유형은 미확인.
+  3. 화면번호 누락: 본문에 화면번호가 있는 630건 중 1건(1389, 복원).
+- 의도 분류는 원문 규칙 기준이라 하드웨어·고객 의견 사례가 `data_error`로 가는 오분류가 있다(표본에서 4건).
