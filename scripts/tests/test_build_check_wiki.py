@@ -181,7 +181,7 @@ def test_manual_enrichment_builds_candidate_companion(tmp_path, monkeypatch) -> 
     assert page.exists()
     text = page.read_text(encoding="utf-8")
     assert "검수 전 후보" in text
-    assert "sheet!row:1" in text
+    assert "증거 위치" not in text and "sheet!row:1" not in text
     cases = list((output / "문의-대응" / "procedure").glob("*.md"))
     assert any(
         'document_type: "support_case"' in item.read_text(encoding="utf-8") for item in cases

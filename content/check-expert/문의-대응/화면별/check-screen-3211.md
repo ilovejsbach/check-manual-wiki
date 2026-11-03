@@ -13,7 +13,6 @@ related_ids:
   - "check:screen:3211"
   - "check:screen:3210"
   - "check:screen:3212"
-  - "check:screen:4191"
 review_status: "candidate"
 signal_count: 2
 source_locator: "target:check:screen:3211"
@@ -21,7 +20,6 @@ relationship_types:
   "check:screen:3210": "mentions_title"
   "check:screen:3211": "mentions_title"
   "check:screen:3212": "mentions_title"
-  "check:screen:4191": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3211 - 장외(15분체결) > 종목별 체결
 
@@ -43,7 +41,6 @@ relationship_types:
 - 고객 질문·증상: 3210, 3211, 3212 화면 데이터의 출처와 '15분체결'에서 15분의 의미를 문의했습니다.
 - 당시 대응 기록: 세 화면 데이터는 금융투자협회로부터 수신합니다. 장외 채권거래가 체결되면 증권사가 15분 이내에 협회에 보고해야 하는 제도가 있어, 그 보고 데이터라는 의미로 15분체결이라 부른다고 설명했습니다.
 - 후보 유형: faq
-- 증거 위치: `20260916!row:4191`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 2
@@ -51,7 +48,6 @@ relationship_types:
 - 고객 질문·증상: 특정 기간 동안 거래된 여전채의 장외 거래내역을 종목별로 한 번에 보고 싶은데, 3211이나 210 화면은 종목을 회차별로 일일이 검색해야 해서 일괄 조회 화면이 있는지 문의했습니다.
 - 당시 대응 기록: 3702 화면에서 조회할 수 있습니다. 왼쪽 상단에서 시장과 기간을 선택하고 우측 종목/발행기관 검색창에 발행기관명을 입력하면 해당 기간에 거래된 그 기관의 모든 종목 거래내역이 조회됩니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:5750`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ## 승인 게이트
@@ -67,4 +63,3 @@ relationship_types:
 - [[check-expert/새로운-모습/채권/3210-3210-장외(15분체결)-건별-체결|3210 - 장외(15분체결) > 건별 체결]] (mentions_title)
 - [[check-expert/새로운-모습/채권/3211-3211-장외(15분체결)-종목별-체결|3211 - 장외(15분체결) > 종목별 체결]] (mentions_title)
 - [[check-expert/새로운-모습/채권/3212-3212-장외(15분체결)-(장외)투자자별-종목체결|3212 - 장외(15분체결) > (장외)투자자별 종목체결]] (mentions_title)
-- [[check-expert/새로운-모습/종합/4191-4191-주식체결|4191 - 주식체결]] (mentions_title)

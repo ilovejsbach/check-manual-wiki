@@ -11,13 +11,11 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:4519"
 related_ids:
   - "check:screen:4519"
-  - "check:screen:3741"
   - "check:screen:4752"
 review_status: "candidate"
 signal_count: 2
 source_locator: "target:check:screen:4519"
 relationship_types:
-  "check:screen:3741": "mentions_title"
   "check:screen:4519": "mentions_title"
   "check:screen:4752": "mentions_title"
 ---
@@ -41,7 +39,6 @@ relationship_types:
 - 고객 질문·증상: 옵션의 실시간 이론가를 확인할 수 있는 방법이 있는지 문의했습니다.
 - 당시 대응 기록: 4519 옵션 이론가시세표 화면에서 옵션 종목별 실시간 이론가를 확인할 수 있다고 안내했습니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:3741`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 2
@@ -49,7 +46,6 @@ relationship_types:
 - 고객 질문·증상: 4519 화면 안내를 받은 뒤, 위클리옵션 종목의 현재 실시간 이론가를 확인하는 방법을 추가로 문의했습니다.
 - 당시 대응 기록: 해당 종목은 4752 화면에서 K200 옵션 해당 행사가 항목의 이론가를 확인하면 된다고 안내했습니다.
 - 후보 유형: faq
-- 증거 위치: `20260916!row:5295`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ## 승인 게이트
@@ -62,6 +58,5 @@ relationship_types:
 
 ## 관련 화면
 
-- [[check-expert/새로운-모습/채권/3741-3741-시가평가-채권그룹-기업별-Term-Structure|3741 - 시가평가 > 채권그룹 > 기업별 Term Structure]] (mentions_title)
 - [[check-expert/새로운-모습/옵션/4519-4519-이론가시세표|4519 - 이론가시세표]] (mentions_title)
 - [[check-expert/새로운-모습/옵션/4752-4752-실시간이론가|4752 - 실시간이론가]] (mentions_title)

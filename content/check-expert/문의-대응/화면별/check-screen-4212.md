@@ -11,14 +11,10 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:4212"
 related_ids:
   - "check:screen:4212"
-  - "check:screen:3083"
-  - "check:screen:4114"
 review_status: "candidate"
 signal_count: 4
 source_locator: "target:check:screen:4212"
 relationship_types:
-  "check:screen:3083": "mentions_title"
-  "check:screen:4114": "mentions_title"
   "check:screen:4212": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 4212 - 일별순매수
@@ -41,7 +37,6 @@ relationship_types:
 - 고객 질문·증상: 4212 화면에서 특정 종목을 '잠정'으로 선택하면 특정 시점 이전 데이터가 0으로 보이는 이유를 문의했습니다.
 - 당시 대응 기록: 야간거래가 도입되기 전 데이터는 '최종' 버튼을 선택해 확인할 수 있다고 안내했습니다. '잠정'은 주간 잠정치이고 '최종'은 주간과 야간을 합한 최종 확정치입니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:3083`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 2
@@ -49,7 +44,6 @@ relationship_types:
 - 고객 질문·증상: 선물 기준 투자자 동향을 시계열 단위로 받을 수 있는 CHECK 엑셀 데이터가 있는지 문의했습니다.
 - 당시 대응 기록: 4212 화면에서 우클릭 후 엑셀프리미엄보내기를 하고, 생성된 프리미엄 함수를 필요에 맞게 수정해 사용하도록 안내했습니다. 사용 사례도 첨부로 전달했습니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:4114`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 3
@@ -57,7 +51,6 @@ relationship_types:
 - 고객 질문·증상: 종목 목록에서 코스닥150 선물을 찾을 수 없는지 문의했습니다.
 - 당시 대응 기록: 해당 선물의 투자자 현황은 4212 화면에서 확인할 수 있다고 안내했습니다.
 - 후보 유형: faq
-- 증거 위치: `20260916!row:5599`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 4
@@ -65,7 +58,6 @@ relationship_types:
 - 고객 질문·증상: CHECK 엑셀에서 선물 기준 투자자 동향을 시계열로 받을 수 있는 데이터가 있는지 문의했습니다. 금융투자순매수금액_2, 투신순매수금액_2 등은 이미 확인 중이라고 합니다.
 - 당시 대응 기록: 엑셀 프리미엄을 활용하는 순서로 안내했습니다. 먼저 4212 화면을 확인하고, 오른쪽 클릭의 엑셀프리미엄보내기를 실행한 뒤, 생성된 프리미엄 함수를 필요에 맞게 수정해 사용하면 됩니다. 사용 사례는 첨부로 제공했습니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `CRM데이터(PID복원)!row:909`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ## 승인 게이트
@@ -78,6 +70,4 @@ relationship_types:
 
 ## 관련 화면
 
-- [[check-expert/새로운-모습/채권/3083-3083-장내국채-시세표|3083 - 장내국채 > 시세표]] (mentions_title)
-- [[check-expert/새로운-모습/선물/4114-4114-주식선물-시세표|4114 - 주식선물 시세표]] (mentions_title)
 - [[check-expert/새로운-모습/선물/4212-4212-일별순매수|4212 - 일별순매수]] (mentions_title)

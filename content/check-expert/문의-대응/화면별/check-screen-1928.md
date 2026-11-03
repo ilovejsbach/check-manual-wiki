@@ -11,13 +11,11 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:1928"
 related_ids:
   - "check:screen:1928"
-  - "check:screen:4003"
 review_status: "candidate"
 signal_count: 2
 source_locator: "target:check:screen:1928"
 relationship_types:
   "check:screen:1928": "mentions_title"
-  "check:screen:4003": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 1928 - 기관외국인합계상세
 
@@ -39,7 +37,6 @@ relationship_types:
 - 고객 질문·증상: 1928 화면을 포함해 주식>투자자>종목 아래 탭들의 원출처가 거래소인지 문의했습니다.
 - 당시 대응 기록: 맞습니다. 해당 데이터는 거래소를 통해 수신하는 정보입니다.
 - 후보 유형: faq
-- 증거 위치: `20260916!row:4003`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 2
@@ -47,7 +44,6 @@ relationship_types:
 - 고객 질문·증상: 기관과 외국인의 순매수 상위 종목을 어느 화면에서 볼 수 있는지 문의했습니다.
 - 당시 대응 기록: 1920 화면에서 특정 일자의 기관·외국인 순매수 상위 종목을 볼 수 있고, 기간 조회는 1929 화면에서 합니다. 두 화면 모두 상단에서 투자자를 각각 설정해야 하며, 기관과 외국인 합계는 1927, 1928 화면에서 볼 수 있습니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:4865`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ## 승인 게이트
@@ -61,4 +57,3 @@ relationship_types:
 ## 관련 화면
 
 - [[check-expert/새로운-모습/주식/1928-1928-기관외국인합계상세|1928 - 기관외국인합계상세]] (mentions_title)
-- [[check-expert/새로운-모습/선물/4003-4003-투자자일별|4003 - 투자자일별]] (mentions_title)

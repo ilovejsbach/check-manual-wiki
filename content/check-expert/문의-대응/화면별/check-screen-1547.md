@@ -11,13 +11,11 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:1547"
 related_ids:
   - "check:screen:1547"
-  - "check:screen:4254"
 review_status: "candidate"
 signal_count: 4
 source_locator: "target:check:screen:1547"
 relationship_types:
   "check:screen:1547": "mentions_title"
-  "check:screen:4254": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 1547 - 역사적변동성
 
@@ -39,7 +37,6 @@ relationship_types:
 - 고객 질문·증상: 화면의 종목변동성 5일 값을 엑셀 CT, CH 함수로 받고 싶은데, Alt를 눌렀을 때 나오는 FID 5로는 조회되지 않는다는 문의입니다.
 - 당시 대응 기록: Alt와 마우스 오버로 보이는 5는 FID가 아니라 다른 방식으로 계산된 값인 경우가 많습니다. 이 화면은 기간변경으로 종목별 역사적변동성을 따로 계산해 제공하므로 FID가 없습니다. 대신 CTR 함수를 쓰고, 우클릭 후 엑셀 특정 종목으로 보내기로 받은 파일을 수정해 활용하면 됩니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:2382`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 2
@@ -47,7 +44,6 @@ relationship_types:
 - 고객 질문·증상: 1547 화면의 주식 역사적 변동성 데이터가 거래소에서 송출한 값인지, 체크에서 자체 분석한 값인지 문의했습니다.
 - 당시 대응 기록: 해당 데이터는 거래소 송출값이 아니라 CHECK에서 자체적으로 산출한 값이라고 안내했습니다.
 - 후보 유형: tip
-- 증거 위치: `20260916!row:3832`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 3
@@ -55,7 +51,6 @@ relationship_types:
 - 고객 질문·증상: KOSPI 또는 특정 종목의 일중 변동성을 퍼센트로 파악할 수 있는 화면이 있는지 문의했습니다.
 - 당시 대응 기록: KOSPI의 일중 변동성 관련 데이터는 변동성지수인 V-KOSPI를 1185 화면에서 확인할 수 있습니다. 종목은 일별 변동성만 제공되며 1546, 1547 화면을 참고하도록 안내했습니다.
 - 후보 유형: faq
-- 증거 위치: `20260916!row:4254`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 4
@@ -63,7 +58,6 @@ relationship_types:
 - 고객 질문·증상: 화면의 종목변동성 5일 값을 CT, CH 함수로 엑셀에 받고 싶은데 Alt를 눌러 나온 FID 5로는 조회되지 않는다는 문의입니다.
 - 당시 대응 기록: Alt 누르고 마우스 오버 시 보이는 값은 FID가 아니라 다른 방식으로 계산한 값인 경우가 많습니다. 해당 화면은 "기간변경"으로 종목별 역사적변동성을 따로 계산해 제공해 FID가 없으므로, 우클릭 후 "엑셀 특정 종목으로 보내기"로 받은 파일을 수정해 CTR 함수로 사용하라고 안내했습니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `CRM데이터(PID복원)!row:348`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ## 승인 게이트
@@ -77,4 +71,3 @@ relationship_types:
 ## 관련 화면
 
 - [[check-expert/새로운-모습/주식/1547-1547-역사적변동성|1547 - 역사적변동성]] (mentions_title)
-- [[check-expert/새로운-모습/선물/4254-4254-선물옵션연계|4254 - 선물옵션연계]] (mentions_title)

@@ -13,7 +13,6 @@ related_ids:
   - "check:screen:4311"
   - "check:screen:4316"
   - "check:screen:4331"
-  - "check:screen:4518"
 review_status: "candidate"
 signal_count: 3
 source_locator: "target:check:screen:4311"
@@ -21,7 +20,6 @@ relationship_types:
   "check:screen:4311": "mentions_title"
   "check:screen:4316": "mentions_title"
   "check:screen:4331": "mentions_title"
-  "check:screen:4518": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 4311 - 일중
 
@@ -43,7 +41,6 @@ relationship_types:
 - 고객 질문·증상: 1911/4311 화면에 NXT 기준 지수값(추정치)을 추가해 줄 수 있는지 요청했습니다.
 - 당시 대응 기록: 지수 라이선스 문제로 지수 추정치 관련 데이터는 현재 제공하기 어렵습니다. 고객사와 논의 중이며 제공 여부를 검토하고 있다고 안내했습니다.
 - 후보 유형: faq
-- 증거 위치: `20260916!row:4479`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 2
@@ -51,7 +48,6 @@ relationship_types:
 - 고객 질문·증상: 고객사 담당자가 개별주식선물 베이시스의 과거 추이를 확인할 차트를 찾는다며 문의했습니다.
 - 당시 대응 기록: 4316 화면에서 과거일자의 개별주식선물 베이시스 추이를 볼 수 있습니다. 다만 일중 데이터는 DB 용량 제한 때문에 일정 기간만 제공되고 이후 삭제됩니다.
 - 후보 유형: caution, faq
-- 증거 위치: `20260916!row:4518`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 3
@@ -59,7 +55,6 @@ relationship_types:
 - 고객 질문·증상: 주식의 현선 스프레드를 실시간 차트로 보려면 어느 화면을 봐야 하는지, 4331에서는 차트가 나오지 않는다고 문의했습니다.
 - 당시 대응 기록: 현선물 스프레드를 베이시스로 이해하고, 4311 화면에서 확인할 수 있다고 안내했습니다.
 - 후보 유형: faq
-- 증거 위치: `20260916!row:6271`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ## 승인 게이트
@@ -75,4 +70,3 @@ relationship_types:
 - [[check-expert/새로운-모습/선물/4311-4311-일중|4311 - 일중]] (mentions_title)
 - [[check-expert/새로운-모습/선물/4316-4316-일중차트|4316 - 일중차트]] (mentions_title)
 - [[check-expert/새로운-모습/선물/4331-4331-현재가|4331 - 현재가]] (mentions_title)
-- [[check-expert/새로운-모습/옵션/4518-4518-순위시세표|4518 - 순위시세표]] (mentions_title)

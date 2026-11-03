@@ -12,14 +12,12 @@ knowledge_id: "check:enrichment:screen:4515"
 related_ids:
   - "check:screen:4515"
   - "check:screen:1614"
-  - "check:screen:4604"
 review_status: "candidate"
 signal_count: 2
 source_locator: "target:check:screen:4515"
 relationship_types:
   "check:screen:1614": "mentions_title"
   "check:screen:4515": "mentions_title"
-  "check:screen:4604": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 4515 - 투자자시세표
 
@@ -41,7 +39,6 @@ relationship_types:
 - 고객 질문·증상: 1614~1616 화면처럼 종목별 실시간 전체 회원사 체결수량을 보는 화면이나 엑셀 함수가 있는지, 주식옵션 전체 회원사 거래량 데이터를 확인하거나 구매할 수 있는지 문의하셨습니다.
 - 당시 대응 기록: 주식선물옵션은 KRX에서 회원사동향을 원천적으로 제공하지 않습니다. 따라서 HTS와 CHECK 어디에서도 제공할 수 없는 정보입니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:4604`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 2
@@ -49,7 +46,6 @@ relationship_types:
 - 고객 질문·증상: 1614~1616 화면처럼 주식선물, 주식, 주식옵션의 종목별 전체 회원사 체결수량을 실시간으로 볼 화면이나 엑셀 함수, 또는 데이터 구매 방법이 있는지 문의했습니다.
 - 당시 대응 기록: 주식선물옵션의 회원사 동향은 KRX에서 원천적으로 제공하지 않습니다. 그래서 HTS와 CHECK 어디에서도 제공할 수 없는 정보라고 안내했습니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `CRM데이터(PID복원)!row:1095`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ## 승인 게이트
@@ -64,4 +60,3 @@ relationship_types:
 
 - [[check-expert/새로운-모습/주식/1614-1614-회원별-실시간-체결|1614 - 회원별 실시간 체결]] (mentions_title)
 - [[check-expert/새로운-모습/옵션/4515-4515-투자자시세표|4515 - 투자자시세표]] (mentions_title)
-- [[check-expert/새로운-모습/옵션/4604-4604-일중비교|4604 - 일중비교]] (mentions_title)

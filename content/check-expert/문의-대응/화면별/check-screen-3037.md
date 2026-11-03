@@ -12,14 +12,12 @@ knowledge_id: "check:enrichment:screen:3037"
 related_ids:
   - "check:screen:3037"
   - "check:screen:3030"
-  - "check:screen:4651"
 review_status: "candidate"
 signal_count: 2
 source_locator: "target:check:screen:3037"
 relationship_types:
   "check:screen:3030": "mentions_title"
   "check:screen:3037": "mentions_title"
-  "check:screen:4651": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3037 - 발행통계 > 발행기관별 만기도래(상세)
 
@@ -41,7 +39,6 @@ relationship_types:
 - 고객 질문·증상: 특정 기업의 일자별 발행금액이 아니라 기준일의 전단채 발행잔액을 알 수 있는지 추가로 문의했습니다.
 - 당시 대응 기록: 원하는 데이터를 한 번에 조회하는 화면은 현재 없습니다. 대신 7101화면의 우측 하단 표 합계는 채권, CP, 전단채를 합친 발행잔액이고, 3037화면의 왼쪽 상단 표 합계는 채권 발행잔액이므로, 두 값의 차이로 CP와 전단채의 발행잔액을 계산할 수 있습니다. 한 번에 조회하는 화면은 신규 개발을 내부 검토하겠다고 했습니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:4127`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 2
@@ -49,7 +46,6 @@ relationship_types:
 - 고객 질문·증상: 특정 기관이 어느 신용그룹에 속해 있는지 확인할 수 있는 화면을 문의했습니다.
 - 당시 대응 기록: 3030 화면을 참고하도록 안내했습니다. 3030에 나오지 않는 기관은 3037 화면에서 개별 기관 검색으로 소속 신용그룹을 확인할 수 있습니다.
 - 후보 유형: faq
-- 증거 위치: `20260916!row:4651`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ## 승인 게이트
@@ -64,4 +60,3 @@ relationship_types:
 
 - [[check-expert/새로운-모습/채권/3030-3030-발행통계-종합|3030 - 발행통계 > 종합]] (mentions_title)
 - [[check-expert/새로운-모습/채권/3037-3037-발행통계-발행기관별-만기도래(상세)|3037 - 발행통계 > 발행기관별 만기도래(상세)]] (mentions_title)
-- [[check-expert/새로운-모습/옵션/4651-4651-시세표|4651 - 시세표]] (mentions_title)

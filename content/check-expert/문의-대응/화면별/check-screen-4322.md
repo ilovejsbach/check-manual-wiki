@@ -11,13 +11,11 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:4322"
 related_ids:
   - "check:screen:4322"
-  - "check:screen:3102"
   - "check:screen:4312"
 review_status: "candidate"
 signal_count: 4
 source_locator: "target:check:screen:4322"
 relationship_types:
-  "check:screen:3102": "mentions_title"
   "check:screen:4312": "mentions_title"
   "check:screen:4322": "mentions_title"
 ---
@@ -41,7 +39,6 @@ relationship_types:
 - 고객 질문·증상: 현선물 매수차익금액의 과거 데이터를 볼 수 있는 화면과, 특정 기간의 과거 자료 조회 방법을 문의했습니다.
 - 당시 대응 기록: 4322 화면에서 현선물 매수차익금액의 과거 데이터를 확인할 수 있다고 안내했습니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:3102`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 2
@@ -49,7 +46,6 @@ relationship_types:
 - 고객 질문·증상: 현선 차익 베이시스 추이만 따로 볼 수 있는 화면이 있는지 문의했습니다.
 - 당시 대응 기록: 차익 베이시스는 4312(일중), 4322(일별) 화면에서 볼 수 있지만 다른 데이터도 함께 표시됩니다. 신버전은 글자 크기를 고정하고 데이터 더(덜) 보기로 우측을 줄여 선물(연결), K200, 차익Basis만 보이게 조정할 수 있습니다.
 - 후보 유형: faq
-- 증거 위치: `20260916!row:3784`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 3
@@ -57,7 +53,6 @@ relationship_types:
 - 고객 질문·증상: 화면 4322 차트에서 매수(선물), 매도(지수)의 색상이 값과 맞지 않게 나오는 것 같다며, 차트 캡처를 메일로 보내겠다고 했습니다.
 - 당시 대응 기록: 중첩 차트에서 각 상품을 구별하려고 색상을 달리 처리한 것일 뿐 다른 의미는 없다고 설명했습니다. 이상이 있으면 캡처를 메일로 보내도록 안내했습니다.
 - 후보 유형: tip
-- 증거 위치: `20260916!row:6396`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ## 승인 게이트
@@ -70,6 +65,5 @@ relationship_types:
 
 ## 관련 화면
 
-- [[check-expert/새로운-모습/채권/3102-3102-시장종합-주요금리|3102 - 시장종합 > 주요금리]] (mentions_title)
 - [[check-expert/새로운-모습/선물/4312-4312-차익일중|4312 - 차익일중]] (mentions_title)
 - [[check-expert/새로운-모습/선물/4322-4322-차익일별|4322 - 차익일별]] (mentions_title)

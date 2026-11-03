@@ -11,14 +11,12 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:5303"
 related_ids:
   - "check:screen:5303"
-  - "check:screen:3035"
   - "check:screen:5100"
   - "check:screen:5304"
 review_status: "candidate"
 signal_count: 6
 source_locator: "target:check:screen:5303"
 relationship_types:
-  "check:screen:3035": "mentions_title"
   "check:screen:5100": "mentions_title"
   "check:screen:5303": "mentions_title"
   "check:screen:5304": "mentions_title"
@@ -43,7 +41,6 @@ relationship_types:
 - 고객 질문·증상: 타 정보사가 제공하는 종가 데이터와 값이 다른 이유를 문의했습니다.
 - 당시 대응 기록: 매매기준율은 고객사가 발표하는 종가 개념의 기준율이라 은행과 정보사업자가 동일하게 표출하며 관련 화면은 5303, 5304입니다. 재정환율은 정보사업자별 데이터 출처에 따라 달라질 수 있고, 당사는 특정 종목(구 로이터) 환율을 사용해 USD 기준 환율로 계산해 제공하므로 5513 등에서 차이가 날 수 있습니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:1032`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 2
@@ -51,7 +48,6 @@ relationship_types:
 - 고객 질문·증상: 다른 정보 제공처와 재정환율 종가 데이터가 다른 이유를 문의했습니다.
 - 당시 대응 기록: 대응 내용이 기록되지 않았습니다.
 - 후보 유형: faq
-- 증거 위치: `20260916!row:1033`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 3
@@ -59,7 +55,6 @@ relationship_types:
 - 고객 질문·증상: 5303 화면 등 체크 단말 실행 시 공지사항 등 팝업이 떠서 자동화 프로그램이 지정 위치를 찾지 못해 오류가 납니다. 팝업을 뜨지 않게 설정하는 방법이 있는지 문의했습니다.
 - 당시 대응 기록: 팝업 공지는 사용자에게 꼭 필요한 내용을 알리는 것이어서 공식적으로 팝업을 원천 차단하는 방법은 제공하지 않습니다. 자동화 프로그램에서 팝업을 인식해 닫는 방식을 권장했습니다.
 - 후보 유형: troubleshooting, procedure, caution, faq
-- 증거 위치: `20260916!row:3035`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 4
@@ -67,7 +62,6 @@ relationship_types:
 - 고객 질문·증상: TR5303에서 한국자금 매매기준율의 1/2 데이터가 없다는 문의입니다.
 - 당시 대응 기록: 한국자금은 CNH, USD 통화만 제공해 1/1과 1/2 데이터가 같으므로 1/1 데이터로 확인하도록 안내했습니다. 서울외환은 다른 통화도 제공해 1/1과 1/2 데이터가 달라 두 벌이 모두 존재합니다.
 - 후보 유형: procedure
-- 증거 위치: `20260916!row:3134`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 5
@@ -75,7 +69,6 @@ relationship_types:
 - 고객 질문·증상: 5304 화면의 익일자 데이터가 업데이트되는 시간을 문의했습니다.
 - 당시 대응 기록: 5304 화면은 익일에 반영된다고 안내했습니다. 이와 달리 5100 등 인접 화면은 15:35~40 사이에 업데이트되어 반영 시점이 다릅니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:3178`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ## 승인 게이트
@@ -88,7 +81,6 @@ relationship_types:
 
 ## 관련 화면
 
-- [[check-expert/새로운-모습/채권/3035-3035-발행통계-발행기관별-종합(상세)|3035 - 발행통계 > 발행기관별 종합(상세)]] (mentions_title)
 - [[check-expert/새로운-모습/외환/5100-5100-달러-원-종합화면|5100 - 달러-원>종합화면]] (mentions_title)
 - [[check-expert/새로운-모습/외환/5303-5303-고시환율-매매기준율(서울외국환)|5303 - 고시환율>매매기준율(서울외국환)]] (mentions_title)
 - [[check-expert/새로운-모습/외환/5304-5304-매매기준율-추이(서울외국환)|5304 - 매매기준율 추이(서울외국환)]] (mentions_title)

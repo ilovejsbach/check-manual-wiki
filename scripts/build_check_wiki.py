@@ -923,7 +923,7 @@ def build_support_case(
     )
     document += f"- 업무·주제: {topic_label}\n"
     document += f"- 공식 문서 연결: {'연결됨' if mapping_status == 'mapped' else '분류 대기'}\n"
-    document += f"- 증거 위치: `{evidence_locator}`\n\n"
+    document += "\n"
     document += "## 검증할 사항\n\n"
     document += (
         "- [ ] 현재 버전에서도 같은 상황이 재현되는가\n"
@@ -1057,7 +1057,6 @@ def build_manual_enrichment() -> int:
             document += f"- 고객 질문·증상: {request}\n"
             document += f"- 당시 대응 기록: {action}\n"
             document += f"- 후보 유형: {', '.join(example.get('manual_candidates', []))}\n"
-            document += f"- 증거 위치: `{_single_line(example.get('evidence_locator'))}`\n"
             document += "- 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요\n\n"
         document += "## 승인 게이트\n\n"
         document += (
@@ -1177,7 +1176,6 @@ def build_unmapped_enrichment() -> int:
             document += (
                 f"- 당시 대응 기록: {_case_text(example, 'action_text') or '미기재'}\n"
             )
-            document += f"- 증거 위치: `{_single_line(example.get('evidence_locator'))}`\n"
             document += "- 검토 과제: 연결할 기존 문서 또는 신규 문서 필요 여부 결정\n\n"
         document += "## 분류 게이트\n\n"
         document += (

@@ -45,7 +45,6 @@ candidate_id: manual-candidate:VOC-01443
 - 함께 볼 유형: 질문과 답변
 - 업무·주제: 4315 - Tick차트
 - 공식 문서 연결: 연결됨
-- 증거 위치: `CRM데이터(PID복원)!row:1445`
 
 ## 검증할 사항
 

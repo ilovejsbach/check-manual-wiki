@@ -11,13 +11,11 @@ source: "manual-enrichment.jsonl"
 knowledge_id: "check:enrichment:screen:1302"
 related_ids:
   - "check:screen:1302"
-  - "check:screen:3904"
 review_status: "candidate"
 signal_count: 3
 source_locator: "target:check:screen:1302"
 relationship_types:
   "check:screen:1302": "mentions_tr"
-  "check:screen:3904": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 1302 - 당일시세예측
 
@@ -39,7 +37,6 @@ relationship_types:
 - 고객 질문·증상: 멀티프레임차트 화면에서 보조지표로 VWAP을 쓸 수 있는지, 또는 사용자가 수식을 만들어 넣는 사용자설정 보조지표 기능이 있는지 문의했습니다.
 - 당시 대응 기록: TR 1302 당일시세예측 화면 우측에서 VWAP 차트를 볼 수 있습니다. 기술적지표의 가격/거래량 가중평균도 제공되며, 최근 시점일수록 1부터 5까지 가중치를 높여 계산하고 가격 가중평균은 (1개), (3개), (5개) 지표로 보여줍니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:3903`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 2
@@ -47,7 +44,6 @@ relationship_types:
 - 고객 질문·증상: 8110 화면의 VWAP 보조지표를 1302 화면에서 쓸 수 있다고 들었으나, 1302는 개별주식 화면이라 지수선물과 국채선물의 VWAP을 1, 3, 5분봉으로 볼 방법을 문의했습니다.
 - 당시 대응 기록: TR 1106 종합 현재가 화면에서 지표를 추가하고 종목을 검색하면 주식, 지수선물, 국채선물을 조회할 수 있습니다. 이 방법을 유선으로 안내했습니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:3904`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 3
@@ -55,7 +51,6 @@ relationship_types:
 - 고객 질문·증상: 특정 화면번호가 조회되지 않았습니다. 창을 다시 열어 재시도해도 화면이 보이지 않았고 단말이 느려지는 증상도 함께 나타났습니다.
 - 당시 대응 기록: 담당자가 원격으로 접속해 해당 증상을 정상 조치했습니다. 원인에 대한 별도 설명은 기록되어 있지 않고, 원격 조치로 화면 조회가 복구되었습니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:5396`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ## 승인 게이트
@@ -69,4 +64,3 @@ relationship_types:
 ## 관련 화면
 
 - [[check-expert/새로운-모습/주식/1302-1302-당일시세예측|1302 - 당일시세예측]] (mentions_tr)
-- [[check-expert/새로운-모습/채권/3904-3904-시장종합-종목요약|3904 - 시장종합 > 종목요약]] (mentions_title)

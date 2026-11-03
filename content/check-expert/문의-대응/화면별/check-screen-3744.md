@@ -12,18 +12,12 @@ knowledge_id: "check:enrichment:screen:3744"
 related_ids:
   - "check:screen:3744"
   - "check:screen:3743"
-  - "check:screen:4284"
-  - "check:screen:4753"
-  - "check:screen:6432"
 review_status: "candidate"
 signal_count: 7
 source_locator: "target:check:screen:3744"
 relationship_types:
   "check:screen:3743": "mentions_title"
   "check:screen:3744": "mentions_title"
-  "check:screen:4284": "mentions_title"
-  "check:screen:4753": "mentions_title"
-  "check:screen:6432": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 3744 - 시가평가 > CD/CP > CD/CP 등급별 수익률 추이
 
@@ -45,7 +39,6 @@ relationship_types:
 - 고객 질문·증상: 전자단기사채 A1 등급 3개월물 같은 금리 수준을 볼 수 있는 화면이 있는지 문의했습니다.
 - 당시 대응 기록: 해당 데이터는 3743 화면과 3744 화면을 참고하도록 안내했습니다.
 - 후보 유형: faq
-- 증거 위치: `20260916!row:4232`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 2
@@ -53,7 +46,6 @@ relationship_types:
 - 고객 질문·증상: CP와 CD의 YTM 및 듀레이션을 엑셀프리미엄에서도 볼 수 있게 하고 싶다며 기능 추가 방법을 문의했습니다. 현재 엑셀에서는 해당 값이 오류로만 표시되는 상황입니다.
 - 당시 대응 기록: CD/CP의 YTM은 3743화면에서 확인할 수 있으나 화면 특성상 엑셀프리미엄으로 제공되지 않습니다. 3744화면에서 원하는 구분을 선택해 엑셀프리미엄으로 보내는 방법이 있으며, 3743화면의 엑셀 제공은 내부 검토하기로 했습니다. CD/CP 듀레이션은 CHECK에서 제공하지 않습니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:4284`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 3
@@ -61,7 +53,6 @@ relationship_types:
 - 고객 질문·증상: 3개월 CD 금리를 볼 수 있는 화면을 문의했습니다.
 - 당시 대응 기록: 3개월 CD 금리는 화면 3744에서 확인할 수 있다고 안내했습니다. 해당 화면에서 CD 금리 조회가 가능합니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:4697`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 4
@@ -69,7 +60,6 @@ relationship_types:
 - 고객 질문·증상: 기초자산이 ABCP 또는 정기예금인 CP에 대해 시가평가를 조회할 수 있는 화면이 있는지 문의했습니다.
 - 당시 대응 기록: 등급별 CP 시가평가까지만 확인할 수 있어 3744 화면을 안내했습니다. 기초자산별 세부 시가평가는 제공되지 않습니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:4753`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 5
@@ -77,7 +67,6 @@ relationship_types:
 - 고객 질문·증상: TR3744의 민평3사와 민평4사에 어떤 평가사가 포함되는지 문의하셨습니다.
 - 당시 대응 기록: 민평3사는 KIS, NICE, KAP이고, 민평4사는 여기에 FN이 추가된 KIS, NICE, KAP, FN입니다.
 - 후보 유형: faq
-- 증거 위치: `20260916!row:6404`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 6
@@ -85,7 +74,6 @@ relationship_types:
 - 고객 질문·증상: 3744 화면의 CP 민평이 개별종목 민평인지, CP 개별 민평이 있는지, 발행금리를 확인할 수 있는지 문의했습니다.
 - 당시 대응 기록: 3744의 CP 민평은 등급별 민평이며 각 평가사 값을 산술평균해 보여줍니다. CP는 개별 민평이 없고, 발행금리는 발행일 당일 유통금리로 추정하며 3072 화면을 참고하도록 안내했습니다.
 - 후보 유형: faq
-- 증거 위치: `20260916!row:6432`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 7
@@ -93,7 +81,6 @@ relationship_types:
 - 고객 질문·증상: CP와 CD의 YTM 및 듀레이션을 엑셀 프리미엄에서도 볼 수 있게 추가하는 방법을 문의했습니다.
 - 당시 대응 기록: CD/CP의 YTM은 3743 화면에서 확인할 수 있으나 화면 특성상 엑셀 프리미엄으로 제공되지 않습니다. 3744 화면에서 구분을 선택한 뒤 엑셀 프리미엄으로 보내면 됩니다. 3743 제공은 내부 검토 예정이며, CD/CP 듀레이션은 CHECK에서 제공하지 않습니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `CRM데이터(PID복원)!row:958`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ## 승인 게이트
@@ -108,6 +95,3 @@ relationship_types:
 
 - [[check-expert/새로운-모습/채권/3743-3743-시가평가-CD-CP-CD-CP-등급별-수익률|3743 - 시가평가 > CD/CP > CD/CP 등급별 수익률]] (mentions_title)
 - [[check-expert/새로운-모습/채권/3744-3744-시가평가-CD-CP-CD-CP-등급별-수익률-추이|3744 - 시가평가 > CD/CP > CD/CP 등급별 수익률 추이]] (mentions_title)
-- [[check-expert/새로운-모습/선물/4284-4284-일별순매수|4284 - 일별순매수]] (mentions_title)
-- [[check-expert/새로운-모습/옵션/4753-4753-이론가차트|4753 - 이론가차트]] (mentions_title)
-- [[check-expert/새로운-모습/해외/6432-6432-MSCI-FTSE-지역-국가|6432 - MSCI/FTSE>지역/국가]] (mentions_title)

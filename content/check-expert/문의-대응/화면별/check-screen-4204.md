@@ -12,14 +12,12 @@ knowledge_id: "check:enrichment:screen:4204"
 related_ids:
   - "check:screen:4204"
   - "check:screen:4205"
-  - "check:screen:5100"
 review_status: "candidate"
 signal_count: 3
 source_locator: "target:check:screen:4204"
 relationship_types:
   "check:screen:4204": "mentions_title"
   "check:screen:4205": "mentions_title"
-  "check:screen:5100": "mentions_title"
 ---
 # 문의 대응 사례 묶음 — 4204 - 일중비교
 
@@ -41,7 +39,6 @@ relationship_types:
 - 고객 질문·증상: 선물 투자자 현황을 4205, 4100 화면으로 조회하는데 15:45 장 종료 이후 늦게 갱신되는 정보가 무엇인지 문의했습니다.
 - 당시 대응 기록: 15:45까지는 정보분배에서 송출되는 잠정치이고, 16:05경에는 청산결제에서 제공하는 투자자수급 확정치가 나옵니다. 확정치에는 야간선물시장 정보와 협의대량 정보가 포함되며, 4204 화면은 15:45에 확정치로 소급 반영된다고 안내했습니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:1730`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ### 후보 2
@@ -49,7 +46,6 @@ relationship_types:
 - 고객 질문·증상: 4204화면을 엑셀프리미엄으로 편집하는 방법과, 일중정보가 한 달분만 조회되는데 1년 정도 분량을 볼 수 있는지 문의했습니다.
 - 당시 대응 기록: 엑셀프리미엄으로 보내기와 함수빌더 사용법을 안내했습니다. 일중정보는 화면에서 조회되는 날짜까지만 DB에 보유하고 있어 그 이상은 조회할 수 없다고 설명했습니다.
 - 후보 유형: procedure, faq
-- 증거 위치: `20260916!row:5100`
 - 상태: `candidate` — 공식 문서 및 실제 동작 교차 검증 필요
 
 ## 승인 게이트
@@ -64,4 +60,3 @@ relationship_types:
 
 - [[check-expert/새로운-모습/선물/4204-4204-일중비교|4204 - 일중비교]] (mentions_title)
 - [[check-expert/새로운-모습/선물/4205-4205-일중순매수|4205 - 일중순매수]] (mentions_title)
-- [[check-expert/새로운-모습/외환/5100-5100-달러-원-종합화면|5100 - 달러-원>종합화면]] (mentions_title)

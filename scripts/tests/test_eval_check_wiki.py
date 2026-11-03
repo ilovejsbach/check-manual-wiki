@@ -34,5 +34,7 @@ def test_crosslinks_cover_mentions_and_are_symmetric() -> None:
     report = crosslink_metrics(load_records(INDEX))
     assert report["mention_link_rate"] >= 0.90
     assert report["asymmetric_relationship_edges"] == 0
-    assert report["manual_records_without_screen_links"] <= 60
+    # 53 -> 62: 증거 위치 줄의 행 번호(row:4657 등)가 화면번호로 오인돼 만들던 가짜 링크가 사라져,
+    # 의도적으로 매핑하지 않은 "공식 문서 연결 대기" 9건이 링크 없음으로 집계된다.
+    assert report["manual_records_without_screen_links"] <= 62
     assert len(report["manual_records_without_screen_link_reasons"]) == report["manual_records_without_screen_links"]
