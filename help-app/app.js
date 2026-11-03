@@ -10,6 +10,7 @@ const observationLabels = { baseline_observed: "실화면 기본 관찰", deep_o
 
 function recordKind(record) {
   if (record.type === "support_case") return `case-${record.case_type || "faq"}`;
+  if (record.type === "screen_field") return "dictionary";
   if (record.mapping_status === "unmapped") return "unmapped";
   if (record.type === "support_case_index" || String(record.id).startsWith("check:enrichment:")) return "inquiry";
   if (record.screen_code) return "screen";
@@ -90,7 +91,7 @@ function renderResults() {
   }
   list.innerHTML = state.filtered.map((record) => {
     const kind = recordKind(record);
-    const badge = record.screen_code ? `TR ${escapeHtml(record.screen_code)}` : record.type === "support_case" ? escapeHtml(caseLabels[record.case_type] || "문의 사례") : kind === "inquiry" ? "문의 대응" : kind === "candidate" ? "검수 후보" : kind === "unmapped" ? "분류 대기" : record.type === "excel" ? "Excel" : "매뉴얼";
+    const badge = kind === "dictionary" ? "데이터 사전" : record.screen_code ? `TR ${escapeHtml(record.screen_code)}` : record.type === "support_case" ? escapeHtml(caseLabels[record.case_type] || "문의 사례") : kind === "inquiry" ? "문의 대응" : kind === "candidate" ? "검수 후보" : kind === "unmapped" ? "분류 대기" : record.type === "excel" ? "Excel" : "매뉴얼";
     return `<li class="result ${state.selected === record.id ? "active" : ""}"><button type="button" data-id="${escapeHtml(record.id)}"><div class="result-top"><span class="badge ${record.review_status === "candidate" ? "candidate" : ""}">${badge}</span>${record.signal_count ? `<span class="badge candidate">문의 ${record.signal_count}건</span>` : ""}</div><h3>${escapeHtml(record.title)}</h3><p>${escapeHtml(excerpt(record))}</p></button></li>`;
   }).join("");
 }
@@ -173,7 +174,7 @@ function openRecord(id, push = true) {
 
 function updateCounts() {
   const count = (kind) => state.records.filter((record) => kind === "all" || (kind === "inquiry" ? record.type === "support_case" || record.type === "support_case_index" || String(record.id).startsWith("check:enrichment:") : kind === "unmapped" ? record.mapping_status === "unmapped" : recordKind(record) === kind)).length;
-  for (const kind of ["all", "screen", "excel", "inquiry", "case-faq", "case-procedure", "case-troubleshooting", "case-caution", "case-tip", "unmapped"]) $(`#count-${kind}`).textContent = count(kind).toLocaleString("ko-KR");
+  for (const kind of ["all", "screen", "dictionary", "excel", "inquiry", "case-faq", "case-procedure", "case-troubleshooting", "case-caution", "case-tip", "unmapped"]) $(`#count-${kind}`).textContent = count(kind).toLocaleString("ko-KR");
 }
 
 async function start() {

@@ -32,6 +32,8 @@ def collect(e2e_root: Path) -> list[dict[str, Any]]:
     tabs: dict[str, set[str]] = defaultdict(set)
     evidence: dict[str, set[str]] = defaultdict(set)
     warnings: dict[str, set[str]] = defaultdict(set)
+    field_definitions: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    semantic_sources: dict[str, dict[str, Any]] = defaultdict(dict)
 
     def ensure(code: str) -> dict[str, Any]:
         return records.setdefault(
@@ -153,6 +155,20 @@ def collect(e2e_root: Path) -> list[dict[str, Any]]:
                 record["financial_review_status"] = "partial_unapproved"
             evidence[code].add(artifact_path(e2e_root, reference))
 
+    for path in sorted(golden.rglob("financial-semantics.json")):
+        data = read_json(path)
+        code = screen_code(data.get("screen_code"))
+        if not code:
+            continue
+        ensure(code)
+        for item in data.get("concepts", []):
+            if isinstance(item, dict) and (item.get("field") or item.get("concept")):
+                field_definitions[code].append(item)
+        source_values = data.get("sources", {})
+        if isinstance(source_values, dict):
+            semantic_sources[code].update(source_values)
+        evidence[code].add(artifact_path(e2e_root, path))
+
     output = []
     for code, record in sorted(records.items()):
         record["observed_at"] = max(observed_at[code], default=None)
@@ -160,6 +176,8 @@ def collect(e2e_root: Path) -> list[dict[str, Any]]:
         record["observed_tabs"] = sorted(tabs[code])
         record["evidence"] = sorted(evidence[code])
         record["warnings"] = sorted(warnings[code])
+        record["field_definitions"] = field_definitions[code]
+        record["semantic_sources"] = semantic_sources[code]
         output.append(record)
     return output
 

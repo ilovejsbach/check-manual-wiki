@@ -47,6 +47,22 @@ def test_collect_merges_manifest_inventory_and_analysis(tmp_path: Path) -> None:
             ]
         },
     )
+    write(
+        tmp_path / "golden" / "3065" / "financial-semantics.json",
+        {
+            "screen_code": "3065",
+            "concepts": [
+                {
+                    "field": "신용등급",
+                    "concept": "신용등급",
+                    "definition": "채무상환능력에 대한 등급입니다.",
+                    "definition_status": "authoritative_external",
+                    "sources": ["krx"],
+                }
+            ],
+            "sources": {"krx": {"title": "KRX", "url": "https://example.test/krx"}},
+        },
+    )
 
     records = collect(tmp_path)
 
@@ -55,6 +71,8 @@ def test_collect_merges_manifest_inventory_and_analysis(tmp_path: Path) -> None:
     assert records[0]["observed_fields"] == ["만기일", "신용등급"]
     assert records[0]["observed_tabs"] == ["CP발행종목", "CP통계"]
     assert records[0]["warnings"] == ["clock_overlay_detected"]
+    assert records[0]["field_definitions"][0]["field"] == "신용등급"
+    assert records[0]["semantic_sources"]["krx"]["title"] == "KRX"
 
 
 def test_write_jsonl_is_utf8_and_stable(tmp_path: Path) -> None:

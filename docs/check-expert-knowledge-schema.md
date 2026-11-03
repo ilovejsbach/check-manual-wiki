@@ -8,7 +8,7 @@
 | --- | --- |
 | `schema_version` | 레코드 스키마 버전 |
 | `id` | 변경되지 않는 지식 ID. 화면은 `check:screen:1300` 형식 |
-| `type` | `screen`, `observed_screen`, `manual`, `excel`, `support_case`, `support_case_index` |
+| `type` | `screen`, `observed_screen`, `screen_field`, `manual`, `excel`, `support_case`, `support_case_index` |
 | `title`, `aliases` | 정식 제목과 검색 동의어 |
 | `category`, `screen_code` | 업무 분류와 CHECK 화면번호 |
 | `source`, `source_locator` | 공식 원본과 PDF 페이지·Excel 시트/행 위치 |
@@ -27,6 +27,10 @@
 | `golden_status` | 골든 승인 진행 상태. 화면 호출 확인과 별개로 관리 |
 | `financial_review_status` | 화면 필드의 금융 정의·산식 검수 상태 |
 | `e2e` | 관찰시각, 탭, 금융 항목, 캡처 경고, 증거 경로를 보존한 E2E 원문 레코드 |
+| `field_label`, `concept` | `screen_field`의 실제 화면 표시명과 연결한 금융 개념 |
+| `definition`, `formula`, `unit` | 확인된 정의·산식·표시 단위. 미확인은 빈 값으로 보존 |
+| `definition_status`, `check_field_status` | 외부 공식 정의와 CHECK 자체 산출 기준의 검증 상태를 분리 기록 |
+| `evidence_sources` | 필드 정의·산식에 사용한 출처 목록 |
 
 ## 배포 경로
 
@@ -47,4 +51,5 @@
 - `callability_status=verified`는 화면 호출만 확인했다는 뜻이며 금융 의미·산식 또는 고객
   매뉴얼 승인을 뜻하지 않는다.
 - `observed_screen`은 실제 UI에서 관찰됐지만 공식 매뉴얼 카탈로그에 연결되지 않은 화면이다.
+- `screen_field`는 화면에서 관찰한 항목을 독립 검색·연결하기 위한 데이터 사전 레코드다. 표시명만 관찰된 항목은 `candidate`로 두며, 외부의 공식 금융 정의를 확보해도 CHECK 산식이 검증된 것으로 간주하지 않는다.
   누락시키지 말고 별도 검수 후 공식 화면과 연결하거나 비카탈로그 상태를 유지한다.

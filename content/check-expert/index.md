@@ -49,7 +49,7 @@ generated: true
 ## 원본 무결성(SHA-256)
 
 - `CHECKPlus_Manual.pdf`: `b3ca8de468ffb238d16bb49882a2e7d2f85585f87c28698587331c8022948631`
-- `e2e-observations.jsonl`: `9e9d64e15f58e1779ab65180f55541c846ea82b0b50048c774f67b59d5ca5190`
+- `e2e-observations.jsonl`: `638fc5ad82e1a9a0b25c0eef2a6b5d03ff348a7f464a5de0de3f741a301475a2`
 - `excel-manual1_menu_template.xls.pia`: `64529436ce861e37a2658d9bd0577d4f9f8c5230cd4a81dc1272a6f021293810`
 - `excel-manual2_function.xls.pia`: `8138d73fee8ceab0fbe450fa8146c7dd8dcea996e69450dabf3ccf39716f3ca2`
 - `excel-manual3_askWizard.xls.pia`: `34b5ae20df97bfa29b997f16622a3ff81500e193a91c27454f567996929e7966`
@@ -59,4 +59,4 @@ generated: true
 - `JongMokCodeTable_20140616_Uodate02.xlsx.pia`: `4d623d44e9b4fb35a1ac8aef7016098e58ed44d9fbe5b30fc4369e1836b9044b`
 - `manual-enrichment-unmapped.jsonl`: `263bcd62d028b37ff23c5f07d16307061065670de2ca5fbb2f00caa5f31c3e70`
 - `manual-enrichment.jsonl`: `fb56904fe3d55c902010e238ca281c7c00b99d16eb3023367936d097a2ddd25c`
-- `README.md`: `11b7c8d437fe01123004cd74500e4cfc661f69172231d1c297eab3dc52c7bd1c`
+- `README.md`: `35e9b1410c60511ade07a100d7fdd95d5d0154711a546bb2d8fe312e95a04af9`

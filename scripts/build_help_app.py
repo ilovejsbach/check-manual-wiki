@@ -69,6 +69,12 @@ def build(source: Path = SOURCE, output: Path = OUTPUT) -> dict[str, object]:
                 "observation_status": record.get("observation_status"),
                 "golden_status": record.get("golden_status"),
                 "financial_review_status": record.get("financial_review_status"),
+                "field_label": record.get("field_label"),
+                "concept": record.get("concept"),
+                "definition_status": record.get("definition_status"),
+                "check_field_status": record.get("check_field_status"),
+                "formula": record.get("formula"),
+                "unit": record.get("unit"),
                 "markdown_path": record.get("markdown_path"),
                 "related": related,
                 "text": record.get("text", ""),
@@ -82,7 +88,7 @@ def build(source: Path = SOURCE, output: Path = OUTPUT) -> dict[str, object]:
         "schema_version": "1.0",
         "app": "CHECK Expert 로컬 도움말",
         "record_count": len(payload),
-        "screen_count": sum(item.get("screen_code") is not None for item in payload),
+        "screen_count": sum(item.get("type") in {"screen", "observed_screen"} for item in payload),
         "observed_only_screen_count": sum(
             item.get("type") == "observed_screen" for item in payload
         ),
@@ -92,6 +98,7 @@ def build(source: Path = SOURCE, output: Path = OUTPUT) -> dict[str, object]:
         "deep_observed_screen_record_count": sum(
             item.get("observation_status") == "deep_observed" for item in payload
         ),
+        "screen_field_count": sum(item.get("type") == "screen_field" for item in payload),
         "candidate_count": sum(item.get("review_status") == "candidate" for item in payload),
         "support_case_count": sum(item.get("type") == "support_case" for item in payload),
         "support_case_type_counts": {
