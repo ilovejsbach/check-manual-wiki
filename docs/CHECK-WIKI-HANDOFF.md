@@ -182,3 +182,8 @@ uv run python scripts/derive_case_links.py --knowledge knowledge/check-expert/kn
 - 마스킹이 제품명을 지운 곳 중 **근거가 확인된 것만** 복원했다: `XL/엑셀 [IDENTIFIER]`=Premium(원문 "프리미엄 메뉴(XL [IDENTIFIER])", "XL [IDENTIFIER] Lab"), `Term [IDENTIFIER]`=Term Structure(화면 3741 제목), `[REDACTED_ENTITY]국채/환율/지수/ETF/채권`=해외(화면 3924·3931 "해외국채", 5500 "해외SPOT", 원문 "[국내지수] 및 [해외지수] 탭"). 근거 없는 곳(예: `[IDENTIFIER] TR지수`, `…(구 로이터)`, 일부 `[REDACTED_ENTITY]시장`)은 추측하지 않고 일반어로 두었다. 근본 해결은 CRM 쪽 마스킹 단계에서 제품·화면 명칭 단어를 마스킹하지 않는 것이다.
 - 화면번호: 본문에서 화면번호로 쓰인 번호는 요약에 모두 있고(전수 검사), 문의 양식의 "화면번호 :" 칸 번호 658건은 `form_screens`(페이지 "문의 양식의 화면번호 입력값" 줄, 지식 레코드 필드)로 보존한다. 이 값은 질문 대상 화면이 아닐 수 있어 링크 근거로 쓰지 않는다(엣지 변화 없음). `validate_case_rewrite.py`에 본문·양식 화면번호 보존 검사를 추가했다.
 - 양식 화면번호 활용(결정): 엣지 근거로는 쓰지 않는다(본문 화면과 일치 86%, 불일치 9%, 본문 근거 없음 4%). 본문 근거가 없는 사례의 양식 번호만 `ontology/edges_cases_review.jsonl`에 검수 대기(`evidence_tokens: ["form_screen"]`, 점수 0.3, `needs_review`)로 낸다(18행).
+
+### 의도 분류기 개선(2026-11-03)
+- 의도에 `hardware_support`(단말·PC 하드웨어), `admin_contract`(일정·계약·요금), `feedback`(의견·개선 제안·버그 제보)를 추가하고, 의도는 이제 **공개 텍스트(제목+요약)에서 재현 가능하게** 계산한다(예전에는 원문 기준 값을 요약 파일에 저장해 썼다). 시장 영역(`domains`)은 원문 기준 저장값을 유지한다.
+- 평가: 제가 직접 읽고 라벨링한 표본 36건에서 기존(저장값) 25/36 → 33/36. 라벨을 규칙 수정 전후에 같이 본 사람이 붙였으므로 독립 평가가 아니다. 분포(1,418건): data_availability 306, howto 284, screen_finding 235, other 176, data_error 143, env_setup 93, hardware_support 69, feedback 31, admin_contract 30, account_access 26, empty 25.
+- 효과: 화면 찾기 사례 163 → 235건, 링크 없는 화면 요구(gap) 노드 3 → 4개(13 → 14건). 요약 파일의 `intent` 값은 더 이상 쓰지 않는다.

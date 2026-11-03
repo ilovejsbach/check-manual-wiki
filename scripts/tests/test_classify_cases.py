@@ -35,3 +35,9 @@ def test_compute_has_no_body_or_locator():
     r["source_locator"] = "row:1"
     out = cc.compute([r], "2026-11-02")[0]
     assert "text" not in out and "source_locator" not in out and out["grade"] == "auto_extracted"
+
+
+def test_hardware_feedback_and_admin_intents():
+    assert cc.classify(rec("주의사항 — 사용 중인 PC 본체에서 소음이 발생한다는 문의입니다."))["intent"] == "hardware_support"
+    assert cc.classify(rec("팁 — 업그레이드 체험 후 로딩 속도 지연 의견을 전달했습니다."))["intent"] == "feedback"
+    assert cc.classify(rec("질문 — 방문 일정을 다른 날짜로 조정할 수 있는지 문의했습니다."))["intent"] == "admin_contract"

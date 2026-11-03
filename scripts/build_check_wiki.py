@@ -93,7 +93,9 @@ def _add_case_classes(records: list[dict[str, object]]) -> None:
         if record.get("type") != "support_case":
             continue
         stored = _case_summaries().get(str(record["id"]))
-        result = {"intent": stored["intent"], "domains": stored["domains"]} if stored else classify_cases.classify(record)
+        result = classify_cases.classify(record)  # 의도는 공개 텍스트(제목+요약)에서 재현 가능하게 계산한다
+        if stored:  # 영역은 원문 기준으로 정해 둔 값을 유지한다
+            result["domains"] = stored["domains"]
         record["case_intent"] = result["intent"]
         record["case_domains"] = result["domains"]
 

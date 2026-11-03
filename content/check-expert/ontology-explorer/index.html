@@ -28,7 +28,7 @@ a{color:var(--acc);text-decoration:none;cursor:pointer}a:hover{text-decoration:u
 <script>
 let D=null;
 const $=s=>document.querySelector(s), out=$('#out');
-const INTENT={screen_finding:'화면 찾기',data_availability:'데이터 제공 여부',data_error:'수치 오류·정정',env_setup:'설치·환경',account_access:'계정·권한',howto:'사용법',empty:'내용 미기재',other:'기타'};
+const INTENT={screen_finding:'화면 찾기',data_availability:'데이터 제공 여부',data_error:'수치 오류·정정',env_setup:'설치·환경',hardware_support:'단말·하드웨어',admin_contract:'일정·계약·요금',feedback:'의견·개선 제안',account_access:'계정·권한',howto:'사용법',empty:'내용 미기재',other:'기타'};
 const KIND={price:'가격',qty:'수량',ratio:'비율',amount:'금액',index:'지수',date:'날짜·시각',enum:'구분값',unknown:'미상'};
 function h(tag,attrs,...kids){const e=document.createElement(tag);for(const[k,v]of Object.entries(attrs||{})){if(k==='text')e.textContent=v;else e.setAttribute(k,v)}for(const c of kids)if(c)e.append(c);return e}
 const link=(hash,text)=>h('a',{href:'#'+hash,text});
